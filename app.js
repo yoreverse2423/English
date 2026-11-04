@@ -15,6 +15,13 @@
   const GITHUB_REPO = 'yoreverse2423/English';
   const GITHUB_PROGRESS_PATH = 'data/progress.json';
   const GITHUB_AUTO_UPLOAD_GAP = 10 * 60 * 1000;
+  const DEEPSEEK_KEY = 'bcz_deepseek_key';
+  const DEEPSEEK_PREFS_KEY = 'bcz_deepseek_prefs';
+  const READING_HISTORY_KEY = 'bcz_reading_history';
+  const DEEPSEEK_ENDPOINT = 'https://api.deepseek.com/chat/completions';
+  const DEEPSEEK_MODELS = ['deepseek-chat', 'deepseek-reasoner'];
+  const READING_WORD_CAP = 18;
+  const READING_HISTORY_LIMIT = 20;
   const DEFAULT_SETTINGS = Object.freeze({
     dailyNew: 20,
     autoPronounce: true
@@ -35,11 +42,12 @@
   const MAX_DAILY_NEW = 200;
   const BROWSE_PAGE_SIZE = 100;
   const WEEKDAY_NAMES = ['日', '一', '二', '三', '四', '五', '六'];
-  const ROUTES = ['home', 'study', 'browse', 'stats', 'settings', 'books'];
+  const ROUTES = ['home', 'study', 'browse', 'reading', 'stats', 'settings', 'books'];
   const PAGE_TITLES = {
     home: '拾词 · 背单词',
     study: '学习 · 拾词',
     browse: '词表 · 拾词',
+    reading: '每日阅读 · 拾词',
     stats: '统计 · 拾词',
     settings: '设置 · 拾词',
     books: '选择词书 · 拾词'
@@ -70,7 +78,8 @@
     'chevron-right': '<path d="m9 5 7 7-7 7"/>',
     chart: '<path d="M4 20V11"/><path d="M10 20V4"/><path d="M16 20v-6"/><path d="M22 20H2"/>',
     clock: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
-    sparkle: '<path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8Z"/>'
+    sparkle: '<path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8Z"/>',
+    read: '<path d="M6 3.5h9l3 3V20.5H6z"/><path d="M15 3.5V7h4"/><path d="M8.5 11h7"/><path d="M8.5 14.5h7"/><path d="M8.5 18h4"/>'
   };
 
   /* ---------- DOM ---------- */
@@ -81,6 +90,7 @@
     study: document.getElementById('view-study'),
     browse: document.getElementById('view-browse'),
     stats: document.getElementById('view-stats'),
+    reading: document.getElementById('view-reading'),
     settings: document.getElementById('view-settings'),
     books: document.getElementById('view-books')
   };
@@ -110,6 +120,11 @@
   let githubSyncInFlight = false;
   let githubSyncStatus = { state: 'idle', message: '' };
   let githubSyncPrefs = loadGithubSyncPrefs();
+  let readingBusy = false;
+  let readingPhase = '';
+  let readingError = '';
+  let readingLookup = '';
+  let readingActiveId = '';
 
   /* ---------- 基础工具 ---------- */
 
@@ -1220,6 +1235,11 @@
               '<span class="link-copy"><strong>词表浏览</strong><span>共 ' + stats.total + ' 个单词</span></span>' +
               '<span class="link-arrow">' + icon('chevron-right', 15) + '</span>' +
             '</button>' +
+            '<button class="link-card" type="button" data-nav="reading">' +
+              '<span class="link-icon">' + icon('read', 19) + '</span>' +
+              '<span class="link-copy"><strong>每日阅读</strong><span>用今日生词做一篇高考阅读</span></span>' +
+              '<span class="link-arrow">' + icon('chevron-right', 15) + '</span>' +
+            '</button>' +
             '<button class="link-card" type="button" data-nav="settings">' +
               '<span class="link-icon">' + icon('sliders', 19) + '</span>' +
               '<span class="link-copy"><strong>学习设置</strong><span>每日 ' + dailyTarget + ' 个新词</span></span>' +
@@ -2215,7 +2235,8 @@
       },
       words: words,
       unmasteredWords: unmasteredWords,
-      difficultWords: difficultWords
+      difficultWords: difficultWords,
+      reading: latestReadingExport()
     };
   }
 
@@ -2446,6 +2467,747 @@
     showToast(enabled ? '已开启学习结束后自动上传' : '已关闭自动上传');
   }
 
+  /* ---------- 每日阅读 · DeepSeek ---------- */
+
+  function readDeepseekKey() {
+    try {
+      return normalizeGithubToken(window.localStorage.getItem(DEEPSEEK_KEY) || '');
+    } catch (error) {
+      return '';
+    }
+  }
+
+  function deepseekKeyText() {
+    const key = readDeepseekKey();
+    if (!key) return '尚未保存 API Key。';
+    return '已保存在本机（末四位 ' + key.slice(-4) + '）。不会写入代码或仓库。';
+  }
+
+  function readDeepseekModel() {
+    try {
+      const raw = window.localStorage.getItem(DEEPSEEK_PREFS_KEY);
+      const parsed = raw ? JSON.parse(raw) : null;
+      const model = parsed && typeof parsed.model === 'string' ? parsed.model : '';
+      if (DEEPSEEK_MODELS.indexOf(model) !== -1) return model;
+    } catch (error) {
+      // 使用默认模型。
+    }
+    return 'deepseek-chat';
+  }
+
+  function saveDeepseekModel(model) {
+    const next = DEEPSEEK_MODELS.indexOf(model) === -1 ? 'deepseek-chat' : model;
+    try {
+      window.localStorage.setItem(DEEPSEEK_PREFS_KEY, JSON.stringify({ model: next }));
+    } catch (error) {
+      showToast('无法保存模型选择。', 'error');
+      return;
+    }
+    showToast('已选择模型 ' + next);
+    if (currentRoute === 'settings') renderSettings();
+  }
+
+  function saveDeepseekKeyFromInput() {
+    const input = document.getElementById('deepseek-key-input');
+    const key = normalizeGithubToken(input ? input.value : '');
+    if (!key) {
+      showToast('请先粘贴 DeepSeek API Key。', 'error');
+      if (input) input.focus();
+      return;
+    }
+    if (key.length < 12) {
+      showToast('API Key 太短，请粘贴完整密钥。', 'error');
+      return;
+    }
+    try {
+      window.localStorage.setItem(DEEPSEEK_KEY, key);
+    } catch (error) {
+      showToast('无法把 API Key 写入本地存储。', 'error');
+      return;
+    }
+    if (input) input.value = '';
+    showToast('API Key 已保存在本机。');
+    renderSettings();
+  }
+
+  function clearDeepseekKey() {
+    if (!readDeepseekKey()) {
+      showToast('当前没有已保存的 API Key。');
+      return;
+    }
+    const confirmed = window.confirm('确定清除保存在本机的 DeepSeek API Key 吗？已生成的阅读仍会留在本机。');
+    if (!confirmed) return;
+    try {
+      window.localStorage.removeItem(DEEPSEEK_KEY);
+    } catch (error) {
+      showToast('清除 API Key 失败。', 'error');
+      return;
+    }
+    showToast('已清除本机 API Key。');
+    renderSettings();
+  }
+
+  function normalizeChoice(value) {
+    const text = String(value || '').trim().toUpperCase();
+    const match = text.match(/[ABCD]/);
+    return match ? match[0] : '';
+  }
+
+  function escapeRegex(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function countEnglishWords(text) {
+    const matches = String(text || '').replace(/\*\*/g, '').match(/[A-Za-z]+(?:'[A-Za-z]+)?/g);
+    return matches ? matches.length : 0;
+  }
+
+  function collectReadingTargets() {
+    const now = Date.now();
+    const today = getDayKey(now);
+    const items = [];
+
+    getActiveWords().forEach(function (word) {
+      const progress = getProgress(word);
+      if (!progress) return;
+      const learnedToday = Boolean(progress.learnedAt && getDayKey(progress.learnedAt) === today);
+      const unmastered = !progress.masteredAt;
+      const due = Boolean(unmastered && progress.nextReviewAt > 0 && progress.nextReviewAt <= now);
+      if (!learnedToday && !unmastered) return;
+      const hard = progress.lapses > 0 || progress.lastResult === 'unknown' || progress.lastResult === 'fuzzy';
+      let rank = 4;
+      if (unmastered && due) rank = 0;
+      else if (unmastered && hard) rank = 1;
+      else if (unmastered && learnedToday) rank = 2;
+      else if (unmastered) rank = 3;
+      items.push({
+        word: word,
+        rank: rank,
+        lapses: progress.lapses || 0,
+        learnedToday: learnedToday
+      });
+    });
+
+    items.sort(function (a, b) {
+      if (a.rank !== b.rank) return a.rank - b.rank;
+      if (a.lapses !== b.lapses) return b.lapses - a.lapses;
+      if (a.learnedToday !== b.learnedToday) return a.learnedToday ? -1 : 1;
+      return String(a.word.w).localeCompare(String(b.word.w), 'en');
+    });
+
+    const seen = new Set();
+    const result = [];
+    items.forEach(function (item) {
+      const key = wordKey(item.word);
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      if (result.length >= READING_WORD_CAP) return;
+      result.push(item.word);
+    });
+    return result;
+  }
+
+  function readingTargetSummary(words) {
+    if (!words.length) return '今天还没有可融入的生词或未掌握词。';
+    return '将优先使用 ' + words.length + ' 个未掌握或今天新学的词（最多 ' + READING_WORD_CAP + ' 个）。';
+  }
+
+  function extractJsonObject(text) {
+    let raw = String(text || '').trim();
+    const fence = raw.match(/```(?:json)?\s*([\s\S]*?)```/i);
+    if (fence) raw = fence[1].trim();
+    const start = raw.indexOf('{');
+    const end = raw.lastIndexOf('}');
+    if (start === -1 || end <= start) {
+      throw invalidReadingError();
+    }
+    try {
+      return JSON.parse(raw.slice(start, end + 1));
+    } catch (error) {
+      throw invalidReadingError();
+    }
+  }
+
+  function invalidReadingError() {
+    const error = new Error('模型返回的不是有效题目，请再试一次。');
+    error.code = 'invalid-json';
+    return error;
+  }
+
+  function normalizeGeneratedReading(payload, targets) {
+    const data = payload && payload.passage ? payload : null;
+    if (!data || typeof data.passage !== 'string') throw invalidReadingError();
+    const passage = data.passage.replace(/\*\*/g, '').trim();
+    const wordCount = countEnglishWords(passage);
+    if (wordCount < 200 || wordCount > 480) throw invalidReadingError();
+    if (!Array.isArray(data.questions) || data.questions.length < 4) throw invalidReadingError();
+
+    const questions = [];
+    for (let index = 0; index < 4; index += 1) {
+      const item = data.questions[index];
+      if (!item || typeof item !== 'object') throw invalidReadingError();
+      const stem = toText(item.stem || item.question);
+      const rawOptions = Array.isArray(item.options) ? item.options : item.choices;
+      if (!stem || !Array.isArray(rawOptions) || rawOptions.length < 4) throw invalidReadingError();
+      const options = [];
+      for (let optionIndex = 0; optionIndex < 4; optionIndex += 1) {
+        const option = rawOptions[optionIndex];
+        const fallbackKey = 'ABCD'.charAt(optionIndex);
+        let key = fallbackKey;
+        let text = '';
+        if (typeof option === 'string') {
+          text = option.replace(/^[A-D][\.、\s]+/i, '').trim();
+        } else if (option && typeof option === 'object') {
+          key = normalizeChoice(option.key || option.label) || fallbackKey;
+          text = toText(option.text || option.content);
+        }
+        if (!text) throw invalidReadingError();
+        options.push({ key: key, text: text });
+      }
+      const answer = normalizeChoice(item.answer || item.correct);
+      if (!answer || !options.some(function (option) { return option.key === answer; })) {
+        throw invalidReadingError();
+      }
+      questions.push({
+        id: index + 1,
+        stem: stem,
+        options: options,
+        answer: answer,
+        explanation: toText(item.explanation || item.analysis) || '暂无解析'
+      });
+    }
+
+    const used = targets.filter(function (word) {
+      const pattern = new RegExp('\\b' + escapeRegex(word.w) + '\\b', 'i');
+      return pattern.test(passage);
+    }).map(function (word) {
+      return word.w;
+    });
+
+    return {
+      title: toText(data.title) || '阅读理解',
+      passage: passage,
+      wordCount: wordCount,
+      targetWords: used.length ? used : targets.map(function (word) { return word.w; }),
+      questions: questions
+    };
+  }
+
+  function buildReadingMessages(targets, isRetry) {
+    const glossary = targets.map(function (word, index) {
+      return (index + 1) + '. ' + word.w +
+        (word.pos ? ' (' + word.pos + ')' : '') +
+        (word.cn ? ' — ' + word.cn : '');
+    }).join('\n');
+    const system = '你是广西新高考英语阅读命题老师。只输出一个 JSON 对象，不要使用 Markdown 代码块，不要附加解释。';
+    let user = '请写一篇原创英语阅读短文，难度对标广西新高考（新课标阅读理解，约 CEFR B1–B2）。\n' +
+      '要求：\n' +
+      '1. passage 为 300 到 350 个英文单词，主题完整，不要抄袭真题或已发表文章。\n' +
+      '2. 下列每个目标词都要以原形至少出现一次，并用双星号标出，例如 **exchange**。\n' +
+      '3. 出 4 道单项选择题。题干和选项用英文，explanation 用一两句中文。覆盖主旨、细节、推理、词义或作者态度。每题恰好四个选项，key 为 A/B/C/D，answer 只能是其中一个。\n' +
+      '4. 只返回如下 JSON：{"title":"","passage":"","wordCount":320,"questions":[{"id":1,"stem":"","options":[{"key":"A","text":""},{"key":"B","text":""},{"key":"C","text":""},{"key":"D","text":""}],"answer":"A","explanation":""}]}\n' +
+      '目标词：\n' + glossary;
+    if (isRetry) {
+      user += '\n\n上一次输出无法解析成上述 JSON。这次只输出一个合法 JSON 对象，不要代码块。';
+    }
+    return [
+      { role: 'system', content: system },
+      { role: 'user', content: user }
+    ];
+  }
+
+  function deepseekFailure(status, data) {
+    if (!status) return '无法连接 DeepSeek。请检查网络；如果浏览器拦截了跨域（CORS），网页也不能直接调用该接口。';
+    if (status === 401) return 'DeepSeek API Key 无效或已失效，请在设置中重新保存。';
+    if (status === 402) return 'DeepSeek 账户余额不足，暂时无法生成。';
+    if (status === 429) return 'DeepSeek 请求过于频繁，请稍后再试。';
+    const apiMessage = data && data.error && data.error.message
+      ? String(data.error.message)
+      : (data && data.message ? String(data.message) : '');
+    const safe = apiMessage.replace(/sk-[A-Za-z0-9_\-]+/g, 'sk-…').slice(0, 180);
+    if (status === 400) return 'DeepSeek 拒绝了这次请求。' + (safe ? '（' + safe + '）' : '');
+    return 'DeepSeek 请求失败（HTTP ' + status + '）。' + (safe ? ' ' + safe : '');
+  }
+
+  function requestDeepseekReading(targets, isRetry) {
+    const key = readDeepseekKey();
+    const model = readDeepseekModel();
+    const body = {
+      model: model,
+      messages: buildReadingMessages(targets, isRetry)
+    };
+    if (model !== 'deepseek-reasoner') {
+      body.temperature = 0.7;
+      body.response_format = { type: 'json_object' };
+    }
+    return fetch(DEEPSEEK_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + key
+      },
+      body: JSON.stringify(body)
+    }).then(function (response) {
+      return response.text().then(function (text) {
+        let data = null;
+        if (text) {
+          try {
+            data = JSON.parse(text);
+          } catch (error) {
+            data = { message: String(text).slice(0, 180) };
+          }
+        }
+        if (!response.ok) {
+          const error = new Error(deepseekFailure(response.status, data));
+          error.code = 'http';
+          throw error;
+        }
+        const content = data && data.choices && data.choices[0] && data.choices[0].message
+          ? data.choices[0].message.content
+          : '';
+        const parsed = content && typeof content === 'object' ? content : extractJsonObject(content);
+        return normalizeGeneratedReading(parsed, targets);
+      });
+    }).catch(function (error) {
+      if (error && (error.code === 'invalid-json' || error.code === 'http')) throw error;
+      const networkError = new Error(deepseekFailure(0, null));
+      networkError.code = 'network';
+      throw networkError;
+    });
+  }
+
+  function sanitizeReadingEntry(raw) {
+    if (!raw || typeof raw !== 'object' || !raw.passage || !Array.isArray(raw.questions)) return null;
+    const questions = [];
+    raw.questions.slice(0, 4).forEach(function (item, index) {
+      if (!item || !Array.isArray(item.options)) return;
+      const options = item.options.slice(0, 4).map(function (option, optionIndex) {
+        return {
+          key: normalizeChoice(option && option.key) || 'ABCD'.charAt(optionIndex),
+          text: toText(option && option.text)
+        };
+      }).filter(function (option) {
+        return option.text;
+      });
+      const answer = normalizeChoice(item.answer);
+      if (!toText(item.stem) || options.length < 4 || !answer) return;
+      questions.push({
+        id: index + 1,
+        stem: toText(item.stem),
+        options: options,
+        answer: answer,
+        explanation: toText(item.explanation) || '暂无解析'
+      });
+    });
+    if (questions.length !== 4) return null;
+    const selections = {};
+    if (raw.selections && typeof raw.selections === 'object') {
+      Object.keys(raw.selections).forEach(function (key) {
+        const choice = normalizeChoice(raw.selections[key]);
+        if (choice) selections[String(key)] = choice;
+      });
+    }
+    return {
+      id: String(raw.id || ''),
+      createdAt: toTimestamp(raw.createdAt) || Date.now(),
+      model: DEEPSEEK_MODELS.indexOf(raw.model) === -1 ? 'deepseek-chat' : raw.model,
+      targetWords: Array.isArray(raw.targetWords) ? raw.targetWords.map(function (word) {
+        return String(word);
+      }).filter(Boolean).slice(0, READING_WORD_CAP) : [],
+      title: toText(raw.title) || '阅读理解',
+      passage: String(raw.passage),
+      wordCount: countEnglishWords(raw.passage),
+      questions: questions,
+      selections: selections,
+      submitted: Boolean(raw.submitted),
+      score: raw.submitted ? clamp(toInteger(raw.score, 0), 0, 4) : null,
+      submittedAt: raw.submitted ? (toTimestamp(raw.submittedAt) || raw.createdAt || Date.now()) : null
+    };
+  }
+
+  function loadReadingHistory() {
+    try {
+      const raw = JSON.parse(window.localStorage.getItem(READING_HISTORY_KEY) || '[]');
+      if (!Array.isArray(raw)) return [];
+      return raw.map(sanitizeReadingEntry).filter(Boolean).slice(0, READING_HISTORY_LIMIT);
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function saveReadingHistory(entries) {
+    try {
+      window.localStorage.setItem(
+        READING_HISTORY_KEY,
+        JSON.stringify(entries.slice(0, READING_HISTORY_LIMIT))
+      );
+    } catch (error) {
+      showToast('阅读记录保存失败，请检查浏览器存储空间。', 'error');
+    }
+  }
+
+  function upsertReadingEntry(entry) {
+    const history = loadReadingHistory().filter(function (item) {
+      return item.id !== entry.id;
+    });
+    history.unshift(entry);
+    saveReadingHistory(history);
+    return entry;
+  }
+
+  function getReadingEntry(id) {
+    const history = loadReadingHistory();
+    for (let index = 0; index < history.length; index += 1) {
+      if (history[index].id === id) return history[index];
+    }
+    return history[0] || null;
+  }
+
+  function latestReadingExport() {
+    const latest = loadReadingHistory()[0] || null;
+    if (!latest) return null;
+    return {
+      id: latest.id,
+      createdAt: formatShanghai(latest.createdAt),
+      model: latest.model,
+      title: latest.title,
+      passage: latest.passage,
+      wordCount: latest.wordCount,
+      targetWords: latest.targetWords.slice(),
+      submitted: Boolean(latest.submitted),
+      submittedAt: latest.submittedAt ? formatShanghai(latest.submittedAt) : null,
+      score: latest.submitted ? latest.score : null,
+      total: latest.questions.length,
+      results: latest.questions.map(function (question) {
+        const picked = latest.selections[String(question.id)] || '';
+        return {
+          id: question.id,
+          stem: question.stem,
+          userAnswer: picked || null,
+          correctAnswer: latest.submitted ? question.answer : null,
+          correct: latest.submitted ? picked === question.answer : null,
+          explanation: latest.submitted ? question.explanation : null
+        };
+      })
+    };
+  }
+
+  function findWordBySpelling(spelling) {
+    const key = wordKey(spelling);
+    if (!key) return null;
+    const words = getActiveWords();
+    for (let index = 0; index < words.length; index += 1) {
+      if (wordKey(words[index]) === key) return words[index];
+    }
+    return null;
+  }
+
+  function highlightPassageHtml(passage, targetWords) {
+    const clean = String(passage || '').replace(/\*\*/g, '');
+    const unique = [];
+    const seen = new Set();
+    targetWords.forEach(function (word) {
+      const text = toText(word);
+      const key = text.toLowerCase();
+      if (!text || seen.has(key)) return;
+      seen.add(key);
+      unique.push(text);
+    });
+    unique.sort(function (a, b) {
+      return b.length - a.length;
+    });
+    if (!unique.length) return escapeHtml(clean);
+    const pattern = new RegExp('\\b(' + unique.map(escapeRegex).join('|') + ')\\b', 'gi');
+    let html = '';
+    let cursor = 0;
+    clean.replace(pattern, function (match, _group, offset) {
+      html += escapeHtml(clean.slice(cursor, offset));
+      html += '<button class="reading-hit" type="button" data-action="reading-word" data-word="' +
+        escapeAttr(match) + '">' + escapeHtml(match) + '</button>';
+      cursor = offset + match.length;
+      return match;
+    });
+    html += escapeHtml(clean.slice(cursor));
+    return html;
+  }
+
+  function readingOptionHtml(entry, question, option) {
+    const selected = entry.selections[String(question.id)] === option.key;
+    let className = 'reading-option';
+    if (!entry.submitted && selected) className += ' is-selected';
+    if (entry.submitted && option.key === question.answer) className += ' is-correct';
+    if (entry.submitted && selected && option.key !== question.answer) className += ' is-wrong';
+    const pressed = selected ? 'true' : 'false';
+    return (
+      '<button class="' + className + '" type="button" data-action="reading-choice" data-question="' +
+        question.id + '" data-choice="' + option.key + '" aria-pressed="' + pressed + '"' +
+        (entry.submitted ? ' disabled' : '') + '>' +
+        '<span class="reading-key">' + option.key + '</span>' +
+        '<span class="reading-option-text">' + escapeHtml(option.text) + '</span>' +
+      '</button>'
+    );
+  }
+
+  function readingQuestionsHtml(entry) {
+    return entry.questions.map(function (question) {
+      let extra = '';
+      if (entry.submitted) {
+        const picked = entry.selections[String(question.id)] || '';
+        const right = picked === question.answer;
+        extra =
+          '<p class="reading-result-line' + (right ? ' is-correct' : ' is-wrong') + '">' +
+            (right ? '答对了' : '正确答案 ' + question.answer) +
+          '</p>' +
+          '<p class="reading-explain">' + escapeHtml(question.explanation) + '</p>';
+      }
+      return (
+        '<fieldset class="reading-question">' +
+          '<legend>' + question.id + '. ' + escapeHtml(question.stem) + '</legend>' +
+          '<div class="reading-options">' +
+            question.options.map(function (option) {
+              return readingOptionHtml(entry, question, option);
+            }).join('') +
+          '</div>' +
+          extra +
+        '</fieldset>'
+      );
+    }).join('');
+  }
+
+  function readingSheetHtml() {
+    if (!readingLookup) return '';
+    const word = findWordBySpelling(readingLookup);
+    const head = word ? word.w : readingLookup;
+    const phonetic = word ? formatPhonetic(word.ph) : '';
+    return (
+      '<div class="reading-sheet" role="dialog" aria-modal="false" aria-label="单词释义">' +
+        '<div class="reading-sheet-card">' +
+          '<div class="reading-sheet-top">' +
+            '<div>' +
+              '<h3 class="reading-sheet-word">' + escapeHtml(head) + '</h3>' +
+              (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+            '</div>' +
+            '<button class="icon-button" type="button" data-action="close-reading-word" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
+          '</div>' +
+          '<p class="reading-sheet-def">' +
+            (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+            escapeHtml(word && word.cn ? word.cn : '词库里没有这个词的释义。') +
+          '</p>' +
+          '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
+            icon('speaker', 15) + '<span>发音</span>' +
+          '</button>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function renderReading() {
+    if (!views.reading) return;
+    const targets = collectReadingTargets();
+    const history = loadReadingHistory();
+    if (!readingActiveId && history[0]) readingActiveId = history[0].id;
+    const entry = getReadingEntry(readingActiveId);
+    const busyText = readingPhase === 'retrying' ? '返回内容无法解析，正在重试一次…' : '正在生成阅读，大约需要十几秒…';
+
+    let article = '';
+    if (entry) {
+      const answered = entry.questions.filter(function (question) {
+        return Boolean(entry.selections[String(question.id)]);
+      }).length;
+      article =
+        '<article class="reading-article">' +
+          '<header class="reading-article-head">' +
+            '<p class="page-kicker">' + escapeHtml(entry.model) + ' · 约 ' + entry.wordCount + ' 词</p>' +
+            '<h2 class="reading-article-title">' + escapeHtml(entry.title) + '</h2>' +
+          '</header>' +
+          '<div class="reading-passage">' + highlightPassageHtml(entry.passage, entry.targetWords) + '</div>' +
+          '<p class="reading-tap-hint">点高亮单词可查看释义、音标并听发音。做完 4 题再提交，提交前不显示答案。</p>' +
+          readingQuestionsHtml(entry) +
+          (entry.submitted
+            ? '<div class="reading-score" role="status">得分 ' + entry.score + ' / 4</div>'
+            : '<button class="btn btn-primary btn-block" type="button" data-action="submit-reading"' + (readingBusy ? ' disabled' : '') + '>提交（已选 ' + answered + ' / 4）</button>') +
+        '</article>';
+    }
+
+    const historyHtml = history.length
+      ? '<ul class="reading-history">' + history.map(function (item) {
+          const active = item.id === (entry && entry.id);
+          const mark = item.submitted ? (item.score + '/4') : '未提交';
+          return '<li><button class="reading-history-item' + (active ? ' is-active' : '') + '" type="button" data-action="open-reading" data-reading-id="' +
+            escapeAttr(item.id) + '"><span>' + escapeHtml(item.title) + '</span><small>' + mark + '</small></button></li>';
+        }).join('') + '</ul>'
+      : '<p class="reading-empty-note">生成后的文章和作答会留在本机，方便回头再看。</p>';
+
+    views.reading.innerHTML =
+      '<div class="page reading-page">' +
+        '<header class="page-head">' +
+          '<div>' +
+            '<p class="page-kicker">广西新高考 · 阅读理解</p>' +
+            '<h1 class="page-title">每日阅读</h1>' +
+            '<p class="page-sub">用今天新学和尚未掌握的词，在浏览器里直接请 DeepSeek 写一篇原创短文和四道选择题。</p>' +
+          '</div>' +
+        '</header>' +
+        '<section class="settings-card reading-target-card">' +
+          '<div class="settings-card-head">' +
+            '<h2 class="settings-card-title">本次目标词</h2>' +
+            '<p class="settings-card-desc">' + escapeHtml(readingTargetSummary(targets)) + '</p>' +
+          '</div>' +
+          '<div class="settings-body">' +
+            (targets.length
+              ? '<div class="reading-chips">' + targets.map(function (word) {
+                  return '<span class="reading-chip">' + escapeHtml(word.w) + '</span>';
+                }).join('') + '</div>'
+              : '<p class="reading-empty-note">先完成一轮学习或复习，这里才会有词可以写进文章。</p>') +
+            '<button class="btn btn-primary btn-block" type="button" data-action="generate-reading"' +
+              (readingBusy || !targets.length ? ' disabled' : '') + '>' +
+              (readingBusy ? busyText : '生成今日阅读') +
+            '</button>' +
+            (readingError ? '<p class="sync-status is-error" role="alert">' + escapeHtml(readingError) + '</p>' : '') +
+          '</div>' +
+        '</section>' +
+        article +
+        '<section class="reading-history-wrap">' +
+          '<h2 class="reading-history-title">本机记录</h2>' +
+          historyHtml +
+        '</section>' +
+        readingSheetHtml() +
+      '</div>';
+  }
+
+  function finishReadingGeneration(generated, targets) {
+    const entry = {
+      id: String(Date.now()),
+      createdAt: Date.now(),
+      model: readDeepseekModel(),
+      targetWords: generated.targetWords.length ? generated.targetWords : targets.map(function (word) { return word.w; }),
+      title: generated.title,
+      passage: generated.passage,
+      wordCount: generated.wordCount,
+      questions: generated.questions,
+      selections: {},
+      submitted: false,
+      score: null,
+      submittedAt: null
+    };
+    upsertReadingEntry(entry);
+    readingActiveId = entry.id;
+    readingLookup = '';
+    readingBusy = false;
+    readingPhase = '';
+    readingError = '';
+    renderReading();
+    showToast('阅读已生成，先做题再提交。');
+  }
+
+  function generateReading(attempt) {
+    const retrying = attempt > 0;
+    if (!retrying) {
+      if (readingBusy) return;
+      const key = readDeepseekKey();
+      if (!key) {
+        readingError = '请先在设置里保存 DeepSeek API Key。';
+        showToast(readingError, 'error');
+        renderReading();
+        return;
+      }
+      const targets = collectReadingTargets();
+      if (!targets.length) {
+        readingError = '还没有今天新学或未掌握的词，先去学几个单词。';
+        showToast(readingError, 'error');
+        renderReading();
+        return;
+      }
+      readingBusy = true;
+      readingPhase = 'generating';
+      readingError = '';
+      readingLookup = '';
+      renderReading();
+      generateReading.targets = targets;
+    } else {
+      readingPhase = 'retrying';
+      renderReading();
+    }
+
+    const targets = generateReading.targets || collectReadingTargets();
+    requestDeepseekReading(targets, retrying).then(function (generated) {
+      finishReadingGeneration(generated, targets);
+    }).catch(function (error) {
+      if (error && error.code === 'invalid-json' && !retrying) {
+        generateReading(1);
+        return;
+      }
+      readingBusy = false;
+      readingPhase = '';
+      readingError = error && error.message ? error.message : '生成失败，请稍后再试。';
+      renderReading();
+      showToast(readingError, 'error');
+    });
+  }
+
+  function chooseReadingOption(questionId, choice) {
+    const entry = getReadingEntry(readingActiveId);
+    if (!entry || entry.submitted || readingBusy) return;
+    const key = normalizeChoice(choice);
+    if (!key) return;
+    entry.selections[String(questionId)] = key;
+    upsertReadingEntry(entry);
+    readingActiveId = entry.id;
+    const buttons = document.querySelectorAll('[data-question="' + questionId + '"]');
+    if (!buttons.length || currentRoute !== 'reading') {
+      renderReading();
+      return;
+    }
+    buttons.forEach(function (button) {
+      const selected = button.getAttribute('data-choice') === key;
+      button.classList.toggle('is-selected', selected);
+      button.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    });
+    const submit = document.querySelector('[data-action="submit-reading"]');
+    if (submit) {
+      const answered = entry.questions.filter(function (question) {
+        return Boolean(entry.selections[String(question.id)]);
+      }).length;
+      submit.textContent = '提交（已选 ' + answered + ' / 4）';
+    }
+  }
+
+  function submitReading() {
+    const entry = getReadingEntry(readingActiveId);
+    if (!entry || entry.submitted) return;
+    const missing = entry.questions.some(function (question) {
+      return !entry.selections[String(question.id)];
+    });
+    if (missing) {
+      showToast('请先答完 4 道题再提交。', 'error');
+      return;
+    }
+    let score = 0;
+    entry.questions.forEach(function (question) {
+      if (entry.selections[String(question.id)] === question.answer) score += 1;
+    });
+    entry.submitted = true;
+    entry.score = score;
+    entry.submittedAt = Date.now();
+    upsertReadingEntry(entry);
+    readingActiveId = entry.id;
+    readingLookup = '';
+    renderReading();
+    showToast('得分 ' + score + ' / 4');
+    maybeAutoUploadProgress();
+  }
+
+  function openReadingHistory(id) {
+    readingActiveId = id;
+    readingLookup = '';
+    readingError = '';
+    renderReading();
+  }
+
+  function openReadingWord(spelling) {
+    readingLookup = toText(spelling);
+    renderReading();
+  }
+
   /* ---------- 设置 ---------- */
 
   function renderSettings() {
@@ -2535,8 +3297,37 @@
             '<div class="button-row">' +
               '<button class="btn btn-primary btn-block" id="github-upload-button" type="button" data-action="upload-progress"' + (githubSyncInFlight ? ' disabled' : '') + '>' + icon('upload', 17) + '上传进度</button>' +
             '</div>' +
-            '<p class="sync-hint">文件里有导出时间（北京时间）、所选词书和单元、已学 / 已掌握 / 今日到期，以及每个词的阶段、下次复习时间、错词次数和最近一次结果，还有尚未掌握的难词列表。</p>' +
+            '<p class="sync-hint">文件里有导出时间（北京时间）、所选词书和单元、已学 / 已掌握 / 今日到期，以及每个词的阶段、下次复习时间、错词次数和最近一次结果，还有尚未掌握的难词列表。若已做过每日阅读，也会带上最近一篇的得分和解析。</p>' +
             '<p class="sync-status' + (githubSyncStatus.state && githubSyncStatus.state !== 'idle' ? ' is-' + githubSyncStatus.state : '') + '" id="github-sync-status" role="status" aria-live="polite">' + escapeHtml(syncStatusText()) + '</p>' +
+          '</div>' +
+        '</section>' +
+
+        '<section class="settings-card" aria-labelledby="deepseek-title">' +
+          '<div class="settings-card-head">' +
+            '<h2 class="settings-card-title" id="deepseek-title">每日阅读 · DeepSeek</h2>' +
+            '<p class="settings-card-desc">API Key 只放在本机 localStorage，请求由浏览器直接发到 DeepSeek，不会写进代码或仓库。</p>' +
+          '</div>' +
+          '<div class="settings-body">' +
+            '<ol class="sync-steps">' +
+              '<li>打开 <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener noreferrer">platform.deepseek.com/api_keys</a> 创建密钥。</li>' +
+              '<li>粘贴到下方并保存。换设备时需要重新粘贴。</li>' +
+            '</ol>' +
+            '<label class="sync-label" for="deepseek-key-input">DeepSeek API Key</label>' +
+            '<input class="sync-token-input" id="deepseek-key-input" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="sk-…" aria-label="DeepSeek API Key">' +
+            '<p class="sync-token-state">' + escapeHtml(deepseekKeyText()) + '</p>' +
+            '<div class="button-row">' +
+              '<button class="btn btn-secondary" type="button" data-action="save-deepseek-key">保存密钥</button>' +
+              '<button class="btn btn-ghost" type="button" data-action="clear-deepseek-key">清除密钥</button>' +
+            '</div>' +
+            '<label class="sync-label" for="deepseek-model-select">模型</label>' +
+            '<select class="reading-model-select" id="deepseek-model-select" aria-label="DeepSeek 模型">' +
+              DEEPSEEK_MODELS.map(function (model) {
+                const selected = model === readDeepseekModel() ? ' selected' : '';
+                const label = model === 'deepseek-chat' ? 'deepseek-chat（默认）' : model;
+                return '<option value="' + model + '"' + selected + '>' + label + '</option>';
+              }).join('') +
+            '</select>' +
+            '<p class="sync-hint">默认使用 deepseek-chat。生成内容是广西新高考难度的原创短文和四道选择题。</p>' +
           '</div>' +
         '</section>' +
 
@@ -2858,6 +3649,7 @@
     if (currentRoute === 'home') renderHome();
     else if (currentRoute === 'study') renderStudy();
     else if (currentRoute === 'browse') renderBrowse();
+    else if (currentRoute === 'reading') renderReading();
     else if (currentRoute === 'stats') renderStats();
     else if (currentRoute === 'settings') renderSettings();
     else if (currentRoute === 'books') renderBooks();
@@ -2979,6 +3771,23 @@
       clearGithubToken();
     } else if (action === 'upload-progress') {
       uploadProgress({ auto: false });
+    } else if (action === 'save-deepseek-key') {
+      saveDeepseekKeyFromInput();
+    } else if (action === 'clear-deepseek-key') {
+      clearDeepseekKey();
+    } else if (action === 'generate-reading') {
+      generateReading(0);
+    } else if (action === 'reading-choice') {
+      chooseReadingOption(actionEl.getAttribute('data-question'), actionEl.getAttribute('data-choice'));
+    } else if (action === 'submit-reading') {
+      submitReading();
+    } else if (action === 'open-reading') {
+      openReadingHistory(actionEl.getAttribute('data-reading-id'));
+    } else if (action === 'reading-word') {
+      openReadingWord(actionEl.getAttribute('data-word'));
+    } else if (action === 'close-reading-word') {
+      readingLookup = '';
+      renderReading();
     } else if (action === 'import-backup') {
       if (importInput) importInput.click();
     } else if (action === 'add-custom-words') {
@@ -3018,6 +3827,8 @@
       updateAutoPronounce(target.checked);
     } else if (target.id === 'github-auto-upload') {
       updateGithubAutoUpload(target.checked);
+    } else if (target.id === 'deepseek-model-select') {
+      saveDeepseekModel(target.value);
     } else if (target.id === 'browse-book-filter') {
       browseBookFilter = target.value || 'all';
       browseUnitFilter = 'all';

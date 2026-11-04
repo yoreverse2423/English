@@ -176,7 +176,7 @@ textarea:focus-visible,
   bottom: calc(10px + env(safe-area-inset-bottom));
   left: 50%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   width: min(calc(100% - 24px), var(--dock-width));
   padding: 8px;
   background: rgba(255, 253, 248, 0.92);
@@ -203,7 +203,7 @@ textarea:focus-visible,
   color: var(--muted);
   background: transparent;
   border-radius: 18px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
   transition: color 160ms ease, background 160ms ease, transform 160ms ease;
 }
@@ -2721,6 +2721,305 @@ textarea:focus-visible,
   color: var(--amber);
 }
 
+.reading-model-select {
+  width: 100%;
+  height: 46px;
+  margin-top: 8px;
+  padding: 0 12px;
+  color: var(--ink);
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  outline: 0;
+  font-size: 16px;
+}
+
+.reading-model-select:focus {
+  border-color: rgba(13, 107, 87, 0.45);
+  box-shadow: 0 0 0 4px rgba(13, 107, 87, 0.06);
+}
+
+.reading-target-card {
+  margin-bottom: 14px;
+}
+
+.reading-target-card .btn {
+  white-space: normal;
+  line-height: 1.35;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reading-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.reading-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.reading-empty-note,
+.reading-tap-hint {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.reading-article {
+  margin-top: 14px;
+  padding: 16px 16px 18px;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.reading-article-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+.reading-passage {
+  margin-top: 12px;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.reading-hit {
+  display: inline;
+  padding: 0 2px;
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 750;
+  line-height: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+
+.reading-question {
+  min-width: 0;
+  margin: 16px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.reading-question legend {
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.reading-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reading-option {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  color: var(--ink);
+  text-align: left;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+.reading-option.is-selected {
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border-color: rgba(13, 107, 87, 0.45);
+}
+
+.reading-option.is-correct {
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border-color: rgba(13, 107, 87, 0.55);
+}
+
+.reading-option.is-wrong {
+  color: var(--danger);
+  background: var(--danger-soft);
+  border-color: rgba(178, 79, 71, 0.35);
+}
+
+.reading-option:disabled {
+  opacity: 1;
+}
+
+.reading-key {
+  flex: 0 0 auto;
+  font-weight: 800;
+}
+
+.reading-option-text {
+  min-width: 0;
+}
+
+.reading-result-line,
+.reading-explain {
+  margin: 8px 2px 0;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.reading-result-line.is-correct,
+.reading-explain {
+  color: var(--primary-deep);
+}
+
+.reading-result-line.is-wrong {
+  color: var(--danger);
+}
+
+.reading-score {
+  margin-top: 14px;
+  padding: 12px 14px;
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.reading-history-wrap {
+  margin-top: 18px;
+}
+
+.reading-history-title {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.reading-history {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reading-history-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  color: var(--ink);
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.reading-history-item span {
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reading-history-item small {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.reading-history-item.is-active {
+  border-color: rgba(13, 107, 87, 0.45);
+  background: var(--primary-soft);
+}
+
+.reading-sheet {
+  position: fixed;
+  z-index: 40;
+  right: 12px;
+  bottom: calc(86px + env(safe-area-inset-bottom));
+  left: 12px;
+}
+
+.reading-sheet-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 14px 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.reading-sheet-top {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reading-sheet-word {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.reading-sheet-ph,
+.reading-sheet-def {
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.reading-sheet-card .audio-pill {
+  margin-top: 10px;
+}
+
+@media (max-width: 380px) {
+  .tabbar {
+    width: calc(100% - 12px);
+    padding: 6px 4px;
+  }
+
+  .tab-item {
+    font-size: 10px;
+    border-radius: 14px;
+  }
+
+  .tab-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 /* ---------- 全局提示 ---------- */
 
 .toast {
@@ -2757,6 +3056,10 @@ textarea:focus-visible,
    ========================================================= */
 
 @media (min-width: 560px) {
+  .tab-item {
+    font-size: 11px;
+  }
+
   .stats-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
