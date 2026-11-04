@@ -9,6 +9,12 @@
   /* ---------- 常量 ---------- */
 
   const STORAGE_KEY = 'bcz_vocab_v1';
+  // 令牌单独存放，不进入学习数据、备份文件或仓库。
+  const GITHUB_TOKEN_KEY = 'bcz_github_token';
+  const GITHUB_SYNC_PREFS_KEY = 'bcz_github_sync_prefs';
+  const GITHUB_REPO = 'yoreverse2423/English';
+  const GITHUB_PROGRESS_PATH = 'data/progress.json';
+  const GITHUB_AUTO_UPLOAD_GAP = 10 * 60 * 1000;
   const DEFAULT_SETTINGS = Object.freeze({
     dailyNew: 20,
     autoPronounce: true
@@ -101,6 +107,9 @@
   let expandedBooks = null;
   let toastTimer = null;
   let activeAudio = null;
+  let githubSyncInFlight = false;
+  let githubSyncStatus = { state: 'idle', message: '' };
+  let githubSyncPrefs = loadGithubSyncPrefs();
 
   /* ---------- 基础工具 ---------- */
 
@@ -368,6 +377,10 @@
       }
       const nextReviewAt = masteredAt ? 0 : toTimestamp(item.nextReviewAt);
 
+      const lastResult = item.lastResult === 'known' || item.lastResult === 'fuzzy' || item.lastResult === 'unknown'
+        ? item.lastResult
+        : null;
+
       result[key] = {
         stage: masteredAt ? 8 : stage,
         nextReviewAt: nextReviewAt,
@@ -375,7 +388,8 @@
         lastReviewedAt: lastReviewedAt,
         masteredAt: masteredAt || null,
         reviews: Math.max(0, toInteger(item.reviews, 0)),
-        lapses: Math.max(0, toInteger(item.lapses, 0))
+        lapses: Math.max(0, toInteger(item.lapses, 0)),
+        lastResult: lastResult
       };
     });
     return result;
@@ -896,7 +910,8 @@
         lastReviewedAt: 0,
         masteredAt: null,
         reviews: 0,
-        lapses: 0
+        lapses: 0,
+        lastResult: null
       };
       state.progress[word.key] = progress;
     }
@@ -910,6 +925,7 @@
 
     progress.reviews += 1;
     progress.lastReviewedAt = now;
+    progress.lastResult = rating;
 
     let toastMessage = '';
     let toastType = '';
@@ -950,10 +966,12 @@
     }
 
     session.revealed = false;
+    const sessionEnded = session.queue.length === 0;
     saveState();
     renderStudy();
 
     if (toastMessage) showToast(toastMessage, toastType);
+    if (sessionEnded) maybeAutoUploadProgress();
 
     window.setTimeout(function () {
       studyLocked = false;
@@ -1986,6 +2004,448 @@
       '</div>';
   }
 
+  /* ---------- 同步进度到 GitHub ---------- */
+
+  function loadGithubSyncPrefs() {
+    try {
+      const raw = window.localStorage.getItem(GITHUB_SYNC_PREFS_KEY);
+      const parsed = raw ? JSON.parse(raw) : null;
+      return {
+        autoUpload: !parsed || parsed.autoUpload !== false,
+        lastAutoUploadAt: parsed && Number(parsed.lastAutoUploadAt) > 0 ? Number(parsed.lastAutoUploadAt) : 0,
+        lastUploadAt: parsed && Number(parsed.lastUploadAt) > 0 ? Number(parsed.lastUploadAt) : 0,
+        lastUploadOk: Boolean(parsed && parsed.lastUploadOk)
+      };
+    } catch (error) {
+      return { autoUpload: true, lastAutoUploadAt: 0, lastUploadAt: 0, lastUploadOk: false };
+    }
+  }
+
+  function saveGithubSyncPrefs() {
+    try {
+      window.localStorage.setItem(GITHUB_SYNC_PREFS_KEY, JSON.stringify({
+        autoUpload: githubSyncPrefs.autoUpload !== false,
+        lastAutoUploadAt: githubSyncPrefs.lastAutoUploadAt || 0,
+        lastUploadAt: githubSyncPrefs.lastUploadAt || 0,
+        lastUploadOk: Boolean(githubSyncPrefs.lastUploadOk)
+      }));
+    } catch (error) {
+      console.warn('保存同步偏好失败：', error);
+    }
+  }
+
+  function readGithubToken() {
+    try {
+      return normalizeGithubToken(window.localStorage.getItem(GITHUB_TOKEN_KEY) || '');
+    } catch (error) {
+      return '';
+    }
+  }
+
+  function normalizeGithubToken(raw) {
+    let token = String(raw || '').replace(/^\uFEFF/, '').trim();
+    token = token.replace(/^bearer\s+/i, '').trim();
+    token = token.replace(/\s+/g, '');
+    return token;
+  }
+
+  function tokenSavedText() {
+    const token = readGithubToken();
+    if (!token) return '尚未保存令牌。';
+    return '已保存在本机（末四位 ' + token.slice(-4) + '）。页面和仓库里都不会留下完整令牌。';
+  }
+
+  function formatShanghai(timestamp) {
+    if (!timestamp) return null;
+    const date = new Date(timestamp);
+    if (Number.isNaN(date.getTime())) return null;
+    const formatter = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'Asia/Shanghai',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hourCycle: 'h23'
+    });
+    const map = {};
+    formatter.formatToParts(date).forEach(function (part) {
+      map[part.type] = part.value;
+    });
+    let hour = map.hour || '00';
+    if (hour === '24') hour = '00';
+    return map.year + '-' + map.month + '-' + map.day + 'T' + hour + ':' + map.minute + ':' + map.second + '+08:00';
+  }
+
+  function shanghaiDayKey(timestamp) {
+    const formatted = formatShanghai(timestamp);
+    return formatted ? formatted.slice(0, 10) : '';
+  }
+
+  function exportLastResult(progress) {
+    if (progress.lastResult === 'known' || progress.lastResult === 'fuzzy' || progress.lastResult === 'unknown') {
+      return progress.lastResult;
+    }
+    if (progress.masteredAt) return 'known';
+    if (progress.stage === 0 && progress.lapses > 0) return 'unknown';
+    if (progress.stage > 0) return 'known';
+    return null;
+  }
+
+  function lastResultLabel(result) {
+    if (result === 'known') return '认识';
+    if (result === 'fuzzy') return '模糊';
+    if (result === 'unknown') return '不认识';
+    return '';
+  }
+
+  function describeWordPlace(word) {
+    if (word.book === CUSTOM_BOOK_ID || word.unit === CUSTOM_UNIT_ID) {
+      return {
+        book: CUSTOM_BOOK_NAME,
+        bookId: CUSTOM_BOOK_ID,
+        unit: CUSTOM_UNIT_TITLE,
+        unitId: CUSTOM_UNIT_ID
+      };
+    }
+    const meta = findUnitMeta(word.unit);
+    return {
+      book: (meta && meta.bookName) || findBookName(word.book) || word.book || '',
+      bookId: (meta && meta.bookId) || word.book || '',
+      unit: (meta && meta.unitTitle) || word.unit || '',
+      unitId: word.unit || ''
+    };
+  }
+
+  function toProgressRecord(word, progress) {
+    const place = describeWordPlace(word);
+    const lastResult = exportLastResult(progress);
+    return {
+      word: word.w,
+      book: place.book,
+      bookId: place.bookId,
+      unit: place.unit,
+      unitId: place.unitId,
+      stage: progress.masteredAt ? 8 : progress.stage,
+      nextReviewTime: progress.masteredAt ? null : formatShanghai(progress.nextReviewAt),
+      wrongCount: progress.lapses,
+      lastResult: lastResult,
+      lastResultLabel: lastResultLabel(lastResult)
+    };
+  }
+
+  function isDifficultProgress(progress, record) {
+    if (progress.masteredAt) return false;
+    if (progress.lapses > 0) return true;
+    return record.lastResult === 'unknown' || record.lastResult === 'fuzzy';
+  }
+
+  function compareProgressRecords(a, b) {
+    return String(a.book).localeCompare(String(b.book), 'zh') ||
+      String(a.unit).localeCompare(String(b.unit), 'zh') ||
+      String(a.word).localeCompare(String(b.word), 'en');
+  }
+
+  function buildSelectedExport() {
+    const summary = getSelectionSummary();
+    const books = [];
+    const seen = new Set();
+    summary.units.forEach(function (unit) {
+      if (seen.has(unit.bookId)) return;
+      seen.add(unit.bookId);
+      books.push({ id: unit.bookId, name: unit.bookName });
+    });
+    return {
+      books: books,
+      units: summary.units.map(function (unit) {
+        return {
+          id: unit.unitId,
+          title: unit.title,
+          bookId: unit.bookId,
+          book: unit.bookName
+        };
+      })
+    };
+  }
+
+  function buildProgressExport() {
+    const now = Date.now();
+    const todayKey = shanghaiDayKey(now);
+    const words = [];
+    const unmasteredWords = [];
+    const difficultWords = [];
+    let learned = 0;
+    let mastered = 0;
+    let dueToday = 0;
+
+    getActiveWords().forEach(function (word) {
+      const progress = getProgress(word);
+      if (!progress) return;
+      learned += 1;
+      const record = toProgressRecord(word, progress);
+      words.push(record);
+      if (progress.masteredAt) {
+        mastered += 1;
+        return;
+      }
+      unmasteredWords.push(record);
+      if (isDifficultProgress(progress, record)) difficultWords.push(record);
+      if (progress.nextReviewAt > 0) {
+        const reviewDay = shanghaiDayKey(progress.nextReviewAt);
+        if (progress.nextReviewAt <= now || reviewDay === todayKey) dueToday += 1;
+      }
+    });
+
+    words.sort(compareProgressRecords);
+    unmasteredWords.sort(compareProgressRecords);
+    difficultWords.sort(compareProgressRecords);
+
+    return {
+      schemaVersion: 1,
+      exportedAt: formatShanghai(now),
+      timezone: 'Asia/Shanghai',
+      repository: GITHUB_REPO,
+      path: GITHUB_PROGRESS_PATH,
+      selected: buildSelectedExport(),
+      totals: {
+        learned: learned,
+        mastered: mastered,
+        dueToday: dueToday
+      },
+      words: words,
+      unmasteredWords: unmasteredWords,
+      difficultWords: difficultWords
+    };
+  }
+
+  function utf8ToBase64(text) {
+    const bytes = new TextEncoder().encode(text);
+    let binary = '';
+    const chunkSize = 0x8000;
+    for (let index = 0; index < bytes.length; index += chunkSize) {
+      const slice = bytes.subarray(index, index + chunkSize);
+      binary += String.fromCharCode.apply(null, slice);
+    }
+    return btoa(binary);
+  }
+
+  function githubErrorMessage(status, data) {
+    if (!status) return '上传失败：无法连接 GitHub，请检查网络后再试。';
+    if (status === 401) return '上传失败：令牌无效或已过期，请重新生成并保存。';
+    if (status === 403) return '上传失败：令牌没有 yoreverse2423/English 的 Contents 读写权限。';
+    if (status === 404) return '上传失败：找不到仓库 yoreverse2423/English，或令牌无权访问它。';
+    if (status === 409) return '上传失败：远程进度刚被更新，请再试一次。';
+    const apiMessage = data && data.message ? String(data.message) : '';
+    if (status === 422) {
+      return '上传失败：GitHub 拒绝了这次提交。' + (apiMessage ? '（' + apiMessage + '）' : '');
+    }
+    return '上传失败（HTTP ' + status + '）。' + (apiMessage ? ' ' + apiMessage : '');
+  }
+
+  function isUnchangedContent(data) {
+    const message = data && data.message ? String(data.message).toLowerCase() : '';
+    return message.indexOf('does not need') !== -1 ||
+      message.indexOf('identical') !== -1 ||
+      message.indexOf('already up-to-date') !== -1;
+  }
+
+  function githubContents(method, token, body) {
+    return fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + GITHUB_PROGRESS_PATH, {
+      method: method,
+      headers: {
+        Accept: 'application/vnd.github+json',
+        Authorization: 'Bearer ' + token,
+        'X-GitHub-Api-Version': '2022-11-28',
+        'Content-Type': 'application/json'
+      },
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (response) {
+      return response.text().then(function (text) {
+        let data = null;
+        if (text) {
+          try {
+            data = JSON.parse(text);
+          } catch (error) {
+            data = { message: String(text).slice(0, 180) };
+          }
+        }
+        return { ok: response.ok, status: response.status, data: data };
+      });
+    }).catch(function (error) {
+      if (error && error.message && error.message.indexOf('上传失败') === 0) throw error;
+      throw new Error('上传失败：无法连接 GitHub，请检查网络后再试。');
+    });
+  }
+
+  function putProgressFile(token, content, attempt) {
+    return githubContents('GET', token).then(function (got) {
+      if (got.status === 401 || got.status === 403) {
+        throw new Error(githubErrorMessage(got.status, got.data));
+      }
+      let sha = '';
+      if (got.status === 200 && got.data && got.data.sha) {
+        sha = String(got.data.sha);
+      } else if (got.status !== 404) {
+        throw new Error(githubErrorMessage(got.status, got.data));
+      }
+
+      const body = {
+        message: 'sync progress',
+        content: content,
+        branch: 'main'
+      };
+      if (sha) body.sha = sha;
+
+      return githubContents('PUT', token, body).then(function (put) {
+        if (put.ok) return { unchanged: false };
+        if (put.status === 409 && isUnchangedContent(put.data)) return { unchanged: true };
+        if (put.status === 409 && attempt < 1) return putProgressFile(token, content, attempt + 1);
+        throw new Error(githubErrorMessage(put.status, put.data));
+      });
+    });
+  }
+
+  function setGithubSyncStatus(state, message) {
+    githubSyncStatus = { state: state, message: message };
+    const el = document.getElementById('github-sync-status');
+    if (!el) return;
+    el.className = 'sync-status' + (state && state !== 'idle' ? ' is-' + state : '');
+    el.textContent = message || '';
+  }
+
+  function syncStatusText() {
+    if (githubSyncStatus.message) return githubSyncStatus.message;
+    if (!githubSyncPrefs.lastUploadAt) return '还没有上传过。';
+    const when = formatShanghai(githubSyncPrefs.lastUploadAt);
+    if (githubSyncPrefs.lastUploadOk) return '上次上传成功：' + when + '（北京时间）。';
+    return '上次上传未成功。可以再点一次「上传进度」。';
+  }
+
+  function uploadProgress(options) {
+    const auto = Boolean(options && options.auto);
+    if (githubSyncInFlight) {
+      if (!auto) showToast('正在上传，请稍候。');
+      return;
+    }
+
+    const token = readGithubToken();
+    if (!token) {
+      if (!auto) {
+        const message = '请先保存 GitHub 令牌，再上传进度。';
+        setGithubSyncStatus('error', message);
+        showToast(message, 'error');
+      }
+      return;
+    }
+
+    if (auto) {
+      if (!githubSyncPrefs.autoUpload) return;
+      const elapsed = Date.now() - (githubSyncPrefs.lastAutoUploadAt || 0);
+      if (githubSyncPrefs.lastAutoUploadAt && elapsed < GITHUB_AUTO_UPLOAD_GAP) return;
+      githubSyncPrefs.lastAutoUploadAt = Date.now();
+      saveGithubSyncPrefs();
+    }
+
+    githubSyncInFlight = true;
+    setGithubSyncStatus('pending', auto ? '正在自动上传进度…' : '正在上传进度…');
+    const uploadButton = document.getElementById('github-upload-button');
+    if (uploadButton) uploadButton.disabled = true;
+
+    let content = '';
+    try {
+      content = utf8ToBase64(JSON.stringify(buildProgressExport(), null, 2) + '\n');
+    } catch (error) {
+      githubSyncInFlight = false;
+      const message = '上传失败：无法整理学习进度。';
+      setGithubSyncStatus('error', message);
+      showToast(message, 'error');
+      if (uploadButton) uploadButton.disabled = false;
+      return;
+    }
+
+    putProgressFile(token, content, 0).then(function (result) {
+      githubSyncInFlight = false;
+      githubSyncPrefs.lastUploadAt = Date.now();
+      githubSyncPrefs.lastUploadOk = true;
+      saveGithubSyncPrefs();
+      const message = result && result.unchanged
+        ? '进度没有变化，GitHub 上已是最新。'
+        : '进度已上传到 data/progress.json。';
+      setGithubSyncStatus('success', message);
+      showToast(message);
+      const button = document.getElementById('github-upload-button');
+      if (button) button.disabled = false;
+    }).catch(function (error) {
+      githubSyncInFlight = false;
+      githubSyncPrefs.lastUploadAt = Date.now();
+      githubSyncPrefs.lastUploadOk = false;
+      saveGithubSyncPrefs();
+      const message = error && error.message ? error.message : '上传失败，请稍后再试。';
+      setGithubSyncStatus('error', message);
+      showToast(message, 'error');
+      const button = document.getElementById('github-upload-button');
+      if (button) button.disabled = false;
+    });
+  }
+
+  function maybeAutoUploadProgress() {
+    if (!githubSyncPrefs.autoUpload) return;
+    if (!readGithubToken()) return;
+    uploadProgress({ auto: true });
+  }
+
+  function saveGithubTokenFromInput() {
+    const input = document.getElementById('github-token-input');
+    const token = normalizeGithubToken(input ? input.value : '');
+    if (!token) {
+      showToast('请先粘贴 GitHub 令牌。', 'error');
+      if (input) input.focus();
+      return;
+    }
+    if (token.length < 20) {
+      showToast('令牌太短，请粘贴完整的细粒度个人访问令牌。', 'error');
+      return;
+    }
+
+    try {
+      window.localStorage.setItem(GITHUB_TOKEN_KEY, token);
+    } catch (error) {
+      showToast('无法把令牌写入本地存储。', 'error');
+      return;
+    }
+
+    if (input) input.value = '';
+    const looksFineGrained = token.indexOf('github_pat_') === 0;
+    showToast(looksFineGrained ? '令牌已保存在本机。' : '令牌已保存。细粒度令牌一般以 github_pat_ 开头，请确认权限。');
+    renderSettings();
+  }
+
+  function clearGithubToken() {
+    if (!readGithubToken()) {
+      showToast('当前没有已保存的令牌。');
+      return;
+    }
+    const confirmed = window.confirm('确定清除保存在本机的 GitHub 令牌吗？已上传的进度文件不会被删除。');
+    if (!confirmed) return;
+    try {
+      window.localStorage.removeItem(GITHUB_TOKEN_KEY);
+    } catch (error) {
+      showToast('清除令牌失败。', 'error');
+      return;
+    }
+    const input = document.getElementById('github-token-input');
+    if (input) input.value = '';
+    showToast('已清除本机令牌。');
+    renderSettings();
+  }
+
+  function updateGithubAutoUpload(enabled) {
+    githubSyncPrefs.autoUpload = Boolean(enabled);
+    saveGithubSyncPrefs();
+    showToast(enabled ? '已开启学习结束后自动上传' : '已关闭自动上传');
+  }
+
   /* ---------- 设置 ---------- */
 
   function renderSettings() {
@@ -1999,7 +2459,7 @@
           '<div>' +
             '<p class="page-kicker">偏好与数据</p>' +
             '<h1 class="page-title">学习设置</h1>' +
-            '<p class="page-sub">调整节奏，备份记录。所有数据只保存在当前浏览器。</p>' +
+            '<p class="page-sub">调整节奏，备份记录，或把进度同步到 GitHub。访问令牌只保存在当前浏览器。</p>' +
           '</div>' +
         '</header>' +
 
@@ -2043,6 +2503,43 @@
           '</div>' +
         '</section>' +
 
+        '<section class="settings-card" aria-labelledby="github-sync-title">' +
+          '<div class="settings-card-head">' +
+            '<h2 class="settings-card-title" id="github-sync-title">同步进度到 GitHub</h2>' +
+            '<p class="settings-card-desc">把学习进度写入 yoreverse2423/English 的 data/progress.json。令牌只放在本机 localStorage，不会写进代码或仓库。</p>' +
+          '</div>' +
+          '<div class="settings-body">' +
+            '<ol class="sync-steps">' +
+              '<li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">github.com/settings/personal-access-tokens/new</a>，新建细粒度个人访问令牌。</li>' +
+              '<li>仓库只勾选 <strong>yoreverse2423/English</strong>。</li>' +
+              '<li>Repository permissions 里把 Contents 设为 Read and write（读写）。</li>' +
+              '<li>生成后粘贴到下方并保存。需要换设备时，在新浏览器里再粘贴一次即可。</li>' +
+            '</ol>' +
+            '<label class="sync-label" for="github-token-input">GitHub 令牌</label>' +
+            '<input class="sync-token-input" id="github-token-input" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="github_pat_…" aria-label="GitHub 细粒度个人访问令牌">' +
+            '<p class="sync-token-state" id="github-token-state">' + escapeHtml(tokenSavedText()) + '</p>' +
+            '<div class="button-row">' +
+              '<button class="btn btn-secondary" type="button" data-action="save-github-token">保存令牌</button>' +
+              '<button class="btn btn-ghost" type="button" data-action="clear-github-token">清除令牌</button>' +
+            '</div>' +
+            '<div class="setting-row sync-auto-row">' +
+              '<div class="setting-copy">' +
+                '<span class="setting-title">学习结束自动上传</span>' +
+                '<p class="setting-desc">每轮学习结束或离开学习页时上传，最多每 10 分钟一次。</p>' +
+              '</div>' +
+              '<label class="switch" aria-label="学习结束自动上传">' +
+                '<input id="github-auto-upload" type="checkbox" aria-label="学习结束自动上传"' + (githubSyncPrefs.autoUpload ? ' checked' : '') + '>' +
+                '<span class="switch-track" aria-hidden="true"></span>' +
+              '</label>' +
+            '</div>' +
+            '<div class="button-row">' +
+              '<button class="btn btn-primary btn-block" id="github-upload-button" type="button" data-action="upload-progress"' + (githubSyncInFlight ? ' disabled' : '') + '>' + icon('upload', 17) + '上传进度</button>' +
+            '</div>' +
+            '<p class="sync-hint">文件里有导出时间（北京时间）、所选词书和单元、已学 / 已掌握 / 今日到期，以及每个词的阶段、下次复习时间、错词次数和最近一次结果，还有尚未掌握的难词列表。</p>' +
+            '<p class="sync-status' + (githubSyncStatus.state && githubSyncStatus.state !== 'idle' ? ' is-' + githubSyncStatus.state : '') + '" id="github-sync-status" role="status" aria-live="polite">' + escapeHtml(syncStatusText()) + '</p>' +
+          '</div>' +
+        '</section>' +
+
         '<section class="settings-card" aria-labelledby="custom-title">' +
           '<div class="settings-card-head">' +
             '<h2 class="settings-card-title" id="custom-title">自定义词</h2>' +
@@ -2070,7 +2567,7 @@
           '</div>' +
         '</section>' +
 
-        '<p class="settings-footer">拾词 · 纯静态本地应用<br>更换设备或清理浏览器缓存前，请先导出备份。</p>' +
+        '<p class="settings-footer">拾词 · 纯静态本地应用<br>学习记录默认只在本机。同步时令牌只发给 GitHub，不会写入仓库。</p>' +
       '</div>';
   }
 
@@ -2377,6 +2874,7 @@
     if (previousRoute === 'study' && route !== 'study') {
       session = null;
       stopPronunciation();
+      maybeAutoUploadProgress();
     }
 
     currentRoute = route;
@@ -2475,6 +2973,12 @@
       renderBrowseList();
     } else if (action === 'export-backup') {
       exportBackup();
+    } else if (action === 'save-github-token') {
+      saveGithubTokenFromInput();
+    } else if (action === 'clear-github-token') {
+      clearGithubToken();
+    } else if (action === 'upload-progress') {
+      uploadProgress({ auto: false });
     } else if (action === 'import-backup') {
       if (importInput) importInput.click();
     } else if (action === 'add-custom-words') {
@@ -2512,6 +3016,8 @@
       updateDailyNew(target.value);
     } else if (target.id === 'auto-pronounce-checkbox') {
       updateAutoPronounce(target.checked);
+    } else if (target.id === 'github-auto-upload') {
+      updateGithubAutoUpload(target.checked);
     } else if (target.id === 'browse-book-filter') {
       browseBookFilter = target.value || 'all';
       browseUnitFilter = 'all';
