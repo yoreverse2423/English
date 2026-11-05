@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-05T13:32:29+08:00",
+  "exportedAt": "2026-11-05T18:30:58+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -22,12 +22,12 @@
   },
   "stats": {
     "totalWords": 2716,
-    "learned": 13,
+    "learned": 14,
     "mastered": 0,
-    "learning": 13,
-    "dueNow": 11,
-    "dueToday": 13,
-    "newToday": 13,
+    "learning": 14,
+    "dueNow": 14,
+    "dueToday": 14,
+    "newToday": 14,
     "reviewToday": 2,
     "streakDays": 1,
     "last7Days": [
@@ -63,17 +63,29 @@
       },
       {
         "date": "2026-11-05",
-        "learned": 13,
+        "learned": 14,
         "reviewed": 2
       }
     ]
   },
   "totals": {
-    "learned": 13,
+    "learned": 14,
     "mastered": 0,
-    "dueToday": 13
+    "dueToday": 14
   },
   "words": [
+    {
+      "word": "damage",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:39:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
     {
       "word": "disaster",
       "book": "必修第一册",
@@ -232,6 +244,18 @@
     }
   ],
   "unmasteredWords": [
+    {
+      "word": "damage",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:39:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
     {
       "word": "disaster",
       "book": "必修第一册",
@@ -415,6 +439,67 @@
       "lastResultLabel": "模糊"
     }
   ],
-  "reading": null,
+  "reading": {
+    "id": "1793858115521",
+    "createdAt": "2026-11-05T13:55:15+08:00",
+    "model": "deepseek-chat",
+    "title": "When Nature Turns Violent",
+    "passage": "Every year, nature reminds us how powerful it can be. A single storm can damage homes, roads and crops within hours. When a disaster strikes, whole communities may lose everything they own.\n\nDifferent regions face different threats. In dry areas, a long drought can dry up rivers and ruin harvests. In wet seasons, heavy rain may cause a flood that covers streets and fields. Along the coast, a tsunami can rush inland after an undersea earthquake, while a volcanic eruption can bury towns in ash and rock.\n\nSome dangers come from the sky. A tornado is a fast-spinning column of air that can lift cars off the ground. In parts of America, tornadoes appear suddenly in spring, and people are trained to take shelter at once. Tornados in other countries may be weaker but still dangerous.\n\nOthers come from the ground. An earthquake's magnitude tells us how much energy it releases. A high-magnitude quake can cause a landslide on a hillside, sending mud and stones down onto roads. The same shaking can make a slide of snow crash down a mountain in winter.\n\nWhen a storm reaches landfall, the worst is often not over. Wind and water continue to flood low-lying areas, and rescue teams must act fast. A successful rescue can save many lives, but it depends on good preparation. Schools now teach students what to do before, during and after a disaster. They learn to keep an emergency bag, to listen to warnings, and to help neighbours. Nature's power cannot be stopped, but careful planning can reduce the harm it does.",
+    "wordCount": 266,
+    "targetWords": [
+      "damage",
+      "disaster",
+      "drought",
+      "flood",
+      "landfall",
+      "landslide",
+      "magnitude",
+      "rescue",
+      "slide",
+      "tornado",
+      "tornadoes",
+      "tornados",
+      "tsunami",
+      "volcanic eruption"
+    ],
+    "submitted": false,
+    "submittedAt": null,
+    "score": null,
+    "total": 4,
+    "results": [
+      {
+        "id": 1,
+        "stem": "What is the main idea of the passage?",
+        "userAnswer": null,
+        "correctAnswer": null,
+        "correct": null,
+        "explanation": null
+      },
+      {
+        "id": 2,
+        "stem": "According to the passage, what may happen after an undersea earthquake?",
+        "userAnswer": null,
+        "correctAnswer": null,
+        "correct": null,
+        "explanation": null
+      },
+      {
+        "id": 3,
+        "stem": "What can we infer about preparation from the last paragraph?",
+        "userAnswer": null,
+        "correctAnswer": null,
+        "correct": null,
+        "explanation": null
+      },
+      {
+        "id": 4,
+        "stem": "What does the word \"magnitude\" in Paragraph 4 most probably mean?",
+        "userAnswer": null,
+        "correctAnswer": null,
+        "correct": null,
+        "explanation": null
+      }
+    ]
+  },
   "recentReadingScores": []
 }
