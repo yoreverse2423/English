@@ -3633,6 +3633,14 @@ textarea:focus-visible,
   line-height: 1.6;
 }
 
+.reading-enrich-status {
+  margin: 8px 0 0;
+  color: var(--primary-deep);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
 .reading-article {
   margin-top: 14px;
   padding: 16px 16px 18px;

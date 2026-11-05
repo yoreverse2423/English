@@ -22,6 +22,30 @@
   const DEEPSEEK_MODELS = ['deepseek-chat', 'deepseek-reasoner'];
   const READING_WORD_CAP = 50;
   const READING_HISTORY_LIMIT = 20;
+  // 阅读生词补全：每篇最多 36 个，单次请求最多 18 个，按首次出现顺序取。
+  const OOV_ENRICH_CAP = 36;
+  const OOV_ENRICH_BATCH = 18;
+  // 纯功能词不补全，避免把冠词、代词、助动词等塞进词库。
+  const OOV_STOP_WORDS = new Set([
+    'the', 'a', 'an', 'of', 'to', 'in', 'on', 'at', 'for', 'and', 'or', 'but', 'is', 'are',
+    'was', 'were', 'be', 'been', 'being', 'am', 'it', 'its', 'as', 'by', 'with', 'from',
+    'that', 'this', 'these', 'those', 'he', 'she', 'they', 'we', 'you', 'i', 'his', 'her',
+    'their', 'our', 'your', 'not', 'no', 'yes', 'do', 'does', 'did', 'done', 'have', 'has',
+    'had', 'will', 'would', 'can', 'could', 'should', 'may', 'might', 'must', 'shall', 'than',
+    'then', 'so', 'if', 'me', 'my', 'mine', 'him', 'them', 'us', 'who', 'whom', 'whose',
+    'which', 'what', 'when', 'where', 'why', 'how', 'there', 'here', 'some', 'any', 'all',
+    'each', 'both', 'either', 'neither', 'another', 'other', 'such', 'every', 'very', 'too',
+    'just', 'only', 'also', 'still', 'yet', 'ever', 'never', 'always', 'often', 'sometimes',
+    'usually', 'really', 'quite', 'rather', 'almost', 'enough', 'again', 'up', 'down', 'out',
+    'off', 'over', 'under', 'about', 'into', 'onto', 'upon', 'within', 'without', 'through',
+    'across', 'against', 'among', 'around', 'between', 'during', 'before', 'after', 'while',
+    'because', 'though', 'although', 'unless', 'until', 'since', 'whether',
+    "don't", "doesn't", "didn't", "isn't", "aren't", "wasn't", "weren't", "haven't", "hasn't",
+    "hadn't", "won't", "can't", "couldn't", "shouldn't", "wouldn't", "mustn't", "needn't",
+    "i'm", "i've", "i'll", "i'd", "you're", "you've", "you'll", "you'd", "he's", "he'd",
+    "she's", "she'd", "it's", "it'd", "we're", "we've", "we'll", "we'd", "they're", "they've",
+    "they'll", "they'd", "that's", "there's", "what's", "who's", "let's"
+  ]);
   const DEFAULT_SETTINGS = Object.freeze({
     dailyNew: 20,
     autoPronounce: true
@@ -132,6 +156,10 @@
   let readingError = '';
   let readingLookup = '';
   let readingActiveId = '';
+  // 阅读生词补全的后台状态；不阻塞文章显示。
+  let readingEnrichBusy = false;
+  let readingEnrichPassage = '';
+  let readingEnrichPending = '';
   // 阅读查词索引：覆盖全部词条与 forms，查词不再受词书选择影响。
   let readingWordIndex = null;
 
@@ -4104,6 +4132,255 @@
     });
   }
 
+  /* ---------- 阅读生词自动补全 ---------- */
+
+  // 与 highlightPassageHtml 使用同一套 token 规则，按首次出现顺序返回未收录的词。
+  function collectReadingOovTokens(passage) {
+    const clean = String(passage || '').replace(/\*\*/g, '');
+    const pattern = /[A-Za-z]+(?:'[A-Za-z]+)?/g;
+    const matches = clean.match(pattern) || [];
+    const seen = new Set();
+    const result = [];
+    for (let i = 0; i < matches.length && result.length < OOV_ENRICH_CAP; i += 1) {
+      const token = matches[i];
+      const key = wordKey(token);
+      if (!key || key.length < 2) continue;
+      if (OOV_STOP_WORDS.has(key)) continue;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      if (lookupReadingWord(token)) continue;
+      result.push(token);
+    }
+    return result;
+  }
+
+  function buildOovEnrichMessages(words) {
+    const list = words.map(function (word, index) {
+      return (index + 1) + '. ' + word;
+    }).join('\n');
+    const system = '你是高中英语词典编辑，熟悉高考词汇和完形填空搭配。只输出一个 JSON 对象，不要使用 Markdown 代码块，不要附加任何解释。';
+    const user = '请为下面每个英文单词生成一条词库条目，供背单词应用直接使用。\n' +
+      '要求：\n' +
+      '1. 每条对象字段：{"w":"词典原形","ph":"/音标/","pos":"词性（如 v. / n. / adj. / adv.）","cn":"中文释义",' +
+        '"col":[{"en":"高考完形或阅读常见搭配","cn":"中文"}],"ex":{"en":"一句原创英文例句","cn":"中文翻译"},' +
+        '"wf":{"n":[],"v":[],"adj":[],"adv":[]},"freq":"高|中|低"}\n' +
+      '2. w 用词典原形（lemma）。如果给出的词是屈折形式，请把该形式放进 wf 对应的类别。\n' +
+      '3. cn 用适合高中生的简明中文释义；col 给 2 到 3 条高考完形或阅读常见搭配。\n' +
+      '4. ex 给一句原创英文例句和中文翻译，不要照抄阅读原文。\n' +
+      '5. wf 只填真实存在的名词、动词、形容词、副词形式；没有就留空数组。\n' +
+      '6. freq 按高考频率判断：常见核心词为“高”，一般课标词为“中”，生僻或文学词为“低”。\n' +
+      '7. 不要输出阅读题答案，不要输出 JSON 以外的任何文字。\n' +
+      '只返回 {"words":[...]}，为每个请求词各生成一条。\n' +
+      '单词：\n' + list;
+    return [
+      { role: 'system', content: system },
+      { role: 'user', content: user }
+    ];
+  }
+
+  function invalidOovError() {
+    const error = new Error('模型没有返回可用的生词释义，请稍后再试。');
+    error.code = 'invalid-json';
+    return error;
+  }
+
+  function requestDeepseekOovEnrich(words) {
+    const key = readDeepseekKey();
+    const model = readDeepseekModel();
+    const body = {
+      model: model,
+      messages: buildOovEnrichMessages(words)
+    };
+    if (model !== 'deepseek-reasoner') {
+      body.temperature = 0.3;
+      body.response_format = { type: 'json_object' };
+    }
+    return fetch(DEEPSEEK_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + key
+      },
+      body: JSON.stringify(body)
+    }).then(function (response) {
+      return response.text().then(function (text) {
+        let data = null;
+        if (text) {
+          try {
+            data = JSON.parse(text);
+          } catch (error) {
+            data = { message: String(text).slice(0, 180) };
+          }
+        }
+        if (!response.ok) {
+          const error = new Error(deepseekFailure(response.status, data));
+          error.code = 'http';
+          throw error;
+        }
+        const content = data && data.choices && data.choices[0] && data.choices[0].message
+          ? data.choices[0].message.content
+          : '';
+        let parsed;
+        try {
+          parsed = content && typeof content === 'object' ? content : extractJsonObject(content);
+        } catch (parseError) {
+          throw invalidOovError();
+        }
+        const rawList = Array.isArray(parsed)
+          ? parsed
+          : (parsed && Array.isArray(parsed.words) ? parsed.words : []);
+        if (!rawList.length) throw invalidOovError();
+        return rawList;
+      });
+    }).catch(function (error) {
+      if (error && (error.code === 'invalid-json' || error.code === 'http')) throw error;
+      const networkError = new Error(deepseekFailure(0, null));
+      networkError.code = 'network';
+      throw networkError;
+    });
+  }
+
+  // 把 wf 里的真实词形轻微镜像到 forms，阅读查词索引就能命中屈折形式。
+  function syncWordFormsFromWf(word) {
+    if (!word || !word.wf || typeof word.wf !== 'object') return word;
+    const baseKey = wordKey(word);
+    const seen = new Set();
+    const forms = [];
+    ['n', 'v', 'adj', 'adv'].forEach(function (kind) {
+      const list = Array.isArray(word.wf[kind]) ? word.wf[kind] : [];
+      list.forEach(function (item) {
+        const text = toText(item);
+        const key = wordKey(text);
+        if (!text || !key || key === baseKey || seen.has(key)) return;
+        seen.add(key);
+        forms.push({ w: text, ph: '', pos: '', cn: '' });
+      });
+    });
+    if (forms.length) word.forms = forms;
+    return word;
+  }
+
+  function normalizeOovEnrichResults(rawList) {
+    const result = [];
+    const seen = new Set();
+    (Array.isArray(rawList) ? rawList : []).forEach(function (raw) {
+      const word = normalizeCustomWord(raw);
+      if (!word) return;
+      const key = wordKey(word);
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      result.push(word);
+    });
+    return result;
+  }
+
+  // 与手动添加共用 normalizeCustomWord → 去重 → 选中“自定义”册 → 保存并失效缓存。
+  function addEnrichedCustomWords(wordObjs) {
+    const existing = new Set(getActiveWords().map(function (word) {
+      return wordKey(word);
+    }));
+    const added = [];
+
+    (Array.isArray(wordObjs) ? wordObjs : []).forEach(function (wordObj) {
+      const normalized = normalizeCustomWord(wordObj);
+      if (!normalized) return;
+      const key = wordKey(normalized);
+      if (!key || existing.has(key)) return;
+      syncWordFormsFromWf(normalized);
+      state.customWords.push(normalized);
+      existing.add(key);
+      added.push(normalized);
+    });
+
+    if (!added.length) return 0;
+
+    const selection = new Set(getSelectedUnits());
+    selection.add(CUSTOM_UNIT_ID);
+    state.selectedUnits = Array.from(selection);
+
+    saveState();
+    invalidateWordCache();
+    return added.length;
+  }
+
+  function enrichReadingOov(passage) {
+    const text = String(passage || '');
+    if (!text) return;
+    if (readingEnrichBusy) {
+      // 上一轮还没结束，记下最新文章，结束后继续补全。
+      readingEnrichPending = text;
+      return;
+    }
+    if (!readDeepseekKey()) return;
+
+    const tokens = collectReadingOovTokens(text);
+    if (!tokens.length) return;
+
+    const batches = [];
+    for (let i = 0; i < tokens.length; i += OOV_ENRICH_BATCH) {
+      batches.push(tokens.slice(i, i + OOV_ENRICH_BATCH));
+    }
+
+    readingEnrichBusy = true;
+    readingEnrichPassage = text;
+    showToast('正在补全阅读生词…');
+    if (currentRoute === 'reading') renderReading();
+
+    let batchIndex = 0;
+    let consecutiveFailures = 0;
+    let added = 0;
+    let lastError = null;
+
+    function finish() {
+      readingEnrichBusy = false;
+      readingEnrichPassage = '';
+      if (added > 0) {
+        invalidateWordCache();
+        if (currentRoute === 'reading') renderReading();
+        if (lastError) {
+          showToast('已补 ' + added + ' 个生词进词库，部分生词补全失败', 'error');
+        } else {
+          showToast('已补 ' + added + ' 个生词进词库');
+        }
+      } else if (lastError) {
+        if (currentRoute === 'reading') renderReading();
+        showToast('阅读生词补全失败：' +
+          (lastError.message || '请稍后再试'), 'error');
+      } else if (currentRoute === 'reading') {
+        renderReading();
+      }
+
+      const pending = readingEnrichPending;
+      readingEnrichPending = '';
+      if (pending && pending !== text) enrichReadingOov(pending);
+    }
+
+    function runNextBatch() {
+      if (batchIndex >= batches.length) {
+        finish();
+        return;
+      }
+      const batch = batches[batchIndex];
+      batchIndex += 1;
+      requestDeepseekOovEnrich(batch).then(function (rawList) {
+        consecutiveFailures = 0;
+        added += addEnrichedCustomWords(normalizeOovEnrichResults(rawList));
+        runNextBatch();
+      }).catch(function (error) {
+        lastError = error;
+        consecutiveFailures += 1;
+        // 连续两次失败就停止，避免反复消耗额度。
+        if (consecutiveFailures >= 2) {
+          finish();
+          return;
+        }
+        runNextBatch();
+      });
+    }
+
+    runNextBatch();
+  }
+
   function sanitizeReadingEntry(raw) {
     if (!raw || typeof raw !== 'object' || !raw.passage || !Array.isArray(raw.questions)) return null;
     const questions = [];
@@ -4492,6 +4769,9 @@
             '<h2 class="reading-article-title">' + escapeHtml(entry.title) + '</h2>' +
           '</header>' +
           '<div class="reading-passage">' + highlightPassageHtml(entry.passage, entry.targetWords) + '</div>' +
+          (readingEnrichBusy && entry.passage === readingEnrichPassage
+            ? '<p class="reading-enrich-status" role="status">正在补全生词释义…</p>'
+            : '') +
           '<p class="reading-tap-hint">点任意英文单词可看释义；词库词可加入复习；绿色为目标词。做完 4 题再提交，提交前不显示答案。</p>' +
           readingQuestionsHtml(entry) +
           (entry.submitted
@@ -4569,6 +4849,12 @@
     readingError = '';
     renderReading();
     showToast('阅读已生成，先做题再提交。');
+    // 文章先显示，随后在后台把未收录的词补进自定义词库。
+    try {
+      enrichReadingOov(entry.passage);
+    } catch (error) {
+      console.warn('补全阅读生词失败：', error);
+    }
   }
 
   function generateReading(attempt) {
