@@ -20,7 +20,7 @@
   const READING_HISTORY_KEY = 'bcz_reading_history';
   const DEEPSEEK_ENDPOINT = 'https://api.deepseek.com/chat/completions';
   const DEEPSEEK_MODELS = ['deepseek-chat', 'deepseek-reasoner'];
-  const READING_WORD_CAP = 20;
+  const READING_WORD_CAP = 50;
   const READING_HISTORY_LIMIT = 20;
   const DEFAULT_SETTINGS = Object.freeze({
     dailyNew: 20,
@@ -42,11 +42,12 @@
   const MAX_DAILY_NEW = 200;
   const BROWSE_PAGE_SIZE = 100;
   const WEEKDAY_NAMES = ['日', '一', '二', '三', '四', '五', '六'];
-  const ROUTES = ['home', 'study', 'browse', 'reading', 'stats', 'settings', 'books'];
+  const ROUTES = ['home', 'study', 'browse', 'review', 'reading', 'stats', 'settings', 'books'];
   const PAGE_TITLES = {
     home: '拾词 · 背单词',
     study: '学习 · 拾词',
     browse: '词表 · 拾词',
+    review: '复习 · 拾词',
     reading: '每日阅读 · 拾词',
     stats: '统计 · 拾词',
     settings: '设置 · 拾词',
@@ -89,6 +90,7 @@
     home: document.getElementById('view-home'),
     study: document.getElementById('view-study'),
     browse: document.getElementById('view-browse'),
+    review: document.getElementById('view-review'),
     stats: document.getElementById('view-stats'),
     reading: document.getElementById('view-reading'),
     settings: document.getElementById('view-settings'),
@@ -109,6 +111,7 @@
   let currentRoute = '';
   let session = null;
   let studyLocked = false;
+  let reviewSession = null;
   let browseQuery = '';
   let browseFilter = 'all';
   let browseBookFilter = 'all';
@@ -763,8 +766,13 @@
     return Math.max(0, state.settings.dailyNew - getNewTodayCount());
   }
 
+  // 每日新词数是“软目标”：每轮仍按目标数量取词，完成后可以继续。
+  function getNewBatchSize() {
+    return state.settings.dailyNew > 0 ? state.settings.dailyNew : 0;
+  }
+
   function getAvailableNewCount() {
-    return Math.min(getRemainingNewCount(), getNewWords().length);
+    return Math.min(getNewBatchSize(), getNewWords().length);
   }
 
   function hasActivityOn(key) {
@@ -855,17 +863,13 @@
 
   /* ---------- 学习队列与进度更新 ---------- */
 
+  // 学习页只负责新词；到期词统一进入「复习」模块。
   function buildStudyQueue() {
-    const remainingNew = getRemainingNewCount();
-    const dueCards = getDueWords().map(function (word) {
-      return { word: word, isNew: false, isRetry: false };
-    });
-    const newCards = getNewWords()
-      .slice(0, remainingNew)
+    return getNewWords()
+      .slice(0, getNewBatchSize())
       .map(function (word) {
         return { word: word, isNew: true, isRetry: false };
       });
-    return dueCards.concat(newCards);
   }
 
   function intervalForStage(stage) {
@@ -886,17 +890,14 @@
   function startStudy() {
     const queue = buildStudyQueue();
     if (!queue.length) {
-      const nextReviewAt = getNextReviewTime();
       if (getSelectionSummary().unitCount === 0 && getActiveWords().length) {
         showToast('还没有选择学习单元，请先到「选择词书」勾选。');
       } else if (state.settings.dailyNew === 0 && getNewWords().length) {
         showToast('每日新词已暂停，可在设置中开启。');
-      } else if (nextReviewAt) {
-        showToast('下一批复复习在 ' + formatRelativeTime(nextReviewAt - Date.now()) + '。');
-      } else if (getNewWords().length) {
-        showToast('今天的新词目标已经完成了。');
+      } else if (getDueWords().length) {
+        showToast('新词已经学完，可以去「复习」巩固待复习的词。');
       } else {
-        showToast('词库里暂时没有可学习的单词。');
+        showToast('所选单元暂时没有可学习的新词了。');
       }
       return;
     }
@@ -904,18 +905,15 @@
     navigate('study');
   }
 
-  function rateCurrent(rating) {
-    if (studyLocked || !session || !session.queue.length) return;
-    if (rating !== 'known' && rating !== 'fuzzy' && rating !== 'unknown') return;
+  // 学习与复习共用的评分调度；复习传入 isIntroduction: false。
+  function applyRating(word, rating, options) {
+    if (!word || (rating !== 'known' && rating !== 'fuzzy' && rating !== 'unknown')) return null;
 
-    studyLocked = true;
-    appEl.classList.add('is-answering');
-
-    const card = session.queue.shift();
-    const word = card.word;
     const now = Date.now();
     let progress = getProgress(word);
-    const isIntroduction = !progress;
+    const isIntroduction = options && typeof options.isIntroduction === 'boolean'
+      ? options.isIntroduction
+      : !progress;
 
     if (!progress) {
       progress = {
@@ -943,7 +941,6 @@
     progress.lastResult = rating;
 
     let toastMessage = '';
-    let toastType = '';
 
     if (rating === 'known') {
       if (progress.stage >= 8) {
@@ -961,12 +958,29 @@
       progress.nextReviewAt = now + FIVE_MINUTES;
       toastMessage = '已安排 5 分钟后复习';
     } else {
-      // 不认识：阶段重置，并在本轮稍后再出现一次。
+      // 不认识：阶段重置，并在学习页本轮稍后再出现一次。
       progress.stage = 0;
       progress.nextReviewAt = now + FIVE_MINUTES;
       progress.lapses += 1;
       toastMessage = '已加入本轮稍后复习';
     }
+
+    return {
+      isIntroduction: isIntroduction,
+      toastMessage: toastMessage
+    };
+  }
+
+  function rateCurrent(rating) {
+    if (studyLocked || !session || !session.queue.length) return;
+    if (rating !== 'known' && rating !== 'fuzzy' && rating !== 'unknown') return;
+
+    studyLocked = true;
+    appEl.classList.add('is-answering');
+
+    const card = session.queue.shift();
+    const word = card.word;
+    const result = applyRating(word, rating);
 
     session.ratings[rating] += 1;
     if (!card.isRetry) {
@@ -985,7 +999,7 @@
     saveState();
     renderStudy();
 
-    if (toastMessage) showToast(toastMessage, toastType);
+    if (result && result.toastMessage) showToast(result.toastMessage);
     if (sessionEnded) maybeAutoUploadProgress();
 
     window.setTimeout(function () {
@@ -1098,11 +1112,11 @@
     const dailyTarget = state.settings.dailyNew;
     const availableNew = getAvailableNewCount();
     const due = stats.due;
-    const totalTasks = due + availableNew;
     const hasWords = stats.total > 0;
     const nextReviewAt = getNextReviewTime();
     const selection = getSelectionSummary();
     const selectionEmpty = selection.unitCount === 0;
+    const goalDone = dailyTarget > 0 && stats.newToday >= dailyTarget;
     const targetText = dailyTarget > 0 ? stats.newToday + ' / ' + dailyTarget : '已暂停';
     const newProgress = dailyTarget > 0
       ? Math.min(100, Math.round((stats.newToday / dailyTarget) * 100))
@@ -1111,32 +1125,36 @@
       ? Math.min(100, Math.round((stats.mastered / stats.learned) * 100))
       : 0;
 
-    let ctaText = '今日任务已完成';
+    let ctaText = '暂无新词';
     if (!hasWords) {
       ctaText = '词库还没有单词';
-    } else if (due > 0 && availableNew > 0) {
-      ctaText = '开始今日学习';
-    } else if (due > 0) {
-      ctaText = '开始复习';
+    } else if (selectionEmpty) {
+      ctaText = '去选择词书';
+    } else if (dailyTarget === 0) {
+      ctaText = '新词学习已暂停';
+    } else if (availableNew > 0 && goalDone) {
+      ctaText = '继续学新词';
     } else if (availableNew > 0) {
-      ctaText = '学习新词';
+      ctaText = '学新词';
     }
 
     let helperText = '';
     if (!hasWords) {
       helperText = '在设置中粘贴自定义词，或替换 words.js 即可开始。';
-    } else if (due > 0) {
-      helperText = '先完成 ' + due + ' 个待复习词，今天的复习优先于新词。';
     } else if (selectionEmpty) {
       helperText = '还没有选择学习单元，先到「选择词书」勾选想学的单元。';
+    } else if (availableNew > 0 && goalDone) {
+      helperText = '今日目标已完成，仍可继续学新词' + (due > 0 ? '；另有 ' + due + ' 个词待复习。' : '。');
     } else if (availableNew > 0) {
       helperText = '状态不错，趁现在认识 ' + availableNew + ' 个新词。';
-    } else if (nextReviewAt) {
-      helperText = '今天的任务完成了，' + formatRelativeTime(nextReviewAt - Date.now()) + '会有新的复习。';
+    } else if (due > 0) {
+      helperText = '新词已经学完，去「复习」巩固 ' + due + ' 个到期词。';
     } else if (dailyTarget === 0 && stats.newCount > 0) {
       helperText = '每日新词已暂停，可去设置里恢复学习新词。';
+    } else if (nextReviewAt) {
+      helperText = '今天的任务完成了，' + formatRelativeTime(nextReviewAt - Date.now()) + '会有新的复习。';
     } else if (stats.newCount > 0) {
-      helperText = '今天的新词目标完成了，明天再来继续吧。';
+      helperText = '所选单元的新词学完了，可到「选择词书」再选几个单元。';
     } else {
       helperText = '所有词都已掌握，去词表里随意巩固一下也很好。';
     }
@@ -1151,15 +1169,23 @@
       selectionDesc = '来自 ' + selection.bookCount + ' 册 · 共 ' + selection.wordCount + ' 个词';
     }
 
-    const ctaHtml = selectionEmpty && hasWords && due === 0
+    const ctaHtml = selectionEmpty && hasWords
       ? '<button class="hero-cta" type="button" data-nav="books">' +
           '<span>去选择词书</span>' +
           '<span class="hero-cta-arrow">' + icon('arrow-right', 17) + '</span>' +
         '</button>'
-      : '<button class="hero-cta" type="button" data-action="start-study"' + (totalTasks === 0 ? ' disabled' : '') + '>' +
+      : '<button class="hero-cta" type="button" data-action="start-study"' + (availableNew === 0 ? ' disabled' : '') + '>' +
           '<span>' + ctaText + '</span>' +
           '<span class="hero-cta-arrow">' + icon('arrow-right', 17) + '</span>' +
         '</button>';
+    const reviewCtaHtml = due > 0
+      ? '<button class="hero-review-cta" type="button" data-nav="review">' +
+          '<span class="hero-review-copy">' + icon('refresh', 16) +
+            '<span>复习</span><strong>' + due + '</strong><small>个待复习</small>' +
+          '</span>' +
+          '<span class="hero-review-arrow">' + icon('chevron-right', 15) + '</span>' +
+        '</button>'
+      : '';
 
     const today = new Date();
     const dateText = getDateLabel(today);
@@ -1191,9 +1217,10 @@
           '</div>' +
           '<p class="hero-copy">' + escapeHtml(helperText) + '</p>' +
           ctaHtml +
+          reviewCtaHtml +
           '<div class="hero-foot">' +
             '<span>' + (dailyTarget > 0 ? '今日新词 ' + stats.newToday + ' / ' + dailyTarget : '今日新词已暂停') + '</span>' +
-            '<span>复习优先于新词</span>' +
+            '<span>目标可超额完成 · 复习单独进行</span>' +
           '</div>' +
         '</section>' +
 
@@ -1457,6 +1484,671 @@
     stopPronunciation();
     session = null;
     navigate('home');
+  }
+
+  /* ---------- 复习 ---------- */
+
+  function getUnmasteredWords() {
+    return getActiveWords().filter(function (word) {
+      const progress = getProgress(word);
+      return Boolean(progress && !progress.masteredAt);
+    }).sort(function (a, b) {
+      const pa = getProgress(a);
+      const pb = getProgress(b);
+      const na = pa && pa.nextReviewAt > 0 ? pa.nextReviewAt : Number.MAX_SAFE_INTEGER;
+      const nb = pb && pb.nextReviewAt > 0 ? pb.nextReviewAt : Number.MAX_SAFE_INTEGER;
+      return (na - nb) || a.w.localeCompare(b.w);
+    });
+  }
+
+  function shuffleItems(items) {
+    const result = items.slice();
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const swapIndex = Math.floor(Math.random() * (index + 1));
+      const value = result[index];
+      result[index] = result[swapIndex];
+      result[swapIndex] = value;
+    }
+    return result;
+  }
+
+  function hashText(text) {
+    const value = String(text || '');
+    let hash = 2166136261;
+    for (let index = 0; index < value.length; index += 1) {
+      hash ^= value.charCodeAt(index);
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+  }
+
+  function seededFraction(seed, index) {
+    let value = (seed + Math.imul(index + 1, 2654435761)) >>> 0;
+    value ^= value >>> 16;
+    value = Math.imul(value, 0x45d9f3b);
+    value ^= value >>> 16;
+    return (value >>> 0) / 4294967296;
+  }
+
+  function getReviewModeLabel(mode) {
+    if (mode === 'spell') return '分格拼写';
+    if (mode === 'mixed') return '混合';
+    return '三选一';
+  }
+
+  function getWordPromptText(word, promptType) {
+    return promptType === 'cn' ? word.w : word.cn;
+  }
+
+  function buildChoiceOptions(word, promptType) {
+    const correctText = getWordPromptText(word, promptType);
+    const selectedUnits = getSelectedUnitSet();
+    const allWords = getActiveWords();
+    const isUsable = function (candidate) {
+      if (!candidate || candidate.key === word.key) return false;
+      const text = getWordPromptText(candidate, promptType);
+      return Boolean(text) && text.toLowerCase() !== correctText.toLowerCase();
+    };
+
+    // 优先使用所选单元内的词做干扰项，不够时再从整个词库补齐。
+    let pool = allWords.filter(function (candidate) {
+      return selectedUnits.has(candidate.unit || '') && isUsable(candidate);
+    });
+    if (pool.length < 2) pool = allWords.filter(isUsable);
+
+    const seen = new Set([correctText.toLowerCase()]);
+    const distractors = [];
+    shuffleItems(pool).forEach(function (candidate) {
+      if (distractors.length >= 2) return;
+      const text = getWordPromptText(candidate, promptType);
+      const key = text.toLowerCase();
+      if (seen.has(key)) return;
+      seen.add(key);
+      distractors.push(text);
+    });
+
+    const options = [{ text: correctText, isCorrect: true }].concat(
+      distractors.map(function (text) {
+        return { text: text, isCorrect: false };
+      })
+    );
+    return shuffleItems(options);
+  }
+
+  function buildChoiceCard(word) {
+    const promptType = Math.random() < 0.5 ? 'en' : 'cn';
+    return {
+      mode: 'choice',
+      word: word,
+      promptType: promptType,
+      options: buildChoiceOptions(word, promptType),
+      pickedIndex: -1,
+      correctText: getWordPromptText(word, promptType)
+    };
+  }
+
+  function buildSpellCard(word) {
+    const chars = word.w.split('');
+    const letterPositions = [];
+    chars.forEach(function (char, index) {
+      if (/[A-Za-z]/.test(char)) letterPositions.push(index);
+    });
+
+    const hints = new Set();
+    let hintCount = 0;
+    if (letterPositions.length > 1) {
+      hintCount = clamp(Math.round(letterPositions.length * 0.35), 1, letterPositions.length - 1);
+    }
+
+    // 使用稳定的词条哈希挑选提示位，并略微优先元音，刷新后提示位置不变。
+    const seed = hashText(word.key || word.w);
+    const ranked = letterPositions.map(function (index) {
+      const vowelBonus = /[aeiou]/i.test(chars[index]) ? -0.16 : 0;
+      return { index: index, score: seededFraction(seed, index) + vowelBonus };
+    }).sort(function (a, b) {
+      return (a.score - b.score) || (a.index - b.index);
+    });
+    ranked.slice(0, hintCount).forEach(function (item) {
+      hints.add(item.index);
+    });
+
+    const values = {};
+    chars.forEach(function (char, index) {
+      if (!/[A-Za-z]/.test(char)) {
+        values[index] = char;
+      } else {
+        values[index] = hints.has(index) ? char : '';
+      }
+    });
+
+    return {
+      mode: 'spell',
+      word: word,
+      chars: chars,
+      hints: hints,
+      values: values,
+      editableIndices: letterPositions.filter(function (index) {
+        return !hints.has(index);
+      }),
+      correctText: word.w
+    };
+  }
+
+  function prepareReviewCard() {
+    if (!reviewSession) return;
+    const word = reviewSession.cards[reviewSession.index];
+    if (!word) {
+      reviewSession.finished = true;
+      reviewSession.cardState = null;
+      return;
+    }
+    const mode = reviewSession.mode === 'mixed'
+      ? (Math.random() < 0.5 ? 'choice' : 'spell')
+      : reviewSession.mode;
+    const cardState = mode === 'spell' ? buildSpellCard(word) : buildChoiceCard(word);
+    reviewSession.cardState = cardState;
+    reviewSession.answered = false;
+    reviewSession.lastResult = null;
+  }
+
+  function startReviewSession(mode) {
+    if (mode !== 'choice' && mode !== 'spell' && mode !== 'mixed') return;
+    const dueWords = getDueWords();
+    const early = dueWords.length === 0;
+    const source = early ? getUnmasteredWords() : dueWords;
+    if (!source.length) {
+      showToast(early ? '暂时没有可复习的未掌握词。' : '暂无待复习的单词。');
+      return;
+    }
+
+    reviewSession = {
+      mode: mode,
+      cards: source.slice(),
+      index: 0,
+      total: source.length,
+      answeredCount: 0,
+      correct: 0,
+      wrong: 0,
+      answered: false,
+      lastResult: null,
+      cardState: null,
+      finished: false,
+      early: early
+    };
+    prepareReviewCard();
+    applyRoute();
+    window.scrollTo(0, 0);
+  }
+
+  function reviewStatHtml(count, label) {
+    return '<div class="review-stat">' +
+      '<strong>' + count + '</strong><span>' + label + '</span>' +
+    '</div>';
+  }
+
+  function renderReviewHub() {
+    const dueCount = getDueWords().length;
+    const unmasteredCount = getUnmasteredWords().length;
+    const early = dueCount === 0;
+    const canReview = dueCount > 0 || unmasteredCount > 0;
+    const todayReviewed = getDaily(getDayKey()).reviewed;
+    const modes = [
+      { id: 'choice', iconName: 'sparkle', title: '三选一', desc: '英中互选，快速唤醒记忆' },
+      { id: 'spell', iconName: 'read', title: '分格拼写', desc: '按字母格拼出完整单词' },
+      { id: 'mixed', iconName: 'refresh', title: '混合', desc: '两种题型随机切换' }
+    ];
+
+    let sourceNote = '所有已学单词都已掌握，暂时没有待复习的内容。';
+    if (dueCount > 0) {
+      sourceNote = '按到期时间排序复习；答对会推进下一阶段，答错会重新安排。';
+    } else if (unmasteredCount > 0) {
+      sourceNote = '暂无到期词，可选择任意模式提前复习 ' + unmasteredCount + ' 个未掌握词。';
+    }
+
+    views.review.innerHTML =
+      '<div class="page review-page">' +
+        '<header class="page-head">' +
+          '<div>' +
+            '<p class="page-kicker">间隔复习</p>' +
+            '<h1 class="page-title">复习</h1>' +
+            '<p class="page-sub">把到期的词重新想起来。复习与学新词分开，结果会写入原有的艾宾浩斯进度。</p>' +
+          '</div>' +
+        '</header>' +
+
+        '<section class="review-overview" aria-label="复习概况">' +
+          '<div class="review-stat-grid">' +
+            reviewStatHtml(dueCount, '今日待复习') +
+            reviewStatHtml(unmasteredCount, '未掌握') +
+          '</div>' +
+          '<p class="review-overview-note">今日已复习 ' + todayReviewed + ' 次 · ' + escapeHtml(sourceNote) + '</p>' +
+        '</section>' +
+
+        '<section class="section review-modes-section" aria-labelledby="review-mode-title">' +
+          '<div class="section-head"><h2 id="review-mode-title">' +
+            (early && unmasteredCount > 0 ? '提前复习未掌握词' : '选择复习方式') +
+          '</h2></div>' +
+          '<div class="review-mode-list">' +
+            modes.map(function (mode) {
+              return '<button class="review-mode-card" type="button" data-action="start-review" data-mode="' + mode.id + '">' +
+                '<span class="review-mode-icon">' + icon(mode.iconName, 20) + '</span>' +
+                '<span class="review-mode-copy"><strong>' + mode.title + '</strong><span>' + mode.desc + '</span></span>' +
+                '<span class="review-mode-arrow">' + icon('chevron-right', 16) + '</span>' +
+              '</button>';
+            }).join('') +
+          '</div>' +
+          '<p class="review-section-note">' + (canReview ? '每组复习会从当前待复习或未掌握词池中取词。' : '去学几个新词后，这里就会出现可复习的内容。') + '</p>' +
+        '</section>' +
+
+        '<p class="muted-note">答对按「认识」推进阶段 · 拼写只差一个字母按「模糊」安排</p>' +
+      '</div>';
+  }
+
+  function choicePromptHtml(cardState) {
+    const word = cardState.word;
+    const isEnglish = cardState.promptType === 'en';
+    const phonetic = formatPhonetic(word.ph);
+    const subText = isEnglish ? phonetic : (word.pos || '');
+    return '<div class="review-prompt">' +
+      '<p class="review-prompt-label">' + (isEnglish ? '选择正确的中文释义' : '选择正确的英文单词') + '</p>' +
+      '<p class="review-prompt-word' + (isEnglish ? '' : ' is-meaning') + '">' +
+        escapeHtml(isEnglish ? word.w : word.cn) +
+      '</p>' +
+      (subText ? '<p class="review-prompt-sub">' + escapeHtml(subText) + '</p>' : '') +
+    '</div>';
+  }
+
+  function choiceOptionsHtml(cardState, answered) {
+    return '<div class="review-options" role="group" aria-label="选择答案">' +
+      cardState.options.map(function (option, index) {
+        let className = 'review-option';
+        if (answered && option.isCorrect) className += ' is-correct';
+        if (answered && index === cardState.pickedIndex && !option.isCorrect) className += ' is-wrong';
+        return '<button class="' + className + '" type="button" data-action="review-choice" data-index="' + index + '"' +
+          (answered ? ' disabled' : '') + '>' +
+          '<span class="review-option-key">' + String.fromCharCode(65 + index) + '</span>' +
+          '<span class="review-option-text">' + escapeHtml(option.text) + '</span>' +
+        '</button>';
+      }).join('') +
+    '</div>';
+  }
+
+  function spellPromptHtml(cardState, answered) {
+    const word = cardState.word;
+    const phonetic = formatPhonetic(word.ph);
+    const subText = [phonetic, word.pos].filter(Boolean).join(' · ');
+    const boxes = cardState.chars.map(function (char, index) {
+      if (!/[A-Za-z]/.test(char)) {
+        const spaceClass = char === ' ' ? ' is-space' : '';
+        return '<span class="letter-box letter-fixed' + spaceClass + '" aria-hidden="true">' +
+          (char === ' ' ? '' : escapeHtml(char)) +
+        '</span>';
+      }
+      const isHint = cardState.hints.has(index);
+      const value = cardState.values[index] || '';
+      return '<input class="letter-box letter-input' + (isHint ? ' is-hint' : '') + '"' +
+        ' type="text" inputmode="text" maxlength="1" autocomplete="off" autocapitalize="off"' +
+        ' spellcheck="false" data-letter-index="' + index + '"' +
+        ' value="' + escapeAttr(value) + '"' +
+        ' aria-label="第 ' + (index + 1) + ' 个字母"' +
+        (isHint ? ' readonly tabindex="-1"' : '') +
+        (answered ? ' disabled' : '') + '>' +
+        '';
+    }).join('');
+
+    return '<div class="review-prompt review-spell-prompt">' +
+        '<p class="review-prompt-label">根据释义拼出单词</p>' +
+        '<p class="review-prompt-word is-meaning">' + escapeHtml(word.cn || '暂无释义') + '</p>' +
+        (subText ? '<p class="review-prompt-sub">' + escapeHtml(subText) + '</p>' : '') +
+      '</div>' +
+      '<div class="spell-boxes" style="--letter-count:' + cardState.chars.length + '" role="group" aria-label="拼写单词">' +
+        boxes +
+      '</div>' +
+      '<p class="spell-hint">已给出部分字母提示 · 填满后自动检查</p>';
+  }
+
+  function reviewFeedbackHtml() {
+    if (!reviewSession || !reviewSession.answered || !reviewSession.lastResult) return '';
+    const result = reviewSession.lastResult;
+    const word = reviewSession.cards[reviewSession.index];
+    const isLast = reviewSession.index >= reviewSession.cards.length - 1;
+    let title = result.correct ? '回答正确' : '这次没答对';
+    let note = '';
+    if (result.correct) {
+      note = '已按「认识」推进复习阶段。';
+    } else if (result.nearMiss) {
+      note = '正确拼写是「' + result.correctText + '」，只差一个字母，已按「模糊」安排 5 分钟后复习。';
+    } else {
+      note = '正确答案是「' + result.correctText + '」，已按「不认识」重新安排复习。';
+    }
+    return '<div class="review-feedback ' + (result.correct ? 'is-correct' : 'is-wrong') + '" role="status">' +
+        '<p class="review-feedback-title">' + title + '</p>' +
+        '<p class="review-feedback-copy">' + escapeHtml(note) + (word && word.cn ? ' ' + escapeHtml(word.cn) : '') + '</p>' +
+      '</div>' +
+      '<div class="review-quiz-actions">' +
+        '<button class="btn btn-primary btn-block" type="button" data-action="review-next">' +
+          (isLast ? '查看本轮结果' : '下一题') +
+        '</button>' +
+      '</div>';
+  }
+
+  function renderReviewQuiz() {
+    if (!reviewSession) {
+      renderReviewHub();
+      return;
+    }
+    if (reviewSession.finished) {
+      renderReviewSummary();
+      return;
+    }
+    if (!reviewSession.cardState) prepareReviewCard();
+    if (reviewSession.finished) {
+      renderReviewSummary();
+      return;
+    }
+
+    const index = reviewSession.index;
+    const word = reviewSession.cards[index];
+    const cardState = reviewSession.cardState;
+    const progress = getProgress(word);
+    const answered = reviewSession.answered;
+    const progressPercent = reviewSession.total > 0
+      ? Math.round((reviewSession.answeredCount / reviewSession.total) * 100)
+      : 100;
+    const modeLabel = getReviewModeLabel(cardState.mode);
+    const stageLabel = progress ? '阶段 ' + progress.stage + ' / 8' : '复习';
+    const promptHtml = cardState.mode === 'spell'
+      ? spellPromptHtml(cardState, answered)
+      : choicePromptHtml(cardState) + choiceOptionsHtml(cardState, answered);
+    const hintHtml = answered || cardState.mode === 'spell'
+      ? ''
+      : '<p class="review-quiz-hint">选择一项作答，提交前不会显示答案。</p>';
+
+    views.review.innerHTML =
+      '<div class="study-page review-quiz-page">' +
+        '<h1 class="sr-only">复习单词</h1>' +
+        '<header class="study-topbar">' +
+          '<button class="icon-button study-back" type="button" data-action="review-exit" aria-label="退出复习，返回复习页">' + icon('arrow-left', 20) + '</button>' +
+          '<div class="study-progress">' +
+            '<div class="study-progress-copy"><span><strong>' + reviewSession.answeredCount + ' / ' + reviewSession.total + '</strong> 已作答</span><span>' + modeLabel + (reviewSession.early ? ' · 提前复习' : '') + '</span></div>' +
+            '<div class="study-progress-track" role="progressbar" aria-label="本轮复习进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + progressPercent + '"><span class="study-progress-fill" style="width:' + progressPercent + '%"></span></div>' +
+          '</div>' +
+        '</header>' +
+        '<div class="review-quiz-main">' +
+          '<article class="review-card" aria-label="复习单词 ' + escapeAttr(word.w) + '">' +
+            '<div class="review-card-meta">' +
+              '<span class="mode-badge is-review">' + modeLabel + '</span>' +
+              (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
+              '<span class="stage-label">' + escapeHtml(stageLabel) + '</span>' +
+            '</div>' +
+            promptHtml +
+            hintHtml +
+            reviewFeedbackHtml() +
+          '</article>' +
+        '</div>' +
+      '</div>';
+
+    if (cardState.mode === 'spell' && !answered) {
+      window.setTimeout(focusFirstReviewLetter, 40);
+    }
+  }
+
+  function renderReviewSummary() {
+    if (!reviewSession) {
+      renderReviewHub();
+      return;
+    }
+    const total = reviewSession.correct + reviewSession.wrong;
+    const accuracy = total > 0 ? Math.round((reviewSession.correct / total) * 100) : 0;
+    views.review.innerHTML =
+      '<div class="study-page review-quiz-page">' +
+        '<div class="summary-shell">' +
+          '<div class="summary-card">' +
+            '<div class="summary-orbit"><span class="summary-icon">' + icon('check', 26) + '</span></div>' +
+            '<p class="summary-eyebrow">复习完成</p>' +
+            '<h2 class="summary-title">本轮答对 ' + reviewSession.correct + ' 个</h2>' +
+            '<p class="summary-copy">复习结果已经写回艾宾浩斯进度。答对的词会进入下一阶段，答错的词会按计划重新出现。</p>' +
+            '<div class="summary-metrics">' +
+              '<div class="summary-metric"><strong>' + reviewSession.correct + '</strong><span>答对</span></div>' +
+              '<div class="summary-metric"><strong>' + reviewSession.wrong + '</strong><span>答错</span></div>' +
+              '<div class="summary-metric"><strong>' + accuracy + '%</strong><span>正确率</span></div>' +
+            '</div>' +
+            '<div class="summary-actions">' +
+              '<button class="btn btn-primary btn-block" type="button" data-action="review-back-hub">回到复习</button>' +
+              '<button class="btn btn-secondary btn-block" type="button" data-action="review-home">回到首页</button>' +
+            '</div>' +
+            '<p class="summary-note">拼写差一个字母会按「模糊」处理，其余错误按「不认识」处理。</p>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function renderReview() {
+    if (!views.review) return;
+    if (reviewSession) renderReviewQuiz();
+    else renderReviewHub();
+  }
+
+  function recordReviewAnswer(correct, details) {
+    if (!reviewSession || reviewSession.answered || !reviewSession.cardState) return;
+    const word = reviewSession.cards[reviewSession.index];
+    if (!word) return;
+    const nearMiss = Boolean(details && details.nearMiss);
+    const rating = correct ? 'known' : (nearMiss ? 'fuzzy' : 'unknown');
+
+    applyRating(word, rating, { isIntroduction: false });
+    reviewSession.answered = true;
+    reviewSession.answeredCount += 1;
+    reviewSession.correct += correct ? 1 : 0;
+    reviewSession.wrong += correct ? 0 : 1;
+    reviewSession.lastResult = {
+      correct: correct,
+      rating: rating,
+      nearMiss: nearMiss,
+      correctText: details && details.correctText ? details.correctText : reviewSession.cardState.correctText
+    };
+    saveState();
+    renderReview();
+  }
+
+  function chooseReviewOption(index) {
+    if (!reviewSession || reviewSession.answered || !reviewSession.cardState) return;
+    const cardState = reviewSession.cardState;
+    if (cardState.mode !== 'choice') return;
+    const option = cardState.options[index];
+    if (!option) return;
+    cardState.pickedIndex = index;
+    recordReviewAnswer(option.isCorrect, {
+      correctText: cardState.correctText
+    });
+  }
+
+  function normalizeSpellText(value) {
+    return String(value || '').normalize('NFKC').toLowerCase();
+  }
+
+  function getSpellAnswer(cardState) {
+    return cardState.chars.map(function (char, index) {
+      return cardState.values[index] || '';
+    }).join('');
+  }
+
+  function isSpellComplete(cardState) {
+    return cardState.editableIndices.every(function (index) {
+      return Boolean(cardState.values[index]);
+    });
+  }
+
+  function editDistance(a, b) {
+    const left = String(a || '');
+    const right = String(b || '');
+    const previous = [];
+    for (let column = 0; column <= right.length; column += 1) previous[column] = column;
+    for (let row = 1; row <= left.length; row += 1) {
+      let diagonal = previous[0];
+      previous[0] = row;
+      for (let column = 1; column <= right.length; column += 1) {
+        const saved = previous[column];
+        const cost = left.charAt(row - 1) === right.charAt(column - 1) ? 0 : 1;
+        previous[column] = Math.min(
+          previous[column] + 1,
+          previous[column - 1] + 1,
+          diagonal + cost
+        );
+        diagonal = saved;
+      }
+    }
+    return previous[right.length];
+  }
+
+  function submitSpellReview() {
+    if (!reviewSession || reviewSession.answered || !reviewSession.cardState) return;
+    const cardState = reviewSession.cardState;
+    if (cardState.mode !== 'spell' || !isSpellComplete(cardState)) return;
+    const word = reviewSession.cards[reviewSession.index];
+    if (!word) return;
+    const answer = normalizeSpellText(getSpellAnswer(cardState));
+    const target = normalizeSpellText(word.w);
+    const correct = answer === target;
+    const nearMiss = !correct && editDistance(answer, target) === 1;
+    recordReviewAnswer(correct, {
+      correctText: word.w,
+      nearMiss: nearMiss
+    });
+  }
+
+  function nextReviewCard() {
+    if (!reviewSession || !reviewSession.answered) return;
+    reviewSession.index += 1;
+    if (reviewSession.index >= reviewSession.cards.length) {
+      reviewSession.finished = true;
+      reviewSession.cardState = null;
+      reviewSession.answered = false;
+      maybeAutoUploadProgress();
+      renderReview();
+      return;
+    }
+    prepareReviewCard();
+    renderReview();
+  }
+
+  function exitReviewSession() {
+    stopPronunciation();
+    reviewSession = null;
+    maybeAutoUploadProgress();
+    applyRoute();
+    window.scrollTo(0, 0);
+  }
+
+  function getReviewLetterInputs() {
+    if (!views.review) return [];
+    return Array.prototype.slice.call(views.review.querySelectorAll('.letter-input:not([readonly])'));
+  }
+
+  function focusFirstReviewLetter() {
+    if (!reviewSession || reviewSession.answered || !reviewSession.cardState) return;
+    if (reviewSession.cardState.mode !== 'spell') return;
+    const inputs = getReviewLetterInputs();
+    for (let index = 0; index < inputs.length; index += 1) {
+      if (!inputs[index].value) {
+        try {
+          inputs[index].focus({ preventScroll: true });
+        } catch (error) {
+          inputs[index].focus();
+        }
+        return;
+      }
+    }
+  }
+
+  function focusReviewLetterAtOrAfter(index) {
+    const inputs = getReviewLetterInputs();
+    for (let cursor = 0; cursor < inputs.length; cursor += 1) {
+      if (Number(inputs[cursor].getAttribute('data-letter-index')) >= index) {
+        try {
+          inputs[cursor].focus({ preventScroll: true });
+        } catch (error) {
+          inputs[cursor].focus();
+        }
+        return;
+      }
+    }
+  }
+
+  function focusReviewLetterBefore(index) {
+    const inputs = getReviewLetterInputs();
+    for (let cursor = inputs.length - 1; cursor >= 0; cursor -= 1) {
+      if (Number(inputs[cursor].getAttribute('data-letter-index')) < index) {
+        try {
+          inputs[cursor].focus({ preventScroll: true });
+        } catch (error) {
+          inputs[cursor].focus();
+        }
+        return;
+      }
+    }
+  }
+
+  function handleReviewLetterInput(input) {
+    if (!reviewSession || reviewSession.answered || !reviewSession.cardState) return;
+    const cardState = reviewSession.cardState;
+    if (cardState.mode !== 'spell') return;
+    const index = Number(input.getAttribute('data-letter-index'));
+    const char = input.value.replace(/[^A-Za-z]/g, '').slice(-1);
+    input.value = char;
+    cardState.values[index] = char;
+
+    if (char) focusReviewLetterAtOrAfter(index + 1);
+    if (isSpellComplete(cardState)) {
+      const pendingCardState = cardState;
+      window.setTimeout(function () {
+        if (reviewSession && reviewSession.cardState === pendingCardState && !reviewSession.answered && isSpellComplete(pendingCardState)) {
+          submitSpellReview();
+        }
+      }, 120);
+    }
+  }
+
+  function handleReviewKeydown(event) {
+    if (currentRoute !== 'review' || !reviewSession || reviewSession.finished) return;
+    if (event.metaKey || event.ctrlKey || event.altKey) return;
+    const target = event.target;
+    const cardState = reviewSession.cardState;
+
+    if (target instanceof Element && target.classList.contains('letter-input') && cardState && cardState.mode === 'spell' && !reviewSession.answered) {
+      const index = Number(target.getAttribute('data-letter-index'));
+      if (event.key === 'Backspace' && !target.value) {
+        event.preventDefault();
+        focusReviewLetterBefore(index);
+        return;
+      }
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        focusReviewLetterBefore(index);
+        return;
+      }
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        focusReviewLetterAtOrAfter(index + 1);
+        return;
+      }
+    }
+
+    if (reviewSession.answered) {
+      if ((event.key === 'Enter' || event.key === ' ') && !isTypingTarget(target)) {
+        if (target instanceof Element && target.closest('button, a, summary')) return;
+        event.preventDefault();
+        nextReviewCard();
+      }
+      return;
+    }
+
+    if (cardState && cardState.mode === 'choice' && !isTypingTarget(target)) {
+      const optionIndex = ['1', '2', '3'].indexOf(event.key);
+      if (optionIndex !== -1) {
+        event.preventDefault();
+        chooseReviewOption(optionIndex);
+      }
+    }
   }
 
   /* ---------- 词表浏览 ---------- */
@@ -2719,8 +3411,8 @@
         (word.pos ? ' (' + word.pos + ')' : '') +
         (word.cn ? ' — ' + word.cn : '');
     }).join('\n');
-    const system = '你是广西新高考英语阅读命题老师。只输出一个 JSON 对象，不要使用 Markdown 代码块，不要附加解释。';
-    let user = '请写一篇原创英语阅读短文，难度对标广西新高考（新课标阅读理解，约 CEFR B1–B2）。\n' +
+    const system = '你是高考英语阅读命题老师。只输出一个 JSON 对象，不要使用 Markdown 代码块，不要附加解释。';
+    let user = '请写一篇原创英语阅读短文，难度对标高考阅读理解（新课标，约 CEFR B1–B2）。\n' +
       '要求：\n' +
       '1. passage 为 300 到 350 个英文单词，主题完整，不要抄袭真题或已发表文章。\n' +
       '2. 下列每个目标词都要以原形至少出现一次，并用双星号标出，例如 **exchange**。\n' +
@@ -3079,7 +3771,7 @@
       '<div class="page reading-page">' +
         '<header class="page-head">' +
           '<div>' +
-            '<p class="page-kicker">广西新高考 · 阅读理解</p>' +
+            '<p class="page-kicker">高考阅读理解</p>' +
             '<h1 class="page-title">每日阅读</h1>' +
             '<p class="page-sub">用今天新学和尚未掌握的词，在浏览器里直接请 DeepSeek 写一篇原创短文和四道选择题。</p>' +
           '</div>' +
@@ -3269,7 +3961,7 @@
         '<section class="settings-card" aria-labelledby="plan-title">' +
           '<div class="settings-card-head">' +
             '<h2 class="settings-card-title" id="plan-title">学习计划</h2>' +
-            '<p class="settings-card-desc">每天的新词上限；复习任务优先于新词，且不受此上限影响。</p>' +
+            '<p class="settings-card-desc">每天的新词目标；达到后仍可继续学新词，复习在「复习」中单独进行。</p>' +
           '</div>' +
           '<div class="setting-row">' +
             '<div class="setting-copy">' +
@@ -3368,7 +4060,7 @@
                 return '<option value="' + model + '"' + selected + '>' + label + '</option>';
               }).join('') +
             '</select>' +
-            '<p class="sync-hint">默认使用 deepseek-chat。生成内容是广西新高考难度的原创短文和四道选择题。</p>' +
+            '<p class="sync-hint">默认使用 deepseek-chat。生成内容是高考阅读理解难度的原创短文和四道选择题。</p>' +
           '</div>' +
         '</section>' +
 
@@ -3683,13 +4375,15 @@
         button.removeAttribute('aria-current');
       }
     });
-    if (tabbarEl) tabbarEl.setAttribute('aria-hidden', route === 'study' ? 'true' : 'false');
+    const hideTabbar = route === 'study' || (route === 'review' && Boolean(reviewSession));
+    if (tabbarEl) tabbarEl.setAttribute('aria-hidden', hideTabbar ? 'true' : 'false');
   }
 
   function renderCurrentRoute() {
     if (currentRoute === 'home') renderHome();
     else if (currentRoute === 'study') renderStudy();
     else if (currentRoute === 'browse') renderBrowse();
+    else if (currentRoute === 'review') renderReview();
     else if (currentRoute === 'reading') renderReading();
     else if (currentRoute === 'stats') renderStats();
     else if (currentRoute === 'settings') renderSettings();
@@ -3709,6 +4403,10 @@
       stopPronunciation();
       maybeAutoUploadProgress();
     }
+    if (previousRoute === 'review' && route !== 'review') {
+      reviewSession = null;
+      maybeAutoUploadProgress();
+    }
 
     currentRoute = route;
     document.title = PAGE_TITLES[route] || PAGE_TITLES.home;
@@ -3717,6 +4415,7 @@
       if (views[key]) views[key].hidden = key !== route;
     });
     appEl.classList.toggle('is-studying', route === 'study');
+    appEl.classList.toggle('is-reviewing', route === 'review' && Boolean(reviewSession));
     syncNavigation(route);
 
     if (previousRoute !== route) {
@@ -3789,6 +4488,21 @@
       navigate('home');
     } else if (action === 'continue-study') {
       continueStudy();
+    } else if (action === 'start-review') {
+      startReviewSession(actionEl.getAttribute('data-mode'));
+    } else if (action === 'review-choice') {
+      chooseReviewOption(Number(actionEl.getAttribute('data-index')));
+    } else if (action === 'review-next') {
+      nextReviewCard();
+    } else if (action === 'review-exit') {
+      exitReviewSession();
+    } else if (action === 'review-back-hub') {
+      reviewSession = null;
+      applyRoute();
+      window.scrollTo(0, 0);
+    } else if (action === 'review-home') {
+      reviewSession = null;
+      navigate('home');
     } else if (action === 'browse-filter') {
       setBrowseFilter(actionEl.getAttribute('data-filter'));
     } else if (action === 'browse-more') {
@@ -3846,6 +4560,12 @@
     const target = event.target;
     if (!target) return;
 
+    if (currentRoute === 'review' && reviewSession && typeof target.classList !== 'undefined' &&
+        target.classList.contains('letter-input')) {
+      handleReviewLetterInput(target);
+      return;
+    }
+
     if (target.id === 'browse-search') {
       browseQuery = target.value;
       browseLimit = BROWSE_PAGE_SIZE;
@@ -3890,6 +4610,10 @@
   }
 
   function handleDocumentKeydown(event) {
+    if (currentRoute === 'review') {
+      handleReviewKeydown(event);
+      return;
+    }
     if (currentRoute !== 'study' || !session) return;
     if (event.metaKey || event.ctrlKey || event.altKey) return;
 
