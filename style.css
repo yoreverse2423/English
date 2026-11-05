@@ -176,7 +176,7 @@ textarea:focus-visible,
   bottom: calc(10px + env(safe-area-inset-bottom));
   left: 50%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   width: min(calc(100% - 24px), var(--dock-width));
   padding: 8px;
   background: rgba(255, 253, 248, 0.92);
@@ -188,7 +188,8 @@ textarea:focus-visible,
   transform: translateX(-50%);
 }
 
-.app.is-studying .tabbar {
+.app.is-studying .tabbar,
+.app.is-reviewing .tabbar {
   display: none;
 }
 
@@ -588,6 +589,58 @@ textarea:focus-visible,
 .hero-cta:disabled .hero-cta-arrow {
   color: rgba(8, 75, 62, 0.42);
   background: rgba(8, 75, 62, 0.09);
+}
+
+.hero-review-cta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 46px;
+  margin-top: 9px;
+  padding: 0 15px;
+  color: rgba(244, 251, 247, 0.86);
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(233, 247, 239, 0.17);
+  border-radius: 15px;
+  font-size: 12.5px;
+  font-weight: 700;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.hero-review-cta:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero-review-cta:active {
+  transform: scale(0.985);
+}
+
+.hero-review-copy {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+
+.hero-review-copy strong {
+  color: #fff;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-review-copy small {
+  color: rgba(241, 249, 245, 0.58);
+  font-size: 10.5px;
+  font-weight: 500;
+}
+
+.hero-review-arrow {
+  display: inline-flex;
+  color: rgba(241, 249, 245, 0.55);
 }
 
 .hero-foot {
@@ -1671,6 +1724,407 @@ textarea:focus-visible,
   color: var(--muted);
   font-size: 10.5px;
   line-height: 1.6;
+}
+
+/* =========================================================
+   复习
+   ========================================================= */
+
+.review-overview {
+  padding: 19px;
+  color: #f6fbf7;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.07), transparent 50%),
+    linear-gradient(135deg, #0d6653 0%, #0b4d40 60%, #0a3c33 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 42px rgba(9, 67, 54, 0.18);
+}
+
+.review-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.review-stat {
+  min-width: 0;
+  padding: 13px 14px;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(233, 247, 239, 0.14);
+  border-radius: 15px;
+}
+
+.review-stat strong {
+  display: block;
+  color: #fff;
+  font-size: clamp(34px, 10vw, 44px);
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.review-stat span {
+  display: block;
+  margin-top: 7px;
+  color: rgba(241, 249, 245, 0.66);
+  font-size: 11.5px;
+}
+
+.review-overview-note {
+  margin: 13px 2px 0;
+  color: rgba(241, 249, 245, 0.64);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.review-modes-section {
+  margin-top: 24px;
+}
+
+.review-mode-list {
+  display: grid;
+  gap: 10px;
+}
+
+.review-mode-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  padding: 14px;
+  text-align: left;
+  background: rgba(255, 253, 248, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.review-mode-card:hover {
+  border-color: rgba(13, 107, 87, 0.22);
+  box-shadow: 0 14px 35px rgba(27, 49, 39, 0.09);
+  transform: translateY(-1px);
+}
+
+.review-mode-card:active {
+  transform: scale(0.985);
+}
+
+.review-mode-icon {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 14px;
+}
+
+.review-mode-copy {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.review-mode-copy strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.review-mode-copy span {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.review-mode-arrow {
+  flex: 0 0 auto;
+  color: var(--line-strong);
+}
+
+.review-section-note {
+  margin: 10px 4px 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.55;
+}
+
+.review-quiz-page {
+  background: transparent;
+}
+
+.review-quiz-main {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.review-card {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  padding: 20px 19px 22px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+  animation: card-in 280ms cubic-bezier(0.2, 0.78, 0.2, 1);
+}
+
+.review-card-meta {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+}
+
+.review-card-meta .stage-label {
+  margin-left: auto;
+}
+
+.review-prompt {
+  flex: 0 0 auto;
+  padding: clamp(28px, 7vh, 56px) 0 24px;
+  text-align: center;
+}
+
+.review-prompt-label {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+}
+
+.review-prompt-word {
+  max-width: 100%;
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font-size: clamp(36px, 10.5vw, 54px);
+  font-weight: 760;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.review-prompt-word.is-meaning {
+  font-size: clamp(20px, 5.4vw, 28px);
+  font-weight: 650;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.review-prompt-sub {
+  min-height: 1.2em;
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.review-spell-prompt {
+  padding-bottom: 17px;
+}
+
+.review-options {
+  display: grid;
+  gap: 9px;
+  margin-top: auto;
+}
+
+.review-option {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  width: 100%;
+  min-height: 58px;
+  padding: 11px 14px;
+  color: var(--ink);
+  text-align: left;
+  background: var(--surface-soft);
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  transition: color 150ms ease, background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.review-option:not(:disabled):hover {
+  background: var(--surface-tint);
+  border-color: rgba(13, 107, 87, 0.25);
+}
+
+.review-option:not(:disabled):active {
+  transform: scale(0.987);
+}
+
+.review-option-key {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.review-option-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.review-option.is-correct {
+  color: #0b604f;
+  background: #e7f4ed;
+  border-color: #b6dfce;
+}
+
+.review-option.is-correct .review-option-key {
+  color: #fff;
+  background: #1d856b;
+}
+
+.review-option.is-wrong {
+  color: #99433b;
+  background: #fbece9;
+  border-color: #edcac4;
+}
+
+.review-option.is-wrong .review-option-key {
+  color: #fff;
+  background: #c8675d;
+}
+
+.review-option:disabled {
+  cursor: default;
+}
+
+.review-quiz-hint {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.spell-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 0 3px;
+}
+
+.letter-box {
+  flex: 0 0 auto;
+  width: clamp(22px, 6vw, 36px);
+  height: clamp(44px, 11.5vw, 52px);
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  text-align: center;
+  text-transform: uppercase;
+  background: var(--surface-soft);
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  font-size: clamp(17px, 4.6vw, 21px);
+  font-weight: 720;
+  caret-color: var(--primary);
+  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.letter-input:focus {
+  background: #fff;
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 107, 87, 0.11);
+}
+
+.letter-box.is-hint {
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border-color: rgba(13, 107, 87, 0.12);
+  cursor: default;
+}
+
+.letter-box.letter-fixed {
+  width: 13px;
+  height: auto;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  font-size: 17px;
+  text-transform: none;
+}
+
+.letter-box.letter-fixed.is-space {
+  width: 9px;
+}
+
+.letter-input:disabled {
+  opacity: 0.82;
+}
+
+.spell-hint {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.review-feedback {
+  margin-top: 16px;
+  padding: 13px 14px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  animation: fade-up 180ms ease both;
+}
+
+.review-feedback.is-correct {
+  color: #0b604f;
+  background: #e7f4ed;
+  border-color: #d1eadd;
+}
+
+.review-feedback.is-wrong {
+  color: #99433b;
+  background: #fbece9;
+  border-color: #f1d8d3;
+}
+
+.review-feedback-title {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 750;
+}
+
+.review-feedback-copy {
+  margin: 4px 0 0;
+  font-size: 11.5px;
+  line-height: 1.6;
+}
+
+.review-quiz-actions {
+  margin-top: 12px;
 }
 
 /* =========================================================
@@ -3080,6 +3534,10 @@ textarea:focus-visible,
     padding-right: 24px;
     padding-left: 24px;
   }
+
+  .review-card {
+    padding: 24px 28px 28px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -3125,6 +3583,16 @@ textarea:focus-visible,
     padding-right: 12px;
     padding-left: 12px;
   }
+
+  .review-card {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .review-option {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
 }
 
 @media (max-height: 650px) {
@@ -3143,6 +3611,15 @@ textarea:focus-visible,
 
   .rating-btn {
     height: 59px;
+  }
+
+  .review-prompt {
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
+
+  .letter-box {
+    height: 42px;
   }
 }
 
