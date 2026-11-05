@@ -22,8 +22,7 @@
   const DEEPSEEK_MODELS = ['deepseek-chat', 'deepseek-reasoner'];
   const READING_WORD_CAP = 50;
   const READING_HISTORY_LIMIT = 20;
-  // 阅读生词补全：每篇最多 36 个，单次请求最多 18 个，按首次出现顺序取。
-  const OOV_ENRICH_CAP = 36;
+  // 阅读生词补全：收录全部未收录词，按首次出现顺序分批请求，每批最多 18 个。
   const OOV_ENRICH_BATCH = 18;
   // 纯功能词不补全，避免把冠词、代词、助动词等塞进词库。
   const OOV_STOP_WORDS = new Set([
@@ -4141,7 +4140,7 @@
     const matches = clean.match(pattern) || [];
     const seen = new Set();
     const result = [];
-    for (let i = 0; i < matches.length && result.length < OOV_ENRICH_CAP; i += 1) {
+    for (let i = 0; i < matches.length; i += 1) {
       const token = matches[i];
       const key = wordKey(token);
       if (!key || key.length < 2) continue;
@@ -4274,7 +4273,9 @@
     return result;
   }
 
-  // 与手动添加共用 normalizeCustomWord → 去重 → 选中“自定义”册 → 保存并失效缓存。
+  // 与手动添加共用 normalizeCustomWord → 去重 → 保存并失效缓存。
+  // 注意：补全只写入自定义词库，不选中“自定义”单元、不创建学习进度；
+  // 是否进入复习由用户在阅读页点「加入复习」自行决定。
   function addEnrichedCustomWords(wordObjs) {
     const existing = new Set(getActiveWords().map(function (word) {
       return wordKey(word);
@@ -4293,10 +4294,6 @@
     });
 
     if (!added.length) return 0;
-
-    const selection = new Set(getSelectedUnits());
-    selection.add(CUSTOM_UNIT_ID);
-    state.selectedUnits = Array.from(selection);
 
     saveState();
     invalidateWordCache();
@@ -4533,6 +4530,11 @@
 
     // 先用带 key 的活动词条，保证「加入复习」写入的进度能被现有队列识别。
     getActiveWords().forEach(addHead);
+    // 自定义词/生词补全结果始终参与阅读查词，不受当前选中单元影响。
+    state.customWords.forEach(function (raw) {
+      const word = normalizeCustomWord(raw);
+      if (word) addHead(word);
+    });
     // 再兜底扫描 window.WORDS 原始条目，避免任何词条漏网。
     const rawWords = Array.isArray(window.WORDS) ? window.WORDS : [];
     rawWords.forEach(function (raw) {
