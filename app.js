@@ -1,5 +1,5 @@
 /* =========================================================
-   拾词 · 纯静态背单词应用
+   小单词机 · 纯静态背单词应用
    数据保存在 localStorage（key: bcz_vocab_v1）
    ========================================================= */
 
@@ -27,31 +27,30 @@
     autoPronounce: true
   });
 
-  // stage 1 ~ 8 对应的复习间隔：5分钟、30分钟、12小时、1天、2天、4天、7天、15天
+  // 艾宾浩斯 6 个阶段对应的复习间隔：1、2、4、7、15、30 天。
   const STAGE_INTERVALS = [
-    5 * 60 * 1000,
-    30 * 60 * 1000,
-    12 * 60 * 60 * 1000,
-    24 * 60 * 60 * 1000,
+    1 * 24 * 60 * 60 * 1000,
     2 * 24 * 60 * 60 * 1000,
     4 * 24 * 60 * 60 * 1000,
     7 * 24 * 60 * 60 * 1000,
-    15 * 24 * 60 * 60 * 1000
+    15 * 24 * 60 * 60 * 1000,
+    30 * 24 * 60 * 60 * 1000
   ];
+  const STAGE_COUNT = STAGE_INTERVALS.length;
   const FIVE_MINUTES = 5 * 60 * 1000;
   const MAX_DAILY_NEW = 200;
   const BROWSE_PAGE_SIZE = 100;
   const WEEKDAY_NAMES = ['日', '一', '二', '三', '四', '五', '六'];
   const ROUTES = ['home', 'study', 'browse', 'review', 'reading', 'stats', 'settings', 'books'];
   const PAGE_TITLES = {
-    home: '拾词 · 背单词',
-    study: '学习 · 拾词',
-    browse: '词表 · 拾词',
-    review: '复习 · 拾词',
-    reading: '每日阅读 · 拾词',
-    stats: '统计 · 拾词',
-    settings: '设置 · 拾词',
-    books: '选择词书 · 拾词'
+    home: '小单词机 · 背单词',
+    study: '学习 · 小单词机',
+    browse: '词表 · 小单词机',
+    review: '复习 · 小单词机',
+    reading: '每日阅读 · 小单词机',
+    stats: '统计 · 小单词机',
+    settings: '设置 · 小单词机',
+    books: '选择词书 · 小单词机'
   };
 
   // 自定义词统一放进虚拟的“自定义”册，方便和内置词书一起选择。
@@ -112,6 +111,10 @@
   let session = null;
   let studyLocked = false;
   let reviewSession = null;
+  // 只背不考核的浏览状态；不会写回任何复习进度。
+  let reviewBrowse = null;
+  // 听力听写是可选巩固，同样不写回艾宾浩斯进度。
+  let reviewListen = null;
   let browseQuery = '';
   let browseFilter = 'all';
   let browseBookFilter = 'all';
@@ -181,6 +184,19 @@
     if (!text) return '';
     if (/^[\/\[].*[\/\]]$/.test(text)) return text;
     return '/' + text.replace(/^\/|\/$/g, '') + '/';
+  }
+
+  // 挂靠变形只做一行紧凑展示，不会成为独立的学习/复习目标。
+  function formsLineHtml(word) {
+    const forms = word && Array.isArray(word.forms) ? word.forms.filter(function (form) {
+      return form && form.w;
+    }) : [];
+    if (!forms.length) return '';
+    const shown = forms.slice(0, 4).map(function (form) {
+      return escapeHtml([form.w, form.pos, form.cn].filter(Boolean).join(' '));
+    });
+    const suffix = forms.length > shown.length ? ' …' : '';
+    return '<p class="word-forms">变形：' + shown.join(' · ') + suffix + '</p>';
   }
 
   function getDayKey(value) {
@@ -328,6 +344,22 @@
     if (!tag && book) tag = findBookName(book);
     if (!tag) tag = fallbackTag || '未分类';
 
+    // forms 只是展示用的挂靠变形，不参与学习/复习队列。
+    const forms = [];
+    if (Array.isArray(raw.forms)) {
+      raw.forms.forEach(function (item) {
+        if (!item || typeof item !== 'object') return;
+        const formWord = toText(item.w);
+        if (!formWord) return;
+        forms.push({
+          w: formWord,
+          ph: toText(item.ph),
+          pos: toText(item.pos),
+          cn: toText(item.cn)
+        });
+      });
+    }
+
     return {
       id: toText(raw.id),
       w: word,
@@ -336,6 +368,7 @@
       cn: meaning,
       col: col.slice(0, 5),
       ex: example,
+      forms: forms,
       tag: tag,
       book: book,
       unit: unit
@@ -386,7 +419,8 @@
       const item = raw[key];
       if (!item || typeof item !== 'object') return;
 
-      const stage = clamp(toInteger(item.stage, 0), 0, 8);
+      // 旧版本最多有 8 个阶段；超过 6 的旧进度安全收敛到第 6 阶段。
+      const stage = clamp(toInteger(item.stage, 0), 0, STAGE_COUNT);
       const learnedAt = toTimestamp(item.learnedAt);
       const lastReviewedAt = toTimestamp(item.lastReviewedAt);
       let masteredAt = toTimestamp(item.masteredAt);
@@ -400,7 +434,7 @@
         : null;
 
       result[key] = {
-        stage: masteredAt ? 8 : stage,
+        stage: masteredAt ? STAGE_COUNT : stage,
         nextReviewAt: nextReviewAt,
         learnedAt: learnedAt,
         lastReviewedAt: lastReviewedAt,
@@ -659,6 +693,10 @@
     const idSet = new Set();
     const firstIdByWord = new Map();
     const builtinWords = Array.isArray(window.WORDS) ? window.WORDS : [];
+    // words.js 同时提供被移除变体的旧 id → 宿主词 id 映射。
+    const wordRemap = window.WORD_REMAP && typeof window.WORD_REMAP === 'object' && !Array.isArray(window.WORD_REMAP)
+      ? window.WORD_REMAP
+      : {};
 
     builtinWords.forEach(function (raw, index) {
       const normalized = normalizeWord(raw, '');
@@ -678,6 +716,19 @@
     });
 
     let changed = false;
+
+    // 嵌套变形词条已合并到宿主词：把旧 id 的进度迁移到宿主词上。
+    Object.keys(state.progress).forEach(function (key) {
+      const host = wordRemap[key];
+      if (typeof host !== 'string' || !host || host === key) return;
+      // 宿主已有进度时保留宿主的记录，避免重复。
+      if (!state.progress[host]) {
+        state.progress[host] = state.progress[key];
+      }
+      delete state.progress[key];
+      changed = true;
+    });
+
     Object.keys(state.progress).forEach(function (key) {
       if (idSet.has(key)) return;
       const targetId = firstIdByWord.get(wordKey(key));
@@ -873,8 +924,28 @@
   }
 
   function intervalForStage(stage) {
-    const safeStage = clamp(toInteger(stage, 1), 1, 8);
+    const safeStage = clamp(toInteger(stage, 1), 1, STAGE_COUNT);
     return STAGE_INTERVALS[safeStage - 1];
+  }
+
+  // 阅读页把词库里的生词加入复习：只建立进度，不计入今日新学数量。
+  function ensureLearningProgress(word) {
+    if (!word) return null;
+    const existing = getProgress(word);
+    if (existing) return existing;
+    const now = Date.now();
+    const progress = {
+      stage: 0,
+      nextReviewAt: now + FIVE_MINUTES,
+      learnedAt: now,
+      lastReviewedAt: 0,
+      masteredAt: null,
+      reviews: 0,
+      lapses: 0,
+      lastResult: null
+    };
+    state.progress[word.key] = progress;
+    return progress;
   }
 
   function makeSession(queue) {
@@ -943,9 +1014,9 @@
     let toastMessage = '';
 
     if (rating === 'known') {
-      if (progress.stage >= 8) {
-        // stage 8 之后再次答“认识”，即视为已掌握。
-        progress.stage = 8;
+      if (progress.stage >= STAGE_COUNT) {
+        // 走完 6 个阶段后再次答“认识”，即视为已掌握。
+        progress.stage = STAGE_COUNT;
         progress.masteredAt = now;
         progress.nextReviewAt = 0;
         toastMessage = '已掌握「' + word.w + '」';
@@ -1296,7 +1367,7 @@
     return {
       badge: '复习',
       badgeClass: 'is-review',
-      stage: progress ? '阶段 ' + progress.stage + ' / 8' : '复习'
+      stage: progress ? '阶段 ' + progress.stage + ' / ' + STAGE_COUNT : '复习'
     };
   }
 
@@ -1374,6 +1445,7 @@
           '<div class="word-main">' +
             '<h2 class="word-title' + longClass + '">' + escapeHtml(word.w) + '</h2>' +
             (phonetic ? '<p class="word-phonetic">' + escapeHtml(phonetic) + '</p>' : '') +
+            formsLineHtml(word) +
             '<div class="audio-actions">' +
               '<button class="audio-pill" type="button" data-speak="2" data-word="' + wordAttr + '" aria-label="播放 ' + wordAttr + ' 的美式发音">' + icon('speaker', 15) + '<span>美</span></button>' +
               '<button class="audio-pill" type="button" data-speak="1" data-word="' + wordAttr + '" aria-label="播放 ' + wordAttr + ' 的英式发音">' + icon('speaker', 15) + '<span>英</span></button>' +
@@ -1661,6 +1733,8 @@
       return;
     }
 
+    reviewBrowse = null;
+    reviewListen = null;
     reviewSession = {
       mode: mode,
       cards: source.slice(),
@@ -1695,7 +1769,9 @@
     const modes = [
       { id: 'choice', iconName: 'sparkle', title: '三选一', desc: '英中互选，快速唤醒记忆' },
       { id: 'spell', iconName: 'read', title: '分格拼写', desc: '按字母格拼出完整单词' },
-      { id: 'mixed', iconName: 'refresh', title: '混合', desc: '两种题型随机切换' }
+      { id: 'mixed', iconName: 'refresh', title: '混合', desc: '两种题型随机切换' },
+      { id: 'browse', iconName: 'eye', action: 'start-review-browse', title: '查看复习词来背', desc: '只背不考核，只浏览、不算过关' },
+      { id: 'listen', iconName: 'speaker', action: 'start-review-listen', title: '听力听写', desc: '听发音默写整词 · 可选巩固 · 不推进艾宾浩斯' }
     ];
 
     let sourceNote = '所有已学单词都已掌握，暂时没有待复习的内容。';
@@ -1729,7 +1805,10 @@
           '</h2></div>' +
           '<div class="review-mode-list">' +
             modes.map(function (mode) {
-              return '<button class="review-mode-card" type="button" data-action="start-review" data-mode="' + mode.id + '">' +
+              const optionalClass = mode.id === 'browse' || mode.id === 'listen' ? ' is-browse' : '';
+              const listenClass = mode.id === 'listen' ? ' is-listen' : '';
+              return '<button class="review-mode-card' + optionalClass + listenClass + '" type="button" data-action="' +
+                (mode.action || 'start-review') + '" data-mode="' + mode.id + '">' +
                 '<span class="review-mode-icon">' + icon(mode.iconName, 20) + '</span>' +
                 '<span class="review-mode-copy"><strong>' + mode.title + '</strong><span>' + mode.desc + '</span></span>' +
                 '<span class="review-mode-arrow">' + icon('chevron-right', 16) + '</span>' +
@@ -1737,10 +1816,311 @@
             }).join('') +
           '</div>' +
           '<p class="review-section-note">' + (canReview ? '每组复习会从当前待复习或未掌握词池中取词。' : '去学几个新词后，这里就会出现可复习的内容。') + '</p>' +
+          '<p class="review-section-note">三选一、分格拼写、混合会推进艾宾浩斯进度；「查看复习词来背」与「听力听写」为可选巩固。</p>' +
         '</section>' +
 
         '<p class="muted-note">答对按「认识」推进阶段 · 拼写只差一个字母按「模糊」安排</p>' +
       '</div>';
+  }
+
+  // 只背不考核：只读取词和进度，不调用 applyRating，也不写任何统计。
+  function startReviewBrowse() {
+    const dueWords = getDueWords();
+    const source = dueWords.length ? dueWords : getUnmasteredWords();
+    if (!source.length) {
+      showToast('暂时没有可浏览的复习词，先去学几个单词。');
+      return;
+    }
+    reviewSession = null;
+    reviewListen = null;
+    reviewBrowse = {
+      words: source.slice(),
+      index: 0,
+      fromDue: dueWords.length > 0
+    };
+    applyRoute();
+    window.scrollTo(0, 0);
+  }
+
+  function exitReviewBrowse() {
+    reviewBrowse = null;
+    applyRoute();
+    window.scrollTo(0, 0);
+  }
+
+  function reviewBrowseStep(delta) {
+    if (!reviewBrowse) return;
+    const next = reviewBrowse.index + delta;
+    if (next < 0 || next >= reviewBrowse.words.length) return;
+    reviewBrowse.index = next;
+    renderReview();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderReviewBrowse() {
+    if (!views.review) return;
+    if (!reviewBrowse) {
+      renderReviewHub();
+      return;
+    }
+
+    const total = reviewBrowse.words.length;
+    const index = clamp(reviewBrowse.index, 0, total - 1);
+    reviewBrowse.index = index;
+    const word = reviewBrowse.words[index];
+    const progress = getProgress(word);
+    const phonetic = formatPhonetic(word.ph);
+    const stageLabel = progress
+      ? (progress.masteredAt ? '已掌握' : '阶段 ' + progress.stage + ' / ' + STAGE_COUNT)
+      : '尚未学习';
+    const collocations = (Array.isArray(word.col) ? word.col : []).filter(function (item) {
+      return item && item.en;
+    }).slice(0, 3);
+    const example = word.ex && word.ex.en ? word.ex : null;
+    const percent = Math.round(((index + 1) / total) * 100);
+
+    views.review.innerHTML =
+      '<div class="page review-browse-page">' +
+        '<header class="study-topbar">' +
+          '<button class="icon-button study-back" type="button" data-action="review-browse-exit" aria-label="返回复习">' + icon('arrow-left', 20) + '</button>' +
+          '<div class="study-progress">' +
+            '<div class="study-progress-copy"><span><strong>' + (index + 1) + ' / ' + total + '</strong> ' +
+              (reviewBrowse.fromDue ? '今日待复习' : '未掌握词') +
+            '</span><span>只背不考核</span></div>' +
+            '<div class="study-progress-track" role="progressbar" aria-label="浏览进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + percent + '"><span class="study-progress-fill" style="width:' + percent + '%"></span></div>' +
+          '</div>' +
+        '</header>' +
+        '<article class="review-browse-card" aria-label="浏览单词 ' + escapeAttr(word.w) + '">' +
+          '<div class="review-browse-meta">' +
+            '<span class="mode-badge is-review">只背不考核</span>' +
+            (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
+            '<span class="stage-label">' + escapeHtml(stageLabel) + '</span>' +
+          '</div>' +
+          '<h2 class="review-browse-word">' + escapeHtml(word.w) + '</h2>' +
+          (phonetic ? '<p class="review-browse-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+          formsLineHtml(word) +
+          '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(word.w) + '" aria-label="播放 ' + escapeAttr(word.w) + ' 的发音">' +
+            icon('speaker', 15) + '<span>发音</span>' +
+          '</button>' +
+          '<div class="review-browse-def">' +
+            (word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+            '<p class="review-browse-cn">' + escapeHtml(word.cn || '暂无释义') + '</p>' +
+          '</div>' +
+          (collocations.length
+            ? '<ul class="review-browse-col">' + collocations.map(function (item) {
+                return '<li><span>' + escapeHtml(item.en) + '</span>' +
+                  (item.cn ? '<small>' + escapeHtml(item.cn) + '</small>' : '') + '</li>';
+              }).join('') + '</ul>'
+            : '') +
+          (example
+            ? '<p class="review-browse-example">' + escapeHtml(example.en) +
+                (example.cn ? '<span>' + escapeHtml(example.cn) + '</span>' : '') + '</p>'
+            : '') +
+        '</article>' +
+        '<div class="review-browse-actions">' +
+          '<button class="btn btn-secondary" type="button" data-action="review-browse-prev"' + (index === 0 ? ' disabled' : '') + '>上一个</button>' +
+          '<button class="btn btn-primary" type="button" data-action="review-browse-next"' + (index >= total - 1 ? ' disabled' : '') + '>下一个</button>' +
+        '</div>' +
+        '<p class="review-browse-note">这里只能翻看和发音，不改动下次复习时间、阶段和今日复习次数。想过关请回到复习页使用三选一或分格拼写。</p>' +
+      '</div>';
+  }
+
+  // 听力听写：可选巩固，只读词池和释义，绝不调用 applyRating，也不写任何进度。
+  function startReviewListen() {
+    const dueWords = getDueWords();
+    const source = dueWords.length ? dueWords : getUnmasteredWords();
+    if (!source.length) {
+      showToast('暂时没有可听写的复习词，先去学几个单词。');
+      return;
+    }
+    reviewSession = null;
+    reviewBrowse = null;
+    reviewListen = {
+      words: source.slice(),
+      index: 0,
+      fromDue: dueWords.length > 0,
+      answered: false,
+      lastResult: null,
+      correct: 0,
+      wrong: 0,
+      played: false,
+      finished: false
+    };
+    applyRoute();
+    window.scrollTo(0, 0);
+  }
+
+  function exitReviewListen() {
+    stopPronunciation();
+    reviewListen = null;
+    applyRoute();
+    window.scrollTo(0, 0);
+  }
+
+  function playReviewListenWord() {
+    if (!reviewListen || reviewListen.finished) return;
+    const word = reviewListen.words[reviewListen.index];
+    if (word) playPronunciation(word.w, '2', true);
+  }
+
+  function submitReviewListen() {
+    if (!reviewListen || reviewListen.answered || reviewListen.finished) return;
+    const word = reviewListen.words[reviewListen.index];
+    if (!word) return;
+    const input = document.getElementById('review-listen-input');
+    const raw = input ? String(input.value || '').trim() : '';
+    if (!normalizeSpellText(raw)) {
+      showToast('先写下你听到的单词，再检查。', 'error');
+      if (input) input.focus();
+      return;
+    }
+    // 仅本地计分：不修改 stage / nextReviewAt / daily.reviewed。
+    const correct = normalizeSpellText(raw) === normalizeSpellText(word.w);
+    reviewListen.answered = true;
+    reviewListen.correct += correct ? 1 : 0;
+    reviewListen.wrong += correct ? 0 : 1;
+    reviewListen.lastResult = {
+      correct: correct,
+      answer: raw,
+      correctText: word.w
+    };
+    renderReview();
+  }
+
+  function nextReviewListen() {
+    if (!reviewListen || !reviewListen.answered) return;
+    const next = reviewListen.index + 1;
+    if (next >= reviewListen.words.length) {
+      reviewListen.finished = true;
+      reviewListen.answered = false;
+      reviewListen.lastResult = null;
+      renderReview();
+      return;
+    }
+    reviewListen.index = next;
+    reviewListen.answered = false;
+    reviewListen.lastResult = null;
+    reviewListen.played = false;
+    renderReview();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderReviewListenSummary() {
+    if (!reviewListen) {
+      renderReviewHub();
+      return;
+    }
+    const total = reviewListen.correct + reviewListen.wrong;
+    const accuracy = total > 0 ? Math.round((reviewListen.correct / total) * 100) : 0;
+    views.review.innerHTML =
+      '<div class="study-page review-quiz-page">' +
+        '<div class="summary-shell">' +
+          '<div class="summary-card">' +
+            '<div class="summary-orbit"><span class="summary-icon">' + icon('check', 26) + '</span></div>' +
+            '<p class="summary-eyebrow">听力听写完成</p>' +
+            '<h2 class="summary-title">本轮听写正确 ' + reviewListen.correct + ' 个</h2>' +
+            '<p class="summary-copy">听力听写是可选巩固练习，未写入艾宾浩斯进度。阶段、下次复习时间和今日复习次数都保持不变。</p>' +
+            '<div class="summary-metrics">' +
+              '<div class="summary-metric"><strong>' + reviewListen.correct + '</strong><span>听写正确</span></div>' +
+              '<div class="summary-metric"><strong>' + reviewListen.wrong + '</strong><span>听写错误</span></div>' +
+              '<div class="summary-metric"><strong>' + accuracy + '%</strong><span>正确率</span></div>' +
+            '</div>' +
+            '<div class="summary-actions">' +
+              '<button class="btn btn-primary btn-block" type="button" data-action="review-back-hub">回到复习</button>' +
+              '<button class="btn btn-secondary btn-block" type="button" data-action="review-home">回到首页</button>' +
+            '</div>' +
+            '<p class="summary-note">未写入艾宾浩斯进度；想推进复习阶段，请使用三选一、分格拼写或混合。</p>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function renderReviewListen() {
+    if (!views.review) return;
+    if (!reviewListen) {
+      renderReviewHub();
+      return;
+    }
+    if (reviewListen.finished) {
+      renderReviewListenSummary();
+      return;
+    }
+
+    const total = reviewListen.words.length;
+    const index = clamp(reviewListen.index, 0, total - 1);
+    reviewListen.index = index;
+    const word = reviewListen.words[index];
+    const answered = reviewListen.answered;
+    const result = reviewListen.lastResult;
+    const percent = Math.round(((index + (answered ? 1 : 0)) / total) * 100);
+    const feedbackHtml = answered && result
+      ? '<div class="review-feedback ' + (result.correct ? 'is-correct' : 'is-wrong') + '" role="status">' +
+          '<p class="review-feedback-title">' + (result.correct ? '听写正确' : '这次没听对') + '</p>' +
+          '<p class="review-feedback-copy">正确拼写：<strong class="review-listen-reveal">' + escapeHtml(result.correctText) + '</strong></p>' +
+        '</div>'
+      : '';
+    const answerHtml = answered
+      ? '<div class="review-listen-answer">' +
+          '<span class="review-listen-answer-label">你的答案</span>' +
+          '<p class="review-listen-answer-text">' + escapeHtml(result && result.answer ? result.answer : '（未填写）') + '</p>' +
+        '</div>'
+      : '<label class="review-listen-field">' +
+          '<span class="sr-only">输入你听到的单词</span>' +
+          '<input id="review-listen-input" class="review-listen-input" type="text" ' +
+            'autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" ' +
+            'placeholder="听发音，写出完整单词">' +
+        '</label>';
+
+    views.review.innerHTML =
+      '<div class="page review-listen-page">' +
+        '<header class="study-topbar">' +
+          '<button class="icon-button study-back" type="button" data-action="review-listen-exit" aria-label="返回复习">' + icon('arrow-left', 20) + '</button>' +
+          '<div class="study-progress">' +
+            '<div class="study-progress-copy"><span><strong>已听写 ' + (index + 1) + ' / ' + total + '</strong> · 可选巩固（不计入复习进度）</span></div>' +
+            '<div class="study-progress-track" role="progressbar" aria-label="听写进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + percent + '"><span class="study-progress-fill" style="width:' + percent + '%"></span></div>' +
+          '</div>' +
+        '</header>' +
+        '<article class="review-listen-card" aria-label="听力听写">' +
+          '<div class="review-browse-meta">' +
+            '<span class="mode-badge is-review">听力听写</span>' +
+            (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
+            '<span class="stage-label">' + (reviewListen.fromDue ? '今日待复习' : '未掌握词') + '</span>' +
+          '</div>' +
+          '<div class="review-listen-meaning">' +
+            '<p class="review-listen-label">根据发音写出完整单词</p>' +
+            (word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+            '<p class="review-listen-cn">' + escapeHtml(word.cn || '暂无释义') + '</p>' +
+          '</div>' +
+          '<button class="review-listen-play" type="button" data-action="review-listen-play" aria-label="播放发音">' +
+            icon('speaker', 24) + '<span>播放发音</span>' +
+          '</button>' +
+          answerHtml +
+          feedbackHtml +
+          '<div class="review-listen-actions">' +
+            (answered
+              ? '<button class="btn btn-primary btn-block" type="button" data-action="review-listen-next">' +
+                  (index >= total - 1 ? '查看本轮结果' : '下一词') + '</button>'
+              : '<button class="btn btn-primary btn-block" type="button" data-action="review-listen-submit">检查</button>') +
+          '</div>' +
+          '<p class="review-listen-note">听发音默写整词 · 可选巩固，不推进艾宾浩斯进度。</p>' +
+        '</article>' +
+      '</div>';
+
+    if (!answered) {
+      if (!reviewListen.played) {
+        reviewListen.played = true;
+        window.setTimeout(function () {
+          if (reviewListen && !reviewListen.finished && !reviewListen.answered &&
+              reviewListen.words[reviewListen.index] === word) {
+            playPronunciation(word.w, '2', true);
+          }
+        }, 160);
+      }
+      window.setTimeout(function () {
+        const input = document.getElementById('review-listen-input');
+        if (input) input.focus();
+      }, 80);
+    }
   }
 
   function choicePromptHtml(cardState) {
@@ -1855,7 +2235,7 @@
       ? Math.round((reviewSession.answeredCount / reviewSession.total) * 100)
       : 100;
     const modeLabel = getReviewModeLabel(cardState.mode);
-    const stageLabel = progress ? '阶段 ' + progress.stage + ' / 8' : '复习';
+    const stageLabel = progress ? '阶段 ' + progress.stage + ' / ' + STAGE_COUNT : '复习';
     const promptHtml = cardState.mode === 'spell'
       ? spellPromptHtml(cardState, answered)
       : choicePromptHtml(cardState) + choiceOptionsHtml(cardState, answered);
@@ -1925,6 +2305,8 @@
   function renderReview() {
     if (!views.review) return;
     if (reviewSession) renderReviewQuiz();
+    else if (reviewListen) renderReviewListen();
+    else if (reviewBrowse) renderReviewBrowse();
     else renderReviewHub();
   }
 
@@ -2109,9 +2491,20 @@
   }
 
   function handleReviewKeydown(event) {
-    if (currentRoute !== 'review' || !reviewSession || reviewSession.finished) return;
+    if (currentRoute !== 'review') return;
     if (event.metaKey || event.ctrlKey || event.altKey) return;
     const target = event.target;
+
+    if (reviewListen) {
+      if (reviewListen.finished || event.key !== 'Enter') return;
+      if (target instanceof Element && target.closest('button, a, summary')) return;
+      event.preventDefault();
+      if (reviewListen.answered) nextReviewListen();
+      else submitReviewListen();
+      return;
+    }
+
+    if (!reviewSession || reviewSession.finished) return;
     const cardState = reviewSession.cardState;
 
     if (target instanceof Element && target.classList.contains('letter-input') && cardState && cardState.mode === 'spell' && !reviewSession.answered) {
@@ -2191,7 +2584,7 @@
     const phonetic = formatPhonetic(word.ph);
     let stageText = '';
     if (progress && !progress.masteredAt) {
-      stageText = '阶段 ' + progress.stage + ' / 8';
+      stageText = '阶段 ' + progress.stage + ' / ' + STAGE_COUNT;
     } else if (progress && progress.masteredAt) {
       stageText = '已完成全部复习';
     } else {
@@ -2204,6 +2597,7 @@
           '<div class="vocab-wordline"><h3 class="vocab-word">' + escapeHtml(word.w) + '</h3>' +
             (phonetic ? '<span class="vocab-phonetic">' + escapeHtml(phonetic) + '</span>' : '') +
           '</div>' +
+          formsLineHtml(word) +
           '<p class="vocab-def">' +
             (word.pos ? '<span class="vocab-pos">' + escapeHtml(word.pos) + '</span>' : '') +
             escapeHtml(word.cn || '暂无释义') +
@@ -2839,7 +3233,7 @@
       bookId: place.bookId,
       unit: place.unit,
       unitId: place.unitId,
-      stage: progress.masteredAt ? 8 : progress.stage,
+      stage: progress.masteredAt ? STAGE_COUNT : progress.stage,
       nextReviewTime: progress.masteredAt ? null : formatShanghai(progress.nextReviewAt),
       wrongCount: progress.lapses,
       lastResult: lastResult,
@@ -2948,7 +3342,9 @@
       unmasteredWords: unmasteredWords,
       difficultWords: difficultWords,
       reading: latestReadingExport(),
-      recentReadingScores: recentReadingScores()
+      recentReadingScores: recentReadingScores(),
+      // 同时带上可还原的本机数据，另一台设备「下载进度」时可原样恢复。
+      data: state
     };
   }
 
@@ -2961,6 +3357,15 @@
       binary += String.fromCharCode.apply(null, slice);
     }
     return btoa(binary);
+  }
+
+  function base64ToUtf8(text) {
+    const binary = atob(String(text || '').replace(/\s+/g, ''));
+    const bytes = new Uint8Array(binary.length);
+    for (let index = 0; index < binary.length; index += 1) {
+      bytes[index] = binary.charCodeAt(index);
+    }
+    return new TextDecoder().decode(bytes);
   }
 
   function githubErrorMessage(status, data) {
@@ -3119,6 +3524,87 @@
       showToast(message, 'error');
       const button = document.getElementById('github-upload-button');
       if (button) button.disabled = false;
+    });
+  }
+
+  function githubDownloadErrorMessage(status, data) {
+    if (status === 401) return '下载失败：令牌无效或已过期，请重新生成并保存。';
+    if (status === 403) return '下载失败：令牌没有 yoreverse2423/English 的 Contents 读取权限。';
+    if (status === 404) return '仓库还没有进度文件（data/progress.json），请先在任一设备上传一次。';
+    const apiMessage = data && data.message ? String(data.message) : '';
+    return '下载失败（HTTP ' + status + '）。' + (apiMessage ? ' ' + apiMessage : '');
+  }
+
+  function downloadProgress() {
+    if (githubSyncInFlight) {
+      showToast('正在同步，请稍候。');
+      return;
+    }
+
+    const token = readGithubToken();
+    if (!token) {
+      const message = '请先保存 GitHub 令牌，再下载进度。';
+      setGithubSyncStatus('error', message);
+      showToast(message, 'error');
+      return;
+    }
+
+    githubSyncInFlight = true;
+    setGithubSyncStatus('pending', '正在下载进度…');
+    const downloadButton = document.getElementById('github-download-button');
+    const uploadButton = document.getElementById('github-upload-button');
+    if (downloadButton) downloadButton.disabled = true;
+    if (uploadButton) uploadButton.disabled = true;
+
+    function finish() {
+      githubSyncInFlight = false;
+      if (downloadButton) downloadButton.disabled = false;
+      if (uploadButton) uploadButton.disabled = false;
+    }
+
+    githubContents('GET', token).then(function (got) {
+      if (!got.ok) {
+        throw new Error(githubDownloadErrorMessage(got.status, got.data));
+      }
+      if (!got.data || !got.data.content) {
+        throw new Error('下载失败：仓库里的进度文件缺少内容。');
+      }
+      let parsed = null;
+      try {
+        parsed = JSON.parse(base64ToUtf8(got.data.content));
+      } catch (error) {
+        throw new Error('下载失败：仓库里的进度文件不是有效的 JSON。');
+      }
+      const restorable = parsed && typeof parsed === 'object' && (
+        parsed.data ||
+        ['settings', 'progress', 'daily', 'customWords', 'selectedUnits'].some(function (key) {
+          return Object.prototype.hasOwnProperty.call(parsed, key);
+        })
+      );
+      if (!restorable) {
+        throw new Error('下载失败：仓库里是旧版进度报告，缺少可恢复的学习数据；请先在已更新小单词机的设备上重新上传一次。');
+      }
+
+      finish();
+      const applied = importBackupData(parsed, {
+        confirmMessage: '将用仓库中的进度覆盖本机学习数据，确定？',
+        successMessage: '已用仓库进度覆盖本机数据。'
+      });
+      if (applied) {
+        setGithubSyncStatus('success', '已下载 data/progress.json 并覆盖本机进度。');
+      } else {
+        setGithubSyncStatus('idle', '已取消下载，本机进度未改动。');
+      }
+    }).catch(function (error) {
+      finish();
+      let message = error && error.message ? error.message : '下载失败，请稍后再试。';
+      if (message.indexOf('上传失败') === 0) {
+        message = '下载失败：无法连接 GitHub，请检查网络后再试。';
+      } else if (message.indexOf('下载失败') !== 0) {
+        message = '下载失败：' + message;
+      }
+      setGithubSyncStatus('error', message);
+      showToast(message, 'error');
     });
   }
 
@@ -3632,25 +4118,31 @@
 
   function highlightPassageHtml(passage, targetWords) {
     const clean = String(passage || '').replace(/\*\*/g, '');
-    const unique = [];
-    const seen = new Set();
-    targetWords.forEach(function (word) {
+    const targets = new Set();
+    (Array.isArray(targetWords) ? targetWords : []).forEach(function (word) {
       const text = toText(word);
-      const key = text.toLowerCase();
-      if (!text || seen.has(key)) return;
-      seen.add(key);
-      unique.push(text);
+      if (text) targets.add(text.toLowerCase());
     });
-    unique.sort(function (a, b) {
-      return b.length - a.length;
+    // 同一拼写可能出现在多本词书里，取第一条即可。
+    const bank = new Map();
+    getActiveWords().forEach(function (word) {
+      const key = wordKey(word);
+      if (key && !bank.has(key)) bank.set(key, word);
     });
-    if (!unique.length) return escapeHtml(clean);
-    const pattern = new RegExp('\\b(' + unique.map(escapeRegex).join('|') + ')\\b', 'gi');
+
+    const pattern = /[A-Za-z]+(?:'[A-Za-z]+)?/g;
     let html = '';
     let cursor = 0;
-    clean.replace(pattern, function (match, _group, offset) {
+    clean.replace(pattern, function (match, offset) {
+      const inBank = bank.has(wordKey(match));
+      const isTarget = targets.has(match.toLowerCase());
+      // 词库里的任意英文词都可以点开；目标词即使不在词库也保留可点状态。
+      if (!inBank && !isTarget) return match;
       html += escapeHtml(clean.slice(cursor, offset));
-      html += '<button class="reading-hit" type="button" data-action="reading-word" data-word="' +
+      let className = 'reading-hit';
+      if (isTarget) className += ' is-target';
+      if (!inBank) className += ' is-unknown';
+      html += '<button class="' + className + '" type="button" data-action="reading-word" data-word="' +
         escapeAttr(match) + '">' + escapeHtml(match) + '</button>';
       cursor = offset + match.length;
       return match;
@@ -3707,6 +4199,19 @@
     const word = findWordBySpelling(readingLookup);
     const head = word ? word.w : readingLookup;
     const phonetic = word ? formatPhonetic(word.ph) : '';
+    const progress = word ? getProgress(word) : null;
+
+    let reviewAction = '';
+    if (word && !progress) {
+      reviewAction =
+        '<button class="btn btn-primary btn-block reading-sheet-add" type="button" data-action="add-reading-to-review" data-word="' +
+          escapeAttr(head) + '">加入复习</button>';
+    } else if (word && progress.masteredAt) {
+      reviewAction = '<p class="reading-sheet-status">已掌握</p>';
+    } else if (word) {
+      reviewAction = '<p class="reading-sheet-status">已在复习 · 阶段 ' + progress.stage + ' / ' + STAGE_COUNT + '</p>';
+    }
+
     return (
       '<div class="reading-sheet" role="dialog" aria-modal="false" aria-label="单词释义">' +
         '<div class="reading-sheet-card">' +
@@ -3724,6 +4229,7 @@
           '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
             icon('speaker', 15) + '<span>发音</span>' +
           '</button>' +
+          reviewAction +
         '</div>' +
       '</div>'
     );
@@ -3750,7 +4256,7 @@
             '<h2 class="reading-article-title">' + escapeHtml(entry.title) + '</h2>' +
           '</header>' +
           '<div class="reading-passage">' + highlightPassageHtml(entry.passage, entry.targetWords) + '</div>' +
-          '<p class="reading-tap-hint">点高亮单词可查看释义、音标并听发音。做完 4 题再提交，提交前不显示答案。</p>' +
+          '<p class="reading-tap-hint">点亮色单词可查看释义、音标并听发音；词库里的词还能一键加入复习。做完 4 题再提交，提交前不显示答案。</p>' +
           readingQuestionsHtml(entry) +
           (entry.submitted
             ? '<div class="reading-score" role="status">得分 ' + entry.score + ' / 4</div>'
@@ -3941,6 +4447,24 @@
     renderReading();
   }
 
+  function addReadingWordToReview(spelling) {
+    const word = findWordBySpelling(spelling);
+    if (!word) {
+      showToast('词库没有这个词的释义，无法加入复习。', 'error');
+      return;
+    }
+    const progress = getProgress(word);
+    if (progress) {
+      showToast(progress.masteredAt ? '这个词已掌握。' : '这个词已经在复习计划里了。');
+      renderReading();
+      return;
+    }
+    ensureLearningProgress(word);
+    saveState();
+    showToast('已加入复习');
+    renderReading();
+  }
+
   /* ---------- 设置 ---------- */
 
   function renderSettings() {
@@ -4001,7 +4525,7 @@
         '<section class="settings-card" aria-labelledby="github-sync-title">' +
           '<div class="settings-card-head">' +
             '<h2 class="settings-card-title" id="github-sync-title">同步进度到 GitHub</h2>' +
-            '<p class="settings-card-desc">把学习进度写入 yoreverse2423/English 的 data/progress.json。令牌只放在本机 localStorage，不会写进代码或仓库。</p>' +
+            '<p class="settings-card-desc">把学习进度写入 yoreverse2423/English 的 data/progress.json，也可以从仓库下载覆盖本机。上传与下载共用同一令牌，便于手机与手表互相同步。令牌只放在本机 localStorage，不会写进代码或仓库。</p>' +
           '</div>' +
           '<div class="settings-body">' +
             '<ol class="sync-steps">' +
@@ -4028,9 +4552,10 @@
               '</label>' +
             '</div>' +
             '<div class="button-row">' +
-              '<button class="btn btn-primary btn-block" id="github-upload-button" type="button" data-action="upload-progress"' + (githubSyncInFlight ? ' disabled' : '') + '>' + icon('upload', 17) + '上传进度</button>' +
+              '<button class="btn btn-primary" id="github-upload-button" type="button" data-action="upload-progress"' + (githubSyncInFlight ? ' disabled' : '') + '>' + icon('upload', 17) + '上传进度</button>' +
+              '<button class="btn btn-secondary" id="github-download-button" type="button" data-action="download-progress"' + (githubSyncInFlight ? ' disabled' : '') + '>' + icon('download', 17) + '下载进度</button>' +
             '</div>' +
-            '<p class="sync-hint">文件里有导出时间（北京时间）、所选词书和单元、已学 / 已掌握 / 今日到期，以及每个词的阶段、下次复习时间、错词次数和最近一次结果，还有尚未掌握的难词列表。若已做过每日阅读，也会带上最近一篇的得分和解析。</p>' +
+            '<p class="sync-hint">上传会写入 data/progress.json；下载会读取同一个文件，并先询问是否覆盖本机进度。文件里有导出时间（北京时间）、所选词书和单元、已学 / 已掌握 / 今日到期，以及每个词的阶段、下次复习时间、错词次数和最近一次结果，还有尚未掌握的难词列表。若已做过每日阅读，也会带上最近一篇的得分和解析。文件同时包含可恢复的完整学习数据，另一台设备下载后即可接着用。</p>' +
             '<p class="sync-status' + (githubSyncStatus.state && githubSyncStatus.state !== 'idle' ? ' is-' + githubSyncStatus.state : '') + '" id="github-sync-status" role="status" aria-live="polite">' + escapeHtml(syncStatusText()) + '</p>' +
           '</div>' +
         '</section>' +
@@ -4091,7 +4616,7 @@
           '</div>' +
         '</section>' +
 
-        '<p class="settings-footer">拾词 · 纯静态本地应用<br>学习记录默认只在本机。同步时令牌只发给 GitHub，不会写入仓库。</p>' +
+        '<p class="settings-footer">小单词机 · 纯静态本地应用<br>学习记录默认只在本机。同步时令牌只发给 GitHub，不会写入仓库。</p>' +
       '</div>';
   }
 
@@ -4125,7 +4650,7 @@
     }
   }
 
-  function importBackupData(parsed) {
+  function prepareBackupState(parsed) {
     const rawData = parsed && parsed.data && typeof parsed.data === 'object' ? parsed.data : parsed;
     if (!rawData || typeof rawData !== 'object' || Array.isArray(rawData)) {
       throw new Error('备份内容格式不正确');
@@ -4138,19 +4663,35 @@
       throw new Error('没有找到可导入的学习数据');
     }
 
-    const nextState = sanitizeState(rawData);
-    const confirmed = window.confirm('导入备份会覆盖当前全部学习记录、统计和自定义词，确定继续吗？');
-    if (!confirmed) return;
+    return sanitizeState(rawData);
+  }
 
+  function applyBackupState(nextState) {
     stopPronunciation();
     session = null;
+    reviewSession = null;
+    reviewBrowse = null;
+    reviewListen = null;
     state = nextState;
     invalidateWordCache();
     expandedBooks = null;
     migrateLegacyProgress();
     saveState();
     renderCurrentRoute();
-    showToast('备份导入成功');
+  }
+
+  // options.confirmMessage / options.successMessage 让「下载进度」复用同一套导入逻辑。
+  function importBackupData(parsed, options) {
+    const nextState = prepareBackupState(parsed);
+    const opts = options || {};
+    const confirmed = window.confirm(
+      opts.confirmMessage || '导入备份会覆盖当前全部学习记录、统计和自定义词，确定继续吗？'
+    );
+    if (!confirmed) return false;
+
+    applyBackupState(nextState);
+    showToast(opts.successMessage || '备份导入成功');
+    return true;
   }
 
   function handleBackupFile(event) {
@@ -4375,7 +4916,8 @@
         button.removeAttribute('aria-current');
       }
     });
-    const hideTabbar = route === 'study' || (route === 'review' && Boolean(reviewSession));
+    const hideTabbar = route === 'study' ||
+      (route === 'review' && (Boolean(reviewSession) || Boolean(reviewListen)));
     if (tabbarEl) tabbarEl.setAttribute('aria-hidden', hideTabbar ? 'true' : 'false');
   }
 
@@ -4405,6 +4947,8 @@
     }
     if (previousRoute === 'review' && route !== 'review') {
       reviewSession = null;
+      reviewBrowse = null;
+      reviewListen = null;
       maybeAutoUploadProgress();
     }
 
@@ -4415,7 +4959,7 @@
       if (views[key]) views[key].hidden = key !== route;
     });
     appEl.classList.toggle('is-studying', route === 'study');
-    appEl.classList.toggle('is-reviewing', route === 'review' && Boolean(reviewSession));
+    appEl.classList.toggle('is-reviewing', route === 'review' && (Boolean(reviewSession) || Boolean(reviewListen)));
     syncNavigation(route);
 
     if (previousRoute !== route) {
@@ -4490,6 +5034,24 @@
       continueStudy();
     } else if (action === 'start-review') {
       startReviewSession(actionEl.getAttribute('data-mode'));
+    } else if (action === 'start-review-browse') {
+      startReviewBrowse();
+    } else if (action === 'start-review-listen') {
+      startReviewListen();
+    } else if (action === 'review-browse-exit') {
+      exitReviewBrowse();
+    } else if (action === 'review-browse-prev') {
+      reviewBrowseStep(-1);
+    } else if (action === 'review-browse-next') {
+      reviewBrowseStep(1);
+    } else if (action === 'review-listen-exit') {
+      exitReviewListen();
+    } else if (action === 'review-listen-play') {
+      playReviewListenWord();
+    } else if (action === 'review-listen-submit') {
+      submitReviewListen();
+    } else if (action === 'review-listen-next') {
+      nextReviewListen();
     } else if (action === 'review-choice') {
       chooseReviewOption(Number(actionEl.getAttribute('data-index')));
     } else if (action === 'review-next') {
@@ -4497,11 +5059,17 @@
     } else if (action === 'review-exit') {
       exitReviewSession();
     } else if (action === 'review-back-hub') {
+      stopPronunciation();
       reviewSession = null;
+      reviewBrowse = null;
+      reviewListen = null;
       applyRoute();
       window.scrollTo(0, 0);
     } else if (action === 'review-home') {
+      stopPronunciation();
       reviewSession = null;
+      reviewBrowse = null;
+      reviewListen = null;
       navigate('home');
     } else if (action === 'browse-filter') {
       setBrowseFilter(actionEl.getAttribute('data-filter'));
@@ -4526,6 +5094,8 @@
       clearGithubToken();
     } else if (action === 'upload-progress') {
       uploadProgress({ auto: false });
+    } else if (action === 'download-progress') {
+      downloadProgress();
     } else if (action === 'save-deepseek-key') {
       saveDeepseekKeyFromInput();
     } else if (action === 'clear-deepseek-key') {
@@ -4540,6 +5110,8 @@
       openReadingHistory(actionEl.getAttribute('data-reading-id'));
     } else if (action === 'reading-word') {
       openReadingWord(actionEl.getAttribute('data-word'));
+    } else if (action === 'add-reading-to-review') {
+      addReadingWordToReview(actionEl.getAttribute('data-word'));
     } else if (action === 'close-reading-word') {
       readingLookup = '';
       renderReading();

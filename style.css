@@ -1,5 +1,5 @@
 /* =========================================================
-   拾词 · 样式
+   小单词机 · 样式
    手机优先、纯 CSS、无外部字体与资源。
    ========================================================= */
 
@@ -1853,6 +1853,284 @@ textarea:focus-visible,
   line-height: 1.55;
 }
 
+.review-mode-card.is-browse {
+  background: var(--surface-soft);
+  border-style: dashed;
+  border-color: var(--line-strong);
+}
+
+.review-mode-card.is-browse .review-mode-icon {
+  color: var(--ink-soft);
+  background: rgba(22, 36, 31, 0.06);
+}
+
+.review-mode-card.is-listen {
+  background: rgba(255, 250, 241, 0.96);
+}
+
+.review-mode-card.is-listen .review-mode-icon {
+  color: #8a5a12;
+  background: #fbf0d8;
+}
+
+/* 只背不考核：翻看卡片，不写回进度 */
+.review-browse-page {
+  padding-bottom: 28px;
+}
+
+.review-browse-card {
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.review-browse-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.review-browse-word {
+  margin: 16px 0 0;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  font-size: clamp(36px, 11vw, 52px);
+  font-weight: 760;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.review-browse-ph {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.review-browse-card .audio-pill {
+  margin-top: 10px;
+}
+
+.review-browse-def {
+  margin-top: 16px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+}
+
+.review-browse-cn {
+  margin: 7px 0 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.review-browse-col {
+  display: grid;
+  gap: 6px;
+  margin: 13px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review-browse-col li {
+  padding: 8px 10px;
+  background: var(--surface-soft);
+  border-radius: 10px;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.review-browse-col small {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 10.5px;
+}
+
+.review-browse-example {
+  margin: 13px 0 0;
+  color: var(--ink-soft);
+  font-size: 12.5px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.review-browse-example span {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.review-browse-actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.review-browse-actions .btn {
+  flex: 1;
+}
+
+.review-browse-note {
+  margin: 14px 4px 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.65;
+}
+
+/* 听力听写：可选巩固，不写回进度 */
+.review-listen-page {
+  padding-bottom: 118px;
+}
+
+.review-listen-card {
+  padding: 22px 19px;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  animation: card-in 260ms cubic-bezier(0.2, 0.78, 0.2, 1);
+}
+
+.review-listen-meaning {
+  margin-top: 18px;
+  padding-top: 17px;
+  border-top: 1px solid var(--line);
+}
+
+.review-listen-label {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+}
+
+.review-listen-cn {
+  margin: 8px 0 0;
+  color: var(--ink);
+  font-size: clamp(20px, 5.4vw, 26px);
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.review-listen-play {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 62px;
+  margin-top: 20px;
+  padding: 0 18px;
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border: 1px solid rgba(13, 107, 87, 0.14);
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 720;
+  transition: transform 140ms ease, background 140ms ease;
+}
+
+.review-listen-play:hover {
+  background: #dff0e8;
+}
+
+.review-listen-play:active {
+  transform: scale(0.985);
+}
+
+.review-listen-field {
+  display: block;
+  margin-top: 18px;
+}
+
+.review-listen-input {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  color: var(--ink);
+  text-align: center;
+  background: var(--surface-soft);
+  border: 1.5px solid var(--line);
+  border-radius: 15px;
+  font-size: clamp(19px, 5vw, 23px);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  caret-color: var(--primary);
+  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.review-listen-input::placeholder {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.review-listen-input:focus {
+  background: #fff;
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 107, 87, 0.11);
+}
+
+.review-listen-answer {
+  margin-top: 18px;
+  padding: 12px 14px;
+  text-align: center;
+  background: var(--surface-soft);
+  border-radius: 14px;
+}
+
+.review-listen-answer-label {
+  color: var(--muted);
+  font-size: 10.5px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+}
+
+.review-listen-answer-text {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.review-listen-reveal {
+  font-weight: 780;
+}
+
+.review-listen-actions {
+  margin-top: 16px;
+}
+
+.review-listen-note {
+  margin: 14px 4px 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.word-forms {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.vocab-row .word-forms {
+  margin-top: 2px;
+}
+
 .review-quiz-page {
   background: transparent;
 }
@@ -3269,6 +3547,18 @@ textarea:focus-visible,
   text-underline-offset: 3px;
 }
 
+.reading-hit.is-target {
+  background: rgba(13, 107, 87, 0.18);
+  font-weight: 800;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
+.reading-hit.is-unknown {
+  color: var(--muted);
+  background: var(--surface-soft);
+}
+
 .reading-question {
   min-width: 0;
   margin: 16px 0 0;
@@ -3455,6 +3745,17 @@ textarea:focus-visible,
 
 .reading-sheet-card .audio-pill {
   margin-top: 10px;
+}
+
+.reading-sheet-add {
+  margin-top: 12px;
+}
+
+.reading-sheet-status {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 @media (max-width: 380px) {
