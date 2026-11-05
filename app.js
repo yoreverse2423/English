@@ -117,6 +117,7 @@
   let reviewListen = null;
   let browseQuery = '';
   let browseFilter = 'all';
+  let browseFreqFilter = 'all';
   let browseBookFilter = 'all';
   let browseUnitFilter = 'all';
   let browseLimit = BROWSE_PAGE_SIZE;
@@ -131,6 +132,8 @@
   let readingError = '';
   let readingLookup = '';
   let readingActiveId = '';
+  // 阅读查词索引：覆盖全部词条与 forms，查词不再受词书选择影响。
+  let readingWordIndex = null;
 
   /* ---------- 基础工具 ---------- */
 
@@ -186,8 +189,22 @@
     return '/' + text.replace(/^\/|\/$/g, '') + '/';
   }
 
-  // 挂靠变形只做一行紧凑展示，不会成为独立的学习/复习目标。
+  // 词形以 wf 为主：n. helper · v. help · adj. helpful · adv. helpfully。
+  // 旧数据没有 wf 时，回退到 forms 的紧凑展示。
+  const WF_LABELS = { n: 'n.', v: 'v.', adj: 'adj.', adv: 'adv.' };
   function formsLineHtml(word) {
+    const wf = word && word.wf && typeof word.wf === 'object' ? word.wf : null;
+    if (wf) {
+      const parts = [];
+      ['n', 'v', 'adj', 'adv'].forEach(function (kind) {
+        const list = Array.isArray(wf[kind]) ? wf[kind].filter(Boolean) : [];
+        if (!list.length) return;
+        parts.push(WF_LABELS[kind] + ' ' + list.join(' / '));
+      });
+      if (parts.length) {
+        return '<p class="word-forms">词形：' + escapeHtml(parts.join(' · ')) + '</p>';
+      }
+    }
     const forms = word && Array.isArray(word.forms) ? word.forms.filter(function (form) {
       return form && form.w;
     }) : [];
@@ -197,6 +214,19 @@
     });
     const suffix = forms.length > shown.length ? ' …' : '';
     return '<p class="word-forms">变形：' + shown.join(' · ') + suffix + '</p>';
+  }
+
+  const FREQ_META = {
+    '高': { label: '高频', className: 'is-high', text: '高考高频' },
+    '中': { label: '中频', className: 'is-mid', text: '高考中频' },
+    '低': { label: '低频', className: 'is-low', text: '高考低频' }
+  };
+
+  function freqTagHtml(word) {
+    const meta = word && FREQ_META[word.freq];
+    if (!meta) return '';
+    return '<span class="freq-tag ' + meta.className + '" title="' + escapeAttr(meta.text) + '">' +
+      meta.label + '</span>';
   }
 
   function getDayKey(value) {
@@ -360,6 +390,25 @@
       });
     }
 
+    // wf 是结构化词形：n / v / adj / adv 四类，缺字段或空数组都安全。
+    const wf = { n: [], v: [], adj: [], adv: [] };
+    if (raw.wf && typeof raw.wf === 'object') {
+      ['n', 'v', 'adj', 'adv'].forEach(function (kind) {
+        const list = Array.isArray(raw.wf[kind]) ? raw.wf[kind] : [];
+        const seen = new Set();
+        list.forEach(function (item) {
+          const formWord = toText(item).replace(/\s+/g, ' ').slice(0, 60);
+          const key = formWord.toLowerCase();
+          if (!formWord || seen.has(key) || wf[kind].length >= 10) return;
+          seen.add(key);
+          wf[kind].push(formWord);
+        });
+      });
+    }
+
+    const rawFreq = toText(raw.freq);
+    const freq = rawFreq === '高' || rawFreq === '中' || rawFreq === '低' ? rawFreq : '';
+
     return {
       id: toText(raw.id),
       w: word,
@@ -369,6 +418,8 @@
       col: col.slice(0, 5),
       ex: example,
       forms: forms,
+      wf: wf,
+      freq: freq,
       tag: tag,
       book: book,
       unit: unit
@@ -537,6 +588,7 @@
   function invalidateWordCache() {
     activeWordsCache = null;
     activeWordMap = null;
+    readingWordIndex = null;
   }
 
   function getWordData() {
@@ -882,6 +934,7 @@
     let mastered = 0;
     let learning = 0;
     let due = 0;
+    const masteredFreq = { '高': 0, '中': 0, '低': 0 };
 
     words.forEach(function (word) {
       const progress = getProgress(word);
@@ -889,6 +942,7 @@
       learned += 1;
       if (progress.masteredAt) {
         mastered += 1;
+        if (masteredFreq[word.freq] !== undefined) masteredFreq[word.freq] += 1;
       } else {
         learning += 1;
         if (progress.nextReviewAt > 0 && progress.nextReviewAt <= now) {
@@ -902,6 +956,7 @@
       total: words.length,
       learned: learned,
       mastered: mastered,
+      masteredFreq: masteredFreq,
       learning: learning,
       due: due,
       newCount: Math.max(0, words.length - learned),
@@ -1438,6 +1493,7 @@
           '<div class="card-meta">' +
             '<div class="card-meta-left">' +
               '<span class="mode-badge ' + meta.badgeClass + '">' + meta.badge + '</span>' +
+              freqTagHtml(word) +
               (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
             '</div>' +
             '<span class="stage-label">' + escapeHtml(meta.stage) + '</span>' +
@@ -1893,6 +1949,7 @@
         '<article class="review-browse-card" aria-label="浏览单词 ' + escapeAttr(word.w) + '">' +
           '<div class="review-browse-meta">' +
             '<span class="mode-badge is-review">只背不考核</span>' +
+            freqTagHtml(word) +
             (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
             '<span class="stage-label">' + escapeHtml(stageLabel) + '</span>' +
           '</div>' +
@@ -2570,6 +2627,10 @@
       return (item.en + ' ' + item.cn).toLowerCase().includes(query);
     })) return true;
     if ((word.ex.en + ' ' + word.ex.cn).toLowerCase().includes(query)) return true;
+    if (word.wf && ['n', 'v', 'adj', 'adv'].some(function (kind) {
+      return Array.isArray(word.wf[kind]) && word.wf[kind].join(' ').toLowerCase().includes(query);
+    })) return true;
+    if ((word.freq || '').toLowerCase().includes(query)) return true;
     return false;
   }
 
@@ -2596,6 +2657,7 @@
         '<div class="vocab-copy">' +
           '<div class="vocab-wordline"><h3 class="vocab-word">' + escapeHtml(word.w) + '</h3>' +
             (phonetic ? '<span class="vocab-phonetic">' + escapeHtml(phonetic) + '</span>' : '') +
+            freqTagHtml(word) +
           '</div>' +
           formsLineHtml(word) +
           '<p class="vocab-def">' +
@@ -2626,13 +2688,25 @@
       const status = getStatusInfo(word, now);
       const bookOk = browseBookFilter === 'all' || (word.book || '') === browseBookFilter;
       const unitOk = browseUnitFilter === 'all' || (word.unit || '') === browseUnitFilter;
-      return bookOk && unitOk && matchesFilter(status.key, browseFilter) && wordMatches(word, query);
+      const freqOk = browseFreqFilter === 'all' || word.freq === browseFreqFilter;
+      return bookOk && unitOk && freqOk && matchesFilter(status.key, browseFilter) && wordMatches(word, query);
     });
-    const shown = filtered.slice(0, browseLimit);
+    const groupByFreq = browseFilter === 'mastered' && browseFreqFilter === 'all';
+    let ordered = filtered;
+    if (groupByFreq) {
+      const groupRank = { '高': 0, '中': 1, '低': 2, '': 3 };
+      ordered = filtered.slice().sort(function (a, b) {
+        const rankA = groupRank[a.freq] === undefined ? 3 : groupRank[a.freq];
+        const rankB = groupRank[b.freq] === undefined ? 3 : groupRank[b.freq];
+        return rankA - rankB;
+      });
+    }
+    const shown = ordered.slice(0, browseLimit);
 
     if (!shown.length) {
       const hasQuery = Boolean(query) ||
         browseFilter !== 'all' ||
+        browseFreqFilter !== 'all' ||
         browseBookFilter !== 'all' ||
         browseUnitFilter !== 'all';
       listEl.innerHTML =
@@ -2641,6 +2715,25 @@
           '<h3>' + (allWords.length ? (hasQuery ? '没有找到匹配的词' : '暂时没有单词') : '词库还是空的') + '</h3>' +
           '<p>' + (allWords.length ? '换个关键词或筛选条件再试试。' : '去设置页粘贴自定义词，或替换 words.js。') + '</p>' +
         '</div>';
+    } else if (groupByFreq) {
+      const groupCounts = {};
+      filtered.forEach(function (word) {
+        const key = word.freq || '';
+        groupCounts[key] = (groupCounts[key] || 0) + 1;
+      });
+      let currentGroup = null;
+      let html = '';
+      shown.forEach(function (word) {
+        const key = word.freq || '';
+        if (key !== currentGroup) {
+          currentGroup = key;
+          const meta = FREQ_META[key];
+          html += '<h3 class="freq-group-title">' + (meta ? meta.text : '无频次') +
+            ' · ' + (groupCounts[key] || 0) + '</h3>';
+        }
+        html += browseRowHtml(word, getStatusInfo(word, now));
+      });
+      listEl.innerHTML = html;
     } else {
       listEl.innerHTML = shown.map(function (word) {
         return browseRowHtml(word, getStatusInfo(word, now));
@@ -2713,6 +2806,12 @@
       { key: 'due', label: '待复习' },
       { key: 'mastered', label: '已掌握' }
     ];
+    const freqOptions = [
+      { key: 'all', label: '全部频次' },
+      { key: '高', label: '高频' },
+      { key: '中', label: '中频' },
+      { key: '低', label: '低频' }
+    ];
 
     views.browse.innerHTML =
       '<div class="page browse-page">' +
@@ -2732,6 +2831,12 @@
           filterOptions.map(function (option) {
             const active = browseFilter === option.key;
             return '<button class="filter-chip' + (active ? ' is-active' : '') + '" type="button" data-action="browse-filter" data-filter="' + option.key + '" aria-pressed="' + active + '">' + option.label + '</button>';
+          }).join('') +
+        '</div>' +
+        '<div class="filter-strip filter-strip-freq" role="group" aria-label="按高考频次筛选">' +
+          freqOptions.map(function (option) {
+            const active = browseFreqFilter === option.key;
+            return '<button class="filter-chip freq-chip' + (active ? ' is-active' : '') + '" type="button" data-action="browse-freq" data-freq="' + option.key + '" aria-pressed="' + active + '">' + option.label + '</button>';
           }).join('') +
         '</div>' +
         '<div class="filter-row" role="group" aria-label="按册和单元筛选">' +
@@ -2757,6 +2862,19 @@
 
     document.querySelectorAll('[data-action="browse-filter"]').forEach(function (button) {
       const isActive = button.getAttribute('data-filter') === filter;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+    renderBrowseList();
+  }
+
+  function setBrowseFreqFilter(filter) {
+    if (!['all', '高', '中', '低'].includes(filter)) return;
+    browseFreqFilter = filter;
+    browseLimit = BROWSE_PAGE_SIZE;
+
+    document.querySelectorAll('[data-action="browse-freq"]').forEach(function (button) {
+      const isActive = button.getAttribute('data-freq') === filter;
       button.classList.toggle('is-active', isActive);
       button.setAttribute('aria-pressed', String(isActive));
     });
@@ -3082,6 +3200,18 @@
           '<div class="kpi-card"><p class="kpi-label">今日学习</p><p class="kpi-value">' + stats.newToday + '<small>词</small></p><p class="kpi-detail">目标 ' + state.settings.dailyNew + ' 个</p></div>' +
           '<div class="kpi-card"><p class="kpi-label">今日复习</p><p class="kpi-value">' + stats.reviewToday + '<small>次</small></p><p class="kpi-detail">每一次回想都算数</p></div>' +
         '</div>' +
+
+        '<section class="freq-summary" aria-labelledby="freq-summary-title">' +
+          '<div class="freq-summary-head">' +
+            '<h2 class="freq-summary-title" id="freq-summary-title">已掌握 · 高考频次</h2>' +
+            '<p class="freq-summary-note">按词库标注统计</p>' +
+          '</div>' +
+          '<div class="freq-summary-grid">' +
+            '<div class="freq-summary-item is-high"><span class="freq-summary-label">高频</span><strong>' + stats.masteredFreq['高'] + '</strong><small>词</small></div>' +
+            '<div class="freq-summary-item is-mid"><span class="freq-summary-label">中频</span><strong>' + stats.masteredFreq['中'] + '</strong><small>词</small></div>' +
+            '<div class="freq-summary-item is-low"><span class="freq-summary-label">低频</span><strong>' + stats.masteredFreq['低'] + '</strong><small>词</small></div>' +
+          '</div>' +
+        '</section>' +
 
         '<section class="chart-card" aria-labelledby="chart-title">' +
           '<div class="chart-header">' +
@@ -4106,14 +4236,119 @@
     };
   }
 
-  function findWordBySpelling(spelling) {
+  // 阅读查词索引：headword 与 forms 都指向同一个词条，覆盖 window.WORDS 全部条目。
+  function getReadingWordIndex() {
+    if (readingWordIndex) return readingWordIndex;
+
+    const map = new Map();
+    const words = [];
+    function addHead(word) {
+      if (!word || !word.w) return;
+      const key = wordKey(word);
+      if (!key) return;
+      if (!word.id) word.id = 'reading:' + key;
+      if (!word.key) word.key = word.id;
+      if (!map.has(key)) {
+        map.set(key, word);
+        words.push(word);
+      }
+    }
+
+    // 先用带 key 的活动词条，保证「加入复习」写入的进度能被现有队列识别。
+    getActiveWords().forEach(addHead);
+    // 再兜底扫描 window.WORDS 原始条目，避免任何词条漏网。
+    const rawWords = Array.isArray(window.WORDS) ? window.WORDS : [];
+    rawWords.forEach(function (raw) {
+      const word = normalizeWord(raw, '');
+      if (word) addHead(word);
+    });
+
+    // forms 第二轮挂靠，避免变形词遮挡真正的 headword。
+    words.forEach(function (word) {
+      (Array.isArray(word.forms) ? word.forms : []).forEach(function (form) {
+        if (!form || !form.w) return;
+        const key = wordKey(form.w);
+        if (key && !map.has(key)) map.set(key, word);
+      });
+    });
+
+    readingWordIndex = { map: map, words: words };
+    return readingWordIndex;
+  }
+
+  // 简单 lemma 回退：ies→y、es、s、ied→y、ed、ing、双写辅音、比较级/副词等。
+  function lemmaCandidates(token) {
+    const w = toText(token).toLowerCase();
+    const out = [];
+    function add(value) {
+      if (value && value.length > 1 && out.indexOf(value) === -1) out.push(value);
+    }
+    function addDouble(base) {
+      if (base.length > 2 &&
+          base.charAt(base.length - 1) === base.charAt(base.length - 2) &&
+          'aeiou'.indexOf(base.charAt(base.length - 1)) === -1) {
+        add(base.slice(0, -1));
+      }
+    }
+    if (!/^[a-z]+(?:'[a-z]+)?$/.test(w)) return out;
+    add(w);
+    if (w.endsWith('ies') && w.length > 4) add(w.slice(0, -3) + 'y');
+    if (w.endsWith('ied') && w.length > 4) add(w.slice(0, -3) + 'y');
+    if (w.endsWith('ves') && w.length > 4) {
+      add(w.slice(0, -3) + 'f');
+      add(w.slice(0, -3) + 'fe');
+    }
+    if (w.endsWith('es') && w.length > 3) add(w.slice(0, -2));
+    if (w.endsWith('s') && !w.endsWith('ss') && w.length > 2) add(w.slice(0, -1));
+    if (w.endsWith('ed') && w.length > 3) {
+      const base = w.slice(0, -2);
+      add(base);
+      add(base + 'e');
+      addDouble(base);
+    }
+    if (w.endsWith('ing') && w.length > 4) {
+      const base = w.slice(0, -3);
+      add(base);
+      add(base + 'e');
+      addDouble(base);
+    }
+    if (w.endsWith('ier') && w.length > 4) add(w.slice(0, -3) + 'y');
+    if (w.endsWith('iest') && w.length > 5) add(w.slice(0, -4) + 'y');
+    if (w.endsWith('er') && w.length > 4) {
+      const base = w.slice(0, -2);
+      add(base);
+      add(base + 'e');
+      addDouble(base);
+    }
+    if (w.endsWith('est') && w.length > 5) {
+      const base = w.slice(0, -3);
+      add(base);
+      add(base + 'e');
+      addDouble(base);
+    }
+    if (w.endsWith('ily') && w.length > 4) add(w.slice(0, -3) + 'y');
+    if (w.endsWith('ly') && w.length > 4) {
+      add(w.slice(0, -2));
+      add(w.slice(0, -2) + 'e');
+    }
+    return out;
+  }
+
+  function lookupReadingWord(spelling) {
     const key = wordKey(spelling);
     if (!key) return null;
-    const words = getActiveWords();
-    for (let index = 0; index < words.length; index += 1) {
-      if (wordKey(words[index]) === key) return words[index];
+    const index = getReadingWordIndex();
+    if (index.map.has(key)) return index.map.get(key);
+    const candidates = lemmaCandidates(spelling);
+    for (let i = 0; i < candidates.length; i += 1) {
+      const found = index.map.get(candidates[i]);
+      if (found) return found;
     }
     return null;
+  }
+
+  function findWordBySpelling(spelling) {
+    return lookupReadingWord(spelling);
   }
 
   function highlightPassageHtml(passage, targetWords) {
@@ -4123,25 +4358,19 @@
       const text = toText(word);
       if (text) targets.add(text.toLowerCase());
     });
-    // 同一拼写可能出现在多本词书里，取第一条即可。
-    const bank = new Map();
-    getActiveWords().forEach(function (word) {
-      const key = wordKey(word);
-      if (key && !bank.has(key)) bank.set(key, word);
-    });
 
+    // 每一个英文 token 都包成按钮：词库命中 / 未命中（OOV）都可点开。
     const pattern = /[A-Za-z]+(?:'[A-Za-z]+)?/g;
     let html = '';
     let cursor = 0;
     clean.replace(pattern, function (match, offset) {
-      const inBank = bank.has(wordKey(match));
-      const isTarget = targets.has(match.toLowerCase());
-      // 词库里的任意英文词都可以点开；目标词即使不在词库也保留可点状态。
-      if (!inBank && !isTarget) return match;
+      const found = lookupReadingWord(match);
+      const isTarget = targets.has(match.toLowerCase()) ||
+        Boolean(found && targets.has(found.w.toLowerCase()));
       html += escapeHtml(clean.slice(cursor, offset));
       let className = 'reading-hit';
       if (isTarget) className += ' is-target';
-      if (!inBank) className += ' is-unknown';
+      if (!found) className += ' is-oov';
       html += '<button class="' + className + '" type="button" data-action="reading-word" data-word="' +
         escapeAttr(match) + '">' + escapeHtml(match) + '</button>';
       cursor = offset + match.length;
@@ -4200,15 +4429,18 @@
     const head = word ? word.w : readingLookup;
     const phonetic = word ? formatPhonetic(word.ph) : '';
     const progress = word ? getProgress(word) : null;
+    const isLemma = Boolean(word && wordKey(word) !== wordKey(readingLookup));
 
     let reviewAction = '';
-    if (word && !progress) {
+    if (!word) {
+      reviewAction = '<p class="reading-sheet-status">词库暂无，暂不能加入复习。</p>';
+    } else if (!progress) {
       reviewAction =
         '<button class="btn btn-primary btn-block reading-sheet-add" type="button" data-action="add-reading-to-review" data-word="' +
           escapeAttr(head) + '">加入复习</button>';
-    } else if (word && progress.masteredAt) {
+    } else if (progress.masteredAt) {
       reviewAction = '<p class="reading-sheet-status">已掌握</p>';
-    } else if (word) {
+    } else {
       reviewAction = '<p class="reading-sheet-status">已在复习 · 阶段 ' + progress.stage + ' / ' + STAGE_COUNT + '</p>';
     }
 
@@ -4217,15 +4449,19 @@
         '<div class="reading-sheet-card">' +
           '<div class="reading-sheet-top">' +
             '<div>' +
-              '<h3 class="reading-sheet-word">' + escapeHtml(head) + '</h3>' +
+              '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
               (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
             '</div>' +
             '<button class="icon-button" type="button" data-action="close-reading-word" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
           '</div>' +
+          (isLemma
+            ? '<p class="reading-sheet-lemma">原文 ' + escapeHtml(readingLookup) + ' · 原形 ' + escapeHtml(head) + '</p>'
+            : '') +
           '<p class="reading-sheet-def">' +
             (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
-            escapeHtml(word && word.cn ? word.cn : '词库里没有这个词的释义。') +
+            escapeHtml(word && word.cn ? word.cn : '词库暂无') +
           '</p>' +
+          formsLineHtml(word) +
           '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
             icon('speaker', 15) + '<span>发音</span>' +
           '</button>' +
@@ -4256,7 +4492,7 @@
             '<h2 class="reading-article-title">' + escapeHtml(entry.title) + '</h2>' +
           '</header>' +
           '<div class="reading-passage">' + highlightPassageHtml(entry.passage, entry.targetWords) + '</div>' +
-          '<p class="reading-tap-hint">点亮色单词可查看释义、音标并听发音；词库里的词还能一键加入复习。做完 4 题再提交，提交前不显示答案。</p>' +
+          '<p class="reading-tap-hint">点任意英文单词可看释义；词库词可加入复习；绿色为目标词。做完 4 题再提交，提交前不显示答案。</p>' +
           readingQuestionsHtml(entry) +
           (entry.submitted
             ? '<div class="reading-score" role="status">得分 ' + entry.score + ' / 4</div>'
@@ -5073,6 +5309,8 @@
       navigate('home');
     } else if (action === 'browse-filter') {
       setBrowseFilter(actionEl.getAttribute('data-filter'));
+    } else if (action === 'browse-freq') {
+      setBrowseFreqFilter(actionEl.getAttribute('data-freq'));
     } else if (action === 'browse-more') {
       browseLimit += BROWSE_PAGE_SIZE;
       renderBrowseList();

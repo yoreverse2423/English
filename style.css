@@ -2131,6 +2131,51 @@ textarea:focus-visible,
   margin-top: 2px;
 }
 
+/* 高考频次标签：高频偏暖、中频中性、低频淡化。 */
+.freq-tag {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  height: 20px;
+  padding: 0 7px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 9.5px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.freq-tag.is-high {
+  color: #a33b25;
+  background: #fbe6dd;
+  border-color: #f3c9b8;
+}
+
+.freq-tag.is-mid {
+  color: var(--ink-soft);
+  background: var(--surface-soft);
+  border-color: var(--line);
+}
+
+.freq-tag.is-low {
+  color: var(--muted);
+  background: transparent;
+  border-color: var(--line);
+  font-weight: 600;
+}
+
+.filter-strip-freq {
+  margin-top: 5px;
+}
+
+.filter-chip.freq-chip.is-active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 .review-quiz-page {
   background: transparent;
 }
@@ -2503,6 +2548,19 @@ textarea:focus-visible,
   gap: 9px;
 }
 
+.freq-group-title {
+  grid-column: 1 / -1;
+  margin: 10px 3px 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.freq-group-title:first-child {
+  margin-top: 0;
+}
+
 .vocab-row {
   display: flex;
   gap: 12px;
@@ -2780,6 +2838,72 @@ textarea:focus-visible,
   margin: 6px 0 0;
   color: var(--muted);
   font-size: 9.5px;
+}
+
+.freq-summary {
+  margin-top: 11px;
+  padding: 15px 15px 14px;
+  background: rgba(255, 253, 248, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 17px;
+  box-shadow: var(--shadow-soft);
+}
+
+.freq-summary-head {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.freq-summary-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.freq-summary-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 9.5px;
+}
+
+.freq-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 11px;
+}
+
+.freq-summary-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 4px;
+  align-items: baseline;
+  padding: 9px 10px;
+  background: var(--surface-soft);
+  border-radius: 12px;
+}
+
+.freq-summary-item strong {
+  font-size: 19px;
+  font-weight: 750;
+  line-height: 1;
+}
+
+.freq-summary-item small {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.freq-summary-label {
+  flex: 1 1 100%;
+  color: var(--muted);
+  font-size: 9.5px;
+}
+
+.freq-summary-item.is-high .freq-summary-label {
+  color: #a33b25;
 }
 
 .chart-card {
@@ -3545,6 +3669,11 @@ textarea:focus-visible,
   line-height: inherit;
   text-decoration: underline dotted;
   text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.reading-hit:active {
+  background: rgba(13, 107, 87, 0.22);
 }
 
 .reading-hit.is-target {
@@ -3557,6 +3686,22 @@ textarea:focus-visible,
 .reading-hit.is-unknown {
   color: var(--muted);
   background: var(--surface-soft);
+}
+
+/* 词库暂无（OOV）：弱化但仍可点开查看拼写。 */
+.reading-hit.is-oov {
+  color: var(--ink-soft);
+  background: transparent;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: rgba(124, 133, 126, 0.55);
+  text-underline-offset: 3px;
+}
+
+.reading-hit.is-target.is-oov {
+  color: var(--primary-deep);
+  background: rgba(13, 107, 87, 0.16);
 }
 
 .reading-question {
@@ -3730,17 +3875,32 @@ textarea:focus-visible,
 }
 
 .reading-sheet-word {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
   margin: 0;
   font-size: 22px;
   line-height: 1.2;
 }
 
 .reading-sheet-ph,
-.reading-sheet-def {
+.reading-sheet-def,
+.reading-sheet-lemma {
   margin: 4px 0 0;
   color: var(--ink-soft);
   font-size: 14px;
   line-height: 1.55;
+}
+
+.reading-sheet-lemma {
+  color: var(--muted);
+  font-size: 11.5px;
+}
+
+.reading-sheet-card .word-forms {
+  margin-top: 6px;
+  font-size: 11.5px;
 }
 
 .reading-sheet-card .audio-pill {
