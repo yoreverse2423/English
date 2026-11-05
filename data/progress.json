@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "exportedAt": "2026-11-05T13:04:30+08:00",
+  "timezone": "Asia/Shanghai",
+  "repository": "yoreverse2423/English",
+  "path": "data/progress.json",
+  "selected": {
+    "books": [
+      {
+        "id": "compulsory-1",
+        "name": "必修第一册"
+      }
+    ],
+    "units": [
+      {
+        "id": "compulsory-1-u4",
+        "title": "Unit 4 Natural Disasters",
+        "bookId": "compulsory-1",
+        "book": "必修第一册"
+      }
+    ]
+  },
+  "stats": {
+    "totalWords": 2716,
+    "learned": 13,
+    "mastered": 0,
+    "learning": 13,
+    "dueNow": 5,
+    "dueToday": 13,
+    "newToday": 13,
+    "reviewToday": 0,
+    "streakDays": 1,
+    "last7Days": [
+      {
+        "date": "2026-10-30",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-10-31",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-01",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-02",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-03",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-04",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-05",
+        "learned": 13,
+        "reviewed": 0
+      }
+    ]
+  },
+  "totals": {
+    "learned": 13,
+    "mastered": 0,
+    "dueToday": 13
+  },
+  "words": [
+    {
+      "word": "disaster",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:03:32+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "drought",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:11+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "flood",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:29+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landfall",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:58+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landslide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "magnitude",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "rescue",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "slide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:10+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornado",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:03:43+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornadoes",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:03:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornados",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:08+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tsunami",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:17+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "volcanic eruption",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    }
+  ],
+  "unmasteredWords": [
+    {
+      "word": "disaster",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:03:32+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "drought",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:11+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "flood",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:29+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landfall",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:58+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landslide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "magnitude",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "rescue",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "slide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:10+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornado",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:03:43+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornadoes",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:03:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornados",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:08+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tsunami",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:17+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "volcanic eruption",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    }
+  ],
+  "difficultWords": [
+    {
+      "word": "magnitude",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "tsunami",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:17+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    }
+  ],
+  "reading": null,
+  "recentReadingScores": []
+}
