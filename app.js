@@ -20,7 +20,7 @@
   const READING_HISTORY_KEY = 'bcz_reading_history';
   const DEEPSEEK_ENDPOINT = 'https://api.deepseek.com/chat/completions';
   const DEEPSEEK_MODELS = ['deepseek-chat', 'deepseek-reasoner'];
-  const READING_WORD_CAP = 18;
+  const READING_WORD_CAP = 20;
   const READING_HISTORY_LIMIT = 20;
   const DEFAULT_SETTINGS = Object.freeze({
     dailyNew: 20,
@@ -2192,6 +2192,7 @@
   function buildProgressExport() {
     const now = Date.now();
     const todayKey = shanghaiDayKey(now);
+    const stats = getStats();
     const words = [];
     const unmasteredWords = [];
     const difficultWords = [];
@@ -2228,6 +2229,24 @@
       repository: GITHUB_REPO,
       path: GITHUB_PROGRESS_PATH,
       selected: buildSelectedExport(),
+      stats: {
+        totalWords: stats.total,
+        learned: stats.learned,
+        mastered: stats.mastered,
+        learning: stats.learning,
+        dueNow: stats.due,
+        dueToday: dueToday,
+        newToday: stats.newToday,
+        reviewToday: stats.reviewToday,
+        streakDays: stats.streak,
+        last7Days: stats.week.map(function (day) {
+          return {
+            date: day.key,
+            learned: day.learned,
+            reviewed: day.reviewed
+          };
+        })
+      },
       totals: {
         learned: learned,
         mastered: mastered,
@@ -2236,7 +2255,8 @@
       words: words,
       unmasteredWords: unmasteredWords,
       difficultWords: difficultWords,
-      reading: latestReadingExport()
+      reading: latestReadingExport(),
+      recentReadingScores: recentReadingScores()
     };
   }
 
@@ -2504,7 +2524,6 @@
       return;
     }
     showToast('已选择模型 ' + next);
-    if (currentRoute === 'settings') renderSettings();
   }
 
   function saveDeepseekKeyFromInput() {
@@ -2526,6 +2545,7 @@
       return;
     }
     if (input) input.value = '';
+    readingError = '';
     showToast('API Key 已保存在本机。');
     renderSettings();
   }
@@ -2863,6 +2883,22 @@
     return history[0] || null;
   }
 
+  function recentReadingScores() {
+    return loadReadingHistory().filter(function (entry) {
+      return entry.submitted;
+    }).slice(0, 5).map(function (entry) {
+      return {
+        id: entry.id,
+        title: entry.title,
+        model: entry.model,
+        createdAt: formatShanghai(entry.createdAt),
+        submittedAt: entry.submittedAt ? formatShanghai(entry.submittedAt) : null,
+        score: entry.score,
+        total: entry.questions.length
+      };
+    });
+  }
+
   function latestReadingExport() {
     const latest = loadReadingHistory()[0] || null;
     if (!latest) return null;
@@ -3005,6 +3041,7 @@
     if (!views.reading) return;
     const targets = collectReadingTargets();
     const history = loadReadingHistory();
+    const hasKey = Boolean(readDeepseekKey());
     if (!readingActiveId && history[0]) readingActiveId = history[0].id;
     const entry = getReadingEntry(readingActiveId);
     const busyText = readingPhase === 'retrying' ? '返回内容无法解析，正在重试一次…' : '正在生成阅读，大约需要十几秒…';
@@ -3053,6 +3090,7 @@
             '<p class="settings-card-desc">' + escapeHtml(readingTargetSummary(targets)) + '</p>' +
           '</div>' +
           '<div class="settings-body">' +
+            (hasKey ? '' : '<p class="reading-empty-note">还没有保存 DeepSeek API Key，请先到设置页保存后再生成。</p>') +
             (targets.length
               ? '<div class="reading-chips">' + targets.map(function (word) {
                   return '<span class="reading-chip">' + escapeHtml(word.w) + '</span>';
@@ -3204,7 +3242,10 @@
   }
 
   function openReadingWord(spelling) {
-    readingLookup = toText(spelling);
+    const word = toText(spelling);
+    readingLookup = word;
+    // 点击高亮词时同时播放发音，复用学习卡片的发音逻辑。
+    if (word) playPronunciation(word, 2, false);
     renderReading();
   }
 
