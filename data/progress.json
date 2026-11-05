@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-05T13:04:30+08:00",
+  "exportedAt": "2026-11-05T13:32:29+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -25,10 +25,10 @@
     "learned": 13,
     "mastered": 0,
     "learning": 13,
-    "dueNow": 5,
+    "dueNow": 11,
     "dueToday": 13,
     "newToday": 13,
-    "reviewToday": 0,
+    "reviewToday": 2,
     "streakDays": 1,
     "last7Days": [
       {
@@ -64,7 +64,7 @@
       {
         "date": "2026-11-05",
         "learned": 13,
-        "reviewed": 0
+        "reviewed": 2
       }
     ]
   },
@@ -80,8 +80,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:03:32+08:00",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:46+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -176,8 +176,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:03:43+08:00",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:54+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -238,8 +238,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:03:32+08:00",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:46+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -334,8 +334,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:03:43+08:00",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:54+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
