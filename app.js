@@ -6014,6 +6014,7 @@
 
   // 旧版本进度以单词文本为键，启动时迁移到新的 id 键。
   function bootAfterWordsLoaded() {
+    invalidateWordCache();
     migrateLegacyProgress();
 
     // 首页停留时定时刷新到期数量（例如 5 分钟后的第一次复习）。
@@ -6032,7 +6033,7 @@
     }
   }
 
-  if (Array.isArray(window.WORDS)) {
+  if (Array.isArray(window.WORDS) && window.WORDS.length) {
     bootAfterWordsLoaded();
   } else {
     const homeView = document.getElementById('view-home');
