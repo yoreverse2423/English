@@ -244,27 +244,6 @@
     return '<p class="word-forms">变形：' + shown.join(' · ') + suffix + '</p>';
   }
 
-  function noteDisclosureHtml(word) {
-    const forms = formsLineHtml(word);
-    if (!forms) return '';
-    return '<details class="word-note">' +
-        '<summary class="word-note-summary">注释</summary>' +
-        '<div class="word-note-body">' + forms + '</div>' +
-        '</details>';
-}
-
-  const FREQ_META = {
-    '高': { label: '高频', className: 'is-high', text: '高考高频' },
-    '中': { label: '中频', className: 'is-mid', text: '高考中频' },
-    '低': { label: '低频', className: 'is-low', text: '高考低频' }
-  };
-
-  function freqTagHtml(word) {
-    const meta = word && FREQ_META[word.freq];
-    if (!meta) return '';
-    return '<span class="freq-tag ' + meta.className + '" title="' + escapeAttr(meta.text) + '">' +
-      meta.label + '</span>';
-  }
 
   function getDayKey(value) {
     const date = value instanceof Date ? value : new Date(value === undefined ? Date.now() : value);
@@ -1544,6 +1523,11 @@
         '<p class="definition-text">' + escapeHtml(word.cn || '暂无释义') + '</p>' +
       '</div>';
 
+    const formsLine = formsLineHtml(word);
+    if (formsLine) {
+      html += formsLine;
+    }
+
     if (collocations.length) {
       html +=
         '<div class="info-block">' +
@@ -1597,7 +1581,6 @@
           '<div class="word-main">' +
             '<h2 class="word-title' + longClass + '">' + escapeHtml(word.w) + '</h2>' +
             (phonetic ? '<p class="word-phonetic">' + escapeHtml(phonetic) + '</p>' : '') +
-            noteDisclosureHtml(word) +
             '<div class="audio-actions">' +
               '<button class="audio-pill" type="button" data-speak="2" data-word="' + wordAttr + '" aria-label="播放 ' + wordAttr + ' 的美式发音">' + icon('speaker', 15) + '<span>美</span></button>' +
               '<button class="audio-pill" type="button" data-speak="1" data-word="' + wordAttr + '" aria-label="播放 ' + wordAttr + ' 的英式发音">' + icon('speaker', 15) + '<span>英</span></button>' +
