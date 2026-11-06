@@ -4,12 +4,16 @@
 
 - 包名：`com.xiaodancici.watch`
 - 应用名：`小单词机`
+- 版本：`versionCode 2` / `versionName 1.0.1`
 - 入口：`file:///android_asset/www/index.html`
 - `minSdk 24` / `targetSdk 34` / `compileSdk 34`
 - 单 Activity、无 ActionBar、全屏 WebView
 - JavaScript、DOM Storage、localStorage、file access、混合内容全部启用
 - 已声明 `INTERNET`、`ACCESS_NETWORK_STATE`、`VIBRATE`
-- **ABI：仅 armeabi-v7a**（32 位 ARM）
+- 已声明 `android.hardware.type.watch`（`required=false`，兼容非 Wear OS 的 ColorOS Watch）
+  与 `com.google.android.wearable.standalone=true`
+- 自带 PNG mipmap 图标（方形 + 圆形，mdpi～xxxhdpi）
+- **ABI：仅 armeabi-v7a**（32 位 ARM），并携带一个极小的标记用 JNI 库
 
 ## 构建
 

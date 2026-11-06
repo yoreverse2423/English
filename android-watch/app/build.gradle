@@ -20,12 +20,12 @@ android {
         applicationId 'com.xiaodancici.watch'
         minSdk 24
         targetSdk 34
-        versionCode 1
-        versionName '1.0.0'
+        versionCode 3
+        versionName '1.0.2'
 
-        // The Watch 3 family runs the app in 32-bit mode. Even though this
-        // WebView app has no native code today, constrain every transitive
-        // JNI library to the 32-bit ARM ABI.
+        // The Watch 3 family runs the app in 32-bit mode. The app ships a
+        // tiny marker library in src/main/jniLibs/armeabi-v7a, and every
+        // transitive JNI library is constrained to this ABI.
         ndk {
             abiFilters 'armeabi-v7a'
         }
@@ -39,6 +39,11 @@ android {
                 keyAlias keystoreProperties['keyAlias']
                 keyPassword keystoreProperties['keyPassword']
             }
+            // ColorOS / watch sideload installers still require the legacy
+            // JAR (v1) signature; AGP defaults to v2-only for minSdk >= 24.
+            // Emit both so the APK verifies on old and new installers.
+            v1SigningEnabled true
+            v2SigningEnabled true
         }
     }
 

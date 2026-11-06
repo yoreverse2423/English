@@ -3,75 +3,146 @@ package com.xiaodancici.watch;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.ComponentCallbacks2;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
 import android.view.WindowManager;
+import android.webkit.RenderProcessGoneDetail;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
  * A deliberately small WebView shell for the offline 小单词机 study app.
  * Everything except the word bank and UI lives in app/src/main/assets/www.
+ *
+ * The shell is defensive on purpose: ColorOS Watch WebViews are old and
+ * memory constrained, so every step that can fail (native lib, WebView
+ * construction, asset load, renderer process death) has a plain-TextView
+ * fallback instead of a white screen / force close.
  */
 public class MainActivity extends Activity {
 
     private static final String START_URL = "file:///android_asset/www/index.html";
     private static final int FILE_CHOOSER_REQUEST = 4107;
 
+    /*
+     * Keep the tiny shipped marker library loaded so the package is not
+     * "pure Java". Failure is harmless and deliberately ignored.
+     */
+    static {
+        try {
+            System.loadLibrary("xiaodancici");
+        } catch (Throwable ignored) {
+            // Optional marker library; the app is a WebView shell.
+        }
+    }
+
+    private static final String ERROR_HOOK_JS =
+            "(function(){if(window.__xdErrorHook)return;window.__xdErrorHook=true;"
+                    + "window.addEventListener('error',function(e){try{"
+                    + "console.error('[xd]',(e&&e.message)||e);"
+                    + "}catch(_){}},true);})();";
+
     private WebView webView;
     private ValueCallback<Uri[]> filePathCallback;
+    private boolean fallbackShown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getWindow().setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-        );
-        getWindow().setBackgroundDrawableResource(android.R.color.black);
-        hideSystemUi();
+        try {
+            getWindow().setFlags(
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN
+            );
+            getWindow().setBackgroundDrawableResource(android.R.color.black);
+            hideSystemUi();
 
-        FrameLayout root = new FrameLayout(this);
-        root.setBackgroundColor(Color.rgb(244, 241, 232));
+            FrameLayout root = new FrameLayout(this);
+            root.setBackgroundColor(Color.rgb(244, 241, 232));
+            setContentView(root);
 
-        webView = new WebView(this);
-        webView.setBackgroundColor(Color.rgb(244, 241, 232));
-        webView.setOverScrollMode(View.OVER_SCROLL_NEVER);
-        webView.setVerticalScrollBarEnabled(false);
-        webView.setHorizontalScrollBarEnabled(false);
+            webView = createWebView();
+            root.addView(webView, new FrameLayout.LayoutParams(
+                    FrameLayout.LayoutParams.MATCH_PARENT,
+                    FrameLayout.LayoutParams.MATCH_PARENT
+            ));
 
-        configureWebView(webView);
-        webView.setWebViewClient(new AppWebViewClient());
-        webView.setWebChromeClient(new AppChromeClient());
-
-        root.addView(webView, new FrameLayout.LayoutParams(
-                FrameLayout.LayoutParams.MATCH_PARENT,
-                FrameLayout.LayoutParams.MATCH_PARENT
-        ));
-        setContentView(root);
-
-        if (savedInstanceState != null) {
-            webView.restoreState(savedInstanceState);
-            if (webView.getUrl() == null) {
-                webView.loadUrl(START_URL);
+            if (savedInstanceState != null) {
+                try {
+                    webView.restoreState(savedInstanceState);
+                } catch (Throwable ignored) {
+                    // A corrupt/old state bundle must not abort startup.
+                }
+                if (webView.getUrl() == null) {
+                    loadStartPage();
+                }
+            } else {
+                loadStartPage();
             }
-        } else {
+        } catch (Throwable error) {
+            // Includes OutOfMemoryError while inflating the WebView.
+            showFallback(error);
+        }
+    }
+
+    private WebView createWebView() {
+        WebView view = new WebView(this);
+        view.setBackgroundColor(Color.rgb(244, 241, 232));
+        view.setOverScrollMode(View.OVER_SCROLL_NEVER);
+        view.setVerticalScrollBarEnabled(false);
+        view.setHorizontalScrollBarEnabled(false);
+
+        // On watch-sized screens use software rendering. Old ColorOS Watch
+        // GPU drivers (and 512 MB-class devices) are the least reliable part
+        // of the stack; software layers avoid GPU raster crashes at the cost
+        // of some animation smoothness, which matters far less than opening.
+        // Larger screens keep the default hardware path.
+        if (isSmallScreen()) {
+            try {
+                view.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+            } catch (Throwable ignored) {
+                // Fall through to the default renderer.
+            }
+        }
+
+        configureWebView(view);
+        view.setWebViewClient(new AppWebViewClient());
+        view.setWebChromeClient(new AppChromeClient());
+        return view;
+    }
+
+    private boolean isSmallScreen() {
+        Configuration config = getResources().getConfiguration();
+        int smallestWidthDp = config.smallestScreenWidthDp;
+        return smallestWidthDp <= 0 || smallestWidthDp < 320;
+    }
+
+    private void loadStartPage() {
+        try {
             webView.loadUrl(START_URL);
+        } catch (Throwable error) {
+            showFallback(error);
         }
     }
 
@@ -88,7 +159,8 @@ public class MainActivity extends Activity {
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         settings.setMediaPlaybackRequiresUserGesture(false);
         // Settings uses target="_blank" for the DeepSeek/GitHub help links.
-        // onCreateWindow below turns those popups back into same-WebView loads.
+        // onCreateWindow turns those popups back into same-WebView loads, so
+        // multiple-window support is genuinely needed here.
         settings.setSupportMultipleWindows(true);
         settings.setJavaScriptCanOpenWindowsAutomatically(true);
         settings.setUseWideViewPort(true);
@@ -122,6 +194,61 @@ public class MainActivity extends Activity {
                             | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
             );
+        }
+    }
+
+    /**
+     * Replace whatever is on screen with a readable Chinese error panel.
+     * Never let a blank white/black window be the final state.
+     */
+    private void showFallback(Throwable error) {
+        if (fallbackShown || isFinishing()) return;
+        fallbackShown = true;
+
+        try {
+            if (webView != null) {
+                try {
+                    webView.stopLoading();
+                } catch (Throwable ignored) {
+                }
+                try {
+                    ViewGroup parent = (ViewGroup) webView.getParent();
+                    if (parent != null) parent.removeView(webView);
+                } catch (Throwable ignored) {
+                }
+                try {
+                    webView.destroy();
+                } catch (Throwable ignored) {
+                }
+                webView = null;
+            }
+        } catch (Throwable ignored) {
+            webView = null;
+        }
+
+        String code = error == null ? "" : error.getClass().getSimpleName();
+        String message = "小单词机未能启动\n\n"
+                + "手表 WebView 初始化或页面加载失败。\n"
+                + "请重启手表后再打开本应用。\n"
+                + "若仍然失败，请卸载后重新安装。\n\n"
+                + "离线词库仍在应用内，不会丢失。";
+        if (!code.isEmpty()) {
+            message += "\n\n错误代码: " + code;
+        }
+
+        TextView panel = new TextView(this);
+        panel.setText(message);
+        panel.setTextColor(Color.rgb(255, 253, 248));
+        panel.setBackgroundColor(Color.rgb(13, 107, 87));
+        panel.setTextSize(15);
+        panel.setGravity(Gravity.CENTER);
+        panel.setPadding(28, 28, 28, 28);
+        panel.setLineSpacing(4, 1f);
+
+        try {
+            setContentView(panel);
+        } catch (Throwable ignored) {
+            // Nothing else we can safely do; at least the process is alive.
         }
     }
 
@@ -169,7 +296,11 @@ public class MainActivity extends Activity {
 
     private void openInMainWebView(String url) {
         if (webView != null && url != null && !"about:blank".equals(url)) {
-            webView.loadUrl(url);
+            try {
+                webView.loadUrl(url);
+            } catch (Throwable error) {
+                showFallback(error);
+            }
         }
     }
 
@@ -184,6 +315,38 @@ public class MainActivity extends Activity {
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             return handleUrl(Uri.parse(url));
         }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            if (fallbackShown) return;
+            try {
+                view.evaluateJavascript(ERROR_HOOK_JS, null);
+            } catch (Throwable ignored) {
+                // Diagnostics only.
+            }
+        }
+
+        @Override
+        public void onReceivedError(WebView view, WebResourceRequest request,
+                                    WebResourceError error) {
+            if (fallbackShown || request == null || !request.isForMainFrame()) return;
+            Uri uri = request.getUrl();
+            String url = uri == null ? "" : uri.toString();
+            // Missing/corrupt packaged assets used to leave a blank page.
+            // Network subresource failures are left to the page itself.
+            if (url.startsWith("file:///android_asset/")) {
+                showFallback(new IllegalStateException("页面资源加载失败"));
+            }
+        }
+
+        @Override
+        public boolean onRenderProcessGone(WebView view, RenderProcessGoneDetail detail) {
+            // The WebView renderer was killed (usually low memory). Returning
+            // true tells the platform we handled it; we then show our panel
+            // instead of letting the whole process be torn down.
+            showFallback(new IllegalStateException("WebView 渲染进程已退出"));
+            return true;
+        }
     }
 
     private final class AppChromeClient extends WebChromeClient {
@@ -195,30 +358,44 @@ public class MainActivity extends Activity {
                 return false;
             }
 
-            final WebView proxy = new WebView(MainActivity.this);
-            proxy.getSettings().setJavaScriptEnabled(true);
-            proxy.setWebViewClient(new WebViewClient() {
-                @Override
-                public boolean shouldOverrideUrlLoading(WebView popup,
-                                                        WebResourceRequest request) {
-                    openInMainWebView(request.getUrl().toString());
-                    proxy.destroy();
-                    return true;
-                }
+            try {
+                final WebView proxy = new WebView(MainActivity.this);
+                proxy.getSettings().setJavaScriptEnabled(true);
+                proxy.setWebViewClient(new WebViewClient() {
+                    @Override
+                    public boolean shouldOverrideUrlLoading(WebView popup,
+                                                            WebResourceRequest request) {
+                        openInMainWebView(request.getUrl().toString());
+                        destroyQuietly(proxy);
+                        return true;
+                    }
 
-                @Override
-                @SuppressWarnings("deprecation")
-                public boolean shouldOverrideUrlLoading(WebView popup, String url) {
-                    openInMainWebView(url);
-                    proxy.destroy();
-                    return true;
-                }
-            });
+                    @Override
+                    @SuppressWarnings("deprecation")
+                    public boolean shouldOverrideUrlLoading(WebView popup, String url) {
+                        openInMainWebView(url);
+                        destroyQuietly(proxy);
+                        return true;
+                    }
+                });
 
-            WebView.WebViewTransport transport = (WebView.WebViewTransport) resultMsg.obj;
-            transport.setWebView(proxy);
-            resultMsg.sendToTarget();
-            return true;
+                WebView.WebViewTransport transport = (WebView.WebViewTransport) resultMsg.obj;
+                transport.setWebView(proxy);
+                resultMsg.sendToTarget();
+                return true;
+            } catch (Throwable error) {
+                // Popup plumbing must never take down the study screen; the
+                // link simply does nothing in that case.
+                return false;
+            }
+        }
+
+        private void destroyQuietly(WebView view) {
+            try {
+                view.stopLoading();
+                view.destroy();
+            } catch (Throwable ignored) {
+            }
         }
 
         @Override
@@ -315,30 +492,59 @@ public class MainActivity extends Activity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         if (webView != null) {
-            webView.saveState(outState);
+            try {
+                webView.saveState(outState);
+            } catch (Throwable ignored) {
+            }
         }
         super.onSaveInstanceState(outState);
     }
 
     @Override
     protected void onPause() {
-        if (webView != null) webView.onPause();
+        if (webView != null) {
+            try {
+                webView.onPause();
+            } catch (Throwable ignored) {
+            }
+        }
         super.onPause();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (webView != null) webView.onResume();
+        if (webView != null) {
+            try {
+                webView.onResume();
+            } catch (Throwable ignored) {
+            }
+        }
         hideSystemUi();
+    }
+
+    @Override
+    public void onTrimMemory(int level) {
+        // Watch WebView processes are often the first thing the kernel kills.
+        // Let it release caches when the system says memory is tight.
+        if (webView != null && level >= ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW) {
+            try {
+                webView.freeMemory();
+            } catch (Throwable ignored) {
+            }
+        }
+        super.onTrimMemory(level);
     }
 
     @Override
     protected void onDestroy() {
         if (webView != null) {
-            webView.loadUrl("about:blank");
-            webView.stopLoading();
-            webView.destroy();
+            try {
+                webView.loadUrl("about:blank");
+                webView.stopLoading();
+                webView.destroy();
+            } catch (Throwable ignored) {
+            }
             webView = null;
         }
         super.onDestroy();

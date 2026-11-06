@@ -8,15 +8,27 @@
     <!-- Study feedback calls navigator.vibrate(); harmless if the watch lacks a motor. -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <!-- Declared for watch app stores/launchers. required="false" keeps the
+         APK sideloadable on ColorOS Watch builds that do not advertise the
+         Wear OS watch feature flag (OPPO Watch 3 is not Wear OS). -->
+    <uses-feature
+        android:name="android.hardware.type.watch"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="false">
+
+        <!-- Marks this as an installable standalone Wear app. -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
 
         <activity
             android:name=".MainActivity"
