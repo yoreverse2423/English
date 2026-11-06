@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-06T16:35:01+08:00",
+  "exportedAt": "2026-11-06T19:21:31+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -22,12 +22,12 @@
   },
   "stats": {
     "totalWords": 2765,
-    "learned": 17,
-    "mastered": 0,
-    "learning": 17,
-    "dueNow": 16,
-    "dueToday": 16,
-    "newToday": 5,
+    "learned": 25,
+    "mastered": 1,
+    "learning": 24,
+    "dueNow": 17,
+    "dueToday": 18,
+    "newToday": 13,
     "reviewToday": 0,
     "streakDays": 2,
     "last7Days": [
@@ -63,15 +63,15 @@
       },
       {
         "date": "2026-11-06",
-        "learned": 2,
+        "learned": 9,
         "reviewed": 0
       }
     ]
   },
   "totals": {
-    "learned": 17,
-    "mastered": 0,
-    "dueToday": 16
+    "learned": 25,
+    "mastered": 1,
+    "dueToday": 18
   },
   "words": [
     {
@@ -87,6 +87,42 @@
       "lastResultLabel": ""
     },
     {
+      "word": "affect",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:24+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "as if",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 6,
+      "nextReviewTime": null,
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "crack",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T19:25:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "damage",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -94,6 +130,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 1,
       "nextReviewTime": "2026-11-05T13:39:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "death",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:06+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -159,6 +207,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "helicopter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T16:41:02+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "in ruins",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:18+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "landfall",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -202,6 +274,30 @@
       "unitId": "compulsory-1-u4",
       "stage": 1,
       "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "ruin",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:14+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "shelter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:20:42+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -293,6 +389,30 @@
       "lastResultLabel": ""
     },
     {
+      "word": "affect",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:24+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "crack",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T19:25:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "damage",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -300,6 +420,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 1,
       "nextReviewTime": "2026-11-05T13:39:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "death",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:06+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -365,6 +497,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "helicopter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T16:41:02+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "in ruins",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:18+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "landfall",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -408,6 +564,30 @@
       "unitId": "compulsory-1-u4",
       "stage": 1,
       "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "ruin",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:14+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "shelter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:20:42+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -487,6 +667,18 @@
   ],
   "difficultWords": [
     {
+      "word": "crack",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T19:25:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "evacuate",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -494,6 +686,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 0,
       "nextReviewTime": "2026-11-06T14:16:28+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "helicopter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T16:41:02+08:00",
       "wrongCount": 0,
       "lastResult": "fuzzy",
       "lastResultLabel": "模糊"
@@ -760,6 +964,86 @@
         "reviews": 1,
         "lapses": 0,
         "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:helicopter": {
+        "stage": 0,
+        "nextReviewAt": 1793954462942,
+        "learnedAt": 1793954162942,
+        "lastReviewedAt": 1793954162942,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:death": {
+        "stage": 1,
+        "nextReviewAt": 1794040566420,
+        "learnedAt": 1793954166420,
+        "lastReviewedAt": 1793954166420,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:affect": {
+        "stage": 1,
+        "nextReviewAt": 1794040584414,
+        "learnedAt": 1793954184414,
+        "lastReviewedAt": 1793954184414,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:shelter": {
+        "stage": 1,
+        "nextReviewAt": 1794050442034,
+        "learnedAt": 1793964042034,
+        "lastReviewedAt": 1793964042034,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:crack": {
+        "stage": 0,
+        "nextReviewAt": 1793964351541,
+        "learnedAt": 1793964051541,
+        "lastReviewedAt": 1793964051541,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:as if": {
+        "stage": 6,
+        "nextReviewAt": 0,
+        "learnedAt": 1793964066899,
+        "lastReviewedAt": 1793964066899,
+        "masteredAt": 1793964066899,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:ruin": {
+        "stage": 1,
+        "nextReviewAt": 1794050474498,
+        "learnedAt": 1793964074498,
+        "lastReviewedAt": 1793964074498,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:in ruins": {
+        "stage": 1,
+        "nextReviewAt": 1794050478758,
+        "learnedAt": 1793964078758,
+        "lastReviewedAt": 1793964078758,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
       }
     },
     "daily": {
@@ -768,7 +1052,7 @@
         "reviewed": 2
       },
       "2026-11-06": {
-        "learned": 2,
+        "learned": 9,
         "reviewed": 0
       }
     },
