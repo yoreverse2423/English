@@ -92,6 +92,7 @@
     sliders: '<path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/>',
     speaker: '<path d="M11 5 6.5 9H3v6h3.5L11 19z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18 6a8.5 8.5 0 0 1 0 12"/>',
     eye: '<path d="M2.5 12S6 6 12 6s9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.8"/>',
+    'eye-off': '<path d="m3 3 18 18"/><path d="M10.6 6.2A10.6 10.6 0 0 1 12 6c6 0 9.5 6 9.5 6a16.7 16.7 0 0 1-3.2 3.9"/><path d="M6.3 6.5C3.9 8.3 2.5 12 2.5 12S6 18 12 18a10 10 0 0 0 4.2-.9"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/>',
     check: '<path d="m5 12 4.5 4.5L19 7"/>',
     search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
     close: '<path d="m6 6 12 12"/><path d="m18 6-12 12"/>',
@@ -5103,6 +5104,35 @@
 
   /* ---------- 设置 ---------- */
 
+  // 密码框 + 眼睛按钮；按钮只切换输入框的 type，不重新渲染设置页，避免丢失已输入内容。
+  function secretInputHtml(options) {
+    const id = options.id;
+    const showLabel = options.toggleShowLabel || '显示密码';
+    const hideLabel = options.toggleHideLabel || '隐藏密码';
+    return (
+      '<div class="secret-input-wrap">' +
+        '<input class="sync-token-input" id="' + escapeAttr(id) + '" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="' + escapeAttr(options.placeholder || '') + '" aria-label="' + escapeAttr(options.ariaLabel || '') + '">' +
+        '<button class="secret-toggle" type="button" data-action="toggle-secret" data-secret-target="' + escapeAttr(id) + '" data-show-label="' + escapeAttr(showLabel) + '" data-hide-label="' + escapeAttr(hideLabel) + '" aria-label="' + escapeAttr(showLabel) + '" aria-pressed="false" title="' + escapeAttr(showLabel) + '">' + icon('eye', 18) + '</button>' +
+      '</div>'
+    );
+  }
+
+  function toggleSecretVisibility(button) {
+    if (!button) return;
+    const targetId = button.getAttribute('data-secret-target');
+    const input = targetId ? document.getElementById(targetId) : null;
+    if (!input) return;
+    const showing = input.type === 'text';
+    input.type = showing ? 'password' : 'text';
+    const nextLabel = showing
+      ? (button.getAttribute('data-show-label') || '显示密码')
+      : (button.getAttribute('data-hide-label') || '隐藏密码');
+    button.setAttribute('aria-label', nextLabel);
+    button.setAttribute('title', nextLabel);
+    button.setAttribute('aria-pressed', showing ? 'false' : 'true');
+    button.innerHTML = icon(showing ? 'eye' : 'eye-off', 18);
+  }
+
   function renderSettings() {
     const customCount = state.customWords.length;
     const total = getActiveWords().length;
@@ -5171,7 +5201,13 @@
               '<li>生成后粘贴到下方并保存。需要换设备时，在新浏览器里再粘贴一次即可。</li>' +
             '</ol>' +
             '<label class="sync-label" for="github-token-input">GitHub 令牌</label>' +
-            '<input class="sync-token-input" id="github-token-input" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="github_pat_…" aria-label="GitHub 细粒度个人访问令牌">' +
+            secretInputHtml({
+              id: 'github-token-input',
+              placeholder: 'github_pat_…',
+              ariaLabel: 'GitHub 细粒度个人访问令牌',
+              toggleShowLabel: '显示令牌',
+              toggleHideLabel: '隐藏令牌'
+            }) +
             '<p class="sync-token-state" id="github-token-state">' + escapeHtml(tokenSavedText()) + '</p>' +
             '<div class="button-row">' +
               '<button class="btn btn-secondary" type="button" data-action="save-github-token">保存令牌</button>' +
@@ -5207,7 +5243,13 @@
               '<li>粘贴到下方并保存。换设备时需要重新粘贴。</li>' +
             '</ol>' +
             '<label class="sync-label" for="deepseek-key-input">DeepSeek API Key</label>' +
-            '<input class="sync-token-input" id="deepseek-key-input" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="sk-…" aria-label="DeepSeek API Key">' +
+            secretInputHtml({
+              id: 'deepseek-key-input',
+              placeholder: 'sk-…',
+              ariaLabel: 'DeepSeek API Key',
+              toggleShowLabel: '显示 API Key',
+              toggleHideLabel: '隐藏 API Key'
+            }) +
             '<p class="sync-token-state">' + escapeHtml(deepseekKeyText()) + '</p>' +
             '<div class="button-row">' +
               '<button class="btn btn-secondary" type="button" data-action="save-deepseek-key">保存密钥</button>' +
@@ -5730,6 +5772,8 @@
       renderBrowseList();
     } else if (action === 'export-backup') {
       exportBackup();
+    } else if (action === 'toggle-secret') {
+      toggleSecretVisibility(actionEl);
     } else if (action === 'save-github-token') {
       saveGithubTokenFromInput();
     } else if (action === 'clear-github-token') {
