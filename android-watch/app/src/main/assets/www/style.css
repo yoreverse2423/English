@@ -2172,6 +2172,14 @@ textarea:focus-visible,
   margin-top: 2px;
 }
 
+
+.word-note { padding: 16px 16px; border: 1px solid #e0a84a; background: #fbf1dc; border-radius: 12px; }
+.word-note summary { list-style: none; }
+.word-note summary::-webkit-details-marker { display: none; }
+.word-note .word-note-summary { padding: 8px 6px; }
+.word-note .word-note-body { padding: 12px 8px 8px; }
+.word-note .word-forms { margin: 0; }
+
 /* 高考频次标签：高频偏暖、中频中性、低频淡化。 */
 .freq-tag {
   display: inline-flex;
@@ -4331,6 +4339,13 @@ textarea:focus-visible,
     font-weight: 700;
     line-height: 1.5;
   }
+
+  .word-note { padding: 18px 16px; border: 1px solid #e0a84a; background: #fbf1dc; border-radius: 12px; }
+  .word-note summary { list-style: none; }
+  .word-note summary::-webkit-details-marker { display: none; }
+  .word-note .word-note-summary { padding: 10px 8px; }
+  .word-note .word-note-body { padding: 14px 10px 10px; }
+  .word-note .word-forms { margin: 0; }
 
   .audio-actions {
     gap: 5px;

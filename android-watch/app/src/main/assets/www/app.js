@@ -244,6 +244,15 @@
     return '<p class="word-forms">变形：' + shown.join(' · ') + suffix + '</p>';
   }
 
+  function noteDisclosureHtml(word) {
+    const forms = formsLineHtml(word);
+    if (!forms) return '';
+    return '<details class="word-note">' +
+        '<summary class="word-note-summary">注释</summary>' +
+        '<div class="word-note-body">' + forms + '</div>' +
+        '</details>';
+}
+
   const FREQ_META = {
     '高': { label: '高频', className: 'is-high', text: '高考高频' },
     '中': { label: '中频', className: 'is-mid', text: '高考中频' },
@@ -1588,7 +1597,7 @@
           '<div class="word-main">' +
             '<h2 class="word-title' + longClass + '">' + escapeHtml(word.w) + '</h2>' +
             (phonetic ? '<p class="word-phonetic">' + escapeHtml(phonetic) + '</p>' : '') +
-            formsLineHtml(word) +
+            noteDisclosureHtml(word) +
             '<div class="audio-actions">' +
               '<button class="audio-pill" type="button" data-speak="2" data-word="' + wordAttr + '" aria-label="播放 ' + wordAttr + ' 的美式发音">' + icon('speaker', 15) + '<span>美</span></button>' +
               '<button class="audio-pill" type="button" data-speak="1" data-word="' + wordAttr + '" aria-label="播放 ' + wordAttr + ' 的英式发音">' + icon('speaker', 15) + '<span>英</span></button>' +
