@@ -1573,8 +1573,6 @@
     const phonetic = formatPhonetic(word.ph);
     const longClass = word.w.length > 14 ? ' is-long' : '';
     const wordAttr = escapeAttr(word.w);
-    const progress = getProgress(word);
-    const isMastered = Boolean(progress && progress.masteredAt);
 
     return (
       '<div class="study-main">' +
@@ -1602,9 +1600,9 @@
         '</article>' +
         '<div class="study-bottom">' +
           '<div class="rating-bar" role="group" aria-label="选择记忆程度">' +
-            '<button class="rating-btn rating-known" type="button" data-rating="known" aria-label="认识，进入下一阶段">' +
+            '<button class="rating-btn rating-known" type="button" data-rating="known" aria-label="认识，短按进入下一阶段；长按直接标为已掌握">' +
               '<span class="rating-icon">✓</span>' +
-              '<span class="rating-copy"><b>认识</b><small>记得</small></span>' +
+              '<span class="rating-copy"><b>认识</b><small>长按掌握</small></span>' +
             '</button>' +
             '<button class="rating-btn rating-fuzzy" type="button" data-rating="fuzzy" aria-label="模糊，5分钟后再复习">' +
               '<span class="rating-icon">~</span>' +
@@ -1615,12 +1613,6 @@
               '<span class="rating-copy"><b>不认识</b><small>重学</small></span>' +
             '</button>' +
           '</div>' +
-          '<p class="rating-hint">凭第一反应选择 · 认识会推进复习阶段</p>' +
-          (isMastered
-            ? ''
-            : '<div class="master-direct-row">' +
-                '<button class="master-direct-btn" type="button" data-action="master-current-word">直接已掌握</button>' +
-              '</div>') +
         '</div>' +
       '</div>'
     );
@@ -5666,6 +5658,88 @@
 
   /* ---------- 事件处理 ---------- */
 
+  // 学习卡「认识」长按：短按照常推进复习阶段，长按直接标为已掌握。
+  const KNOWN_LONG_PRESS_MS = 550;
+  const KNOWN_LONG_PRESS_MOVE_PX = 12;
+  let knownPressTimer = null;
+  let knownPressStartX = 0;
+  let knownPressStartY = 0;
+  let suppressKnownTap = false;
+
+  function knownRatingButtonFrom(target) {
+    return target && typeof target.closest === 'function'
+      ? target.closest('.rating-known[data-rating="known"]')
+      : null;
+  }
+
+  function clearKnownPressTimer() {
+    if (knownPressTimer) {
+      window.clearTimeout(knownPressTimer);
+      knownPressTimer = null;
+    }
+  }
+
+  function eventPoint(event) {
+    if (event.touches && event.touches.length) {
+      return { x: event.touches[0].clientX, y: event.touches[0].clientY };
+    }
+    if (event.changedTouches && event.changedTouches.length) {
+      return { x: event.changedTouches[0].clientX, y: event.changedTouches[0].clientY };
+    }
+    if (typeof event.clientX === 'number') {
+      return { x: event.clientX, y: event.clientY };
+    }
+    return null;
+  }
+
+  function handleKnownPressStart(event) {
+    const button = knownRatingButtonFrom(event.target);
+    if (!button) return;
+    if (event.pointerType === 'mouse' && event.button !== 0) return;
+    if (event.touches && event.touches.length !== 1) return;
+
+    clearKnownPressTimer();
+    suppressKnownTap = false;
+    const point = eventPoint(event);
+    knownPressStartX = point ? point.x : 0;
+    knownPressStartY = point ? point.y : 0;
+
+    knownPressTimer = window.setTimeout(function () {
+      knownPressTimer = null;
+      suppressKnownTap = true;
+      if (typeof navigator.vibrate === 'function') navigator.vibrate(12);
+      masterCurrentWord();
+    }, KNOWN_LONG_PRESS_MS);
+  }
+
+  function handleKnownPressMove(event) {
+    if (!knownPressTimer) return;
+    const point = eventPoint(event);
+    if (!point) return;
+    const dx = point.x - knownPressStartX;
+    const dy = point.y - knownPressStartY;
+    if ((dx * dx) + (dy * dy) > KNOWN_LONG_PRESS_MOVE_PX * KNOWN_LONG_PRESS_MOVE_PX) {
+      clearKnownPressTimer();
+    }
+  }
+
+  function handleKnownPressEnd() {
+    clearKnownPressTimer();
+  }
+
+  function handleKnownPressLeave(event) {
+    if (!knownPressTimer) return;
+    // 子元素之间的移动不算离开按钮；point 事件在触摸设备上只针对按下时的元素。
+    const button = knownRatingButtonFrom(event.target);
+    if (!button) return;
+    if (event.relatedTarget && button.contains(event.relatedTarget)) return;
+    clearKnownPressTimer();
+  }
+
+  function handleKnownContextMenu(event) {
+    if (knownRatingButtonFrom(event.target)) event.preventDefault();
+  }
+
   function handleDocumentClick(event) {
     const target = event.target;
     if (!target || typeof target.closest !== 'function') return;
@@ -5692,7 +5766,14 @@
     const ratingButton = target.closest('[data-rating]');
     if (ratingButton) {
       event.preventDefault();
-      rateCurrent(ratingButton.getAttribute('data-rating'));
+      const rating = ratingButton.getAttribute('data-rating');
+      // 长按已经触发「直接掌握」，随后的 click 不再按短按评分。
+      if (suppressKnownTap && rating === 'known') {
+        suppressKnownTap = false;
+        return;
+      }
+      suppressKnownTap = false;
+      rateCurrent(rating);
       return;
     }
 
@@ -5758,8 +5839,6 @@
       renderBrowseList();
     } else if (action === 'master-browse-word') {
       masterBrowseWord(actionEl.getAttribute('data-word-key'));
-    } else if (action === 'master-current-word') {
-      masterCurrentWord();
     } else if (action === 'clear-search') {
       browseQuery = '';
       browseLimit = BROWSE_PAGE_SIZE;
@@ -5905,6 +5984,21 @@
   /* ---------- 初始化 ---------- */
 
   document.addEventListener('click', handleDocumentClick);
+  if (window.PointerEvent) {
+    document.addEventListener('pointerdown', handleKnownPressStart);
+    document.addEventListener('pointermove', handleKnownPressMove);
+    document.addEventListener('pointerup', handleKnownPressEnd);
+    document.addEventListener('pointercancel', handleKnownPressEnd);
+    document.addEventListener('pointerleave', handleKnownPressLeave, true);
+  } else {
+    document.addEventListener('touchstart', handleKnownPressStart, { passive: true });
+    document.addEventListener('touchmove', handleKnownPressMove, { passive: true });
+    document.addEventListener('touchend', handleKnownPressEnd);
+    document.addEventListener('touchcancel', handleKnownPressEnd);
+    document.addEventListener('mouseup', handleKnownPressEnd);
+    document.addEventListener('mouseleave', handleKnownPressEnd, true);
+  }
+  document.addEventListener('contextmenu', handleKnownContextMenu);
   document.addEventListener('input', handleDocumentInput);
   document.addEventListener('change', handleDocumentChange);
   document.addEventListener('keydown', handleDocumentKeydown);

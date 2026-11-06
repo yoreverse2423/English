@@ -1303,6 +1303,10 @@ textarea:focus-visible,
   color: #0b604f;
   background: #e7f4ed;
   border-color: #d1eadd;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
 }
 
 .rating-known .rating-icon {
@@ -2156,8 +2160,9 @@ textarea:focus-visible,
 
 .word-forms {
   margin: 6px 0 0;
-  color: var(--muted);
-  font-size: 11.5px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.55;
   overflow-wrap: anywhere;
 }
@@ -4013,7 +4018,8 @@ textarea:focus-visible,
 
 .reading-sheet-card .word-forms {
   margin-top: 6px;
-  font-size: 11.5px;
+  font-size: 13.5px;
+  font-weight: 600;
 }
 
 .reading-sheet-card .audio-pill {
@@ -4307,8 +4313,9 @@ textarea:focus-visible,
 
   .word-forms {
     margin-top: 3px;
-    font-size: 9.5px;
-    line-height: 1.45;
+    font-size: 15.5px;
+    font-weight: 700;
+    line-height: 1.5;
   }
 
   .audio-actions {
