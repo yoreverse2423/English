@@ -5097,6 +5097,7 @@
       '<div class="secret-input-wrap">' +
         '<input class="sync-token-input" id="' + escapeAttr(id) + '" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="' + escapeAttr(options.placeholder || '') + '" aria-label="' + escapeAttr(options.ariaLabel || '') + '">' +
         '<button class="secret-toggle" type="button" data-action="toggle-secret" data-secret-target="' + escapeAttr(id) + '" data-show-label="' + escapeAttr(showLabel) + '" data-hide-label="' + escapeAttr(hideLabel) + '" aria-label="' + escapeAttr(showLabel) + '" aria-pressed="false" title="' + escapeAttr(showLabel) + '">' + icon('eye-off', 18) + '</button>' +
+        '<button class="secret-copy" type="button" data-action="copy-secret" data-secret-source="' + escapeAttr(options.copySource || '') + '" aria-label="复制">复制</button>' +
       '</div>'
     );
   }
@@ -5115,6 +5116,50 @@
     button.setAttribute('title', nextLabel);
     button.setAttribute('aria-pressed', showing ? 'false' : 'true');
     button.innerHTML = icon(showing ? 'eye-off' : 'eye', 18);
+  }
+
+  function copySecretToClipboard(button) {
+    if (!button) return;
+    const source = button.getAttribute('data-secret-source');
+    let value = '';
+    if (source === 'github') {
+      value = readGithubToken();
+    } else if (source === 'deepseek') {
+      value = readDeepseekKey();
+    }
+    if (!value) {
+      showToast('还没有已保存的内容，请先保存', 'error');
+      return;
+    }
+    function done(ok) {
+      showToast(ok ? '已复制' : '复制失败', ok ? 'success' : 'error');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(value).then(function () {
+        done(true);
+      }).catch(function () {
+        done(legacyCopy(value));
+      });
+    } else {
+      done(legacyCopy(value));
+    }
+    function legacyCopy(text) {
+      try {
+        const area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', '');
+        area.style.position = 'fixed';
+        area.style.top = '-1000px';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(area);
+        return ok;
+      } catch (err) {
+        return false;
+      }
+    }
   }
 
   function renderSettings() {
@@ -5201,7 +5246,8 @@
               placeholder: 'github_pat_…',
               ariaLabel: 'GitHub 细粒度个人访问令牌',
               toggleShowLabel: '显示令牌',
-              toggleHideLabel: '隐藏令牌'
+              toggleHideLabel: '隐藏令牌',
+              copySource: 'github'
             }) +
             '<p class="sync-token-state" id="github-token-state">' + escapeHtml(tokenSavedText()) + '</p>' +
             '<div class="button-row">' +
@@ -5243,7 +5289,8 @@
               placeholder: 'sk-…',
               ariaLabel: 'DeepSeek API Key',
               toggleShowLabel: '显示 API Key',
-              toggleHideLabel: '隐藏 API Key'
+              toggleHideLabel: '隐藏 API Key',
+              copySource: 'deepseek'
             }) +
             '<p class="sync-token-state">' + escapeHtml(deepseekKeyText()) + '</p>' +
             '<div class="button-row">' +
@@ -5856,6 +5903,8 @@
       exportBackup();
     } else if (action === 'toggle-secret') {
       toggleSecretVisibility(actionEl);
+    } else if (action === 'copy-secret') {
+      copySecretToClipboard(actionEl);
     } else if (action === 'save-github-token') {
       saveGithubTokenFromInput();
     } else if (action === 'clear-github-token') {

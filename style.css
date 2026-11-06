@@ -1078,7 +1078,7 @@ textarea:focus-visible,
   justify-content: center;
   width: 100%;
   min-height: clamp(158px, 25vh, 218px);
-  padding: 20px;
+  padding: 28px 24px;
   color: var(--ink-soft);
   background:
     radial-gradient(circle at 50% 20%, rgba(227, 241, 235, 0.85), transparent 48%),
@@ -3617,6 +3617,27 @@ textarea:focus-visible,
   padding-right: 44px;
 }
 
+.secret-input-wrap .sync-token-input {
+  padding-right: 88px;
+}
+
+.secret-copy {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.secret-copy:hover {
+  color: var(--ink);
+}
+
 .secret-toggle {
   position: absolute;
   top: 50%;
@@ -4353,9 +4374,9 @@ textarea:focus-visible,
   }
 
   .meaning-cover {
-    min-height: 64px;
-    padding: 8px;
-    gap: 2px;
+    min-height: 88px;
+    padding: 16px 14px;
+    gap: 4px;
     border-radius: 12px;
   }
 
