@@ -5180,6 +5180,17 @@
           '</div>' +
         '</section>' +
 
+        '<section class="settings-card" aria-labelledby="watch-download-title">' +
+          '<div class="settings-card-head">' +
+            '<h2 class="settings-card-title" id="watch-download-title">手表离线安装包</h2>' +
+            '<p class="settings-card-desc">OPPO Watch 3 等手表需安装 <strong>32 位（armeabi-v7a）</strong> APK；用电脑 ADB 或甲壳虫等工具安装。包内已含词库，学新词 / 复习 / 词库可离线；阅读生成与 GitHub 同步需联网。</p>' +
+          '</div>' +
+          '<div class="settings-body">' +
+            '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
+            '<p class="watch-download-hint">已签名 APK · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+          '</div>' +
+        '</section>' +
+
         '<section class="settings-card" aria-labelledby="github-sync-title">' +
           '<div class="settings-card-head">' +
             '<h2 class="settings-card-title" id="github-sync-title">同步进度到 GitHub</h2>' +

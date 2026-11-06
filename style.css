@@ -3461,6 +3461,19 @@ textarea:focus-visible,
   flex: 1;
 }
 
+.watch-download-btn {
+  margin-top: 14px;
+  text-decoration: none;
+}
+
+.watch-download-hint {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .format-hint {
   margin: 10px 0 0;
   color: var(--muted);

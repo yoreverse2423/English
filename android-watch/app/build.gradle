@@ -1,0 +1,84 @@
+import java.util.Properties
+
+plugins {
+    id 'com.android.application'
+}
+
+def keystorePropertiesFile = rootProject.file('keystore.properties')
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystorePropertiesFile.withInputStream { stream ->
+        keystoreProperties.load(stream)
+    }
+}
+
+android {
+    namespace 'com.xiaodancici.watch'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.xiaodancici.watch'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+
+        // The Watch 3 family runs the app in 32-bit mode. Even though this
+        // WebView app has no native code today, constrain every transitive
+        // JNI library to the 32-bit ARM ABI.
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                storeFile rootProject.file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    splits {
+        abi {
+            // One APK, never per-ABI split APKs.
+            enable false
+        }
+    }
+
+    packaging {
+        jniLibs {
+            // Keep the package 32-bit only even if a future dependency adds JNI.
+            excludes += [
+                'lib/arm64-v8a/**',
+                'lib/x86/**',
+                'lib/x86_64/**',
+                'lib/mips/**',
+                'lib/mips64/**'
+            ]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+    }
+}
