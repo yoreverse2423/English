@@ -1030,6 +1030,40 @@
     return progress;
   }
 
+  // 直接标为已掌握：跳过阶段推进和复习排期。
+  function markWordMasteredDirect(word) {
+    if (!word) return false;
+    const key = word.key || word.id;
+    if (!key) return false;
+
+    let progress = getProgress(word);
+    if (progress && progress.masteredAt) return false;
+
+    const now = Date.now();
+    if (!progress) {
+      progress = {
+        stage: 0,
+        nextReviewAt: 0,
+        learnedAt: now,
+        lastReviewedAt: 0,
+        masteredAt: null,
+        reviews: 0,
+        lapses: 0,
+        lastResult: null
+      };
+      state.progress[key] = progress;
+    }
+
+    progress.stage = STAGE_COUNT;
+    progress.masteredAt = now;
+    progress.nextReviewAt = 0;
+    if (!progress.learnedAt) progress.learnedAt = now;
+    progress.lastReviewedAt = now;
+    progress.lastResult = 'known';
+    saveState();
+    return true;
+  }
+
   function makeSession(queue) {
     return {
       queue: queue,
@@ -1159,6 +1193,31 @@
       studyLocked = false;
       appEl.classList.remove('is-answering');
     }, 320);
+  }
+
+  function masterCurrentWord() {
+    if (studyLocked || !session || !session.queue.length) return;
+    const card = session.queue[0];
+    const word = card.word;
+    const progress = getProgress(word);
+    if (progress && progress.masteredAt) {
+      showToast('这个词已掌握。');
+      return;
+    }
+
+    const ok = window.confirm('确定已完全掌握「' + word.w + '」吗？确认后会直接标为已掌握，不再进入复习计划。');
+    if (!ok) return;
+    if (!markWordMasteredDirect(word)) return;
+
+    session.queue.shift();
+    if (!card.isRetry) {
+      session.done = Math.min(session.total, session.done + 1);
+    }
+    session.revealed = false;
+    const sessionEnded = session.queue.length === 0;
+    renderStudy();
+    showToast('已掌握「' + word.w + '」');
+    if (sessionEnded) maybeAutoUploadProgress();
   }
 
   function continueStudy() {
@@ -1513,6 +1572,8 @@
     const phonetic = formatPhonetic(word.ph);
     const longClass = word.w.length > 14 ? ' is-long' : '';
     const wordAttr = escapeAttr(word.w);
+    const progress = getProgress(word);
+    const isMastered = Boolean(progress && progress.masteredAt);
 
     return (
       '<div class="study-main">' +
@@ -1554,6 +1615,11 @@
             '</button>' +
           '</div>' +
           '<p class="rating-hint">凭第一反应选择 · 认识会推进复习阶段</p>' +
+          (isMastered
+            ? ''
+            : '<div class="master-direct-row">' +
+                '<button class="master-direct-btn" type="button" data-action="master-current-word">直接已掌握</button>' +
+              '</div>') +
         '</div>' +
       '</div>'
     );
@@ -2699,9 +2765,29 @@
         '<div class="vocab-side">' +
           '<span class="vocab-status ' + status.className + '">' + status.label + '</span>' +
           '<button class="speak-mini" type="button" data-speak="2" data-word="' + escapeAttr(word.w) + '" aria-label="播放 ' + escapeAttr(word.w) + ' 的发音">' + icon('speaker', 16) + '</button>' +
+          (status.key === 'mastered'
+            ? ''
+            : '<button class="master-direct-btn" type="button" data-action="master-browse-word" data-word-key="' + escapeAttr(word.key) + '">直接已掌握</button>') +
         '</div>' +
       '</article>'
     );
+  }
+
+  function masterBrowseWord(key) {
+    const word = getWordData().map.get(key);
+    if (!word) return;
+    const progress = getProgress(word);
+    if (progress && progress.masteredAt) {
+      showToast('这个词已掌握。');
+      renderBrowseList();
+      return;
+    }
+
+    const ok = window.confirm('确定已完全掌握「' + word.w + '」吗？确认后会直接标为已掌握，不再进入复习计划。');
+    if (!ok) return;
+    if (!markWordMasteredDirect(word)) return;
+    renderBrowseList();
+    showToast('已掌握「' + word.w + '」');
   }
 
   function renderBrowseList() {
@@ -4786,8 +4872,12 @@
       ? '<ul class="reading-history">' + history.map(function (item) {
           const active = item.id === (entry && entry.id);
           const mark = item.submitted ? (item.score + '/4') : '未提交';
-          return '<li><button class="reading-history-item' + (active ? ' is-active' : '') + '" type="button" data-action="open-reading" data-reading-id="' +
-            escapeAttr(item.id) + '"><span>' + escapeHtml(item.title) + '</span><small>' + mark + '</small></button></li>';
+          return '<li class="reading-history-row">' +
+            '<button class="reading-history-item' + (active ? ' is-active' : '') + '" type="button" data-action="open-reading" data-reading-id="' +
+              escapeAttr(item.id) + '"><span>' + escapeHtml(item.title) + '</span><small>' + mark + '</small></button>' +
+            '<button class="reading-history-delete" type="button" data-action="delete-reading" data-reading-id="' +
+              escapeAttr(item.id) + '" aria-label="删除阅读记录">删除</button>' +
+          '</li>';
         }).join('') + '</ul>'
       : '<p class="reading-empty-note">生成后的文章和作答会留在本机，方便回头再看。</p>';
 
@@ -4961,6 +5051,28 @@
     readingLookup = '';
     readingError = '';
     renderReading();
+  }
+
+  function deleteReadingHistory(id) {
+    const history = loadReadingHistory();
+    const target = history.filter(function (item) {
+      return item.id === id;
+    })[0];
+    if (!target) return;
+
+    const ok = window.confirm('确定删除这篇阅读记录「' + target.title + '」吗？删除后无法恢复。');
+    if (!ok) return;
+
+    const remaining = history.filter(function (item) {
+      return item.id !== id;
+    });
+    saveReadingHistory(remaining);
+    if (readingActiveId === id) {
+      readingActiveId = remaining[0] ? remaining[0].id : '';
+      readingLookup = '';
+    }
+    renderReading();
+    showToast('已删除阅读记录');
   }
 
   function openReadingWord(spelling) {
@@ -5602,6 +5714,10 @@
     } else if (action === 'browse-more') {
       browseLimit += BROWSE_PAGE_SIZE;
       renderBrowseList();
+    } else if (action === 'master-browse-word') {
+      masterBrowseWord(actionEl.getAttribute('data-word-key'));
+    } else if (action === 'master-current-word') {
+      masterCurrentWord();
     } else if (action === 'clear-search') {
       browseQuery = '';
       browseLimit = BROWSE_PAGE_SIZE;
@@ -5634,6 +5750,8 @@
       submitReading();
     } else if (action === 'open-reading') {
       openReadingHistory(actionEl.getAttribute('data-reading-id'));
+    } else if (action === 'delete-reading') {
+      deleteReadingHistory(actionEl.getAttribute('data-reading-id'));
     } else if (action === 'reading-word') {
       openReadingWord(actionEl.getAttribute('data-word'));
     } else if (action === 'add-reading-to-review') {
