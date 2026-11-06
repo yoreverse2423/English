@@ -245,6 +245,19 @@
   }
 
 
+  const FREQ_META = {
+    '高': { label: '高频', className: 'is-high', text: '高考高频' },
+    '中': { label: '中频', className: 'is-mid', text: '高考中频' },
+    '低': { label: '低频', className: 'is-low', text: '高考低频' }
+  };
+
+  function freqTagHtml(word) {
+    const meta = word && FREQ_META[word.freq];
+    if (!meta) return '';
+    return '<span class="freq-tag ' + meta.className + '" title="' + escapeAttr(meta.text) + '">' +
+      meta.label + '</span>';
+  }
+
   function getDayKey(value) {
     const date = value instanceof Date ? value : new Date(value === undefined ? Date.now() : value);
     if (Number.isNaN(date.getTime())) return '';

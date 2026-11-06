@@ -20,8 +20,8 @@ android {
         applicationId 'com.xiaodancici.watch'
         minSdk 24
         targetSdk 34
-        versionCode 10
-        versionName '1.0.9'
+        versionCode 11
+        versionName '1.0.10'
 
         // The Watch 3 family runs the app in 32-bit mode. The app ships a
         // tiny marker library in src/main/jniLibs/armeabi-v7a, and every
