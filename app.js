@@ -62,7 +62,7 @@
   const STAGE_COUNT = STAGE_INTERVALS.length;
   const FIVE_MINUTES = 5 * 60 * 1000;
   const MAX_DAILY_NEW = 200;
-  const BROWSE_PAGE_SIZE = 100;
+  const BROWSE_PAGE_SIZE = 50;
   const WEEKDAY_NAMES = ['日', '一', '二', '三', '四', '五', '六'];
   const ROUTES = ['home', 'study', 'browse', 'review', 'reading', 'stats', 'settings', 'books'];
   const PAGE_TITLES = {
@@ -5104,7 +5104,7 @@
     return (
       '<div class="secret-input-wrap">' +
         '<input class="sync-token-input" id="' + escapeAttr(id) + '" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="' + escapeAttr(options.placeholder || '') + '" aria-label="' + escapeAttr(options.ariaLabel || '') + '">' +
-        '<button class="secret-toggle" type="button" data-action="toggle-secret" data-secret-target="' + escapeAttr(id) + '" data-show-label="' + escapeAttr(showLabel) + '" data-hide-label="' + escapeAttr(hideLabel) + '" aria-label="' + escapeAttr(showLabel) + '" aria-pressed="false" title="' + escapeAttr(showLabel) + '">' + icon('eye', 18) + '</button>' +
+        '<button class="secret-toggle" type="button" data-action="toggle-secret" data-secret-target="' + escapeAttr(id) + '" data-show-label="' + escapeAttr(showLabel) + '" data-hide-label="' + escapeAttr(hideLabel) + '" aria-label="' + escapeAttr(showLabel) + '" aria-pressed="false" title="' + escapeAttr(showLabel) + '">' + icon('eye-off', 18) + '</button>' +
       '</div>'
     );
   }
@@ -5122,7 +5122,7 @@
     button.setAttribute('aria-label', nextLabel);
     button.setAttribute('title', nextLabel);
     button.setAttribute('aria-pressed', showing ? 'false' : 'true');
-    button.innerHTML = icon(showing ? 'eye' : 'eye-off', 18);
+    button.innerHTML = icon(showing ? 'eye-off' : 'eye', 18);
   }
 
   function renderSettings() {
@@ -6021,20 +6021,43 @@
   }
 
   // 旧版本进度以单词文本为键，启动时迁移到新的 id 键。
-  migrateLegacyProgress();
+  function bootAfterWordsLoaded() {
+    migrateLegacyProgress();
 
-  // 首页停留时定时刷新到期数量（例如 5 分钟后的第一次复习）。
-  window.setInterval(function () {
-    if (currentRoute === 'home' && !document.hidden) {
-      renderHome();
+    // 首页停留时定时刷新到期数量（例如 5 分钟后的第一次复习）。
+    window.setInterval(function () {
+      if (currentRoute === 'home' && !document.hidden) {
+        renderHome();
+      }
+    }, 30000);
+
+    applyRoute();
+
+    if (initialToast) {
+      window.setTimeout(function () {
+        showToast(initialToast, 'error');
+      }, 450);
     }
-  }, 30000);
+  }
 
-  applyRoute();
-
-  if (initialToast) {
-    window.setTimeout(function () {
-      showToast(initialToast, 'error');
-    }, 450);
+  if (Array.isArray(window.WORDS)) {
+    bootAfterWordsLoaded();
+  } else {
+    const homeView = document.getElementById('view-home');
+    if (homeView) {
+      homeView.innerHTML = '<div class="empty-state"><p>正在加载词库…</p></div>';
+    }
+    const wordsScript = document.createElement('script');
+    wordsScript.src = 'words.js';
+    wordsScript.onload = function () {
+      bootAfterWordsLoaded();
+    };
+    wordsScript.onerror = function () {
+      const home = document.getElementById('view-home');
+      if (home) {
+        home.innerHTML = '<div class="empty-state"><p>词库加载失败</p><p class="muted">请确认 words.js 与 app.js 位于同一目录后重试。</p></div>';
+      }
+    };
+    document.body.appendChild(wordsScript);
   }
 })();

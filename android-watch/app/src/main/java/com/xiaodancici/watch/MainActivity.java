@@ -5,17 +5,12 @@ import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentCallbacks2;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.graphics.Color;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowInsets;
-import android.view.WindowInsetsController;
 import android.view.WindowManager;
 import android.webkit.RenderProcessGoneDetail;
 import android.webkit.ValueCallback;
@@ -117,29 +112,10 @@ public class MainActivity extends Activity {
         view.setVerticalScrollBarEnabled(false);
         view.setHorizontalScrollBarEnabled(false);
 
-        // On watch-sized screens use software rendering. Old ColorOS Watch
-        // GPU drivers (and 512 MB-class devices) are the least reliable part
-        // of the stack; software layers avoid GPU raster crashes at the cost
-        // of some animation smoothness, which matters far less than opening.
-        // Larger screens keep the default hardware path.
-        if (isSmallScreen()) {
-            try {
-                view.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-            } catch (Throwable ignored) {
-                // Fall through to the default renderer.
-            }
-        }
-
         configureWebView(view);
         view.setWebViewClient(new AppWebViewClient());
         view.setWebChromeClient(new AppChromeClient());
         return view;
-    }
-
-    private boolean isSmallScreen() {
-        Configuration config = getResources().getConfiguration();
-        int smallestWidthDp = config.smallestScreenWidthDp;
-        return smallestWidthDp <= 0 || smallestWidthDp < 320;
     }
 
     private void loadStartPage() {
