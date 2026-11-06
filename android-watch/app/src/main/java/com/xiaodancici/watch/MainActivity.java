@@ -148,30 +148,100 @@ public class MainActivity extends Activity {
 
     private void configureWebView(WebView view) {
         WebSettings settings = view.getSettings();
+        if (settings == null) {
+            throw new IllegalStateException("WebSettings is null");
+        }
 
-        settings.setJavaScriptEnabled(true);
-        settings.setDomStorageEnabled(true);
-        settings.setDatabaseEnabled(true);
-        settings.setAllowFileAccess(true);
-        settings.setAllowContentAccess(true);
-        settings.setAllowFileAccessFromFileURLs(true);
-        settings.setAllowUniversalAccessFromFileURLs(true);
-        settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
-        settings.setMediaPlaybackRequiresUserGesture(false);
-        // Settings uses target="_blank" for the DeepSeek/GitHub help links.
-        // onCreateWindow turns those popups back into same-WebView loads, so
-        // multiple-window support is genuinely needed here.
-        settings.setSupportMultipleWindows(true);
-        settings.setJavaScriptCanOpenWindowsAutomatically(true);
-        settings.setUseWideViewPort(true);
-        settings.setLoadWithOverviewMode(true);
-        settings.setSupportZoom(false);
-        settings.setBuiltInZoomControls(false);
-        settings.setDisplayZoomControls(false);
-        settings.setTextZoom(100);
-        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
-        settings.setGeolocationEnabled(false);
-        settings.setDefaultTextEncodingName("UTF-8");
+        // Legacy database path must be set before enabling DB support on very
+        // old WebView versions; each call is isolated because any single
+        // WebSettings method can throw on ancient ColorOS firmware.
+        try {
+            settings.setDatabasePath(getDir("webview_db", MODE_PRIVATE).getPath());
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setJavaScriptEnabled(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setDomStorageEnabled(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setDatabaseEnabled(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setAllowFileAccess(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setAllowContentAccess(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setAllowFileAccessFromFileURLs(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setAllowUniversalAccessFromFileURLs(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setMediaPlaybackRequiresUserGesture(false);
+        } catch (Throwable ignored) {
+        }
+        // External help links target="_blank". Popups are not supported
+        // (onCreateWindow returns false); the settings page should navigate
+        // links in-place instead of opening new windows.
+        try {
+            settings.setSupportMultipleWindows(false);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setJavaScriptCanOpenWindowsAutomatically(false);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setUseWideViewPort(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setLoadWithOverviewMode(true);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setSupportZoom(false);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setBuiltInZoomControls(false);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setDisplayZoomControls(false);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setTextZoom(100);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setGeolocationEnabled(false);
+        } catch (Throwable ignored) {
+        }
+        try {
+            settings.setDefaultTextEncodingName("UTF-8");
+        } catch (Throwable ignored) {
+        }
     }
 
     private void hideSystemUi() {
@@ -232,6 +302,25 @@ public class MainActivity extends Activity {
                 + "请重启手表后再打开本应用。\n"
                 + "若仍然失败，请卸载后重新安装。\n\n"
                 + "离线词库仍在应用内，不会丢失。";
+        if (error != null) {
+            try {
+                String detail = error.getMessage();
+                if (detail != null && !detail.isEmpty()) {
+                    message += "\n\n详情: " + detail;
+                }
+            } catch (Throwable ignored) {
+            }
+            try {
+                StackTraceElement[] frames = error.getStackTrace();
+                if (frames != null && frames.length > 0 && frames[0] != null) {
+                    StackTraceElement top = frames[0];
+                    message += "\n位置: "
+                            + top.getClassName() + "." + top.getMethodName()
+                            + ":" + top.getLineNumber();
+                }
+            } catch (Throwable ignored) {
+            }
+        }
         if (!code.isEmpty()) {
             message += "\n\n错误代码: " + code;
         }
@@ -353,49 +442,10 @@ public class MainActivity extends Activity {
         @Override
         public boolean onCreateWindow(WebView view, boolean isDialog, boolean isUserGesture,
                                       android.os.Message resultMsg) {
-            if (resultMsg == null
-                    || !(resultMsg.obj instanceof WebView.WebViewTransport)) {
-                return false;
-            }
-
-            try {
-                final WebView proxy = new WebView(MainActivity.this);
-                proxy.getSettings().setJavaScriptEnabled(true);
-                proxy.setWebViewClient(new WebViewClient() {
-                    @Override
-                    public boolean shouldOverrideUrlLoading(WebView popup,
-                                                            WebResourceRequest request) {
-                        openInMainWebView(request.getUrl().toString());
-                        destroyQuietly(proxy);
-                        return true;
-                    }
-
-                    @Override
-                    @SuppressWarnings("deprecation")
-                    public boolean shouldOverrideUrlLoading(WebView popup, String url) {
-                        openInMainWebView(url);
-                        destroyQuietly(proxy);
-                        return true;
-                    }
-                });
-
-                WebView.WebViewTransport transport = (WebView.WebViewTransport) resultMsg.obj;
-                transport.setWebView(proxy);
-                resultMsg.sendToTarget();
-                return true;
-            } catch (Throwable error) {
-                // Popup plumbing must never take down the study screen; the
-                // link simply does nothing in that case.
-                return false;
-            }
-        }
-
-        private void destroyQuietly(WebView view) {
-            try {
-                view.stopLoading();
-                view.destroy();
-            } catch (Throwable ignored) {
-            }
+            // Popups are unsupported on watch-sized screens. Returning false
+            // makes the WebView ignore window.open / target="_blank"; the page
+            // should navigate its links in-place instead.
+            return false;
         }
 
         @Override
