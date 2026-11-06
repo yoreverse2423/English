@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-06T19:21:31+08:00",
+  "exportedAt": "2026-11-07T04:56:58+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -25,17 +25,12 @@
     "learned": 25,
     "mastered": 1,
     "learning": 24,
-    "dueNow": 17,
-    "dueToday": 18,
-    "newToday": 13,
+    "dueNow": 18,
+    "dueToday": 24,
+    "newToday": 0,
     "reviewToday": 0,
     "streakDays": 2,
     "last7Days": [
-      {
-        "date": "2026-10-31",
-        "learned": 0,
-        "reviewed": 0
-      },
       {
         "date": "2026-11-01",
         "learned": 0,
@@ -65,13 +60,18 @@
         "date": "2026-11-06",
         "learned": 9,
         "reviewed": 0
+      },
+      {
+        "date": "2026-11-07",
+        "learned": 0,
+        "reviewed": 0
       }
     ]
   },
   "totals": {
     "learned": 25,
     "mastered": 1,
-    "dueToday": 18
+    "dueToday": 24
   },
   "words": [
     {
