@@ -4197,6 +4197,380 @@ textarea:focus-visible,
   }
 }
 
+/* =========================================================
+   手表 / 超窄屏（约 150–200px 宽，方形表盘）
+   单列评分按钮 + 超大词头，整页可纵向滚动
+   ========================================================= */
+
+@media (max-width: 280px), (max-width: 320px) and (max-height: 400px) {
+  /* 页面：放弃 100dvh 固定高度，改为整页纵向滚动，
+     避免单列按钮把单词卡压成一条缝。 */
+  .study-page {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    max-width: 100%;
+    padding: calc(6px + env(safe-area-inset-top)) 6px calc(8px + env(safe-area-inset-bottom));
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .study-view {
+    overflow-x: hidden;
+  }
+
+  /* 顶栏压缩：保留进度条，隐藏右侧阶段文案 */
+  .study-topbar {
+    gap: 6px;
+    padding: 0 0 6px;
+  }
+
+  .study-back {
+    width: 32px;
+    height: 32px;
+  }
+
+  .study-progress-copy {
+    margin-bottom: 4px;
+    font-size: 9px;
+  }
+
+  .study-progress-copy span:last-child {
+    display: none;
+  }
+
+  .study-progress-track {
+    height: 4px;
+  }
+
+  /* 卡片：取消内部滚动，交给页面滚动 */
+  .word-card {
+    flex: 0 0 auto;
+    max-width: 100%;
+    min-height: 0;
+    padding: 8px 8px 10px;
+    overflow: visible;
+    border-radius: 14px;
+  }
+
+  .card-meta {
+    gap: 5px;
+  }
+
+  .card-meta-left {
+    gap: 4px;
+  }
+
+  .mode-badge {
+    height: 18px;
+    padding: 0 6px;
+    font-size: 8.5px;
+  }
+
+  .stage-label {
+    font-size: 8.5px;
+    white-space: nowrap;
+  }
+
+  .card-tag {
+    display: none;
+  }
+
+  .freq-tag {
+    height: 16px;
+    padding: 0 5px;
+    font-size: 8px;
+  }
+
+  /* 词头：尽量占满表盘宽度 */
+  .word-main {
+    padding: 10px 0 8px;
+  }
+
+  .word-title {
+    max-width: 100%;
+    font-size: clamp(28px, 22vw, 56px);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+  }
+
+  .word-title.is-long {
+    font-size: clamp(23px, 17.5vw, 46px);
+    letter-spacing: -0.03em;
+  }
+
+  .word-phonetic {
+    min-height: 0;
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+  .word-forms {
+    margin-top: 3px;
+    font-size: 9.5px;
+    line-height: 1.45;
+  }
+
+  .audio-actions {
+    gap: 5px;
+    margin-top: 6px;
+  }
+
+  .audio-pill {
+    height: 26px;
+    padding: 0 8px;
+    gap: 3px;
+    font-size: 10px;
+  }
+
+  .audio-pill .icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .meaning-cover {
+    min-height: 64px;
+    padding: 8px;
+    gap: 2px;
+    border-radius: 12px;
+  }
+
+  .meaning-cover-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 0;
+  }
+
+  .meaning-cover-icon .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .meaning-cover-title {
+    font-size: 12px;
+  }
+
+  .meaning-cover-sub {
+    font-size: 9.5px;
+  }
+
+  .definition-line {
+    gap: 6px;
+  }
+
+  .pos-pill {
+    height: 18px;
+    padding: 0 5px;
+    font-size: 9px;
+  }
+
+  .definition-text {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .info-block {
+    margin-top: 10px;
+    padding-top: 9px;
+  }
+
+  .info-title {
+    margin-bottom: 5px;
+    font-size: 9px;
+  }
+
+  .collocation-item {
+    padding: 6px 8px;
+  }
+
+  .collocation-en {
+    font-size: 11.5px;
+  }
+
+  .collocation-cn {
+    font-size: 10px;
+  }
+
+  .example-box {
+    padding: 8px 10px;
+  }
+
+  .example-en {
+    font-size: 11.5px;
+  }
+
+  .example-cn {
+    font-size: 10px;
+  }
+
+  /* 评分区：三按钮改单列、整行、加高 */
+  .study-bottom {
+    padding-top: 6px;
+  }
+
+  .rating-bar {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding-top: 0;
+  }
+
+  .rating-btn {
+    width: 100%;
+    height: auto;
+    min-height: 46px;
+    padding: 6px 12px;
+    border-radius: 14px;
+  }
+
+  .rating-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .rating-copy b {
+    font-size: 14px;
+  }
+
+  .rating-copy small {
+    display: none;
+  }
+
+  .rating-hint {
+    display: none;
+  }
+
+  .master-direct-btn {
+    padding: 4px 6px;
+    font-size: 9px;
+  }
+
+  /* 复习测验：同样压缩留白，放大题干 */
+  .review-quiz-main {
+    min-height: 0;
+  }
+
+  .review-card {
+    flex: 0 0 auto;
+    max-width: 100%;
+    min-height: 0;
+    padding: 8px 8px 10px;
+    overflow: visible;
+    border-radius: 14px;
+  }
+
+  .review-card-meta {
+    gap: 4px;
+  }
+
+  .review-card-meta .stage-label {
+    margin-left: 0;
+  }
+
+  .review-prompt {
+    padding: 10px 0 8px;
+  }
+
+  .review-prompt-label {
+    margin-bottom: 5px;
+    font-size: 9px;
+  }
+
+  .review-prompt-word {
+    max-width: 100%;
+    font-size: clamp(26px, 21vw, 54px);
+    line-height: 1.06;
+  }
+
+  .review-prompt-word.is-meaning {
+    font-size: clamp(14px, 5vw, 20px);
+    line-height: 1.4;
+  }
+
+  .review-prompt-sub {
+    min-height: 0;
+    margin-top: 4px;
+    font-size: 10.5px;
+  }
+
+  .review-options {
+    gap: 5px;
+  }
+
+  .review-option {
+    min-height: 44px;
+    gap: 7px;
+    padding: 6px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+
+  .review-option-key {
+    width: 21px;
+    height: 21px;
+    border-radius: 7px;
+    font-size: 9.5px;
+  }
+
+  .review-quiz-hint {
+    display: none;
+  }
+
+  .review-feedback {
+    margin-top: 8px;
+    padding: 8px 9px;
+    border-radius: 11px;
+  }
+
+  .review-feedback-title {
+    font-size: 12px;
+  }
+
+  .review-feedback-copy {
+    font-size: 10.5px;
+  }
+
+  .spell-boxes {
+    gap: 3px;
+    padding: 4px 0 0;
+  }
+
+  .letter-box {
+    width: clamp(16px, 5vw, 24px);
+    height: 34px;
+    border-radius: 7px;
+    font-size: 14px;
+  }
+
+  .spell-hint {
+    margin-top: 5px;
+    font-size: 9.5px;
+  }
+
+  /* 只背不考核浏览卡 */
+  .review-browse-card {
+    padding: 10px;
+  }
+
+  .review-browse-word {
+    margin-top: 8px;
+    font-size: clamp(28px, 22vw, 52px);
+  }
+
+  .review-browse-ph {
+    font-size: 11px;
+  }
+
+  .review-browse-def {
+    margin-top: 10px;
+    padding-top: 9px;
+  }
+
+  .review-browse-cn {
+    font-size: 13px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
