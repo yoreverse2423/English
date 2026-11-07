@@ -5259,6 +5259,17 @@
           '</div>' +
         '</section>' +
 
+        '<section class="settings-card" aria-labelledby="grok-wear-download-title">' +
+          '<div class="settings-card-head">' +
+            '<h2 class="settings-card-title" id="grok-wear-download-title">临时：Grok Wear</h2>' +
+            '<p class="settings-card-desc">第三方 Wear OS 客户端试装包，不是小单词机。下完会撤。</p>' +
+          '</div>' +
+          '<div class="settings-body">' +
+            '<a class="btn btn-secondary btn-block watch-download-btn" href="downloads/grok-wear-0.6.3.apk" download>' + icon('download', 17) + '下载 Grok Wear 0.6.3</a>' +
+            '<p class="watch-download-hint">v0.6.3 · 临时托管，仅供手表浏览器试装</p>' +
+          '</div>' +
+        '</section>' +
+
         '<section class="settings-card" aria-labelledby="github-sync-title">' +
           '<div class="settings-card-head">' +
             '<h2 class="settings-card-title" id="github-sync-title">同步进度到 GitHub</h2>' +
