@@ -1161,12 +1161,12 @@ textarea:focus-visible,
   justify-content: center;
   width: 100%;
   min-height: clamp(158px, 25vh, 218px);
-  padding: 28px 24px;
+  padding: 28px 32px;
   color: var(--ink-soft);
   background:
     radial-gradient(circle at 50% 20%, rgba(227, 241, 235, 0.85), transparent 48%),
     var(--surface-soft);
-  border: 1px dashed var(--line-strong);
+  border: none;
   border-radius: 20px;
   transition: background 180ms ease, border-color 180ms ease;
 }
@@ -4462,9 +4462,14 @@ textarea:focus-visible,
 
   .meaning-cover {
     min-height: 88px;
-    padding: 16px 14px;
+    padding: 18px 22px;
     gap: 4px;
+    border: none;
     border-radius: 12px;
+  }
+
+  .meaning-cover-sub {
+    display: none;
   }
 
   .meaning-cover-icon {
