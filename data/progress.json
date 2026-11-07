@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-07T16:40:19+08:00",
+  "exportedAt": "2026-11-07T22:48:07+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -25,7 +25,7 @@
     "learned": 25,
     "mastered": 1,
     "learning": 24,
-    "dueNow": 21,
+    "dueNow": 24,
     "dueToday": 24,
     "newToday": 0,
     "reviewToday": 0,
@@ -1099,19 +1099,12 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "naturalists",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "nature",
-            "naturalist",
-            "naturalists"
+            "naturalist"
           ],
           "v": [],
           "adj": [
@@ -1214,24 +1207,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "seconded",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "seconding",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "secondarily",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -1240,18 +1215,14 @@
             "seconds"
           ],
           "v": [
-            "second",
-            "seconds",
-            "seconded",
-            "seconding"
+            "second"
           ],
           "adj": [
             "second",
             "secondary"
           ],
           "adv": [
-            "secondly",
-            "secondarily"
+            "secondly"
           ]
         },
         "freq": "高",
@@ -1301,36 +1272,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "understandings",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "understands",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "understood",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "understanding",
-            "understandings"
+            "understanding"
           ],
           "v": [
-            "understand",
-            "understands",
-            "understood",
-            "understanding"
+            "understand"
           ],
           "adj": [
             "understanding",
@@ -1393,36 +1342,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "preparations",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "prepares",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "preparing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "preparation",
-            "preparations"
+            "preparation"
           ],
           "v": [
-            "prepare",
-            "prepares",
-            "prepared",
-            "preparing"
+            "prepare"
           ],
           "adj": [
             "prepared",
@@ -1485,38 +1412,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "developments",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "developers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "develops",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "development",
-            "developer",
-            "developments",
-            "developers"
+            "developer"
           ],
           "v": [
-            "develop",
-            "develops",
-            "developed",
-            "developing"
+            "develop"
           ],
           "adj": [
             "developing",
@@ -1559,50 +1463,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "slows",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slowed",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slowing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slower",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slowest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [],
           "v": [
-            "slow",
-            "slows",
-            "slowed",
-            "slowing"
+            "slow"
           ],
           "adj": [
-            "slow",
-            "slower",
-            "slowest"
+            "slow"
           ],
           "adv": [
             "slowly"
@@ -1707,15 +1576,11 @@
           "adj": [
             "far",
             "farther",
-            "further",
-            "farthest",
-            "furthest"
+            "farthest"
           ],
           "adv": [
             "far",
-            "farther",
             "further",
-            "farthest",
             "furthest"
           ]
         },
@@ -1798,20 +1663,13 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "monthlies",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "month",
             "months",
-            "monthly",
-            "monthlies"
+            "monthly"
           ],
           "v": [],
           "adj": [
@@ -1868,30 +1726,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "failures",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "fails",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "failure",
-            "failures"
+            "failure"
           ],
           "v": [
-            "fail",
-            "fails",
-            "failed",
-            "failing"
+            "fail"
           ],
           "adj": [
             "failed",
@@ -1986,30 +1828,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "shrinks",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "shrank",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "shrunk",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "shrunken",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -2017,12 +1835,7 @@
             "shrinkage"
           ],
           "v": [
-            "shrink",
-            "shrinks",
-            "shrank",
-            "shrunk",
-            "shrunken",
-            "shrinking"
+            "shrink"
           ],
           "adj": [
             "shrinking"
@@ -2064,36 +1877,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "waters",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "watered",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "watering",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "water",
-            "waters"
+            "water"
           ],
           "v": [
-            "water",
-            "waters",
-            "watered",
-            "watering"
+            "water"
           ],
           "adj": [
             "watery"
@@ -2141,39 +1932,16 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "runs",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "runners",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "ran",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "run",
-            "runs",
             "runner",
-            "running",
-            "runners"
+            "running"
           ],
           "v": [
-            "run",
-            "runs",
-            "ran",
-            "running"
+            "run"
           ],
           "adj": [
             "running"
@@ -2221,58 +1989,21 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "lows",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "lowers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "lowered",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "lowering",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "lowest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "low",
-            "lows"
+            "low"
           ],
           "v": [
-            "lower",
-            "lowers",
-            "lowered",
-            "lowering"
+            "lower"
           ],
           "adj": [
             "low",
-            "lower",
-            "lowest"
+            "lower"
           ],
           "adv": [
             "low",
-            "lower",
-            "lowest",
             "lowly"
           ]
         },
@@ -2311,12 +2042,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "unlikeliest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -2324,8 +2049,7 @@
           "v": [],
           "adj": [
             "unlike",
-            "unlikely",
-            "unlikeliest"
+            "unlikely"
           ],
           "adv": []
         },
@@ -2377,9 +2101,7 @@
             "suddenness"
           ],
           "v": [],
-          "adj": [
-            "sudden"
-          ],
+          "adj": [],
           "adv": [
             "suddenly"
           ]
@@ -2429,7 +2151,6 @@
         ],
         "wf": {
           "n": [
-            "town",
             "towns",
             "townspeople"
           ],
@@ -2476,7 +2197,6 @@
         ],
         "wf": {
           "n": [
-            "minute",
             "minutes"
           ],
           "v": [],
@@ -2548,33 +2268,18 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "givers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "gifts",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "giver",
-            "gift",
-            "givers",
-            "gifts"
+            "gift"
           ],
           "v": [
-            "give",
             "gives",
+            "giving",
             "gave",
-            "given",
-            "giving"
+            "given"
           ],
           "adj": [],
           "adv": []
@@ -2632,26 +2337,17 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "signals",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "sign",
             "signs",
-            "signal",
-            "signals"
+            "signal"
           ],
           "v": [
-            "sign",
             "signs",
-            "signed",
-            "signing"
+            "signing",
+            "signed"
           ],
           "adj": [],
           "adv": []
@@ -2709,29 +2405,18 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "lengths",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "length",
-            "lengths"
+            "length"
           ],
           "v": [],
           "adj": [
-            "long",
             "longer",
             "longest"
           ],
           "adv": [
-            "long",
-            "longer",
-            "longest",
             "longingly"
           ]
         },
@@ -2774,7 +2459,6 @@
         ],
         "wf": {
           "n": [
-            "term",
             "terms"
           ],
           "v": [],
@@ -2829,9 +2513,7 @@
             "seriousness"
           ],
           "v": [],
-          "adj": [
-            "serious"
-          ],
+          "adj": [],
           "adv": [
             "seriously"
           ]
@@ -2889,24 +2571,16 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "arrivals",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "arrival",
-            "arrivals"
+            "arrival"
           ],
           "v": [
-            "arrive",
             "arrives",
-            "arrived",
-            "arriving"
+            "arriving",
+            "arrived"
           ],
           "adj": [],
           "adv": []
@@ -2952,35 +2626,16 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "littler",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "littlest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [],
           "v": [],
           "adj": [
-            "little",
-            "less",
-            "least",
-            "littler",
-            "littlest"
-          ],
-          "adv": [
-            "little",
             "less",
             "least"
-          ]
+          ],
+          "adv": []
         },
         "freq": "高",
         "tag": "自定义",
@@ -3045,14 +2700,12 @@
         ],
         "wf": {
           "n": [
-            "notice",
             "notices"
           ],
           "v": [
-            "notice",
             "notices",
-            "noticed",
-            "noticing"
+            "noticing",
+            "noticed"
           ],
           "adj": [
             "noticeable"
@@ -3102,18 +2755,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "huger",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "hugest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -3121,11 +2762,7 @@
             "hugeness"
           ],
           "v": [],
-          "adj": [
-            "huge",
-            "huger",
-            "hugest"
-          ],
+          "adj": [],
           "adv": [
             "hugely"
           ]
@@ -3189,32 +2826,22 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "causally",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "cause",
             "causes",
             "causation"
           ],
           "v": [
-            "cause",
             "causes",
-            "caused",
-            "causing"
+            "causing",
+            "caused"
           ],
           "adj": [
             "causal"
           ],
-          "adv": [
-            "causally"
-          ]
+          "adv": []
         },
         "freq": "高",
         "tag": "自定义",
@@ -3249,9 +2876,7 @@
         "wf": {
           "n": [],
           "v": [],
-          "adj": [
-            "undersea"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "低",
@@ -3293,7 +2918,6 @@
         ],
         "wf": {
           "n": [
-            "earthquake",
             "earthquakes"
           ],
           "v": [],
@@ -3345,7 +2969,6 @@
         ],
         "wf": {
           "n": [
-            "sea",
             "seas",
             "seaside"
           ],
@@ -3388,23 +3011,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "coasts",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "coast",
-            "coasts"
+            "coast"
           ],
           "v": [],
-          "adj": [
-            "coastal"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "中",
@@ -3441,9 +3055,7 @@
           "n": [],
           "v": [],
           "adj": [],
-          "adv": [
-            "once"
-          ]
+          "adv": []
         },
         "freq": "高",
         "tag": "自定义",
@@ -3516,18 +3128,10 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "coasts",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "coast",
-            "coasts",
             "coastal"
           ],
           "v": [],
@@ -3583,28 +3187,13 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "followers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "follows",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "follower",
-            "followers"
+            "follower"
           ],
           "v": [
-            "follow",
-            "follows",
             "followed",
             "following"
           ],
@@ -3660,7 +3249,6 @@
           "n": [],
           "v": [],
           "adj": [
-            "many",
             "more",
             "most"
           ],
@@ -3705,7 +3293,6 @@
         ],
         "wf": {
           "n": [
-            "country",
             "countries"
           ],
           "v": [],
@@ -3753,30 +3340,13 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "lands",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "landings",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "land",
-            "lands",
-            "landing",
-            "landings"
+            "landing"
           ],
           "v": [
-            "land",
-            "lands",
             "landed",
             "landing"
           ],
@@ -3844,7 +3414,6 @@
           ],
           "v": [],
           "adj": [
-            "heavy",
             "heavier",
             "heaviest"
           ],
@@ -3905,42 +3474,18 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "rains",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "rainier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "rainiest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "rain",
-            "rains",
             "rainfall"
           ],
           "v": [
-            "rain",
-            "rains",
             "rained",
             "raining"
           ],
           "adj": [
-            "rainy",
-            "rainier",
-            "rainiest"
+            "rainy"
           ],
           "adv": []
         },
@@ -3983,7 +3528,6 @@
         ],
         "wf": {
           "n": [
-            "street",
             "streets"
           ],
           "v": [],
@@ -4029,7 +3573,6 @@
         ],
         "wf": {
           "n": [
-            "home",
             "homes"
           ],
           "v": [],
@@ -4077,7 +3620,6 @@
         ],
         "wf": {
           "n": [
-            "hillside",
             "hillsides"
           ],
           "v": [],
@@ -4123,7 +3665,6 @@
         ],
         "wf": {
           "n": [
-            "road",
             "roads"
           ],
           "v": [],
@@ -4181,7 +3722,6 @@
         ],
         "wf": {
           "n": [
-            "house",
             "houses",
             "housing"
           ],
@@ -4227,23 +3767,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "mountains",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "mountain",
-            "mountains"
+            "mountain"
           ],
           "v": [],
-          "adj": [
-            "mountainous"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "中",
@@ -4285,7 +3816,6 @@
         ],
         "wf": {
           "n": [
-            "area",
             "areas"
           ],
           "v": [],
@@ -4327,39 +3857,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "volcanoes",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "volcanos",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "volcanically",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "volcano",
-            "volcanoes",
-            "volcanos"
+            "volcano"
           ],
           "v": [],
-          "adj": [
-            "volcanic"
-          ],
-          "adv": [
-            "volcanically"
-          ]
+          "adj": [],
+          "adv": []
         },
         "freq": "中",
         "tag": "自定义",
@@ -4398,42 +3904,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "eruptions",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "erupts",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "erupted",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "erupting",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "eruption",
-            "eruptions"
+            "eruption"
           ],
           "v": [
-            "erupt",
-            "erupts",
-            "erupted",
-            "erupting"
+            "erupt"
           ],
           "adj": [
             "eruptive"
@@ -4475,53 +3953,17 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "snows",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "snowed",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "snowing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "snowier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "snowiest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "snow",
-            "snows"
+            "snow"
           ],
           "v": [
-            "snow",
-            "snows",
-            "snowed",
-            "snowing"
+            "snow"
           ],
           "adj": [
-            "snowy",
-            "snowier",
-            "snowiest"
+            "snowy"
           ],
           "adv": []
         },
@@ -4560,36 +4002,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "ices",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "iced",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "icing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "icier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "iciest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -4597,15 +4009,10 @@
             "ice"
           ],
           "v": [
-            "ice",
-            "ices",
-            "iced",
-            "icing"
+            "ice"
           ],
           "adj": [
-            "icy",
-            "icier",
-            "iciest"
+            "icy"
           ],
           "adv": []
         },
@@ -4650,37 +4057,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "senders",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "sends",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "sent",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "sender",
-            "sending",
-            "senders"
+            "sending"
           ],
           "v": [
-            "send",
-            "sends",
-            "sent",
-            "sending"
+            "send"
           ],
           "adj": [],
           "adv": []
@@ -4726,25 +4111,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "rushes",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "rush",
-            "rushes",
             "rushing"
           ],
           "v": [
-            "rush",
-            "rushes",
-            "rushed",
-            "rushing"
+            "rush"
           ],
           "adj": [
             "rushed"
@@ -4834,36 +4209,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "reaches",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "reached",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "reaching",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "reach",
-            "reaches"
+            "reach"
           ],
           "v": [
-            "reach",
-            "reaches",
-            "reached",
-            "reaching"
+            "reach"
           ],
           "adj": [
             "reachable"
@@ -4905,42 +4258,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "bringers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "brings",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "brought",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "bringing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "bringer",
-            "bringers"
+            "bringer"
           ],
           "v": [
-            "bring",
-            "brings",
-            "brought",
-            "bringing"
+            "bring"
           ],
           "adj": [],
           "adv": []
@@ -5022,18 +4347,10 @@
           "en": "Many people prefer to travel by train rather than by plane.",
           "cn": ""
         },
-        "forms": [
-          {
-            "w": "peoples",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          }
-        ],
+        "forms": [],
         "wf": {
           "n": [
-            "people",
-            "peoples"
+            "people"
           ],
           "v": [],
           "adj": [],
@@ -5074,18 +4391,11 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "firsts",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "first",
-            "firsts"
+            "first"
           ],
           "v": [],
           "adj": [
@@ -5125,32 +4435,15 @@
           "en": "She gets up early every day to practice running.",
           "cn": ""
         },
-        "forms": [
-          {
-            "w": "earlier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "earliest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          }
-        ],
+        "forms": [],
         "wf": {
           "n": [],
           "v": [],
           "adj": [
-            "early",
-            "earlier",
-            "earliest"
+            "early"
           ],
           "adv": [
-            "early",
-            "earlier",
-            "earliest"
+            "early"
           ]
         },
         "freq": "高",
@@ -5194,37 +4487,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "savers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "saves",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "saved",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "saver",
-            "saving",
-            "savers"
+            "saving"
           ],
           "v": [
-            "save",
-            "saves",
-            "saved",
-            "saving"
+            "save"
           ],
           "adj": [],
           "adv": []
@@ -5270,12 +4541,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "lifelessly",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -5287,9 +4552,7 @@
           "adj": [
             "lifeless"
           ],
-          "adv": [
-            "lifelessly"
-          ]
+          "adv": []
         },
         "freq": "高",
         "tag": "自定义",
@@ -5326,36 +4589,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "buildings",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "builds",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "built",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "building",
-            "buildings"
+            "building"
           ],
           "v": [
-            "build",
-            "builds",
-            "built",
-            "building"
+            "build"
           ],
           "adj": [],
           "adv": []
@@ -5395,53 +4636,17 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "risks",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "risked",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "risking",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "riskier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "riskiest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "risk",
-            "risks"
+            "risk"
           ],
           "v": [
-            "risk",
-            "risks",
-            "risked",
-            "risking"
+            "risk"
           ],
           "adj": [
-            "risky",
-            "riskier",
-            "riskiest"
+            "risky"
           ],
           "adv": []
         },
@@ -5486,36 +4691,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "strengths",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "stronger",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "strongest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "strength",
-            "strengths"
+            "strength"
           ],
           "v": [],
           "adj": [
-            "strong",
-            "stronger",
-            "strongest"
+            "strong"
           ],
           "adv": [
             "strongly"
@@ -5556,31 +4740,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "easier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "easiest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [],
           "v": [],
           "adj": [
-            "easy",
-            "easier",
-            "easiest"
+            "easy"
           ],
-          "adv": [
-            "easily"
-          ]
+          "adv": []
         },
         "freq": "高",
         "tag": "自定义",
@@ -5624,11 +4792,8 @@
             "third"
           ],
           "v": [],
-          "adj": [
-            "third"
-          ],
+          "adj": [],
           "adv": [
-            "third",
             "thirdly"
           ]
         },
@@ -5667,53 +4832,15 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "needs",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "needed",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "needing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "needier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "neediest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "need",
-            "needs"
+            "need"
           ],
-          "v": [
-            "need",
-            "needs",
-            "needed",
-            "needing"
-          ],
+          "v": [],
           "adj": [
-            "needy",
-            "needier",
-            "neediest"
+            "needy"
           ],
           "adv": []
         },
@@ -5764,54 +4891,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "clears",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "cleared",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "clearing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "clarifies",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "clarified",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "clarifying",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "clearer",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "clearest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -5819,19 +4898,10 @@
             "clarity"
           ],
           "v": [
-            "clear",
-            "clears",
-            "cleared",
-            "clearing",
-            "clarify",
-            "clarifies",
-            "clarified",
-            "clarifying"
+            "clarify"
           ],
           "adj": [
-            "clear",
-            "clearer",
-            "clearest"
+            "clear"
           ],
           "adv": [
             "clearly"
@@ -5878,39 +4948,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "plans",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "planners",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "planning",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "plan",
-            "plans",
-            "planner",
-            "planners"
+            "planner"
           ],
-          "v": [
-            "plan",
-            "plans",
-            "planned",
-            "planning"
-          ],
+          "v": [],
           "adj": [
             "planned"
           ],
@@ -5957,48 +5002,17 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "informs",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "informed",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "informing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "informatively",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
-          "n": [
-            "information"
-          ],
+          "n": [],
           "v": [
-            "inform",
-            "informs",
-            "informed",
-            "informing"
+            "inform"
           ],
           "adj": [
             "informative"
           ],
-          "adv": [
-            "informatively"
-          ]
+          "adv": []
         },
         "freq": "高",
         "tag": "自定义",
@@ -6047,26 +5061,12 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "scientists",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "sciences",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "scientist",
-            "scientists",
             "science",
-            "sciences"
+            "scientist"
           ],
           "v": [],
           "adj": [
@@ -6117,46 +5117,16 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "locals",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "localizes",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "localized",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "localizing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "local",
-            "locals"
-          ],
-          "v": [
-            "localize",
-            "localizes",
-            "localized",
-            "localizing"
-          ],
-          "adj": [
             "local"
           ],
+          "v": [
+            "localize"
+          ],
+          "adj": [],
           "adv": [
             "locally"
           ]
@@ -6196,18 +5166,11 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "schools",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "school",
-            "schools",
             "schooling"
           ],
           "v": [],
@@ -6257,45 +5220,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "teachers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "teachings",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "teaches",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "taught",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "teacher",
-            "teaching",
-            "teachers",
-            "teachings"
-          ],
-          "v": [
-            "teach",
-            "teaches",
-            "taught",
             "teaching"
           ],
+          "v": [],
           "adj": [],
           "adv": []
         },
@@ -6328,18 +5260,10 @@
           "en": "Every student in the class joined the reading club.",
           "cn": ""
         },
-        "forms": [
-          {
-            "w": "students",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          }
-        ],
+        "forms": [],
         "wf": {
           "n": [
-            "student",
-            "students"
+            "student"
           ],
           "v": [],
           "adj": [],
@@ -6386,46 +5310,16 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "freedoms",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "frees",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "freed",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "freeing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "freedom",
-            "freedoms"
+            "freedom"
           ],
           "v": [
-            "free",
-            "frees",
-            "freed",
-            "freeing"
-          ],
-          "adj": [
             "free"
           ],
+          "adj": [],
           "adv": [
             "freely"
           ]
@@ -6465,45 +5359,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "studies",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "students",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "studied",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "studying",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "study",
-            "studies",
-            "student",
-            "students"
+            "student"
           ],
-          "v": [
-            "study",
-            "studies",
-            "studied",
-            "studying"
-          ],
+          "v": [],
           "adj": [],
           "adv": []
         },
@@ -6542,37 +5405,13 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "happenings",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "happens",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "happened",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "happening",
-            "happenings"
-          ],
-          "v": [
-            "happen",
-            "happens",
-            "happened",
             "happening"
           ],
+          "v": [],
           "adj": [],
           "adv": []
         },
@@ -6617,36 +5456,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "slows",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slowed",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slowing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slower",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "slowest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -6654,16 +5463,9 @@
             "slowness"
           ],
           "v": [
-            "slow",
-            "slows",
-            "slowed",
-            "slowing"
+            "slow"
           ],
-          "adj": [
-            "slow",
-            "slower",
-            "slowest"
-          ],
+          "adj": [],
           "adv": [
             "slowly"
           ]
@@ -6709,30 +5511,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "knows",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "knew",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "known",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "knowing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -6740,11 +5518,7 @@
             "knowledge"
           ],
           "v": [
-            "know",
-            "knows",
-            "knew",
-            "known",
-            "knowing"
+            "know"
           ],
           "adj": [
             "knowledgeable"
@@ -6798,36 +5572,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "preparations",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "prepares",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "preparing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "preparation",
-            "preparations"
+            "preparation"
           ],
           "v": [
-            "prepare",
-            "prepares",
-            "prepared",
-            "preparing"
+            "prepare"
           ],
           "adj": [
             "preparatory",
@@ -6882,36 +5634,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "quickens",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "quickened",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "quickening",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "quicker",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "quickest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -6919,15 +5641,10 @@
             "quickness"
           ],
           "v": [
-            "quicken",
-            "quickens",
-            "quickened",
-            "quickening"
+            "quicken"
           ],
           "adj": [
-            "quick",
-            "quicker",
-            "quickest"
+            "quick"
           ],
           "adv": [
             "quickly"
@@ -6980,42 +5697,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "actions",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "acts",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "acted",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "acting",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "action",
-            "actions"
+            "action"
           ],
           "v": [
-            "act",
-            "acts",
-            "acted",
-            "acting"
+            "act"
           ],
           "adj": [
             "active"
@@ -7113,42 +5802,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "protections",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "protects",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "protected",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "protecting",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "protection",
-            "protections"
+            "protection"
           ],
           "v": [
-            "protect",
-            "protects",
-            "protected",
-            "protecting"
+            "protect"
           ],
           "adj": [
             "protective"
