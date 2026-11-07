@@ -14,7 +14,14 @@
   const GITHUB_SYNC_PREFS_KEY = 'bcz_github_sync_prefs';
   const GITHUB_REPO = 'yoreverse2423/English';
   const GITHUB_PROGRESS_PATH = 'data/progress.json';
+  // bot 只写这个文件；App 只读，不随「上传进度」写回，避免覆盖英语bot 的布置。
+  const GITHUB_ASSIGNMENTS_PATH = 'data/bot-assignments.json';
+  const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/' + GITHUB_REPO + '/main/';
   const GITHUB_AUTO_UPLOAD_GAP = 10 * 60 * 1000;
+  const BOT_ASSIGNMENTS_CACHE_KEY = 'bcz_bot_assignments_v1';
+  const BOT_ASSIGNMENTS_REFRESH_GAP = 10 * 60 * 1000;
+  // 学习日以北京时间凌晨 4:00 为界，与英语bot 的 date 约定一致。
+  const BOT_LEARNING_DAY_START_HOUR = 4;
   const DEEPSEEK_KEY = 'bcz_deepseek_key';
   const DEEPSEEK_PREFS_KEY = 'bcz_deepseek_prefs';
   const READING_HISTORY_KEY = 'bcz_reading_history';
@@ -151,6 +158,13 @@
   let githubSyncInFlight = false;
   let githubSyncStatus = { state: 'idle', message: '' };
   let githubSyncPrefs = loadGithubSyncPrefs();
+  // 今日 bot 任务：启动时读本地缓存，再静默从 GitHub 拉取最新文件。
+  let botAssignments = loadBotAssignmentsCache();
+  let botAssignmentsStatus = { state: 'idle', message: '' };
+  let botAssignmentsInFlight = false;
+  let botAssignmentsFetchedAt = 0;
+  // 首页点开的任务单词释义卡；为空时不渲染。
+  let botWordLookup = '';
   let readingBusy = false;
   let readingPhase = '';
   let readingError = '';
@@ -265,6 +279,16 @@
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
     return year + '-' + month + '-' + day;
+  }
+
+  // 学习日按北京时间凌晨 4:00 切换：把时间回拨 4 小时再取上海日期。
+  // 与英语bot 写在 bot-assignments.json 里的 date 对齐。
+  function getLearningDayKey(value) {
+    let timestamp = value === undefined ? Date.now() : value;
+    if (timestamp instanceof Date) timestamp = timestamp.getTime();
+    else timestamp = Number(timestamp);
+    if (!Number.isFinite(timestamp)) return '';
+    return shanghaiDayKey(timestamp - BOT_LEARNING_DAY_START_HOUR * 60 * 60 * 1000);
   }
 
   function getDateLabel(date) {
@@ -1444,6 +1468,8 @@
           '</div>' +
         '</section>' +
 
+        botAssignmentsCardHtml() +
+
         '<section class="section selection-section">' +
           '<div class="section-head"><h2>当前词书</h2><button class="text-link" type="button" data-nav="books">管理 ' + icon('chevron-right', 13) + '</button></div>' +
           '<button class="link-card selection-card" type="button" data-nav="books" aria-label="选择词书和单元">' +
@@ -1496,6 +1522,7 @@
         '</section>' +
 
         '<p class="muted-note">学习记录会自动保存在本机浏览器。</p>' +
+        (botWordLookup ? botWordSheetHtml() : '') +
       '</div>';
   }
 
@@ -3833,6 +3860,8 @@
       }
 
       finish();
+      // 「下载进度」顺带同步只读的 bot 任务；上传进度不会写 bot-assignments.json。
+      refreshBotAssignments();
       const applied = importBackupData(parsed, {
         confirmMessage: '将用仓库中的进度覆盖本机学习数据，确定？',
         successMessage: '已用仓库进度覆盖本机数据。'
@@ -3910,6 +3939,342 @@
     githubSyncPrefs.autoUpload = Boolean(enabled);
     saveGithubSyncPrefs();
     showToast(enabled ? '已开启学习结束后自动上传' : '已关闭自动上传');
+  }
+
+  /* ---------- 今日 bot 任务（只读 data/bot-assignments.json） ---------- */
+
+  function sanitizeBotAssignmentsPayload(raw) {
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return null;
+    const assignments = [];
+    (Array.isArray(raw.assignments) ? raw.assignments : []).forEach(function (item, index) {
+      if (!item || typeof item !== 'object') return;
+      const date = toText(item.date);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
+      const words = [];
+      const seenWords = new Set();
+      (Array.isArray(item.words) ? item.words : []).forEach(function (rawWord) {
+        const word = toText(rawWord).replace(/\s+/g, ' ');
+        const key = word.toLowerCase();
+        if (!word || seenWords.has(key) || words.length >= 60) return;
+        seenWords.add(key);
+        words.push(word);
+      });
+      assignments.push({
+        id: toText(item.id) || ('bot-' + date + '-' + index),
+        date: date,
+        from: toText(item.from) || '英语bot',
+        title: toText(item.title),
+        words: words,
+        note: toText(item.note),
+        status: toText(item.status).toLowerCase() || 'active'
+      });
+    });
+    return {
+      schemaVersion: toInteger(raw.schemaVersion, 1),
+      timezone: toText(raw.timezone) || 'Asia/Shanghai',
+      updatedAt: toText(raw.updatedAt),
+      assignments: assignments
+    };
+  }
+
+  function loadBotAssignmentsCache() {
+    try {
+      const raw = window.localStorage.getItem(BOT_ASSIGNMENTS_CACHE_KEY);
+      if (!raw) return null;
+      return sanitizeBotAssignmentsPayload(JSON.parse(raw));
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function saveBotAssignmentsCache(payload) {
+    try {
+      window.localStorage.setItem(BOT_ASSIGNMENTS_CACHE_KEY, JSON.stringify(payload));
+    } catch (error) {
+      console.warn('保存 bot 任务缓存失败：', error);
+    }
+  }
+
+  function setBotAssignmentsStatus(state, message) {
+    botAssignmentsStatus = { state: state, message: message };
+    const el = document.getElementById('bot-assignments-status');
+    if (!el) return;
+    el.className = 'sync-status' + (state && state !== 'idle' ? ' is-' + state : '');
+    el.textContent = message || '';
+  }
+
+  function botAssignmentsStatusText() {
+    if (botAssignmentsStatus.message) return botAssignmentsStatus.message;
+    if (!botAssignments) return '还没有同步过 bot 任务。点击「同步 bot 任务」从 GitHub 读取。';
+    const count = Array.isArray(botAssignments.assignments) ? botAssignments.assignments.length : 0;
+    const updated = botAssignments.updatedAt ? ' · 文件更新于 ' + botAssignments.updatedAt : '';
+    return '已缓存 ' + count + ' 条任务' + updated + '。';
+  }
+
+  function botAssignmentsFileError(message, status) {
+    const error = new Error(message);
+    error.isBotAssignmentsError = true;
+    error.status = status || 0;
+    return error;
+  }
+
+  function botAssignmentsFetchErrorMessage(status, data) {
+    if (status === 401 || status === 403) {
+      return '读取 bot 任务失败：GitHub 令牌无效，或没有仓库读取权限。';
+    }
+    if (status === 404) return '仓库里没有 data/bot-assignments.json，或当前没有读取权限。';
+    const apiMessage = data && data.message ? String(data.message) : '';
+    return '读取 bot 任务失败（HTTP ' + status + '）。' + (apiMessage ? ' ' + apiMessage : '');
+  }
+
+  function fetchBotAssignmentsFromRaw() {
+    return fetch(GITHUB_RAW_BASE + GITHUB_ASSIGNMENTS_PATH, { cache: 'no-store' }).then(function (response) {
+      return response.text().then(function (text) {
+        if (!response.ok) {
+          throw botAssignmentsFileError(botAssignmentsFetchErrorMessage(response.status, null), response.status);
+        }
+        try {
+          return JSON.parse(text);
+        } catch (error) {
+          throw botAssignmentsFileError('bot 任务文件不是有效的 JSON。', response.status);
+        }
+      });
+    });
+  }
+
+  function fetchBotAssignmentsFromApi(token) {
+    return fetch('https://api.github.com/repos/' + GITHUB_REPO + '/contents/' + GITHUB_ASSIGNMENTS_PATH, {
+      cache: 'no-store',
+      headers: {
+        Accept: 'application/vnd.github+json',
+        Authorization: 'Bearer ' + token,
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+    }).then(function (response) {
+      return response.text().then(function (text) {
+        let data = null;
+        if (text) {
+          try {
+            data = JSON.parse(text);
+          } catch (error) {
+            data = { message: String(text).slice(0, 180) };
+          }
+        }
+        if (!response.ok) {
+          throw botAssignmentsFileError(
+            botAssignmentsFetchErrorMessage(response.status, data),
+            response.status
+          );
+        }
+        if (!data || !data.content) {
+          throw botAssignmentsFileError('bot 任务文件缺少内容。', response.status);
+        }
+        try {
+          return JSON.parse(base64ToUtf8(data.content));
+        } catch (error) {
+          throw botAssignmentsFileError('bot 任务文件不是有效的 JSON。', response.status);
+        }
+      });
+    });
+  }
+
+  function fetchBotAssignmentsFile() {
+    const token = readGithubToken();
+    let request = null;
+    if (!token) {
+      request = fetchBotAssignmentsFromRaw();
+    } else {
+      // 配了令牌时优先 Contents API（私有仓库可读）；令牌失效或无权限时回退公开 raw。
+      request = fetchBotAssignmentsFromApi(token).catch(function (error) {
+        const status = error && error.status;
+        if (status === 401 || status === 403 || status === 404) {
+          return fetchBotAssignmentsFromRaw();
+        }
+        throw error;
+      });
+    }
+
+    return request.catch(function (error) {
+      if (error && error.isBotAssignmentsError) throw error;
+      throw botAssignmentsFileError('无法连接 GitHub，请检查网络后再试。');
+    });
+  }
+
+  function refreshBotAssignments(options) {
+    const manual = Boolean(options && options.manual);
+    if (botAssignmentsInFlight) {
+      if (manual) showToast('正在同步 bot 任务，请稍候。');
+      return Promise.resolve(false);
+    }
+
+    botAssignmentsInFlight = true;
+    // 失败也按同样间隔节流，避免离线时每 30 秒重试一次。
+    botAssignmentsFetchedAt = Date.now();
+    setBotAssignmentsStatus('pending', '正在同步 bot 任务…');
+    const botButton = document.getElementById('bot-assignments-button');
+    if (botButton) botButton.disabled = true;
+
+    return fetchBotAssignmentsFile().then(function (raw) {
+      const payload = sanitizeBotAssignmentsPayload(raw);
+      if (!payload) throw botAssignmentsFileError('bot 任务文件格式不正确。');
+      botAssignments = payload;
+      botAssignmentsFetchedAt = Date.now();
+      saveBotAssignmentsCache(payload);
+      setBotAssignmentsStatus(
+        'success',
+        payload.updatedAt ? 'bot 任务已同步：' + payload.updatedAt : 'bot 任务已同步。'
+      );
+      botAssignmentsInFlight = false;
+      if (botButton) botButton.disabled = false;
+      if (currentRoute === 'home') renderHome();
+      if (manual) showToast('已同步今日 bot 任务。');
+      return true;
+    }).catch(function (error) {
+      botAssignmentsInFlight = false;
+      if (botButton) botButton.disabled = false;
+      const message = error && error.message ? error.message : '同步 bot 任务失败，请稍后再试。';
+      setBotAssignmentsStatus('error', message);
+      if (currentRoute === 'home') renderHome();
+      if (manual) showToast(message, 'error');
+      return false;
+    });
+  }
+
+  function maybeRefreshBotAssignments() {
+    if (botAssignmentsInFlight) return;
+    if (botAssignmentsFetchedAt && Date.now() - botAssignmentsFetchedAt < BOT_ASSIGNMENTS_REFRESH_GAP) return;
+    refreshBotAssignments();
+  }
+
+  function activeBotAssignmentsOn(dayKey) {
+    if (!botAssignments || !Array.isArray(botAssignments.assignments)) return [];
+    const key = dayKey || getLearningDayKey();
+    return botAssignments.assignments.filter(function (item) {
+      return item.date === key && item.status === 'active';
+    });
+  }
+
+  function openBotWord(spelling) {
+    const word = toText(spelling);
+    if (!word) return;
+    botWordLookup = word;
+    // 跟阅读查词一致：点开时同时播放美式发音。
+    playPronunciation(word, 2, false);
+    renderHome();
+  }
+
+  function closeBotWord() {
+    botWordLookup = '';
+    renderHome();
+  }
+
+  function addBotWordToReview(spelling) {
+    const word = findWordBySpelling(spelling);
+    if (!word) {
+      showToast('词库没有这个词的释义，无法加入复习。', 'error');
+      return;
+    }
+    const progress = getProgress(word);
+    if (progress) {
+      showToast(progress.masteredAt ? '这个词已掌握。' : '这个词已经在复习计划里了。');
+      renderHome();
+      return;
+    }
+    ensureLearningProgress(word);
+    saveState();
+    showToast('已加入复习');
+    renderHome();
+  }
+
+  function botWordSheetHtml() {
+    const spelling = toText(botWordLookup);
+    if (!spelling) return '';
+    const word = findWordBySpelling(spelling);
+    const head = word ? word.w : spelling;
+    const phonetic = word ? formatPhonetic(word.ph) : '';
+    const progress = word ? getProgress(word) : null;
+    const isLemma = Boolean(word && wordKey(word) !== wordKey(spelling));
+
+    let reviewAction = '';
+    if (!word) {
+      reviewAction = '<p class="reading-sheet-status">词库暂无这个词，暂时不能加入复习。</p>';
+    } else if (!progress) {
+      reviewAction =
+        '<button class="btn btn-primary btn-block reading-sheet-add" type="button" data-action="bot-add-to-review" data-word="' +
+          escapeAttr(head) + '">加入复习</button>';
+    } else if (progress.masteredAt) {
+      reviewAction = '<p class="reading-sheet-status">已掌握</p>';
+    } else {
+      reviewAction = '<p class="reading-sheet-status">已在复习 · 阶段 ' + progress.stage + ' / ' + STAGE_COUNT + '</p>';
+    }
+
+    return (
+      '<div class="reading-sheet bot-word-sheet" role="dialog" aria-modal="false" aria-label="单词释义">' +
+        '<div class="reading-sheet-card">' +
+          '<div class="reading-sheet-top">' +
+            '<div>' +
+              '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
+              (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+            '</div>' +
+            '<button class="icon-button" type="button" data-action="bot-word-close" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
+          '</div>' +
+          (isLemma
+            ? '<p class="reading-sheet-lemma">原文 ' + escapeHtml(spelling) + ' · 原形 ' + escapeHtml(head) + '</p>'
+            : '') +
+          '<p class="reading-sheet-def">' +
+            (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+            escapeHtml(word && word.cn ? word.cn : '词库暂无') +
+          '</p>' +
+          formsLineHtml(word) +
+          '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
+            icon('speaker', 15) + '<span>发音</span>' +
+          '</button>' +
+          reviewAction +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function botAssignmentItemHtml(item) {
+    const title = item.title || '今日任务';
+    const wordsHtml = item.words.length
+      ? '<div class="bot-word-list">' + item.words.map(function (word) {
+          return '<button class="bot-word-chip" type="button" data-action="bot-word" data-word="' +
+            escapeAttr(word) + '">' + escapeHtml(word) + '</button>';
+        }).join('') + '</div>'
+      : '';
+    return (
+      '<article class="bot-item">' +
+        '<div class="bot-item-head">' +
+          '<h3 class="bot-item-title">' + escapeHtml(title) + '</h3>' +
+          '<span class="bot-item-from">' + escapeHtml(item.from) + '</span>' +
+        '</div>' +
+        wordsHtml +
+        (item.note ? '<p class="bot-item-note">' + escapeHtml(item.note) + '</p>' : '') +
+      '</article>'
+    );
+  }
+
+  function botAssignmentsCardHtml() {
+    const today = getLearningDayKey();
+    const items = activeBotAssignmentsOn(today);
+    const refreshLabel = botAssignmentsInFlight ? '同步中…' : '刷新';
+    let body = '';
+    if (items.length) {
+      body = '<div class="panel bot-card">' + items.map(botAssignmentItemHtml).join('') + '</div>';
+    } else {
+      body = '<div class="panel bot-card"><p class="bot-empty">今天英语bot还没布置</p></div>';
+    }
+    return (
+      '<section class="section bot-assignment-section" aria-labelledby="bot-assignment-title">' +
+        '<div class="section-head">' +
+          '<h2 id="bot-assignment-title">今日 bot 任务</h2>' +
+          '<button class="text-link" type="button" data-action="refresh-bot-assignments"' +
+            (botAssignmentsInFlight ? ' disabled' : '') + '>' + refreshLabel + icon('refresh', 13) + '</button>' +
+        '</div>' +
+        body +
+      '</section>'
+    );
   }
 
   /* ---------- 每日阅读 · DeepSeek ---------- */
@@ -5262,7 +5627,7 @@
         '<section class="settings-card" aria-labelledby="github-sync-title">' +
           '<div class="settings-card-head">' +
             '<h2 class="settings-card-title" id="github-sync-title">同步进度到 GitHub</h2>' +
-            '<p class="settings-card-desc">把学习进度写入 yoreverse2423/English 的 data/progress.json，也可以从仓库下载覆盖本机。上传与下载共用同一令牌，便于手机与手表互相同步。令牌只放在本机 localStorage，不会写进代码或仓库。</p>' +
+            '<p class="settings-card-desc">把学习进度写入 yoreverse2423/English 的 data/progress.json，也可以从仓库下载覆盖本机。上传与下载共用同一令牌，便于手机与手表互相同步。下载进度时会一并同步「今日 bot 任务」；bot 任务只读，上传进度不会写它。令牌只放在本机 localStorage，不会写进代码或仓库。</p>' +
           '</div>' +
           '<div class="settings-body">' +
             '<ol class="sync-steps">' +
@@ -5299,7 +5664,11 @@
               '<button class="btn btn-primary" id="github-upload-button" type="button" data-action="upload-progress"' + (githubSyncInFlight ? ' disabled' : '') + '>' + icon('upload', 17) + '上传进度</button>' +
               '<button class="btn btn-secondary" id="github-download-button" type="button" data-action="download-progress"' + (githubSyncInFlight ? ' disabled' : '') + '>' + icon('download', 17) + '下载进度</button>' +
             '</div>' +
-            '<p class="sync-hint">上传会写入 data/progress.json；下载会读取同一个文件，并先询问是否覆盖本机进度。文件里有导出时间（北京时间）、所选词书和单元、已学 / 已掌握 / 今日到期，以及每个词的阶段、下次复习时间、错词次数和最近一次结果，还有尚未掌握的难词列表。若已做过每日阅读，也会带上最近一篇的得分和解析。文件同时包含可恢复的完整学习数据，另一台设备下载后即可接着用。</p>' +
+            '<div class="button-row sync-bot-row">' +
+              '<button class="btn btn-ghost" id="bot-assignments-button" type="button" data-action="sync-bot-assignments"' + (botAssignmentsInFlight ? ' disabled' : '') + '>' + icon('refresh', 17) + '同步 bot 任务</button>' +
+            '</div>' +
+            '<p class="sync-status' + (botAssignmentsStatus.state && botAssignmentsStatus.state !== 'idle' ? ' is-' + botAssignmentsStatus.state : '') + '" id="bot-assignments-status" role="status" aria-live="polite">' + escapeHtml(botAssignmentsStatusText()) + '</p>' +
+            '<p class="sync-hint">上传会写入 data/progress.json，不会改动 data/bot-assignments.json；下载会读取同一个进度文件，并先询问是否覆盖本机进度。「同步 bot 任务」只读取 bot 写的任务文件，与本机进度互不影响。进度文件里有导出时间（北京时间）、所选词书和单元、已学 / 已掌握 / 今日到期，以及每个词的阶段、下次复习时间、错词次数和最近一次结果，还有尚未掌握的难词列表。若已做过每日阅读，也会带上最近一篇的得分和解析。文件同时包含可恢复的完整学习数据，另一台设备下载后即可接着用。</p>' +
             '<p class="sync-status' + (githubSyncStatus.state && githubSyncStatus.state !== 'idle' ? ' is-' + githubSyncStatus.state : '') + '" id="github-sync-status" role="status" aria-live="polite">' + escapeHtml(syncStatusText()) + '</p>' +
           '</div>' +
         '</section>' +
@@ -5691,6 +6060,10 @@
     if (getRouteFromHash() !== route) setRouteHash(route);
 
     const previousRoute = currentRoute;
+    if (previousRoute === 'home' && route !== 'home') {
+      // 离开首页时收起 bot 任务的单词释义卡，回来时不自动弹出。
+      botWordLookup = '';
+    }
     if (previousRoute === 'study' && route !== 'study') {
       session = null;
       stopPronunciation();
@@ -5944,6 +6317,14 @@
       uploadProgress({ auto: false });
     } else if (action === 'download-progress') {
       downloadProgress();
+    } else if (action === 'refresh-bot-assignments' || action === 'sync-bot-assignments') {
+      refreshBotAssignments({ manual: true });
+    } else if (action === 'bot-word') {
+      openBotWord(actionEl.getAttribute('data-word'));
+    } else if (action === 'bot-word-close') {
+      closeBotWord();
+    } else if (action === 'bot-add-to-review') {
+      addBotWordToReview(actionEl.getAttribute('data-word'));
     } else if (action === 'save-deepseek-key') {
       saveDeepseekKeyFromInput();
     } else if (action === 'clear-deepseek-key') {
@@ -6097,14 +6478,17 @@
     invalidateWordCache();
     migrateLegacyProgress();
 
-    // 首页停留时定时刷新到期数量（例如 5 分钟后的第一次复习）。
+    // 首页停留时定时刷新到期数量（例如 5 分钟后的第一次复习），
+    // 顺带每隔一段时间静默同步一次 bot 任务。
     window.setInterval(function () {
       if (currentRoute === 'home' && !document.hidden) {
+        maybeRefreshBotAssignments();
         renderHome();
       }
     }, 30000);
 
     applyRoute();
+    maybeRefreshBotAssignments();
 
     if (initialToast) {
       window.setTimeout(function () {

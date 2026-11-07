@@ -822,6 +822,89 @@ textarea:focus-visible,
   color: var(--line-strong);
 }
 
+/* 首页 · 今日 bot 任务 */
+.bot-card {
+  padding: 15px 16px;
+}
+
+.bot-item + .bot-item {
+  margin-top: 13px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.bot-item-head {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.bot-item-title {
+  min-width: 0;
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+.bot-item-from {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 10.5px;
+  white-space: nowrap;
+}
+
+.bot-word-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+.bot-word-chip {
+  min-height: 32px;
+  padding: 5px 11px;
+  color: var(--primary-deep);
+  background: var(--primary-soft);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 650;
+  letter-spacing: 0;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.bot-word-chip:hover {
+  border-color: rgba(13, 107, 87, 0.28);
+}
+
+.bot-word-chip:active {
+  transform: scale(0.96);
+}
+
+.bot-item-note {
+  margin: 9px 0 0;
+  color: var(--ink-soft);
+  font-size: 11.5px;
+  line-height: 1.6;
+}
+
+.bot-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+.bot-assignment-section .text-link:disabled {
+  opacity: 0.5;
+}
+
+.bot-word-sheet {
+  z-index: 45;
+}
+
 .muted-note {
   margin: 17px 4px 0;
   color: var(--muted);
@@ -3462,6 +3545,10 @@ textarea:focus-visible,
 
 .button-row .btn {
   flex: 1;
+}
+
+.sync-bot-row {
+  padding-top: 8px;
 }
 
 .watch-download-btn {
