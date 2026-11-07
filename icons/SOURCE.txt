@@ -1,0 +1,4 @@
+original: icons/source-original.jpg
+SHA256 d0c3f7f363c43176754c73e698f68d44bc019892794596ffbb3c0a23b11f24b5
+master: icons/master-restored-x2.png (1476x1476)
+method: OpenCV dnn_superres FSRCNN_x2; full-frame contain; no mask

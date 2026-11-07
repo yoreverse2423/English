@@ -1,0 +1,7111 @@
+{
+  "schemaVersion": 1,
+  "exportedAt": "2026-11-08T05:09:17+08:00",
+  "timezone": "Asia/Shanghai",
+  "repository": "yoreverse2423/English",
+  "path": "data/progress.json",
+  "selected": {
+    "books": [
+      {
+        "id": "compulsory-1",
+        "name": "必修第一册"
+      }
+    ],
+    "units": [
+      {
+        "id": "compulsory-1-u4",
+        "title": "Unit 4 Natural Disasters",
+        "bookId": "compulsory-1",
+        "book": "必修第一册"
+      }
+    ]
+  },
+  "stats": {
+    "totalWords": 2765,
+    "learned": 25,
+    "mastered": 1,
+    "learning": 24,
+    "dueNow": 24,
+    "dueToday": 24,
+    "newToday": 0,
+    "reviewToday": 0,
+    "streakDays": 0,
+    "last7Days": [
+      {
+        "date": "2026-11-02",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-03",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-04",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-05",
+        "learned": 14,
+        "reviewed": 2
+      },
+      {
+        "date": "2026-11-06",
+        "learned": 9,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-07",
+        "learned": 0,
+        "reviewed": 0
+      },
+      {
+        "date": "2026-11-08",
+        "learned": 0,
+        "reviewed": 0
+      }
+    ]
+  },
+  "totals": {
+    "learned": 25,
+    "mastered": 1,
+    "dueToday": 24
+  },
+  "words": [
+    {
+      "word": "crop",
+      "book": "必修第三册",
+      "bookId": "compulsory-3",
+      "unit": "Unit 1 Festivals and Celebrations",
+      "unitId": "compulsory-3-u0",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:10:16+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "affect",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:24+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "as if",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 6,
+      "nextReviewTime": null,
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "crack",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T19:25:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "damage",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:39:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "death",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:06+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "destroy",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T14:11:21+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "disaster",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:46+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "drought",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:11+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "evacuate",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:16:28+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "flood",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:29+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "helicopter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T16:41:02+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "in ruins",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:18+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landfall",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:58+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landslide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "magnitude",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "rescue",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "ruin",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:14+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "shelter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:20:42+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "slide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:10+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornado",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:54+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tsunami",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:17+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "volcanic eruption",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "community",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:09:52+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "natural",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:09:15+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    }
+  ],
+  "unmasteredWords": [
+    {
+      "word": "crop",
+      "book": "必修第三册",
+      "bookId": "compulsory-3",
+      "unit": "Unit 1 Festivals and Celebrations",
+      "unitId": "compulsory-3-u0",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:10:16+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "affect",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:24+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "crack",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T19:25:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "damage",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:39:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "death",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T16:36:06+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "destroy",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T14:11:21+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "disaster",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:46+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "drought",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:11+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "evacuate",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:16:28+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "flood",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:29+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "helicopter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T16:41:02+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "in ruins",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:18+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landfall",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:58+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "landslide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:04:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "magnitude",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "rescue",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "ruin",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:21:14+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "shelter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-07T19:20:42+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "slide",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:10+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tornado",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 2,
+      "nextReviewTime": "2026-11-05T13:34:54+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "tsunami",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:17+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "volcanic eruption",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-05T13:05:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "community",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:09:52+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "natural",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:09:15+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    }
+  ],
+  "difficultWords": [
+    {
+      "word": "crack",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T19:25:51+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "evacuate",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T14:16:28+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "helicopter",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-06T16:41:02+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "magnitude",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "tsunami",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-05T13:05:17+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    }
+  ],
+  "reading": null,
+  "recentReadingScores": [],
+  "data": {
+    "version": 1,
+    "settings": {
+      "dailyNew": 25,
+      "autoPronounce": true
+    },
+    "progress": {
+      "compulsory-1-u4:disaster": {
+        "stage": 2,
+        "nextReviewAt": 1793856886144,
+        "learnedAt": 1793854712409,
+        "lastReviewedAt": 1793855086144,
+        "masteredAt": null,
+        "reviews": 2,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:tornado": {
+        "stage": 2,
+        "nextReviewAt": 1793856894644,
+        "learnedAt": 1793854723160,
+        "lastReviewedAt": 1793855094644,
+        "masteredAt": null,
+        "reviews": 2,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:drought": {
+        "stage": 1,
+        "nextReviewAt": 1793855051070,
+        "learnedAt": 1793854751070,
+        "lastReviewedAt": 1793854751070,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:landslide": {
+        "stage": 1,
+        "nextReviewAt": 1793855091428,
+        "learnedAt": 1793854791428,
+        "lastReviewedAt": 1793854791428,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:landfall": {
+        "stage": 1,
+        "nextReviewAt": 1793855098576,
+        "learnedAt": 1793854798576,
+        "lastReviewedAt": 1793854798576,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:slide": {
+        "stage": 1,
+        "nextReviewAt": 1793855110728,
+        "learnedAt": 1793854810728,
+        "lastReviewedAt": 1793854810728,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:tsunami": {
+        "stage": 0,
+        "nextReviewAt": 1793855117634,
+        "learnedAt": 1793854817634,
+        "lastReviewedAt": 1793854817634,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:flood": {
+        "stage": 1,
+        "nextReviewAt": 1793855129929,
+        "learnedAt": 1793854829929,
+        "lastReviewedAt": 1793854829929,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:volcanic eruption": {
+        "stage": 1,
+        "nextReviewAt": 1793855137550,
+        "learnedAt": 1793854837550,
+        "lastReviewedAt": 1793854837550,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:magnitude": {
+        "stage": 0,
+        "nextReviewAt": 1793855149115,
+        "learnedAt": 1793854849115,
+        "lastReviewedAt": 1793854849115,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:rescue": {
+        "stage": 1,
+        "nextReviewAt": 1793855157765,
+        "learnedAt": 1793854857765,
+        "lastReviewedAt": 1793854857765,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:damage": {
+        "stage": 1,
+        "nextReviewAt": 1793857165501,
+        "learnedAt": 1793856865501,
+        "lastReviewedAt": 1793856865501,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "custom:natural": {
+        "stage": 0,
+        "nextReviewAt": 1793945355249,
+        "learnedAt": 1793945055249,
+        "lastReviewedAt": 0,
+        "masteredAt": null,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": null
+      },
+      "custom:community": {
+        "stage": 0,
+        "nextReviewAt": 1793945392986,
+        "learnedAt": 1793945092986,
+        "lastReviewedAt": 0,
+        "masteredAt": null,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": null
+      },
+      "compulsory-3-u0:crop": {
+        "stage": 0,
+        "nextReviewAt": 1793945416737,
+        "learnedAt": 1793945116737,
+        "lastReviewedAt": 0,
+        "masteredAt": null,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": null
+      },
+      "compulsory-1-u4:destroy": {
+        "stage": 1,
+        "nextReviewAt": 1794031881442,
+        "learnedAt": 1793945481442,
+        "lastReviewedAt": 1793945481442,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:evacuate": {
+        "stage": 0,
+        "nextReviewAt": 1793945788535,
+        "learnedAt": 1793945488535,
+        "lastReviewedAt": 1793945488535,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:helicopter": {
+        "stage": 0,
+        "nextReviewAt": 1793954462942,
+        "learnedAt": 1793954162942,
+        "lastReviewedAt": 1793954162942,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:death": {
+        "stage": 1,
+        "nextReviewAt": 1794040566420,
+        "learnedAt": 1793954166420,
+        "lastReviewedAt": 1793954166420,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:affect": {
+        "stage": 1,
+        "nextReviewAt": 1794040584414,
+        "learnedAt": 1793954184414,
+        "lastReviewedAt": 1793954184414,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:shelter": {
+        "stage": 1,
+        "nextReviewAt": 1794050442034,
+        "learnedAt": 1793964042034,
+        "lastReviewedAt": 1793964042034,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:crack": {
+        "stage": 0,
+        "nextReviewAt": 1793964351541,
+        "learnedAt": 1793964051541,
+        "lastReviewedAt": 1793964051541,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:as if": {
+        "stage": 6,
+        "nextReviewAt": 0,
+        "learnedAt": 1793964066899,
+        "lastReviewedAt": 1793964066899,
+        "masteredAt": 1793964066899,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:ruin": {
+        "stage": 1,
+        "nextReviewAt": 1794050474498,
+        "learnedAt": 1793964074498,
+        "lastReviewedAt": 1793964074498,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:in ruins": {
+        "stage": 1,
+        "nextReviewAt": 1794050478758,
+        "learnedAt": 1793964078758,
+        "lastReviewedAt": 1793964078758,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      }
+    },
+    "daily": {
+      "2026-11-05": {
+        "learned": 14,
+        "reviewed": 2
+      },
+      "2026-11-06": {
+        "learned": 9,
+        "reviewed": 0
+      }
+    },
+    "customWords": [
+      {
+        "id": "custom:natural",
+        "w": "natural",
+        "ph": "/ˈnætʃrəl/",
+        "pos": "adj.",
+        "cn": "我们应该为子孙后代保护自然环境。",
+        "col": [
+          {
+            "en": "natural resources",
+            "cn": "自然资源"
+          },
+          {
+            "en": "natural disaster",
+            "cn": "自然灾害"
+          },
+          {
+            "en": "in a natural way",
+            "cn": "以自然的方式"
+          }
+        ],
+        "ex": {
+          "en": "We should protect the natural environment for future generations.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "nature",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "naturalist",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "naturally",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "naturalists",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "nature",
+            "naturalist",
+            "naturalists"
+          ],
+          "v": [],
+          "adj": [
+            "natural"
+          ],
+          "adv": [
+            "naturally"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:community",
+        "w": "community",
+        "ph": "/kəˈmjuːnəti/",
+        "pos": "n.",
+        "cn": "社区里许多人自愿帮助那位老人。",
+        "col": [
+          {
+            "en": "local community",
+            "cn": "当地社区"
+          },
+          {
+            "en": "community service",
+            "cn": "社区服务"
+          },
+          {
+            "en": "a sense of community",
+            "cn": "归属感"
+          }
+        ],
+        "ex": {
+          "en": "Many people in the community volunteered to help the old man.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "communities",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "community",
+            "communities"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:second",
+        "w": "second",
+        "ph": "/ˈsekənd/",
+        "pos": "n. / v. / adj.",
+        "cn": "请稍等片刻，我找一下钥匙。",
+        "col": [
+          {
+            "en": "in a second",
+            "cn": "立刻；马上"
+          },
+          {
+            "en": "for a few seconds",
+            "cn": "几秒钟"
+          },
+          {
+            "en": "second to none",
+            "cn": "首屈一指"
+          }
+        ],
+        "ex": {
+          "en": "Please wait a second while I find the key.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "seconds",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "secondary",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "secondly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "seconded",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "seconding",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "secondarily",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "second",
+            "seconds"
+          ],
+          "v": [
+            "second",
+            "seconds",
+            "seconded",
+            "seconding"
+          ],
+          "adj": [
+            "second",
+            "secondary"
+          ],
+          "adv": [
+            "secondly",
+            "secondarily"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:understanding",
+        "w": "understanding",
+        "ph": "/ˌʌndəˈstændɪŋ/",
+        "pos": "n. / adj.",
+        "cn": "好老师在学生犯错时表现出理解。",
+        "col": [
+          {
+            "en": "have a good understanding of",
+            "cn": "对……有很好的理解"
+          },
+          {
+            "en": "reach an understanding",
+            "cn": "达成谅解"
+          },
+          {
+            "en": "mutual understanding",
+            "cn": "相互理解"
+          }
+        ],
+        "ex": {
+          "en": "A good teacher shows understanding when students make mistakes.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "understand",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "understandable",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "understandably",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "understandings",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "understands",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "understood",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "understanding",
+            "understandings"
+          ],
+          "v": [
+            "understand",
+            "understands",
+            "understood",
+            "understanding"
+          ],
+          "adj": [
+            "understanding",
+            "understandable"
+          ],
+          "adv": [
+            "understandably"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:prepare",
+        "w": "prepare",
+        "ph": "/prɪˈpeə(r)/",
+        "pos": "v.",
+        "cn": "她花了一整晚为面试做准备。",
+        "col": [
+          {
+            "en": "prepare for",
+            "cn": "为……做准备"
+          },
+          {
+            "en": "prepare sb for sth",
+            "cn": "使某人为某事做好准备"
+          },
+          {
+            "en": "be well prepared",
+            "cn": "准备充分"
+          }
+        ],
+        "ex": {
+          "en": "She spent the whole evening preparing for the interview.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "preparation",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "prepared",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparatory",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparedly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparations",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "prepares",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "preparation",
+            "preparations"
+          ],
+          "v": [
+            "prepare",
+            "prepares",
+            "prepared",
+            "preparing"
+          ],
+          "adj": [
+            "prepared",
+            "preparatory"
+          ],
+          "adv": [
+            "preparedly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:develop",
+        "w": "develop",
+        "ph": "/dɪˈveləp/",
+        "pos": "v.",
+        "cn": "广泛阅读有助于孩子发展语言能力。",
+        "col": [
+          {
+            "en": "develop a habit",
+            "cn": "养成习惯"
+          },
+          {
+            "en": "develop an interest in",
+            "cn": "培养对……的兴趣"
+          },
+          {
+            "en": "develop rapidly",
+            "cn": "迅速发展"
+          }
+        ],
+        "ex": {
+          "en": "Reading widely helps children develop their language skills.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "development",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "developer",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "developing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "developed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "developments",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "developers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "develops",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "development",
+            "developer",
+            "developments",
+            "developers"
+          ],
+          "v": [
+            "develop",
+            "develops",
+            "developed",
+            "developing"
+          ],
+          "adj": [
+            "developing",
+            "developed"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:slowly",
+        "w": "slowly",
+        "ph": "/ˈsləʊli/",
+        "pos": "adv.",
+        "cn": "老人沿着河岸慢慢地走。",
+        "col": [
+          {
+            "en": "slowly but surely",
+            "cn": "缓慢而稳步地"
+          },
+          {
+            "en": "walk slowly",
+            "cn": "慢慢走"
+          },
+          {
+            "en": "slowly increase",
+            "cn": "缓慢增加"
+          }
+        ],
+        "ex": {
+          "en": "The old man walked slowly along the river bank.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "slow",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slower",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [
+            "slow",
+            "slows",
+            "slowed",
+            "slowing"
+          ],
+          "adj": [
+            "slow",
+            "slower",
+            "slowest"
+          ],
+          "adv": [
+            "slowly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:rainfall",
+        "w": "rainfall",
+        "ph": "/ˈreɪnfɔːl/",
+        "pos": "n.",
+        "cn": "这个地区冬季降雨量很少。",
+        "col": [
+          {
+            "en": "heavy rainfall",
+            "cn": "强降雨"
+          },
+          {
+            "en": "annual rainfall",
+            "cn": "年降雨量"
+          },
+          {
+            "en": "low rainfall",
+            "cn": "降雨量少"
+          }
+        ],
+        "ex": {
+          "en": "The area has very little rainfall in winter.",
+          "cn": ""
+        },
+        "forms": [],
+        "wf": {
+          "n": [
+            "rainfall"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:far",
+        "w": "far",
+        "ph": "/fɑː(r)/",
+        "pos": "adv. / adj.",
+        "cn": "这个村庄离最近的医院很远。",
+        "col": [
+          {
+            "en": "so far",
+            "cn": "到目前为止"
+          },
+          {
+            "en": "far from",
+            "cn": "远离；远非"
+          },
+          {
+            "en": "as far as",
+            "cn": "就……而言；远至"
+          }
+        ],
+        "ex": {
+          "en": "The village is far from the nearest hospital.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "farther",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "farthest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "further",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "furthest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "far",
+            "farther",
+            "further",
+            "farthest",
+            "furthest"
+          ],
+          "adv": [
+            "far",
+            "farther",
+            "further",
+            "farthest",
+            "furthest"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:below",
+        "w": "below",
+        "ph": "/bɪˈləʊ/",
+        "pos": "prep. / adv.",
+        "cn": "昨晚气温降到了零度以下。",
+        "col": [
+          {
+            "en": "below zero",
+            "cn": "零度以下"
+          },
+          {
+            "en": "below average",
+            "cn": "低于平均水平"
+          },
+          {
+            "en": "see below",
+            "cn": "见下文"
+          }
+        ],
+        "ex": {
+          "en": "The temperature dropped below zero last night.",
+          "cn": ""
+        },
+        "forms": [],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [],
+          "adv": [
+            "below"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:month",
+        "w": "month",
+        "ph": "/mʌnθ/",
+        "pos": "n.",
+        "cn": "这个项目大约需要三个月才能完成。",
+        "col": [
+          {
+            "en": "last month",
+            "cn": "上个月"
+          },
+          {
+            "en": "in a month",
+            "cn": "一个月后"
+          },
+          {
+            "en": "month by month",
+            "cn": "逐月"
+          }
+        ],
+        "ex": {
+          "en": "The project will take about three months to finish.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "months",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "monthly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "monthlies",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "month",
+            "months",
+            "monthly",
+            "monthlies"
+          ],
+          "v": [],
+          "adj": [
+            "monthly"
+          ],
+          "adv": [
+            "monthly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:fail",
+        "w": "fail",
+        "ph": "/feɪl/",
+        "pos": "v.",
+        "cn": "他没能及时回答最后一个问题。",
+        "col": [
+          {
+            "en": "fail to do sth",
+            "cn": "未能做某事"
+          },
+          {
+            "en": "fail an exam",
+            "cn": "考试不及格"
+          },
+          {
+            "en": "without fail",
+            "cn": "必定；无误"
+          }
+        ],
+        "ex": {
+          "en": "He failed to answer the last question in time.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "failure",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "failed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "failing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "failures",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "fails",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "failure",
+            "failures"
+          ],
+          "v": [
+            "fail",
+            "fails",
+            "failed",
+            "failing"
+          ],
+          "adj": [
+            "failed",
+            "failing"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:river",
+        "w": "river",
+        "ph": "/ˈrɪvə(r)/",
+        "pos": "n.",
+        "cn": "炎热的夏天，孩子们在河里游泳。",
+        "col": [
+          {
+            "en": "along the river",
+            "cn": "沿着河边"
+          },
+          {
+            "en": "river bank",
+            "cn": "河岸"
+          },
+          {
+            "en": "cross the river",
+            "cn": "过河"
+          }
+        ],
+        "ex": {
+          "en": "Children were swimming in the river on hot summer days.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "rivers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "river",
+            "rivers"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:shrink",
+        "w": "shrink",
+        "ph": "/ʃrɪŋk/",
+        "pos": "v.",
+        "cn": "过去十年里这个湖缩小了很多。",
+        "col": [
+          {
+            "en": "shrink from",
+            "cn": "回避；退缩"
+          },
+          {
+            "en": "shrink in size",
+            "cn": "尺寸缩小"
+          },
+          {
+            "en": "shrink away",
+            "cn": "退缩"
+          }
+        ],
+        "ex": {
+          "en": "The lake has shrunk greatly over the past ten years.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "shrinkage",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "shrinking",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "shrinks",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "shrank",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "shrunk",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "shrunken",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "shrinkage"
+          ],
+          "v": [
+            "shrink",
+            "shrinks",
+            "shrank",
+            "shrunk",
+            "shrunken",
+            "shrinking"
+          ],
+          "adj": [
+            "shrinking"
+          ],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:water",
+        "w": "water",
+        "ph": "/ˈwɔːtə(r)/",
+        "pos": "n. / v.",
+        "cn": "我不在的时候请给花浇水。",
+        "col": [
+          {
+            "en": "drinking water",
+            "cn": "饮用水"
+          },
+          {
+            "en": "water supply",
+            "cn": "供水"
+          },
+          {
+            "en": "under water",
+            "cn": "在水下"
+          }
+        ],
+        "ex": {
+          "en": "Please water the flowers while I am away.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "watery",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "waters",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "watered",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "watering",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "water",
+            "waters"
+          ],
+          "v": [
+            "water",
+            "waters",
+            "watered",
+            "watering"
+          ],
+          "adj": [
+            "watery"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:run",
+        "w": "run",
+        "ph": "/rʌn/",
+        "pos": "v. / n.",
+        "cn": "孩子们跑过田野去迎接老师。",
+        "col": [
+          {
+            "en": "run out of",
+            "cn": "用完；耗尽"
+          },
+          {
+            "en": "run a business",
+            "cn": "经营生意"
+          },
+          {
+            "en": "in the long run",
+            "cn": "从长远来看"
+          }
+        ],
+        "ex": {
+          "en": "The children ran across the field to meet their teacher.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "runner",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "running",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "runs",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "runners",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "ran",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "run",
+            "runs",
+            "runner",
+            "running",
+            "runners"
+          ],
+          "v": [
+            "run",
+            "runs",
+            "ran",
+            "running"
+          ],
+          "adj": [
+            "running"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:low",
+        "w": "low",
+        "ph": "/ləʊ/",
+        "pos": "adj. / adv.",
+        "cn": "今年河里的水位很低。",
+        "col": [
+          {
+            "en": "low price",
+            "cn": "低价"
+          },
+          {
+            "en": "low voice",
+            "cn": "低声"
+          },
+          {
+            "en": "low level",
+            "cn": "低水平"
+          }
+        ],
+        "ex": {
+          "en": "The water level in the river is very low this year.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "lower",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowered",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowering",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "low",
+            "lows"
+          ],
+          "v": [
+            "lower",
+            "lowers",
+            "lowered",
+            "lowering"
+          ],
+          "adj": [
+            "low",
+            "lower",
+            "lowest"
+          ],
+          "adv": [
+            "low",
+            "lower",
+            "lowest",
+            "lowly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:unlike",
+        "w": "unlike",
+        "ph": "/ˌʌnˈlaɪk/",
+        "pos": "prep. / adj.",
+        "cn": "与他的兄弟不同，汤姆喜欢在家读书。",
+        "col": [
+          {
+            "en": "unlike sb/sth",
+            "cn": "不像某人/某物"
+          },
+          {
+            "en": "unlike before",
+            "cn": "与以前不同"
+          },
+          {
+            "en": "quite unlike",
+            "cn": "完全不同"
+          }
+        ],
+        "ex": {
+          "en": "Unlike his brother, Tom enjoys reading at home.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "unlikely",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "unlikeliest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "unlike",
+            "unlikely",
+            "unlikeliest"
+          ],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:sudden",
+        "w": "sudden",
+        "ph": "/ˈsʌdn/",
+        "pos": "adj.",
+        "cn": "外面突然的响声让大家都抬起头来。",
+        "col": [
+          {
+            "en": "all of a sudden",
+            "cn": "突然，猛地"
+          },
+          {
+            "en": "a sudden change",
+            "cn": "突然的变化"
+          },
+          {
+            "en": "sudden death",
+            "cn": "突然死亡；猝死"
+          }
+        ],
+        "ex": {
+          "en": "A sudden noise outside made everyone look up.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "suddenness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "suddenly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "suddenness"
+          ],
+          "v": [],
+          "adj": [
+            "sudden"
+          ],
+          "adv": [
+            "suddenly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:town",
+        "w": "town",
+        "ph": "/taʊn/",
+        "pos": "n.",
+        "cn": "这个小镇因它的古桥而闻名。",
+        "col": [
+          {
+            "en": "in town",
+            "cn": "在城里；在镇上"
+          },
+          {
+            "en": "a small town",
+            "cn": "小镇"
+          },
+          {
+            "en": "go to town",
+            "cn": "进城；大干一场"
+          }
+        ],
+        "ex": {
+          "en": "The small town is famous for its old bridge.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "towns",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "townspeople",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "town",
+            "towns",
+            "townspeople"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:minute",
+        "w": "minute",
+        "ph": "/ˈmɪnɪt/",
+        "pos": "n.",
+        "cn": "请稍等片刻，我找一下钥匙。",
+        "col": [
+          {
+            "en": "in a minute",
+            "cn": "马上，立刻"
+          },
+          {
+            "en": "at the last minute",
+            "cn": "在最后一刻"
+          },
+          {
+            "en": "wait a minute",
+            "cn": "等一下"
+          }
+        ],
+        "ex": {
+          "en": "Please wait a minute while I find the key.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "minutes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "minute",
+            "minutes"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:give",
+        "w": "give",
+        "ph": "/ɡɪv/",
+        "pos": "v.",
+        "cn": "她决定把旧书捐给学校图书馆。",
+        "col": [
+          {
+            "en": "give up",
+            "cn": "放弃"
+          },
+          {
+            "en": "give in",
+            "cn": "屈服，让步"
+          },
+          {
+            "en": "give away",
+            "cn": "赠送；泄露"
+          }
+        ],
+        "ex": {
+          "en": "She decided to give her old books to the school library.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "giver",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "gift",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "gives",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "giving",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "gave",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "given",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "givers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "gifts",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "giver",
+            "gift",
+            "givers",
+            "gifts"
+          ],
+          "v": [
+            "give",
+            "gives",
+            "gave",
+            "given",
+            "giving"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:sign",
+        "w": "sign",
+        "ph": "/saɪn/",
+        "pos": "n. & v.",
+        "cn": "整个下午都没有下雨的迹象。",
+        "col": [
+          {
+            "en": "a sign of",
+            "cn": "……的迹象"
+          },
+          {
+            "en": "sign up for",
+            "cn": "报名参加"
+          },
+          {
+            "en": "traffic sign",
+            "cn": "交通标志"
+          }
+        ],
+        "ex": {
+          "en": "There was no sign of rain all afternoon.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "signs",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "signal",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "signing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "signed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "signals",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "sign",
+            "signs",
+            "signal",
+            "signals"
+          ],
+          "v": [
+            "sign",
+            "signs",
+            "signed",
+            "signing"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:long",
+        "w": "long",
+        "ph": "/lɒŋ/",
+        "pos": "adj. & adv.",
+        "cn": "完成这项工作没花多长时间。",
+        "col": [
+          {
+            "en": "as long as",
+            "cn": "只要"
+          },
+          {
+            "en": "before long",
+            "cn": "不久以后"
+          },
+          {
+            "en": "long for",
+            "cn": "渴望"
+          }
+        ],
+        "ex": {
+          "en": "It did not take long to finish the work.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "length",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "longer",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "longest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "longingly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lengths",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "length",
+            "lengths"
+          ],
+          "v": [],
+          "adj": [
+            "long",
+            "longer",
+            "longest"
+          ],
+          "adv": [
+            "long",
+            "longer",
+            "longest",
+            "longingly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:term",
+        "w": "term",
+        "ph": "/tɜːm/",
+        "pos": "n.",
+        "cn": "这学期我们将学很多新单词。",
+        "col": [
+          {
+            "en": "in the long term",
+            "cn": "从长远来看"
+          },
+          {
+            "en": "in terms of",
+            "cn": "就……而言"
+          },
+          {
+            "en": "come to terms with",
+            "cn": "逐渐接受，妥协"
+          }
+        ],
+        "ex": {
+          "en": "We will learn many new words this term.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "terms",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "term",
+            "terms"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:serious",
+        "w": "serious",
+        "ph": "/ˈsɪəriəs/",
+        "pos": "adj.",
+        "cn": "空气污染在许多城市已成为一个严重问题。",
+        "col": [
+          {
+            "en": "be serious about",
+            "cn": "对……认真"
+          },
+          {
+            "en": "a serious problem",
+            "cn": "严重的问题"
+          },
+          {
+            "en": "serious illness",
+            "cn": "重病"
+          }
+        ],
+        "ex": {
+          "en": "Air pollution has become a serious problem in many cities.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "seriousness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "seriously",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "seriousness"
+          ],
+          "v": [],
+          "adj": [
+            "serious"
+          ],
+          "adv": [
+            "seriously"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:arrive",
+        "w": "arrive",
+        "ph": "/əˈraɪv/",
+        "pos": "v.",
+        "cn": "他们在火车开走前刚好到达车站。",
+        "col": [
+          {
+            "en": "arrive at",
+            "cn": "到达（小地方）；达成"
+          },
+          {
+            "en": "arrive in",
+            "cn": "到达（大地方）"
+          },
+          {
+            "en": "arrive on time",
+            "cn": "准时到达"
+          }
+        ],
+        "ex": {
+          "en": "They arrived at the station just before the train left.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "arrival",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "arrives",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "arriving",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "arrived",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "arrivals",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "arrival",
+            "arrivals"
+          ],
+          "v": [
+            "arrive",
+            "arrives",
+            "arrived",
+            "arriving"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:little",
+        "w": "little",
+        "ph": "/ˈlɪtl/",
+        "pos": "adj. & adv.",
+        "cn": "瓶子里剩下的水不多了。",
+        "col": [
+          {
+            "en": "a little",
+            "cn": "一点，少量"
+          },
+          {
+            "en": "little by little",
+            "cn": "逐渐地"
+          },
+          {
+            "en": "quite a little",
+            "cn": "相当多"
+          }
+        ],
+        "ex": {
+          "en": "There is little water left in the bottle.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "less",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "least",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "littler",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "littlest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "little",
+            "less",
+            "least",
+            "littler",
+            "littlest"
+          ],
+          "adv": [
+            "little",
+            "less",
+            "least"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:notice",
+        "w": "notice",
+        "ph": "/ˈnəʊtɪs/",
+        "pos": "v. & n.",
+        "cn": "我注意到他脸上有一种奇怪的表情。",
+        "col": [
+          {
+            "en": "take notice of",
+            "cn": "注意到"
+          },
+          {
+            "en": "at short notice",
+            "cn": "在短时间内；临时通知"
+          },
+          {
+            "en": "notice board",
+            "cn": "布告栏"
+          }
+        ],
+        "ex": {
+          "en": "I noticed a strange look on his face.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "notices",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "noticing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "noticed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "noticeable",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "noticeably",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "notice",
+            "notices"
+          ],
+          "v": [
+            "notice",
+            "notices",
+            "noticed",
+            "noticing"
+          ],
+          "adj": [
+            "noticeable"
+          ],
+          "adv": [
+            "noticeably"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:huge",
+        "w": "huge",
+        "ph": "/hjuːdʒ/",
+        "pos": "adj.",
+        "cn": "新体育场很大，能容纳数千人。",
+        "col": [
+          {
+            "en": "a huge amount of",
+            "cn": "大量的"
+          },
+          {
+            "en": "huge success",
+            "cn": "巨大的成功"
+          },
+          {
+            "en": "huge difference",
+            "cn": "巨大的差异"
+          }
+        ],
+        "ex": {
+          "en": "The new stadium is huge and can hold thousands of people.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "hugeness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "hugely",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "huger",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "hugest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "hugeness"
+          ],
+          "v": [],
+          "adj": [
+            "huge",
+            "huger",
+            "hugest"
+          ],
+          "adv": [
+            "hugely"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:cause",
+        "w": "cause",
+        "ph": "/kɔːz/",
+        "pos": "v. & n.",
+        "cn": "大雨使河水迅速上涨。",
+        "col": [
+          {
+            "en": "cause damage to",
+            "cn": "对……造成损害"
+          },
+          {
+            "en": "the cause of",
+            "cn": "……的原因"
+          },
+          {
+            "en": "cause trouble",
+            "cn": "惹麻烦"
+          }
+        ],
+        "ex": {
+          "en": "Heavy rain caused the river to rise quickly.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "causes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "causation",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "causing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "caused",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "causal",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "causally",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "cause",
+            "causes",
+            "causation"
+          ],
+          "v": [
+            "cause",
+            "causes",
+            "caused",
+            "causing"
+          ],
+          "adj": [
+            "causal"
+          ],
+          "adv": [
+            "causally"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:undersea",
+        "w": "undersea",
+        "ph": "/ˈʌndəsiː/",
+        "pos": "adj.",
+        "cn": "科学家们正在研究该岛附近的海底世界。",
+        "col": [
+          {
+            "en": "undersea world",
+            "cn": "海底世界"
+          },
+          {
+            "en": "undersea earthquake",
+            "cn": "海底地震"
+          },
+          {
+            "en": "undersea cable",
+            "cn": "海底电缆"
+          }
+        ],
+        "ex": {
+          "en": "Scientists are studying the undersea world near the island.",
+          "cn": ""
+        },
+        "forms": [],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "undersea"
+          ],
+          "adv": []
+        },
+        "freq": "低",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:earthquake",
+        "w": "earthquake",
+        "ph": "/ˈɜːθkweɪk/",
+        "pos": "n.",
+        "cn": "许多建筑在地震中被毁。",
+        "col": [
+          {
+            "en": "a strong earthquake",
+            "cn": "强烈地震"
+          },
+          {
+            "en": "earthquake damage",
+            "cn": "地震破坏"
+          },
+          {
+            "en": "survive an earthquake",
+            "cn": "在地震中幸存"
+          }
+        ],
+        "ex": {
+          "en": "Many buildings were destroyed in the earthquake.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "earthquakes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "earthquake",
+            "earthquakes"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:sea",
+        "w": "sea",
+        "ph": "/siː/",
+        "pos": "n.",
+        "cn": "那天早晨大海平静而湛蓝。",
+        "col": [
+          {
+            "en": "by sea",
+            "cn": "乘船，由海路"
+          },
+          {
+            "en": "at sea",
+            "cn": "在海上；茫然"
+          },
+          {
+            "en": "sea level",
+            "cn": "海平面"
+          }
+        ],
+        "ex": {
+          "en": "The sea was calm and blue that morning.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "seas",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "seaside",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "sea",
+            "seas",
+            "seaside"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:coastal",
+        "w": "coastal",
+        "ph": "/ˈkəʊstl/",
+        "pos": "adj.",
+        "cn": "这个沿海城镇每年夏天吸引许多游客。",
+        "col": [
+          {
+            "en": "coastal area",
+            "cn": "沿海地区"
+          },
+          {
+            "en": "coastal town",
+            "cn": "沿海城镇"
+          },
+          {
+            "en": "coastal waters",
+            "cn": "沿海水域"
+          }
+        ],
+        "ex": {
+          "en": "The coastal town attracts many visitors every summer.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "coast",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "coasts",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "coast",
+            "coasts"
+          ],
+          "v": [],
+          "adj": [
+            "coastal"
+          ],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:once",
+        "w": "once",
+        "ph": "/wʌns/",
+        "pos": "adv. / conj.",
+        "cn": "一旦你开始读这本书，就会发现很难放下。",
+        "col": [
+          {
+            "en": "once a week",
+            "cn": "每周一次"
+          },
+          {
+            "en": "once upon a time",
+            "cn": "从前"
+          },
+          {
+            "en": "at once",
+            "cn": "立刻；同时"
+          }
+        ],
+        "ex": {
+          "en": "Once you start reading this book, you will find it hard to put it down.",
+          "cn": ""
+        },
+        "forms": [],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [],
+          "adv": [
+            "once"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:indian",
+        "w": "Indian",
+        "ph": "/ˈɪndiən/",
+        "pos": "adj. / n.",
+        "cn": "我的新同学是一位喜欢中国茶的印度女孩。",
+        "col": [
+          {
+            "en": "Indian Ocean",
+            "cn": "印度洋"
+          },
+          {
+            "en": "Indian food",
+            "cn": "印度食物"
+          },
+          {
+            "en": "an Indian student",
+            "cn": "一名印度学生"
+          }
+        ],
+        "ex": {
+          "en": "My new classmate is an Indian girl who loves Chinese tea.",
+          "cn": ""
+        },
+        "forms": [],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:coast",
+        "w": "coast",
+        "ph": "/kəʊst/",
+        "pos": "n.",
+        "cn": "我们整个下午都沿着海岸散步。",
+        "col": [
+          {
+            "en": "along the coast",
+            "cn": "沿着海岸"
+          },
+          {
+            "en": "on the coast",
+            "cn": "在海岸上"
+          },
+          {
+            "en": "the east coast",
+            "cn": "东海岸"
+          }
+        ],
+        "ex": {
+          "en": "We spent the whole afternoon walking along the coast.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "coastal",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "coasts",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "coast",
+            "coasts",
+            "coastal"
+          ],
+          "v": [],
+          "adj": [
+            "coastal"
+          ],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:follow",
+        "w": "follow",
+        "ph": "/ˈfɒləʊ/",
+        "pos": "v.",
+        "cn": "如果你跟着指示牌走，就很容易找到博物馆。",
+        "col": [
+          {
+            "en": "follow the rules",
+            "cn": "遵守规则"
+          },
+          {
+            "en": "follow one's advice",
+            "cn": "听从某人的建议"
+          },
+          {
+            "en": "as follows",
+            "cn": "如下"
+          }
+        ],
+        "ex": {
+          "en": "If you follow the signs, you will easily find the museum.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "follower",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "followed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "following",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "followers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "follows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "follower",
+            "followers"
+          ],
+          "v": [
+            "follow",
+            "follows",
+            "followed",
+            "following"
+          ],
+          "adj": [
+            "following"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:many",
+        "w": "many",
+        "ph": "/ˈmeni/",
+        "pos": "adj. / pron.",
+        "cn": "每年都有许多学生参加学校运动会。",
+        "col": [
+          {
+            "en": "many times",
+            "cn": "许多次"
+          },
+          {
+            "en": "how many",
+            "cn": "多少"
+          },
+          {
+            "en": "many of us",
+            "cn": "我们中的许多人"
+          }
+        ],
+        "ex": {
+          "en": "Many students take part in the school sports meeting every year.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "more",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "most",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "many",
+            "more",
+            "most"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:country",
+        "w": "country",
+        "ph": "/ˈkʌntri/",
+        "pos": "n.",
+        "cn": "中国是一个历史悠久、文化丰富的国家。",
+        "col": [
+          {
+            "en": "in the country",
+            "cn": "在乡下"
+          },
+          {
+            "en": "a developing country",
+            "cn": "一个发展中国家"
+          },
+          {
+            "en": "all over the country",
+            "cn": "全国各地"
+          }
+        ],
+        "ex": {
+          "en": "China is a country with a long history and rich culture.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "countries",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "country",
+            "countries"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:land",
+        "w": "land",
+        "ph": "/lænd/",
+        "pos": "n. / v.",
+        "cn": "飞机将于六点在北京降落。",
+        "col": [
+          {
+            "en": "on land",
+            "cn": "在陆地上"
+          },
+          {
+            "en": "land on the moon",
+            "cn": "登上月球"
+          },
+          {
+            "en": "farm land",
+            "cn": "农田"
+          }
+        ],
+        "ex": {
+          "en": "The plane will land in Beijing at six o'clock.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "landing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "landed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lands",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "landings",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "land",
+            "lands",
+            "landing",
+            "landings"
+          ],
+          "v": [
+            "land",
+            "lands",
+            "landed",
+            "landing"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:heavy",
+        "w": "heavy",
+        "ph": "/ˈhevi/",
+        "pos": "adj.",
+        "cn": "昨晚的大雨使我们无法外出。",
+        "col": [
+          {
+            "en": "heavy rain",
+            "cn": "大雨"
+          },
+          {
+            "en": "heavy traffic",
+            "cn": "交通拥堵"
+          },
+          {
+            "en": "a heavy burden",
+            "cn": "沉重的负担"
+          }
+        ],
+        "ex": {
+          "en": "The heavy rain stopped us from going out last night.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "heaviness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "heavier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "heaviest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "heavily",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "heaviness"
+          ],
+          "v": [],
+          "adj": [
+            "heavy",
+            "heavier",
+            "heaviest"
+          ],
+          "adv": [
+            "heavily"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:rain",
+        "w": "rain",
+        "ph": "/reɪn/",
+        "pos": "n. / v.",
+        "cn": "我们刚到公园就开始下雨了。",
+        "col": [
+          {
+            "en": "in the rain",
+            "cn": "在雨中"
+          },
+          {
+            "en": "heavy rain",
+            "cn": "大雨"
+          },
+          {
+            "en": "rain heavily",
+            "cn": "下大雨"
+          }
+        ],
+        "ex": {
+          "en": "It began to rain just as we reached the park.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "rainfall",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rained",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "raining",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rainy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rains",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rainier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rainiest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "rain",
+            "rains",
+            "rainfall"
+          ],
+          "v": [
+            "rain",
+            "rains",
+            "rained",
+            "raining"
+          ],
+          "adj": [
+            "rainy",
+            "rainier",
+            "rainiest"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:street",
+        "w": "street",
+        "ph": "/striːt/",
+        "pos": "n.",
+        "cn": "这条街的尽头有一家小书店。",
+        "col": [
+          {
+            "en": "in the street",
+            "cn": "在街上"
+          },
+          {
+            "en": "across the street",
+            "cn": "在街对面"
+          },
+          {
+            "en": "a busy street",
+            "cn": "一条繁忙的街道"
+          }
+        ],
+        "ex": {
+          "en": "There is a small bookshop at the end of the street.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "streets",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "street",
+            "streets"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:home",
+        "w": "home",
+        "ph": "/həʊm/",
+        "pos": "n. / adv.",
+        "cn": "忙碌一天后，没有什么比回家更让人舒服的了。",
+        "col": [
+          {
+            "en": "at home",
+            "cn": "在家"
+          },
+          {
+            "en": "go home",
+            "cn": "回家"
+          },
+          {
+            "en": "a home for the elderly",
+            "cn": "养老院"
+          }
+        ],
+        "ex": {
+          "en": "After a long day, nothing feels better than going home.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "homes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "home",
+            "homes"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": [
+            "home"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:hillside",
+        "w": "hillside",
+        "ph": "/ˈhɪlsaɪd/",
+        "pos": "n.",
+        "cn": "羊群在绿色的山坡上安静地吃草。",
+        "col": [
+          {
+            "en": "on the hillside",
+            "cn": "在山坡上"
+          },
+          {
+            "en": "a steep hillside",
+            "cn": "陡峭的山坡"
+          },
+          {
+            "en": "plant trees on the hillside",
+            "cn": "在山坡上种树"
+          }
+        ],
+        "ex": {
+          "en": "Sheep were grazing quietly on the green hillside.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "hillsides",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "hillside",
+            "hillsides"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "低",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:road",
+        "w": "road",
+        "ph": "/rəʊd/",
+        "pos": "n.",
+        "cn": "在学校附近过马路时要小心。",
+        "col": [
+          {
+            "en": "on the road",
+            "cn": "在路上"
+          },
+          {
+            "en": "a busy road",
+            "cn": "一条繁忙的道路"
+          },
+          {
+            "en": "cross the road",
+            "cn": "过马路"
+          }
+        ],
+        "ex": {
+          "en": "Be careful when you cross the road near the school.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "roads",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "road",
+            "roads"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:house",
+        "w": "house",
+        "ph": "/haʊs/",
+        "pos": "n.",
+        "cn": "他们买了一栋带漂亮花园的小房子。",
+        "col": [
+          {
+            "en": "a two-storey house",
+            "cn": "一栋两层的房子"
+          },
+          {
+            "en": "move house",
+            "cn": "搬家"
+          },
+          {
+            "en": "the White House",
+            "cn": "白宫"
+          }
+        ],
+        "ex": {
+          "en": "They bought a small house with a beautiful garden.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "houses",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "housing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "housed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "house",
+            "houses",
+            "housing"
+          ],
+          "v": [
+            "housed",
+            "housing"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:mountainous",
+        "w": "mountainous",
+        "ph": "/ˈmaʊntənəs/",
+        "pos": "adj.",
+        "cn": "这个山区以美丽的风景而闻名。",
+        "col": [
+          {
+            "en": "a mountainous area",
+            "cn": "山区"
+          },
+          {
+            "en": "mountainous country",
+            "cn": "多山的国家"
+          },
+          {
+            "en": "mountainous terrain",
+            "cn": "山地地形"
+          }
+        ],
+        "ex": {
+          "en": "The mountainous area is famous for its beautiful scenery.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "mountain",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "mountains",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "mountain",
+            "mountains"
+          ],
+          "v": [],
+          "adj": [
+            "mountainous"
+          ],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:area",
+        "w": "area",
+        "ph": "/ˈeəriə/",
+        "pos": "n.",
+        "cn": "这个地区以清新的空气和干净的水而闻名。",
+        "col": [
+          {
+            "en": "in the area",
+            "cn": "在这个地区"
+          },
+          {
+            "en": "a rural area",
+            "cn": "农村地区"
+          },
+          {
+            "en": "the area of",
+            "cn": "……的面积"
+          }
+        ],
+        "ex": {
+          "en": "This area is known for its fresh air and clean water.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "areas",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "area",
+            "areas"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:volcanic",
+        "w": "volcanic",
+        "ph": "/vɒlˈkænɪk/",
+        "pos": "adj.",
+        "cn": "火山喷发迫使数千人离开家园。",
+        "col": [
+          {
+            "en": "a volcanic eruption",
+            "cn": "火山喷发"
+          },
+          {
+            "en": "volcanic ash",
+            "cn": "火山灰"
+          },
+          {
+            "en": "volcanic activity",
+            "cn": "火山活动"
+          }
+        ],
+        "ex": {
+          "en": "The volcanic eruption forced thousands of people to leave their homes.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "volcano",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "volcanoes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "volcanos",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "volcanically",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "volcano",
+            "volcanoes",
+            "volcanos"
+          ],
+          "v": [],
+          "adj": [
+            "volcanic"
+          ],
+          "adv": [
+            "volcanically"
+          ]
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:eruption",
+        "w": "eruption",
+        "ph": "/ɪˈrʌpʃn/",
+        "pos": "n.",
+        "cn": "火山喷发迫使数千人离开家园。",
+        "col": [
+          {
+            "en": "volcanic eruption",
+            "cn": "火山喷发"
+          },
+          {
+            "en": "a sudden eruption of anger",
+            "cn": "怒火的突然爆发"
+          }
+        ],
+        "ex": {
+          "en": "The eruption of the volcano forced thousands of people to leave their homes.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "erupt",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "eruptive",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "eruptions",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "erupts",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "erupted",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "erupting",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "eruption",
+            "eruptions"
+          ],
+          "v": [
+            "erupt",
+            "erupts",
+            "erupted",
+            "erupting"
+          ],
+          "adj": [
+            "eruptive"
+          ],
+          "adv": []
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:snow",
+        "w": "snow",
+        "ph": "/snəʊ/",
+        "pos": "n. / v.",
+        "cn": "雪一停，孩子们就跑到外面去玩了。",
+        "col": [
+          {
+            "en": "heavy snow",
+            "cn": "大雪"
+          },
+          {
+            "en": "be covered with snow",
+            "cn": "被雪覆盖"
+          },
+          {
+            "en": "snow heavily",
+            "cn": "下大雪"
+          }
+        ],
+        "ex": {
+          "en": "The children ran outside to play as soon as the snow stopped.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "snowy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "snows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "snowed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "snowing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "snowier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "snowiest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "snow",
+            "snows"
+          ],
+          "v": [
+            "snow",
+            "snows",
+            "snowed",
+            "snowing"
+          ],
+          "adj": [
+            "snowy",
+            "snowier",
+            "snowiest"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:ice",
+        "w": "ice",
+        "ph": "/aɪs/",
+        "pos": "n.",
+        "cn": "一月份湖面结了厚厚的冰。",
+        "col": [
+          {
+            "en": "break the ice",
+            "cn": "打破僵局"
+          },
+          {
+            "en": "ice skating",
+            "cn": "滑冰"
+          },
+          {
+            "en": "be covered with ice",
+            "cn": "结满冰"
+          }
+        ],
+        "ex": {
+          "en": "The lake was covered with thick ice in January.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "icy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "ices",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "iced",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "icing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "icier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "iciest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "ice"
+          ],
+          "v": [
+            "ice",
+            "ices",
+            "iced",
+            "icing"
+          ],
+          "adj": [
+            "icy",
+            "icier",
+            "iciest"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:send",
+        "w": "send",
+        "ph": "/send/",
+        "pos": "v.",
+        "cn": "你到了以后请给我发一封电子邮件。",
+        "col": [
+          {
+            "en": "send a message",
+            "cn": "发送信息"
+          },
+          {
+            "en": "send for a doctor",
+            "cn": "派人去请医生"
+          },
+          {
+            "en": "send out invitations",
+            "cn": "发出邀请"
+          }
+        ],
+        "ex": {
+          "en": "Please send me an email when you arrive.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "sender",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "sending",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "senders",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "sends",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "sent",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "sender",
+            "sending",
+            "senders"
+          ],
+          "v": [
+            "send",
+            "sends",
+            "sent",
+            "sending"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:rush",
+        "w": "rush",
+        "ph": "/rʌʃ/",
+        "pos": "v. / n.",
+        "cn": "警报响起时，人们冲向出口。",
+        "col": [
+          {
+            "en": "rush out of the room",
+            "cn": "冲出房间"
+          },
+          {
+            "en": "in a rush",
+            "cn": "匆忙地"
+          },
+          {
+            "en": "rush hour",
+            "cn": "交通高峰期"
+          }
+        ],
+        "ex": {
+          "en": "People rushed to the exits when the alarm went off.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "rushing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rushed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rushes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "rush",
+            "rushes",
+            "rushing"
+          ],
+          "v": [
+            "rush",
+            "rushes",
+            "rushed",
+            "rushing"
+          ],
+          "adj": [
+            "rushed"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:downward",
+        "w": "downward",
+        "ph": "/ˈdaʊnwəd/",
+        "pos": "adj. / adv.",
+        "cn": "自入秋以来气温呈下降趋势。",
+        "col": [
+          {
+            "en": "a downward trend",
+            "cn": "下降趋势"
+          },
+          {
+            "en": "move downward",
+            "cn": "向下移动"
+          },
+          {
+            "en": "face downward",
+            "cn": "脸朝下"
+          }
+        ],
+        "ex": {
+          "en": "The temperature has shown a downward trend since autumn.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "downwards",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "downward"
+          ],
+          "adv": [
+            "downward",
+            "downwards"
+          ]
+        },
+        "freq": "中",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:reach",
+        "w": "reach",
+        "ph": "/riːtʃ/",
+        "pos": "v. / n.",
+        "cn": "我们在日出前到达了山顶。",
+        "col": [
+          {
+            "en": "reach an agreement",
+            "cn": "达成协议"
+          },
+          {
+            "en": "reach for the sky",
+            "cn": "伸手够向天空"
+          },
+          {
+            "en": "out of reach",
+            "cn": "够不着"
+          }
+        ],
+        "ex": {
+          "en": "We reached the top of the mountain before sunrise.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "reachable",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "reaches",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "reached",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "reaching",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "reach",
+            "reaches"
+          ],
+          "v": [
+            "reach",
+            "reaches",
+            "reached",
+            "reaching"
+          ],
+          "adj": [
+            "reachable"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:bring",
+        "w": "bring",
+        "ph": "/brɪŋ/",
+        "pos": "v.",
+        "cn": "新政策将给当地农民带来许多好处。",
+        "col": [
+          {
+            "en": "bring about change",
+            "cn": "带来变化"
+          },
+          {
+            "en": "bring up children",
+            "cn": "抚养孩子"
+          },
+          {
+            "en": "bring back memories",
+            "cn": "唤起回忆"
+          }
+        ],
+        "ex": {
+          "en": "The new policy will bring many benefits to local farmers.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "bringer",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "bringers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "brings",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "brought",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "bringing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "bringer",
+            "bringers"
+          ],
+          "v": [
+            "bring",
+            "brings",
+            "brought",
+            "bringing"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:even",
+        "w": "even",
+        "ph": "/ˈiːvn/",
+        "pos": "adv. / adj.",
+        "cn": "他离开前甚至没有说再见。",
+        "col": [
+          {
+            "en": "even though",
+            "cn": "即使；虽然"
+          },
+          {
+            "en": "even if",
+            "cn": "即使"
+          },
+          {
+            "en": "even number",
+            "cn": "偶数"
+          }
+        ],
+        "ex": {
+          "en": "He didn't even say goodbye before leaving.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "evenly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "even"
+          ],
+          "adv": [
+            "even",
+            "evenly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:people",
+        "w": "people",
+        "ph": "/ˈpiːpl/",
+        "pos": "n.",
+        "cn": "许多人更喜欢乘火车而不是乘飞机旅行。",
+        "col": [
+          {
+            "en": "young people",
+            "cn": "年轻人"
+          },
+          {
+            "en": "a lot of people",
+            "cn": "许多人"
+          },
+          {
+            "en": "the local people",
+            "cn": "当地人"
+          }
+        ],
+        "ex": {
+          "en": "Many people prefer to travel by train rather than by plane.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "peoples",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "people",
+            "peoples"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:first",
+        "w": "first",
+        "ph": "/fɜːst/",
+        "pos": "adj. / adv. / num.",
+        "cn": "首先，你需要仔细阅读说明。",
+        "col": [
+          {
+            "en": "at first",
+            "cn": "起初"
+          },
+          {
+            "en": "first of all",
+            "cn": "首先"
+          },
+          {
+            "en": "for the first time",
+            "cn": "第一次"
+          }
+        ],
+        "ex": {
+          "en": "First, you need to read the instructions carefully.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "firstly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "firsts",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "first",
+            "firsts"
+          ],
+          "v": [],
+          "adj": [
+            "first"
+          ],
+          "adv": [
+            "first",
+            "firstly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:early",
+        "w": "early",
+        "ph": "/ˈɜːli/",
+        "pos": "adj. / adv.",
+        "cn": "她每天早起练习跑步。",
+        "col": [
+          {
+            "en": "in the early morning",
+            "cn": "清晨"
+          },
+          {
+            "en": "early in the morning",
+            "cn": "一大早"
+          },
+          {
+            "en": "as early as",
+            "cn": "早在"
+          }
+        ],
+        "ex": {
+          "en": "She gets up early every day to practice running.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "earlier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "earliest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "early",
+            "earlier",
+            "earliest"
+          ],
+          "adv": [
+            "early",
+            "earlier",
+            "earliest"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:save",
+        "w": "save",
+        "ph": "/seɪv/",
+        "pos": "v.",
+        "cn": "医生工作了一整夜来挽救那个受伤的男孩。",
+        "col": [
+          {
+            "en": "save lives",
+            "cn": "挽救生命"
+          },
+          {
+            "en": "save time",
+            "cn": "节省时间"
+          },
+          {
+            "en": "save money",
+            "cn": "存钱；省钱"
+          }
+        ],
+        "ex": {
+          "en": "The doctor worked all night to save the injured boy.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "saver",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "saving",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "savers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "saves",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "saved",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "saver",
+            "saving",
+            "savers"
+          ],
+          "v": [
+            "save",
+            "saves",
+            "saved",
+            "saving"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:life",
+        "w": "life",
+        "ph": "/laɪf/",
+        "pos": "n.",
+        "cn": "经常锻炼可以提高你的生活质量。",
+        "col": [
+          {
+            "en": "save lives",
+            "cn": "挽救生命"
+          },
+          {
+            "en": "daily life",
+            "cn": "日常生活"
+          },
+          {
+            "en": "come to life",
+            "cn": "活跃起来"
+          }
+        ],
+        "ex": {
+          "en": "Regular exercise can improve the quality of your life.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "lives",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lifeless",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lifelessly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "life",
+            "lives"
+          ],
+          "v": [],
+          "adj": [
+            "lifeless"
+          ],
+          "adv": [
+            "lifelessly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:building",
+        "w": "building",
+        "ph": "/ˈbɪldɪŋ/",
+        "pos": "n.",
+        "cn": "那座旧楼去年被改建成了一座图书馆。",
+        "col": [
+          {
+            "en": "a tall building",
+            "cn": "高楼"
+          },
+          {
+            "en": "public buildings",
+            "cn": "公共建筑"
+          },
+          {
+            "en": "building materials",
+            "cn": "建筑材料"
+          }
+        ],
+        "ex": {
+          "en": "The old building was turned into a library last year.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "build",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "buildings",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "builds",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "built",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "building",
+            "buildings"
+          ],
+          "v": [
+            "build",
+            "builds",
+            "built",
+            "building"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:risk",
+        "w": "risk",
+        "ph": "/rɪsk/",
+        "pos": "n. / v.",
+        "cn": "开车太快会增加发生事故的风险。",
+        "col": [
+          {
+            "en": "take a risk",
+            "cn": "冒险"
+          },
+          {
+            "en": "at risk",
+            "cn": "处于危险中"
+          },
+          {
+            "en": "risk doing sth",
+            "cn": "冒险做某事"
+          }
+        ],
+        "ex": {
+          "en": "Driving too fast increases the risk of accidents.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "risky",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "risks",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "risked",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "risking",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "riskier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "riskiest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "risk",
+            "risks"
+          ],
+          "v": [
+            "risk",
+            "risks",
+            "risked",
+            "risking"
+          ],
+          "adj": [
+            "risky",
+            "riskier",
+            "riskiest"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:strong",
+        "w": "strong",
+        "ph": "/strɒŋ/",
+        "pos": "adj.",
+        "cn": "她有成为科学家的强烈愿望。",
+        "col": [
+          {
+            "en": "strong wind",
+            "cn": "强风"
+          },
+          {
+            "en": "a strong will",
+            "cn": "坚强的意志"
+          },
+          {
+            "en": "be strong in",
+            "cn": "擅长"
+          }
+        ],
+        "ex": {
+          "en": "She has a strong desire to become a scientist.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "strength",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "strongly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "strengths",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "stronger",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "strongest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "strength",
+            "strengths"
+          ],
+          "v": [],
+          "adj": [
+            "strong",
+            "stronger",
+            "strongest"
+          ],
+          "adv": [
+            "strongly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:easily",
+        "w": "easily",
+        "ph": "/ˈiːzəli/",
+        "pos": "adv.",
+        "cn": "在地图的帮助下，我们很容易就找到了博物馆。",
+        "col": [
+          {
+            "en": "easily understood",
+            "cn": "容易理解"
+          },
+          {
+            "en": "easily accessible",
+            "cn": "容易获得的；易于接近的"
+          },
+          {
+            "en": "break easily",
+            "cn": "容易破碎"
+          }
+        ],
+        "ex": {
+          "en": "With the help of the map, we found the museum easily.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "easy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "easier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "easiest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [],
+          "v": [],
+          "adj": [
+            "easy",
+            "easier",
+            "easiest"
+          ],
+          "adv": [
+            "easily"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:third",
+        "w": "third",
+        "ph": "/θɜːd/",
+        "pos": "num. / adj. / adv.",
+        "cn": "她在歌唱比赛中获得了第三名。",
+        "col": [
+          {
+            "en": "the third time",
+            "cn": "第三次"
+          },
+          {
+            "en": "one third of",
+            "cn": "三分之一"
+          },
+          {
+            "en": "third place",
+            "cn": "第三名"
+          }
+        ],
+        "ex": {
+          "en": "She finished third in the singing competition.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "thirdly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "third"
+          ],
+          "v": [],
+          "adj": [
+            "third"
+          ],
+          "adv": [
+            "third",
+            "thirdly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:need",
+        "w": "need",
+        "ph": "/niːd/",
+        "pos": "v. / n. / modal v.",
+        "cn": "植物需要阳光和水才能长得好。",
+        "col": [
+          {
+            "en": "in need of",
+            "cn": "需要"
+          },
+          {
+            "en": "meet the need(s) of",
+            "cn": "满足……的需求"
+          },
+          {
+            "en": "need to do sth",
+            "cn": "需要做某事"
+          }
+        ],
+        "ex": {
+          "en": "Plants need sunlight and water to grow well.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "needy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "needs",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "needed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "needing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "needier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "neediest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "need",
+            "needs"
+          ],
+          "v": [
+            "need",
+            "needs",
+            "needed",
+            "needing"
+          ],
+          "adj": [
+            "needy",
+            "needier",
+            "neediest"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:clear",
+        "w": "clear",
+        "ph": "/klɪə(r)/",
+        "pos": "adj. / v.",
+        "cn": "老师向每位学生清楚地说明了规则。",
+        "col": [
+          {
+            "en": "make it clear that",
+            "cn": "明确表示"
+          },
+          {
+            "en": "clear up",
+            "cn": "放晴；清理；解决"
+          },
+          {
+            "en": "be clear about",
+            "cn": "对……清楚"
+          }
+        ],
+        "ex": {
+          "en": "The teacher made the rules clear to every student.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "clarity",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clarify",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clearly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clears",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "cleared",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clearing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clarifies",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clarified",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clarifying",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clearer",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clearest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "clarity"
+          ],
+          "v": [
+            "clear",
+            "clears",
+            "cleared",
+            "clearing",
+            "clarify",
+            "clarifies",
+            "clarified",
+            "clarifying"
+          ],
+          "adj": [
+            "clear",
+            "clearer",
+            "clearest"
+          ],
+          "adv": [
+            "clearly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:plan",
+        "w": "plan",
+        "ph": "/plæn/",
+        "pos": "n. / v.",
+        "cn": "我们计划这个周末去参观科学博物馆。",
+        "col": [
+          {
+            "en": "make a plan",
+            "cn": "制定计划"
+          },
+          {
+            "en": "plan to do sth",
+            "cn": "计划做某事"
+          },
+          {
+            "en": "carry out a plan",
+            "cn": "执行计划"
+          }
+        ],
+        "ex": {
+          "en": "We plan to visit the science museum this weekend.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "planner",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "planned",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "plans",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "planners",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "planning",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "plan",
+            "plans",
+            "planner",
+            "planners"
+          ],
+          "v": [
+            "plan",
+            "plans",
+            "planned",
+            "planning"
+          ],
+          "adj": [
+            "planned"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:information",
+        "w": "information",
+        "ph": "/ˌɪnfəˈmeɪʃn/",
+        "pos": "n.",
+        "cn": "你可以在网上找到关于这门课程的更多信息。",
+        "col": [
+          {
+            "en": "a piece of information",
+            "cn": "一条信息"
+          },
+          {
+            "en": "information about/on",
+            "cn": "关于……的信息"
+          },
+          {
+            "en": "collect information",
+            "cn": "收集信息"
+          }
+        ],
+        "ex": {
+          "en": "You can find more information about the course online.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "inform",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informative",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informs",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informatively",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "information"
+          ],
+          "v": [
+            "inform",
+            "informs",
+            "informed",
+            "informing"
+          ],
+          "adj": [
+            "informative"
+          ],
+          "adv": [
+            "informatively"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:scientist",
+        "w": "scientist",
+        "ph": "/ˈsaɪəntɪst/",
+        "pos": "n.",
+        "cn": "这位年轻的科学家花了数年时间研究这种稀有植物。",
+        "col": [
+          {
+            "en": "a research scientist",
+            "cn": "研究科学家"
+          },
+          {
+            "en": "scientists believe that",
+            "cn": "科学家认为"
+          },
+          {
+            "en": "become a scientist",
+            "cn": "成为科学家"
+          }
+        ],
+        "ex": {
+          "en": "The young scientist spent years studying the rare plant.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "science",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "scientific",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "scientifically",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "scientists",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "sciences",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "scientist",
+            "scientists",
+            "science",
+            "sciences"
+          ],
+          "v": [],
+          "adj": [
+            "scientific"
+          ],
+          "adv": [
+            "scientifically"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:local",
+        "w": "local",
+        "ph": "/ˈləʊkl/",
+        "pos": "adj. / n.",
+        "cn": "当地市场每天早上出售新鲜蔬菜。",
+        "col": [
+          {
+            "en": "local people",
+            "cn": "当地人"
+          },
+          {
+            "en": "local government",
+            "cn": "地方政府"
+          },
+          {
+            "en": "in the local area",
+            "cn": "在当地"
+          }
+        ],
+        "ex": {
+          "en": "The local market sells fresh vegetables every morning.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "localize",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "locally",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "locals",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "localizes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "localized",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "localizing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "local",
+            "locals"
+          ],
+          "v": [
+            "localize",
+            "localizes",
+            "localized",
+            "localizing"
+          ],
+          "adj": [
+            "local"
+          ],
+          "adv": [
+            "locally"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:school",
+        "w": "school",
+        "ph": "/skuːl/",
+        "pos": "n.",
+        "cn": "我们学校每年秋天举办一次运动会。",
+        "col": [
+          {
+            "en": "go to school",
+            "cn": "去上学"
+          },
+          {
+            "en": "after school",
+            "cn": "放学后"
+          },
+          {
+            "en": "at school",
+            "cn": "在学校；在上学"
+          }
+        ],
+        "ex": {
+          "en": "Our school organizes a sports meeting every autumn.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "schooling",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "schools",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "school",
+            "schools",
+            "schooling"
+          ],
+          "v": [],
+          "adj": [
+            "school"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:teach",
+        "w": "teach",
+        "ph": "/tiːtʃ/",
+        "pos": "v.",
+        "cn": "李老师教我们如何一步步解决问题。",
+        "col": [
+          {
+            "en": "teach sb sth",
+            "cn": "教某人某事"
+          },
+          {
+            "en": "teach sb to do sth",
+            "cn": "教某人做某事"
+          },
+          {
+            "en": "teach oneself",
+            "cn": "自学"
+          }
+        ],
+        "ex": {
+          "en": "Mr. Li teaches us how to solve problems step by step.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "teacher",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "teaching",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "teachers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "teachings",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "teaches",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "taught",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "teacher",
+            "teaching",
+            "teachers",
+            "teachings"
+          ],
+          "v": [
+            "teach",
+            "teaches",
+            "taught",
+            "teaching"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:student",
+        "w": "student",
+        "ph": "/ˈstjuːdnt/",
+        "pos": "n.",
+        "cn": "班里的每个学生都加入了读书俱乐部。",
+        "col": [
+          {
+            "en": "a college student",
+            "cn": "大学生"
+          },
+          {
+            "en": "student life",
+            "cn": "学生生活"
+          },
+          {
+            "en": "a hard-working student",
+            "cn": "勤奋的学生"
+          }
+        ],
+        "ex": {
+          "en": "Every student in the class joined the reading club.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "students",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "student",
+            "students"
+          ],
+          "v": [],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:free",
+        "w": "free",
+        "ph": "/friː/",
+        "pos": "adj. / v.",
+        "cn": "这场音乐会对十八岁以下的学生免费。",
+        "col": [
+          {
+            "en": "be free to do sth",
+            "cn": "自由做某事"
+          },
+          {
+            "en": "free of charge",
+            "cn": "免费"
+          },
+          {
+            "en": "set free",
+            "cn": "释放"
+          }
+        ],
+        "ex": {
+          "en": "The concert is free for students under eighteen.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "freedom",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "freely",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "freedoms",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "frees",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "freed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "freeing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "freedom",
+            "freedoms"
+          ],
+          "v": [
+            "free",
+            "frees",
+            "freed",
+            "freeing"
+          ],
+          "adj": [
+            "free"
+          ],
+          "adv": [
+            "freely"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:study",
+        "w": "study",
+        "ph": "/ˈstʌdi/",
+        "pos": "v. / n.",
+        "cn": "她学习努力，还经常帮助同学。",
+        "col": [
+          {
+            "en": "study for a test",
+            "cn": "为考试而学习"
+          },
+          {
+            "en": "a study of",
+            "cn": "对……的研究"
+          },
+          {
+            "en": "study abroad",
+            "cn": "出国留学"
+          }
+        ],
+        "ex": {
+          "en": "She studies hard and often helps her classmates.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "student",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "studies",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "students",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "studied",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "studying",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "study",
+            "studies",
+            "student",
+            "students"
+          ],
+          "v": [
+            "study",
+            "studies",
+            "studied",
+            "studying"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:happen",
+        "w": "happen",
+        "ph": "/ˈhæpən/",
+        "pos": "v.",
+        "cn": "没人知道接下来几天会发生什么。",
+        "col": [
+          {
+            "en": "happen to do sth",
+            "cn": "碰巧做某事"
+          },
+          {
+            "en": "what happened to",
+            "cn": "……发生了什么事"
+          },
+          {
+            "en": "it happens that",
+            "cn": "碰巧"
+          }
+        ],
+        "ex": {
+          "en": "Nobody knows what will happen in the next few days.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "happening",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "happenings",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "happens",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "happened",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "happening",
+            "happenings"
+          ],
+          "v": [
+            "happen",
+            "happens",
+            "happened",
+            "happening"
+          ],
+          "adj": [],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:slow",
+        "w": "slow",
+        "ph": "/sləʊ/",
+        "pos": "adj. / v.",
+        "cn": "那辆旧公交车开得很慢，但我们很享受沿途风景。",
+        "col": [
+          {
+            "en": "slow down",
+            "cn": "减速；放慢"
+          },
+          {
+            "en": "be slow to do sth",
+            "cn": "做某事迟缓"
+          },
+          {
+            "en": "a slow start",
+            "cn": "缓慢的开始"
+          }
+        ],
+        "ex": {
+          "en": "The old bus was slow, but we enjoyed the view.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "slowness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slower",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "slowness"
+          ],
+          "v": [
+            "slow",
+            "slows",
+            "slowed",
+            "slowing"
+          ],
+          "adj": [
+            "slow",
+            "slower",
+            "slowest"
+          ],
+          "adv": [
+            "slowly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:knowledge",
+        "w": "knowledge",
+        "ph": "/ˈnɒlɪdʒ/",
+        "pos": "n.",
+        "cn": "广泛阅读有助于我们获得关于世界的知识。",
+        "col": [
+          {
+            "en": "a good knowledge of",
+            "cn": "对……很了解"
+          },
+          {
+            "en": "gain knowledge",
+            "cn": "获得知识"
+          },
+          {
+            "en": "to my knowledge",
+            "cn": "据我所知"
+          }
+        ],
+        "ex": {
+          "en": "Reading widely helps us gain knowledge about the world.",
+          "cn": ""
+        },
+        "forms": [
+          {
+            "w": "know",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "knowledgeable",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "knows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "knew",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "known",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "knowing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "knowledge"
+          ],
+          "v": [
+            "know",
+            "knows",
+            "knew",
+            "known",
+            "knowing"
+          ],
+          "adj": [
+            "knowledgeable"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:preparation",
+        "w": "preparation",
+        "ph": "/ˌprepəˈreɪʃn/",
+        "pos": "n.",
+        "cn": "准备；预备；准备工作",
+        "col": [
+          {
+            "en": "in preparation for",
+            "cn": "为……做准备"
+          },
+          {
+            "en": "make preparations for",
+            "cn": "为……做准备"
+          },
+          {
+            "en": "preparation for the exam",
+            "cn": "备考"
+          }
+        ],
+        "ex": {
+          "en": "She spent the whole week in preparation for the speech contest.",
+          "cn": "她花了一整周时间为演讲比赛做准备。"
+        },
+        "forms": [
+          {
+            "w": "prepare",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparatory",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "prepared",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparations",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "prepares",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "preparation",
+            "preparations"
+          ],
+          "v": [
+            "prepare",
+            "prepares",
+            "prepared",
+            "preparing"
+          ],
+          "adj": [
+            "preparatory",
+            "prepared"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:quick",
+        "w": "quick",
+        "ph": "/kwɪk/",
+        "pos": "adj.",
+        "cn": "快的；迅速的；敏捷的",
+        "col": [
+          {
+            "en": "a quick look",
+            "cn": "匆匆一看"
+          },
+          {
+            "en": "be quick to do sth",
+            "cn": "迅速做某事"
+          },
+          {
+            "en": "quick thinking",
+            "cn": "敏捷的思维"
+          }
+        ],
+        "ex": {
+          "en": "He gave the report a quick look before the meeting.",
+          "cn": "开会前他匆匆看了一眼报告。"
+        },
+        "forms": [
+          {
+            "w": "quickness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "quicken",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "quickly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "quickens",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "quickened",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "quickening",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "quicker",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "quickest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "quickness"
+          ],
+          "v": [
+            "quicken",
+            "quickens",
+            "quickened",
+            "quickening"
+          ],
+          "adj": [
+            "quick",
+            "quicker",
+            "quickest"
+          ],
+          "adv": [
+            "quickly"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:action",
+        "w": "action",
+        "ph": "/ˈækʃn/",
+        "pos": "n.",
+        "cn": "行动；行为；措施",
+        "col": [
+          {
+            "en": "take action",
+            "cn": "采取行动"
+          },
+          {
+            "en": "in action",
+            "cn": "在行动中；在运转中"
+          },
+          {
+            "en": "a course of action",
+            "cn": "行动方案"
+          }
+        ],
+        "ex": {
+          "en": "The government must take action to protect the environment.",
+          "cn": "政府必须采取行动保护环境。"
+        },
+        "forms": [
+          {
+            "w": "act",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "active",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "actively",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "actions",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "acts",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "acted",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "acting",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "action",
+            "actions"
+          ],
+          "v": [
+            "act",
+            "acts",
+            "acted",
+            "acting"
+          ],
+          "adj": [
+            "active"
+          ],
+          "adv": [
+            "actively"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:best",
+        "w": "best",
+        "ph": "/best/",
+        "pos": "adj./adv./n.",
+        "cn": "最好的；最好地；最好的人（或事物）",
+        "col": [
+          {
+            "en": "do one's best",
+            "cn": "尽某人最大努力"
+          },
+          {
+            "en": "make the best of",
+            "cn": "充分利用"
+          },
+          {
+            "en": "best of all",
+            "cn": "最好的是"
+          }
+        ],
+        "ex": {
+          "en": "Just do your best and don't worry about the result.",
+          "cn": "尽力而为，不要担心结果。"
+        },
+        "forms": [],
+        "wf": {
+          "n": [
+            "best"
+          ],
+          "v": [],
+          "adj": [
+            "best"
+          ],
+          "adv": [
+            "best"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:protection",
+        "w": "protection",
+        "ph": "/prəˈtekʃn/",
+        "pos": "n.",
+        "cn": "保护；防护",
+        "col": [
+          {
+            "en": "protection from",
+            "cn": "免受……的保护"
+          },
+          {
+            "en": "under the protection of",
+            "cn": "在……的保护下"
+          },
+          {
+            "en": "environmental protection",
+            "cn": "环境保护"
+          }
+        ],
+        "ex": {
+          "en": "Wearing a helmet offers good protection for cyclists.",
+          "cn": "戴头盔能为骑行者提供良好的保护。"
+        },
+        "forms": [
+          {
+            "w": "protect",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "protective",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "protectively",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "protections",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "protects",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "protected",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "protecting",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "protection",
+            "protections"
+          ],
+          "v": [
+            "protect",
+            "protects",
+            "protected",
+            "protecting"
+          ],
+          "adj": [
+            "protective"
+          ],
+          "adv": [
+            "protectively"
+          ]
+        },
+        "freq": "高",
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      }
+    ],
+    "selectedUnits": [
+      "compulsory-1-u4"
+    ]
+  }
+}
