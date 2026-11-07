@@ -1161,21 +1161,18 @@ textarea:focus-visible,
   justify-content: center;
   width: 100%;
   min-height: clamp(158px, 25vh, 218px);
-  padding: 28px 32px;
+  padding: 28px 36px;
   color: var(--ink-soft);
-  background:
-    radial-gradient(circle at 50% 20%, rgba(227, 241, 235, 0.85), transparent 48%),
-    var(--surface-soft);
+  background: transparent;
   border: none;
-  border-radius: 20px;
-  transition: background 180ms ease, border-color 180ms ease;
+  border-radius: 0;
+  box-shadow: none;
+  transition: opacity 180ms ease;
 }
 
 .meaning-cover:hover {
-  background:
-    radial-gradient(circle at 50% 20%, rgba(227, 241, 235, 1), transparent 50%),
-    var(--surface-soft);
-  border-color: #bfcfc5;
+  background: transparent;
+  opacity: 0.92;
 }
 
 .meaning-cover:active {
@@ -2263,7 +2260,7 @@ textarea:focus-visible,
   flex: 0 0 auto;
   align-items: center;
   height: 20px;
-  padding: 0 7px;
+  padding: 0 10px;
   border: 1px solid transparent;
   border-radius: 999px;
   font-size: 9.5px;
@@ -4407,8 +4404,8 @@ textarea:focus-visible,
   }
 
   .freq-tag {
-    height: 16px;
-    padding: 0 5px;
+    height: 18px;
+    padding: 0 9px;
     font-size: 8px;
   }
 
@@ -4461,11 +4458,13 @@ textarea:focus-visible,
   }
 
   .meaning-cover {
-    min-height: 88px;
-    padding: 18px 22px;
+    min-height: 72px;
+    padding: 20px 28px;
     gap: 4px;
+    background: transparent;
     border: none;
-    border-radius: 12px;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .meaning-cover-sub {
