@@ -111,6 +111,10 @@ public class MainActivity extends Activity {
         view.setOverScrollMode(View.OVER_SCROLL_NEVER);
         view.setVerticalScrollBarEnabled(false);
         view.setHorizontalScrollBarEnabled(false);
+        if (android.os.Build.VERSION.SDK_INT >= 26) {
+            // ColorOS 会在点按时绘制系统默认的黄色焦点高亮，CSS 无法去掉。
+            view.setDefaultFocusHighlightEnabled(false);
+        }
 
         configureWebView(view);
         view.setWebViewClient(new AppWebViewClient());

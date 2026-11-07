@@ -85,19 +85,53 @@ button:disabled {
   cursor: not-allowed;
 }
 
+* {
+  /* ColorOS / Android WebView 点按高亮：全局透明（含 rgba 写法兼容旧内核） */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 button,
 a,
 input,
-textarea {
+textarea,
+select,
+[tabindex],
+[role="button"],
+.btn,
+.tab-item,
+.card {
   -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* 旧 WebKit 的系统焦点圈颜色 */
+  -webkit-focus-ring-color: transparent;
+}
+
+/* 触摸点击后不留系统焦点框；键盘用户仍保留下面的 focus-visible 细描边 */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus,
+[role="button"]:focus,
+.btn:focus,
+.tab-item:focus,
+.card:focus {
+  outline: none;
 }
 
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
-[tabindex]:focus-visible {
-  outline: 3px solid rgba(13, 107, 87, 0.22);
+select:focus-visible,
+[tabindex]:focus-visible,
+[role="button"]:focus-visible,
+.btn:focus-visible,
+.tab-item:focus-visible,
+.card:focus-visible {
+  outline: 2px solid rgba(13, 107, 87, 0.2);
   outline-offset: 2px;
 }
 
