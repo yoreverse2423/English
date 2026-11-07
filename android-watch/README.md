@@ -4,7 +4,7 @@
 
 - 包名：`com.xiaodancici.watch`
 - 应用名：`小单词机`
-- 版本：`versionCode 2` / `versionName 1.0.1`
+- 版本：`versionCode 12` / `versionName 1.0.11`
 - 入口：`file:///android_asset/www/index.html`
 - `minSdk 24` / `targetSdk 34` / `compileSdk 34`
 - 单 Activity、无 ActionBar、全屏 WebView
@@ -100,20 +100,29 @@ unzip -l app/build/outputs/apk/release/app-release.apk | grep -E 'lib/|\.so$' ||
 
 ## Web 资源
 
-APK 内包含以下四个文件（位于 `app/src/main/assets/www/`）：
+APK 内的网页资源位于 `app/src/main/assets/www/`，与仓库根目录保持一致：
 
 ```text
 index.html
 app.js
 style.css
 words.js
+morphology.js
+morph-table.js
+favicon.ico
+favicon-32.png
+apple-touch-icon.png
+icon-192.png
+site.webmanifest
 ```
 
 `index.html` 使用相对路径加载脚本和样式，`file://` 下可直接工作。修改仓库根目录的 Web 文件后，重新同步资源并构建：
 
 ```bash
 cd /workspace/vocab-app-gh
-cp index.html app.js style.css words.js android-watch/app/src/main/assets/www/
+cp index.html app.js style.css words.js morphology.js morph-table.js \
+  favicon.ico favicon-32.png apple-touch-icon.png icon-192.png site.webmanifest \
+  android-watch/app/src/main/assets/www/
 cd android-watch
 ./gradlew :app:assembleRelease
 ```

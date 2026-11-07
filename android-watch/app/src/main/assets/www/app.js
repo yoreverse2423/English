@@ -438,7 +438,7 @@
     const rawFreq = toText(raw.freq);
     const freq = rawFreq === '高' || rawFreq === '中' || rawFreq === '低' ? rawFreq : '';
 
-    return {
+    const normalized = {
       id: toText(raw.id),
       w: word,
       ph: toText(raw.ph),
@@ -453,6 +453,12 @@
       book: book,
       unit: unit
     };
+    // 自定义词和阅读索引走同一套离线词形，补上规则屈折，已有派生词保留。
+    if (typeof window !== 'undefined' && window.XDCMorph && typeof window.XDCMorph.expandWord === 'function') {
+      window.XDCMorph.expandWord(normalized);
+      if (typeof window.XDCMorph.syncForms === 'function') window.XDCMorph.syncForms(normalized);
+    }
+    return normalized;
   }
 
   function wordKey(wordOrText) {
@@ -4247,10 +4253,10 @@
       '1. 每条对象字段：{"w":"词典原形","ph":"/音标/","pos":"词性（如 v. / n. / adj. / adv.）","cn":"中文释义",' +
         '"col":[{"en":"高考完形或阅读常见搭配","cn":"中文"}],"ex":{"en":"一句原创英文例句","cn":"中文翻译"},' +
         '"wf":{"n":[],"v":[],"adj":[],"adv":[]},"freq":"高|中|低"}\n' +
-      '2. w 用词典原形（lemma）。如果给出的词是屈折形式，请把该形式放进 wf 对应的类别。\n' +
+      '2. w 用词典原形。如果给出的词是屈折形式（过去式、过去分词、-ing、第三人称单数、复数、比较级等），请把该形式放进 wf 对应的类别，同时仍要写全原形的其他词形。\n' +
       '3. cn 用适合高中生的简明中文释义；col 给 2 到 3 条高考完形或阅读常见搭配。\n' +
       '4. ex 给一句原创英文例句和中文翻译，不要照抄阅读原文。\n' +
-      '5. wf 只填真实存在的名词、动词、形容词、副词形式；没有就留空数组。\n' +
+      '5. wf 必须写入全部真实词形（屈折+派生），不要只写原形。v：原形、三单、过去式、过去分词（若不同）、-ing；已有相关动词原形也保留并写出屈折。n：单数+真实复数（child/children，analysis/analyses）；保留 helper、helpfulness 这类相关名词。adj：原级；有单字比较级/最高级时写上（bigger/biggest，better/best，happier/happiest）；不要写 more/most + 形容词。adv：真实副词（helpfully，carefully）；没有则空数组。只写真实英语单词，不要编造。某词性确实没有形式才留空数组。\n' +
       '6. freq 按高考频率判断：常见核心词为“高”，一般课标词为“中”，生僻或文学词为“低”。\n' +
       '7. 不要输出阅读题答案，不要输出 JSON 以外的任何文字。\n' +
       '只返回 {"words":[...]}，为每个请求词各生成一条。\n' +
@@ -4323,8 +4329,11 @@
     });
   }
 
-  // 把 wf 里的真实词形轻微镜像到 forms，阅读查词索引就能命中屈折形式。
+  // 把 wf 里的真实词形镜像到 forms，已有音标/释义保留。阅读查词据此命中屈折形式。
   function syncWordFormsFromWf(word) {
+    if (typeof window !== 'undefined' && window.XDCMorph && typeof window.XDCMorph.syncForms === 'function') {
+      return window.XDCMorph.syncForms(word);
+    }
     if (!word || !word.wf || typeof word.wf !== 'object') return word;
     const baseKey = wordKey(word);
     const seen = new Set();
@@ -4626,12 +4635,21 @@
       if (word) addHead(word);
     });
 
-    // forms 第二轮挂靠，避免变形词遮挡真正的 headword。
+    // forms / wf 第二轮挂靠，避免变形词遮挡真正的 headword。不规则屈折（went、children）也进索引。
     words.forEach(function (word) {
       (Array.isArray(word.forms) ? word.forms : []).forEach(function (form) {
         if (!form || !form.w) return;
         const key = wordKey(form.w);
         if (key && !map.has(key)) map.set(key, word);
+      });
+      const wf = word.wf;
+      if (!wf || typeof wf !== 'object') return;
+      ['n', 'v', 'adj', 'adv'].forEach(function (kind) {
+        const list = Array.isArray(wf[kind]) ? wf[kind] : [];
+        list.forEach(function (item) {
+          const key = wordKey(item);
+          if (key && !map.has(key)) map.set(key, word);
+        });
       });
     });
 
