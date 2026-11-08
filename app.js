@@ -1886,6 +1886,15 @@
     };
   }
 
+  // 混合模式按词频限制默写：低频（'低'）与空频次（''）一律只考三选一，
+  // 懂意思即可；只有中频（'中'）/高频（'高'）才随机 choice / spell。
+  // 纯 choice / spell 模式不经过这里，用户点「分格拼写」仍可拼低频词。
+  function mixedReviewMode(word) {
+    const freq = word && word.freq;
+    if (freq !== '中' && freq !== '高') return 'choice';
+    return Math.random() < 0.5 ? 'choice' : 'spell';
+  }
+
   function prepareReviewCard() {
     if (!reviewSession) return;
     const word = reviewSession.cards[reviewSession.index];
@@ -1895,7 +1904,7 @@
       return;
     }
     const mode = reviewSession.mode === 'mixed'
-      ? (Math.random() < 0.5 ? 'choice' : 'spell')
+      ? mixedReviewMode(word)
       : reviewSession.mode;
     const cardState = mode === 'spell' ? buildSpellCard(word) : buildChoiceCard(word);
     reviewSession.cardState = cardState;
@@ -1949,7 +1958,7 @@
     const modes = [
       { id: 'choice', iconName: 'sparkle', title: '三选一', desc: '英中互选，快速唤醒记忆' },
       { id: 'spell', iconName: 'read', title: '分格拼写', desc: '按字母格拼出完整单词' },
-      { id: 'mixed', iconName: 'refresh', title: '混合', desc: '两种题型随机切换' },
+      { id: 'mixed', iconName: 'refresh', title: '混合', desc: '低频只考意思（三选一），中高频随机默写' },
       { id: 'browse', iconName: 'eye', action: 'start-review-browse', title: '查看复习词来背', desc: '只背不考核，只浏览、不算过关' },
       { id: 'listen', iconName: 'speaker', action: 'start-review-listen', title: '听力听写', desc: '听发音默写整词 · 可选巩固 · 不推进艾宾浩斯' }
     ];
@@ -1997,6 +2006,7 @@
           '</div>' +
           '<p class="review-section-note">' + (canReview ? '每组复习会从当前待复习或未掌握词池中取词。' : '去学几个新词后，这里就会出现可复习的内容。') + '</p>' +
           '<p class="review-section-note">三选一、分格拼写、混合会推进艾宾浩斯进度；「查看复习词来背」与「听力听写」为可选巩固。</p>' +
+          '<p class="review-section-note">混合模式中，低频（含未标注频次）只考意思（三选一），中高频才可能默写；想拼低频词请选「分格拼写」。</p>' +
         '</section>' +
 
         '<p class="muted-note">答对按「认识」推进阶段 · 拼写只差一个字母按「模糊」安排</p>' +
@@ -5620,7 +5630,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.15 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.16 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 
