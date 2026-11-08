@@ -3921,7 +3921,7 @@
       showToast('当前没有已保存的令牌。');
       return;
     }
-    const confirmed = window.confirm('确定清除保存在本机的 GitHub 令牌吗？已上传的进度文件不会被删除。');
+    const confirmed = window.confirm('确定清除保存在本机的 GitHub 令牌吗？清除后需要重新粘贴；已上传的进度文件不会被删除。');
     if (!confirmed) return;
     try {
       window.localStorage.removeItem(GITHUB_TOKEN_KEY);
@@ -4345,7 +4345,7 @@
       showToast('当前没有已保存的 API Key。');
       return;
     }
-    const confirmed = window.confirm('确定清除保存在本机的 DeepSeek API Key 吗？已生成的阅读仍会留在本机。');
+    const confirmed = window.confirm('确定清除保存在本机的 DeepSeek API Key 吗？清除后需重新填写才能生成阅读；已生成的阅读仍会留在本机。');
     if (!confirmed) return;
     try {
       window.localStorage.removeItem(DEEPSEEK_KEY);
@@ -5492,7 +5492,7 @@
     return (
       '<div class="secret-input-wrap">' +
         '<input class="sync-token-input" id="' + escapeAttr(id) + '" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="' + escapeAttr(options.placeholder || '') + '" aria-label="' + escapeAttr(options.ariaLabel || '') + '">' +
-        '<button class="secret-toggle" type="button" data-action="toggle-secret" data-secret-target="' + escapeAttr(id) + '" data-show-label="' + escapeAttr(showLabel) + '" data-hide-label="' + escapeAttr(hideLabel) + '" aria-label="' + escapeAttr(showLabel) + '" aria-pressed="false" title="' + escapeAttr(showLabel) + '">' + icon('eye-off', 18) + '</button>' +
+        '<button class="secret-toggle" type="button" data-action="toggle-secret" data-secret-target="' + escapeAttr(id) + '" data-show-label="' + escapeAttr(showLabel) + '" data-hide-label="' + escapeAttr(hideLabel) + '" aria-label="' + escapeAttr(showLabel) + '" aria-pressed="false" title="' + escapeAttr(showLabel) + '">' + icon('eye', 18) + '</button>' +
         '<button class="secret-copy" type="button" data-action="copy-secret" data-secret-source="' + escapeAttr(options.copySource || '') + '" aria-label="复制">复制</button>' +
       '</div>'
     );
@@ -5503,15 +5503,15 @@
     const targetId = button.getAttribute('data-secret-target');
     const input = targetId ? document.getElementById(targetId) : null;
     if (!input) return;
-    const showing = input.type === 'text';
-    input.type = showing ? 'password' : 'text';
-    const nextLabel = showing
-      ? (button.getAttribute('data-show-label') || '显示密码')
-      : (button.getAttribute('data-hide-label') || '隐藏密码');
+    input.type = input.type === 'text' ? 'password' : 'text';
+    const nowVisible = input.type === 'text';
+    const nextLabel = nowVisible
+      ? (button.getAttribute('data-hide-label') || '隐藏密码')
+      : (button.getAttribute('data-show-label') || '显示密码');
     button.setAttribute('aria-label', nextLabel);
     button.setAttribute('title', nextLabel);
-    button.setAttribute('aria-pressed', showing ? 'false' : 'true');
-    button.innerHTML = icon(showing ? 'eye-off' : 'eye', 18);
+    button.setAttribute('aria-pressed', nowVisible ? 'true' : 'false');
+    button.innerHTML = icon(nowVisible ? 'eye-off' : 'eye', 18);
   }
 
   function copySecretToClipboard(button) {
@@ -5620,7 +5620,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.14 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.15 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 
