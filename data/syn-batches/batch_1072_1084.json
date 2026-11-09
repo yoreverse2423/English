@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "universe",
+      "syn": [
+        {
+          "w": "cosmos",
+          "note": "宇宙（更书面）"
+        },
+        {
+          "w": "space",
+          "note": "太空；宇宙"
+        },
+        {
+          "w": "world",
+          "note": "世界；领域"
+        }
+      ]
+    },
+    {
+      "w": "determine",
+      "syn": [
+        {
+          "w": "decide",
+          "note": "决定；最常用"
+        },
+        {
+          "w": "resolve",
+          "note": "下决心（较正式）"
+        },
+        {
+          "w": "settle",
+          "note": "确定；解决"
+        }
+      ]
+    },
+    {
+      "w": "satellite",
+      "syn": [
+        {
+          "w": "moon",
+          "note": "天然卫星"
+        },
+        {
+          "w": "orbiter",
+          "note": "人造卫星；绕轨器"
+        },
+        {
+          "w": "follower",
+          "note": "随从"
+        }
+      ]
+    },
+    {
+      "w": "launch",
+      "syn": [
+        {
+          "w": "start",
+          "note": "发起；开始"
+        },
+        {
+          "w": "initiate",
+          "note": "发起（正式）"
+        },
+        {
+          "w": "fire",
+          "note": "发射（导弹等）"
+        }
+      ]
+    },
+    {
+      "w": "orbit",
+      "syn": [
+        {
+          "w": "circle",
+          "note": "绕行"
+        },
+        {
+          "w": "path",
+          "note": "轨道"
+        },
+        {
+          "w": "track",
+          "note": "轨迹；轨道"
+        }
+      ]
+    },
+    {
+      "w": "giant",
+      "syn": [
+        {
+          "w": "huge",
+          "note": "巨大的"
+        },
+        {
+          "w": "enormous",
+          "note": "巨大的（更强）"
+        },
+        {
+          "w": "massive",
+          "note": "巨大的；大量的"
+        }
+      ]
+    },
+    {
+      "w": "leap",
+      "syn": [
+        {
+          "w": "jump",
+          "note": "跳；最常用"
+        },
+        {
+          "w": "spring",
+          "note": "弹跳"
+        },
+        {
+          "w": "bound",
+          "note": "大步跳跃"
+        }
+      ]
+    },
+    {
+      "w": "leapt",
+      "syn": [
+        {
+          "w": "jumped",
+          "note": "跳了"
+        },
+        {
+          "w": "sprang",
+          "note": "弹跳了"
+        },
+        {
+          "w": "bounded",
+          "note": "大步跳了"
+        }
+      ]
+    },
+    {
+      "w": "leapt",
+      "syn": [
+        {
+          "w": "jumped",
+          "note": "跳了"
+        },
+        {
+          "w": "sprang",
+          "note": "弹跳了"
+        },
+        {
+          "w": "bounded",
+          "note": "大步跳了"
+        }
+      ]
+    },
+    {
+      "w": "mankind",
+      "syn": [
+        {
+          "w": "humanity",
+          "note": "人类（较正式）"
+        },
+        {
+          "w": "humankind",
+          "note": "人类"
+        },
+        {
+          "w": "human race",
+          "note": "人类（种族整体）"
+        }
+      ]
+    },
+    {
+      "w": "agency",
+      "syn": [
+        {
+          "w": "bureau",
+          "note": "机构；局"
+        },
+        {
+          "w": "office",
+          "note": "代理处；办事处"
+        },
+        {
+          "w": "intermediary",
+          "note": "中介（较正式）"
+        }
+      ]
+    },
+    {
+      "w": "transmit",
+      "syn": [
+        {
+          "w": "send",
+          "note": "发送；最通用"
+        },
+        {
+          "w": "broadcast",
+          "note": "播送；传播"
+        },
+        {
+          "w": "convey",
+          "note": "传达（信息等）"
+        }
+      ]
+    }
+  ]
+}

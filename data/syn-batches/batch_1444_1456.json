@@ -1,0 +1,145 @@
+{
+  "items": [
+    {
+      "w": "swing",
+      "syn": [
+        {
+          "w": "sway",
+          "note": "侧重左右摇摆"
+        },
+        {
+          "w": "rock",
+          "note": "侧重前后轻晃"
+        },
+        {
+          "w": "oscillate",
+          "note": "较正式，指摆动"
+        }
+      ]
+    },
+    {
+      "w": "swung",
+      "syn": []
+    },
+    {
+      "w": "swung",
+      "syn": []
+    },
+    {
+      "w": "iron",
+      "syn": [
+        {
+          "w": "press",
+          "note": "动词，熨衣服"
+        },
+        {
+          "w": "firm",
+          "note": "形容词，坚强的"
+        }
+      ]
+    },
+    {
+      "w": "fashion",
+      "syn": [
+        {
+          "w": "style",
+          "note": "样式，风格"
+        },
+        {
+          "w": "vogue",
+          "note": "时髦，更正式"
+        },
+        {
+          "w": "trend",
+          "note": "趋势，流行"
+        }
+      ]
+    },
+    {
+      "w": "rare",
+      "syn": [
+        {
+          "w": "scarce",
+          "note": "侧重稀少、匮乏"
+        },
+        {
+          "w": "uncommon",
+          "note": "不常见"
+        },
+        {
+          "w": "seldom",
+          "note": "副词，很少"
+        }
+      ]
+    },
+    {
+      "w": "steam",
+      "syn": [
+        {
+          "w": "vapor",
+          "note": "蒸汽，美式拼写vapour"
+        }
+      ]
+    },
+    {
+      "w": "superb",
+      "syn": [
+        {
+          "w": "excellent",
+          "note": "极好的，最常用"
+        },
+        {
+          "w": "splendid",
+          "note": "出色的，宏伟的"
+        },
+        {
+          "w": "magnificent",
+          "note": "宏伟壮丽的"
+        }
+      ]
+    },
+    {
+      "w": "aquarium",
+      "syn": []
+    },
+    {
+      "w": "up to",
+      "syn": [
+        {
+          "w": "capable of",
+          "note": "胜任，有能力做"
+        },
+        {
+          "w": "until",
+          "note": "直到，表时间"
+        }
+      ]
+    },
+    {
+      "w": "polar",
+      "syn": [
+        {
+          "w": "arctic",
+          "note": "北极的，常指极寒"
+        },
+        {
+          "w": "opposite",
+          "note": "正好相反的"
+        }
+      ]
+    },
+    {
+      "w": "upside down",
+      "syn": [
+        {
+          "w": "inverted",
+          "note": "颠倒的"
+        },
+        {
+          "w": "reversed",
+          "note": "反转的"
+        }
+      ]
+    }
+  ]
+}

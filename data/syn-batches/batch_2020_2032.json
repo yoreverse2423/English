@@ -1,0 +1,156 @@
+{
+  "items": [
+    {
+      "w": "be fond of",
+      "syn": [
+        {
+          "w": "like",
+          "note": "最通用，喜爱"
+        },
+        {
+          "w": "love",
+          "note": "感情更强"
+        },
+        {
+          "w": "enjoy",
+          "note": "侧重享受"
+        }
+      ]
+    },
+    {
+      "w": "fine art",
+      "syn": [
+        {
+          "w": "art",
+          "note": "更泛，泛指艺术"
+        },
+        {
+          "w": "visual art",
+          "note": "侧重视觉艺术"
+        }
+      ]
+    },
+    {
+      "w": "sculpture",
+      "syn": [
+        {
+          "w": "carving",
+          "note": "侧重雕刻品"
+        },
+        {
+          "w": "statue",
+          "note": "指雕像成品"
+        }
+      ]
+    },
+    {
+      "w": "sculptor",
+      "syn": [
+        {
+          "w": "carver",
+          "note": "雕刻匠，较少用"
+        }
+      ]
+    },
+    {
+      "w": "visual",
+      "syn": [
+        {
+          "w": "optical",
+          "note": "侧重光学、视觉的"
+        },
+        {
+          "w": "graphic",
+          "note": "侧重视觉图像"
+        }
+      ]
+    },
+    {
+      "w": "water lily",
+      "syn": [
+        {
+          "w": "lotus",
+          "note": "莲花，常混用"
+        }
+      ]
+    },
+    {
+      "w": "pond",
+      "syn": [
+        {
+          "w": "pool",
+          "note": "小水塘，比pond小"
+        },
+        {
+          "w": "lake",
+          "note": "湖，比pond大"
+        }
+      ]
+    },
+    {
+      "w": "arch",
+      "syn": [
+        {
+          "w": "curve",
+          "note": "弯曲，泛指"
+        },
+        {
+          "w": "bow",
+          "note": "弓形，侧重弯"
+        }
+      ]
+    },
+    {
+      "w": "investment",
+      "syn": [
+        {
+          "w": "funding",
+          "note": "资金投入"
+        },
+        {
+          "w": "capital",
+          "note": "资本，侧重本金"
+        }
+      ]
+    },
+    {
+      "w": "bride",
+      "syn": [
+        {
+          "w": "wife",
+          "note": "妻子，非婚礼语境"
+        }
+      ]
+    },
+    {
+      "w": "permanent",
+      "syn": [
+        {
+          "w": "lasting",
+          "note": "侧重持续长久"
+        },
+        {
+          "w": "eternal",
+          "note": "永恒的，更庄重"
+        },
+        {
+          "w": "everlasting",
+          "note": "永不停止的"
+        }
+      ]
+    },
+    {
+      "w": "memorial",
+      "syn": [
+        {
+          "w": "monument",
+          "note": "纪念碑，侧重建筑"
+        },
+        {
+          "w": "remembrance",
+          "note": "纪念，侧重怀念"
+        }
+      ]
+    }
+  ]
+}

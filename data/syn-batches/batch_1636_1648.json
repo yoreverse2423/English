@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "w": "intervention",
+      "syn": [
+        {
+          "w": "mediation",
+          "note": "调停，较正式"
+        },
+        {
+          "w": "involvement",
+          "note": "介入，参与"
+        },
+        {
+          "w": "interference",
+          "note": "干涉，妨碍"
+        }
+      ]
+    },
+    {
+      "w": "link",
+      "syn": [
+        {
+          "w": "connection",
+          "note": "联系，连接"
+        },
+        {
+          "w": "tie",
+          "note": "纽带，联系"
+        },
+        {
+          "w": "connect",
+          "note": "连接，动词"
+        },
+        {
+          "w": "join",
+          "note": "连接，联合"
+        }
+      ]
+    },
+    {
+      "w": "raw",
+      "syn": [
+        {
+          "w": "uncooked",
+          "note": "食物生的"
+        },
+        {
+          "w": "unprocessed",
+          "note": "未加工的"
+        },
+        {
+          "w": "inexperienced",
+          "note": "无经验的"
+        },
+        {
+          "w": "sore",
+          "note": "擦痛的"
+        }
+      ]
+    },
+    {
+      "w": "pure",
+      "syn": [
+        {
+          "w": "clean",
+          "note": "纯净的"
+        },
+        {
+          "w": "unmixed",
+          "note": "纯粹的"
+        },
+        {
+          "w": "innocent",
+          "note": "纯洁的"
+        },
+        {
+          "w": "theoretical",
+          "note": "纯理论的"
+        }
+      ]
+    },
+    {
+      "w": "substantial",
+      "syn": [
+        {
+          "w": "considerable",
+          "note": "大量的"
+        },
+        {
+          "w": "significant",
+          "note": "可观的，重要的"
+        },
+        {
+          "w": "solid",
+          "note": "实在的，充实的"
+        }
+      ]
+    },
+    {
+      "w": "decrease",
+      "syn": [
+        {
+          "w": "reduce",
+          "note": "减少，及物"
+        },
+        {
+          "w": "decline",
+          "note": "下降，减少"
+        },
+        {
+          "w": "diminish",
+          "note": "逐渐减少"
+        }
+      ]
+    },
+    {
+      "w": "thanks to",
+      "syn": [
+        {
+          "w": "because of",
+          "note": "由于"
+        },
+        {
+          "w": "owing to",
+          "note": "由于，较正式"
+        },
+        {
+          "w": "due to",
+          "note": "由于"
+        }
+      ]
+    },
+    {
+      "w": "statistic",
+      "syn": [
+        {
+          "w": "figure",
+          "note": "数字，数据"
+        },
+        {
+          "w": "data",
+          "note": "数据"
+        },
+        {
+          "w": "statistical",
+          "note": "统计的，形容词"
+        }
+      ]
+    },
+    {
+      "w": "transform",
+      "syn": [
+        {
+          "w": "change",
+          "note": "改变，通用"
+        },
+        {
+          "w": "convert",
+          "note": "转换形式或用途"
+        },
+        {
+          "w": "alter",
+          "note": "部分改变"
+        }
+      ]
+    },
+    {
+      "w": "epidemiology",
+      "syn": []
+    },
+    {
+      "w": "microscope",
+      "syn": []
+    },
+    {
+      "w": "thinking",
+      "syn": [
+        {
+          "w": "thought",
+          "note": "思想，思考"
+        },
+        {
+          "w": "reflection",
+          "note": "沉思"
+        },
+        {
+          "w": "reasoning",
+          "note": "推理，思考"
+        }
+      ]
+    }
+  ]
+}

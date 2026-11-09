@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "dominate",
+      "syn": [
+        {
+          "w": "control",
+          "note": "控制"
+        },
+        {
+          "w": "rule",
+          "note": "统治、支配"
+        },
+        {
+          "w": "prevail",
+          "note": "占优势"
+        }
+      ]
+    },
+    {
+      "w": "repeatedly",
+      "syn": [
+        {
+          "w": "again and again",
+          "note": "反复地，较口语"
+        },
+        {
+          "w": "time and again",
+          "note": "屡次，一再"
+        },
+        {
+          "w": "frequently",
+          "note": "频繁地"
+        }
+      ]
+    },
+    {
+      "w": "psychology",
+      "syn": [
+        {
+          "w": "mentality",
+          "note": "侧重心态"
+        },
+        {
+          "w": "psyche",
+          "note": "侧重心理、心灵"
+        }
+      ]
+    },
+    {
+      "w": "cue",
+      "syn": [
+        {
+          "w": "signal",
+          "note": "信号、暗示"
+        },
+        {
+          "w": "hint",
+          "note": "暗示、提示"
+        },
+        {
+          "w": "prompt",
+          "note": "提示、提词"
+        },
+        {
+          "w": "clue",
+          "note": "线索"
+        }
+      ]
+    },
+    {
+      "w": "in response to",
+      "syn": [
+        {
+          "w": "in reaction to",
+          "note": "对…作出反应"
+        },
+        {
+          "w": "in answer to",
+          "note": "回应…"
+        },
+        {
+          "w": "in reply to",
+          "note": "回复…"
+        }
+      ]
+    },
+    {
+      "w": "reward",
+      "syn": [
+        {
+          "w": "prize",
+          "note": "奖品"
+        },
+        {
+          "w": "award",
+          "note": "奖项、授予"
+        },
+        {
+          "w": "bonus",
+          "note": "额外奖励"
+        }
+      ]
+    },
+    {
+      "w": "rely",
+      "syn": [
+        {
+          "w": "depend",
+          "note": "依靠"
+        },
+        {
+          "w": "count on",
+          "note": "指望、依靠"
+        },
+        {
+          "w": "trust",
+          "note": "信赖"
+        }
+      ]
+    },
+    {
+      "w": "rely on",
+      "syn": [
+        {
+          "w": "depend on",
+          "note": "依靠"
+        },
+        {
+          "w": "count on",
+          "note": "指望"
+        },
+        {
+          "w": "bank on",
+          "note": "指望，较口语"
+        }
+      ]
+    },
+    {
+      "w": "facilitate",
+      "syn": [
+        {
+          "w": "promote",
+          "note": "促进"
+        },
+        {
+          "w": "ease",
+          "note": "使容易"
+        },
+        {
+          "w": "assist",
+          "note": "帮助，较正式"
+        }
+      ]
+    },
+    {
+      "w": "examine",
+      "syn": [
+        {
+          "w": "inspect",
+          "note": "检查"
+        },
+        {
+          "w": "investigate",
+          "note": "调查"
+        },
+        {
+          "w": "check",
+          "note": "检查"
+        },
+        {
+          "w": "test",
+          "note": "检测、考试"
+        }
+      ]
+    },
+    {
+      "w": "negative",
+      "syn": [
+        {
+          "w": "adverse",
+          "note": "不利的"
+        },
+        {
+          "w": "pessimistic",
+          "note": "消极的、悲观的"
+        },
+        {
+          "w": "unfavorable",
+          "note": "不利的"
+        }
+      ]
+    },
+    {
+      "w": "escalator",
+      "syn": [
+        {
+          "w": "moving staircase",
+          "note": "自动扶梯，较书面"
+        },
+        {
+          "w": "moving stairway",
+          "note": "自动扶梯，较少用"
+        }
+      ]
+    }
+  ]
+}

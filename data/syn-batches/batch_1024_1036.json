@@ -1,0 +1,216 @@
+{
+  "items": [
+    {
+      "w": "poisonous",
+      "syn": [
+        {
+          "w": "toxic",
+          "note": "有毒的，较正式/科学"
+        },
+        {
+          "w": "venomous",
+          "note": "指动物分泌毒液的；也可指恶毒"
+        },
+        {
+          "w": "harmful",
+          "note": "有害的，范围更广"
+        }
+      ]
+    },
+    {
+      "w": "poison",
+      "syn": [
+        {
+          "w": "toxin",
+          "note": "毒素，科学用语"
+        },
+        {
+          "w": "venom",
+          "note": "毒液，动物分泌"
+        }
+      ]
+    },
+    {
+      "w": "fold",
+      "syn": [
+        {
+          "w": "crease",
+          "note": "折痕"
+        },
+        {
+          "w": "wrinkle",
+          "note": "皱褶"
+        },
+        {
+          "w": "flock",
+          "note": "信徒群体；羊群"
+        },
+        {
+          "w": "pen",
+          "note": "羊栏"
+        }
+      ]
+    },
+    {
+      "w": "super",
+      "syn": [
+        {
+          "w": "excellent",
+          "note": "极好的"
+        },
+        {
+          "w": "great",
+          "note": "很好的，口语"
+        },
+        {
+          "w": "fantastic",
+          "note": "极好的，口语"
+        }
+      ]
+    },
+    {
+      "w": "collection",
+      "syn": [
+        {
+          "w": "gathering",
+          "note": "聚集"
+        },
+        {
+          "w": "accumulation",
+          "note": "积累"
+        },
+        {
+          "w": "assortment",
+          "note": "各类收藏品"
+        },
+        {
+          "w": "donation",
+          "note": "募捐"
+        }
+      ]
+    },
+    {
+      "w": "accessory",
+      "syn": [
+        {
+          "w": "attachment",
+          "note": "配件，附件"
+        },
+        {
+          "w": "add-on",
+          "note": "附加物"
+        },
+        {
+          "w": "accomplice",
+          "note": "从犯，同谋"
+        }
+      ]
+    },
+    {
+      "w": "souvenir",
+      "syn": [
+        {
+          "w": "memento",
+          "note": "纪念物"
+        },
+        {
+          "w": "keepsake",
+          "note": "可保存的纪念品"
+        },
+        {
+          "w": "token",
+          "note": "象征性纪念品"
+        }
+      ]
+    },
+    {
+      "w": "percentage",
+      "syn": [
+        {
+          "w": "proportion",
+          "note": "比例"
+        },
+        {
+          "w": "ratio",
+          "note": "比率"
+        },
+        {
+          "w": "share",
+          "note": "份额"
+        }
+      ]
+    },
+    {
+      "w": "climate",
+      "syn": [
+        {
+          "w": "atmosphere",
+          "note": "氛围，风气"
+        },
+        {
+          "w": "environment",
+          "note": "环境"
+        }
+      ]
+    },
+    {
+      "w": "mild",
+      "syn": [
+        {
+          "w": "gentle",
+          "note": "温和的"
+        },
+        {
+          "w": "moderate",
+          "note": "适度的"
+        },
+        {
+          "w": "slight",
+          "note": "轻微的"
+        },
+        {
+          "w": "soft",
+          "note": "柔和的"
+        }
+      ]
+    },
+    {
+      "w": "settle",
+      "syn": [
+        {
+          "w": "resolve",
+          "note": "解决"
+        },
+        {
+          "w": "solve",
+          "note": "解决"
+        },
+        {
+          "w": "reside",
+          "note": "定居，较正式"
+        },
+        {
+          "w": "deposit",
+          "note": "沉淀，沉积"
+        }
+      ]
+    },
+    {
+      "w": "construction",
+      "syn": [
+        {
+          "w": "building",
+          "note": "建筑物；建设"
+        },
+        {
+          "w": "structure",
+          "note": "结构；建筑物"
+        },
+        {
+          "w": "interpretation",
+          "note": "解释"
+        }
+      ]
+    }
+  ]
+}

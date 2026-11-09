@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "w": "nevertheless",
+      "syn": [
+        {
+          "w": "however",
+          "note": "最常用，可放句首/句中"
+        },
+        {
+          "w": "nonetheless",
+          "note": "更正式，同义"
+        },
+        {
+          "w": "still",
+          "note": "口语，表转折让步"
+        },
+        {
+          "w": "yet",
+          "note": "连词用法，较书面"
+        }
+      ]
+    },
+    {
+      "w": "structure",
+      "syn": [
+        {
+          "w": "construction",
+          "note": "侧重构造方式"
+        },
+        {
+          "w": "organization",
+          "note": "侧重组织安排"
+        },
+        {
+          "w": "building",
+          "note": "指建筑物"
+        },
+        {
+          "w": "framework",
+          "note": "侧重框架体系"
+        }
+      ]
+    },
+    {
+      "w": "security",
+      "syn": [
+        {
+          "w": "safety",
+          "note": "侧重人身安全"
+        },
+        {
+          "w": "protection",
+          "note": "侧重保护措施"
+        },
+        {
+          "w": "safeguard",
+          "note": "侧重防范保障"
+        }
+      ]
+    },
+    {
+      "w": "crime",
+      "syn": [
+        {
+          "w": "offense",
+          "note": "法律用语，违法行为"
+        },
+        {
+          "w": "violation",
+          "note": "侧重违规违法"
+        },
+        {
+          "w": "wrongdoing",
+          "note": "较笼统，不当行为"
+        }
+      ]
+    },
+    {
+      "w": "combine",
+      "syn": [
+        {
+          "w": "unite",
+          "note": "侧重联合团结"
+        },
+        {
+          "w": "merge",
+          "note": "侧重合并为一体"
+        },
+        {
+          "w": "mix",
+          "note": "侧重混合"
+        },
+        {
+          "w": "integrate",
+          "note": "侧重整合成整体"
+        }
+      ]
+    },
+    {
+      "w": "artificial",
+      "syn": [
+        {
+          "w": "man-made",
+          "note": "直译“人造的”"
+        },
+        {
+          "w": "fake",
+          "note": "侧重假冒伪劣"
+        },
+        {
+          "w": "synthetic",
+          "note": "侧重化学合成的"
+        }
+      ]
+    },
+    {
+      "w": "artificial intelligence",
+      "syn": [
+        {
+          "w": "machine intelligence",
+          "note": "较书面，机器智能"
+        }
+      ]
+    },
+    {
+      "w": "AI",
+      "syn": [
+        {
+          "w": "artificial intelligence",
+          "note": "全称形式"
+        }
+      ]
+    },
+    {
+      "w": "clone",
+      "syn": [
+        {
+          "w": "copy",
+          "note": "侧重复制品"
+        },
+        {
+          "w": "duplicate",
+          "note": "侧重完全复制"
+        }
+      ]
+    },
+    {
+      "w": "predict",
+      "syn": [
+        {
+          "w": "forecast",
+          "note": "多用于天气预报"
+        },
+        {
+          "w": "foresee",
+          "note": "侧重预见"
+        },
+        {
+          "w": "foretell",
+          "note": "较书面，预言"
+        }
+      ]
+    },
+    {
+      "w": "prediction",
+      "syn": [
+        {
+          "w": "forecast",
+          "note": "常指天气/形势预报"
+        },
+        {
+          "w": "prophecy",
+          "note": "侧重神秘预言"
+        }
+      ]
+    },
+    {
+      "w": "forecast",
+      "syn": [
+        {
+          "w": "predict",
+          "note": "通用，预测"
+        },
+        {
+          "w": "projection",
+          "note": "名词，侧重推算估计"
+        },
+        {
+          "w": "foretell",
+          "note": "较书面，预言"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "items": [
+    {
+      "w": "marriage",
+      "syn": [
+        {
+          "w": "wedding",
+          "note": "侧重婚礼仪式"
+        },
+        {
+          "w": "union",
+          "note": "正式，指结合"
+        },
+        {
+          "w": "matrimony",
+          "note": "正式，婚姻状态"
+        }
+      ]
+    },
+    {
+      "w": "majority",
+      "syn": [
+        {
+          "w": "bulk",
+          "note": "侧重大部分"
+        },
+        {
+          "w": "most",
+          "note": "大多数，口语"
+        },
+        {
+          "w": "adulthood",
+          "note": "对应“成年”义"
+        }
+      ]
+    },
+    {
+      "w": "complain",
+      "syn": [
+        {
+          "w": "grumble",
+          "note": "嘟囔抱怨，口语"
+        },
+        {
+          "w": "moan",
+          "note": "发牢骚，非正式"
+        },
+        {
+          "w": "protest",
+          "note": "侧重抗议"
+        }
+      ]
+    },
+    {
+      "w": "tuition",
+      "syn": [
+        {
+          "w": "instruction",
+          "note": "对应“讲授”义"
+        },
+        {
+          "w": "teaching",
+          "note": "教学，讲授"
+        }
+      ]
+    },
+    {
+      "w": "fee",
+      "syn": [
+        {
+          "w": "charge",
+          "note": "服务收费"
+        },
+        {
+          "w": "payment",
+          "note": "付款，款项"
+        },
+        {
+          "w": "cost",
+          "note": "成本，花费"
+        }
+      ]
+    },
+    {
+      "w": "tuition fees",
+      "syn": [
+        {
+          "w": "school fees",
+          "note": "学费，英式常用"
+        },
+        {
+          "w": "tuition",
+          "note": "美式常单用"
+        }
+      ]
+    },
+    {
+      "w": "respond",
+      "syn": [
+        {
+          "w": "answer",
+          "note": "最通用“回答”"
+        },
+        {
+          "w": "reply",
+          "note": "侧重回复"
+        },
+        {
+          "w": "react",
+          "note": "侧重作出反应"
+        }
+      ]
+    },
+    {
+      "w": "response",
+      "syn": [
+        {
+          "w": "answer",
+          "note": "最通用“回答”"
+        },
+        {
+          "w": "reply",
+          "note": "答复"
+        },
+        {
+          "w": "reaction",
+          "note": "侧重反应"
+        }
+      ]
+    },
+    {
+      "w": "union",
+      "syn": [
+        {
+          "w": "alliance",
+          "note": "联盟，较正式"
+        },
+        {
+          "w": "association",
+          "note": "协会，社团"
+        },
+        {
+          "w": "league",
+          "note": "同盟，联合会"
+        }
+      ]
+    },
+    {
+      "w": "scholarship",
+      "syn": [
+        {
+          "w": "grant",
+          "note": "助学金，拨款"
+        },
+        {
+          "w": "learning",
+          "note": "对应“学识”义"
+        }
+      ]
+    },
+    {
+      "w": "hire",
+      "syn": [
+        {
+          "w": "employ",
+          "note": "侧重雇用"
+        },
+        {
+          "w": "rent",
+          "note": "侧重租用"
+        },
+        {
+          "w": "lease",
+          "note": "正式，长期租"
+        }
+      ]
+    },
+    {
+      "w": "physician",
+      "syn": [
+        {
+          "w": "doctor",
+          "note": "最通用“医生”"
+        },
+        {
+          "w": "medic",
+          "note": "医生，非正式"
+        }
+      ]
+    }
+  ]
+}

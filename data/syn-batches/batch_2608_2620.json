@@ -1,0 +1,143 @@
+{
+  "items": [
+    {
+      "w": "stability",
+      "syn": [
+        {
+          "w": "steadiness",
+          "note": "平稳；稳定"
+        },
+        {
+          "w": "firmness",
+          "note": "坚定"
+        },
+        {
+          "w": "constancy",
+          "note": "恒心；持久"
+        }
+      ]
+    },
+    {
+      "w": "pray",
+      "syn": [
+        {
+          "w": "beg",
+          "note": "恳求；较口语"
+        },
+        {
+          "w": "plead",
+          "note": "恳求；较正式"
+        },
+        {
+          "w": "implore",
+          "note": "哀求；较正式"
+        }
+      ]
+    },
+    {
+      "w": "pray that",
+      "syn": []
+    },
+    {
+      "w": "hypothetical",
+      "syn": [
+        {
+          "w": "theoretical",
+          "note": "理论上的"
+        },
+        {
+          "w": "supposed",
+          "note": "假定的"
+        },
+        {
+          "w": "assumed",
+          "note": "假设的"
+        }
+      ]
+    },
+    {
+      "w": "Papua New Guinea",
+      "syn": []
+    },
+    {
+      "w": "Ghana",
+      "syn": []
+    },
+    {
+      "w": "Congo",
+      "syn": []
+    },
+    {
+      "w": "Panama",
+      "syn": []
+    },
+    {
+      "w": "bounce",
+      "syn": [
+        {
+          "w": "rebound",
+          "note": "弹回"
+        },
+        {
+          "w": "spring",
+          "note": "弹起"
+        },
+        {
+          "w": "leap",
+          "note": "跳跃"
+        }
+      ]
+    },
+    {
+      "w": "bounce around",
+      "syn": [
+        {
+          "w": "move around",
+          "note": "四处走动"
+        },
+        {
+          "w": "travel around",
+          "note": "到处跑"
+        },
+        {
+          "w": "roam",
+          "note": "漫游"
+        }
+      ]
+    },
+    {
+      "w": "aptitude",
+      "syn": [
+        {
+          "w": "talent",
+          "note": "天赋"
+        },
+        {
+          "w": "gift",
+          "note": "天资"
+        },
+        {
+          "w": "inclination",
+          "note": "倾向"
+        }
+      ]
+    },
+    {
+      "w": "head start",
+      "syn": [
+        {
+          "w": "advantage",
+          "note": "优势"
+        },
+        {
+          "w": "edge",
+          "note": "微弱优势"
+        },
+        {
+          "w": "lead",
+          "note": "领先"
+        }
+      ]
+    }
+  ]
+}

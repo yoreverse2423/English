@@ -1,0 +1,195 @@
+{
+  "items": [
+    {
+      "w": "cloth",
+      "syn": [
+        {
+          "w": "fabric",
+          "note": "织物，较正式"
+        },
+        {
+          "w": "material",
+          "note": "布料，泛指材料"
+        },
+        {
+          "w": "textile",
+          "note": "纺织品，较正式"
+        }
+      ]
+    },
+    {
+      "w": "edge",
+      "syn": [
+        {
+          "w": "border",
+          "note": "边缘；边界"
+        },
+        {
+          "w": "rim",
+          "note": "圆形物边缘"
+        },
+        {
+          "w": "margin",
+          "note": "页边；边缘"
+        },
+        {
+          "w": "advantage",
+          "note": "优势"
+        }
+      ]
+    },
+    {
+      "w": "valley",
+      "syn": [
+        {
+          "w": "vale",
+          "note": "山谷，文学用语"
+        },
+        {
+          "w": "dale",
+          "note": "山谷，文学用语"
+        },
+        {
+          "w": "basin",
+          "note": "流域；盆地"
+        }
+      ]
+    },
+    {
+      "w": "vast",
+      "syn": [
+        {
+          "w": "huge",
+          "note": "巨大的"
+        },
+        {
+          "w": "enormous",
+          "note": "极大的"
+        },
+        {
+          "w": "immense",
+          "note": "广阔；巨大"
+        },
+        {
+          "w": "extensive",
+          "note": "辽阔的；广泛的"
+        }
+      ]
+    },
+    {
+      "w": "glacier",
+      "syn": []
+    },
+    {
+      "w": "reindeer",
+      "syn": [
+        {
+          "w": "caribou",
+          "note": "北美驯鹿"
+        }
+      ]
+    },
+    {
+      "w": "territory",
+      "syn": [
+        {
+          "w": "land",
+          "note": "领土；土地"
+        },
+        {
+          "w": "domain",
+          "note": "领域；领土，正式"
+        },
+        {
+          "w": "region",
+          "note": "地区；区域"
+        }
+      ]
+    },
+    {
+      "w": "ban",
+      "syn": [
+        {
+          "w": "prohibit",
+          "note": "禁止，正式"
+        },
+        {
+          "w": "forbid",
+          "note": "禁止"
+        },
+        {
+          "w": "bar",
+          "note": "禁止；阻挡"
+        }
+      ]
+    },
+    {
+      "w": "boundary",
+      "syn": [
+        {
+          "w": "border",
+          "note": "边界"
+        },
+        {
+          "w": "frontier",
+          "note": "边境；边疆"
+        },
+        {
+          "w": "limit",
+          "note": "界限；限度"
+        }
+      ]
+    },
+    {
+      "w": "cottage",
+      "syn": [
+        {
+          "w": "cabin",
+          "note": "小木屋"
+        },
+        {
+          "w": "hut",
+          "note": "简陋小屋"
+        },
+        {
+          "w": "lodge",
+          "note": "小屋；旅舍"
+        }
+      ]
+    },
+    {
+      "w": "visible",
+      "syn": [
+        {
+          "w": "apparent",
+          "note": "明显的；表面上的"
+        },
+        {
+          "w": "evident",
+          "note": "明显的，有据可察"
+        },
+        {
+          "w": "noticeable",
+          "note": "显著的；易察觉的"
+        }
+      ]
+    },
+    {
+      "w": "on the move",
+      "syn": [
+        {
+          "w": "in motion",
+          "note": "在运动中"
+        },
+        {
+          "w": "on the go",
+          "note": "不停活动；忙碌"
+        },
+        {
+          "w": "underway",
+          "note": "在进行中；发展中"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "items": [
+    {
+      "w": "the Union of Soviet Socialist Republics",
+      "syn": []
+    },
+    {
+      "w": "Yuri Gagarin",
+      "syn": []
+    },
+    {
+      "w": "Neil Armstrong",
+      "syn": []
+    },
+    {
+      "w": "NASA",
+      "syn": []
+    },
+    {
+      "w": "National Aeronautics and Space Administration",
+      "syn": []
+    },
+    {
+      "w": "Voyager",
+      "syn": [
+        {
+          "w": "traveler",
+          "note": "旅行者，泛指"
+        },
+        {
+          "w": "explorer",
+          "note": "探险者，侧重探索"
+        },
+        {
+          "w": "navigator",
+          "note": "航海者，侧重航行技术"
+        }
+      ]
+    },
+    {
+      "w": "Soyuz",
+      "syn": []
+    },
+    {
+      "w": "Challenger",
+      "syn": [
+        {
+          "w": "competitor",
+          "note": "竞争者，中性"
+        },
+        {
+          "w": "rival",
+          "note": "对手，含对抗意味"
+        },
+        {
+          "w": "contender",
+          "note": "争夺者，侧重角逐"
+        }
+      ]
+    },
+    {
+      "w": "the International Space Station",
+      "syn": []
+    },
+    {
+      "w": "Jade Rabbit",
+      "syn": []
+    },
+    {
+      "w": "Mars",
+      "syn": []
+    },
+    {
+      "w": "Jupiter",
+      "syn": []
+    }
+  ]
+}

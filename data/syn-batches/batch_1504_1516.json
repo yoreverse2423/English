@@ -1,0 +1,192 @@
+{
+  "items": [
+    {
+      "w": "clarify",
+      "syn": [
+        {
+          "w": "explain",
+          "note": "解释，通用"
+        },
+        {
+          "w": "make clear",
+          "note": "说明清楚，短语"
+        },
+        {
+          "w": "spell out",
+          "note": "详细讲明，较口语"
+        }
+      ]
+    },
+    {
+      "w": "in other words",
+      "syn": [
+        {
+          "w": "that is to say",
+          "note": "也就是说"
+        },
+        {
+          "w": "namely",
+          "note": "即，常用于列举"
+        },
+        {
+          "w": "to put it differently",
+          "note": "换个说法"
+        }
+      ]
+    },
+    {
+      "w": "educator",
+      "syn": [
+        {
+          "w": "teacher",
+          "note": "教师，通用"
+        },
+        {
+          "w": "instructor",
+          "note": "讲师/指导者"
+        }
+      ]
+    },
+    {
+      "w": "tick",
+      "syn": [
+        {
+          "w": "check",
+          "note": "打勾，标记"
+        },
+        {
+          "w": "mark",
+          "note": "标记"
+        },
+        {
+          "w": "click",
+          "note": "滴答声"
+        }
+      ]
+    },
+    {
+      "w": "tendency",
+      "syn": [
+        {
+          "w": "trend",
+          "note": "趋势"
+        },
+        {
+          "w": "inclination",
+          "note": "倾向，偏正式"
+        },
+        {
+          "w": "leaning",
+          "note": "倾向，偏好"
+        }
+      ]
+    },
+    {
+      "w": "lower",
+      "syn": [
+        {
+          "w": "reduce",
+          "note": "减少，降低"
+        },
+        {
+          "w": "decrease",
+          "note": "下降，减少"
+        },
+        {
+          "w": "drop",
+          "note": "放下；降低"
+        }
+      ]
+    },
+    {
+      "w": "imply",
+      "syn": [
+        {
+          "w": "suggest",
+          "note": "暗示，较委婉"
+        },
+        {
+          "w": "hint",
+          "note": "暗示，间接提示"
+        },
+        {
+          "w": "indicate",
+          "note": "表明，显示"
+        }
+      ]
+    },
+    {
+      "w": "barely",
+      "syn": [
+        {
+          "w": "hardly",
+          "note": "几乎不"
+        },
+        {
+          "w": "scarcely",
+          "note": "几乎不，较正式"
+        },
+        {
+          "w": "only just",
+          "note": "刚刚；勉强"
+        }
+      ]
+    },
+    {
+      "w": "chin",
+      "syn": [
+        {
+          "w": "jaw",
+          "note": "下颌，范围比 chin 大"
+        }
+      ]
+    },
+    {
+      "w": "occupy",
+      "syn": [
+        {
+          "w": "take up",
+          "note": "占据空间/时间"
+        },
+        {
+          "w": "seize",
+          "note": "占领，夺取"
+        },
+        {
+          "w": "inhabit",
+          "note": "居住于"
+        }
+      ]
+    },
+    {
+      "w": "stare",
+      "syn": [
+        {
+          "w": "gaze",
+          "note": "凝视，常带欣赏/思索"
+        },
+        {
+          "w": "gape",
+          "note": "目瞪口呆地看"
+        }
+      ]
+    },
+    {
+      "w": "ceiling",
+      "syn": [
+        {
+          "w": "cap",
+          "note": "上限，较口语"
+        },
+        {
+          "w": "limit",
+          "note": "限度，上限"
+        },
+        {
+          "w": "maximum",
+          "note": "最大值，上限"
+        }
+      ]
+    }
+  ]
+}

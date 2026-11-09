@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "w": "twin",
+      "syn": [
+        {
+          "w": "double",
+          "note": "adj. 成双的；双人的"
+        },
+        {
+          "w": "matching",
+          "note": "adj. 相配的；成对的"
+        }
+      ]
+    },
+    {
+      "w": "nonverbal",
+      "syn": [
+        {
+          "w": "wordless",
+          "note": "不用言语的"
+        },
+        {
+          "w": "unspoken",
+          "note": "未说出口的；心照不宣的"
+        },
+        {
+          "w": "silent",
+          "note": "沉默的；不出声的"
+        }
+      ]
+    },
+    {
+      "w": "assessment",
+      "syn": [
+        {
+          "w": "evaluation",
+          "note": "评定，较正式"
+        },
+        {
+          "w": "appraisal",
+          "note": "估价，侧重价值判断"
+        },
+        {
+          "w": "estimate",
+          "note": "估计，侧重数字"
+        },
+        {
+          "w": "judgment",
+          "note": "判断，含主观评价"
+        }
+      ]
+    },
+    {
+      "w": "assess",
+      "syn": [
+        {
+          "w": "evaluate",
+          "note": "评估，最通用"
+        },
+        {
+          "w": "estimate",
+          "note": "估计，侧重数量"
+        },
+        {
+          "w": "appraise",
+          "note": "估价，较正式"
+        },
+        {
+          "w": "judge",
+          "note": "判断，含主观"
+        }
+      ]
+    },
+    {
+      "w": "internal",
+      "syn": [
+        {
+          "w": "inner",
+          "note": "内部的，较具体"
+        },
+        {
+          "w": "interior",
+          "note": "内部的，更正式"
+        },
+        {
+          "w": "inside",
+          "note": "里面的，口语"
+        },
+        {
+          "w": "inward",
+          "note": "向内的；内心的"
+        }
+      ]
+    },
+    {
+      "w": "straighten up",
+      "syn": [
+        {
+          "w": "reform",
+          "note": "改过自新，较正式"
+        },
+        {
+          "w": "go straight",
+          "note": "改邪归正，口语"
+        },
+        {
+          "w": "mend one's ways",
+          "note": "改过自新，习语"
+        }
+      ]
+    },
+    {
+      "w": "slump",
+      "syn": [
+        {
+          "w": "decline",
+          "note": "下降，较正式"
+        },
+        {
+          "w": "plunge",
+          "note": "暴跌，幅度大"
+        },
+        {
+          "w": "recession",
+          "note": "n. 经济衰退"
+        },
+        {
+          "w": "drop",
+          "note": "下跌，最通用"
+        }
+      ]
+    },
+    {
+      "w": "pose",
+      "syn": [
+        {
+          "w": "posture",
+          "note": "vi. 摆姿势，较正式"
+        },
+        {
+          "w": "raise",
+          "note": "vt. 提出问题"
+        },
+        {
+          "w": "cause",
+          "note": "vt. 造成（问题、威胁）"
+        },
+        {
+          "w": "pretend",
+          "note": "vi. 佯装"
+        }
+      ]
+    },
+    {
+      "w": "bend",
+      "syn": [
+        {
+          "w": "curve",
+          "note": "弯曲；成曲线"
+        },
+        {
+          "w": "twist",
+          "note": "扭弯，含旋转"
+        },
+        {
+          "w": "flex",
+          "note": "使弯曲，指关节肌肉"
+        }
+      ]
+    },
+    {
+      "w": "bent",
+      "syn": [
+        {
+          "w": "curved",
+          "note": "adj. 弯曲的"
+        },
+        {
+          "w": "determined",
+          "note": "adj. 决心的，意志坚定"
+        },
+        {
+          "w": "inclination",
+          "note": "n. 爱好；倾向"
+        }
+      ]
+    },
+    {
+      "w": "bent",
+      "syn": [
+        {
+          "w": "curved",
+          "note": "adj. 弯曲的"
+        },
+        {
+          "w": "determined",
+          "note": "adj. 决心的，意志坚定"
+        },
+        {
+          "w": "inclination",
+          "note": "n. 爱好；倾向"
+        }
+      ]
+    },
+    {
+      "w": "reveal",
+      "syn": [
+        {
+          "w": "disclose",
+          "note": "揭露，较正式"
+        },
+        {
+          "w": "expose",
+          "note": "使暴露，含揭发"
+        },
+        {
+          "w": "uncover",
+          "note": "揭示（秘密、真相）"
+        },
+        {
+          "w": "show",
+          "note": "显示，最通用"
+        }
+      ]
+    }
+  ]
+}

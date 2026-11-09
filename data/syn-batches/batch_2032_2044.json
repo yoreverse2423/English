@@ -1,0 +1,211 @@
+{
+  "items": [
+    {
+      "w": "humble",
+      "syn": [
+        {
+          "w": "modest",
+          "note": "谦逊的"
+        },
+        {
+          "w": "unassuming",
+          "note": "不摆架子的"
+        },
+        {
+          "w": "lowly",
+          "note": "地位低微的"
+        },
+        {
+          "w": "simple",
+          "note": "简陋的"
+        }
+      ]
+    },
+    {
+      "w": "criticise",
+      "syn": [
+        {
+          "w": "condemn",
+          "note": "更强烈谴责"
+        },
+        {
+          "w": "blame",
+          "note": "责备"
+        },
+        {
+          "w": "fault",
+          "note": "挑毛病"
+        }
+      ]
+    },
+    {
+      "w": "criticize",
+      "syn": [
+        {
+          "w": "condemn",
+          "note": "谴责"
+        },
+        {
+          "w": "blame",
+          "note": "责备"
+        },
+        {
+          "w": "review",
+          "note": "评论"
+        }
+      ]
+    },
+    {
+      "w": "criticism",
+      "syn": [
+        {
+          "w": "critique",
+          "note": "评论；批评"
+        },
+        {
+          "w": "review",
+          "note": "评论"
+        },
+        {
+          "w": "condemnation",
+          "note": "谴责"
+        },
+        {
+          "w": "blame",
+          "note": "责备"
+        }
+      ]
+    },
+    {
+      "w": "representative",
+      "syn": [
+        {
+          "w": "delegate",
+          "note": "代表"
+        },
+        {
+          "w": "typical",
+          "note": "典型的"
+        },
+        {
+          "w": "characteristic",
+          "note": "有代表性的"
+        }
+      ]
+    },
+    {
+      "w": "ink",
+      "syn": [
+        {
+          "w": "pigment",
+          "note": "颜料，近义不精确"
+        },
+        {
+          "w": "dye",
+          "note": "染料，近义不精确"
+        },
+        {
+          "w": "sign",
+          "note": "作动词：签署"
+        }
+      ]
+    },
+    {
+      "w": "animation",
+      "syn": [
+        {
+          "w": "liveliness",
+          "note": "活泼；生气"
+        },
+        {
+          "w": "vitality",
+          "note": "活力"
+        },
+        {
+          "w": "cartoon",
+          "note": "动画片"
+        }
+      ]
+    },
+    {
+      "w": "frame",
+      "syn": [
+        {
+          "w": "framework",
+          "note": "框架"
+        },
+        {
+          "w": "structure",
+          "note": "结构"
+        },
+        {
+          "w": "border",
+          "note": "边框"
+        }
+      ]
+    },
+    {
+      "w": "symphony",
+      "syn": [
+        {
+          "w": "harmony",
+          "note": "和声；和谐"
+        },
+        {
+          "w": "concord",
+          "note": "和谐"
+        },
+        {
+          "w": "orchestral music",
+          "note": "管弦乐，近义"
+        }
+      ]
+    },
+    {
+      "w": "decline",
+      "syn": [
+        {
+          "w": "decrease",
+          "note": "下降"
+        },
+        {
+          "w": "fall",
+          "note": "下降；衰落"
+        },
+        {
+          "w": "refuse",
+          "note": "谢绝"
+        },
+        {
+          "w": "reject",
+          "note": "拒绝"
+        }
+      ]
+    },
+    {
+      "w": "exhibition",
+      "syn": [
+        {
+          "w": "display",
+          "note": "展示"
+        },
+        {
+          "w": "show",
+          "note": "展览"
+        },
+        {
+          "w": "fair",
+          "note": "博览会"
+        },
+        {
+          "w": "exposition",
+          "note": "展览会，较正式"
+        }
+      ]
+    },
+    {
+      "w": "bronze",
+      "syn": []
+    }
+  ]
+}

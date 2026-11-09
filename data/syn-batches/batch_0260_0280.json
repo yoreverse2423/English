@@ -1,0 +1,315 @@
+{
+  "items": [
+    {
+      "w": "ruin",
+      "syn": [
+        {
+          "w": "destroy",
+          "note": "彻底毁坏，语气更强"
+        },
+        {
+          "w": "damage",
+          "note": "损坏，程度较轻"
+        },
+        {
+          "w": "wreck",
+          "note": "毁坏、使毁掉"
+        }
+      ]
+    },
+    {
+      "w": "in ruins",
+      "syn": [
+        {
+          "w": "destroyed",
+          "note": "被摧毁的"
+        },
+        {
+          "w": "wrecked",
+          "note": "遭毁坏的"
+        },
+        {
+          "w": "devastated",
+          "note": "被严重破坏的"
+        }
+      ]
+    },
+    {
+      "w": "percent",
+      "syn": [
+        {
+          "w": "percentage",
+          "note": "百分比，名词"
+        },
+        {
+          "w": "proportion",
+          "note": "比例"
+        },
+        {
+          "w": "share",
+          "note": "份额、占比"
+        }
+      ]
+    },
+    {
+      "w": "brick",
+      "syn": [
+        {
+          "w": "block",
+          "note": "块状物，不特指砖"
+        }
+      ]
+    },
+    {
+      "w": "metal",
+      "syn": [
+        {
+          "w": "alloy",
+          "note": "合金，金属的一种"
+        }
+      ]
+    },
+    {
+      "w": "shock",
+      "syn": [
+        {
+          "w": "stun",
+          "note": "使震惊，动词"
+        },
+        {
+          "w": "appall",
+          "note": "使惊骇，语气强"
+        },
+        {
+          "w": "jolt",
+          "note": "震动、使震惊"
+        },
+        {
+          "w": "blow",
+          "note": "打击，名词"
+        }
+      ]
+    },
+    {
+      "w": "in shock",
+      "syn": [
+        {
+          "w": "stunned",
+          "note": "目瞪口呆的"
+        },
+        {
+          "w": "dazed",
+          "note": "茫然发愣的"
+        },
+        {
+          "w": "shaken",
+          "note": "受震动、心绪难平的"
+        }
+      ]
+    },
+    {
+      "w": "electricity",
+      "syn": [
+        {
+          "w": "power",
+          "note": "电力、电能"
+        },
+        {
+          "w": "current",
+          "note": "电流"
+        }
+      ]
+    },
+    {
+      "w": "trap",
+      "syn": [
+        {
+          "w": "snare",
+          "note": "圈套，多指捕捉"
+        },
+        {
+          "w": "pitfall",
+          "note": "隐患、陷阱，多比喻"
+        },
+        {
+          "w": "catch",
+          "note": "捕获，动词"
+        }
+      ]
+    },
+    {
+      "w": "bury",
+      "syn": [
+        {
+          "w": "inter",
+          "note": "埋葬，正式用语"
+        },
+        {
+          "w": "conceal",
+          "note": "隐藏，较正式"
+        },
+        {
+          "w": "hide",
+          "note": "藏起，最常用"
+        }
+      ]
+    },
+    {
+      "w": "breathe",
+      "syn": [
+        {
+          "w": "respire",
+          "note": "呼吸，正式或术语"
+        },
+        {
+          "w": "inhale",
+          "note": "吸气"
+        },
+        {
+          "w": "gasp",
+          "note": "喘气、急促呼吸"
+        }
+      ]
+    },
+    {
+      "w": "revive",
+      "syn": [
+        {
+          "w": "restore",
+          "note": "使恢复，及物"
+        },
+        {
+          "w": "renew",
+          "note": "使复兴、更新"
+        },
+        {
+          "w": "resuscitate",
+          "note": "使苏醒，医学用语"
+        }
+      ]
+    },
+    {
+      "w": "revival",
+      "syn": [
+        {
+          "w": "comeback",
+          "note": "复出、再度流行"
+        },
+        {
+          "w": "resurgence",
+          "note": "复兴、再起"
+        },
+        {
+          "w": "restoration",
+          "note": "恢复、修复"
+        }
+      ]
+    },
+    {
+      "w": "effort",
+      "syn": [
+        {
+          "w": "attempt",
+          "note": "尝试，侧重一次行动"
+        },
+        {
+          "w": "endeavor",
+          "note": "努力，正式用语"
+        },
+        {
+          "w": "struggle",
+          "note": "艰难的努力、挣扎"
+        }
+      ]
+    },
+    {
+      "w": "unify",
+      "syn": [
+        {
+          "w": "unite",
+          "note": "联合、团结"
+        },
+        {
+          "w": "integrate",
+          "note": "使整合、融为一体"
+        },
+        {
+          "w": "combine",
+          "note": "结合、合并"
+        }
+      ]
+    },
+    {
+      "w": "wisdom",
+      "syn": [
+        {
+          "w": "insight",
+          "note": "洞察力、见识"
+        },
+        {
+          "w": "prudence",
+          "note": "明智、谨慎"
+        },
+        {
+          "w": "judgment",
+          "note": "判断力"
+        }
+      ]
+    },
+    {
+      "w": "context",
+      "syn": [
+        {
+          "w": "setting",
+          "note": "环境、背景"
+        },
+        {
+          "w": "background",
+          "note": "背景情况"
+        },
+        {
+          "w": "circumstances",
+          "note": "情形、环境"
+        }
+      ]
+    },
+    {
+      "w": "suffer",
+      "syn": [
+        {
+          "w": "endure",
+          "note": "忍受，强调持久"
+        },
+        {
+          "w": "undergo",
+          "note": "经历、遭受"
+        },
+        {
+          "w": "bear",
+          "note": "承受、忍受"
+        }
+      ]
+    },
+    {
+      "w": "volcano",
+      "syn": []
+    },
+    {
+      "w": "erupt",
+      "syn": [
+        {
+          "w": "explode",
+          "note": "爆炸、爆发"
+        },
+        {
+          "w": "burst",
+          "note": "突然爆发、迸发"
+        },
+        {
+          "w": "break out",
+          "note": "（战争、灾害）爆发"
+        }
+      ]
+    }
+  ]
+}

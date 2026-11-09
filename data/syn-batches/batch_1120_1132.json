@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "w": "fatal",
+      "syn": [
+        {
+          "w": "deadly",
+          "note": "极可能致命的"
+        },
+        {
+          "w": "lethal",
+          "note": "致命的，更正式"
+        },
+        {
+          "w": "disastrous",
+          "note": "毁灭性的；灾难性的"
+        }
+      ]
+    },
+    {
+      "w": "shallow",
+      "syn": [
+        {
+          "w": "superficial",
+          "note": "侧重肤浅的"
+        },
+        {
+          "w": "shoal",
+          "note": "名词：浅滩"
+        }
+      ]
+    },
+    {
+      "w": "result in",
+      "syn": [
+        {
+          "w": "lead to",
+          "note": "导致"
+        },
+        {
+          "w": "cause",
+          "note": "引起"
+        },
+        {
+          "w": "bring about",
+          "note": "带来；导致"
+        }
+      ]
+    },
+    {
+      "w": "pattern",
+      "syn": [
+        {
+          "w": "model",
+          "note": "模式；范例"
+        },
+        {
+          "w": "design",
+          "note": "图案；设计"
+        },
+        {
+          "w": "sample",
+          "note": "样品"
+        },
+        {
+          "w": "imitate",
+          "note": "动词：模仿"
+        }
+      ]
+    },
+    {
+      "w": "analysis",
+      "syn": [
+        {
+          "w": "examination",
+          "note": "检查；分析"
+        },
+        {
+          "w": "study",
+          "note": "研究；分析"
+        },
+        {
+          "w": "breakdown",
+          "note": "分解；细目分类"
+        }
+      ]
+    },
+    {
+      "w": "analyses",
+      "syn": [
+        {
+          "w": "studies",
+          "note": "复数：研究；分析"
+        },
+        {
+          "w": "examinations",
+          "note": "复数：检查；分析"
+        },
+        {
+          "w": "breakdowns",
+          "note": "复数：分解"
+        }
+      ]
+    },
+    {
+      "w": "as a result",
+      "syn": [
+        {
+          "w": "consequently",
+          "note": "因此，较正式"
+        },
+        {
+          "w": "therefore",
+          "note": "因此"
+        },
+        {
+          "w": "thus",
+          "note": "因此，书面"
+        },
+        {
+          "w": "as a consequence",
+          "note": "结果；因此"
+        }
+      ]
+    },
+    {
+      "w": "high-end",
+      "syn": [
+        {
+          "w": "luxury",
+          "note": "豪华的"
+        },
+        {
+          "w": "premium",
+          "note": "优质的；高端的"
+        },
+        {
+          "w": "deluxe",
+          "note": "豪华的"
+        }
+      ]
+    },
+    {
+      "w": "monitor",
+      "syn": [
+        {
+          "w": "screen",
+          "note": "显示屏；屏幕"
+        },
+        {
+          "w": "observe",
+          "note": "观察；监视"
+        },
+        {
+          "w": "track",
+          "note": "跟踪；监控"
+        }
+      ]
+    },
+    {
+      "w": "regular",
+      "syn": [
+        {
+          "w": "routine",
+          "note": "常规的；例行的"
+        },
+        {
+          "w": "periodic",
+          "note": "定期的；周期性的"
+        },
+        {
+          "w": "normal",
+          "note": "正常的；普通的"
+        },
+        {
+          "w": "steady",
+          "note": "稳定的；有规律的"
+        }
+      ]
+    },
+    {
+      "w": "foam",
+      "syn": [
+        {
+          "w": "froth",
+          "note": "泡沫；浮沫"
+        },
+        {
+          "w": "bubbles",
+          "note": "气泡；泡沫"
+        },
+        {
+          "w": "lather",
+          "note": "皂沫；泡沫"
+        },
+        {
+          "w": "fizz",
+          "note": "冒气泡；起泡"
+        }
+      ]
+    },
+    {
+      "w": "pillow",
+      "syn": [
+        {
+          "w": "cushion",
+          "note": "靠垫；垫子"
+        },
+        {
+          "w": "bolster",
+          "note": "长枕；垫子"
+        },
+        {
+          "w": "headrest",
+          "note": "头枕"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "w": "appointment",
+      "syn": [
+        {
+          "w": "engagement",
+          "note": "侧重约定、约会"
+        },
+        {
+          "w": "post",
+          "note": "侧重职位"
+        },
+        {
+          "w": "position",
+          "note": "侧重职位"
+        },
+        {
+          "w": "meeting",
+          "note": "侧重会面约定"
+        }
+      ]
+    },
+    {
+      "w": "nail",
+      "syn": [
+        {
+          "w": "fasten",
+          "note": "使固定"
+        },
+        {
+          "w": "fix",
+          "note": "固定、钉牢"
+        },
+        {
+          "w": "expose",
+          "note": "揭露（谎言等）"
+        }
+      ]
+    },
+    {
+      "w": "saleswoman",
+      "syn": [
+        {
+          "w": "shop assistant",
+          "note": "英式店员"
+        },
+        {
+          "w": "salesclerk",
+          "note": "美式售货员"
+        },
+        {
+          "w": "salesperson",
+          "note": "中性销售员"
+        }
+      ]
+    },
+    {
+      "w": "guilty",
+      "syn": [
+        {
+          "w": "culpable",
+          "note": "正式，有罪的"
+        },
+        {
+          "w": "ashamed",
+          "note": "侧重内疚羞愧"
+        },
+        {
+          "w": "blameworthy",
+          "note": "该受责备的"
+        }
+      ]
+    },
+    {
+      "w": "suspend",
+      "syn": [
+        {
+          "w": "postpone",
+          "note": "推迟"
+        },
+        {
+          "w": "delay",
+          "note": "延缓"
+        },
+        {
+          "w": "halt",
+          "note": "使暂停"
+        },
+        {
+          "w": "ban",
+          "note": "禁赛、禁止"
+        }
+      ]
+    },
+    {
+      "w": "ladder",
+      "syn": [
+        {
+          "w": "steps",
+          "note": "阶梯"
+        },
+        {
+          "w": "avenue",
+          "note": "途径、渠道"
+        },
+        {
+          "w": "hierarchy",
+          "note": "等级阶梯、层级"
+        }
+      ]
+    },
+    {
+      "w": "dismiss",
+      "syn": [
+        {
+          "w": "fire",
+          "note": "解雇"
+        },
+        {
+          "w": "sack",
+          "note": "英式非正式，解雇"
+        },
+        {
+          "w": "disperse",
+          "note": "解散（人群）"
+        },
+        {
+          "w": "reject",
+          "note": "不予考虑"
+        }
+      ]
+    },
+    {
+      "w": "declare",
+      "syn": [
+        {
+          "w": "announce",
+          "note": "宣布"
+        },
+        {
+          "w": "state",
+          "note": "声明、陈述"
+        },
+        {
+          "w": "assert",
+          "note": "断言、宣称"
+        },
+        {
+          "w": "proclaim",
+          "note": "正式宣布"
+        }
+      ]
+    },
+    {
+      "w": "whereas",
+      "syn": [
+        {
+          "w": "while",
+          "note": "对比，然而"
+        },
+        {
+          "w": "but",
+          "note": "转折，但是"
+        },
+        {
+          "w": "although",
+          "note": "虽然，鉴于"
+        }
+      ]
+    },
+    {
+      "w": "rumour",
+      "syn": [
+        {
+          "w": "gossip",
+          "note": "流言蜚语"
+        },
+        {
+          "w": "hearsay",
+          "note": "传闻、道听途说"
+        }
+      ]
+    },
+    {
+      "w": "presume",
+      "syn": [
+        {
+          "w": "assume",
+          "note": "假定"
+        },
+        {
+          "w": "suppose",
+          "note": "推测"
+        },
+        {
+          "w": "presuppose",
+          "note": "预先假定"
+        }
+      ]
+    },
+    {
+      "w": "fare",
+      "syn": [
+        {
+          "w": "ticket price",
+          "note": "票价"
+        },
+        {
+          "w": "fee",
+          "note": "费用"
+        },
+        {
+          "w": "charge",
+          "note": "收费"
+        }
+      ]
+    }
+  ]
+}

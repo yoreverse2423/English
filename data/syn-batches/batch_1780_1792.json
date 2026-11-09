@@ -1,0 +1,174 @@
+{
+  "items": [
+    {
+      "w": "bold",
+      "syn": [
+        {
+          "w": "brave",
+          "note": "勇敢的，泛指"
+        },
+        {
+          "w": "daring",
+          "note": "大胆的，侧重敢冒险"
+        },
+        {
+          "w": "courageous",
+          "note": "英勇的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "chef",
+      "syn": [
+        {
+          "w": "cook",
+          "note": "厨师，泛指"
+        },
+        {
+          "w": "head cook",
+          "note": "主厨，较具体"
+        }
+      ]
+    },
+    {
+      "w": "peppercorn",
+      "syn": [
+        {
+          "w": "pepper",
+          "note": "胡椒，泛指"
+        },
+        {
+          "w": "black pepper",
+          "note": "黑胡椒，调味品"
+        },
+        {
+          "w": "nominal rent",
+          "note": "象征性租金"
+        }
+      ]
+    },
+    {
+      "w": "vinegar",
+      "syn": []
+    },
+    {
+      "w": "stuff",
+      "syn": [
+        {
+          "w": "things",
+          "note": "东西，复数泛指"
+        },
+        {
+          "w": "material",
+          "note": "材料"
+        },
+        {
+          "w": "fill",
+          "note": "填满，动词"
+        },
+        {
+          "w": "cram",
+          "note": "塞满，动词"
+        }
+      ]
+    },
+    {
+      "w": "slice",
+      "syn": [
+        {
+          "w": "piece",
+          "note": "一片/一块"
+        },
+        {
+          "w": "portion",
+          "note": "部分"
+        },
+        {
+          "w": "cut",
+          "note": "切下，动词"
+        }
+      ]
+    },
+    {
+      "w": "slice ... off",
+      "syn": [
+        {
+          "w": "cut off",
+          "note": "切掉"
+        },
+        {
+          "w": "chop off",
+          "note": "砍下"
+        },
+        {
+          "w": "trim off",
+          "note": "修切掉"
+        }
+      ]
+    },
+    {
+      "w": "onion",
+      "syn": []
+    },
+    {
+      "w": "lamb",
+      "syn": [
+        {
+          "w": "young sheep",
+          "note": "指羔羊（解释性）"
+        },
+        {
+          "w": "lamb meat",
+          "note": "指羔羊肉"
+        }
+      ]
+    },
+    {
+      "w": "lamb kebab",
+      "syn": [
+        {
+          "w": "lamb skewer",
+          "note": "羊肉串"
+        },
+        {
+          "w": "shish kebab",
+          "note": "烤肉串，常指羊肉"
+        }
+      ]
+    },
+    {
+      "w": "elegant",
+      "syn": [
+        {
+          "w": "graceful",
+          "note": "优雅的，侧重动作"
+        },
+        {
+          "w": "refined",
+          "note": "文雅的，有教养"
+        },
+        {
+          "w": "tasteful",
+          "note": "有品位的"
+        },
+        {
+          "w": "stylish",
+          "note": "时髦的"
+        }
+      ]
+    },
+    {
+      "w": "dim sum",
+      "syn": [
+        {
+          "w": "snacks",
+          "note": "小吃，泛指"
+        },
+        {
+          "w": "dumplings",
+          "note": "饺子/点心类，非完全对应"
+        }
+      ]
+    }
+  ]
+}

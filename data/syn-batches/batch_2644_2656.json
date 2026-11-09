@@ -1,0 +1,204 @@
+{
+  "items": [
+    {
+      "w": "justice",
+      "syn": [
+        {
+          "w": "fairness",
+          "note": "公平；广义正义"
+        },
+        {
+          "w": "equity",
+          "note": "公正；较正式"
+        },
+        {
+          "w": "judge",
+          "note": "指法官时"
+        }
+      ]
+    },
+    {
+      "w": "accuse",
+      "syn": [
+        {
+          "w": "charge",
+          "note": "正式指控"
+        },
+        {
+          "w": "blame",
+          "note": "责备；归咎"
+        },
+        {
+          "w": "denounce",
+          "note": "公开谴责；较正式"
+        }
+      ]
+    },
+    {
+      "w": "come to a conclusion",
+      "syn": [
+        {
+          "w": "reach a conclusion",
+          "note": "得出结论"
+        },
+        {
+          "w": "draw a conclusion",
+          "note": "推断出结论"
+        },
+        {
+          "w": "conclude",
+          "note": "动词；下结论/结束"
+        }
+      ]
+    },
+    {
+      "w": "greedy",
+      "syn": [
+        {
+          "w": "eager",
+          "note": "渴望的；非贬义"
+        },
+        {
+          "w": "selfish",
+          "note": "自私的；近义"
+        },
+        {
+          "w": "gluttonous",
+          "note": "贪吃的；较正式"
+        }
+      ]
+    },
+    {
+      "w": "entrepreneur",
+      "syn": [
+        {
+          "w": "businessman",
+          "note": "商人/企业家；较泛"
+        },
+        {
+          "w": "industrialist",
+          "note": "实业家"
+        },
+        {
+          "w": "contractor",
+          "note": "承包人"
+        }
+      ]
+    },
+    {
+      "w": "receptionist",
+      "syn": [
+        {
+          "w": "front desk clerk",
+          "note": "前台职员"
+        },
+        {
+          "w": "reception clerk",
+          "note": "接待职员"
+        },
+        {
+          "w": "desk clerk",
+          "note": "前台/柜台职员"
+        }
+      ]
+    },
+    {
+      "w": "CV",
+      "syn": [
+        {
+          "w": "résumé",
+          "note": "简历；美式常用"
+        },
+        {
+          "w": "resume",
+          "note": "简历；无重音符写法"
+        },
+        {
+          "w": "curriculum vitae",
+          "note": "简历全称"
+        }
+      ]
+    },
+    {
+      "w": "résumé",
+      "syn": [
+        {
+          "w": "CV",
+          "note": "简历；英式常用"
+        },
+        {
+          "w": "curriculum vitae",
+          "note": "简历全称"
+        },
+        {
+          "w": "summary",
+          "note": "摘要义；非简历义"
+        }
+      ]
+    },
+    {
+      "w": "socialist",
+      "syn": [
+        {
+          "w": "leftist",
+          "note": "左派；较宽泛"
+        },
+        {
+          "w": "left-wing",
+          "note": "左翼的；近义"
+        }
+      ]
+    },
+    {
+      "w": "communist",
+      "syn": [
+        {
+          "w": "Marxist",
+          "note": "马克思主义者；近义"
+        },
+        {
+          "w": "leftist",
+          "note": "左派；较宽泛"
+        }
+      ]
+    },
+    {
+      "w": "dedicate",
+      "syn": [
+        {
+          "w": "devote",
+          "note": "献身/致力"
+        },
+        {
+          "w": "commit",
+          "note": "投入/承诺"
+        },
+        {
+          "w": "inscribe",
+          "note": "题献/题写"
+        }
+      ]
+    },
+    {
+      "w": "fox",
+      "syn": [
+        {
+          "w": "cunning person",
+          "note": "狡猾的人"
+        },
+        {
+          "w": "deceive",
+          "note": "欺骗"
+        },
+        {
+          "w": "trick",
+          "note": "欺骗；较口语"
+        },
+        {
+          "w": "sour",
+          "note": "使变酸"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "account",
+      "syn": [
+        {
+          "w": "explanation",
+          "note": "解释；说明"
+        },
+        {
+          "w": "report",
+          "note": "报道；描述"
+        },
+        {
+          "w": "bill",
+          "note": "账单"
+        }
+      ]
+    },
+    {
+      "w": "click",
+      "syn": [
+        {
+          "w": "tick",
+          "note": "滴答声"
+        },
+        {
+          "w": "clack",
+          "note": "咔哒声"
+        },
+        {
+          "w": "tap",
+          "note": "轻敲；轻点"
+        }
+      ]
+    },
+    {
+      "w": "privacy",
+      "syn": [
+        {
+          "w": "secrecy",
+          "note": "保密；秘密"
+        },
+        {
+          "w": "solitude",
+          "note": "独处；隐居"
+        },
+        {
+          "w": "confidentiality",
+          "note": "保密性"
+        }
+      ]
+    },
+    {
+      "w": "theft",
+      "syn": [
+        {
+          "w": "stealing",
+          "note": "偷窃行为"
+        },
+        {
+          "w": "robbery",
+          "note": "抢劫（更暴力）"
+        },
+        {
+          "w": "burglary",
+          "note": "入室盗窃"
+        }
+      ]
+    },
+    {
+      "w": "rude",
+      "syn": [
+        {
+          "w": "impolite",
+          "note": "不礼貌的"
+        },
+        {
+          "w": "disrespectful",
+          "note": "不尊重的"
+        },
+        {
+          "w": "offensive",
+          "note": "冒犯的"
+        }
+      ]
+    },
+    {
+      "w": "target",
+      "syn": [
+        {
+          "w": "goal",
+          "note": "目标"
+        },
+        {
+          "w": "aim",
+          "note": "目的；目标"
+        },
+        {
+          "w": "objective",
+          "note": "目标（较正式）"
+        }
+      ]
+    },
+    {
+      "w": "troll",
+      "syn": [
+        {
+          "w": "giant",
+          "note": "神话中的巨人"
+        },
+        {
+          "w": "round",
+          "note": "轮唱歌曲"
+        }
+      ]
+    },
+    {
+      "w": "cyberbully",
+      "syn": [
+        {
+          "w": "bully",
+          "note": "欺凌（不限于网络）"
+        },
+        {
+          "w": "harass",
+          "note": "骚扰（可指网络）"
+        },
+        {
+          "w": "intimidate",
+          "note": "恐吓"
+        }
+      ]
+    },
+    {
+      "w": "false",
+      "syn": [
+        {
+          "w": "wrong",
+          "note": "错误的"
+        },
+        {
+          "w": "untrue",
+          "note": "不真实的"
+        },
+        {
+          "w": "fake",
+          "note": "伪造的"
+        },
+        {
+          "w": "incorrect",
+          "note": "不正确的"
+        }
+      ]
+    },
+    {
+      "w": "particular",
+      "syn": [
+        {
+          "w": "detail",
+          "note": "细节；详细说明"
+        },
+        {
+          "w": "item",
+          "note": "项目；条目"
+        }
+      ]
+    },
+    {
+      "w": "embarrassing",
+      "syn": [
+        {
+          "w": "awkward",
+          "note": "尴尬的"
+        },
+        {
+          "w": "humiliating",
+          "note": "令人羞辱的"
+        },
+        {
+          "w": "shameful",
+          "note": "丢脸的"
+        }
+      ]
+    },
+    {
+      "w": "make fun of",
+      "syn": [
+        {
+          "w": "tease",
+          "note": "取笑"
+        },
+        {
+          "w": "mock",
+          "note": "嘲弄"
+        },
+        {
+          "w": "laugh at",
+          "note": "嘲笑"
+        },
+        {
+          "w": "ridicule",
+          "note": "讥笑"
+        }
+      ]
+    }
+  ]
+}

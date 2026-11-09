@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "w": "ceramic",
+      "syn": [
+        {
+          "w": "pottery",
+          "note": "陶器；陶瓷制品，更常用"
+        },
+        {
+          "w": "porcelain",
+          "note": "特指瓷器，范围更窄"
+        }
+      ]
+    },
+    {
+      "w": "vase",
+      "syn": [
+        {
+          "w": "jar",
+          "note": "广口罐瓶，不专指花瓶"
+        },
+        {
+          "w": "pot",
+          "note": "罐、盆，泛指容器"
+        }
+      ]
+    },
+    {
+      "w": "artistic",
+      "syn": [
+        {
+          "w": "aesthetic",
+          "note": "审美的，侧重美感"
+        },
+        {
+          "w": "creative",
+          "note": "有创造力的"
+        }
+      ]
+    },
+    {
+      "w": "entry",
+      "syn": [
+        {
+          "w": "entrance",
+          "note": "入口；进入，最常用对应"
+        },
+        {
+          "w": "access",
+          "note": "进入权；通道"
+        },
+        {
+          "w": "item",
+          "note": "对应“条目”义"
+        }
+      ]
+    },
+    {
+      "w": "civil",
+      "syn": [
+        {
+          "w": "civic",
+          "note": "公民的；市政的"
+        },
+        {
+          "w": "polite",
+          "note": "有礼貌的，口语常用"
+        },
+        {
+          "w": "courteous",
+          "note": "彬彬有礼，更正式"
+        }
+      ]
+    },
+    {
+      "w": "recognition",
+      "syn": [
+        {
+          "w": "identification",
+          "note": "识别；辨认"
+        },
+        {
+          "w": "acknowledgment",
+          "note": "承认，更正式"
+        },
+        {
+          "w": "acceptance",
+          "note": "认可；接纳"
+        }
+      ]
+    },
+    {
+      "w": "Buddhist",
+      "syn": []
+    },
+    {
+      "w": "Buddhism",
+      "syn": []
+    },
+    {
+      "w": "expansion",
+      "syn": [
+        {
+          "w": "growth",
+          "note": "增长；扩展"
+        },
+        {
+          "w": "enlargement",
+          "note": "扩大，较正式"
+        },
+        {
+          "w": "extension",
+          "note": "延伸；扩展"
+        }
+      ]
+    },
+    {
+      "w": "bring ... to life",
+      "syn": [
+        {
+          "w": "revive",
+          "note": "使复苏；使重焕生机"
+        },
+        {
+          "w": "enliven",
+          "note": "使有生气，侧重生动"
+        },
+        {
+          "w": "animate",
+          "note": "使有活力，较正式"
+        }
+      ]
+    },
+    {
+      "w": "guarantee",
+      "syn": [
+        {
+          "w": "assure",
+          "note": "向某人保证，动词"
+        },
+        {
+          "w": "promise",
+          "note": "承诺，语气较轻"
+        },
+        {
+          "w": "warranty",
+          "note": "名词，保修（保证）书"
+        }
+      ]
+    },
+    {
+      "w": "contemporary",
+      "syn": [
+        {
+          "w": "modern",
+          "note": "当代的；现代的"
+        },
+        {
+          "w": "current",
+          "note": "当前的"
+        },
+        {
+          "w": "peer",
+          "note": "同辈人，对应名词义"
+        }
+      ]
+    }
+  ]
+}

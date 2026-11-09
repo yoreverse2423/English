@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "mode",
+      "syn": [
+        {
+          "w": "way",
+          "note": "最通用的方式"
+        },
+        {
+          "w": "method",
+          "note": "侧重系统方法"
+        },
+        {
+          "w": "manner",
+          "note": "侧重举止、方式"
+        },
+        {
+          "w": "style",
+          "note": "侧重风格"
+        }
+      ]
+    },
+    {
+      "w": "routine",
+      "syn": [
+        {
+          "w": "routine",
+          "note": "不可作同义词，改用下条"
+        },
+        {
+          "w": "habit",
+          "note": "侧重习惯"
+        },
+        {
+          "w": "practice",
+          "note": "侧重惯常做法"
+        },
+        {
+          "w": "procedure",
+          "note": "侧重程序步骤"
+        }
+      ]
+    },
+    {
+      "w": "daily routine",
+      "syn": [
+        {
+          "w": "everyday life",
+          "note": "日常生活"
+        },
+        {
+          "w": "regular routine",
+          "note": "常规日程"
+        }
+      ]
+    },
+    {
+      "w": "preference",
+      "syn": [
+        {
+          "w": "liking",
+          "note": "侧重喜爱"
+        },
+        {
+          "w": "inclination",
+          "note": "侧重倾向，较正式"
+        },
+        {
+          "w": "priority",
+          "note": "优先权义"
+        }
+      ]
+    },
+    {
+      "w": "instant",
+      "syn": [
+        {
+          "w": "moment",
+          "note": "瞬间义"
+        },
+        {
+          "w": "immediate",
+          "note": "形容词：立即的"
+        },
+        {
+          "w": "prompt",
+          "note": "形容词：迅速的"
+        }
+      ]
+    },
+    {
+      "w": "command",
+      "syn": [
+        {
+          "w": "order",
+          "note": "命令义，最常用"
+        },
+        {
+          "w": "direct",
+          "note": "动词：指示，较正式"
+        },
+        {
+          "w": "control",
+          "note": "控制义"
+        }
+      ]
+    },
+    {
+      "w": "obey",
+      "syn": [
+        {
+          "w": "follow",
+          "note": "听从、遵循"
+        },
+        {
+          "w": "observe",
+          "note": "遵守法规，较正式"
+        },
+        {
+          "w": "comply",
+          "note": "常与with连用"
+        }
+      ]
+    },
+    {
+      "w": "warning",
+      "syn": [
+        {
+          "w": "caution",
+          "note": "告诫，较正式"
+        },
+        {
+          "w": "alert",
+          "note": "侧重警报"
+        },
+        {
+          "w": "notice",
+          "note": "侧重预告、通知"
+        }
+      ]
+    },
+    {
+      "w": "constant",
+      "syn": [
+        {
+          "w": "continuous",
+          "note": "侧重连续不断"
+        },
+        {
+          "w": "steady",
+          "note": "侧重稳定"
+        },
+        {
+          "w": "fixed",
+          "note": "侧重固定不变"
+        }
+      ]
+    },
+    {
+      "w": "early on",
+      "syn": [
+        {
+          "w": "at first",
+          "note": "起初"
+        },
+        {
+          "w": "initially",
+          "note": "最初，较正式"
+        }
+      ]
+    },
+    {
+      "w": "abnormal",
+      "syn": [
+        {
+          "w": "unusual",
+          "note": "不寻常的，语气较缓"
+        },
+        {
+          "w": "irregular",
+          "note": "不规则的"
+        },
+        {
+          "w": "odd",
+          "note": "古怪的"
+        }
+      ]
+    },
+    {
+      "w": "critical",
+      "syn": [
+        {
+          "w": "crucial",
+          "note": "决定性的，最重要"
+        },
+        {
+          "w": "vital",
+          "note": "至关重要的"
+        },
+        {
+          "w": "fault-finding",
+          "note": "爱挑剔的义"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "items": [
+    {
+      "w": "bun",
+      "syn": [
+        {
+          "w": "roll",
+          "note": "小圆面包"
+        },
+        {
+          "w": "bread roll",
+          "note": "小面包卷"
+        }
+      ]
+    },
+    {
+      "w": "chilli",
+      "syn": [
+        {
+          "w": "chili pepper",
+          "note": "辣椒"
+        },
+        {
+          "w": "hot pepper",
+          "note": "辣椒；更强调辣"
+        }
+      ]
+    },
+    {
+      "w": "pork",
+      "syn": []
+    },
+    {
+      "w": "red braised pork",
+      "syn": [
+        {
+          "w": "braised pork",
+          "note": "红烧肉常见译法"
+        },
+        {
+          "w": "red-cooked pork",
+          "note": "红烧肉；较直译"
+        }
+      ]
+    },
+    {
+      "w": "pearl",
+      "syn": [
+        {
+          "w": "gem",
+          "note": "珍品；宝石"
+        },
+        {
+          "w": "jewel",
+          "note": "珍品；珠宝"
+        },
+        {
+          "w": "treasure",
+          "note": "珍品"
+        }
+      ]
+    },
+    {
+      "w": "somewhat",
+      "syn": [
+        {
+          "w": "slightly",
+          "note": "稍微"
+        },
+        {
+          "w": "a little",
+          "note": "有点"
+        },
+        {
+          "w": "rather",
+          "note": "相当；有点"
+        }
+      ]
+    },
+    {
+      "w": "madam",
+      "syn": [
+        {
+          "w": "ma'am",
+          "note": "称呼女士；口语"
+        },
+        {
+          "w": "lady",
+          "note": "女士"
+        }
+      ]
+    },
+    {
+      "w": "calorie",
+      "syn": []
+    },
+    {
+      "w": "association",
+      "syn": [
+        {
+          "w": "organization",
+          "note": "协会；组织"
+        },
+        {
+          "w": "society",
+          "note": "社团；协会"
+        },
+        {
+          "w": "connection",
+          "note": "联系；联想"
+        },
+        {
+          "w": "alliance",
+          "note": "联盟"
+        }
+      ]
+    },
+    {
+      "w": "regardless",
+      "syn": [
+        {
+          "w": "anyway",
+          "note": "无论如何"
+        },
+        {
+          "w": "in any case",
+          "note": "无论如何"
+        },
+        {
+          "w": "irrespective",
+          "note": "不顾的；常接of"
+        }
+      ]
+    },
+    {
+      "w": "regardless of",
+      "syn": [
+        {
+          "w": "despite",
+          "note": "尽管；不顾"
+        },
+        {
+          "w": "in spite of",
+          "note": "尽管；不顾"
+        },
+        {
+          "w": "without regard to",
+          "note": "不顾；不理会"
+        }
+      ]
+    },
+    {
+      "w": "category",
+      "syn": [
+        {
+          "w": "class",
+          "note": "类别"
+        },
+        {
+          "w": "type",
+          "note": "类型"
+        },
+        {
+          "w": "group",
+          "note": "组别"
+        },
+        {
+          "w": "classification",
+          "note": "分类"
+        }
+      ]
+    }
+  ]
+}

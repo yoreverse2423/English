@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "w": "upset",
+      "syn": [
+        {
+          "w": "unhappy",
+          "note": "侧重不开心、心烦"
+        },
+        {
+          "w": "worried",
+          "note": "侧重担心、不安"
+        },
+        {
+          "w": "disturb",
+          "note": "动词，打扰、使烦恼"
+        },
+        {
+          "w": "bother",
+          "note": "动词，使烦恼、打扰"
+        }
+      ]
+    },
+    {
+      "w": "guideline",
+      "syn": [
+        {
+          "w": "rule",
+          "note": "规则、准则"
+        },
+        {
+          "w": "principle",
+          "note": "原则、指导原则"
+        },
+        {
+          "w": "recommendation",
+          "note": "建议、推荐性准则"
+        }
+      ]
+    },
+    {
+      "w": "author",
+      "syn": [
+        {
+          "w": "writer",
+          "note": "作者、作家"
+        },
+        {
+          "w": "creator",
+          "note": "创作者；创始人"
+        }
+      ]
+    },
+    {
+      "w": "tip",
+      "syn": [
+        {
+          "w": "advice",
+          "note": "建议，不可数"
+        },
+        {
+          "w": "hint",
+          "note": "小窍门、提示"
+        },
+        {
+          "w": "end",
+          "note": "末端、尖端"
+        }
+      ]
+    },
+    {
+      "w": "familiar",
+      "syn": [
+        {
+          "w": "well-known",
+          "note": "众所周知的、熟悉的"
+        },
+        {
+          "w": "common",
+          "note": "常见的"
+        },
+        {
+          "w": "acquainted",
+          "note": "熟悉的，常用于 be acquainted with"
+        }
+      ]
+    },
+    {
+      "w": "keep in mind",
+      "syn": [
+        {
+          "w": "remember",
+          "note": "记住"
+        },
+        {
+          "w": "bear in mind",
+          "note": "牢记，更正式"
+        }
+      ]
+    },
+    {
+      "w": "keep ... in mind",
+      "syn": [
+        {
+          "w": "remember",
+          "note": "记住"
+        },
+        {
+          "w": "bear in mind",
+          "note": "牢记，更正式"
+        },
+        {
+          "w": "consider",
+          "note": "考虑到、把……记在心里"
+        }
+      ]
+    },
+    {
+      "w": "define",
+      "syn": [
+        {
+          "w": "explain",
+          "note": "解释含义"
+        },
+        {
+          "w": "specify",
+          "note": "明确规定"
+        },
+        {
+          "w": "clarify",
+          "note": "澄清、使明确"
+        }
+      ]
+    },
+    {
+      "w": "case",
+      "syn": [
+        {
+          "w": "situation",
+          "note": "情况、情形"
+        },
+        {
+          "w": "instance",
+          "note": "实例"
+        },
+        {
+          "w": "example",
+          "note": "例子"
+        },
+        {
+          "w": "container",
+          "note": "容器、箱盒"
+        }
+      ]
+    },
+    {
+      "w": "the World Wide Web",
+      "syn": [
+        {
+          "w": "the Web",
+          "note": "常用简称"
+        },
+        {
+          "w": "WWW",
+          "note": "缩写形式"
+        }
+      ]
+    },
+    {
+      "w": "WWW",
+      "syn": [
+        {
+          "w": "World Wide Web",
+          "note": "全称"
+        },
+        {
+          "w": "the Web",
+          "note": "常用简称"
+        }
+      ]
+    },
+    {
+      "w": "Jan Tchamani",
+      "syn": []
+    }
+  ]
+}

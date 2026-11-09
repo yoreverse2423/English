@@ -1,0 +1,91 @@
+{
+  "items": [
+    {
+      "w": "Renoir",
+      "syn": []
+    },
+    {
+      "w": "Picasso",
+      "syn": []
+    },
+    {
+      "w": "Cubism",
+      "syn": []
+    },
+    {
+      "w": "Giverny",
+      "syn": []
+    },
+    {
+      "w": "Tadpoles Searching for Mother",
+      "syn": []
+    },
+    {
+      "w": "The Cowboy's Flute",
+      "syn": []
+    },
+    {
+      "w": "Feeling from Mountain and Water",
+      "syn": []
+    },
+    {
+      "w": "Clearing After Snow on a Mountain Pass",
+      "syn": []
+    },
+    {
+      "w": "tobacco",
+      "syn": []
+    },
+    {
+      "w": "alcohol",
+      "syn": [
+        {
+          "w": "ethanol",
+          "note": "化学术语，乙醇"
+        },
+        {
+          "w": "liquor",
+          "note": "烈酒，含酒精饮料"
+        },
+        {
+          "w": "spirits",
+          "note": "烈性酒，复数"
+        }
+      ]
+    },
+    {
+      "w": "abuse",
+      "syn": [
+        {
+          "w": "misuse",
+          "note": "侧重滥用"
+        },
+        {
+          "w": "mistreat",
+          "note": "侧重虐待"
+        },
+        {
+          "w": "insult",
+          "note": "侧重辱骂"
+        }
+      ]
+    },
+    {
+      "w": "physical",
+      "syn": [
+        {
+          "w": "bodily",
+          "note": "身体的"
+        },
+        {
+          "w": "material",
+          "note": "物质的"
+        },
+        {
+          "w": "checkup",
+          "note": "体格检查，名词"
+        }
+      ]
+    }
+  ]
+}

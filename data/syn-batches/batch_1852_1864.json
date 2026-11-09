@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "scenery",
+      "syn": [
+        {
+          "w": "landscape",
+          "note": "风景；景观，侧重地貌景色"
+        },
+        {
+          "w": "view",
+          "note": "景色；视野，指从某处看到的景"
+        },
+        {
+          "w": "scene",
+          "note": "场景；景色，常指具体场面"
+        }
+      ]
+    },
+    {
+      "w": "awesome",
+      "syn": [
+        {
+          "w": "awe-inspiring",
+          "note": "令人敬畏的"
+        },
+        {
+          "w": "amazing",
+          "note": "极好的；令人惊叹的"
+        },
+        {
+          "w": "impressive",
+          "note": "令人印象深刻的"
+        }
+      ]
+    },
+    {
+      "w": "spectacular",
+      "syn": [
+        {
+          "w": "magnificent",
+          "note": "壮丽的；宏伟的"
+        },
+        {
+          "w": "breathtaking",
+          "note": "令人惊叹的；壮观的"
+        },
+        {
+          "w": "stunning",
+          "note": "极美的；惊人的"
+        }
+      ]
+    },
+    {
+      "w": "peak",
+      "syn": [
+        {
+          "w": "summit",
+          "note": "山顶；顶峰"
+        },
+        {
+          "w": "top",
+          "note": "顶部；最高点"
+        },
+        {
+          "w": "climax",
+          "note": "高潮；顶点，多用于抽象义"
+        }
+      ]
+    },
+    {
+      "w": "highlight",
+      "syn": [
+        {
+          "w": "high point",
+          "note": "最精彩部分；高潮"
+        },
+        {
+          "w": "best part",
+          "note": "最精彩的部分"
+        },
+        {
+          "w": "emphasize",
+          "note": "动词：强调；突出"
+        },
+        {
+          "w": "stress",
+          "note": "动词：强调；着重"
+        }
+      ]
+    },
+    {
+      "w": "goat",
+      "syn": [
+        {
+          "w": "scapegoat",
+          "note": "替罪羊，对应俚语义"
+        }
+      ]
+    },
+    {
+      "w": "grizzly bear",
+      "syn": [
+        {
+          "w": "grizzly",
+          "note": "灰熊的简称"
+        }
+      ]
+    },
+    {
+      "w": "drill",
+      "syn": [
+        {
+          "w": "practice",
+          "note": "名词：练习；训练"
+        },
+        {
+          "w": "exercise",
+          "note": "名词：演习；练习"
+        },
+        {
+          "w": "bore",
+          "note": "动词：钻孔"
+        },
+        {
+          "w": "train",
+          "note": "动词：训练"
+        }
+      ]
+    },
+    {
+      "w": "freezing cold",
+      "syn": [
+        {
+          "w": "freezing",
+          "note": "极冷的"
+        },
+        {
+          "w": "icy",
+          "note": "冰冷的；结冰的"
+        },
+        {
+          "w": "bitterly cold",
+          "note": "严寒的；刺骨冷"
+        },
+        {
+          "w": "frigid",
+          "note": "严寒的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "freeze",
+      "syn": [
+        {
+          "w": "ice over",
+          "note": "结冰；表面冻住"
+        },
+        {
+          "w": "solidify",
+          "note": "凝固；变硬"
+        },
+        {
+          "w": "stiffen",
+          "note": "变僵硬"
+        },
+        {
+          "w": "chill",
+          "note": "使冰冷；冷藏"
+        }
+      ]
+    },
+    {
+      "w": "mall",
+      "syn": [
+        {
+          "w": "shopping center",
+          "note": "购物中心"
+        },
+        {
+          "w": "shopping mall",
+          "note": "购物商场"
+        },
+        {
+          "w": "plaza",
+          "note": "购物广场；商业区"
+        }
+      ]
+    },
+    {
+      "w": "shopping mall",
+      "syn": [
+        {
+          "w": "shopping center",
+          "note": "购物中心"
+        },
+        {
+          "w": "mall",
+          "note": "商场；购物中心"
+        },
+        {
+          "w": "plaza",
+          "note": "购物广场"
+        }
+      ]
+    }
+  ]
+}

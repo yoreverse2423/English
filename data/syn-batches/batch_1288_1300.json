@@ -1,0 +1,203 @@
+{
+  "items": [
+    {
+      "w": "gentle",
+      "syn": [
+        {
+          "w": "mild",
+          "note": "侧重温和不强烈"
+        },
+        {
+          "w": "tender",
+          "note": "侧重温柔体贴"
+        },
+        {
+          "w": "soft",
+          "note": "侧重轻柔"
+        },
+        {
+          "w": "kind",
+          "note": "侧重和善"
+        }
+      ]
+    },
+    {
+      "w": "patent",
+      "syn": [
+        {
+          "w": "obvious",
+          "note": "对应“显然的”"
+        },
+        {
+          "w": "evident",
+          "note": "对应“明显的”，较正式"
+        },
+        {
+          "w": "license",
+          "note": "对应“执照”"
+        },
+        {
+          "w": "novel",
+          "note": "对应“新奇的”"
+        }
+      ]
+    },
+    {
+      "w": "passion",
+      "syn": [
+        {
+          "w": "enthusiasm",
+          "note": "热情，热衷"
+        },
+        {
+          "w": "zeal",
+          "note": "热忱，较正式"
+        },
+        {
+          "w": "love",
+          "note": "酷爱，喜爱"
+        }
+      ]
+    },
+    {
+      "w": "doctorate",
+      "syn": [
+        {
+          "w": "PhD",
+          "note": "博士学位，常指哲学博士"
+        },
+        {
+          "w": "doctor's degree",
+          "note": "博士学位，较口语"
+        }
+      ]
+    },
+    {
+      "w": "extraordinary",
+      "syn": [
+        {
+          "w": "remarkable",
+          "note": "非凡的，值得注意的"
+        },
+        {
+          "w": "exceptional",
+          "note": "杰出的，异常的"
+        },
+        {
+          "w": "unusual",
+          "note": "不寻常的"
+        }
+      ]
+    },
+    {
+      "w": "gradually",
+      "syn": [
+        {
+          "w": "progressively",
+          "note": "逐步地，较正式"
+        },
+        {
+          "w": "slowly",
+          "note": "缓慢地"
+        },
+        {
+          "w": "little by little",
+          "note": "一点一点地"
+        }
+      ]
+    },
+    {
+      "w": "photoelectric",
+      "syn": []
+    },
+    {
+      "w": "come to power",
+      "syn": [
+        {
+          "w": "take power",
+          "note": "掌权，上台"
+        },
+        {
+          "w": "take office",
+          "note": "就职，上任"
+        },
+        {
+          "w": "rise to power",
+          "note": "崛起掌权"
+        }
+      ]
+    },
+    {
+      "w": "institution",
+      "syn": [
+        {
+          "w": "organization",
+          "note": "对应“机构”"
+        },
+        {
+          "w": "establishment",
+          "note": "机构，建制"
+        },
+        {
+          "w": "custom",
+          "note": "对应“习俗”"
+        },
+        {
+          "w": "system",
+          "note": "对应“制度”"
+        }
+      ]
+    },
+    {
+      "w": "institute",
+      "syn": [
+        {
+          "w": "academy",
+          "note": "学院，学会"
+        },
+        {
+          "w": "society",
+          "note": "协会，学会"
+        },
+        {
+          "w": "establish",
+          "note": "对应动词“创立”"
+        },
+        {
+          "w": "found",
+          "note": "创办，成立"
+        }
+      ]
+    },
+    {
+      "w": "consequence",
+      "syn": [
+        {
+          "w": "result",
+          "note": "结果，最常用"
+        },
+        {
+          "w": "outcome",
+          "note": "结果，侧重最终结局"
+        },
+        {
+          "w": "effect",
+          "note": "影响，结果"
+        }
+      ]
+    },
+    {
+      "w": "moustache",
+      "syn": [
+        {
+          "w": "mustache",
+          "note": "美式拼写"
+        },
+        {
+          "w": "whiskers",
+          "note": "胡须，范围更广"
+        }
+      ]
+    }
+  ]
+}

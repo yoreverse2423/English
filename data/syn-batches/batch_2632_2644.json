@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "categorise",
+      "syn": [
+        {
+          "w": "classify",
+          "note": "最常用，按类别归类"
+        },
+        {
+          "w": "sort",
+          "note": "侧重整理分拣"
+        },
+        {
+          "w": "group",
+          "note": "侧重分组"
+        }
+      ]
+    },
+    {
+      "w": "profile",
+      "syn": [
+        {
+          "w": "outline",
+          "note": "轮廓；概要"
+        },
+        {
+          "w": "sketch",
+          "note": "简述；素描"
+        },
+        {
+          "w": "description",
+          "note": "简介；描述"
+        }
+      ]
+    },
+    {
+      "w": "participant",
+      "syn": [
+        {
+          "w": "attendee",
+          "note": "出席者，较正式"
+        },
+        {
+          "w": "member",
+          "note": "成员"
+        },
+        {
+          "w": "player",
+          "note": "参与者，口语"
+        }
+      ]
+    },
+    {
+      "w": "code",
+      "syn": [
+        {
+          "w": "cipher",
+          "note": "密码，指密文"
+        },
+        {
+          "w": "password",
+          "note": "口令，密码"
+        },
+        {
+          "w": "law",
+          "note": "法典；法律"
+        }
+      ]
+    },
+    {
+      "w": "orient",
+      "syn": [
+        {
+          "w": "adapt",
+          "note": "使适应"
+        },
+        {
+          "w": "adjust",
+          "note": "调整，使适应"
+        },
+        {
+          "w": "direct",
+          "note": "确定方向；指引"
+        }
+      ]
+    },
+    {
+      "w": "detective",
+      "syn": [
+        {
+          "w": "investigator",
+          "note": "调查者，较正式"
+        },
+        {
+          "w": "sleuth",
+          "note": "侦探，口语"
+        },
+        {
+          "w": "private eye",
+          "note": "私家侦探，非正式"
+        }
+      ]
+    },
+    {
+      "w": "graphic",
+      "syn": [
+        {
+          "w": "vivid",
+          "note": "生动形象的"
+        },
+        {
+          "w": "visual",
+          "note": "视觉的；图解的"
+        },
+        {
+          "w": "pictorial",
+          "note": "图画的；图示的"
+        }
+      ]
+    },
+    {
+      "w": "estate",
+      "syn": [
+        {
+          "w": "property",
+          "note": "财产；房产"
+        },
+        {
+          "w": "land",
+          "note": "地产；土地"
+        },
+        {
+          "w": "assets",
+          "note": "资产，常用复数"
+        }
+      ]
+    },
+    {
+      "w": "estate agent",
+      "syn": [
+        {
+          "w": "realtor",
+          "note": "美式房地产经纪人"
+        },
+        {
+          "w": "real estate agent",
+          "note": "美式说法"
+        },
+        {
+          "w": "property agent",
+          "note": "房产经纪人"
+        }
+      ]
+    },
+    {
+      "w": "real estate agent",
+      "syn": [
+        {
+          "w": "estate agent",
+          "note": "英式说法"
+        },
+        {
+          "w": "realtor",
+          "note": "美式，商标通用化"
+        },
+        {
+          "w": "property agent",
+          "note": "房产经纪人"
+        }
+      ]
+    },
+    {
+      "w": "accountant",
+      "syn": [
+        {
+          "w": "bookkeeper",
+          "note": "记账员，职责较窄"
+        },
+        {
+          "w": "auditor",
+          "note": "审计师"
+        },
+        {
+          "w": "CPA",
+          "note": "注册会计师，美式"
+        }
+      ]
+    },
+    {
+      "w": "spy",
+      "syn": [
+        {
+          "w": "secret agent",
+          "note": "特工，较正式"
+        },
+        {
+          "w": "mole",
+          "note": "内奸；潜伏间谍"
+        },
+        {
+          "w": "informant",
+          "note": "线人；告密者"
+        }
+      ]
+    }
+  ]
+}

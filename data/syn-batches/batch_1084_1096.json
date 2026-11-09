@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "w": "data",
+      "syn": [
+        {
+          "w": "information",
+          "note": "信息，泛称不可数"
+        },
+        {
+          "w": "facts",
+          "note": "具体事实/资料"
+        },
+        {
+          "w": "statistics",
+          "note": "统计数据"
+        }
+      ]
+    },
+    {
+      "w": "disappointed",
+      "syn": [
+        {
+          "w": "discouraged",
+          "note": "灰心丧气"
+        },
+        {
+          "w": "frustrated",
+          "note": "受挫失望"
+        },
+        {
+          "w": "let down",
+          "note": "被辜负而失望"
+        }
+      ]
+    },
+    {
+      "w": "desire",
+      "syn": [
+        {
+          "w": "wish",
+          "note": "心愿/希望"
+        },
+        {
+          "w": "longing",
+          "note": "强烈渴望"
+        },
+        {
+          "w": "want",
+          "note": "想要，较口语"
+        }
+      ]
+    },
+    {
+      "w": "carry on",
+      "syn": [
+        {
+          "w": "hand luggage",
+          "note": "随身行李（对应carry-on义）"
+        },
+        {
+          "w": "carry-on bag",
+          "note": "随身行李包"
+        },
+        {
+          "w": "portable",
+          "note": "便携的，作形容词"
+        }
+      ]
+    },
+    {
+      "w": "ongoing",
+      "syn": [
+        {
+          "w": "continuing",
+          "note": "继续进行的"
+        },
+        {
+          "w": "in progress",
+          "note": "正在进行"
+        },
+        {
+          "w": "continuous",
+          "note": "持续不断的"
+        }
+      ]
+    },
+    {
+      "w": "on board",
+      "syn": [
+        {
+          "w": "aboard",
+          "note": "在船/飞机/车上"
+        },
+        {
+          "w": "on the ship",
+          "note": "具体指在船上"
+        }
+      ]
+    },
+    {
+      "w": "independent",
+      "syn": [
+        {
+          "w": "autonomous",
+          "note": "自治的，较正式"
+        },
+        {
+          "w": "self-reliant",
+          "note": "自立的"
+        },
+        {
+          "w": "separate",
+          "note": "独立的/分开的"
+        }
+      ]
+    },
+    {
+      "w": "spacecraft",
+      "syn": [
+        {
+          "w": "spaceship",
+          "note": "宇宙飞船"
+        },
+        {
+          "w": "space vehicle",
+          "note": "航天器，较正式"
+        }
+      ]
+    },
+    {
+      "w": "spacewalk",
+      "syn": []
+    },
+    {
+      "w": "jade",
+      "syn": [
+        {
+          "w": "jadeite",
+          "note": "翡翠"
+        },
+        {
+          "w": "nephrite",
+          "note": "软玉"
+        }
+      ]
+    },
+    {
+      "w": "dock",
+      "syn": [
+        {
+          "w": "wharf",
+          "note": "码头"
+        },
+        {
+          "w": "pier",
+          "note": "突堤码头"
+        },
+        {
+          "w": "berth",
+          "note": "停泊处/使停泊"
+        }
+      ]
+    },
+    {
+      "w": "signal",
+      "syn": [
+        {
+          "w": "sign",
+          "note": "信号/迹象"
+        },
+        {
+          "w": "indication",
+          "note": "迹象，较正式"
+        },
+        {
+          "w": "indicate",
+          "note": "表明/示意"
+        }
+      ]
+    }
+  ]
+}

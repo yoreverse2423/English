@@ -1,0 +1,176 @@
+{
+  "items": [
+    {
+      "w": "weekly",
+      "syn": [
+        {
+          "w": "periodical",
+          "note": "期刊；泛指定期刊物"
+        },
+        {
+          "w": "every week",
+          "note": "副词义：每周"
+        }
+      ]
+    },
+    {
+      "w": "on a ... basis",
+      "syn": [
+        {
+          "w": "in a ... manner",
+          "note": "方式状语，结构相近"
+        }
+      ]
+    },
+    {
+      "w": "calculate",
+      "syn": [
+        {
+          "w": "compute",
+          "note": "计算，较正式"
+        },
+        {
+          "w": "figure out",
+          "note": "口语，算出/弄明白"
+        },
+        {
+          "w": "estimate",
+          "note": "侧重估算"
+        },
+        {
+          "w": "reckon",
+          "note": "口语，认为/估算"
+        }
+      ]
+    },
+    {
+      "w": "chairwoman",
+      "syn": [
+        {
+          "w": "chairperson",
+          "note": "中性，不区分性别"
+        },
+        {
+          "w": "chair",
+          "note": "简称，主席"
+        },
+        {
+          "w": "president",
+          "note": "会长/主席，机构不同"
+        }
+      ]
+    },
+    {
+      "w": "gramme",
+      "syn": [
+        {
+          "w": "gram",
+          "note": "美式拼写，同义"
+        }
+      ]
+    },
+    {
+      "w": "gram",
+      "syn": [
+        {
+          "w": "gramme",
+          "note": "英式拼写，同义"
+        }
+      ]
+    },
+    {
+      "w": "flour",
+      "syn": [
+        {
+          "w": "powder",
+          "note": "粉；非专指面粉"
+        }
+      ]
+    },
+    {
+      "w": "venue",
+      "syn": [
+        {
+          "w": "site",
+          "note": "地点，较泛"
+        },
+        {
+          "w": "location",
+          "note": "位置/场所"
+        },
+        {
+          "w": "setting",
+          "note": "环境，活动背景"
+        }
+      ]
+    },
+    {
+      "w": "salesman",
+      "syn": [
+        {
+          "w": "salesperson",
+          "note": "中性，不区分性别"
+        },
+        {
+          "w": "seller",
+          "note": "卖者，较泛"
+        },
+        {
+          "w": "vendor",
+          "note": "摊贩/供货商"
+        }
+      ]
+    },
+    {
+      "w": "alien",
+      "syn": [
+        {
+          "w": "foreigner",
+          "note": "外国人，仅名词义"
+        },
+        {
+          "w": "stranger",
+          "note": "陌生人"
+        },
+        {
+          "w": "extraterrestrial",
+          "note": "外星人，较正式"
+        },
+        {
+          "w": "foreign",
+          "note": "形容词义：外国的"
+        }
+      ]
+    },
+    {
+      "w": "pros and cons",
+      "syn": [
+        {
+          "w": "advantages and disadvantages",
+          "note": "利弊，较口语"
+        },
+        {
+          "w": "merits and demerits",
+          "note": "优缺点，较正式"
+        }
+      ]
+    },
+    {
+      "w": "blurred",
+      "syn": [
+        {
+          "w": "unclear",
+          "note": "模糊不清的"
+        },
+        {
+          "w": "vague",
+          "note": "含糊的"
+        },
+        {
+          "w": "hazy",
+          "note": "朦胧的"
+        }
+      ]
+    }
+  ]
+}

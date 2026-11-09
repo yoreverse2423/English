@@ -1,0 +1,204 @@
+{
+  "items": [
+    {
+      "w": "prairie",
+      "syn": [
+        {
+          "w": "grassland",
+          "note": "泛指草地、草原"
+        },
+        {
+          "w": "plain",
+          "note": "平原，侧重地形平坦"
+        },
+        {
+          "w": "steppe",
+          "note": "干草原，特指欧亚"
+        }
+      ]
+    },
+    {
+      "w": "anticipate",
+      "syn": [
+        {
+          "w": "expect",
+          "note": "最常用，预期"
+        },
+        {
+          "w": "foresee",
+          "note": "预见，更正式"
+        },
+        {
+          "w": "predict",
+          "note": "预测，侧重推断"
+        }
+      ]
+    },
+    {
+      "w": "bunch",
+      "syn": [
+        {
+          "w": "cluster",
+          "note": "簇、串，侧重聚集"
+        },
+        {
+          "w": "bundle",
+          "note": "捆、束，侧重捆扎"
+        },
+        {
+          "w": "group",
+          "note": "群，最泛"
+        }
+      ]
+    },
+    {
+      "w": "a bunch of",
+      "syn": [
+        {
+          "w": "a cluster of",
+          "note": "一簇，侧重聚集"
+        },
+        {
+          "w": "a bundle of",
+          "note": "一捆，侧重捆扎"
+        },
+        {
+          "w": "a lot of",
+          "note": "许多，口语泛指"
+        }
+      ]
+    },
+    {
+      "w": "thunder",
+      "syn": [
+        {
+          "w": "rumble",
+          "note": "隆隆声，侧重低沉声响"
+        },
+        {
+          "w": "roar",
+          "note": "轰鸣、咆哮"
+        }
+      ]
+    },
+    {
+      "w": "frost",
+      "syn": [
+        {
+          "w": "freeze",
+          "note": "冰冻，侧重严寒状态"
+        },
+        {
+          "w": "rime",
+          "note": "白霜，书面"
+        },
+        {
+          "w": "chill",
+          "note": "寒意，程度较轻"
+        }
+      ]
+    },
+    {
+      "w": "curtain",
+      "syn": [
+        {
+          "w": "drape",
+          "note": "窗帘，多用复数，美式"
+        },
+        {
+          "w": "blind",
+          "note": "百叶窗、遮帘"
+        },
+        {
+          "w": "screen",
+          "note": "遮蔽物，侧重遮挡"
+        }
+      ]
+    },
+    {
+      "w": "border",
+      "syn": [
+        {
+          "w": "boundary",
+          "note": "分界线，侧重界限"
+        },
+        {
+          "w": "frontier",
+          "note": "边疆，侧重边远地区"
+        },
+        {
+          "w": "margin",
+          "note": "边缘，侧重页边或余量"
+        }
+      ]
+    },
+    {
+      "w": "duration",
+      "syn": [
+        {
+          "w": "length",
+          "note": "时长，侧重持续长度"
+        },
+        {
+          "w": "period",
+          "note": "期间，一段时间"
+        },
+        {
+          "w": "span",
+          "note": "跨度，侧重起止之间"
+        }
+      ]
+    },
+    {
+      "w": "harbour",
+      "syn": [
+        {
+          "w": "port",
+          "note": "港口，侧重商港"
+        },
+        {
+          "w": "dock",
+          "note": "码头，侧重停泊处"
+        },
+        {
+          "w": "shelter",
+          "note": "避难所，侧重庇护"
+        }
+      ]
+    },
+    {
+      "w": "harbor",
+      "syn": [
+        {
+          "w": "port",
+          "note": "港口，侧重商港"
+        },
+        {
+          "w": "shelter",
+          "note": "庇护所，侧重保护"
+        },
+        {
+          "w": "cherish",
+          "note": "怀有（想法、希望）"
+        }
+      ]
+    },
+    {
+      "w": "enrol",
+      "syn": [
+        {
+          "w": "register",
+          "note": "登记、注册，最常用"
+        },
+        {
+          "w": "enlist",
+          "note": "应征、报名参加"
+        },
+        {
+          "w": "sign up",
+          "note": "报名，口语"
+        }
+      ]
+    }
+  ]
+}

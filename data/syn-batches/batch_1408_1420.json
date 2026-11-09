@@ -1,0 +1,178 @@
+{
+  "items": [
+    {
+      "w": "accompany",
+      "syn": [
+        {
+          "w": "escort",
+          "note": "更正式，常指护送陪同"
+        },
+        {
+          "w": "go with",
+          "note": "一同去，陪伴"
+        },
+        {
+          "w": "attend",
+          "note": "正式陪同、随行"
+        }
+      ]
+    },
+    {
+      "w": "adopt",
+      "syn": [
+        {
+          "w": "embrace",
+          "note": "采纳观点、做法"
+        },
+        {
+          "w": "accept",
+          "note": "接受、采纳"
+        },
+        {
+          "w": "take in",
+          "note": "收养；收留"
+        }
+      ]
+    },
+    {
+      "w": "sour",
+      "syn": [
+        {
+          "w": "tart",
+          "note": "酸涩的，多指水果"
+        },
+        {
+          "w": "acidic",
+          "note": "酸性的"
+        },
+        {
+          "w": "tangy",
+          "note": "味道浓而酸"
+        }
+      ]
+    },
+    {
+      "w": "set out",
+      "syn": [
+        {
+          "w": "set off",
+          "note": "出发、动身"
+        },
+        {
+          "w": "start out",
+          "note": "开始；出发"
+        },
+        {
+          "w": "depart",
+          "note": "离开、出发，较正式"
+        }
+      ]
+    },
+    {
+      "w": "bless",
+      "syn": [
+        {
+          "w": "sanctify",
+          "note": "更正式，使神圣"
+        },
+        {
+          "w": "praise",
+          "note": "赞美、称颂"
+        }
+      ]
+    },
+    {
+      "w": "live off",
+      "syn": [
+        {
+          "w": "depend on",
+          "note": "依靠……生活"
+        },
+        {
+          "w": "live on",
+          "note": "靠某食物或收入生活"
+        },
+        {
+          "w": "rely on",
+          "note": "依赖、依靠"
+        }
+      ]
+    },
+    {
+      "w": "prohibition",
+      "syn": [
+        {
+          "w": "ban",
+          "note": "禁令；禁止"
+        },
+        {
+          "w": "embargo",
+          "note": "禁运，多指贸易"
+        },
+        {
+          "w": "restriction",
+          "note": "限制、限制规定"
+        }
+      ]
+    },
+    {
+      "w": "prohibit",
+      "syn": [
+        {
+          "w": "forbid",
+          "note": "普通用词，禁止"
+        },
+        {
+          "w": "ban",
+          "note": "官方明令禁止"
+        },
+        {
+          "w": "bar",
+          "note": "阻止；禁止进入"
+        }
+      ]
+    },
+    {
+      "w": "journalist",
+      "syn": [
+        {
+          "w": "reporter",
+          "note": "记者"
+        },
+        {
+          "w": "correspondent",
+          "note": "通讯员；驻外记者"
+        }
+      ]
+    },
+    {
+      "w": "sneeze",
+      "syn": []
+    },
+    {
+      "w": "teapot",
+      "syn": []
+    },
+    {
+      "w": "label",
+      "syn": [
+        {
+          "w": "tag",
+          "note": "标签；加标签"
+        },
+        {
+          "w": "mark",
+          "note": "标记；标明"
+        },
+        {
+          "w": "brand",
+          "note": "品牌；打烙印"
+        },
+        {
+          "w": "classify",
+          "note": "把……归类"
+        }
+      ]
+    }
+  ]
+}

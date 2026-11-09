@@ -1,0 +1,181 @@
+{
+  "items": [
+    {
+      "w": "Birmingham",
+      "syn": []
+    },
+    {
+      "w": "Confucius",
+      "syn": []
+    },
+    {
+      "w": "mansion",
+      "syn": [
+        {
+          "w": "villa",
+          "note": "别墅，偏住宅"
+        },
+        {
+          "w": "residence",
+          "note": "宅邸，较正式"
+        },
+        {
+          "w": "palace",
+          "note": "宫殿，规模更大"
+        }
+      ]
+    },
+    {
+      "w": "cemetery",
+      "syn": [
+        {
+          "w": "graveyard",
+          "note": "墓地，较口语"
+        },
+        {
+          "w": "burial ground",
+          "note": "墓地，强调埋葬地"
+        }
+      ]
+    },
+    {
+      "w": "philosophy",
+      "syn": [
+        {
+          "w": "thought",
+          "note": "思想体系"
+        },
+        {
+          "w": "ideology",
+          "note": "意识形态"
+        },
+        {
+          "w": "outlook",
+          "note": "人生观，看法"
+        },
+        {
+          "w": "doctrine",
+          "note": "学说，教义"
+        }
+      ]
+    },
+    {
+      "w": "descendant",
+      "syn": [
+        {
+          "w": "offspring",
+          "note": "后代，子女"
+        },
+        {
+          "w": "heir",
+          "note": "继承人，侧重继承"
+        }
+      ]
+    },
+    {
+      "w": "individual",
+      "syn": [
+        {
+          "w": "person",
+          "note": "个人"
+        },
+        {
+          "w": "being",
+          "note": "个体，较正式"
+        },
+        {
+          "w": "separate",
+          "note": "adj. 单独的"
+        },
+        {
+          "w": "distinct",
+          "note": "adj. 独特的，不同的"
+        }
+      ]
+    },
+    {
+      "w": "heel",
+      "syn": []
+    },
+    {
+      "w": "Achilles' heel",
+      "syn": [
+        {
+          "w": "weakness",
+          "note": "弱点"
+        },
+        {
+          "w": "weak spot",
+          "note": "薄弱环节"
+        },
+        {
+          "w": "vulnerability",
+          "note": "易受攻击之处"
+        },
+        {
+          "w": "failing",
+          "note": "缺点，短处"
+        }
+      ]
+    },
+    {
+      "w": "kingdom",
+      "syn": [
+        {
+          "w": "realm",
+          "note": "王国；领域，较正式"
+        },
+        {
+          "w": "domain",
+          "note": "领域"
+        },
+        {
+          "w": "monarchy",
+          "note": "君主国"
+        }
+      ]
+    },
+    {
+      "w": "chief",
+      "syn": [
+        {
+          "w": "leader",
+          "note": "首领"
+        },
+        {
+          "w": "head",
+          "note": "头目，负责人"
+        },
+        {
+          "w": "principal",
+          "note": "adj. 主要的"
+        },
+        {
+          "w": "main",
+          "note": "adj. 主要的"
+        }
+      ]
+    },
+    {
+      "w": "puzzle",
+      "syn": [
+        {
+          "w": "riddle",
+          "note": "谜语，谜"
+        },
+        {
+          "w": "mystery",
+          "note": "谜团"
+        },
+        {
+          "w": "confuse",
+          "note": "使困惑"
+        },
+        {
+          "w": "baffle",
+          "note": "使困惑，较正式"
+        }
+      ]
+    }
+  ]
+}

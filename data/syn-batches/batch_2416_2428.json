@@ -1,0 +1,114 @@
+{
+  "items": [
+    {
+      "w": "Braille",
+      "syn": []
+    },
+    {
+      "w": "braille",
+      "syn": []
+    },
+    {
+      "w": "The Three-Body Problem",
+      "syn": []
+    },
+    {
+      "w": "Hugo Award",
+      "syn": []
+    },
+    {
+      "w": "iconic",
+      "syn": [
+        {
+          "w": "symbolic",
+          "note": "象征性的"
+        },
+        {
+          "w": "representative",
+          "note": "有代表性的"
+        },
+        {
+          "w": "emblematic",
+          "note": "象征的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "foundation",
+      "syn": [
+        {
+          "w": "basis",
+          "note": "抽象基础"
+        },
+        {
+          "w": "base",
+          "note": "具体地基或基础"
+        },
+        {
+          "w": "groundwork",
+          "note": "基础工作，准备"
+        }
+      ]
+    },
+    {
+      "w": "political",
+      "syn": [
+        {
+          "w": "governmental",
+          "note": "政府的"
+        },
+        {
+          "w": "partisan",
+          "note": "党派的，有倾向的"
+        }
+      ]
+    },
+    {
+      "w": "didgeridoo",
+      "syn": []
+    },
+    {
+      "w": "located",
+      "syn": [
+        {
+          "w": "situated",
+          "note": "位于，较正式"
+        },
+        {
+          "w": "sited",
+          "note": "坐落于，强调选址"
+        }
+      ]
+    },
+    {
+      "w": "equator",
+      "syn": []
+    },
+    {
+      "w": "koala",
+      "syn": [
+        {
+          "w": "koala bear",
+          "note": "俗称，并非熊类"
+        }
+      ]
+    },
+    {
+      "w": "barbecue",
+      "syn": [
+        {
+          "w": "cookout",
+          "note": "美式野外烧烤"
+        },
+        {
+          "w": "grill",
+          "note": "烧烤；烤制"
+        },
+        {
+          "w": "BBQ",
+          "note": "缩写，口语常用"
+        }
+      ]
+    }
+  ]
+}

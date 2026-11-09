@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "w": "evaluate",
+      "syn": [
+        {
+          "w": "assess",
+          "note": "侧重评估价值/水平"
+        },
+        {
+          "w": "judge",
+          "note": "判断，较通用"
+        },
+        {
+          "w": "appraise",
+          "note": "较正式，估价"
+        }
+      ]
+    },
+    {
+      "w": "property",
+      "syn": [
+        {
+          "w": "asset",
+          "note": "指资产，常可数"
+        },
+        {
+          "w": "belongings",
+          "note": "侧重个人财物"
+        },
+        {
+          "w": "estate",
+          "note": "地产，财产"
+        },
+        {
+          "w": "quality",
+          "note": "对应“性质”义"
+        }
+      ]
+    },
+    {
+      "w": "distinct",
+      "syn": [
+        {
+          "w": "clear",
+          "note": "对应“清楚、明显”"
+        },
+        {
+          "w": "obvious",
+          "note": "侧重显而易见"
+        },
+        {
+          "w": "unique",
+          "note": "对应“独特”义"
+        }
+      ]
+    },
+    {
+      "w": "extract",
+      "syn": [
+        {
+          "w": "remove",
+          "note": "对应“取出”"
+        },
+        {
+          "w": "quote",
+          "note": "对应“摘录”"
+        },
+        {
+          "w": "juice",
+          "note": "对应“汁”义"
+        }
+      ]
+    },
+    {
+      "w": "wormwood",
+      "syn": [
+        {
+          "w": "bitterness",
+          "note": "对应“苦恼”义"
+        },
+        {
+          "w": "sorrow",
+          "note": "悲伤，苦恼"
+        }
+      ]
+    },
+    {
+      "w": "boil",
+      "syn": [
+        {
+          "w": "simmer",
+          "note": "用文火慢煮"
+        },
+        {
+          "w": "seethe",
+          "note": "沸腾，较文雅"
+        }
+      ]
+    },
+    {
+      "w": "liquid",
+      "syn": [
+        {
+          "w": "fluid",
+          "note": "流体，通用"
+        },
+        {
+          "w": "clear",
+          "note": "对应“清澈”义"
+        }
+      ]
+    },
+    {
+      "w": "obtain",
+      "syn": [
+        {
+          "w": "get",
+          "note": "最通用，口语"
+        },
+        {
+          "w": "acquire",
+          "note": "较正式，经努力获得"
+        },
+        {
+          "w": "gain",
+          "note": "侧重赢得、增加"
+        }
+      ]
+    },
+    {
+      "w": "acknowledge",
+      "syn": [
+        {
+          "w": "admit",
+          "note": "承认，偏不情愿"
+        },
+        {
+          "w": "recognize",
+          "note": "承认属实"
+        },
+        {
+          "w": "concede",
+          "note": "勉强承认"
+        }
+      ]
+    },
+    {
+      "w": "defeat",
+      "syn": [
+        {
+          "w": "beat",
+          "note": "击败，口语常用"
+        },
+        {
+          "w": "conquer",
+          "note": "征服，语气强"
+        },
+        {
+          "w": "loss",
+          "note": "对应名词“失败”"
+        },
+        {
+          "w": "failure",
+          "note": "失败，较通用"
+        }
+      ]
+    },
+    {
+      "w": "analyse",
+      "syn": [
+        {
+          "w": "examine",
+          "note": "细察，检查"
+        },
+        {
+          "w": "study",
+          "note": "研究，较泛"
+        }
+      ]
+    },
+    {
+      "w": "analyze",
+      "syn": [
+        {
+          "w": "examine",
+          "note": "细察，检查"
+        },
+        {
+          "w": "study",
+          "note": "研究，较泛"
+        }
+      ]
+    }
+  ]
+}

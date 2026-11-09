@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "w": "rank",
+      "syn": [
+        {
+          "w": "grade",
+          "note": "等级、级别"
+        },
+        {
+          "w": "position",
+          "note": "地位、职位"
+        },
+        {
+          "w": "status",
+          "note": "身份、地位"
+        }
+      ]
+    },
+    {
+      "w": "purchase",
+      "syn": [
+        {
+          "w": "buy",
+          "note": "最常用，购买"
+        },
+        {
+          "w": "acquire",
+          "note": "较正式，获得"
+        }
+      ]
+    },
+    {
+      "w": "mythology",
+      "syn": [
+        {
+          "w": "myths",
+          "note": "神话的总称"
+        },
+        {
+          "w": "legend",
+          "note": "传说，偏故事"
+        }
+      ]
+    },
+    {
+      "w": "client",
+      "syn": [
+        {
+          "w": "customer",
+          "note": "顾客，偏零售"
+        },
+        {
+          "w": "consumer",
+          "note": "消费者"
+        },
+        {
+          "w": "patron",
+          "note": "老主顾，较正式"
+        }
+      ]
+    },
+    {
+      "w": "photography",
+      "syn": [
+        {
+          "w": "picture-taking",
+          "note": "拍照，口语"
+        },
+        {
+          "w": "filming",
+          "note": "拍摄，偏影视"
+        }
+      ]
+    },
+    {
+      "w": "emerge",
+      "syn": [
+        {
+          "w": "appear",
+          "note": "出现，最常用"
+        },
+        {
+          "w": "surface",
+          "note": "浮现，侧重露出"
+        },
+        {
+          "w": "arise",
+          "note": "产生，多指问题"
+        }
+      ]
+    },
+    {
+      "w": "sunrise",
+      "syn": [
+        {
+          "w": "dawn",
+          "note": "黎明，侧重天刚亮"
+        },
+        {
+          "w": "daybreak",
+          "note": "破晓，较文学"
+        }
+      ]
+    },
+    {
+      "w": "convey",
+      "syn": [
+        {
+          "w": "express",
+          "note": "表达，侧重思想感情"
+        },
+        {
+          "w": "communicate",
+          "note": "传达，侧重信息"
+        },
+        {
+          "w": "transport",
+          "note": "运输，侧重运送"
+        }
+      ]
+    },
+    {
+      "w": "subjective",
+      "syn": [
+        {
+          "w": "personal",
+          "note": "个人的，侧偏见"
+        },
+        {
+          "w": "individual",
+          "note": "个人的，中性"
+        }
+      ]
+    },
+    {
+      "w": "outer",
+      "syn": [
+        {
+          "w": "external",
+          "note": "外部的，较正式"
+        },
+        {
+          "w": "exterior",
+          "note": "外面的，指表面"
+        },
+        {
+          "w": "outside",
+          "note": "外面的，最常用"
+        }
+      ]
+    },
+    {
+      "w": "subsequent",
+      "syn": [
+        {
+          "w": "following",
+          "note": "随后的，最常用"
+        },
+        {
+          "w": "later",
+          "note": "后来的，指时间"
+        },
+        {
+          "w": "ensuing",
+          "note": "接着发生的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "fond",
+      "syn": [
+        {
+          "w": "affectionate",
+          "note": "深情的，侧重感情"
+        },
+        {
+          "w": "loving",
+          "note": "充满爱的"
+        },
+        {
+          "w": "devoted",
+          "note": "挚爱的，侧重投入"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "items": [
+    {
+      "w": "grief",
+      "syn": [
+        {
+          "w": "sorrow",
+          "note": "较正式，指长期悲伤"
+        },
+        {
+          "w": "sadness",
+          "note": "最通用，悲伤"
+        },
+        {
+          "w": "misery",
+          "note": "侧重痛苦不幸"
+        },
+        {
+          "w": "anguish",
+          "note": "极度痛苦，强烈"
+        }
+      ]
+    },
+    {
+      "w": "complicated",
+      "syn": [
+        {
+          "w": "complex",
+          "note": "最常用，结构复杂"
+        },
+        {
+          "w": "intricate",
+          "note": "错综精细，较正式"
+        },
+        {
+          "w": "involved",
+          "note": "含诸多细节，口语"
+        },
+        {
+          "w": "difficult",
+          "note": "侧重难以理解"
+        }
+      ]
+    },
+    {
+      "w": "variation",
+      "syn": [
+        {
+          "w": "change",
+          "note": "泛指变化"
+        },
+        {
+          "w": "difference",
+          "note": "侧重差异"
+        },
+        {
+          "w": "alteration",
+          "note": "较正式，改动"
+        },
+        {
+          "w": "fluctuation",
+          "note": "侧重波动"
+        }
+      ]
+    },
+    {
+      "w": "racial",
+      "syn": [
+        {
+          "w": "ethnic",
+          "note": "侧重民族/文化群体"
+        },
+        {
+          "w": "racial",
+          "note": "种族相关"
+        }
+      ]
+    },
+    {
+      "w": "prejudice",
+      "syn": [
+        {
+          "w": "bias",
+          "note": "偏向，常指不公"
+        },
+        {
+          "w": "discrimination",
+          "note": "歧视，行为上"
+        },
+        {
+          "w": "partiality",
+          "note": "偏爱，较正式"
+        }
+      ]
+    },
+    {
+      "w": "Shakespeare",
+      "syn": []
+    },
+    {
+      "w": "The Crescent Moon",
+      "syn": []
+    },
+    {
+      "w": "Tagore",
+      "syn": []
+    },
+    {
+      "w": "Elizabeth Barrett Browning",
+      "syn": []
+    },
+    {
+      "w": "Robert Browning",
+      "syn": []
+    },
+    {
+      "w": "the Victorian era",
+      "syn": []
+    },
+    {
+      "w": "Sonnets from the Portuguese",
+      "syn": []
+    }
+  ]
+}

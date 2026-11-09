@@ -1,0 +1,211 @@
+{
+  "items": [
+    {
+      "w": "consumption",
+      "syn": [
+        {
+          "w": "use",
+          "note": "使用；消耗"
+        },
+        {
+          "w": "usage",
+          "note": "使用量；消耗"
+        },
+        {
+          "w": "expenditure",
+          "note": "支出；消耗，较正式"
+        },
+        {
+          "w": "intake",
+          "note": "摄入量"
+        }
+      ]
+    },
+    {
+      "w": "comprise",
+      "syn": [
+        {
+          "w": "include",
+          "note": "包含，常指部分"
+        },
+        {
+          "w": "contain",
+          "note": "含有；容纳"
+        },
+        {
+          "w": "consist of",
+          "note": "由…组成"
+        }
+      ]
+    },
+    {
+      "w": "be comprised of",
+      "syn": [
+        {
+          "w": "consist of",
+          "note": "由…组成"
+        },
+        {
+          "w": "be composed of",
+          "note": "由…组成，较正式"
+        },
+        {
+          "w": "be made up of",
+          "note": "由…构成"
+        }
+      ]
+    },
+    {
+      "w": "generate",
+      "syn": [
+        {
+          "w": "produce",
+          "note": "产生；生产"
+        },
+        {
+          "w": "create",
+          "note": "创造；引起"
+        },
+        {
+          "w": "cause",
+          "note": "引起；导致"
+        },
+        {
+          "w": "yield",
+          "note": "产生（结果、收益）"
+        }
+      ]
+    },
+    {
+      "w": "strain",
+      "syn": [
+        {
+          "w": "tension",
+          "note": "张力；紧张"
+        },
+        {
+          "w": "stress",
+          "note": "压力；紧张"
+        },
+        {
+          "w": "burden",
+          "note": "负担"
+        },
+        {
+          "w": "sprain",
+          "note": "特指扭伤"
+        }
+      ]
+    },
+    {
+      "w": "leisure",
+      "syn": [
+        {
+          "w": "free time",
+          "note": "空闲时间"
+        },
+        {
+          "w": "spare time",
+          "note": "业余时间"
+        },
+        {
+          "w": "relaxation",
+          "note": "放松；消遣"
+        }
+      ]
+    },
+    {
+      "w": "deep down",
+      "syn": [
+        {
+          "w": "at heart",
+          "note": "内心深处；本质上"
+        },
+        {
+          "w": "in essence",
+          "note": "本质上"
+        },
+        {
+          "w": "fundamentally",
+          "note": "根本上"
+        },
+        {
+          "w": "basically",
+          "note": "基本上"
+        }
+      ]
+    },
+    {
+      "w": "soil",
+      "syn": [
+        {
+          "w": "earth",
+          "note": "泥土；土壤"
+        },
+        {
+          "w": "dirt",
+          "note": "泥土；污物"
+        },
+        {
+          "w": "land",
+          "note": "土地"
+        },
+        {
+          "w": "dirty",
+          "note": "作动词时弄脏"
+        }
+      ]
+    },
+    {
+      "w": "celebrity",
+      "syn": [
+        {
+          "w": "famous person",
+          "note": "名人"
+        },
+        {
+          "w": "star",
+          "note": "明星"
+        },
+        {
+          "w": "fame",
+          "note": "名声，不可数"
+        }
+      ]
+    },
+    {
+      "w": "envision",
+      "syn": [
+        {
+          "w": "imagine",
+          "note": "想象"
+        },
+        {
+          "w": "visualize",
+          "note": "设想；形象化"
+        },
+        {
+          "w": "foresee",
+          "note": "预见"
+        },
+        {
+          "w": "picture",
+          "note": "想象；设想"
+        }
+      ]
+    },
+    {
+      "w": "sorghum",
+      "syn": []
+    },
+    {
+      "w": "broom",
+      "syn": [
+        {
+          "w": "sweep",
+          "note": "作动词时扫除"
+        }
+      ]
+    }
+  ]
+}

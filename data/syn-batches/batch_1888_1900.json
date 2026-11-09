@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "w": "mist",
+      "syn": [
+        {
+          "w": "fog",
+          "note": "雾，比mist浓"
+        },
+        {
+          "w": "haze",
+          "note": "薄雾/霾"
+        },
+        {
+          "w": "blur",
+          "note": "模糊不清之物"
+        }
+      ]
+    },
+    {
+      "w": "steel",
+      "syn": [
+        {
+          "w": "harden",
+          "note": "动词义：使坚强"
+        },
+        {
+          "w": "strengthen",
+          "note": "动词义：加强"
+        }
+      ]
+    },
+    {
+      "w": "dusk",
+      "syn": [
+        {
+          "w": "twilight",
+          "note": "黄昏/暮光"
+        },
+        {
+          "w": "nightfall",
+          "note": "傍晚/入夜"
+        },
+        {
+          "w": "evening",
+          "note": "傍晚，更泛"
+        }
+      ]
+    },
+    {
+      "w": "advertisement",
+      "syn": [
+        {
+          "w": "ad",
+          "note": "广告，口语"
+        },
+        {
+          "w": "commercial",
+          "note": "电视/广播广告"
+        },
+        {
+          "w": "promotion",
+          "note": "促销宣传"
+        },
+        {
+          "w": "publicity",
+          "note": "宣传"
+        }
+      ]
+    },
+    {
+      "w": "accent",
+      "syn": [
+        {
+          "w": "stress",
+          "note": "重音/强调"
+        },
+        {
+          "w": "emphasis",
+          "note": "强调"
+        }
+      ]
+    },
+    {
+      "w": "photographer",
+      "syn": [
+        {
+          "w": "cameraman",
+          "note": "摄像师/摄影师"
+        },
+        {
+          "w": "photojournalist",
+          "note": "新闻摄影师"
+        }
+      ]
+    },
+    {
+      "w": "owe",
+      "syn": [
+        {
+          "w": "be in debt to",
+          "note": "欠钱"
+        },
+        {
+          "w": "be indebted to",
+          "note": "欠人情/感激"
+        },
+        {
+          "w": "attribute to",
+          "note": "把…归功于"
+        }
+      ]
+    },
+    {
+      "w": "owe sth. to sb.",
+      "syn": [
+        {
+          "w": "attribute sth. to sb.",
+          "note": "把…归因于"
+        },
+        {
+          "w": "credit sth. to sb.",
+          "note": "把…归功于"
+        },
+        {
+          "w": "be due to",
+          "note": "由于"
+        }
+      ]
+    },
+    {
+      "w": "toast",
+      "syn": [
+        {
+          "w": "cheers",
+          "note": "干杯用语"
+        },
+        {
+          "w": "salute",
+          "note": "祝酒/致敬"
+        }
+      ]
+    },
+    {
+      "w": "cobblestone",
+      "syn": [
+        {
+          "w": "pebble",
+          "note": "小卵石"
+        },
+        {
+          "w": "cobble",
+          "note": "圆石"
+        },
+        {
+          "w": "stone",
+          "note": "石头，泛指"
+        }
+      ]
+    },
+    {
+      "w": "coherent",
+      "syn": [
+        {
+          "w": "consistent",
+          "note": "一致的"
+        },
+        {
+          "w": "logical",
+          "note": "有逻辑的"
+        },
+        {
+          "w": "clear",
+          "note": "清晰的"
+        },
+        {
+          "w": "connected",
+          "note": "连贯的"
+        }
+      ]
+    },
+    {
+      "w": "Halifax",
+      "syn": []
+    }
+  ]
+}

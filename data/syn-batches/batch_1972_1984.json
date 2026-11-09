@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "w": "fist",
+      "syn": []
+    },
+    {
+      "w": "grab",
+      "syn": [
+        {
+          "w": "seize",
+          "note": "更正式，强调突然用力抓住"
+        },
+        {
+          "w": "snatch",
+          "note": "侧重一把抢走"
+        },
+        {
+          "w": "grasp",
+          "note": "强调握牢、领会"
+        }
+      ]
+    },
+    {
+      "w": "tight",
+      "syn": [
+        {
+          "w": "firm",
+          "note": "侧重牢固、结实"
+        },
+        {
+          "w": "taut",
+          "note": "专指绳索等绷紧"
+        },
+        {
+          "w": "snug",
+          "note": "指衣服贴身、紧而舒适"
+        }
+      ]
+    },
+    {
+      "w": "motion",
+      "syn": [
+        {
+          "w": "movement",
+          "note": "最常用，指动作、运动"
+        },
+        {
+          "w": "gesture",
+          "note": "侧重手势、示意动作"
+        },
+        {
+          "w": "proposal",
+          "note": "对应“议案、提议”义"
+        }
+      ]
+    },
+    {
+      "w": "face up",
+      "syn": [
+        {
+          "w": "face",
+          "note": "直接面对，较简洁"
+        },
+        {
+          "w": "confront",
+          "note": "更正式，常指直面困难"
+        },
+        {
+          "w": "tackle",
+          "note": "侧重着手应付、处理"
+        }
+      ]
+    },
+    {
+      "w": "face down",
+      "syn": [
+        {
+          "w": "prone",
+          "note": "脸朝下趴着，较正式"
+        }
+      ]
+    },
+    {
+      "w": "justify",
+      "syn": [
+        {
+          "w": "defend",
+          "note": "侧重为…辩护"
+        },
+        {
+          "w": "warrant",
+          "note": "更正式，指使…显得有理"
+        },
+        {
+          "w": "account for",
+          "note": "侧重说明理由、解释"
+        }
+      ]
+    },
+    {
+      "w": "welfare",
+      "syn": [
+        {
+          "w": "well-being",
+          "note": "侧重幸福、安康"
+        },
+        {
+          "w": "benefit",
+          "note": "侧重福利待遇、好处"
+        },
+        {
+          "w": "good",
+          "note": "作名词指福祉，较文雅"
+        }
+      ]
+    },
+    {
+      "w": "collapse",
+      "syn": [
+        {
+          "w": "fall down",
+          "note": "口语，指倒塌"
+        },
+        {
+          "w": "break down",
+          "note": "侧重崩溃、出故障"
+        },
+        {
+          "w": "give way",
+          "note": "侧重支撑不住而塌陷"
+        }
+      ]
+    },
+    {
+      "w": "manual",
+      "syn": [
+        {
+          "w": "handbook",
+          "note": "对应“手册、指南”义"
+        },
+        {
+          "w": "guide",
+          "note": "指南，较宽泛"
+        },
+        {
+          "w": "hand-operated",
+          "note": "对应“手工操作的”义"
+        }
+      ]
+    },
+    {
+      "w": "sleep in",
+      "syn": [
+        {
+          "w": "oversleep",
+          "note": "侧重睡过头，常含迟到义"
+        },
+        {
+          "w": "lie in",
+          "note": "英式，指睡懒觉"
+        }
+      ]
+    },
+    {
+      "w": "out of shape",
+      "syn": [
+        {
+          "w": "deformed",
+          "note": "侧重变形、走样"
+        },
+        {
+          "w": "distorted",
+          "note": "侧重扭曲、变形"
+        },
+        {
+          "w": "unfit",
+          "note": "指身体状态不佳"
+        }
+      ]
+    }
+  ]
+}

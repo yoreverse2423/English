@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "w": "commercialization",
+      "syn": [
+        {
+          "w": "commercialism",
+          "note": "侧重商业气息/唯利是图"
+        },
+        {
+          "w": "marketization",
+          "note": "侧重市场化"
+        },
+        {
+          "w": "monetization",
+          "note": "侧重变现获利"
+        }
+      ]
+    },
+    {
+      "w": "take advantage of",
+      "syn": [
+        {
+          "w": "exploit",
+          "note": "常含剥削、贬义"
+        },
+        {
+          "w": "make use of",
+          "note": "中性“利用”"
+        },
+        {
+          "w": "capitalize on",
+          "note": "利用机会/优势"
+        },
+        {
+          "w": "deceive",
+          "note": "对应“欺骗”义"
+        }
+      ]
+    },
+    {
+      "w": "medium",
+      "syn": [
+        {
+          "w": "average",
+          "note": "中等的/平均的"
+        },
+        {
+          "w": "moderate",
+          "note": "适度的/中等的"
+        },
+        {
+          "w": "intermediate",
+          "note": "中间的/中级的"
+        },
+        {
+          "w": "means",
+          "note": "名词“手段”"
+        }
+      ]
+    },
+    {
+      "w": "media",
+      "syn": [
+        {
+          "w": "press",
+          "note": "新闻界/报刊"
+        },
+        {
+          "w": "mass media",
+          "note": "大众传媒"
+        },
+        {
+          "w": "news media",
+          "note": "新闻媒体"
+        }
+      ]
+    },
+    {
+      "w": "the media",
+      "syn": [
+        {
+          "w": "the press",
+          "note": "新闻界"
+        },
+        {
+          "w": "mass media",
+          "note": "大众传媒"
+        },
+        {
+          "w": "news outlets",
+          "note": "新闻机构"
+        }
+      ]
+    },
+    {
+      "w": "reflect",
+      "syn": [
+        {
+          "w": "mirror",
+          "note": "映照/反映"
+        },
+        {
+          "w": "show",
+          "note": "显示/表现出"
+        },
+        {
+          "w": "reveal",
+          "note": "反映/揭示"
+        },
+        {
+          "w": "ponder",
+          "note": "深思（不及物义）"
+        }
+      ]
+    },
+    {
+      "w": "belief",
+      "syn": [
+        {
+          "w": "faith",
+          "note": "信仰/信任"
+        },
+        {
+          "w": "conviction",
+          "note": "坚定的信念"
+        },
+        {
+          "w": "trust",
+          "note": "信任"
+        },
+        {
+          "w": "creed",
+          "note": "信条/教义"
+        }
+      ]
+    },
+    {
+      "w": "faith",
+      "syn": [
+        {
+          "w": "belief",
+          "note": "相信/信仰"
+        },
+        {
+          "w": "trust",
+          "note": "信任"
+        },
+        {
+          "w": "confidence",
+          "note": "信心/信任"
+        },
+        {
+          "w": "loyalty",
+          "note": "忠实/忠诚"
+        }
+      ]
+    },
+    {
+      "w": "occasion",
+      "syn": [
+        {
+          "w": "opportunity",
+          "note": "机会"
+        },
+        {
+          "w": "moment",
+          "note": "时机/时刻"
+        },
+        {
+          "w": "event",
+          "note": "场合/事件"
+        },
+        {
+          "w": "cause",
+          "note": "引起（动词义）"
+        }
+      ]
+    },
+    {
+      "w": "have sth. in common",
+      "syn": [
+        {
+          "w": "share",
+          "note": "共有（共同点）"
+        },
+        {
+          "w": "have similarities",
+          "note": "有相似之处"
+        },
+        {
+          "w": "be alike",
+          "note": "相似"
+        }
+      ]
+    },
+    {
+      "w": "atmosphere",
+      "syn": [
+        {
+          "w": "air",
+          "note": "空气/气氛"
+        },
+        {
+          "w": "mood",
+          "note": "气氛/情绪"
+        },
+        {
+          "w": "environment",
+          "note": "环境/氛围"
+        }
+      ]
+    },
+    {
+      "w": "lunar",
+      "syn": [
+        {
+          "w": "moon",
+          "note": "作定语表月球的"
+        },
+        {
+          "w": "of the moon",
+          "note": "月亮的（短语）"
+        }
+      ]
+    }
+  ]
+}

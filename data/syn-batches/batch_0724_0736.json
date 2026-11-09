@@ -1,0 +1,232 @@
+{
+  "items": [
+    {
+      "w": "thus",
+      "syn": [
+        {
+          "w": "therefore",
+          "note": "因此，较常用"
+        },
+        {
+          "w": "hence",
+          "note": "因此，更正式"
+        },
+        {
+          "w": "consequently",
+          "note": "结果，因此"
+        },
+        {
+          "w": "so",
+          "note": "所以，更口语"
+        }
+      ]
+    },
+    {
+      "w": "band",
+      "syn": [
+        {
+          "w": "group",
+          "note": "指乐队或一群"
+        },
+        {
+          "w": "strip",
+          "note": "指条带"
+        },
+        {
+          "w": "belt",
+          "note": "指腰带或带状物"
+        }
+      ]
+    },
+    {
+      "w": "rap",
+      "syn": [
+        {
+          "w": "tap",
+          "note": "轻敲"
+        },
+        {
+          "w": "knock",
+          "note": "敲击"
+        },
+        {
+          "w": "chat",
+          "note": "交谈，较口语"
+        }
+      ]
+    },
+    {
+      "w": "nowadays",
+      "syn": [
+        {
+          "w": "currently",
+          "note": "目前，当前"
+        },
+        {
+          "w": "today",
+          "note": "现今，当今"
+        },
+        {
+          "w": "presently",
+          "note": "目前，现在"
+        },
+        {
+          "w": "at present",
+          "note": "目前，短语"
+        }
+      ]
+    },
+    {
+      "w": "gradual",
+      "syn": [
+        {
+          "w": "progressive",
+          "note": "渐进的"
+        },
+        {
+          "w": "steady",
+          "note": "平稳渐进的"
+        },
+        {
+          "w": "slow",
+          "note": "缓慢的"
+        }
+      ]
+    },
+    {
+      "w": "capable",
+      "syn": [
+        {
+          "w": "able",
+          "note": "能干的，能够的"
+        },
+        {
+          "w": "competent",
+          "note": "有能力的，胜任的"
+        },
+        {
+          "w": "skilled",
+          "note": "熟练的，有技能的"
+        },
+        {
+          "w": "talented",
+          "note": "有才华的"
+        }
+      ]
+    },
+    {
+      "w": "relief",
+      "syn": [
+        {
+          "w": "ease",
+          "note": "减轻，缓解"
+        },
+        {
+          "w": "comfort",
+          "note": "安慰"
+        },
+        {
+          "w": "aid",
+          "note": "救济，援助"
+        },
+        {
+          "w": "assistance",
+          "note": "援助，帮助"
+        }
+      ]
+    },
+    {
+      "w": "cure",
+      "syn": [
+        {
+          "w": "heal",
+          "note": "治愈，侧重痊愈"
+        },
+        {
+          "w": "treat",
+          "note": "治疗，侧重过程"
+        },
+        {
+          "w": "remedy",
+          "note": "疗法，补救"
+        }
+      ]
+    },
+    {
+      "w": "absorbed in sth.",
+      "syn": [
+        {
+          "w": "engrossed in",
+          "note": "专心于某事"
+        },
+        {
+          "w": "immersed in",
+          "note": "沉浸于某事"
+        },
+        {
+          "w": "focused on",
+          "note": "集中于某事"
+        },
+        {
+          "w": "lost in",
+          "note": "沉浸于，入迷"
+        }
+      ]
+    },
+    {
+      "w": "absorbed in sb.",
+      "syn": [
+        {
+          "w": "engrossed in",
+          "note": "专注于某人"
+        },
+        {
+          "w": "focused on",
+          "note": "集中于某人"
+        },
+        {
+          "w": "attracted by",
+          "note": "被某人吸引"
+        }
+      ]
+    },
+    {
+      "w": "previous",
+      "syn": [
+        {
+          "w": "prior",
+          "note": "以前的，更正式"
+        },
+        {
+          "w": "earlier",
+          "note": "较早的"
+        },
+        {
+          "w": "former",
+          "note": "以前的，前者的"
+        },
+        {
+          "w": "preceding",
+          "note": "紧接在前的"
+        }
+      ]
+    },
+    {
+      "w": "unemployed",
+      "syn": [
+        {
+          "w": "jobless",
+          "note": "失业的"
+        },
+        {
+          "w": "out of work",
+          "note": "失业，短语"
+        },
+        {
+          "w": "idle",
+          "note": "闲置的，无工作的"
+        }
+      ]
+    }
+  ]
+}

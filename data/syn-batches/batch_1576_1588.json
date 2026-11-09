@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "w": "grain",
+      "syn": [
+        {
+          "w": "cereal",
+          "note": "谷类作物，常指谷物"
+        },
+        {
+          "w": "kernel",
+          "note": "谷粒；颗粒"
+        },
+        {
+          "w": "texture",
+          "note": "纹理；质地"
+        }
+      ]
+    },
+    {
+      "w": "vision",
+      "syn": [
+        {
+          "w": "sight",
+          "note": "视力；景象"
+        },
+        {
+          "w": "eyesight",
+          "note": "视力"
+        },
+        {
+          "w": "imagination",
+          "note": "想象力"
+        },
+        {
+          "w": "dream",
+          "note": "愿景；幻想"
+        }
+      ]
+    },
+    {
+      "w": "reality",
+      "syn": [
+        {
+          "w": "fact",
+          "note": "事实；现实"
+        },
+        {
+          "w": "truth",
+          "note": "真实；真相"
+        },
+        {
+          "w": "actuality",
+          "note": "现实，较正式"
+        }
+      ]
+    },
+    {
+      "w": "salty",
+      "syn": [
+        {
+          "w": "saline",
+          "note": "含盐的，较正式"
+        },
+        {
+          "w": "salted",
+          "note": "加盐的；腌制的"
+        }
+      ]
+    },
+    {
+      "w": "urban",
+      "syn": [
+        {
+          "w": "city",
+          "note": "作定语表“城市的”"
+        },
+        {
+          "w": "municipal",
+          "note": "市政的；城市的，较正式"
+        },
+        {
+          "w": "metropolitan",
+          "note": "大都市的"
+        }
+      ]
+    },
+    {
+      "w": "bomb",
+      "syn": [
+        {
+          "w": "explosive",
+          "note": "爆炸物，泛指"
+        },
+        {
+          "w": "shell",
+          "note": "炮弹；炮击"
+        },
+        {
+          "w": "bombard",
+          "note": "轰炸，动词"
+        },
+        {
+          "w": "flop",
+          "note": "失败，口语"
+        }
+      ]
+    },
+    {
+      "w": "tunnel",
+      "syn": [
+        {
+          "w": "passage",
+          "note": "通道，尤指地下通道"
+        },
+        {
+          "w": "burrow",
+          "note": "洞穴；挖洞"
+        },
+        {
+          "w": "dig",
+          "note": "挖掘"
+        },
+        {
+          "w": "bore",
+          "note": "钻掘；打隧道"
+        }
+      ]
+    },
+    {
+      "w": "extension",
+      "syn": [
+        {
+          "w": "expansion",
+          "note": "扩大；扩展"
+        },
+        {
+          "w": "prolongation",
+          "note": "延长，较正式"
+        },
+        {
+          "w": "addition",
+          "note": "扩建部分；附加"
+        },
+        {
+          "w": "postponement",
+          "note": "延期，指期限推迟"
+        }
+      ]
+    },
+    {
+      "w": "chemical",
+      "syn": [
+        {
+          "w": "compound",
+          "note": "化合物"
+        },
+        {
+          "w": "substance",
+          "note": "物质，泛指"
+        }
+      ]
+    },
+    {
+      "w": "wheat",
+      "syn": [
+        {
+          "w": "cereal",
+          "note": "谷类作物，上位词"
+        },
+        {
+          "w": "grain",
+          "note": "谷物，上位词"
+        }
+      ]
+    },
+    {
+      "w": "flavour",
+      "syn": [
+        {
+          "w": "taste",
+          "note": "味道；滋味"
+        },
+        {
+          "w": "savour",
+          "note": "风味；滋味，英式拼写"
+        },
+        {
+          "w": "aroma",
+          "note": "香味，多指香气"
+        },
+        {
+          "w": "season",
+          "note": "给…调味"
+        }
+      ]
+    },
+    {
+      "w": "flavor",
+      "syn": [
+        {
+          "w": "taste",
+          "note": "味道；滋味"
+        },
+        {
+          "w": "savor",
+          "note": "风味；滋味，美式拼写"
+        },
+        {
+          "w": "aroma",
+          "note": "香味，多指香气"
+        },
+        {
+          "w": "season",
+          "note": "给…调味"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "w": "worthy",
+      "syn": [
+        {
+          "w": "deserving",
+          "note": "值得的；配得上的"
+        },
+        {
+          "w": "valuable",
+          "note": "有价值的"
+        },
+        {
+          "w": "notable",
+          "note": "知名人士（名词）"
+        },
+        {
+          "w": "celebrity",
+          "note": "知名人士"
+        }
+      ]
+    },
+    {
+      "w": "be worthy of",
+      "syn": [
+        {
+          "w": "deserve",
+          "note": "动词，值得"
+        },
+        {
+          "w": "be deserving of",
+          "note": "值得；配得上"
+        },
+        {
+          "w": "merit",
+          "note": "较正式，值得"
+        }
+      ]
+    },
+    {
+      "w": "The Middle Ages",
+      "syn": [
+        {
+          "w": "the medieval period",
+          "note": "同指中世纪时期"
+        },
+        {
+          "w": "the medieval era",
+          "note": "同指中世纪时代"
+        }
+      ]
+    },
+    {
+      "w": "Giotto di Bondone",
+      "syn": []
+    },
+    {
+      "w": "the Renaissance",
+      "syn": []
+    },
+    {
+      "w": "Masaccio",
+      "syn": []
+    },
+    {
+      "w": "Leonardo da Vinci",
+      "syn": []
+    },
+    {
+      "w": "Michelangelo",
+      "syn": []
+    },
+    {
+      "w": "Raphael",
+      "syn": []
+    },
+    {
+      "w": "Rembrandt",
+      "syn": []
+    },
+    {
+      "w": "Impressionism",
+      "syn": [
+        {
+          "w": "the Impressionist movement",
+          "note": "印象主义运动"
+        },
+        {
+          "w": "Impressionist art",
+          "note": "印象派艺术"
+        }
+      ]
+    },
+    {
+      "w": "Claude Monet",
+      "syn": []
+    }
+  ]
+}

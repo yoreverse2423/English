@@ -1,0 +1,329 @@
+{
+  "items": [
+    {
+      "w": "whale",
+      "syn": []
+    },
+    {
+      "w": "antelope",
+      "syn": []
+    },
+    {
+      "w": "Tibetan antelope",
+      "syn": []
+    },
+    {
+      "w": "reserve",
+      "syn": [
+        {
+          "w": "store",
+          "note": "储备；名词/动词"
+        },
+        {
+          "w": "stock",
+          "note": "库存；储备"
+        },
+        {
+          "w": "sanctuary",
+          "note": "自然保护区"
+        },
+        {
+          "w": "retain",
+          "note": "保留；较正式"
+        }
+      ]
+    },
+    {
+      "w": "plain",
+      "syn": [
+        {
+          "w": "simple",
+          "note": "简单的"
+        },
+        {
+          "w": "clear",
+          "note": "清晰的"
+        },
+        {
+          "w": "flat",
+          "note": "平的"
+        },
+        {
+          "w": "grassland",
+          "note": "平原；草原"
+        }
+      ]
+    },
+    {
+      "w": "make out",
+      "syn": [
+        {
+          "w": "understand",
+          "note": "理解"
+        },
+        {
+          "w": "figure out",
+          "note": "弄明白"
+        },
+        {
+          "w": "discern",
+          "note": "辨认出；较正式"
+        },
+        {
+          "w": "write out",
+          "note": "开出；写出"
+        }
+      ]
+    },
+    {
+      "w": "herd",
+      "syn": [
+        {
+          "w": "flock",
+          "note": "羊群/鸟群"
+        },
+        {
+          "w": "pack",
+          "note": "兽群"
+        },
+        {
+          "w": "gather",
+          "note": "聚集"
+        },
+        {
+          "w": "drive",
+          "note": "放牧；驱赶"
+        }
+      ]
+    },
+    {
+      "w": "observe",
+      "syn": [
+        {
+          "w": "watch",
+          "note": "观察"
+        },
+        {
+          "w": "notice",
+          "note": "注意到"
+        },
+        {
+          "w": "celebrate",
+          "note": "庆祝"
+        },
+        {
+          "w": "obey",
+          "note": "遵守"
+        }
+      ]
+    },
+    {
+      "w": "beauty",
+      "syn": [
+        {
+          "w": "charm",
+          "note": "魅力"
+        },
+        {
+          "w": "loveliness",
+          "note": "美丽；可爱"
+        },
+        {
+          "w": "belle",
+          "note": "美人"
+        }
+      ]
+    },
+    {
+      "w": "remind",
+      "syn": [
+        {
+          "w": "prompt",
+          "note": "提醒；促使"
+        },
+        {
+          "w": "alert",
+          "note": "提醒；使警觉"
+        },
+        {
+          "w": "jog one's memory",
+          "note": "唤起记忆"
+        }
+      ]
+    },
+    {
+      "w": "remind sb. of sb.",
+      "syn": [
+        {
+          "w": "put sb in mind of sb",
+          "note": "使想起某人；较正式"
+        }
+      ]
+    },
+    {
+      "w": "remind sb. of sth.",
+      "syn": [
+        {
+          "w": "put sb in mind of sth",
+          "note": "使想起某事；较正式"
+        },
+        {
+          "w": "make sb think of sth",
+          "note": "使想起某事"
+        }
+      ]
+    },
+    {
+      "w": "fur",
+      "syn": [
+        {
+          "w": "pelt",
+          "note": "带毛兽皮"
+        },
+        {
+          "w": "hide",
+          "note": "兽皮"
+        },
+        {
+          "w": "coat",
+          "note": "动物毛皮"
+        }
+      ]
+    },
+    {
+      "w": "sacred",
+      "syn": [
+        {
+          "w": "holy",
+          "note": "神圣的"
+        },
+        {
+          "w": "divine",
+          "note": "神的；神圣的"
+        },
+        {
+          "w": "blessed",
+          "note": "神圣的；受祝福的"
+        }
+      ]
+    },
+    {
+      "w": "shoot",
+      "syn": [
+        {
+          "w": "sprout",
+          "note": "嫩芽"
+        },
+        {
+          "w": "offshoot",
+          "note": "分枝；分株"
+        },
+        {
+          "w": "branch",
+          "note": "枝条"
+        }
+      ]
+    },
+    {
+      "w": "shot",
+      "syn": [
+        {
+          "w": "gunfire",
+          "note": "射击；炮火"
+        },
+        {
+          "w": "attempt",
+          "note": "尝试"
+        },
+        {
+          "w": "photograph",
+          "note": "照片；镜头"
+        },
+        {
+          "w": "injection",
+          "note": "注射"
+        }
+      ]
+    },
+    {
+      "w": "shot",
+      "syn": [
+        {
+          "w": "gunfire",
+          "note": "射击；炮火"
+        },
+        {
+          "w": "attempt",
+          "note": "尝试"
+        },
+        {
+          "w": "photograph",
+          "note": "照片；镜头"
+        },
+        {
+          "w": "injection",
+          "note": "注射"
+        }
+      ]
+    },
+    {
+      "w": "profit",
+      "syn": [
+        {
+          "w": "gain",
+          "note": "收益；获利"
+        },
+        {
+          "w": "earnings",
+          "note": "利润；收入"
+        },
+        {
+          "w": "benefit",
+          "note": "利益；有益于"
+        },
+        {
+          "w": "return",
+          "note": "回报；利润"
+        }
+      ]
+    },
+    {
+      "w": "watch over",
+      "syn": [
+        {
+          "w": "guard",
+          "note": "守卫"
+        },
+        {
+          "w": "protect",
+          "note": "保护"
+        },
+        {
+          "w": "look after",
+          "note": "照看"
+        },
+        {
+          "w": "keep an eye on",
+          "note": "留心看管"
+        }
+      ]
+    },
+    {
+      "w": "day and night",
+      "syn": [
+        {
+          "w": "around the clock",
+          "note": "昼夜不停"
+        },
+        {
+          "w": "night and day",
+          "note": "夜以继日"
+        },
+        {
+          "w": "all the time",
+          "note": "一直；始终"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "items": [
+    {
+      "w": "BCE",
+      "syn": [
+        {
+          "w": "BC",
+          "note": "公元前，基督教纪年说法"
+        }
+      ]
+    },
+    {
+      "w": "before the Common Era",
+      "syn": [
+        {
+          "w": "BC",
+          "note": "更常见的缩写说法"
+        }
+      ]
+    },
+    {
+      "w": "tomb",
+      "syn": [
+        {
+          "w": "grave",
+          "note": "更通用，指坟穴"
+        },
+        {
+          "w": "crypt",
+          "note": "侧重地下墓室"
+        },
+        {
+          "w": "burial place",
+          "note": "较书面，埋葬处"
+        }
+      ]
+    },
+    {
+      "w": "unearth",
+      "syn": [
+        {
+          "w": "excavate",
+          "note": "侧重考古挖掘"
+        },
+        {
+          "w": "dig up",
+          "note": "口语，挖出"
+        },
+        {
+          "w": "uncover",
+          "note": "侧重揭露、发现"
+        },
+        {
+          "w": "discover",
+          "note": "侧重发现"
+        }
+      ]
+    },
+    {
+      "w": "comment",
+      "syn": [
+        {
+          "w": "remark",
+          "note": "名词/动词，随口评论"
+        },
+        {
+          "w": "observation",
+          "note": "较正式，评论性的话"
+        }
+      ]
+    },
+    {
+      "w": "the Eiffel Tower",
+      "syn": []
+    },
+    {
+      "w": "Neuschwanstein Castle",
+      "syn": []
+    },
+    {
+      "w": "Iceland",
+      "syn": []
+    },
+    {
+      "w": "Disneyland",
+      "syn": []
+    },
+    {
+      "w": "Peru",
+      "syn": []
+    },
+    {
+      "w": "the Andes Mountains",
+      "syn": [
+        {
+          "w": "the Andes",
+          "note": "常用简称"
+        }
+      ]
+    },
+    {
+      "w": "the Amazon rainforest",
+      "syn": [
+        {
+          "w": "the Amazon",
+          "note": "常作简称"
+        }
+      ]
+    },
+    {
+      "w": "the Inca Empire",
+      "syn": []
+    },
+    {
+      "w": "Machu Picchu",
+      "syn": [
+        {
+          "w": "the Lost City of the Incas",
+          "note": "别称，失落的印加城"
+        }
+      ]
+    },
+    {
+      "w": "Spain",
+      "syn": []
+    },
+    {
+      "w": "Spanish",
+      "syn": []
+    },
+    {
+      "w": "Cusco",
+      "syn": []
+    },
+    {
+      "w": "Lake Titicaca",
+      "syn": []
+    },
+    {
+      "w": "the Uros",
+      "syn": []
+    },
+    {
+      "w": "the Terracotta Army",
+      "syn": [
+        {
+          "w": "the Terracotta Warriors",
+          "note": "别称，兵马俑"
+        }
+      ]
+    }
+  ]
+}

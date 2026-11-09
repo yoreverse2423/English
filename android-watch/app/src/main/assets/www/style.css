@@ -4192,6 +4192,165 @@ select:focus-visible,
   line-height: 1.5;
 }
 
+/* ---------- 同义词 ---------- */
+
+.synonym-block {
+  margin-top: 12px;
+}
+
+.synonym-title {
+  margin: 0 0 7px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+
+.synonym-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.synonym-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  max-width: 100%;
+  padding: 6px 9px;
+  color: var(--ink);
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.synonym-chip:active {
+  transform: scale(0.97);
+}
+
+.synonym-chip.is-static {
+  cursor: default;
+}
+
+.synonym-word {
+  color: var(--primary-deep);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.synonym-note {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.synonym-sheet {
+  z-index: 45;
+}
+
+/* ---------- 自定义词 · DeepSeek 生成 ---------- */
+
+.custom-generate {
+  margin-top: 2px;
+}
+
+.custom-generate-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+  margin-top: 8px;
+}
+
+.custom-generate-input {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+  margin-top: 0;
+}
+
+.custom-generate-btn {
+  flex: 0 0 auto;
+  min-height: 46px;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.custom-divider {
+  margin: 16px 0 0;
+  padding-top: 13px;
+  color: var(--muted);
+  border-top: 1px dashed var(--line);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.custom-word-preview {
+  margin-top: 12px;
+  padding: 13px;
+  background: var(--surface-tint);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.custom-word-preview-kicker {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.custom-word-preview-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: baseline;
+}
+
+.custom-word-preview-word {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+  margin: 0;
+  color: var(--ink);
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.custom-word-preview-ph {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.custom-word-preview-def {
+  margin: 6px 0 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.custom-word-preview .word-forms {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.custom-word-preview .info-block {
+  margin-top: 12px;
+  padding-top: 11px;
+}
+
+.custom-word-preview-actions {
+  padding-top: 12px;
+}
+
 @media (max-width: 380px) {
   .tabbar {
     width: calc(100% - 12px);
@@ -4206,6 +4365,22 @@ select:focus-visible,
   .tab-icon {
     width: 18px;
     height: 18px;
+  }
+
+  .custom-generate-row {
+    flex-direction: column;
+  }
+
+  .custom-generate-btn {
+    width: 100%;
+  }
+
+  .synonym-chip {
+    padding: 5px 8px;
+  }
+
+  .synonym-word {
+    font-size: 11.5px;
   }
 }
 

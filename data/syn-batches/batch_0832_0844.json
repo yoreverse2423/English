@@ -1,0 +1,167 @@
+{
+  "items": [
+    {
+      "w": "eve",
+      "syn": [
+        {
+          "w": "evening",
+          "note": "傍晚，更日常"
+        },
+        {
+          "w": "night before",
+          "note": "前夜，短语"
+        }
+      ]
+    },
+    {
+      "w": "envelope",
+      "syn": [
+        {
+          "w": "cover",
+          "note": "封皮，封面"
+        },
+        {
+          "w": "wrapper",
+          "note": "包装纸，封套"
+        }
+      ]
+    },
+    {
+      "w": "Christmas carol",
+      "syn": [
+        {
+          "w": "carol",
+          "note": "颂歌，常指圣诞颂歌"
+        },
+        {
+          "w": "Christmas song",
+          "note": "圣诞歌曲，更泛指"
+        }
+      ]
+    },
+    {
+      "w": "merry",
+      "syn": [
+        {
+          "w": "cheerful",
+          "note": "愉快，常用"
+        },
+        {
+          "w": "jolly",
+          "note": "欢乐，更口语"
+        },
+        {
+          "w": "happy",
+          "note": "高兴，泛"
+        }
+      ]
+    },
+    {
+      "w": "Merry Christmas!",
+      "syn": [
+        {
+          "w": "Happy Christmas!",
+          "note": "英式说法"
+        },
+        {
+          "w": "Season's Greetings",
+          "note": "节日问候，较正式"
+        }
+      ]
+    },
+    {
+      "w": "pumpkin",
+      "syn": [
+        {
+          "w": "squash",
+          "note": "南瓜类，不特指"
+        },
+        {
+          "w": "gourd",
+          "note": "葫芦科瓜类，较泛"
+        }
+      ]
+    },
+    {
+      "w": "pudding",
+      "syn": [
+        {
+          "w": "dessert",
+          "note": "甜点，美式"
+        },
+        {
+          "w": "sweet",
+          "note": "英式甜点，非正式"
+        }
+      ]
+    },
+    {
+      "w": "mashed potatoes",
+      "syn": [
+        {
+          "w": "mash",
+          "note": "英式口语，土豆泥"
+        },
+        {
+          "w": "potato puree",
+          "note": "土豆泥，较正式"
+        }
+      ]
+    },
+    {
+      "w": "roast",
+      "syn": [
+        {
+          "w": "bake",
+          "note": "烘焙，侧重面点"
+        },
+        {
+          "w": "grill",
+          "note": "烧烤，直接火"
+        },
+        {
+          "w": "broil",
+          "note": "烤，美式"
+        }
+      ]
+    },
+    {
+      "w": "turkey",
+      "syn": []
+    },
+    {
+      "w": "roast turkey",
+      "syn": [
+        {
+          "w": "baked turkey",
+          "note": "烤箱烤火鸡"
+        },
+        {
+          "w": "turkey roast",
+          "note": "烤火鸡，名词短语"
+        }
+      ]
+    },
+    {
+      "w": "pleased",
+      "syn": [
+        {
+          "w": "happy",
+          "note": "高兴，泛"
+        },
+        {
+          "w": "glad",
+          "note": "高兴，常作表语"
+        },
+        {
+          "w": "delighted",
+          "note": "非常高兴"
+        },
+        {
+          "w": "satisfied",
+          "note": "满意"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "items": [
+    {
+      "w": "Vietnam",
+      "syn": []
+    },
+    {
+      "w": "LED",
+      "syn": []
+    },
+    {
+      "w": "light-emitting diode",
+      "syn": [
+        {
+          "w": "LED",
+          "note": "缩写形式"
+        }
+      ]
+    },
+    {
+      "w": "DDT",
+      "syn": []
+    },
+    {
+      "w": "cholera",
+      "syn": []
+    },
+    {
+      "w": "severe",
+      "syn": [
+        {
+          "w": "serious",
+          "note": "侧重严重"
+        },
+        {
+          "w": "harsh",
+          "note": "侧重严厉、恶劣"
+        },
+        {
+          "w": "intense",
+          "note": "侧重剧烈"
+        },
+        {
+          "w": "acute",
+          "note": "侧重急性、严峻"
+        }
+      ]
+    },
+    {
+      "w": "diarrhoea",
+      "syn": []
+    },
+    {
+      "w": "dehydration",
+      "syn": [
+        {
+          "w": "water loss",
+          "note": "水分流失"
+        },
+        {
+          "w": "fluid loss",
+          "note": "体液流失"
+        }
+      ]
+    },
+    {
+      "w": "frustrated",
+      "syn": [
+        {
+          "w": "discouraged",
+          "note": "灰心的"
+        },
+        {
+          "w": "annoyed",
+          "note": "恼火的"
+        },
+        {
+          "w": "disappointed",
+          "note": "失望的"
+        }
+      ]
+    },
+    {
+      "w": "once and for all",
+      "syn": [
+        {
+          "w": "for good",
+          "note": "永久地"
+        },
+        {
+          "w": "permanently",
+          "note": "永久地"
+        },
+        {
+          "w": "finally",
+          "note": "最终地"
+        }
+      ]
+    },
+    {
+      "w": "contradictory",
+      "syn": [
+        {
+          "w": "conflicting",
+          "note": "相冲突的"
+        },
+        {
+          "w": "inconsistent",
+          "note": "不一致的"
+        },
+        {
+          "w": "contrary",
+          "note": "相反的"
+        },
+        {
+          "w": "opposite",
+          "note": "对立的"
+        }
+      ]
+    },
+    {
+      "w": "infection",
+      "syn": [
+        {
+          "w": "contagion",
+          "note": "传染"
+        },
+        {
+          "w": "contamination",
+          "note": "污染"
+        },
+        {
+          "w": "disease",
+          "note": "疾病"
+        }
+      ]
+    }
+  ]
+}

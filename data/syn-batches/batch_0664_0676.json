@@ -1,0 +1,179 @@
+{
+  "items": [
+    {
+      "w": "eager",
+      "syn": [
+        {
+          "w": "keen",
+          "note": "热衷的；急切的"
+        },
+        {
+          "w": "anxious",
+          "note": "渴望的，含焦虑"
+        },
+        {
+          "w": "enthusiastic",
+          "note": "热心的；热情的"
+        }
+      ]
+    },
+    {
+      "w": "poet",
+      "syn": []
+    },
+    {
+      "w": "county",
+      "syn": [
+        {
+          "w": "district",
+          "note": "区；县，行政区域"
+        },
+        {
+          "w": "shire",
+          "note": "郡，英式用法"
+        }
+      ]
+    },
+    {
+      "w": "feast",
+      "syn": [
+        {
+          "w": "banquet",
+          "note": "宴会，较正式"
+        },
+        {
+          "w": "festival",
+          "note": "节日；节庆"
+        }
+      ]
+    },
+    {
+      "w": "roll",
+      "syn": [
+        {
+          "w": "list",
+          "note": "名单；清单"
+        },
+        {
+          "w": "register",
+          "note": "登记册；名单"
+        },
+        {
+          "w": "scroll",
+          "note": "卷轴；卷形物"
+        }
+      ]
+    },
+    {
+      "w": "dot",
+      "syn": [
+        {
+          "w": "point",
+          "note": "点；小点"
+        },
+        {
+          "w": "spot",
+          "note": "斑点；小点"
+        },
+        {
+          "w": "speck",
+          "note": "小点；微粒"
+        }
+      ]
+    },
+    {
+      "w": "cattle",
+      "syn": [
+        {
+          "w": "livestock",
+          "note": "家畜，牲畜"
+        },
+        {
+          "w": "oxen",
+          "note": "牛（复数），尤役牛"
+        }
+      ]
+    },
+    {
+      "w": "roar",
+      "syn": [
+        {
+          "w": "bellow",
+          "note": "吼叫；咆哮"
+        },
+        {
+          "w": "howl",
+          "note": "嚎叫；咆哮"
+        },
+        {
+          "w": "thunder",
+          "note": "轰鸣；隆隆响"
+        }
+      ]
+    },
+    {
+      "w": "ocean",
+      "syn": [
+        {
+          "w": "sea",
+          "note": "海洋，较常用"
+        },
+        {
+          "w": "waters",
+          "note": "海域；水域"
+        }
+      ]
+    },
+    {
+      "w": "scent",
+      "syn": [
+        {
+          "w": "smell",
+          "note": "气味，最通用"
+        },
+        {
+          "w": "odor",
+          "note": "气味，常指异味"
+        },
+        {
+          "w": "fragrance",
+          "note": "香味；芬芳"
+        }
+      ]
+    },
+    {
+      "w": "greet",
+      "syn": [
+        {
+          "w": "welcome",
+          "note": "欢迎；迎接"
+        },
+        {
+          "w": "salute",
+          "note": "致敬；致意"
+        },
+        {
+          "w": "hail",
+          "note": "招呼；欢呼迎接"
+        }
+      ]
+    },
+    {
+      "w": "pub",
+      "syn": [
+        {
+          "w": "bar",
+          "note": "酒吧，较通用"
+        },
+        {
+          "w": "tavern",
+          "note": "酒馆，较旧或正式"
+        },
+        {
+          "w": "inn",
+          "note": "客栈；小酒馆"
+        }
+      ]
+    }
+  ]
+}

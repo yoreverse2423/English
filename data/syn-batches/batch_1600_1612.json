@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "w": "in turn",
+      "syn": [
+        {
+          "w": "in sequence",
+          "note": "按顺序，较正式"
+        },
+        {
+          "w": "one after another",
+          "note": "一个接一个，口语"
+        }
+      ]
+    },
+    {
+      "w": "digest",
+      "syn": [
+        {
+          "w": "abstract",
+          "note": "名词：文摘，学术摘要"
+        },
+        {
+          "w": "summary",
+          "note": "摘要，概括"
+        },
+        {
+          "w": "absorb",
+          "note": "动词：吸收、理解"
+        }
+      ]
+    },
+    {
+      "w": "essential",
+      "syn": [
+        {
+          "w": "necessary",
+          "note": "必要的，最常用"
+        },
+        {
+          "w": "vital",
+          "note": "至关重要，语气更强"
+        },
+        {
+          "w": "fundamental",
+          "note": "根本的、基本的"
+        },
+        {
+          "w": "basic",
+          "note": "基本的，较通俗"
+        }
+      ]
+    },
+    {
+      "w": "mineral",
+      "syn": [
+        {
+          "w": "ore",
+          "note": "矿石，多指可提炼金属的"
+        },
+        {
+          "w": "inorganic",
+          "note": "无机的，对应形容词义"
+        }
+      ]
+    },
+    {
+      "w": "alternative",
+      "syn": [
+        {
+          "w": "option",
+          "note": "名词：选择，可选方案"
+        },
+        {
+          "w": "choice",
+          "note": "选择，泛指"
+        },
+        {
+          "w": "substitute",
+          "note": "替代物，侧重替换"
+        }
+      ]
+    },
+    {
+      "w": "grocery",
+      "syn": [
+        {
+          "w": "groceries",
+          "note": "食品杂货（复数常用）"
+        },
+        {
+          "w": "food store",
+          "note": "食品店，口语说法"
+        }
+      ]
+    },
+    {
+      "w": "instance",
+      "syn": [
+        {
+          "w": "example",
+          "note": "例子，最常用"
+        },
+        {
+          "w": "case",
+          "note": "事例、情况"
+        },
+        {
+          "w": "occurrence",
+          "note": "发生的事例，较正式"
+        }
+      ]
+    },
+    {
+      "w": "for instance",
+      "syn": [
+        {
+          "w": "for example",
+          "note": "例如，最常用"
+        },
+        {
+          "w": "such as",
+          "note": "诸如，后接名词"
+        }
+      ]
+    },
+    {
+      "w": "depth",
+      "syn": [
+        {
+          "w": "deepness",
+          "note": "深度，较少用"
+        },
+        {
+          "w": "profundity",
+          "note": "深奥，正式书面"
+        }
+      ]
+    },
+    {
+      "w": "root",
+      "syn": [
+        {
+          "w": "origin",
+          "note": "起源、根源"
+        },
+        {
+          "w": "source",
+          "note": "来源，侧重出处"
+        },
+        {
+          "w": "cause",
+          "note": "原因，根源"
+        }
+      ]
+    },
+    {
+      "w": "entirely",
+      "syn": [
+        {
+          "w": "completely",
+          "note": "完全地，最常用"
+        },
+        {
+          "w": "totally",
+          "note": "彻底地，口语"
+        },
+        {
+          "w": "fully",
+          "note": "充分地、完全"
+        },
+        {
+          "w": "utterly",
+          "note": "极其，多修饰负面"
+        }
+      ]
+    },
+    {
+      "w": "aspect",
+      "syn": [
+        {
+          "w": "side",
+          "note": "方面，较通俗"
+        },
+        {
+          "w": "facet",
+          "note": "方面，较正式"
+        },
+        {
+          "w": "respect",
+          "note": "在此义为“方面”，书面"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "items": [
+    {
+      "w": "operator",
+      "syn": [
+        {
+          "w": "machinist",
+          "note": "机器操作员"
+        },
+        {
+          "w": "telephonist",
+          "note": "话务员，英式"
+        },
+        {
+          "w": "manager",
+          "note": "经营者/管理者"
+        }
+      ]
+    },
+    {
+      "w": "ambulance",
+      "syn": []
+    },
+    {
+      "w": "delay",
+      "syn": [
+        {
+          "w": "postpone",
+          "note": "推迟，更正式"
+        },
+        {
+          "w": "put off",
+          "note": "推迟，口语"
+        },
+        {
+          "w": "hold up",
+          "note": "耽搁，阻碍"
+        }
+      ]
+    },
+    {
+      "w": "needle",
+      "syn": [
+        {
+          "w": "pin",
+          "note": "针，别针"
+        },
+        {
+          "w": "pointer",
+          "note": "指针"
+        },
+        {
+          "w": "spur",
+          "note": "刺激，激励"
+        }
+      ]
+    },
+    {
+      "w": "IV needle",
+      "syn": []
+    },
+    {
+      "w": "ward",
+      "syn": [
+        {
+          "w": "guard",
+          "note": "保卫，看守"
+        },
+        {
+          "w": "avoid",
+          "note": "避开"
+        }
+      ]
+    },
+    {
+      "w": "drown",
+      "syn": [
+        {
+          "w": "flood",
+          "note": "淹没"
+        },
+        {
+          "w": "submerge",
+          "note": "使淹没"
+        }
+      ]
+    },
+    {
+      "w": "sprain",
+      "syn": [
+        {
+          "w": "twist",
+          "note": "扭伤"
+        },
+        {
+          "w": "strain",
+          "note": "拉伤，扭伤"
+        }
+      ]
+    },
+    {
+      "w": "ankle",
+      "syn": []
+    },
+    {
+      "w": "bleed",
+      "syn": [
+        {
+          "w": "ooze",
+          "note": "渗出"
+        },
+        {
+          "w": "seep",
+          "note": "渗出"
+        }
+      ]
+    },
+    {
+      "w": "panic",
+      "syn": [
+        {
+          "w": "fear",
+          "note": "恐惧"
+        },
+        {
+          "w": "terror",
+          "note": "恐怖"
+        },
+        {
+          "w": "alarm",
+          "note": "惊恐"
+        }
+      ]
+    },
+    {
+      "w": "interrupt",
+      "syn": [
+        {
+          "w": "disturb",
+          "note": "打扰"
+        },
+        {
+          "w": "disrupt",
+          "note": "中断"
+        },
+        {
+          "w": "cut in",
+          "note": "插嘴"
+        }
+      ]
+    }
+  ]
+}

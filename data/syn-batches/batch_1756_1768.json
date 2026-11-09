@@ -1,0 +1,204 @@
+{
+  "items": [
+    {
+      "w": "cooperate",
+      "syn": [
+        {
+          "w": "collaborate",
+          "note": "协作，多指共同完成项目"
+        },
+        {
+          "w": "work together",
+          "note": "口语，侧重一起干"
+        },
+        {
+          "w": "team up",
+          "note": "口语，组成一队合作"
+        }
+      ]
+    },
+    {
+      "w": "angle",
+      "syn": [
+        {
+          "w": "perspective",
+          "note": "看问题的角度、视角"
+        },
+        {
+          "w": "viewpoint",
+          "note": "观点、立场"
+        },
+        {
+          "w": "aspect",
+          "note": "方面，侧重某一侧面"
+        }
+      ]
+    },
+    {
+      "w": "outlook",
+      "syn": [
+        {
+          "w": "view",
+          "note": "看法；景色"
+        },
+        {
+          "w": "perspective",
+          "note": "观点，着眼方式"
+        },
+        {
+          "w": "prospect",
+          "note": "前景、展望"
+        }
+      ]
+    },
+    {
+      "w": "belt",
+      "syn": [
+        {
+          "w": "strap",
+          "note": "带子，多指细长条带"
+        },
+        {
+          "w": "band",
+          "note": "带状物，泛指箍带"
+        },
+        {
+          "w": "zone",
+          "note": "对应'地带'义"
+        }
+      ]
+    },
+    {
+      "w": "initiative",
+      "syn": [
+        {
+          "w": "drive",
+          "note": "干劲、主动性"
+        },
+        {
+          "w": "enterprise",
+          "note": "进取精神、事业心"
+        },
+        {
+          "w": "lead",
+          "note": "对应'主动权'，如take the lead"
+        }
+      ]
+    },
+    {
+      "w": "sincerely",
+      "syn": [
+        {
+          "w": "genuinely",
+          "note": "真心地，强调不虚假"
+        },
+        {
+          "w": "truly",
+          "note": "真诚地，书信常用"
+        },
+        {
+          "w": "honestly",
+          "note": "诚实地、老实说"
+        }
+      ]
+    },
+    {
+      "w": "budget",
+      "syn": [
+        {
+          "w": "funds",
+          "note": "资金，对应'预算费'"
+        },
+        {
+          "w": "allocation",
+          "note": "拨款、分配额"
+        },
+        {
+          "w": "inexpensive",
+          "note": "对应adj.'廉价的'"
+        }
+      ]
+    },
+    {
+      "w": "side with",
+      "syn": [
+        {
+          "w": "support",
+          "note": "支持，不含偏袒义"
+        },
+        {
+          "w": "back",
+          "note": "支持、撑腰，口语"
+        },
+        {
+          "w": "favour",
+          "note": "偏向、偏袒（英式拼写）"
+        }
+      ]
+    },
+    {
+      "w": "logical",
+      "syn": [
+        {
+          "w": "reasonable",
+          "note": "合理的，强调讲得通"
+        },
+        {
+          "w": "rational",
+          "note": "理性的，强调合推理"
+        },
+        {
+          "w": "sensible",
+          "note": "明智的、合情理的"
+        }
+      ]
+    },
+    {
+      "w": "as far as I know",
+      "syn": [
+        {
+          "w": "to my knowledge",
+          "note": "据我所知，较正式"
+        },
+        {
+          "w": "to the best of my knowledge",
+          "note": "更正式，强调所知范围内"
+        }
+      ]
+    },
+    {
+      "w": "as far as I am concerned",
+      "syn": [
+        {
+          "w": "in my opinion",
+          "note": "在我看来，最通用"
+        },
+        {
+          "w": "personally",
+          "note": "就个人而言"
+        },
+        {
+          "w": "from my point of view",
+          "note": "从我的角度看"
+        }
+      ]
+    },
+    {
+      "w": "in summary",
+      "syn": [
+        {
+          "w": "in short",
+          "note": "简言之"
+        },
+        {
+          "w": "to sum up",
+          "note": "总结一下，用于收尾"
+        },
+        {
+          "w": "in brief",
+          "note": "简要地说"
+        }
+      ]
+    }
+  ]
+}

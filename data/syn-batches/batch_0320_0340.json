@@ -1,0 +1,339 @@
+{
+  "items": [
+    {
+      "w": "native",
+      "syn": [
+        {
+          "w": "indigenous",
+          "note": "土著的，较正式"
+        },
+        {
+          "w": "innate",
+          "note": "天生的"
+        },
+        {
+          "w": "inborn",
+          "note": "与生俱来的"
+        },
+        {
+          "w": "local",
+          "note": "本地的；当地人"
+        }
+      ]
+    },
+    {
+      "w": "attitude",
+      "syn": [
+        {
+          "w": "viewpoint",
+          "note": "观点"
+        },
+        {
+          "w": "perspective",
+          "note": "看法；视角"
+        },
+        {
+          "w": "stance",
+          "note": "立场"
+        },
+        {
+          "w": "outlook",
+          "note": "看法； outlook"
+        }
+      ]
+    },
+    {
+      "w": "reference",
+      "syn": [
+        {
+          "w": "mention",
+          "note": "提及"
+        },
+        {
+          "w": "citation",
+          "note": "引用；参考书目"
+        },
+        {
+          "w": "recommendation",
+          "note": "推荐信"
+        }
+      ]
+    },
+    {
+      "w": "refer",
+      "syn": [
+        {
+          "w": "mention",
+          "note": "提到"
+        },
+        {
+          "w": "consult",
+          "note": "查阅；请教"
+        },
+        {
+          "w": "allude",
+          "note": "间接提到，较正式"
+        }
+      ]
+    },
+    {
+      "w": "refer to",
+      "syn": [
+        {
+          "w": "consult",
+          "note": "查阅"
+        },
+        {
+          "w": "mention",
+          "note": "提到"
+        },
+        {
+          "w": "allude to",
+          "note": "暗指"
+        },
+        {
+          "w": "turn to",
+          "note": "求助于"
+        }
+      ]
+    },
+    {
+      "w": "system",
+      "syn": [
+        {
+          "w": "scheme",
+          "note": "体系；方案"
+        },
+        {
+          "w": "structure",
+          "note": "结构；体系"
+        },
+        {
+          "w": "method",
+          "note": "方法"
+        }
+      ]
+    },
+    {
+      "w": "despite",
+      "syn": [
+        {
+          "w": "in spite of",
+          "note": "尽管，常用"
+        },
+        {
+          "w": "notwithstanding",
+          "note": "尽管，正式"
+        },
+        {
+          "w": "regardless of",
+          "note": "不顾；不管"
+        }
+      ]
+    },
+    {
+      "w": "ups and downs",
+      "syn": [
+        {
+          "w": "fluctuations",
+          "note": "起伏"
+        },
+        {
+          "w": "vicissitudes",
+          "note": "盛衰，较正式"
+        },
+        {
+          "w": "rises and falls",
+          "note": "起落"
+        }
+      ]
+    },
+    {
+      "w": "factor",
+      "syn": [
+        {
+          "w": "element",
+          "note": "要素"
+        },
+        {
+          "w": "component",
+          "note": "组成部分；因素"
+        },
+        {
+          "w": "determinant",
+          "note": "决定因素"
+        }
+      ]
+    },
+    {
+      "w": "base",
+      "syn": [
+        {
+          "w": "foundation",
+          "note": "基础"
+        },
+        {
+          "w": "bottom",
+          "note": "底部"
+        },
+        {
+          "w": "basis",
+          "note": "依据；基础"
+        }
+      ]
+    },
+    {
+      "w": "date back",
+      "syn": [
+        {
+          "w": "go back",
+          "note": "追溯"
+        },
+        {
+          "w": "originate",
+          "note": "起源"
+        },
+        {
+          "w": "date from",
+          "note": "始于"
+        }
+      ]
+    },
+    {
+      "w": "date back to ...",
+      "syn": [
+        {
+          "w": "go back to",
+          "note": "追溯到"
+        },
+        {
+          "w": "originate in",
+          "note": "起源于"
+        },
+        {
+          "w": "trace back to",
+          "note": "追溯至"
+        }
+      ]
+    },
+    {
+      "w": "bone",
+      "syn": []
+    },
+    {
+      "w": "shell",
+      "syn": [
+        {
+          "w": "casing",
+          "note": "外壳"
+        },
+        {
+          "w": "husk",
+          "note": "谷壳；外皮"
+        },
+        {
+          "w": "crust",
+          "note": "硬壳"
+        }
+      ]
+    },
+    {
+      "w": "symbol",
+      "syn": [
+        {
+          "w": "sign",
+          "note": "标志；符号"
+        },
+        {
+          "w": "emblem",
+          "note": "象征；徽记"
+        },
+        {
+          "w": "token",
+          "note": "象征；标志"
+        }
+      ]
+    },
+    {
+      "w": "carve",
+      "syn": [
+        {
+          "w": "sculpt",
+          "note": "雕刻"
+        },
+        {
+          "w": "engrave",
+          "note": "镌刻"
+        },
+        {
+          "w": "chisel",
+          "note": "凿刻"
+        }
+      ]
+    },
+    {
+      "w": "dynasty",
+      "syn": [
+        {
+          "w": "royal house",
+          "note": "王室；王朝"
+        },
+        {
+          "w": "ruling family",
+          "note": "统治家族"
+        }
+      ]
+    },
+    {
+      "w": "variety",
+      "syn": [
+        {
+          "w": "diversity",
+          "note": "多样性"
+        },
+        {
+          "w": "range",
+          "note": "种类范围"
+        },
+        {
+          "w": "assortment",
+          "note": "各式各样"
+        },
+        {
+          "w": "kind",
+          "note": "种类"
+        }
+      ]
+    },
+    {
+      "w": "major",
+      "syn": [
+        {
+          "w": "main",
+          "note": "主要的"
+        },
+        {
+          "w": "principal",
+          "note": "首要的"
+        },
+        {
+          "w": "chief",
+          "note": "主要的"
+        }
+      ]
+    },
+    {
+      "w": "no matter where",
+      "syn": [
+        {
+          "w": "wherever",
+          "note": "无论哪里"
+        },
+        {
+          "w": "regardless of where",
+          "note": "不管在哪里"
+        }
+      ]
+    }
+  ]
+}

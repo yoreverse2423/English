@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "w": "protein",
+      "syn": []
+    },
+    {
+      "w": "cell",
+      "syn": [
+        {
+          "w": "cavity",
+          "note": "指小室、腔；cell 的“小室”义"
+        },
+        {
+          "w": "battery",
+          "note": "电池；cell 的“电池”义"
+        }
+      ]
+    },
+    {
+      "w": "virus",
+      "syn": [
+        {
+          "w": "germ",
+          "note": "泛指病菌，口语常用"
+        },
+        {
+          "w": "bug",
+          "note": "口语指病毒、小病"
+        }
+      ]
+    },
+    {
+      "w": "finding",
+      "syn": [
+        {
+          "w": "discovery",
+          "note": "侧重发现的事实"
+        },
+        {
+          "w": "result",
+          "note": "侧重研究结果"
+        },
+        {
+          "w": "conclusion",
+          "note": "侧重得出的结论"
+        },
+        {
+          "w": "verdict",
+          "note": "侧重裁决、裁定"
+        }
+      ]
+    },
+    {
+      "w": "initial",
+      "syn": [
+        {
+          "w": "first",
+          "note": "最通用"
+        },
+        {
+          "w": "original",
+          "note": "侧重最初的、原先的"
+        },
+        {
+          "w": "early",
+          "note": "侧重早期的"
+        }
+      ]
+    },
+    {
+      "w": "vaccine",
+      "syn": [
+        {
+          "w": "inoculation",
+          "note": "指接种、疫苗制剂，较正式"
+        }
+      ]
+    },
+    {
+      "w": "framework",
+      "syn": [
+        {
+          "w": "structure",
+          "note": "结构，最通用"
+        },
+        {
+          "w": "skeleton",
+          "note": "骨架；比喻框架"
+        },
+        {
+          "w": "frame",
+          "note": "框架，较具体"
+        }
+      ]
+    },
+    {
+      "w": "theoretical framework",
+      "syn": [
+        {
+          "w": "theory",
+          "note": "理论；较简略"
+        },
+        {
+          "w": "model",
+          "note": "理论模型"
+        }
+      ]
+    },
+    {
+      "w": "solid",
+      "syn": [
+        {
+          "w": "firm",
+          "note": "侧重坚实、牢固"
+        },
+        {
+          "w": "hard",
+          "note": "侧重坚硬"
+        },
+        {
+          "w": "reliable",
+          "note": "指“可靠的”义"
+        },
+        {
+          "w": "stable",
+          "note": "侧重稳定"
+        }
+      ]
+    },
+    {
+      "w": "cast",
+      "syn": [
+        {
+          "w": "throw",
+          "note": "最通用“投、扔”"
+        },
+        {
+          "w": "toss",
+          "note": "轻抛，随意扔"
+        },
+        {
+          "w": "fling",
+          "note": "用力猛扔"
+        },
+        {
+          "w": "hurl",
+          "note": "用力投掷，较文"
+        }
+      ]
+    },
+    {
+      "w": "shadow",
+      "syn": [
+        {
+          "w": "shade",
+          "note": "侧重阴凉处；阴影"
+        },
+        {
+          "w": "silhouette",
+          "note": "侧重轮廓、剪影"
+        }
+      ]
+    },
+    {
+      "w": "rainbow",
+      "syn": []
+    }
+  ]
+}

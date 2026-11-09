@@ -1,0 +1,105 @@
+{
+  "items": [
+    {
+      "w": "Mozart",
+      "syn": []
+    },
+    {
+      "w": "Lux Aurumque",
+      "syn": []
+    },
+    {
+      "w": "UNICEF",
+      "syn": []
+    },
+    {
+      "w": "United Nations Children's Fund",
+      "syn": []
+    },
+    {
+      "w": "Las Vegas",
+      "syn": []
+    },
+    {
+      "w": "John A. Logan",
+      "syn": []
+    },
+    {
+      "w": "lantern",
+      "syn": [
+        {
+          "w": "lamp",
+          "note": "泛指灯，灯笼义较泛"
+        },
+        {
+          "w": "light",
+          "note": "侧重光源，不特指灯笼"
+        }
+      ]
+    },
+    {
+      "w": "carnival",
+      "syn": [
+        {
+          "w": "festival",
+          "note": "节日庆典，较泛"
+        },
+        {
+          "w": "fair",
+          "note": "集市游园会，偏活动"
+        },
+        {
+          "w": "fiesta",
+          "note": "狂欢庆典，较具体"
+        }
+      ]
+    },
+    {
+      "w": "costume",
+      "syn": [
+        {
+          "w": "outfit",
+          "note": "一套服装，较日常"
+        },
+        {
+          "w": "dress",
+          "note": "服装，较泛"
+        },
+        {
+          "w": "attire",
+          "note": "着装，较正式"
+        }
+      ]
+    },
+    {
+      "w": "dress up",
+      "syn": [
+        {
+          "w": "dress",
+          "note": "作动词表打扮，较简略"
+        },
+        {
+          "w": "get dressed",
+          "note": "穿好衣服，未必盛装"
+        }
+      ]
+    },
+    {
+      "w": "dress sb. up",
+      "syn": [
+        {
+          "w": "attire sb",
+          "note": "给某人着装，较正式"
+        },
+        {
+          "w": "disguise sb",
+          "note": "侧重把某人伪装起来"
+        }
+      ]
+    },
+    {
+      "w": "march",
+      "syn": []
+    }
+  ]
+}

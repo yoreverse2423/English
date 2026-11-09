@@ -1,0 +1,179 @@
+{
+  "items": [
+    {
+      "w": "apparently",
+      "syn": [
+        {
+          "w": "seemingly",
+          "note": "表面上似乎，未必属实"
+        },
+        {
+          "w": "evidently",
+          "note": "显然，据证据看"
+        },
+        {
+          "w": "obviously",
+          "note": "明显，语气更强"
+        }
+      ]
+    },
+    {
+      "w": "substance",
+      "syn": [
+        {
+          "w": "matter",
+          "note": "物质，与精神相对"
+        },
+        {
+          "w": "material",
+          "note": "材料，具体物质"
+        },
+        {
+          "w": "essence",
+          "note": "实质，本质"
+        }
+      ]
+    },
+    {
+      "w": "insist",
+      "syn": [
+        {
+          "w": "maintain",
+          "note": "坚持说，断言"
+        },
+        {
+          "w": "assert",
+          "note": "坚决主张，较正式"
+        },
+        {
+          "w": "persist",
+          "note": "坚持做，常接 in"
+        }
+      ]
+    },
+    {
+      "w": "insist on",
+      "syn": [
+        {
+          "w": "persist in",
+          "note": "坚持做某事"
+        },
+        {
+          "w": "stick to",
+          "note": "坚持，不改变"
+        },
+        {
+          "w": "demand",
+          "note": "坚决要求"
+        }
+      ]
+    },
+    {
+      "w": "scientific",
+      "syn": [
+        {
+          "w": "systematic",
+          "note": "系统的"
+        },
+        {
+          "w": "methodical",
+          "note": "有条理的，讲究方法的"
+        }
+      ]
+    },
+    {
+      "w": "mostly",
+      "syn": [
+        {
+          "w": "mainly",
+          "note": "主要地"
+        },
+        {
+          "w": "chiefly",
+          "note": "首要地，较正式"
+        },
+        {
+          "w": "largely",
+          "note": "很大程度上"
+        }
+      ]
+    },
+    {
+      "w": "wear and tear",
+      "syn": [
+        {
+          "w": "damage",
+          "note": "损坏，泛指"
+        },
+        {
+          "w": "wear",
+          "note": "磨损，名词"
+        }
+      ]
+    },
+    {
+      "w": "conclusion",
+      "syn": [
+        {
+          "w": "ending",
+          "note": "结局，结尾"
+        },
+        {
+          "w": "end",
+          "note": "末尾，结束"
+        },
+        {
+          "w": "inference",
+          "note": "推论，推断结果"
+        }
+      ]
+    },
+    {
+      "w": "penicillin",
+      "syn": []
+    },
+    {
+      "w": "flee",
+      "syn": [
+        {
+          "w": "escape",
+          "note": "逃脱，逃离"
+        },
+        {
+          "w": "run away",
+          "note": "跑开，逃走（口语）"
+        }
+      ]
+    },
+    {
+      "w": "circumstance",
+      "syn": [
+        {
+          "w": "situation",
+          "note": "情况，形势"
+        },
+        {
+          "w": "condition",
+          "note": "条件，状况"
+        },
+        {
+          "w": "surroundings",
+          "note": "周围环境"
+        }
+      ]
+    },
+    {
+      "w": "novelist",
+      "syn": [
+        {
+          "w": "writer",
+          "note": "作家，泛指"
+        },
+        {
+          "w": "author",
+          "note": "作者，著者"
+        }
+      ]
+    }
+  ]
+}

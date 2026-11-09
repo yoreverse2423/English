@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "w": "resident physician",
+      "syn": [
+        {
+          "w": "resident",
+          "note": "住院医师，常作简称"
+        },
+        {
+          "w": "house officer",
+          "note": "英式，住院医师"
+        }
+      ]
+    },
+    {
+      "w": "colleague",
+      "syn": [
+        {
+          "w": "associate",
+          "note": "同事，偏合作者"
+        },
+        {
+          "w": "coworker",
+          "note": "一起工作的人，较口语"
+        },
+        {
+          "w": "fellow worker",
+          "note": "同事，较书面"
+        }
+      ]
+    },
+    {
+      "w": "reject",
+      "syn": [
+        {
+          "w": "refuse",
+          "note": "拒绝，最常用"
+        },
+        {
+          "w": "decline",
+          "note": "婉言谢绝"
+        },
+        {
+          "w": "turn down",
+          "note": "口语，拒绝提议等"
+        },
+        {
+          "w": "discard",
+          "note": "侧重丢弃、抛弃物"
+        }
+      ]
+    },
+    {
+      "w": "rejection",
+      "syn": [
+        {
+          "w": "refusal",
+          "note": "拒绝，最直接对应"
+        },
+        {
+          "w": "denial",
+          "note": "否认；拒绝给予"
+        }
+      ]
+    },
+    {
+      "w": "appoint",
+      "syn": [
+        {
+          "w": "nominate",
+          "note": "提名，未必正式任命"
+        },
+        {
+          "w": "designate",
+          "note": "正式指定、委任"
+        },
+        {
+          "w": "assign",
+          "note": "分派任务、岗位"
+        }
+      ]
+    },
+    {
+      "w": "clinic",
+      "syn": [
+        {
+          "w": "medical center",
+          "note": "医疗中心，规模较大"
+        },
+        {
+          "w": "infirmary",
+          "note": "医务室，较旧式"
+        }
+      ]
+    },
+    {
+      "w": "faraway",
+      "syn": [
+        {
+          "w": "distant",
+          "note": "遥远的，最常用"
+        },
+        {
+          "w": "remote",
+          "note": "偏远，强调隔离"
+        },
+        {
+          "w": "far-off",
+          "note": "遥远的，较文学"
+        }
+      ]
+    },
+    {
+      "w": "elect",
+      "syn": [
+        {
+          "w": "choose",
+          "note": "选择，最常用"
+        },
+        {
+          "w": "select",
+          "note": "精选，较正式"
+        },
+        {
+          "w": "vote in",
+          "note": "投票选出"
+        }
+      ]
+    },
+    {
+      "w": "election",
+      "syn": [
+        {
+          "w": "vote",
+          "note": "投票，侧重行为"
+        },
+        {
+          "w": "poll",
+          "note": "投票、民意调查"
+        },
+        {
+          "w": "ballot",
+          "note": "无记名投票"
+        }
+      ]
+    },
+    {
+      "w": "decade",
+      "syn": [
+        {
+          "w": "ten years",
+          "note": "十年，直白说法"
+        }
+      ]
+    },
+    {
+      "w": "elsewhere",
+      "syn": [
+        {
+          "w": "somewhere else",
+          "note": "在别的地方，口语"
+        },
+        {
+          "w": "in another place",
+          "note": "在另一处，较书面"
+        }
+      ]
+    },
+    {
+      "w": "tend",
+      "syn": [
+        {
+          "w": "be inclined to",
+          "note": "倾向于，对应vi.义"
+        },
+        {
+          "w": "look after",
+          "note": "照料，对应vt.义"
+        },
+        {
+          "w": "care for",
+          "note": "照看；关怀"
+        }
+      ]
+    }
+  ]
+}

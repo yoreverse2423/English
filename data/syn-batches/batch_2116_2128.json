@@ -1,0 +1,140 @@
+{
+  "items": [
+    {
+      "w": "dentist",
+      "syn": []
+    },
+    {
+      "w": "sugary",
+      "syn": [
+        {
+          "w": "sweet",
+          "note": "侧重味道甜"
+        },
+        {
+          "w": "honeyed",
+          "note": "常指甜言蜜语"
+        }
+      ]
+    },
+    {
+      "w": "nut",
+      "syn": [
+        {
+          "w": "kernel",
+          "note": "指坚果的果仁"
+        }
+      ]
+    },
+    {
+      "w": "skateboard",
+      "syn": []
+    },
+    {
+      "w": "dynamic",
+      "syn": [
+        {
+          "w": "energetic",
+          "note": "侧重精力充沛"
+        },
+        {
+          "w": "vigorous",
+          "note": "侧重强健有力"
+        },
+        {
+          "w": "active",
+          "note": "侧重活跃"
+        }
+      ]
+    },
+    {
+      "w": "stressed out",
+      "syn": [
+        {
+          "w": "anxious",
+          "note": "侧重焦虑不安"
+        },
+        {
+          "w": "nervous",
+          "note": "侧重紧张"
+        },
+        {
+          "w": "under pressure",
+          "note": "侧重承受压力"
+        }
+      ]
+    },
+    {
+      "w": "worn out",
+      "syn": [
+        {
+          "w": "exhausted",
+          "note": "侧重精疲力竭"
+        },
+        {
+          "w": "tired out",
+          "note": "口语，累极了"
+        },
+        {
+          "w": "battered",
+          "note": "侧重破旧磨损"
+        }
+      ]
+    },
+    {
+      "w": "bowling",
+      "syn": []
+    },
+    {
+      "w": "comedy",
+      "syn": [
+        {
+          "w": "humor",
+          "note": "侧重幽默"
+        },
+        {
+          "w": "farce",
+          "note": "侧重闹剧"
+        }
+      ]
+    },
+    {
+      "w": "monthly",
+      "syn": []
+    },
+    {
+      "w": "enhance",
+      "syn": [
+        {
+          "w": "improve",
+          "note": "最通用，改善"
+        },
+        {
+          "w": "boost",
+          "note": "侧重提升、促进"
+        },
+        {
+          "w": "strengthen",
+          "note": "侧重加强"
+        }
+      ]
+    },
+    {
+      "w": "refresh",
+      "syn": [
+        {
+          "w": "revive",
+          "note": "侧重恢复精神"
+        },
+        {
+          "w": "freshen",
+          "note": "侧重使清新"
+        },
+        {
+          "w": "restore",
+          "note": "侧重使恢复"
+        }
+      ]
+    }
+  ]
+}

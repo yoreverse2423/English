@@ -1,0 +1,195 @@
+{
+  "items": [
+    {
+      "w": "trend",
+      "syn": [
+        {
+          "w": "tendency",
+          "note": "侧重倾向、趋势"
+        },
+        {
+          "w": "direction",
+          "note": "侧重走向、发展方向"
+        }
+      ]
+    },
+    {
+      "w": "frequently",
+      "syn": [
+        {
+          "w": "often",
+          "note": "最常用，经常"
+        },
+        {
+          "w": "regularly",
+          "note": "有规律地、定期地"
+        },
+        {
+          "w": "repeatedly",
+          "note": "一再地、反复地"
+        },
+        {
+          "w": "constantly",
+          "note": "不断地、持续地"
+        }
+      ]
+    },
+    {
+      "w": "broadcast",
+      "syn": [
+        {
+          "w": "transmit",
+          "note": "更正式，传输、播送"
+        },
+        {
+          "w": "air",
+          "note": "侧重播出节目"
+        }
+      ]
+    },
+    {
+      "w": "policy",
+      "syn": [
+        {
+          "w": "strategy",
+          "note": "侧重策略、方针"
+        },
+        {
+          "w": "guideline",
+          "note": "指导方针、准则"
+        }
+      ]
+    },
+    {
+      "w": "footprint",
+      "syn": [
+        {
+          "w": "track",
+          "note": "足迹、踪迹"
+        },
+        {
+          "w": "trace",
+          "note": "痕迹、踪迹"
+        }
+      ]
+    },
+    {
+      "w": "restrict",
+      "syn": [
+        {
+          "w": "limit",
+          "note": "最通用，限制"
+        },
+        {
+          "w": "confine",
+          "note": "限定范围，较正式"
+        },
+        {
+          "w": "curb",
+          "note": "抑制、控制"
+        },
+        {
+          "w": "restrain",
+          "note": "克制、阻止"
+        }
+      ]
+    },
+    {
+      "w": "restriction",
+      "syn": [
+        {
+          "w": "limit",
+          "note": "限度、限制"
+        },
+        {
+          "w": "limitation",
+          "note": "限制因素、局限"
+        },
+        {
+          "w": "constraint",
+          "note": "约束、限制，较正式"
+        },
+        {
+          "w": "control",
+          "note": "管控、控制"
+        }
+      ]
+    },
+    {
+      "w": "seize",
+      "syn": [
+        {
+          "w": "grab",
+          "note": "迅速抓住"
+        },
+        {
+          "w": "grasp",
+          "note": "握紧；领会"
+        },
+        {
+          "w": "capture",
+          "note": "俘获；夺取"
+        },
+        {
+          "w": "catch",
+          "note": "抓住；捕捉"
+        }
+      ]
+    },
+    {
+      "w": "basin",
+      "syn": [
+        {
+          "w": "bowl",
+          "note": "盆；碗状物"
+        },
+        {
+          "w": "sink",
+          "note": "洗涤槽；水池"
+        }
+      ]
+    },
+    {
+      "w": "penguin",
+      "syn": []
+    },
+    {
+      "w": "reform",
+      "syn": [
+        {
+          "w": "improve",
+          "note": "改进、改善"
+        },
+        {
+          "w": "change",
+          "note": "改变，含义较泛"
+        },
+        {
+          "w": "transform",
+          "note": "彻底改变、改造"
+        }
+      ]
+    },
+    {
+      "w": "undergo",
+      "syn": [
+        {
+          "w": "experience",
+          "note": "经历、体验"
+        },
+        {
+          "w": "endure",
+          "note": "忍受、经受"
+        },
+        {
+          "w": "suffer",
+          "note": "遭受（痛苦等）"
+        },
+        {
+          "w": "go through",
+          "note": "经历、经受"
+        }
+      ]
+    }
+  ]
+}

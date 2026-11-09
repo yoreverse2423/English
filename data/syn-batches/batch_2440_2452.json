@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "w": "slogan",
+      "syn": [
+        {
+          "w": "motto",
+          "note": "座右铭/格言，较正式"
+        },
+        {
+          "w": "catchphrase",
+          "note": "流行口号，常指广告或政治"
+        },
+        {
+          "w": "tagline",
+          "note": "广告标语/品牌口号"
+        }
+      ]
+    },
+    {
+      "w": "minister",
+      "syn": [
+        {
+          "w": "secretary",
+          "note": "美式“部长”"
+        },
+        {
+          "w": "pastor",
+          "note": "牧师，侧重教堂牧养"
+        },
+        {
+          "w": "priest",
+          "note": "神父/牧师，宗教色彩强"
+        }
+      ]
+    },
+    {
+      "w": "prime minister",
+      "syn": [
+        {
+          "w": "premier",
+          "note": "首相/总理，较正式"
+        },
+        {
+          "w": "chancellor",
+          "note": "德奥等国的总理"
+        },
+        {
+          "w": "head of government",
+          "note": "政府首脑，解释性说法"
+        }
+      ]
+    },
+    {
+      "w": "frog",
+      "syn": []
+    },
+    {
+      "w": "arrow",
+      "syn": [
+        {
+          "w": "dart",
+          "note": "短箭/飞镖"
+        },
+        {
+          "w": "bolt",
+          "note": "弩箭"
+        },
+        {
+          "w": "pointer",
+          "note": "箭头指示物/指针"
+        }
+      ]
+    },
+    {
+      "w": "entitle",
+      "syn": [
+        {
+          "w": "title",
+          "note": "给…题名/命名"
+        },
+        {
+          "w": "authorize",
+          "note": "授权，使有权利"
+        },
+        {
+          "w": "qualify",
+          "note": "使有资格"
+        }
+      ]
+    },
+    {
+      "w": "getaway",
+      "syn": [
+        {
+          "w": "escape",
+          "note": "逃走，侧重逃脱"
+        },
+        {
+          "w": "flight",
+          "note": "逃跑/逃逸"
+        },
+        {
+          "w": "retreat",
+          "note": "休养地/隐居处"
+        },
+        {
+          "w": "vacation",
+          "note": "短假，休闲旅行"
+        }
+      ]
+    },
+    {
+      "w": "dive",
+      "syn": [
+        {
+          "w": "plunge",
+          "note": "猛冲/跳入"
+        },
+        {
+          "w": "plummet",
+          "note": "急剧下降"
+        },
+        {
+          "w": "drop",
+          "note": "下降，较通用"
+        }
+      ]
+    },
+    {
+      "w": "dove",
+      "syn": [
+        {
+          "w": "pigeon",
+          "note": "鸽子，较泛称"
+        },
+        {
+          "w": "pacifist",
+          "note": "鸽派/和平主义者"
+        }
+      ]
+    },
+    {
+      "w": "kayaking",
+      "syn": [
+        {
+          "w": "canoeing",
+          "note": "划独木舟，相近运动"
+        },
+        {
+          "w": "paddling",
+          "note": "划桨，动作/活动"
+        }
+      ]
+    },
+    {
+      "w": "peak season",
+      "syn": [
+        {
+          "w": "high season",
+          "note": "旺季，旅游常用"
+        },
+        {
+          "w": "busy season",
+          "note": "繁忙季节，较直白"
+        }
+      ]
+    },
+    {
+      "w": "freedom",
+      "syn": [
+        {
+          "w": "liberty",
+          "note": "自由，较正式/政治色彩"
+        },
+        {
+          "w": "independence",
+          "note": "独立/自主"
+        },
+        {
+          "w": "autonomy",
+          "note": "自治/自主权"
+        }
+      ]
+    }
+  ]
+}

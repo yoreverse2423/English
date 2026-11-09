@@ -1,0 +1,236 @@
+{
+  "items": [
+    {
+      "w": "extend",
+      "syn": [
+        {
+          "w": "lengthen",
+          "note": "侧重延长"
+        },
+        {
+          "w": "expand",
+          "note": "扩大范围"
+        },
+        {
+          "w": "prolong",
+          "note": "延长持续时间"
+        },
+        {
+          "w": "offer",
+          "note": "给予/提供"
+        }
+      ]
+    },
+    {
+      "w": "negotiate",
+      "syn": [
+        {
+          "w": "bargain",
+          "note": "讨价还价式谈判"
+        },
+        {
+          "w": "discuss",
+          "note": "商议"
+        },
+        {
+          "w": "mediate",
+          "note": "居中调解"
+        }
+      ]
+    },
+    {
+      "w": "fleet",
+      "syn": [
+        {
+          "w": "armada",
+          "note": "舰队"
+        },
+        {
+          "w": "swift",
+          "note": "快速的"
+        },
+        {
+          "w": "rapid",
+          "note": "迅速的"
+        }
+      ]
+    },
+    {
+      "w": "behold",
+      "syn": [
+        {
+          "w": "see",
+          "note": "看见"
+        },
+        {
+          "w": "observe",
+          "note": "观察"
+        },
+        {
+          "w": "watch",
+          "note": "注视"
+        },
+        {
+          "w": "notice",
+          "note": "注意到"
+        }
+      ]
+    },
+    {
+      "w": "beheld",
+      "syn": [
+        {
+          "w": "saw",
+          "note": "看见（see过去式）"
+        },
+        {
+          "w": "observed",
+          "note": "观察"
+        },
+        {
+          "w": "watched",
+          "note": "注视"
+        },
+        {
+          "w": "noticed",
+          "note": "注意到"
+        }
+      ]
+    },
+    {
+      "w": "league",
+      "syn": [
+        {
+          "w": "alliance",
+          "note": "联盟"
+        },
+        {
+          "w": "association",
+          "note": "协会/社团"
+        },
+        {
+          "w": "union",
+          "note": "联合/联盟"
+        }
+      ]
+    },
+    {
+      "w": "in a league of one's own",
+      "syn": [
+        {
+          "w": "unmatched",
+          "note": "无与伦比"
+        },
+        {
+          "w": "unrivalled",
+          "note": "无可匹敌"
+        },
+        {
+          "w": "peerless",
+          "note": "无双的"
+        },
+        {
+          "w": "unique",
+          "note": "独特的"
+        }
+      ]
+    },
+    {
+      "w": "royal",
+      "syn": [
+        {
+          "w": "regal",
+          "note": "王室的"
+        },
+        {
+          "w": "kingly",
+          "note": "国王般的"
+        },
+        {
+          "w": "majestic",
+          "note": "庄严的"
+        },
+        {
+          "w": "splendid",
+          "note": "盛大的"
+        }
+      ]
+    },
+    {
+      "w": "spice",
+      "syn": [
+        {
+          "w": "seasoning",
+          "note": "调味品"
+        },
+        {
+          "w": "zest",
+          "note": "趣味/风味"
+        },
+        {
+          "w": "flavor",
+          "note": "风味/情趣"
+        },
+        {
+          "w": "liven up",
+          "note": "增添趣味"
+        }
+      ]
+    },
+    {
+      "w": "withdraw",
+      "syn": [
+        {
+          "w": "retreat",
+          "note": "撤退"
+        },
+        {
+          "w": "remove",
+          "note": "移开/收回"
+        },
+        {
+          "w": "cancel",
+          "note": "撤销"
+        },
+        {
+          "w": "pull out",
+          "note": "撤离"
+        }
+      ]
+    },
+    {
+      "w": "withdrew",
+      "syn": [
+        {
+          "w": "retreated",
+          "note": "撤退"
+        },
+        {
+          "w": "removed",
+          "note": "收回/移开"
+        },
+        {
+          "w": "pulled out",
+          "note": "撤离"
+        }
+      ]
+    },
+    {
+      "w": "withdrawn",
+      "syn": [
+        {
+          "w": "reserved",
+          "note": "沉默寡言的"
+        },
+        {
+          "w": "remote",
+          "note": "偏僻的"
+        },
+        {
+          "w": "solitary",
+          "note": "孤独的"
+        }
+      ]
+    }
+  ]
+}

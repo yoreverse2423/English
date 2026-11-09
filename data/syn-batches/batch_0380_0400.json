@@ -1,0 +1,327 @@
+{
+  "items": [
+    {
+      "w": "relic",
+      "syn": [
+        {
+          "w": "remains",
+          "note": "遗迹/残骸，常用复数"
+        },
+        {
+          "w": "artifact",
+          "note": "人工制品/遗物"
+        },
+        {
+          "w": "memento",
+          "note": "纪念物"
+        }
+      ]
+    },
+    {
+      "w": "mount",
+      "syn": [
+        {
+          "w": "increase",
+          "note": "增加"
+        },
+        {
+          "w": "climb",
+          "note": "爬上"
+        },
+        {
+          "w": "install",
+          "note": "安装"
+        },
+        {
+          "w": "ascend",
+          "note": "登上，较正式"
+        }
+      ]
+    },
+    {
+      "w": "former",
+      "syn": [
+        {
+          "w": "previous",
+          "note": "先前的"
+        },
+        {
+          "w": "prior",
+          "note": "在先的，较正式"
+        },
+        {
+          "w": "earlier",
+          "note": "较早的"
+        }
+      ]
+    },
+    {
+      "w": "clue",
+      "syn": [
+        {
+          "w": "hint",
+          "note": "暗示/线索"
+        },
+        {
+          "w": "lead",
+          "note": "线索"
+        },
+        {
+          "w": "sign",
+          "note": "迹象"
+        }
+      ]
+    },
+    {
+      "w": "preserve",
+      "syn": [
+        {
+          "w": "conserve",
+          "note": "保存/保护，较正式"
+        },
+        {
+          "w": "protect",
+          "note": "保护"
+        },
+        {
+          "w": "maintain",
+          "note": "维持"
+        }
+      ]
+    },
+    {
+      "w": "promote",
+      "syn": [
+        {
+          "w": "foster",
+          "note": "促进/培养"
+        },
+        {
+          "w": "advance",
+          "note": "促进/提升"
+        },
+        {
+          "w": "boost",
+          "note": "促进/提高"
+        }
+      ]
+    },
+    {
+      "w": "cypress",
+      "syn": []
+    },
+    {
+      "w": "app",
+      "syn": [
+        {
+          "w": "application",
+          "note": "应用程序，全称"
+        },
+        {
+          "w": "program",
+          "note": "程序，较泛"
+        }
+      ]
+    },
+    {
+      "w": "application",
+      "syn": [
+        {
+          "w": "use",
+          "note": "应用/使用"
+        },
+        {
+          "w": "request",
+          "note": "申请/请求"
+        },
+        {
+          "w": "app",
+          "note": "应用程序，缩写"
+        }
+      ]
+    },
+    {
+      "w": "take part in",
+      "syn": [
+        {
+          "w": "participate in",
+          "note": "参加，较正式"
+        },
+        {
+          "w": "join in",
+          "note": "参加活动"
+        },
+        {
+          "w": "engage in",
+          "note": "参与"
+        }
+      ]
+    },
+    {
+      "w": "give way to",
+      "syn": [
+        {
+          "w": "yield to",
+          "note": "让步/让位于"
+        },
+        {
+          "w": "give in to",
+          "note": "屈服"
+        },
+        {
+          "w": "submit to",
+          "note": "服从"
+        }
+      ]
+    },
+    {
+      "w": "balance",
+      "syn": [
+        {
+          "w": "equilibrium",
+          "note": "平衡，较正式"
+        },
+        {
+          "w": "stability",
+          "note": "稳定"
+        },
+        {
+          "w": "stabilize",
+          "note": "使稳定/平衡"
+        }
+      ]
+    },
+    {
+      "w": "keep balance",
+      "syn": [
+        {
+          "w": "maintain balance",
+          "note": "保持平衡，较正式"
+        },
+        {
+          "w": "stay balanced",
+          "note": "保持平衡"
+        },
+        {
+          "w": "keep one's balance",
+          "note": "保持平衡"
+        }
+      ]
+    },
+    {
+      "w": "lead to",
+      "syn": [
+        {
+          "w": "result in",
+          "note": "导致"
+        },
+        {
+          "w": "cause",
+          "note": "导致"
+        },
+        {
+          "w": "contribute to",
+          "note": "促成"
+        }
+      ]
+    },
+    {
+      "w": "dam",
+      "syn": [
+        {
+          "w": "dike",
+          "note": "堤坝"
+        },
+        {
+          "w": "barrier",
+          "note": "障碍"
+        },
+        {
+          "w": "block",
+          "note": "阻挡"
+        }
+      ]
+    },
+    {
+      "w": "proposal",
+      "syn": [
+        {
+          "w": "suggestion",
+          "note": "建议"
+        },
+        {
+          "w": "recommendation",
+          "note": "建议，较正式"
+        },
+        {
+          "w": "motion",
+          "note": "动议"
+        }
+      ]
+    },
+    {
+      "w": "make a proposal",
+      "syn": [
+        {
+          "w": "propose",
+          "note": "求婚/提议"
+        },
+        {
+          "w": "pop the question",
+          "note": "求婚，口语"
+        }
+      ]
+    },
+    {
+      "w": "protest",
+      "syn": [
+        {
+          "w": "objection",
+          "note": "反对/抗议"
+        },
+        {
+          "w": "demonstration",
+          "note": "示威"
+        },
+        {
+          "w": "complain",
+          "note": "抱怨/抗议"
+        }
+      ]
+    },
+    {
+      "w": "likely",
+      "syn": [
+        {
+          "w": "probable",
+          "note": "很可能的"
+        },
+        {
+          "w": "possible",
+          "note": "可能的"
+        },
+        {
+          "w": "expected",
+          "note": "预期的"
+        }
+      ]
+    },
+    {
+      "w": "turn to",
+      "syn": [
+        {
+          "w": "resort to",
+          "note": "求助于/诉诸"
+        },
+        {
+          "w": "seek help from",
+          "note": "向…求助"
+        },
+        {
+          "w": "consult",
+          "note": "咨询"
+        }
+      ]
+    }
+  ]
+}

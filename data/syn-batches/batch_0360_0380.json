@@ -1,0 +1,279 @@
+{
+  "items": [
+    {
+      "w": "subway",
+      "syn": [
+        {
+          "w": "metro",
+          "note": "地铁，英式常用"
+        },
+        {
+          "w": "underground",
+          "note": "地铁，英式"
+        },
+        {
+          "w": "tube",
+          "note": "伦敦地铁"
+        }
+      ]
+    },
+    {
+      "w": "underground",
+      "syn": [
+        {
+          "w": "subway",
+          "note": "地铁；地道，美式"
+        },
+        {
+          "w": "metro",
+          "note": "地铁"
+        },
+        {
+          "w": "hidden",
+          "note": "秘密的"
+        },
+        {
+          "w": "subterranean",
+          "note": "地下的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "apartment",
+      "syn": [
+        {
+          "w": "flat",
+          "note": "公寓，英式"
+        },
+        {
+          "w": "suite",
+          "note": "套房"
+        },
+        {
+          "w": "unit",
+          "note": "公寓单元，美式"
+        }
+      ]
+    },
+    {
+      "w": "pants",
+      "syn": [
+        {
+          "w": "trousers",
+          "note": "裤子，较正式/英式"
+        },
+        {
+          "w": "slacks",
+          "note": "休闲裤"
+        }
+      ]
+    },
+    {
+      "w": "beg",
+      "syn": [
+        {
+          "w": "plead",
+          "note": "恳求，较正式"
+        },
+        {
+          "w": "implore",
+          "note": "哀求，正式"
+        },
+        {
+          "w": "ask",
+          "note": "请求，语气较弱"
+        }
+      ]
+    },
+    {
+      "w": "equal",
+      "syn": [
+        {
+          "w": "peer",
+          "note": "同辈；同等的人"
+        },
+        {
+          "w": "match",
+          "note": "匹敌者"
+        },
+        {
+          "w": "equivalent",
+          "note": "相等物；对应物"
+        }
+      ]
+    },
+    {
+      "w": "gap",
+      "syn": [
+        {
+          "w": "opening",
+          "note": "缺口；开口"
+        },
+        {
+          "w": "space",
+          "note": "间隙；空间"
+        },
+        {
+          "w": "difference",
+          "note": "差距；差异"
+        }
+      ]
+    },
+    {
+      "w": "demand",
+      "syn": [
+        {
+          "w": "requirement",
+          "note": "要求；需求"
+        },
+        {
+          "w": "request",
+          "note": "请求，语气较弱"
+        },
+        {
+          "w": "need",
+          "note": "需要；需求"
+        }
+      ]
+    },
+    {
+      "w": "vocabulary",
+      "syn": [
+        {
+          "w": "lexicon",
+          "note": "词汇，较正式"
+        },
+        {
+          "w": "word list",
+          "note": "词表"
+        },
+        {
+          "w": "glossary",
+          "note": "词汇表；术语表"
+        }
+      ]
+    },
+    {
+      "w": "description",
+      "syn": [
+        {
+          "w": "account",
+          "note": "描述；叙述"
+        },
+        {
+          "w": "depiction",
+          "note": "描写；描绘"
+        },
+        {
+          "w": "portrayal",
+          "note": "描绘；刻画"
+        }
+      ]
+    },
+    {
+      "w": "relate",
+      "syn": [
+        {
+          "w": "tell",
+          "note": "叙述"
+        },
+        {
+          "w": "connect",
+          "note": "使联系"
+        },
+        {
+          "w": "associate",
+          "note": "使关联"
+        }
+      ]
+    },
+    {
+      "w": "relate to",
+      "syn": [
+        {
+          "w": "concern",
+          "note": "涉及；与…有关"
+        },
+        {
+          "w": "involve",
+          "note": "涉及"
+        },
+        {
+          "w": "connect with",
+          "note": "与…相联系"
+        },
+        {
+          "w": "understand",
+          "note": "理解；认同"
+        }
+      ]
+    },
+    {
+      "w": "Korean",
+      "syn": []
+    },
+    {
+      "w": "Danish",
+      "syn": []
+    },
+    {
+      "w": "Denmark",
+      "syn": []
+    },
+    {
+      "w": "Arabic",
+      "syn": []
+    },
+    {
+      "w": "FIFA",
+      "syn": []
+    },
+    {
+      "w": "heritage",
+      "syn": [
+        {
+          "w": "legacy",
+          "note": "遗产；遗留"
+        },
+        {
+          "w": "tradition",
+          "note": "传统"
+        },
+        {
+          "w": "inheritance",
+          "note": "继承物；继承权"
+        }
+      ]
+    },
+    {
+      "w": "creative",
+      "syn": [
+        {
+          "w": "inventive",
+          "note": "有发明创造力的"
+        },
+        {
+          "w": "imaginative",
+          "note": "富有想象力的"
+        },
+        {
+          "w": "original",
+          "note": "原创的"
+        }
+      ]
+    },
+    {
+      "w": "temple",
+      "syn": [
+        {
+          "w": "shrine",
+          "note": "神殿；圣祠"
+        },
+        {
+          "w": "sanctuary",
+          "note": "圣殿；庇护所"
+        }
+      ]
+    }
+  ]
+}

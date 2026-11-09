@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "w": "Antarctica",
+      "syn": []
+    },
+    {
+      "w": "the Antarctic",
+      "syn": [
+        {
+          "w": "Antarctica",
+          "note": "侧重南极大陆本身"
+        }
+      ]
+    },
+    {
+      "w": "the South Pole",
+      "syn": []
+    },
+    {
+      "w": "South Georgia Island",
+      "syn": []
+    },
+    {
+      "w": "Frank Wild",
+      "syn": []
+    },
+    {
+      "w": "Thomas Orde-Lees",
+      "syn": []
+    },
+    {
+      "w": "Frank Worsley",
+      "syn": []
+    },
+    {
+      "w": "Tom Crean",
+      "syn": []
+    },
+    {
+      "w": "Hubert Hudson",
+      "syn": []
+    },
+    {
+      "w": "Lionel Greenstreet",
+      "syn": []
+    },
+    {
+      "w": "drama",
+      "syn": [
+        {
+          "w": "play",
+          "note": "侧重一出戏、剧本"
+        },
+        {
+          "w": "theatre",
+          "note": "侧重戏剧艺术、演出"
+        }
+      ]
+    },
+    {
+      "w": "sorrow",
+      "syn": [
+        {
+          "w": "sadness",
+          "note": "最通用的“悲伤”"
+        },
+        {
+          "w": "grief",
+          "note": "侧重因丧失而悲痛"
+        },
+        {
+          "w": "regret",
+          "note": "侧重懊悔、遗憾"
+        }
+      ]
+    }
+  ]
+}

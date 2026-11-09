@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.speech.tts.TextToSpeech;
 import android.view.Gravity;
 import android.view.View;
@@ -27,7 +29,18 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * A deliberately small WebView shell for the offline 小单词机 study app.
@@ -43,6 +56,9 @@ public class MainActivity extends Activity {
     private static final String START_URL = "file:///android_asset/www/index.html";
     private static final int FILE_CHOOSER_REQUEST = 4107;
     private static final String JS_BRIDGE_NAME = "XiaodanciciNative";
+    private static final String DEEPSEEK_URL = "https://api.deepseek.com/chat/completions";
+    private static final int DEEPSEEK_CONNECT_TIMEOUT_MS = 30000;
+    private static final int DEEPSEEK_READ_TIMEOUT_MS = 120000;
 
     /*
      * TextToSpeech states. ttsState is guarded by ttsLock because the engine is
@@ -85,6 +101,11 @@ public class MainActivity extends Activity {
     private WebView webView;
     private ValueCallback<Uri[]> filePathCallback;
     private boolean fallbackShown;
+
+    // DeepSeek requests run off the UI/JavaBridge thread; the result is
+    // delivered back to the page through a JS callback.
+    private final ExecutorService netExecutor = Executors.newSingleThreadExecutor();
+    private final Handler mainHandler = new Handler(Looper.getMainLooper());
 
     // Offline pronunciation via the platform TextToSpeech engine.
     private final Object ttsLock = new Object();
@@ -443,6 +464,131 @@ public class MainActivity extends Activity {
                 return "initializing";
             }
         }
+
+        /**
+         * DeepSeek chat completion. app.js sends {apiKey, model, messages, ...}
+         * and gets the raw API JSON back through callbackName(err, json).
+         * This exists because ColorOS WebView blocks CORS on file:// pages.
+         */
+        @JavascriptInterface
+        public void deepseekChat(String requestId, String callbackName, String jsonBody) {
+            final String callback = sanitizeCallback(callbackName);
+            netExecutor.execute(new Runnable() {
+                @Override
+                public void run() {
+                    String error = null;
+                    String result = null;
+                    try {
+                        result = postDeepseek(jsonBody);
+                    } catch (Throwable failure) {
+                        error = describe(failure);
+                    }
+                    final String finalError = error;
+                    final String finalResult = result;
+                    mainHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            deliverDeepseekCallback(callback, finalError, finalResult);
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    private static String sanitizeCallback(String name) {
+        if (name == null) return "";
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < name.length(); i += 1) {
+            char c = name.charAt(i);
+            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
+                    || (c >= '0' && c <= '9') || c == '_' || c == '$') {
+                builder.append(c);
+            }
+        }
+        return builder.toString();
+    }
+
+    private void deliverDeepseekCallback(String callbackName, String error, String resultJson) {
+        final WebView view = webView;
+        if (view == null || callbackName == null || callbackName.isEmpty()) return;
+        try {
+            String errorLiteral = error == null ? "null" : JSONObject.quote(error);
+            String dataLiteral = error != null
+                    ? "null"
+                    : JSONObject.quote(resultJson == null ? "" : resultJson);
+            String js = "(function(){try{var fn=window[" + JSONObject.quote(callbackName) + "];"
+                    + "if(typeof fn==='function')fn(" + errorLiteral + "," + dataLiteral + ");"
+                    + "}catch(e){console.error(e);}})();";
+            view.evaluateJavascript(js, null);
+        } catch (Throwable ignored) {
+        }
+    }
+
+    private String postDeepseek(String jsonBody) throws Exception {
+        JSONObject incoming = new JSONObject(jsonBody == null ? "{}" : jsonBody);
+        String apiKey = incoming.optString("apiKey", "");
+        if (apiKey.isEmpty()) {
+            throw new IllegalArgumentException("缺少 apiKey");
+        }
+
+        JSONObject outbound = new JSONObject();
+        outbound.put("model", incoming.optString("model", "deepseek-flash"));
+        outbound.put("messages", incoming.getJSONArray("messages"));
+        if (incoming.has("temperature") && !incoming.isNull("temperature")) {
+            outbound.put("temperature", incoming.getDouble("temperature"));
+        }
+        if (incoming.has("response_format") && !incoming.isNull("response_format")) {
+            outbound.put("response_format", incoming.getJSONObject("response_format"));
+        }
+
+        byte[] payload = outbound.toString().getBytes(StandardCharsets.UTF_8);
+        HttpURLConnection conn = (HttpURLConnection) new URL(DEEPSEEK_URL).openConnection();
+        conn.setConnectTimeout(DEEPSEEK_CONNECT_TIMEOUT_MS);
+        conn.setReadTimeout(DEEPSEEK_READ_TIMEOUT_MS);
+        conn.setRequestMethod("POST");
+        conn.setDoOutput(true);
+        conn.setRequestProperty("Content-Type", "application/json");
+        conn.setRequestProperty("Authorization", "Bearer " + apiKey);
+        conn.setRequestProperty("Accept", "application/json");
+        try (OutputStream stream = conn.getOutputStream()) {
+            stream.write(payload);
+        }
+
+        int code = conn.getResponseCode();
+        InputStream stream = code >= 400 ? conn.getErrorStream() : conn.getInputStream();
+        String body = readDeepseekStream(stream);
+        if (code >= 400) {
+            String message = "HTTP " + code;
+            try {
+                JSONObject errorPayload = new JSONObject(body);
+                JSONObject errorObject = errorPayload.optJSONObject("error");
+                if (errorObject != null && errorObject.has("message")) {
+                    message = errorObject.optString("message", message);
+                } else if (errorPayload.has("message")) {
+                    message = errorPayload.optString("message", message);
+                }
+            } catch (Throwable ignored) {
+            }
+            if (code == 401) message = "DeepSeek API Key 无效";
+            if (code == 402) message = "DeepSeek 余额不足";
+            if (code == 429) message = "请求过于频繁，稍后再试";
+            throw new IllegalStateException(message);
+        }
+        return body;
+    }
+
+    private static String readDeepseekStream(InputStream stream) throws Exception {
+        if (stream == null) return "";
+        StringBuilder builder = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(stream, StandardCharsets.UTF_8))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                builder.append(line);
+            }
+        }
+        return builder.toString();
     }
 
     private void initTtsAsync() {
@@ -876,6 +1022,11 @@ public class MainActivity extends Activity {
                 engine.shutdown();
             } catch (Throwable ignored) {
             }
+        }
+
+        try {
+            netExecutor.shutdownNow();
+        } catch (Throwable ignored) {
         }
 
         if (webView != null) {

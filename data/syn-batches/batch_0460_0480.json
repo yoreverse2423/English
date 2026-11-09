@@ -1,0 +1,239 @@
+{
+  "items": [
+    {
+      "w": "United Nations Educational, Scientific and Cultural Organization",
+      "syn": []
+    },
+    {
+      "w": "Cairo",
+      "syn": []
+    },
+    {
+      "w": "Tanzania",
+      "syn": []
+    },
+    {
+      "w": "the Kremlin",
+      "syn": []
+    },
+    {
+      "w": "Moscow",
+      "syn": []
+    },
+    {
+      "w": "Saint Basil's Cathedral",
+      "syn": []
+    },
+    {
+      "w": "the Forbidden City",
+      "syn": []
+    },
+    {
+      "w": "Los Angeles",
+      "syn": []
+    },
+    {
+      "w": "poster",
+      "syn": [
+        {
+          "w": "placard",
+          "note": "招贴；较正式"
+        },
+        {
+          "w": "bill",
+          "note": "海报；广告单"
+        },
+        {
+          "w": "notice",
+          "note": "告示；通知"
+        }
+      ]
+    },
+    {
+      "w": "illegal",
+      "syn": [
+        {
+          "w": "unlawful",
+          "note": "更正式；不合法"
+        },
+        {
+          "w": "illicit",
+          "note": "侧重违禁、不正当"
+        },
+        {
+          "w": "criminal",
+          "note": "犯罪的；刑事的"
+        }
+      ]
+    },
+    {
+      "w": "hunt",
+      "syn": [
+        {
+          "w": "search",
+          "note": "搜寻"
+        },
+        {
+          "w": "pursue",
+          "note": "追猎；追求"
+        },
+        {
+          "w": "chase",
+          "note": "追赶；追捕"
+        }
+      ]
+    },
+    {
+      "w": "hunter",
+      "syn": [
+        {
+          "w": "huntsman",
+          "note": "猎人；较正式"
+        },
+        {
+          "w": "tracker",
+          "note": "追踪者"
+        },
+        {
+          "w": "seeker",
+          "note": "搜寻者"
+        }
+      ]
+    },
+    {
+      "w": "immediately",
+      "syn": [
+        {
+          "w": "at once",
+          "note": "立即"
+        },
+        {
+          "w": "instantly",
+          "note": "立刻；瞬间地"
+        },
+        {
+          "w": "right away",
+          "note": "马上；口语"
+        },
+        {
+          "w": "as soon as",
+          "note": "作连词时“一…就”"
+        }
+      ]
+    },
+    {
+      "w": "species",
+      "syn": [
+        {
+          "w": "kind",
+          "note": "种类；较普通"
+        },
+        {
+          "w": "type",
+          "note": "类型"
+        },
+        {
+          "w": "sort",
+          "note": "种类；略口语"
+        }
+      ]
+    },
+    {
+      "w": "shark",
+      "syn": [
+        {
+          "w": "swindler",
+          "note": "指骗子义"
+        },
+        {
+          "w": "cheat",
+          "note": "骗子；作弊者"
+        },
+        {
+          "w": "fraudster",
+          "note": "诈骗者"
+        }
+      ]
+    },
+    {
+      "w": "fin",
+      "syn": []
+    },
+    {
+      "w": "on earth",
+      "syn": [
+        {
+          "w": "in the world",
+          "note": "到底；究竟"
+        },
+        {
+          "w": "ever",
+          "note": "疑问句中加强语气"
+        },
+        {
+          "w": "at all",
+          "note": "全然；根本"
+        }
+      ]
+    },
+    {
+      "w": "die out",
+      "syn": [
+        {
+          "w": "become extinct",
+          "note": "灭绝"
+        },
+        {
+          "w": "vanish",
+          "note": "消失"
+        },
+        {
+          "w": "disappear",
+          "note": "消失；不见"
+        }
+      ]
+    },
+    {
+      "w": "alarm",
+      "syn": [
+        {
+          "w": "warning",
+          "note": "警报；警告"
+        },
+        {
+          "w": "alert",
+          "note": "警报；警示"
+        },
+        {
+          "w": "frighten",
+          "note": "使惊恐"
+        },
+        {
+          "w": "panic",
+          "note": "惊慌；恐慌"
+        }
+      ]
+    },
+    {
+      "w": "rate",
+      "syn": [
+        {
+          "w": "speed",
+          "note": "速度"
+        },
+        {
+          "w": "ratio",
+          "note": "比率"
+        },
+        {
+          "w": "price",
+          "note": "价格"
+        },
+        {
+          "w": "evaluate",
+          "note": "评估；动词义"
+        }
+      ]
+    }
+  ]
+}

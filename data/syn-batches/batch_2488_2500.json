@@ -1,0 +1,113 @@
+{
+  "items": [
+    {
+      "w": "Bondi Beach",
+      "syn": []
+    },
+    {
+      "w": "Chiang Mai",
+      "syn": []
+    },
+    {
+      "w": "the Bay of Islands",
+      "syn": []
+    },
+    {
+      "w": "the haka",
+      "syn": []
+    },
+    {
+      "w": "Edmonds",
+      "syn": []
+    },
+    {
+      "w": "Felicity",
+      "syn": [
+        {
+          "w": "happiness",
+          "note": "幸福，最通用"
+        },
+        {
+          "w": "joy",
+          "note": "快乐，情感更强"
+        },
+        {
+          "w": "bliss",
+          "note": "极乐，文学色彩"
+        }
+      ]
+    },
+    {
+      "w": "Tasmanian devil",
+      "syn": []
+    },
+    {
+      "w": "Tasmania",
+      "syn": []
+    },
+    {
+      "w": "duck-billed platypus",
+      "syn": [
+        {
+          "w": "platypus",
+          "note": "常用简称"
+        }
+      ]
+    },
+    {
+      "w": "tale",
+      "syn": [
+        {
+          "w": "story",
+          "note": "故事，最通用"
+        },
+        {
+          "w": "legend",
+          "note": "传说"
+        },
+        {
+          "w": "narrative",
+          "note": "叙述，较正式"
+        },
+        {
+          "w": "rumor",
+          "note": "流言，对应流言义"
+        }
+      ]
+    },
+    {
+      "w": "merchant",
+      "syn": [
+        {
+          "w": "trader",
+          "note": "贸易商，侧重贸易"
+        },
+        {
+          "w": "dealer",
+          "note": "经销商"
+        },
+        {
+          "w": "businessman",
+          "note": "商人，泛指"
+        }
+      ]
+    },
+    {
+      "w": "set sail",
+      "syn": [
+        {
+          "w": "sail",
+          "note": "起航，更简洁"
+        },
+        {
+          "w": "depart",
+          "note": "出发，较正式"
+        },
+        {
+          "w": "set off",
+          "note": "出发，口语常用"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "items": [
+    {
+      "w": "bean curd",
+      "syn": [
+        {
+          "w": "tofu",
+          "note": "日常更常用"
+        }
+      ]
+    },
+    {
+      "w": "tofu",
+      "syn": [
+        {
+          "w": "bean curd",
+          "note": "较书面/菜单用"
+        }
+      ]
+    },
+    {
+      "w": "brand",
+      "syn": [
+        {
+          "w": "trademark",
+          "note": "侧重注册商标"
+        },
+        {
+          "w": "label",
+          "note": "侧重品牌标签"
+        },
+        {
+          "w": "mark",
+          "note": "泛指标记"
+        },
+        {
+          "w": "stamp",
+          "note": "侧重打烙印"
+        }
+      ]
+    },
+    {
+      "w": "olive",
+      "syn": []
+    },
+    {
+      "w": "fig",
+      "syn": []
+    },
+    {
+      "w": "ingredient",
+      "syn": [
+        {
+          "w": "component",
+          "note": "更正式，指组成部分"
+        },
+        {
+          "w": "element",
+          "note": "侧重要素"
+        },
+        {
+          "w": "constituent",
+          "note": "正式，成分"
+        }
+      ]
+    },
+    {
+      "w": "dessert",
+      "syn": [
+        {
+          "w": "sweet",
+          "note": "英式，指甜点"
+        },
+        {
+          "w": "pudding",
+          "note": "英式，餐后甜点"
+        }
+      ]
+    },
+    {
+      "w": "dough",
+      "syn": [
+        {
+          "w": "paste",
+          "note": "侧重糊状面团"
+        },
+        {
+          "w": "batter",
+          "note": "指稀面糊"
+        }
+      ]
+    },
+    {
+      "w": "stable",
+      "syn": [
+        {
+          "w": "steady",
+          "note": "侧重平稳不变"
+        },
+        {
+          "w": "firm",
+          "note": "侧重牢固坚定"
+        },
+        {
+          "w": "secure",
+          "note": "侧重安全可靠"
+        }
+      ]
+    },
+    {
+      "w": "haggis",
+      "syn": []
+    },
+    {
+      "w": "canteen",
+      "syn": [
+        {
+          "w": "dining hall",
+          "note": "指食堂大厅"
+        },
+        {
+          "w": "cafeteria",
+          "note": "侧重自助餐厅"
+        }
+      ]
+    },
+    {
+      "w": "cafeteria",
+      "syn": [
+        {
+          "w": "canteen",
+          "note": "英式，食堂"
+        },
+        {
+          "w": "dining hall",
+          "note": "泛指食堂"
+        }
+      ]
+    }
+  ]
+}

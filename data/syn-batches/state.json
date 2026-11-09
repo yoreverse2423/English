@@ -1,0 +1,35 @@
+{
+  "next": 2688,
+  "done": 2688,
+  "fail_streak": 0,
+  "errors": [
+    {
+      "batch": "0260_0280",
+      "error": "Unterminated string starting at: line 1 column 914 (char 913)"
+    },
+    {
+      "batch": "0420_0440",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "batch": "0440_0460",
+      "error": "Unterminated string starting at: line 1 column 856 (char 855)"
+    },
+    {
+      "batch": "0460_0480",
+      "error": "Unterminated string starting at: line 1 column 134 (char 133)"
+    },
+    {
+      "batch": "0500_0520",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "batch": "0580_0600",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "batch": "0580_0600",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ]
+}

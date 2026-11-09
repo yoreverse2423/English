@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "w": "figure out",
+      "syn": [
+        {
+          "w": "work out",
+          "note": "算出；解决，口语常用"
+        },
+        {
+          "w": "solve",
+          "note": "解决，偏问题"
+        },
+        {
+          "w": "understand",
+          "note": "弄懂，侧重理解"
+        },
+        {
+          "w": "determine",
+          "note": "确定，较正式"
+        }
+      ]
+    },
+    {
+      "w": "sufficient",
+      "syn": [
+        {
+          "w": "enough",
+          "note": "足够，最常用"
+        },
+        {
+          "w": "adequate",
+          "note": "足够；合格，较正式"
+        },
+        {
+          "w": "ample",
+          "note": "充足有余，较正式"
+        }
+      ]
+    },
+    {
+      "w": "soap",
+      "syn": []
+    },
+    {
+      "w": "towel",
+      "syn": [
+        {
+          "w": "dry",
+          "note": "擦干，动词义"
+        },
+        {
+          "w": "wipe",
+          "note": "擦拭，动词义"
+        }
+      ]
+    },
+    {
+      "w": "microwave",
+      "syn": []
+    },
+    {
+      "w": "microwave oven",
+      "syn": [
+        {
+          "w": "microwave",
+          "note": "口语常简称为微波炉"
+        }
+      ]
+    },
+    {
+      "w": "tissue",
+      "syn": [
+        {
+          "w": "napkin",
+          "note": "餐巾；纸巾，近义"
+        },
+        {
+          "w": "handkerchief",
+          "note": "手帕，近义"
+        },
+        {
+          "w": "tissue paper",
+          "note": "薄纸，对应纸巾/薄纱义"
+        }
+      ]
+    },
+    {
+      "w": "facility",
+      "syn": [
+        {
+          "w": "equipment",
+          "note": "设备，不可数"
+        },
+        {
+          "w": "amenity",
+          "note": "便利设施，较正式"
+        },
+        {
+          "w": "ease",
+          "note": "容易，对应“容易”义"
+        },
+        {
+          "w": "skill",
+          "note": "技能；灵巧，对应“灵巧”义"
+        }
+      ]
+    },
+    {
+      "w": "keen",
+      "syn": [
+        {
+          "w": "eager",
+          "note": "渴望的"
+        },
+        {
+          "w": "enthusiastic",
+          "note": "热心的"
+        },
+        {
+          "w": "sharp",
+          "note": "敏锐的"
+        },
+        {
+          "w": "acute",
+          "note": "敏锐的；剧烈的"
+        }
+      ]
+    },
+    {
+      "w": "globe",
+      "syn": [
+        {
+          "w": "earth",
+          "note": "地球"
+        },
+        {
+          "w": "sphere",
+          "note": "球体"
+        },
+        {
+          "w": "ball",
+          "note": "球"
+        },
+        {
+          "w": "world",
+          "note": "世界；地球"
+        }
+      ]
+    },
+    {
+      "w": "argue",
+      "syn": [
+        {
+          "w": "debate",
+          "note": "辩论"
+        },
+        {
+          "w": "quarrel",
+          "note": "争吵"
+        },
+        {
+          "w": "contend",
+          "note": "主张；争辩，较正式"
+        },
+        {
+          "w": "maintain",
+          "note": "主张，较正式"
+        }
+      ]
+    },
+    {
+      "w": "argument",
+      "syn": [
+        {
+          "w": "debate",
+          "note": "辩论"
+        },
+        {
+          "w": "dispute",
+          "note": "争论"
+        },
+        {
+          "w": "reasoning",
+          "note": "论证；推理"
+        },
+        {
+          "w": "quarrel",
+          "note": "争吵"
+        }
+      ]
+    }
+  ]
+}

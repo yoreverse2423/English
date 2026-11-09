@@ -1,0 +1,364 @@
+{
+  "items": [
+    {
+      "w": "set an example",
+      "syn": [
+        {
+          "w": "lead by example",
+          "note": "以身作则"
+        },
+        {
+          "w": "serve as a model",
+          "note": "作为典范"
+        },
+        {
+          "w": "be a role model",
+          "note": "成为榜样"
+        }
+      ]
+    },
+    {
+      "w": "honour",
+      "syn": [
+        {
+          "w": "respect",
+          "note": "尊敬；尊重"
+        },
+        {
+          "w": "glory",
+          "note": "光荣；荣耀"
+        },
+        {
+          "w": "credit",
+          "note": "赞扬；荣誉"
+        },
+        {
+          "w": "esteem",
+          "note": "较正式：敬重"
+        }
+      ]
+    },
+    {
+      "w": "glory",
+      "syn": [
+        {
+          "w": "honour",
+          "note": "荣誉；光荣"
+        },
+        {
+          "w": "fame",
+          "note": "名声；声誉"
+        },
+        {
+          "w": "pride",
+          "note": "自豪；骄傲"
+        }
+      ]
+    },
+    {
+      "w": "medal",
+      "syn": [
+        {
+          "w": "award",
+          "note": "奖项；奖品"
+        },
+        {
+          "w": "decoration",
+          "note": "勋章；装饰品"
+        },
+        {
+          "w": "badge",
+          "note": "徽章；不严格同义"
+        }
+      ]
+    },
+    {
+      "w": "championship",
+      "syn": [
+        {
+          "w": "tournament",
+          "note": "锦标赛"
+        },
+        {
+          "w": "title",
+          "note": "冠军称号"
+        },
+        {
+          "w": "competition",
+          "note": "比赛；竞赛"
+        }
+      ]
+    },
+    {
+      "w": "champion",
+      "syn": [
+        {
+          "w": "winner",
+          "note": "获胜者；冠军"
+        },
+        {
+          "w": "defender",
+          "note": "拥护者；捍卫者"
+        },
+        {
+          "w": "advocate",
+          "note": "拥护者；提倡者"
+        },
+        {
+          "w": "support",
+          "note": "支持；拥护"
+        }
+      ]
+    },
+    {
+      "w": "determination",
+      "syn": [
+        {
+          "w": "resolve",
+          "note": "较正式：决心"
+        },
+        {
+          "w": "resolution",
+          "note": "决心；决定"
+        },
+        {
+          "w": "willpower",
+          "note": "意志力"
+        }
+      ]
+    },
+    {
+      "w": "apart",
+      "syn": [
+        {
+          "w": "separated",
+          "note": "分离的"
+        },
+        {
+          "w": "separately",
+          "note": "分开地"
+        },
+        {
+          "w": "distinct",
+          "note": "不同的；有区别的"
+        }
+      ]
+    },
+    {
+      "w": "fall apart",
+      "syn": [
+        {
+          "w": "collapse",
+          "note": "崩溃；倒塌"
+        },
+        {
+          "w": "break up",
+          "note": "破裂；解散"
+        },
+        {
+          "w": "come apart",
+          "note": "散开；解体"
+        },
+        {
+          "w": "disintegrate",
+          "note": "瓦解；较正式"
+        }
+      ]
+    },
+    {
+      "w": "injure",
+      "syn": [
+        {
+          "w": "hurt",
+          "note": "伤害；较通用"
+        },
+        {
+          "w": "wound",
+          "note": "使受伤；多指刀枪伤"
+        },
+        {
+          "w": "harm",
+          "note": "损害；伤害"
+        }
+      ]
+    },
+    {
+      "w": "injury",
+      "syn": [
+        {
+          "w": "wound",
+          "note": "伤口；伤"
+        },
+        {
+          "w": "harm",
+          "note": "损害；伤害"
+        },
+        {
+          "w": "hurt",
+          "note": "伤痛；非正式"
+        }
+      ]
+    },
+    {
+      "w": "captain",
+      "syn": [
+        {
+          "w": "leader",
+          "note": "队长；首领"
+        },
+        {
+          "w": "commander",
+          "note": "指挥官"
+        },
+        {
+          "w": "skipper",
+          "note": "船长；队长；非正式"
+        },
+        {
+          "w": "lead",
+          "note": "率领；指挥"
+        }
+      ]
+    },
+    {
+      "w": "lose heart",
+      "syn": [
+        {
+          "w": "be discouraged",
+          "note": "灰心；泄气"
+        },
+        {
+          "w": "lose confidence",
+          "note": "失去信心"
+        },
+        {
+          "w": "be disheartened",
+          "note": "沮丧；灰心"
+        }
+      ]
+    },
+    {
+      "w": "graceful",
+      "syn": [
+        {
+          "w": "elegant",
+          "note": "优雅的"
+        },
+        {
+          "w": "refined",
+          "note": "文雅的；有教养的"
+        },
+        {
+          "w": "smooth",
+          "note": "流畅的；平稳的"
+        }
+      ]
+    },
+    {
+      "w": "strength",
+      "syn": [
+        {
+          "w": "power",
+          "note": "力量；能力"
+        },
+        {
+          "w": "force",
+          "note": "力；武力"
+        },
+        {
+          "w": "might",
+          "note": "力量；较正式"
+        },
+        {
+          "w": "advantage",
+          "note": "长处；优势"
+        }
+      ]
+    },
+    {
+      "w": "failure",
+      "syn": [
+        {
+          "w": "defeat",
+          "note": "失败；击败"
+        },
+        {
+          "w": "loss",
+          "note": "损失；失败"
+        },
+        {
+          "w": "breakdown",
+          "note": "故障；崩溃"
+        }
+      ]
+    },
+    {
+      "w": "give up",
+      "syn": [
+        {
+          "w": "abandon",
+          "note": "放弃"
+        },
+        {
+          "w": "quit",
+          "note": "停止；放弃"
+        },
+        {
+          "w": "surrender",
+          "note": "投降；放弃"
+        }
+      ]
+    },
+    {
+      "w": "compete",
+      "syn": [
+        {
+          "w": "contend",
+          "note": "竞争；较正式"
+        },
+        {
+          "w": "vie",
+          "note": "竞争；较正式"
+        },
+        {
+          "w": "rival",
+          "note": "与……竞争"
+        }
+      ]
+    },
+    {
+      "w": "make sense",
+      "syn": [
+        {
+          "w": "be reasonable",
+          "note": "合理"
+        },
+        {
+          "w": "be logical",
+          "note": "合乎逻辑"
+        },
+        {
+          "w": "add up",
+          "note": "说得通；非正式"
+        }
+      ]
+    },
+    {
+      "w": "pretend",
+      "syn": [
+        {
+          "w": "fake",
+          "note": "假装；伪造"
+        },
+        {
+          "w": "feign",
+          "note": "假装；较正式"
+        },
+        {
+          "w": "act",
+          "note": "装作；表演"
+        }
+      ]
+    }
+  ]
+}

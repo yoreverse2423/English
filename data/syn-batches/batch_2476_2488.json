@@ -1,0 +1,166 @@
+{
+  "items": [
+    {
+      "w": "violence",
+      "syn": [
+        {
+          "w": "force",
+          "note": "侧重武力"
+        },
+        {
+          "w": "brutality",
+          "note": "侧重残暴"
+        },
+        {
+          "w": "aggression",
+          "note": "侧重侵略"
+        }
+      ]
+    },
+    {
+      "w": "nest",
+      "syn": [
+        {
+          "w": "roost",
+          "note": "鸟类栖息处"
+        },
+        {
+          "w": "den",
+          "note": "兽穴"
+        },
+        {
+          "w": "lair",
+          "note": "野兽窝"
+        }
+      ]
+    },
+    {
+      "w": "mammal",
+      "syn": []
+    },
+    {
+      "w": "biology",
+      "syn": [
+        {
+          "w": "life science",
+          "note": "生命科学"
+        },
+        {
+          "w": "biological science",
+          "note": "生物科学"
+        }
+      ]
+    },
+    {
+      "w": "hatch",
+      "syn": [
+        {
+          "w": "incubate",
+          "note": "孵化"
+        },
+        {
+          "w": "devise",
+          "note": "策划"
+        },
+        {
+          "w": "concoct",
+          "note": "策划/编造"
+        }
+      ]
+    },
+    {
+      "w": "capacity",
+      "syn": [
+        {
+          "w": "ability",
+          "note": "能力"
+        },
+        {
+          "w": "capability",
+          "note": "能力/潜能"
+        },
+        {
+          "w": "volume",
+          "note": "容量"
+        }
+      ]
+    },
+    {
+      "w": "a handful of",
+      "syn": [
+        {
+          "w": "a few",
+          "note": "几个"
+        },
+        {
+          "w": "a small number of",
+          "note": "少数"
+        }
+      ]
+    },
+    {
+      "w": "fence",
+      "syn": [
+        {
+          "w": "barrier",
+          "note": "屏障"
+        },
+        {
+          "w": "railing",
+          "note": "栏杆"
+        },
+        {
+          "w": "hedge",
+          "note": "树篱"
+        }
+      ]
+    },
+    {
+      "w": "prison",
+      "syn": [
+        {
+          "w": "jail",
+          "note": "监狱"
+        },
+        {
+          "w": "gaol",
+          "note": "英式监狱"
+        }
+      ]
+    },
+    {
+      "w": "grand",
+      "syn": [
+        {
+          "w": "magnificent",
+          "note": "宏伟的"
+        },
+        {
+          "w": "splendid",
+          "note": "壮丽的"
+        },
+        {
+          "w": "impressive",
+          "note": "令人印象深刻的"
+        }
+      ]
+    },
+    {
+      "w": "Aborigine",
+      "syn": [
+        {
+          "w": "native",
+          "note": "本地人"
+        },
+        {
+          "w": "indigenous person",
+          "note": "土著居民"
+        }
+      ]
+    },
+    {
+      "w": "Sydney",
+      "syn": []
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "items": [
+    {
+      "w": "splendid",
+      "syn": [
+        {
+          "w": "magnificent",
+          "note": "更强调宏伟壮丽"
+        },
+        {
+          "w": "brilliant",
+          "note": "侧重光彩灿烂"
+        },
+        {
+          "w": "excellent",
+          "note": "侧重极好、优秀"
+        },
+        {
+          "w": "gorgeous",
+          "note": "口语，侧重绚丽"
+        }
+      ]
+    },
+    {
+      "w": "display",
+      "syn": [
+        {
+          "w": "show",
+          "note": "最常用，展示"
+        },
+        {
+          "w": "exhibit",
+          "note": "正式，陈列展出"
+        },
+        {
+          "w": "exhibition",
+          "note": "名词，展览"
+        }
+      ]
+    },
+    {
+      "w": "appetite",
+      "syn": [
+        {
+          "w": "hunger",
+          "note": "侧重饥饿感"
+        },
+        {
+          "w": "desire",
+          "note": "引申为强烈欲望"
+        },
+        {
+          "w": "craving",
+          "note": "侧重强烈渴求"
+        }
+      ]
+    },
+    {
+      "w": "entertainment",
+      "syn": [
+        {
+          "w": "amusement",
+          "note": "侧重消遣娱乐"
+        },
+        {
+          "w": "recreation",
+          "note": "侧重休闲活动"
+        },
+        {
+          "w": "pastime",
+          "note": "消遣方式"
+        }
+      ]
+    },
+    {
+      "w": "column",
+      "syn": [
+        {
+          "w": "pillar",
+          "note": "侧重圆柱、支柱"
+        },
+        {
+          "w": "post",
+          "note": "柱、杆"
+        },
+        {
+          "w": "file",
+          "note": "纵队义"
+        }
+      ]
+    },
+    {
+      "w": "Sarek National Park",
+      "syn": []
+    },
+    {
+      "w": "Sweden",
+      "syn": []
+    },
+    {
+      "w": "the Arctic Circle",
+      "syn": []
+    },
+    {
+      "w": "Siberian",
+      "syn": []
+    },
+    {
+      "w": "Dollywood",
+      "syn": []
+    },
+    {
+      "w": "interaction",
+      "syn": [
+        {
+          "w": "communication",
+          "note": "侧重交流"
+        },
+        {
+          "w": "contact",
+          "note": "侧重接触往来"
+        },
+        {
+          "w": "exchange",
+          "note": "侧重交换互动"
+        }
+      ]
+    },
+    {
+      "w": "vary",
+      "syn": [
+        {
+          "w": "change",
+          "note": "最常用，改变"
+        },
+        {
+          "w": "differ",
+          "note": "侧重不同、相异"
+        },
+        {
+          "w": "fluctuate",
+          "note": "侧重波动起伏"
+        },
+        {
+          "w": "alter",
+          "note": "及物，使改变"
+        }
+      ]
+    }
+  ]
+}

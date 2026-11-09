@@ -1,0 +1,316 @@
+{
+  "items": [
+    {
+      "w": "disaster",
+      "syn": [
+        {
+          "w": "catastrophe",
+          "note": "大灾难，更正式"
+        },
+        {
+          "w": "calamity",
+          "note": "灾祸，较正式"
+        },
+        {
+          "w": "misfortune",
+          "note": "不幸，程度可较轻"
+        }
+      ]
+    },
+    {
+      "w": "tornado",
+      "syn": [
+        {
+          "w": "twister",
+          "note": "口语，龙卷风"
+        },
+        {
+          "w": "whirlwind",
+          "note": "旋风，范围较广"
+        }
+      ]
+    },
+    {
+      "w": "drought",
+      "syn": [
+        {
+          "w": "dry spell",
+          "note": "干旱期，较口语"
+        },
+        {
+          "w": "dryness",
+          "note": "干燥，干旱状态"
+        }
+      ]
+    },
+    {
+      "w": "landslide",
+      "syn": [
+        {
+          "w": "landslip",
+          "note": "山崩、滑坡，英式"
+        },
+        {
+          "w": "rockslide",
+          "note": "岩崩，侧重岩石"
+        },
+        {
+          "w": "sweeping victory",
+          "note": "压倒性胜利，对应“大胜利”义"
+        }
+      ]
+    },
+    {
+      "w": "landfall",
+      "syn": [
+        {
+          "w": "landing",
+          "note": "着陆，到达陆地"
+        },
+        {
+          "w": "arrival",
+          "note": "到达，较泛"
+        }
+      ]
+    },
+    {
+      "w": "slide",
+      "syn": [
+        {
+          "w": "slip",
+          "note": "滑倒，意外滑动"
+        },
+        {
+          "w": "glide",
+          "note": "滑行，较平稳"
+        },
+        {
+          "w": "skid",
+          "note": "打滑，常指失控"
+        }
+      ]
+    },
+    {
+      "w": "tsunami",
+      "syn": [
+        {
+          "w": "tidal wave",
+          "note": "海啸，常用但非严格术语"
+        },
+        {
+          "w": "seismic sea wave",
+          "note": "地震海啸，较正式"
+        }
+      ]
+    },
+    {
+      "w": "flood",
+      "syn": [
+        {
+          "w": "deluge",
+          "note": "洪水、暴雨，较正式"
+        },
+        {
+          "w": "inundation",
+          "note": "泛滥、淹没，正式"
+        },
+        {
+          "w": "torrent",
+          "note": "急流，洪水般涌流"
+        }
+      ]
+    },
+    {
+      "w": "volcanic eruption",
+      "syn": [
+        {
+          "w": "eruption",
+          "note": "喷发，可省 volcanic"
+        },
+        {
+          "w": "volcanic blast",
+          "note": "火山爆发，强调猛烈"
+        }
+      ]
+    },
+    {
+      "w": "magnitude",
+      "syn": [
+        {
+          "w": "size",
+          "note": "大小，最常用"
+        },
+        {
+          "w": "scale",
+          "note": "规模、量级"
+        },
+        {
+          "w": "extent",
+          "note": "程度、范围"
+        },
+        {
+          "w": "significance",
+          "note": "重要性"
+        }
+      ]
+    },
+    {
+      "w": "rescue",
+      "syn": [
+        {
+          "w": "save",
+          "note": "救，最常用"
+        },
+        {
+          "w": "salvage",
+          "note": "抢救、打捞，较正式"
+        }
+      ]
+    },
+    {
+      "w": "damage",
+      "syn": [
+        {
+          "w": "harm",
+          "note": "损害，可指身体或抽象"
+        },
+        {
+          "w": "impair",
+          "note": "损害、削弱，正式"
+        },
+        {
+          "w": "ruin",
+          "note": "毁坏，程度更重"
+        }
+      ]
+    },
+    {
+      "w": "destroy",
+      "syn": [
+        {
+          "w": "ruin",
+          "note": "毁坏，强调破坏结果"
+        },
+        {
+          "w": "wreck",
+          "note": "毁坏，常指车辆、计划"
+        },
+        {
+          "w": "demolish",
+          "note": "拆毁、摧毁，常指建筑"
+        }
+      ]
+    },
+    {
+      "w": "evacuate",
+      "syn": [
+        {
+          "w": "clear",
+          "note": "撤离人员，强调清空"
+        },
+        {
+          "w": "withdraw",
+          "note": "撤退，强调离开"
+        }
+      ]
+    },
+    {
+      "w": "helicopter",
+      "syn": [
+        {
+          "w": "chopper",
+          "note": "口语，直升机"
+        },
+        {
+          "w": "copter",
+          "note": "口语，直升机"
+        }
+      ]
+    },
+    {
+      "w": "death",
+      "syn": [
+        {
+          "w": "demise",
+          "note": "死亡、终止，正式"
+        },
+        {
+          "w": "passing",
+          "note": "去世，委婉"
+        },
+        {
+          "w": "end",
+          "note": "终结，较泛"
+        }
+      ]
+    },
+    {
+      "w": "affect",
+      "syn": [
+        {
+          "w": "influence",
+          "note": "影响，较中性"
+        },
+        {
+          "w": "impact",
+          "note": "影响，常作动词"
+        },
+        {
+          "w": "move",
+          "note": "感动，对应“感动”义"
+        },
+        {
+          "w": "infect",
+          "note": "感染，对应“感染”义"
+        }
+      ]
+    },
+    {
+      "w": "shelter",
+      "syn": [
+        {
+          "w": "refuge",
+          "note": "避难所，较正式"
+        },
+        {
+          "w": "sanctuary",
+          "note": "庇护所，强调保护"
+        },
+        {
+          "w": "cover",
+          "note": "掩护、遮蔽处"
+        }
+      ]
+    },
+    {
+      "w": "crack",
+      "syn": [
+        {
+          "w": "fissure",
+          "note": "裂缝，正式"
+        },
+        {
+          "w": "crevice",
+          "note": "缝隙，常指窄缝"
+        },
+        {
+          "w": "split",
+          "note": "裂口、分裂"
+        }
+      ]
+    },
+    {
+      "w": "as if",
+      "syn": [
+        {
+          "w": "as though",
+          "note": "似乎，最对应"
+        },
+        {
+          "w": "like",
+          "note": "口语，像、仿佛"
+        }
+      ]
+    }
+  ]
+}

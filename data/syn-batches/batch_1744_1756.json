@@ -1,0 +1,216 @@
+{
+  "items": [
+    {
+      "w": "surrounding",
+      "syn": [
+        {
+          "w": "environment",
+          "note": "环境"
+        },
+        {
+          "w": "setting",
+          "note": "背景/环境"
+        },
+        {
+          "w": "vicinity",
+          "note": "周围地区"
+        }
+      ]
+    },
+    {
+      "w": "mature",
+      "syn": [
+        {
+          "w": "adult",
+          "note": "成年的"
+        },
+        {
+          "w": "ripe",
+          "note": "果实/时机成熟"
+        },
+        {
+          "w": "due",
+          "note": "到期的"
+        }
+      ]
+    },
+    {
+      "w": "depress",
+      "syn": [
+        {
+          "w": "sadden",
+          "note": "使悲伤"
+        },
+        {
+          "w": "discourage",
+          "note": "使气馁"
+        },
+        {
+          "w": "lower",
+          "note": "降低"
+        }
+      ]
+    },
+    {
+      "w": "boom",
+      "syn": [
+        {
+          "w": "prosperity",
+          "note": "繁荣"
+        },
+        {
+          "w": "upturn",
+          "note": "好转/增长"
+        },
+        {
+          "w": "roar",
+          "note": "隆隆声"
+        }
+      ]
+    },
+    {
+      "w": "strengthen",
+      "syn": [
+        {
+          "w": "reinforce",
+          "note": "加强/加固"
+        },
+        {
+          "w": "fortify",
+          "note": "加固/增强"
+        },
+        {
+          "w": "consolidate",
+          "note": "巩固"
+        }
+      ]
+    },
+    {
+      "w": "deny",
+      "syn": [
+        {
+          "w": "refuse",
+          "note": "拒绝"
+        },
+        {
+          "w": "reject",
+          "note": "拒绝/否认"
+        },
+        {
+          "w": "contradict",
+          "note": "反驳/否认"
+        },
+        {
+          "w": "withhold",
+          "note": "拒绝给予"
+        }
+      ]
+    },
+    {
+      "w": "optimistic",
+      "syn": [
+        {
+          "w": "hopeful",
+          "note": "抱有希望的"
+        },
+        {
+          "w": "positive",
+          "note": "积极的"
+        },
+        {
+          "w": "upbeat",
+          "note": "乐观的"
+        }
+      ]
+    },
+    {
+      "w": "gain",
+      "syn": [
+        {
+          "w": "increase",
+          "note": "增加"
+        },
+        {
+          "w": "profit",
+          "note": "利润"
+        },
+        {
+          "w": "benefit",
+          "note": "收益/好处"
+        }
+      ]
+    },
+    {
+      "w": "perspective",
+      "syn": [
+        {
+          "w": "viewpoint",
+          "note": "观点"
+        },
+        {
+          "w": "outlook",
+          "note": "观点/前景"
+        },
+        {
+          "w": "view",
+          "note": "看法/景色"
+        }
+      ]
+    },
+    {
+      "w": "competence",
+      "syn": [
+        {
+          "w": "ability",
+          "note": "能力"
+        },
+        {
+          "w": "capability",
+          "note": "能力"
+        },
+        {
+          "w": "proficiency",
+          "note": "熟练/胜任"
+        },
+        {
+          "w": "authority",
+          "note": "权限"
+        }
+      ]
+    },
+    {
+      "w": "competent",
+      "syn": [
+        {
+          "w": "capable",
+          "note": "有能力的"
+        },
+        {
+          "w": "qualified",
+          "note": "合格的/胜任的"
+        },
+        {
+          "w": "adequate",
+          "note": "足够的"
+        }
+      ]
+    },
+    {
+      "w": "envoy",
+      "syn": [
+        {
+          "w": "messenger",
+          "note": "信使"
+        },
+        {
+          "w": "ambassador",
+          "note": "大使，更正式"
+        },
+        {
+          "w": "representative",
+          "note": "代表"
+        }
+      ]
+    }
+  ]
+}

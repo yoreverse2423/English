@@ -1,0 +1,384 @@
+{
+  "items": [
+    {
+      "w": "powerful",
+      "syn": [
+        {
+          "w": "strong",
+          "note": "侧重强壮、有力"
+        },
+        {
+          "w": "mighty",
+          "note": "更书面，强大威严"
+        },
+        {
+          "w": "forceful",
+          "note": "侧重有力度"
+        },
+        {
+          "w": "potent",
+          "note": "侧重效力强"
+        }
+      ]
+    },
+    {
+      "w": "empire",
+      "syn": [
+        {
+          "w": "kingdom",
+          "note": "王国，范围稍窄"
+        },
+        {
+          "w": "realm",
+          "note": "王国；领域，较书面"
+        },
+        {
+          "w": "domain",
+          "note": "领土；领域"
+        }
+      ]
+    },
+    {
+      "w": "emperor",
+      "syn": [
+        {
+          "w": "monarch",
+          "note": "君主，更泛"
+        },
+        {
+          "w": "sovereign",
+          "note": "君主，正式"
+        },
+        {
+          "w": "ruler",
+          "note": "统治者，较泛"
+        }
+      ]
+    },
+    {
+      "w": "site",
+      "syn": [
+        {
+          "w": "location",
+          "note": "地点，较正式"
+        },
+        {
+          "w": "spot",
+          "note": "地点，较口语"
+        },
+        {
+          "w": "place",
+          "note": "地方，最泛"
+        },
+        {
+          "w": "venue",
+          "note": "活动场所"
+        }
+      ]
+    },
+    {
+      "w": "take control of",
+      "syn": [
+        {
+          "w": "take over",
+          "note": "接管，强调接手"
+        },
+        {
+          "w": "take charge of",
+          "note": "负责掌管"
+        },
+        {
+          "w": "seize control of",
+          "note": "夺取控制权"
+        }
+      ]
+    },
+    {
+      "w": "official",
+      "syn": [
+        {
+          "w": "authorized",
+          "note": "经授权的，官方义"
+        },
+        {
+          "w": "formal",
+          "note": "正式的"
+        },
+        {
+          "w": "officer",
+          "note": "官员；军官"
+        }
+      ]
+    },
+    {
+      "w": "recognise",
+      "syn": [
+        {
+          "w": "identify",
+          "note": "辨认出"
+        },
+        {
+          "w": "acknowledge",
+          "note": "承认，较正式"
+        },
+        {
+          "w": "admit",
+          "note": "承认，常含不情愿"
+        },
+        {
+          "w": "spot",
+          "note": "认出，较口语"
+        }
+      ]
+    },
+    {
+      "w": "recognize",
+      "syn": [
+        {
+          "w": "identify",
+          "note": "辨认出"
+        },
+        {
+          "w": "acknowledge",
+          "note": "承认，较正式"
+        },
+        {
+          "w": "admit",
+          "note": "承认，常含不情愿"
+        },
+        {
+          "w": "spot",
+          "note": "认出，较口语"
+        }
+      ]
+    },
+    {
+      "w": "type",
+      "syn": [
+        {
+          "w": "kind",
+          "note": "种类，最常用"
+        },
+        {
+          "w": "sort",
+          "note": "种类，较口语"
+        },
+        {
+          "w": "category",
+          "note": "类别，较正式"
+        },
+        {
+          "w": "variety",
+          "note": "品种；变种"
+        }
+      ]
+    },
+    {
+      "w": "flight",
+      "syn": [
+        {
+          "w": "flying",
+          "note": "飞行，动名词义"
+        },
+        {
+          "w": "escape",
+          "note": "逃走，flight 的逃跑义"
+        }
+      ]
+    },
+    {
+      "w": "accommodation",
+      "syn": [
+        {
+          "w": "lodging",
+          "note": "住宿处，常用复数"
+        },
+        {
+          "w": "housing",
+          "note": "住房，较泛"
+        },
+        {
+          "w": "quarters",
+          "note": "住处，常指营房等"
+        }
+      ]
+    },
+    {
+      "w": "unique",
+      "syn": [
+        {
+          "w": "distinctive",
+          "note": "独特的，易辨认"
+        },
+        {
+          "w": "exceptional",
+          "note": "非凡的，罕有的"
+        },
+        {
+          "w": "singular",
+          "note": "独特的，较正式"
+        },
+        {
+          "w": "only",
+          "note": "唯一的"
+        }
+      ]
+    },
+    {
+      "w": "path",
+      "syn": [
+        {
+          "w": "trail",
+          "note": "小径，常指野外"
+        },
+        {
+          "w": "track",
+          "note": "小路；轨道"
+        },
+        {
+          "w": "route",
+          "note": "路线，较泛"
+        },
+        {
+          "w": "way",
+          "note": "路；方式，最泛"
+        }
+      ]
+    },
+    {
+      "w": "destination",
+      "syn": [
+        {
+          "w": "goal",
+          "note": "目标；目的地"
+        },
+        {
+          "w": "endpoint",
+          "note": "终点"
+        },
+        {
+          "w": "terminus",
+          "note": "终点站，较正式"
+        }
+      ]
+    },
+    {
+      "w": "other than",
+      "syn": [
+        {
+          "w": "besides",
+          "note": "除…之外还有"
+        },
+        {
+          "w": "except",
+          "note": "除…之外没有"
+        },
+        {
+          "w": "apart from",
+          "note": "除…之外；此外"
+        },
+        {
+          "w": "aside from",
+          "note": "除…之外，较美式"
+        }
+      ]
+    },
+    {
+      "w": "admire",
+      "syn": [
+        {
+          "w": "respect",
+          "note": "尊敬，侧重敬意"
+        },
+        {
+          "w": "esteem",
+          "note": "尊敬，较正式"
+        },
+        {
+          "w": "appreciate",
+          "note": "欣赏，侧重赏识"
+        },
+        {
+          "w": "look up to",
+          "note": "敬仰，较口语"
+        }
+      ]
+    },
+    {
+      "w": "architecture",
+      "syn": [
+        {
+          "w": "building design",
+          "note": "建筑设计"
+        },
+        {
+          "w": "building style",
+          "note": "建筑风格"
+        },
+        {
+          "w": "structure",
+          "note": "结构，侧重构造"
+        }
+      ]
+    },
+    {
+      "w": "architect",
+      "syn": [
+        {
+          "w": "designer",
+          "note": "设计者，较泛"
+        },
+        {
+          "w": "planner",
+          "note": "规划者"
+        },
+        {
+          "w": "creator",
+          "note": "缔造者，比喻义"
+        },
+        {
+          "w": "founder",
+          "note": "创立者，比喻义"
+        }
+      ]
+    },
+    {
+      "w": "brochure",
+      "syn": [
+        {
+          "w": "pamphlet",
+          "note": "小册子，较正式"
+        },
+        {
+          "w": "booklet",
+          "note": "小册子"
+        },
+        {
+          "w": "leaflet",
+          "note": "传单；小册子"
+        },
+        {
+          "w": "flyer",
+          "note": "传单，较口语"
+        }
+      ]
+    },
+    {
+      "w": "package",
+      "syn": [
+        {
+          "w": "parcel",
+          "note": "包裹，常指邮政"
+        },
+        {
+          "w": "packet",
+          "note": "小包，小袋"
+        },
+        {
+          "w": "bundle",
+          "note": "捆，束"
+        }
+      ]
+    }
+  ]
+}

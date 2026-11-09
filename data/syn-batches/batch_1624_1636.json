@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "w": "infect",
+      "syn": [
+        {
+          "w": "contaminate",
+          "note": "污染；使感染"
+        },
+        {
+          "w": "affect",
+          "note": "影响；感染（情绪）"
+        }
+      ]
+    },
+    {
+      "w": "germ",
+      "syn": [
+        {
+          "w": "bacterium",
+          "note": "细菌（单数）"
+        },
+        {
+          "w": "microbe",
+          "note": "微生物；细菌"
+        },
+        {
+          "w": "seed",
+          "note": "种子；萌芽"
+        },
+        {
+          "w": "bud",
+          "note": "芽；萌芽"
+        }
+      ]
+    },
+    {
+      "w": "subscribe",
+      "syn": [
+        {
+          "w": "sign",
+          "note": "签署"
+        },
+        {
+          "w": "agree",
+          "note": "赞成"
+        },
+        {
+          "w": "donate",
+          "note": "捐助"
+        },
+        {
+          "w": "contribute",
+          "note": "捐助；投稿"
+        }
+      ]
+    },
+    {
+      "w": "subscribe to",
+      "syn": [
+        {
+          "w": "agree to",
+          "note": "同意（提议等）"
+        },
+        {
+          "w": "approve of",
+          "note": "赞成"
+        },
+        {
+          "w": "pay for",
+          "note": "付费订阅"
+        },
+        {
+          "w": "contribute to",
+          "note": "捐助；促成"
+        }
+      ]
+    },
+    {
+      "w": "proof",
+      "syn": [
+        {
+          "w": "evidence",
+          "note": "证据"
+        },
+        {
+          "w": "confirmation",
+          "note": "证实；确认"
+        },
+        {
+          "w": "test",
+          "note": "考验；试验"
+        },
+        {
+          "w": "trial",
+          "note": "试验；考验"
+        }
+      ]
+    },
+    {
+      "w": "multiple",
+      "syn": [
+        {
+          "w": "several",
+          "note": "多个的"
+        },
+        {
+          "w": "various",
+          "note": "多样的"
+        },
+        {
+          "w": "numerous",
+          "note": "许多的"
+        }
+      ]
+    },
+    {
+      "w": "pump",
+      "syn": [
+        {
+          "w": "inflate",
+          "note": "给…打气"
+        },
+        {
+          "w": "draw",
+          "note": "抽出（水等）"
+        }
+      ]
+    },
+    {
+      "w": "water pump",
+      "syn": [
+        {
+          "w": "pump",
+          "note": "泛指的泵；不特指水"
+        }
+      ]
+    },
+    {
+      "w": "household",
+      "syn": [
+        {
+          "w": "family",
+          "note": "家庭；家人"
+        },
+        {
+          "w": "domestic",
+          "note": "家庭的（形容词）"
+        },
+        {
+          "w": "home",
+          "note": "家；家庭生活"
+        }
+      ]
+    },
+    {
+      "w": "suspect",
+      "syn": [
+        {
+          "w": "doubt",
+          "note": "怀疑；不确信"
+        },
+        {
+          "w": "distrust",
+          "note": "不信任"
+        },
+        {
+          "w": "suspicious",
+          "note": "可疑的"
+        },
+        {
+          "w": "suppose",
+          "note": "猜想"
+        }
+      ]
+    },
+    {
+      "w": "blame",
+      "syn": [
+        {
+          "w": "criticize",
+          "note": "批评；责备"
+        },
+        {
+          "w": "accuse",
+          "note": "指责；归咎"
+        },
+        {
+          "w": "responsibility",
+          "note": "责任"
+        },
+        {
+          "w": "fault",
+          "note": "过失；过错"
+        }
+      ]
+    },
+    {
+      "w": "handle",
+      "syn": [
+        {
+          "w": "deal with",
+          "note": "处理"
+        },
+        {
+          "w": "manage",
+          "note": "处理；管理"
+        },
+        {
+          "w": "grip",
+          "note": "把手；握柄"
+        },
+        {
+          "w": "operate",
+          "note": "操作"
+        }
+      ]
+    }
+  ]
+}

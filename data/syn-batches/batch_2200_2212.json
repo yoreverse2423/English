@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "w": "bitter",
+      "syn": [
+        {
+          "w": "resentful",
+          "note": "侧重怨恨的"
+        },
+        {
+          "w": "painful",
+          "note": "侧重痛苦的"
+        },
+        {
+          "w": "sharp",
+          "note": "侧重尖刻的"
+        }
+      ]
+    },
+    {
+      "w": "expedition",
+      "syn": [
+        {
+          "w": "journey",
+          "note": "一般旅程"
+        },
+        {
+          "w": "voyage",
+          "note": "海上或太空航行"
+        },
+        {
+          "w": "exploration",
+          "note": "探险考察"
+        }
+      ]
+    },
+    {
+      "w": "endurance",
+      "syn": [
+        {
+          "w": "stamina",
+          "note": "体力耐力"
+        },
+        {
+          "w": "persistence",
+          "note": "坚持不懈"
+        },
+        {
+          "w": "durability",
+          "note": "耐久性"
+        }
+      ]
+    },
+    {
+      "w": "vigour",
+      "syn": [
+        {
+          "w": "vitality",
+          "note": "生命力；活力"
+        },
+        {
+          "w": "energy",
+          "note": "精力"
+        },
+        {
+          "w": "strength",
+          "note": "力量"
+        }
+      ]
+    },
+    {
+      "w": "turn sb. down",
+      "syn": [
+        {
+          "w": "reject",
+          "note": "拒绝，更直接"
+        },
+        {
+          "w": "refuse",
+          "note": "拒绝"
+        },
+        {
+          "w": "decline",
+          "note": "婉拒"
+        }
+      ]
+    },
+    {
+      "w": "qualified",
+      "syn": [
+        {
+          "w": "competent",
+          "note": "能胜任的"
+        },
+        {
+          "w": "capable",
+          "note": "有能力的"
+        },
+        {
+          "w": "eligible",
+          "note": "有资格的"
+        }
+      ]
+    },
+    {
+      "w": "enthusiastic",
+      "syn": [
+        {
+          "w": "keen",
+          "note": "热衷的"
+        },
+        {
+          "w": "eager",
+          "note": "热切的"
+        },
+        {
+          "w": "passionate",
+          "note": "热情的"
+        }
+      ]
+    },
+    {
+      "w": "aboard",
+      "syn": [
+        {
+          "w": "on board",
+          "note": "在船、飞机等上"
+        },
+        {
+          "w": "on",
+          "note": "在…上"
+        }
+      ]
+    },
+    {
+      "w": "cupboard",
+      "syn": [
+        {
+          "w": "cabinet",
+          "note": "橱柜"
+        },
+        {
+          "w": "closet",
+          "note": "壁橱"
+        },
+        {
+          "w": "locker",
+          "note": "储物柜"
+        }
+      ]
+    },
+    {
+      "w": "assign",
+      "syn": [
+        {
+          "w": "allocate",
+          "note": "分配资源等"
+        },
+        {
+          "w": "allot",
+          "note": "分派"
+        },
+        {
+          "w": "appoint",
+          "note": "指派"
+        }
+      ]
+    },
+    {
+      "w": "steward",
+      "syn": [
+        {
+          "w": "attendant",
+          "note": "服务员；乘务员"
+        },
+        {
+          "w": "flight attendant",
+          "note": "空乘人员"
+        }
+      ]
+    },
+    {
+      "w": "envy",
+      "syn": [
+        {
+          "w": "jealousy",
+          "note": "嫉妒，名词"
+        },
+        {
+          "w": "covet",
+          "note": "贪求；羡慕，动词"
+        },
+        {
+          "w": "begrudge",
+          "note": "嫉妒；不愿给，动词"
+        }
+      ]
+    }
+  ]
+}

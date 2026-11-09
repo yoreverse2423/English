@@ -1,0 +1,169 @@
+{
+  "items": [
+    {
+      "w": "generally speaking",
+      "syn": [
+        {
+          "w": "in general",
+          "note": "总体而言，最常用"
+        },
+        {
+          "w": "broadly speaking",
+          "note": "大体上说，较正式"
+        },
+        {
+          "w": "on the whole",
+          "note": "总体上，综合考虑"
+        }
+      ]
+    },
+    {
+      "w": "outcome",
+      "syn": [
+        {
+          "w": "result",
+          "note": "结果，最常用"
+        },
+        {
+          "w": "consequence",
+          "note": "后果，常含因果/负面意味"
+        },
+        {
+          "w": "end result",
+          "note": "最终结果，强调最后"
+        }
+      ]
+    },
+    {
+      "w": "Rome",
+      "syn": []
+    },
+    {
+      "w": "Aisha",
+      "syn": []
+    },
+    {
+      "w": "the Belt and Road Initiative",
+      "syn": []
+    },
+    {
+      "w": "cuisine",
+      "syn": [
+        {
+          "w": "cooking",
+          "note": "烹饪，较通用"
+        },
+        {
+          "w": "cookery",
+          "note": "烹饪法，较正式"
+        }
+      ]
+    },
+    {
+      "w": "prior",
+      "syn": [
+        {
+          "w": "previous",
+          "note": "先前的，最常用"
+        },
+        {
+          "w": "earlier",
+          "note": "较早的，时间上在前"
+        },
+        {
+          "w": "preceding",
+          "note": "在前的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "prior to",
+      "syn": [
+        {
+          "w": "before",
+          "note": "在…之前，最常用"
+        },
+        {
+          "w": "ahead of",
+          "note": "在…之前，可指时间或位置"
+        },
+        {
+          "w": "in advance of",
+          "note": "在…之前，较正式"
+        }
+      ]
+    },
+    {
+      "w": "consist",
+      "syn": [
+        {
+          "w": "comprise",
+          "note": "由…组成，及物动词"
+        },
+        {
+          "w": "be composed of",
+          "note": "由…组成，较正式"
+        },
+        {
+          "w": "lie in",
+          "note": "对应“在于”义"
+        }
+      ]
+    },
+    {
+      "w": "consist of",
+      "syn": [
+        {
+          "w": "be made up of",
+          "note": "由…组成，最常用"
+        },
+        {
+          "w": "be composed of",
+          "note": "由…构成，较正式"
+        },
+        {
+          "w": "comprise",
+          "note": "包括/由…组成，及物且较正式"
+        }
+      ]
+    },
+    {
+      "w": "pepper",
+      "syn": [
+        {
+          "w": "chili",
+          "note": "辣椒，特指辣椒"
+        },
+        {
+          "w": "spice",
+          "note": "香料，泛指，不特指胡椒"
+        },
+        {
+          "w": "sprinkle",
+          "note": "撒，对应“加胡椒粉于”"
+        },
+        {
+          "w": "scatter",
+          "note": "使散布，对应“使布满”"
+        }
+      ]
+    },
+    {
+      "w": "recipe",
+      "syn": [
+        {
+          "w": "formula",
+          "note": "配方/秘诀，较抽象"
+        },
+        {
+          "w": "method",
+          "note": "方法，对应“秘诀”义"
+        },
+        {
+          "w": "prescription",
+          "note": "处方，对应医学义，较正式"
+        }
+      ]
+    }
+  ]
+}

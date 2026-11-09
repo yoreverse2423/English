@@ -1,0 +1,322 @@
+{
+  "items": [
+    {
+      "w": "supply",
+      "syn": [
+        {
+          "w": "provide",
+          "note": "动词，提供"
+        },
+        {
+          "w": "provision",
+          "note": "名词，供应/储备，较正式"
+        },
+        {
+          "w": "furnish",
+          "note": "正式，提供/配备"
+        }
+      ]
+    },
+    {
+      "w": "typhoon",
+      "syn": [
+        {
+          "w": "hurricane",
+          "note": "飓风，大西洋地区"
+        },
+        {
+          "w": "cyclone",
+          "note": "气旋"
+        },
+        {
+          "w": "storm",
+          "note": "风暴，泛指"
+        }
+      ]
+    },
+    {
+      "w": "in the open air",
+      "syn": [
+        {
+          "w": "outdoors",
+          "note": "在户外"
+        },
+        {
+          "w": "outside",
+          "note": "在外面"
+        },
+        {
+          "w": "in the open",
+          "note": "在露天"
+        }
+      ]
+    },
+    {
+      "w": "hurricane",
+      "syn": [
+        {
+          "w": "typhoon",
+          "note": "台风，西太平洋"
+        },
+        {
+          "w": "cyclone",
+          "note": "气旋"
+        },
+        {
+          "w": "storm",
+          "note": "暴风雨，泛指"
+        }
+      ]
+    },
+    {
+      "w": "survive",
+      "syn": [
+        {
+          "w": "outlive",
+          "note": "比……活得长"
+        },
+        {
+          "w": "endure",
+          "note": "经受住/存活"
+        },
+        {
+          "w": "come through",
+          "note": "经历后幸存"
+        }
+      ]
+    },
+    {
+      "w": "power",
+      "syn": [
+        {
+          "w": "strength",
+          "note": "力量，体力"
+        },
+        {
+          "w": "force",
+          "note": "力/武力"
+        },
+        {
+          "w": "authority",
+          "note": "权力/权威"
+        },
+        {
+          "w": "energy",
+          "note": "能量/电力"
+        }
+      ]
+    },
+    {
+      "w": "tap",
+      "syn": [
+        {
+          "w": "faucet",
+          "note": "美式水龙头"
+        },
+        {
+          "w": "rap",
+          "note": "轻叩"
+        },
+        {
+          "w": "pat",
+          "note": "轻拍"
+        }
+      ]
+    },
+    {
+      "w": "pipe",
+      "syn": [
+        {
+          "w": "tube",
+          "note": "管，管状物"
+        },
+        {
+          "w": "conduit",
+          "note": "导管，较正式"
+        },
+        {
+          "w": "duct",
+          "note": "管道/风管"
+        }
+      ]
+    },
+    {
+      "w": "whistle",
+      "syn": [
+        {
+          "w": "hoot",
+          "note": "汽笛/鸣响"
+        },
+        {
+          "w": "siren",
+          "note": "警报汽笛"
+        }
+      ]
+    },
+    {
+      "w": "emergency",
+      "syn": [
+        {
+          "w": "crisis",
+          "note": "危机"
+        },
+        {
+          "w": "urgency",
+          "note": "紧迫"
+        },
+        {
+          "w": "contingency",
+          "note": "偶发情况"
+        }
+      ]
+    },
+    {
+      "w": "calm",
+      "syn": [
+        {
+          "w": "peaceful",
+          "note": "平静的"
+        },
+        {
+          "w": "tranquil",
+          "note": "宁静的，较正式"
+        },
+        {
+          "w": "soothe",
+          "note": "使平静/安抚"
+        }
+      ]
+    },
+    {
+      "w": "aid",
+      "syn": [
+        {
+          "w": "help",
+          "note": "帮助，最常用"
+        },
+        {
+          "w": "assistance",
+          "note": "援助，较正式"
+        },
+        {
+          "w": "support",
+          "note": "支持/援助"
+        }
+      ]
+    },
+    {
+      "w": "kit",
+      "syn": [
+        {
+          "w": "set",
+          "note": "成套用具"
+        },
+        {
+          "w": "outfit",
+          "note": "全套装备"
+        },
+        {
+          "w": "equipment",
+          "note": "设备总称"
+        }
+      ]
+    },
+    {
+      "w": "first aid kit",
+      "syn": [
+        {
+          "w": "medical kit",
+          "note": "医药箱"
+        },
+        {
+          "w": "emergency kit",
+          "note": "应急包"
+        },
+        {
+          "w": "first-aid box",
+          "note": "急救箱"
+        }
+      ]
+    },
+    {
+      "w": "on hand",
+      "syn": [
+        {
+          "w": "available",
+          "note": "现有的/可用的"
+        },
+        {
+          "w": "present",
+          "note": "在场的"
+        },
+        {
+          "w": "at hand",
+          "note": "在手边/附近"
+        }
+      ]
+    },
+    {
+      "w": "crash",
+      "syn": [
+        {
+          "w": "collision",
+          "note": "碰撞"
+        },
+        {
+          "w": "smash",
+          "note": "猛撞/粉碎"
+        },
+        {
+          "w": "wreck",
+          "note": "失事/残骸"
+        }
+      ]
+    },
+    {
+      "w": "sweep",
+      "syn": [
+        {
+          "w": "brush",
+          "note": "扫/刷"
+        },
+        {
+          "w": "clean",
+          "note": "打扫"
+        },
+        {
+          "w": "range",
+          "note": "范围"
+        },
+        {
+          "w": "scope",
+          "note": "范围"
+        }
+      ]
+    },
+    {
+      "w": "swept",
+      "syn": []
+    },
+    {
+      "w": "swept",
+      "syn": []
+    },
+    {
+      "w": "sweep away",
+      "syn": [
+        {
+          "w": "wash away",
+          "note": "冲走"
+        },
+        {
+          "w": "carry away",
+          "note": "冲走/带走"
+        },
+        {
+          "w": "clear away",
+          "note": "清除"
+        }
+      ]
+    }
+  ]
+}

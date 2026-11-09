@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "w": "clap",
+      "syn": [
+        {
+          "w": "applaud",
+          "note": "鼓掌；更正式"
+        },
+        {
+          "w": "applause",
+          "note": "掌声；名词"
+        },
+        {
+          "w": "pat",
+          "note": "轻拍；尤指鼓励"
+        },
+        {
+          "w": "tap",
+          "note": "轻拍；更轻"
+        }
+      ]
+    },
+    {
+      "w": "respect",
+      "syn": [
+        {
+          "w": "esteem",
+          "note": "尊敬；较正式"
+        },
+        {
+          "w": "regard",
+          "note": "尊重；也可指看待"
+        },
+        {
+          "w": "honor",
+          "note": "尊敬；美式拼写"
+        },
+        {
+          "w": "aspect",
+          "note": "方面；名词义"
+        }
+      ]
+    },
+    {
+      "w": "horrible",
+      "syn": [
+        {
+          "w": "terrible",
+          "note": "可怕的；很糟糕"
+        },
+        {
+          "w": "awful",
+          "note": "极坏的；口语"
+        },
+        {
+          "w": "dreadful",
+          "note": "可怕的；较正式"
+        },
+        {
+          "w": "horrifying",
+          "note": "令人恐惧的；语气强"
+        }
+      ]
+    },
+    {
+      "w": "Coming-of-Age Day",
+      "syn": []
+    },
+    {
+      "w": "Rio",
+      "syn": []
+    },
+    {
+      "w": "Rio de Janeiro",
+      "syn": []
+    },
+    {
+      "w": "Carla",
+      "syn": []
+    },
+    {
+      "w": "Halloween",
+      "syn": []
+    },
+    {
+      "w": "Thanksgiving",
+      "syn": [
+        {
+          "w": "gratitude",
+          "note": "感激；名词"
+        },
+        {
+          "w": "gratefulness",
+          "note": "感恩；较正式"
+        },
+        {
+          "w": "appreciation",
+          "note": "感激；欣赏"
+        }
+      ]
+    },
+    {
+      "w": "Thanksgiving Day",
+      "syn": []
+    },
+    {
+      "w": "La Tomatina",
+      "syn": []
+    },
+    {
+      "w": "Buñol",
+      "syn": []
+    }
+  ]
+}

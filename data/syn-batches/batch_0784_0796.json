@@ -1,0 +1,195 @@
+{
+  "items": [
+    {
+      "w": "congratulation",
+      "syn": [
+        {
+          "w": "good wishes",
+          "note": "祝福语，常作复数表贺辞"
+        }
+      ]
+    },
+    {
+      "w": "congratulate",
+      "syn": [
+        {
+          "w": "compliment",
+          "note": "就某事称赞/祝贺"
+        },
+        {
+          "w": "praise",
+          "note": "泛指赞扬"
+        },
+        {
+          "w": "applaud",
+          "note": "称赞/鼓掌"
+        }
+      ]
+    },
+    {
+      "w": "riddle",
+      "syn": [
+        {
+          "w": "puzzle",
+          "note": "谜题；难题"
+        },
+        {
+          "w": "mystery",
+          "note": "神秘事物/谜团"
+        }
+      ]
+    },
+    {
+      "w": "ceremony",
+      "syn": [
+        {
+          "w": "ritual",
+          "note": "仪式，较正式"
+        },
+        {
+          "w": "celebration",
+          "note": "庆典"
+        },
+        {
+          "w": "formality",
+          "note": "礼节；客套"
+        }
+      ]
+    },
+    {
+      "w": "samba",
+      "syn": []
+    },
+    {
+      "w": "make-up",
+      "syn": [
+        {
+          "w": "cosmetics",
+          "note": "化妆品"
+        },
+        {
+          "w": "resit",
+          "note": "补考（英式）"
+        },
+        {
+          "w": "retake",
+          "note": "补考/重考"
+        },
+        {
+          "w": "structure",
+          "note": "构造；结构"
+        }
+      ]
+    },
+    {
+      "w": "after all",
+      "syn": [
+        {
+          "w": "in the end",
+          "note": "最后；终究"
+        },
+        {
+          "w": "ultimately",
+          "note": "最终，较正式"
+        },
+        {
+          "w": "anyway",
+          "note": "毕竟；反正（口语）"
+        }
+      ]
+    },
+    {
+      "w": "range",
+      "syn": [
+        {
+          "w": "scope",
+          "note": "范围；领域"
+        },
+        {
+          "w": "extent",
+          "note": "程度；范围"
+        },
+        {
+          "w": "vary",
+          "note": "在范围内变化"
+        },
+        {
+          "w": "roam",
+          "note": "漫游；来回走动"
+        }
+      ]
+    },
+    {
+      "w": "range from ... to ...",
+      "syn": [
+        {
+          "w": "vary from ... to ...",
+          "note": "从……到……不等"
+        },
+        {
+          "w": "run from ... to ...",
+          "note": "范围从……延伸到……"
+        }
+      ]
+    },
+    {
+      "w": "origin",
+      "syn": [
+        {
+          "w": "source",
+          "note": "来源；出处"
+        },
+        {
+          "w": "beginning",
+          "note": "开端"
+        },
+        {
+          "w": "root",
+          "note": "根源"
+        },
+        {
+          "w": "birth",
+          "note": "出身；诞生"
+        }
+      ]
+    },
+    {
+      "w": "religion",
+      "syn": [
+        {
+          "w": "faith",
+          "note": "信仰；宗教"
+        },
+        {
+          "w": "belief",
+          "note": "信仰，较泛"
+        },
+        {
+          "w": "creed",
+          "note": "信条；教义，较正式"
+        }
+      ]
+    },
+    {
+      "w": "religious",
+      "syn": [
+        {
+          "w": "devout",
+          "note": "虔诚的"
+        },
+        {
+          "w": "pious",
+          "note": "虔诚的（有时含贬义）"
+        },
+        {
+          "w": "monk",
+          "note": "修道士（名词义）"
+        },
+        {
+          "w": "nun",
+          "note": "尼姑（名词义）"
+        }
+      ]
+    }
+  ]
+}

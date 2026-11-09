@@ -1,0 +1,198 @@
+{
+  "items": [
+    {
+      "w": "applaud",
+      "syn": [
+        {
+          "w": "praise",
+          "note": "称赞，更通用"
+        },
+        {
+          "w": "cheer",
+          "note": "喝彩，侧重欢呼"
+        },
+        {
+          "w": "clap",
+          "note": "鼓掌，侧重动作"
+        },
+        {
+          "w": "commend",
+          "note": "正式称赞"
+        }
+      ]
+    },
+    {
+      "w": "tax",
+      "syn": [
+        {
+          "w": "levy",
+          "note": "征税；税款，较正式"
+        },
+        {
+          "w": "duty",
+          "note": "税，尤指关税"
+        },
+        {
+          "w": "tariff",
+          "note": "关税"
+        },
+        {
+          "w": "burden",
+          "note": "重负；使负担"
+        }
+      ]
+    },
+    {
+      "w": "manned",
+      "syn": [
+        {
+          "w": "crewed",
+          "note": "配备船员的；有人操作的"
+        },
+        {
+          "w": "staffed",
+          "note": "配备人员的"
+        },
+        {
+          "w": "piloted",
+          "note": "有人驾驶的"
+        }
+      ]
+    },
+    {
+      "w": "submersible",
+      "syn": [
+        {
+          "w": "submarine",
+          "note": "水下的；潜艇的"
+        },
+        {
+          "w": "underwater",
+          "note": "水下的，近义"
+        },
+        {
+          "w": "diving",
+          "note": "潜水用的"
+        }
+      ]
+    },
+    {
+      "w": "underwater",
+      "syn": [
+        {
+          "w": "submerged",
+          "note": "被水淹没的；水下的"
+        },
+        {
+          "w": "submarine",
+          "note": "水下的，较正式"
+        },
+        {
+          "w": "sunken",
+          "note": "沉没的；水下的"
+        }
+      ]
+    },
+    {
+      "w": "capsule",
+      "syn": [
+        {
+          "w": "pill",
+          "note": "药丸；胶囊，日常"
+        },
+        {
+          "w": "pod",
+          "note": "荚；吊舱"
+        },
+        {
+          "w": "container",
+          "note": "容器"
+        }
+      ]
+    },
+    {
+      "w": "coral",
+      "syn": []
+    },
+    {
+      "w": "migration",
+      "syn": [
+        {
+          "w": "movement",
+          "note": "移动，较泛"
+        },
+        {
+          "w": "relocation",
+          "note": "搬迁，侧重定居地变化"
+        },
+        {
+          "w": "immigration",
+          "note": "移入，特定方向"
+        }
+      ]
+    },
+    {
+      "w": "directory",
+      "syn": [
+        {
+          "w": "list",
+          "note": "名单；列表，较泛"
+        },
+        {
+          "w": "catalog",
+          "note": "目录册"
+        },
+        {
+          "w": "index",
+          "note": "索引；目录"
+        },
+        {
+          "w": "register",
+          "note": "名录；登记簿"
+        }
+      ]
+    },
+    {
+      "w": "meanwhile",
+      "syn": [
+        {
+          "w": "meantime",
+          "note": "同时；其间"
+        },
+        {
+          "w": "simultaneously",
+          "note": "同时地，较正式"
+        },
+        {
+          "w": "at the same time",
+          "note": "同时"
+        }
+      ]
+    },
+    {
+      "w": "exploit",
+      "syn": [
+        {
+          "w": "utilize",
+          "note": "利用；开发，较正式"
+        },
+        {
+          "w": "develop",
+          "note": "开发；开拓"
+        },
+        {
+          "w": "feat",
+          "note": "功绩，对应名词义"
+        },
+        {
+          "w": "abuse",
+          "note": "剥削；滥用"
+        }
+      ]
+    },
+    {
+      "w": "gallon",
+      "syn": []
+    }
+  ]
+}

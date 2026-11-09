@@ -1,0 +1,344 @@
+{
+  "items": [
+    {
+      "w": "flash",
+      "syn": [
+        {
+          "w": "gleam",
+          "note": "微光/闪光"
+        },
+        {
+          "w": "sparkle",
+          "note": "闪耀"
+        },
+        {
+          "w": "instant",
+          "note": "一瞬间"
+        }
+      ]
+    },
+    {
+      "w": "flash card",
+      "syn": [
+        {
+          "w": "flashcard",
+          "note": "同义异写，抽认卡"
+        },
+        {
+          "w": "memory card",
+          "note": "侧重存储卡"
+        }
+      ]
+    },
+    {
+      "w": "organise",
+      "syn": [
+        {
+          "w": "organize",
+          "note": "美式拼写"
+        },
+        {
+          "w": "arrange",
+          "note": "安排"
+        },
+        {
+          "w": "coordinate",
+          "note": "协调组织"
+        }
+      ]
+    },
+    {
+      "w": "organize",
+      "syn": [
+        {
+          "w": "organise",
+          "note": "英式拼写"
+        },
+        {
+          "w": "arrange",
+          "note": "安排"
+        },
+        {
+          "w": "coordinate",
+          "note": "协调"
+        }
+      ]
+    },
+    {
+      "w": "organisation",
+      "syn": [
+        {
+          "w": "organization",
+          "note": "美式拼写"
+        },
+        {
+          "w": "institution",
+          "note": "机构"
+        },
+        {
+          "w": "association",
+          "note": "协会/团体"
+        }
+      ]
+    },
+    {
+      "w": "organization",
+      "syn": [
+        {
+          "w": "organisation",
+          "note": "英式拼写"
+        },
+        {
+          "w": "institution",
+          "note": "机构"
+        },
+        {
+          "w": "association",
+          "note": "协会/团体"
+        }
+      ]
+    },
+    {
+      "w": "goal",
+      "syn": [
+        {
+          "w": "aim",
+          "note": "目标"
+        },
+        {
+          "w": "objective",
+          "note": "较正式目标"
+        },
+        {
+          "w": "target",
+          "note": "靶子/目标"
+        },
+        {
+          "w": "purpose",
+          "note": "目的"
+        }
+      ]
+    },
+    {
+      "w": "strategy",
+      "syn": [
+        {
+          "w": "tactic",
+          "note": "战术/策略"
+        },
+        {
+          "w": "plan",
+          "note": "计划"
+        },
+        {
+          "w": "approach",
+          "note": "方法/途径"
+        }
+      ]
+    },
+    {
+      "w": "partner",
+      "syn": [
+        {
+          "w": "companion",
+          "note": "同伴"
+        },
+        {
+          "w": "associate",
+          "note": "合伙人/同事"
+        },
+        {
+          "w": "colleague",
+          "note": "同事"
+        }
+      ]
+    },
+    {
+      "w": "improve",
+      "syn": [
+        {
+          "w": "enhance",
+          "note": "提高质量，较正式"
+        },
+        {
+          "w": "better",
+          "note": "改善"
+        },
+        {
+          "w": "upgrade",
+          "note": "升级/提升"
+        }
+      ]
+    },
+    {
+      "w": "curious",
+      "syn": [
+        {
+          "w": "inquisitive",
+          "note": "好奇/爱打听"
+        },
+        {
+          "w": "odd",
+          "note": "古怪的"
+        },
+        {
+          "w": "strange",
+          "note": "奇怪的"
+        }
+      ]
+    },
+    {
+      "w": "company",
+      "syn": [
+        {
+          "w": "firm",
+          "note": "公司"
+        },
+        {
+          "w": "business",
+          "note": "企业"
+        },
+        {
+          "w": "companionship",
+          "note": "陪伴"
+        }
+      ]
+    },
+    {
+      "w": "personality",
+      "syn": [
+        {
+          "w": "character",
+          "note": "性格"
+        },
+        {
+          "w": "nature",
+          "note": "本性"
+        },
+        {
+          "w": "celebrity",
+          "note": "名人"
+        }
+      ]
+    },
+    {
+      "w": "style",
+      "syn": [
+        {
+          "w": "fashion",
+          "note": "时尚"
+        },
+        {
+          "w": "manner",
+          "note": "方式"
+        },
+        {
+          "w": "way",
+          "note": "方式/风格"
+        }
+      ]
+    },
+    {
+      "w": "revise",
+      "syn": [
+        {
+          "w": "review",
+          "note": "复习/审查"
+        },
+        {
+          "w": "amend",
+          "note": "正式修订"
+        },
+        {
+          "w": "edit",
+          "note": "校订/编辑"
+        }
+      ]
+    },
+    {
+      "w": "teenage",
+      "syn": [
+        {
+          "w": "adolescent",
+          "note": "青春期的"
+        },
+        {
+          "w": "youthful",
+          "note": "年轻的"
+        },
+        {
+          "w": "adolescence",
+          "note": "青少年时期"
+        }
+      ]
+    },
+    {
+      "w": "teenager",
+      "syn": [
+        {
+          "w": "adolescent",
+          "note": "青少年"
+        },
+        {
+          "w": "youth",
+          "note": "年轻人"
+        },
+        {
+          "w": "teen",
+          "note": "青少年，非正式"
+        }
+      ]
+    },
+    {
+      "w": "ballet",
+      "syn": [
+        {
+          "w": "ballet dancing",
+          "note": "芭蕾舞表演"
+        },
+        {
+          "w": "dance",
+          "note": "泛指舞蹈"
+        }
+      ]
+    },
+    {
+      "w": "volunteer",
+      "syn": [
+        {
+          "w": "helper",
+          "note": "帮手"
+        },
+        {
+          "w": "offer",
+          "note": "主动提出"
+        },
+        {
+          "w": "voluntary",
+          "note": "志愿的"
+        }
+      ]
+    },
+    {
+      "w": "debate",
+      "syn": [
+        {
+          "w": "discussion",
+          "note": "讨论"
+        },
+        {
+          "w": "argument",
+          "note": "争论"
+        },
+        {
+          "w": "dispute",
+          "note": "争端"
+        },
+        {
+          "w": "argue",
+          "note": "辩论/争论"
+        }
+      ]
+    }
+  ]
+}

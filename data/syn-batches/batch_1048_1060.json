@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "w": "Napa Valley",
+      "syn": []
+    },
+    {
+      "w": "the Golden Gate Bridge",
+      "syn": []
+    },
+    {
+      "w": "the Mission District",
+      "syn": []
+    },
+    {
+      "w": "Mexico",
+      "syn": []
+    },
+    {
+      "w": "California",
+      "syn": []
+    },
+    {
+      "w": "Cantonese",
+      "syn": [
+        {
+          "w": "Yue",
+          "note": "指粤语，学术用语"
+        },
+        {
+          "w": "Canton dialect",
+          "note": "旧称，指广州话"
+        }
+      ]
+    },
+    {
+      "w": "the Richmond District",
+      "syn": []
+    },
+    {
+      "w": "Huangguoshu Waterfall",
+      "syn": []
+    },
+    {
+      "w": "Journey to the West",
+      "syn": []
+    },
+    {
+      "w": "Tin How Temple",
+      "syn": []
+    },
+    {
+      "w": "Bank of Canton",
+      "syn": []
+    },
+    {
+      "w": "Portsmouth",
+      "syn": []
+    }
+  ]
+}

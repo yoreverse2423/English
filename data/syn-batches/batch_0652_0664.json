@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "amount",
+      "syn": [
+        {
+          "w": "quantity",
+          "note": "数量"
+        },
+        {
+          "w": "sum",
+          "note": "总额"
+        },
+        {
+          "w": "total",
+          "note": "总数"
+        },
+        {
+          "w": "number",
+          "note": "数量（可数）"
+        }
+      ]
+    },
+    {
+      "w": "gallery",
+      "syn": [
+        {
+          "w": "corridor",
+          "note": "走廊"
+        },
+        {
+          "w": "passage",
+          "note": "通道"
+        },
+        {
+          "w": "art museum",
+          "note": "美术馆（画廊义）"
+        }
+      ]
+    },
+    {
+      "w": "approach",
+      "syn": [
+        {
+          "w": "method",
+          "note": "方法"
+        },
+        {
+          "w": "way",
+          "note": "方法/途径"
+        },
+        {
+          "w": "near",
+          "note": "接近（动词）"
+        },
+        {
+          "w": "tackle",
+          "note": "着手处理"
+        }
+      ]
+    },
+    {
+      "w": "ensure",
+      "syn": [
+        {
+          "w": "guarantee",
+          "note": "保证"
+        },
+        {
+          "w": "assure",
+          "note": "使确信（非完全同义）"
+        },
+        {
+          "w": "make sure",
+          "note": "确保"
+        },
+        {
+          "w": "secure",
+          "note": "确保/使安全"
+        }
+      ]
+    },
+    {
+      "w": "landscape",
+      "syn": [
+        {
+          "w": "scenery",
+          "note": "风景（总称）"
+        },
+        {
+          "w": "view",
+          "note": "景色"
+        },
+        {
+          "w": "terrain",
+          "note": "地形"
+        }
+      ]
+    },
+    {
+      "w": "generous",
+      "syn": [
+        {
+          "w": "liberal",
+          "note": "慷慨的（用钱）"
+        },
+        {
+          "w": "unselfish",
+          "note": "无私的"
+        },
+        {
+          "w": "kind",
+          "note": "好心的（近义）"
+        }
+      ]
+    },
+    {
+      "w": "butter",
+      "syn": [
+        {
+          "w": "flattery",
+          "note": "奉承话"
+        },
+        {
+          "w": "flatter",
+          "note": "讨好（动词）"
+        }
+      ]
+    },
+    {
+      "w": "honey",
+      "syn": [
+        {
+          "w": "darling",
+          "note": "宝贝（称呼）"
+        },
+        {
+          "w": "sweetheart",
+          "note": "甜心"
+        },
+        {
+          "w": "dear",
+          "note": "亲爱的（称呼）"
+        }
+      ]
+    },
+    {
+      "w": "ancestor",
+      "syn": [
+        {
+          "w": "forefather",
+          "note": "祖先（常用复数）"
+        },
+        {
+          "w": "forebear",
+          "note": "祖先（较正式）"
+        }
+      ]
+    },
+    {
+      "w": "position",
+      "syn": [
+        {
+          "w": "location",
+          "note": "位置"
+        },
+        {
+          "w": "place",
+          "note": "位置"
+        },
+        {
+          "w": "post",
+          "note": "职位"
+        },
+        {
+          "w": "posture",
+          "note": "姿态"
+        }
+      ]
+    },
+    {
+      "w": "courtyard",
+      "syn": [
+        {
+          "w": "yard",
+          "note": "院子"
+        },
+        {
+          "w": "court",
+          "note": "庭院"
+        }
+      ]
+    },
+    {
+      "w": "snack",
+      "syn": [
+        {
+          "w": "refreshment",
+          "note": "茶点（常用复数）"
+        },
+        {
+          "w": "bite",
+          "note": "简单小吃（a bite）"
+        }
+      ]
+    }
+  ]
+}

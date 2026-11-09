@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "w": "frown",
+      "syn": [
+        {
+          "w": "scowl",
+          "note": "皱眉怒容，语气更强"
+        },
+        {
+          "w": "glower",
+          "note": "怒视，带敌意"
+        },
+        {
+          "w": "disapprove",
+          "note": "不赞同，对应引申义"
+        }
+      ]
+    },
+    {
+      "w": "in that case",
+      "syn": [
+        {
+          "w": "if so",
+          "note": "如果是这样"
+        },
+        {
+          "w": "then",
+          "note": "那么，口语常用"
+        },
+        {
+          "w": "under those circumstances",
+          "note": "在那种情况下，较正式"
+        }
+      ]
+    },
+    {
+      "w": "option",
+      "syn": [
+        {
+          "w": "choice",
+          "note": "选择，最常用"
+        },
+        {
+          "w": "alternative",
+          "note": "备选方案"
+        },
+        {
+          "w": "selection",
+          "note": "挑选出的选项"
+        }
+      ]
+    },
+    {
+      "w": "broad",
+      "syn": [
+        {
+          "w": "wide",
+          "note": "宽阔的，侧重宽度"
+        },
+        {
+          "w": "extensive",
+          "note": "广泛的，侧重范围"
+        },
+        {
+          "w": "general",
+          "note": "大致的，概括的"
+        }
+      ]
+    },
+    {
+      "w": "indeed",
+      "syn": [
+        {
+          "w": "truly",
+          "note": "确实，真正地"
+        },
+        {
+          "w": "really",
+          "note": "确实，口语常用"
+        },
+        {
+          "w": "certainly",
+          "note": "的确，表肯定"
+        }
+      ]
+    },
+    {
+      "w": "normal",
+      "syn": [
+        {
+          "w": "ordinary",
+          "note": "普通的，平常的"
+        },
+        {
+          "w": "regular",
+          "note": "常规的，定期的"
+        },
+        {
+          "w": "standard",
+          "note": "标准的，正规的"
+        },
+        {
+          "w": "typical",
+          "note": "典型的，一般的"
+        }
+      ]
+    },
+    {
+      "w": "willing",
+      "syn": [
+        {
+          "w": "ready",
+          "note": "乐意的，常接to do"
+        },
+        {
+          "w": "prepared",
+          "note": "愿意的，常接to do"
+        },
+        {
+          "w": "inclined",
+          "note": "倾向于的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "be willing to do sth.",
+      "syn": [
+        {
+          "w": "be ready to do sth.",
+          "note": "乐意做某事"
+        },
+        {
+          "w": "be prepared to do sth.",
+          "note": "愿意做某事"
+        },
+        {
+          "w": "be happy to do sth.",
+          "note": "乐于做某事，口语"
+        }
+      ]
+    },
+    {
+      "w": "element",
+      "syn": [
+        {
+          "w": "component",
+          "note": "组成部分，较正式"
+        },
+        {
+          "w": "factor",
+          "note": "因素，侧重影响"
+        },
+        {
+          "w": "ingredient",
+          "note": "成分，常指混合物的成分"
+        },
+        {
+          "w": "constituent",
+          "note": "构成要素，较正式"
+        }
+      ]
+    },
+    {
+      "w": "plot",
+      "syn": [
+        {
+          "w": "storyline",
+          "note": "故事情节"
+        },
+        {
+          "w": "conspiracy",
+          "note": "阴谋，名词"
+        },
+        {
+          "w": "scheme",
+          "note": "密谋，也可指阴谋"
+        },
+        {
+          "w": "conspire",
+          "note": "密谋，动词"
+        }
+      ]
+    },
+    {
+      "w": "ambassador",
+      "syn": [
+        {
+          "w": "diplomat",
+          "note": "外交官，范围更广"
+        },
+        {
+          "w": "envoy",
+          "note": "使节，较正式"
+        },
+        {
+          "w": "representative",
+          "note": "代表，含义更泛"
+        }
+      ]
+    },
+    {
+      "w": "upper-class",
+      "syn": [
+        {
+          "w": "aristocratic",
+          "note": "贵族的，上流社会的"
+        },
+        {
+          "w": "elite",
+          "note": "精英的，上层阶层的"
+        },
+        {
+          "w": "high-class",
+          "note": "上流的，高档的"
+        }
+      ]
+    }
+  ]
+}

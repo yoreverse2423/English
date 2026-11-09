@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "w": "distract",
+      "syn": [
+        {
+          "w": "divert",
+          "note": "转移（注意力）"
+        },
+        {
+          "w": "sidetrack",
+          "note": "使分心、偏离正题"
+        }
+      ]
+    },
+    {
+      "w": "perceive",
+      "syn": [
+        {
+          "w": "notice",
+          "note": "注意到，较日常"
+        },
+        {
+          "w": "sense",
+          "note": "感觉到，侧重直觉"
+        },
+        {
+          "w": "detect",
+          "note": "察觉，强调发现"
+        }
+      ]
+    },
+    {
+      "w": "distinguish",
+      "syn": [
+        {
+          "w": "differentiate",
+          "note": "区分，较正式"
+        },
+        {
+          "w": "discern",
+          "note": "辨别，书面正式"
+        },
+        {
+          "w": "discriminate",
+          "note": "区别，正式"
+        }
+      ]
+    },
+    {
+      "w": "anxiety",
+      "syn": [
+        {
+          "w": "worry",
+          "note": "担忧，较口语"
+        },
+        {
+          "w": "unease",
+          "note": "不安，程度较轻"
+        },
+        {
+          "w": "concern",
+          "note": "忧虑，较温和"
+        }
+      ]
+    },
+    {
+      "w": "chest",
+      "syn": [
+        {
+          "w": "box",
+          "note": "箱子，泛指"
+        },
+        {
+          "w": "trunk",
+          "note": "大箱子、行李箱"
+        },
+        {
+          "w": "breast",
+          "note": "胸部，书面"
+        }
+      ]
+    },
+    {
+      "w": "embarrassed",
+      "syn": [
+        {
+          "w": "awkward",
+          "note": "尴尬的，侧重不自在"
+        },
+        {
+          "w": "self-conscious",
+          "note": "难为情的，怕人注意"
+        }
+      ]
+    },
+    {
+      "w": "ashamed",
+      "syn": [
+        {
+          "w": "embarrassed",
+          "note": "难为情的，程度较轻"
+        },
+        {
+          "w": "guilty",
+          "note": "内疚的，侧重负罪感"
+        }
+      ]
+    },
+    {
+      "w": "merely",
+      "syn": [
+        {
+          "w": "only",
+          "note": "仅仅，最常用"
+        },
+        {
+          "w": "just",
+          "note": "只是，口语常用"
+        },
+        {
+          "w": "simply",
+          "note": "只不过，强调"
+        }
+      ]
+    },
+    {
+      "w": "call on",
+      "syn": [
+        {
+          "w": "visit",
+          "note": "拜访，对应“访问”义"
+        },
+        {
+          "w": "appeal to",
+          "note": "呼吁，对应“号召”义"
+        }
+      ]
+    },
+    {
+      "w": "bother",
+      "syn": [
+        {
+          "w": "trouble",
+          "note": "麻烦，较通用"
+        },
+        {
+          "w": "disturb",
+          "note": "打扰，侧重打断"
+        },
+        {
+          "w": "annoy",
+          "note": "使恼怒，语气更强"
+        },
+        {
+          "w": "hassle",
+          "note": "麻烦，口语"
+        }
+      ]
+    },
+    {
+      "w": "weep",
+      "syn": [
+        {
+          "w": "cry",
+          "note": "哭泣，最常用"
+        },
+        {
+          "w": "sob",
+          "note": "啜泣，出声哭"
+        }
+      ]
+    },
+    {
+      "w": "at work",
+      "syn": [
+        {
+          "w": "in operation",
+          "note": "运转中，指机器"
+        },
+        {
+          "w": "working",
+          "note": "在起作用，指因素"
+        }
+      ]
+    }
+  ]
+}

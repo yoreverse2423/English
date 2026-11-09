@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "w": "pour",
+      "syn": [
+        {
+          "w": "flow",
+          "note": "泛指流动"
+        },
+        {
+          "w": "stream",
+          "note": "成股流出"
+        },
+        {
+          "w": "spill",
+          "note": "侧重洒出、溢出"
+        }
+      ]
+    },
+    {
+      "w": "concrete",
+      "syn": [
+        {
+          "w": "tangible",
+          "note": "可触摸的、有形的"
+        },
+        {
+          "w": "specific",
+          "note": "具体的、明确的"
+        },
+        {
+          "w": "solid",
+          "note": "实在的、坚实的"
+        }
+      ]
+    },
+    {
+      "w": "plasma",
+      "syn": []
+    },
+    {
+      "w": "aerospace",
+      "syn": []
+    },
+    {
+      "w": "patriotic",
+      "syn": [
+        {
+          "w": "nationalistic",
+          "note": "偏民族主义"
+        },
+        {
+          "w": "loyal",
+          "note": "忠诚的，程度较弱"
+        }
+      ]
+    },
+    {
+      "w": "mechanical",
+      "syn": [
+        {
+          "w": "automatic",
+          "note": "自动的、机械式的"
+        },
+        {
+          "w": "routine",
+          "note": "例行的、呆板的"
+        },
+        {
+          "w": "robotic",
+          "note": "像机器人般呆板的"
+        }
+      ]
+    },
+    {
+      "w": "mechanic",
+      "syn": [
+        {
+          "w": "technician",
+          "note": "技师，范围更广"
+        },
+        {
+          "w": "repairman",
+          "note": "修理工，较口语"
+        }
+      ]
+    },
+    {
+      "w": "break out",
+      "syn": [
+        {
+          "w": "erupt",
+          "note": "指战争、疾病等爆发"
+        },
+        {
+          "w": "flare up",
+          "note": "突然爆发、加剧"
+        },
+        {
+          "w": "escape",
+          "note": "指逃脱、越狱"
+        }
+      ]
+    },
+    {
+      "w": "aviation",
+      "syn": [
+        {
+          "w": "flying",
+          "note": "飞行，较通俗"
+        },
+        {
+          "w": "aeronautics",
+          "note": "航空学，较正式"
+        }
+      ]
+    },
+    {
+      "w": "defend",
+      "syn": [
+        {
+          "w": "protect",
+          "note": "保护，侧重安全"
+        },
+        {
+          "w": "guard",
+          "note": "守卫，侧重警戒"
+        },
+        {
+          "w": "justify",
+          "note": "辩护、证明正当"
+        }
+      ]
+    },
+    {
+      "w": "jet",
+      "syn": [
+        {
+          "w": "spray",
+          "note": "喷雾、喷射"
+        },
+        {
+          "w": "spurt",
+          "note": "喷出、涌出"
+        },
+        {
+          "w": "jet plane",
+          "note": "喷气式飞机"
+        }
+      ]
+    },
+    {
+      "w": "assistant",
+      "syn": [
+        {
+          "w": "helper",
+          "note": "帮手，较通俗"
+        },
+        {
+          "w": "aide",
+          "note": "助手，常指要员助手"
+        },
+        {
+          "w": "auxiliary",
+          "note": "辅助的，作形容词"
+        }
+      ]
+    }
+  ]
+}

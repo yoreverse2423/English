@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "w": "disposal",
+      "syn": [
+        {
+          "w": "removal",
+          "note": "侧重清除、移走"
+        },
+        {
+          "w": "handling",
+          "note": "侧重处理方式"
+        },
+        {
+          "w": "arrangement",
+          "note": "侧重安排、布置"
+        }
+      ]
+    },
+    {
+      "w": "inspection",
+      "syn": [
+        {
+          "w": "examination",
+          "note": "检查、审查"
+        },
+        {
+          "w": "check",
+          "note": "较普通，检查"
+        },
+        {
+          "w": "review",
+          "note": "侧重审查、复查"
+        },
+        {
+          "w": "survey",
+          "note": "侧重视察、勘查"
+        }
+      ]
+    },
+    {
+      "w": "fine",
+      "syn": [
+        {
+          "w": "penalty",
+          "note": "作名词，罚款"
+        },
+        {
+          "w": "excellent",
+          "note": "作形容词，极好的"
+        },
+        {
+          "w": "delicate",
+          "note": "作形容词，精细的"
+        },
+        {
+          "w": "clear",
+          "note": "作形容词，晴朗的"
+        }
+      ]
+    },
+    {
+      "w": "campaign",
+      "syn": [
+        {
+          "w": "movement",
+          "note": "社会运动"
+        },
+        {
+          "w": "drive",
+          "note": "有组织的活动、攻势"
+        },
+        {
+          "w": "battle",
+          "note": "战役"
+        },
+        {
+          "w": "operation",
+          "note": "行动、作战"
+        }
+      ]
+    },
+    {
+      "w": "waterway",
+      "syn": [
+        {
+          "w": "channel",
+          "note": "水道、航道"
+        },
+        {
+          "w": "canal",
+          "note": "运河"
+        },
+        {
+          "w": "watercourse",
+          "note": "水道、河渠"
+        }
+      ]
+    },
+    {
+      "w": "tolerate",
+      "syn": [
+        {
+          "w": "bear",
+          "note": "普通用词，忍受"
+        },
+        {
+          "w": "endure",
+          "note": "较正式，忍耐"
+        },
+        {
+          "w": "stand",
+          "note": "口语常用，忍受"
+        },
+        {
+          "w": "put up with",
+          "note": "短语，容忍"
+        }
+      ]
+    },
+    {
+      "w": "agenda",
+      "syn": [
+        {
+          "w": "schedule",
+          "note": "日程表、日程安排"
+        },
+        {
+          "w": "timetable",
+          "note": "时间表、日程"
+        }
+      ]
+    },
+    {
+      "w": "Norway",
+      "syn": []
+    },
+    {
+      "w": "Svalbard",
+      "syn": []
+    },
+    {
+      "w": "Hurricane Katrina",
+      "syn": []
+    },
+    {
+      "w": "adversity",
+      "syn": [
+        {
+          "w": "misfortune",
+          "note": "不幸、灾祸"
+        },
+        {
+          "w": "hardship",
+          "note": "艰难困苦"
+        },
+        {
+          "w": "disaster",
+          "note": "灾难"
+        },
+        {
+          "w": "difficulty",
+          "note": "困难、困境"
+        }
+      ]
+    },
+    {
+      "w": "wage",
+      "syn": [
+        {
+          "w": "pay",
+          "note": "工资、报酬"
+        },
+        {
+          "w": "salary",
+          "note": "薪水，常指月薪"
+        },
+        {
+          "w": "earnings",
+          "note": "收入、工资"
+        },
+        {
+          "w": "conduct",
+          "note": "作动词，进行、开展"
+        }
+      ]
+    }
+  ]
+}

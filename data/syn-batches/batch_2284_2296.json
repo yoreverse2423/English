@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "w": "recite",
+      "syn": [
+        {
+          "w": "learn by heart",
+          "note": "侧重背诵记住"
+        },
+        {
+          "w": "recount",
+          "note": "侧重叙述"
+        },
+        {
+          "w": "enumerate",
+          "note": "侧重列举，较正式"
+        }
+      ]
+    },
+    {
+      "w": "bee",
+      "syn": [
+        {
+          "w": "honeybee",
+          "note": "蜜蜂"
+        },
+        {
+          "w": "busy bee",
+          "note": "勤劳的人，口语"
+        }
+      ]
+    },
+    {
+      "w": "dewdrop",
+      "syn": [
+        {
+          "w": "drop of dew",
+          "note": "直译，露水珠"
+        }
+      ]
+    },
+    {
+      "w": "dawn",
+      "syn": [
+        {
+          "w": "daybreak",
+          "note": "黎明"
+        },
+        {
+          "w": "sunrise",
+          "note": "日出时分"
+        },
+        {
+          "w": "beginning",
+          "note": "开端"
+        },
+        {
+          "w": "onset",
+          "note": "开端，较正式"
+        }
+      ]
+    },
+    {
+      "w": "clover",
+      "syn": [
+        {
+          "w": "trefoil",
+          "note": "三叶草，植物学用语"
+        },
+        {
+          "w": "shamrock",
+          "note": "三叶草，爱尔兰象征"
+        }
+      ]
+    },
+    {
+      "w": "butterfly",
+      "syn": [
+        {
+          "w": "social butterfly",
+          "note": "爱交际的人"
+        },
+        {
+          "w": "butterfly stroke",
+          "note": "蝶泳"
+        }
+      ]
+    },
+    {
+      "w": "lawn",
+      "syn": [
+        {
+          "w": "turf",
+          "note": "草坪，草皮"
+        },
+        {
+          "w": "grass",
+          "note": "草，草地泛指"
+        },
+        {
+          "w": "green",
+          "note": "绿地，草坪"
+        }
+      ]
+    },
+    {
+      "w": "amateur",
+      "syn": [
+        {
+          "w": "hobbyist",
+          "note": "爱好者"
+        },
+        {
+          "w": "layman",
+          "note": "外行"
+        },
+        {
+          "w": "nonprofessional",
+          "note": "非专业者，业余的"
+        }
+      ]
+    },
+    {
+      "w": "cinquain",
+      "syn": [
+        {
+          "w": "five-line poem",
+          "note": "直译，五行诗"
+        }
+      ]
+    },
+    {
+      "w": "be made up of",
+      "syn": [
+        {
+          "w": "consist of",
+          "note": "由…组成"
+        },
+        {
+          "w": "be composed of",
+          "note": "由…构成，较正式"
+        },
+        {
+          "w": "comprise",
+          "note": "包括，由…组成，正式"
+        }
+      ]
+    },
+    {
+      "w": "mood",
+      "syn": [
+        {
+          "w": "feeling",
+          "note": "情绪，感受"
+        },
+        {
+          "w": "atmosphere",
+          "note": "气氛"
+        },
+        {
+          "w": "tone",
+          "note": "语气"
+        }
+      ]
+    },
+    {
+      "w": "tease",
+      "syn": [
+        {
+          "w": "mock",
+          "note": "取笑，较正式"
+        },
+        {
+          "w": "make fun of",
+          "note": "取笑"
+        },
+        {
+          "w": "kid",
+          "note": "开玩笑地戏弄"
+        },
+        {
+          "w": "comb",
+          "note": "梳理头发"
+        }
+      ]
+    }
+  ]
+}

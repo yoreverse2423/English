@@ -1,0 +1,328 @@
+{
+  "items": [
+    {
+      "w": "identity card",
+      "syn": [
+        {
+          "w": "ID card",
+          "note": "口语常用缩写"
+        },
+        {
+          "w": "identification card",
+          "note": "正式全称"
+        }
+      ]
+    },
+    {
+      "w": "convenient",
+      "syn": [
+        {
+          "w": "handy",
+          "note": "侧重近便、实用"
+        },
+        {
+          "w": "accessible",
+          "note": "易到达、易使用"
+        }
+      ]
+    },
+    {
+      "w": "cash",
+      "syn": [
+        {
+          "w": "currency",
+          "note": "货币，较正式"
+        },
+        {
+          "w": "banknotes",
+          "note": "纸币，现钞"
+        }
+      ]
+    },
+    {
+      "w": "update",
+      "syn": [
+        {
+          "w": "renew",
+          "note": "更新，使重新有效"
+        },
+        {
+          "w": "refresh",
+          "note": "刷新，更新内容"
+        },
+        {
+          "w": "upgrade",
+          "note": "升级，提升版本"
+        }
+      ]
+    },
+    {
+      "w": "database",
+      "syn": [
+        {
+          "w": "databank",
+          "note": "数据库，资料库"
+        },
+        {
+          "w": "repository",
+          "note": "存储库，较正式"
+        }
+      ]
+    },
+    {
+      "w": "software",
+      "syn": [
+        {
+          "w": "program",
+          "note": "程序，软件"
+        },
+        {
+          "w": "application",
+          "note": "应用程序"
+        },
+        {
+          "w": "app",
+          "note": "应用软件，口语"
+        }
+      ]
+    },
+    {
+      "w": "network",
+      "syn": [
+        {
+          "w": "net",
+          "note": "网，网络，较简略"
+        },
+        {
+          "w": "web",
+          "note": "网状物，网络"
+        },
+        {
+          "w": "system",
+          "note": "系统，网络体系"
+        }
+      ]
+    },
+    {
+      "w": "stuck",
+      "syn": [
+        {
+          "w": "trapped",
+          "note": "被困住的"
+        },
+        {
+          "w": "jammed",
+          "note": "卡住的"
+        },
+        {
+          "w": "caught",
+          "note": "被卡住、被缠住的"
+        }
+      ]
+    },
+    {
+      "w": "keep sb. company",
+      "syn": [
+        {
+          "w": "accompany sb.",
+          "note": "陪伴某人，较正式"
+        },
+        {
+          "w": "stay with sb.",
+          "note": "与某人待在一起"
+        }
+      ]
+    },
+    {
+      "w": "surf",
+      "syn": [
+        {
+          "w": "browse",
+          "note": "上网浏览"
+        },
+        {
+          "w": "ride waves",
+          "note": "冲浪，驾浪"
+        }
+      ]
+    },
+    {
+      "w": "benefit",
+      "syn": [
+        {
+          "w": "advantage",
+          "note": "优势，好处"
+        },
+        {
+          "w": "profit",
+          "note": "收益，益处"
+        },
+        {
+          "w": "help",
+          "note": "有助于，有益于"
+        }
+      ]
+    },
+    {
+      "w": "distance",
+      "syn": [
+        {
+          "w": "space",
+          "note": "空间距离，间隔"
+        },
+        {
+          "w": "gap",
+          "note": "间隔，差距"
+        },
+        {
+          "w": "interval",
+          "note": "间隔，间距"
+        }
+      ]
+    },
+    {
+      "w": "inspire",
+      "syn": [
+        {
+          "w": "encourage",
+          "note": "鼓励，鼓舞"
+        },
+        {
+          "w": "motivate",
+          "note": "激励，激发动力"
+        },
+        {
+          "w": "stimulate",
+          "note": "激发，刺激"
+        }
+      ]
+    },
+    {
+      "w": "now that",
+      "syn": [
+        {
+          "w": "since",
+          "note": "既然，由于"
+        },
+        {
+          "w": "because",
+          "note": "因为"
+        },
+        {
+          "w": "as",
+          "note": "由于，鉴于"
+        }
+      ]
+    },
+    {
+      "w": "access",
+      "syn": [
+        {
+          "w": "entry",
+          "note": "进入，入口"
+        },
+        {
+          "w": "entrance",
+          "note": "进入，入口"
+        },
+        {
+          "w": "admission",
+          "note": "进入权，入场"
+        },
+        {
+          "w": "enter",
+          "note": "进入，使用"
+        }
+      ]
+    },
+    {
+      "w": "charity",
+      "syn": [
+        {
+          "w": "aid",
+          "note": "援助，救助"
+        },
+        {
+          "w": "kindness",
+          "note": "仁慈，善意"
+        },
+        {
+          "w": "donation",
+          "note": "捐赠物，捐款"
+        }
+      ]
+    },
+    {
+      "w": "go through",
+      "syn": [
+        {
+          "w": "examine",
+          "note": "仔细检查"
+        },
+        {
+          "w": "experience",
+          "note": "经历，经受"
+        },
+        {
+          "w": "undergo",
+          "note": "经历，经受，较正式"
+        },
+        {
+          "w": "pass",
+          "note": "通过，被批准"
+        }
+      ]
+    },
+    {
+      "w": "tough",
+      "syn": [
+        {
+          "w": "difficult",
+          "note": "困难的"
+        },
+        {
+          "w": "hard",
+          "note": "艰苦的，艰难的"
+        },
+        {
+          "w": "strong",
+          "note": "坚强的，强壮的"
+        }
+      ]
+    },
+    {
+      "w": "province",
+      "syn": [
+        {
+          "w": "region",
+          "note": "地区，区域"
+        },
+        {
+          "w": "field",
+          "note": "领域"
+        },
+        {
+          "w": "domain",
+          "note": "领域，职权范围，较正式"
+        }
+      ]
+    },
+    {
+      "w": "conference",
+      "syn": [
+        {
+          "w": "meeting",
+          "note": "会议，通用"
+        },
+        {
+          "w": "convention",
+          "note": "大型正式会议"
+        },
+        {
+          "w": "congress",
+          "note": "代表大会，国会"
+        }
+      ]
+    }
+  ]
+}

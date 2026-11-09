@@ -1,0 +1,323 @@
+{
+  "items": [
+    {
+      "w": "literature",
+      "syn": [
+        {
+          "w": "writings",
+          "note": "著作；文学作品"
+        },
+        {
+          "w": "works",
+          "note": "作品；文献"
+        },
+        {
+          "w": "publications",
+          "note": "出版物；文献"
+        }
+      ]
+    },
+    {
+      "w": "extra-curricular",
+      "syn": [
+        {
+          "w": "after-school",
+          "note": "课后的"
+        },
+        {
+          "w": "non-academic",
+          "note": "非学业的"
+        }
+      ]
+    },
+    {
+      "w": "extra",
+      "syn": [
+        {
+          "w": "additional",
+          "note": "额外的"
+        },
+        {
+          "w": "spare",
+          "note": "备用的；多余的"
+        },
+        {
+          "w": "supplementary",
+          "note": "补充的"
+        }
+      ]
+    },
+    {
+      "w": "obviously",
+      "syn": [
+        {
+          "w": "clearly",
+          "note": "清楚地；显然"
+        },
+        {
+          "w": "evidently",
+          "note": "显然；明显地"
+        },
+        {
+          "w": "plainly",
+          "note": "明显地； plainly"
+        }
+      ]
+    },
+    {
+      "w": "quit",
+      "syn": [
+        {
+          "w": "leave",
+          "note": "离开"
+        },
+        {
+          "w": "give up",
+          "note": "放弃"
+        },
+        {
+          "w": "stop",
+          "note": "停止"
+        }
+      ]
+    },
+    {
+      "w": "responsible",
+      "syn": [
+        {
+          "w": "accountable",
+          "note": "负有责任的"
+        },
+        {
+          "w": "reliable",
+          "note": "可靠的"
+        },
+        {
+          "w": "dependable",
+          "note": "可靠的"
+        }
+      ]
+    },
+    {
+      "w": "responsibility",
+      "syn": [
+        {
+          "w": "duty",
+          "note": "职责；义务"
+        },
+        {
+          "w": "obligation",
+          "note": "义务；责任"
+        },
+        {
+          "w": "accountability",
+          "note": "问责；责任"
+        }
+      ]
+    },
+    {
+      "w": "be responsible for",
+      "syn": [
+        {
+          "w": "be in charge of",
+          "note": "负责；掌管"
+        },
+        {
+          "w": "take charge of",
+          "note": "负责；接管"
+        },
+        {
+          "w": "answer for",
+          "note": "对……负责"
+        }
+      ]
+    },
+    {
+      "w": "solution",
+      "syn": [
+        {
+          "w": "answer",
+          "note": "答案；解决办法"
+        },
+        {
+          "w": "resolution",
+          "note": "解决；决议"
+        },
+        {
+          "w": "remedy",
+          "note": "补救办法"
+        }
+      ]
+    },
+    {
+      "w": "schedule",
+      "syn": [
+        {
+          "w": "timetable",
+          "note": "时间表"
+        },
+        {
+          "w": "plan",
+          "note": "计划"
+        },
+        {
+          "w": "arrange",
+          "note": "安排（动词）"
+        }
+      ]
+    },
+    {
+      "w": "editor",
+      "syn": []
+    },
+    {
+      "w": "plate",
+      "syn": [
+        {
+          "w": "dish",
+          "note": "碟；盘"
+        },
+        {
+          "w": "platter",
+          "note": "大浅盘"
+        },
+        {
+          "w": "sheet",
+          "note": "薄板"
+        }
+      ]
+    },
+    {
+      "w": "adventure",
+      "syn": [
+        {
+          "w": "venture",
+          "note": "冒险事业"
+        },
+        {
+          "w": "exploit",
+          "note": "冒险事迹"
+        },
+        {
+          "w": "risk",
+          "note": "风险；冒险"
+        }
+      ]
+    },
+    {
+      "w": "youth",
+      "syn": [
+        {
+          "w": "adolescence",
+          "note": "青春期"
+        },
+        {
+          "w": "young people",
+          "note": "青年人（集合）"
+        },
+        {
+          "w": "teenager",
+          "note": "青少年"
+        }
+      ]
+    },
+    {
+      "w": "survival",
+      "syn": [
+        {
+          "w": "existence",
+          "note": "生存；存在"
+        },
+        {
+          "w": "subsistence",
+          "note": "生存；生计"
+        }
+      ]
+    },
+    {
+      "w": "expert",
+      "syn": [
+        {
+          "w": "specialist",
+          "note": "专家"
+        },
+        {
+          "w": "professional",
+          "note": "专业人士"
+        },
+        {
+          "w": "skilled",
+          "note": "熟练的"
+        }
+      ]
+    },
+    {
+      "w": "behaviour",
+      "syn": [
+        {
+          "w": "conduct",
+          "note": "行为；举止"
+        },
+        {
+          "w": "manners",
+          "note": "举止；礼貌"
+        },
+        {
+          "w": "actions",
+          "note": "行为；行动"
+        }
+      ]
+    },
+    {
+      "w": "generation",
+      "syn": [
+        {
+          "w": "age group",
+          "note": "年龄段；一代人"
+        },
+        {
+          "w": "production",
+          "note": "产生"
+        },
+        {
+          "w": "creation",
+          "note": "产生；创造"
+        }
+      ]
+    },
+    {
+      "w": "attract",
+      "syn": [
+        {
+          "w": "draw",
+          "note": "吸引"
+        },
+        {
+          "w": "appeal to",
+          "note": "对……有吸引力"
+        },
+        {
+          "w": "lure",
+          "note": "引诱；吸引"
+        }
+      ]
+    },
+    {
+      "w": "be attracted to",
+      "syn": [
+        {
+          "w": "be drawn to",
+          "note": "被……吸引"
+        },
+        {
+          "w": "be fascinated by",
+          "note": "被……迷住"
+        },
+        {
+          "w": "be interested in",
+          "note": "对……感兴趣"
+        }
+      ]
+    }
+  ]
+}

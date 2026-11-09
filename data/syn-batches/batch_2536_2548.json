@@ -1,0 +1,152 @@
+{
+  "items": [
+    {
+      "w": "murder",
+      "syn": [
+        {
+          "w": "kill",
+          "note": "泛指杀死"
+        },
+        {
+          "w": "assassinate",
+          "note": "暗杀要人"
+        },
+        {
+          "w": "slaughter",
+          "note": "屠杀；屠宰"
+        }
+      ]
+    },
+    {
+      "w": "mercy",
+      "syn": [
+        {
+          "w": "compassion",
+          "note": "同情；怜悯"
+        },
+        {
+          "w": "pity",
+          "note": "怜悯"
+        },
+        {
+          "w": "kindness",
+          "note": "仁慈；善意"
+        }
+      ]
+    },
+    {
+      "w": "possession",
+      "syn": [
+        {
+          "w": "ownership",
+          "note": "所有权"
+        },
+        {
+          "w": "property",
+          "note": "财产"
+        },
+        {
+          "w": "belongings",
+          "note": "随身财物"
+        },
+        {
+          "w": "assets",
+          "note": "资产"
+        }
+      ]
+    },
+    {
+      "w": "opponent",
+      "syn": [
+        {
+          "w": "rival",
+          "note": "竞争强手"
+        },
+        {
+          "w": "competitor",
+          "note": "比赛竞争者"
+        },
+        {
+          "w": "adversary",
+          "note": "正式对手；敌手"
+        }
+      ]
+    },
+    {
+      "w": "Log",
+      "syn": [
+        {
+          "w": "record",
+          "note": "记录"
+        },
+        {
+          "w": "journal",
+          "note": "日志"
+        },
+        {
+          "w": "timber",
+          "note": "原木；木材"
+        }
+      ]
+    },
+    {
+      "w": "marine",
+      "syn": [
+        {
+          "w": "maritime",
+          "note": "海事的；航海的"
+        },
+        {
+          "w": "naval",
+          "note": "海军的"
+        },
+        {
+          "w": "oceanic",
+          "note": "海洋的"
+        }
+      ]
+    },
+    {
+      "w": "arrest",
+      "syn": [
+        {
+          "w": "capture",
+          "note": "捕获；逮住"
+        },
+        {
+          "w": "seize",
+          "note": "抓住；夺取"
+        },
+        {
+          "w": "detain",
+          "note": "拘留"
+        }
+      ]
+    },
+    {
+      "w": "Marco Polo",
+      "syn": []
+    },
+    {
+      "w": "Columbus",
+      "syn": []
+    },
+    {
+      "w": "Ceylon",
+      "syn": [
+        {
+          "w": "Sri Lanka",
+          "note": "现国名"
+        }
+      ]
+    },
+    {
+      "w": "Churchill",
+      "syn": []
+    },
+    {
+      "w": "Ferdinand Magellan",
+      "syn": []
+    }
+  ]
+}

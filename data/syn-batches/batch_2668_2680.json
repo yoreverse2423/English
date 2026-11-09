@@ -1,0 +1,171 @@
+{
+  "items": [
+    {
+      "w": "sewn",
+      "syn": [
+        {
+          "w": "stitched",
+          "note": "侧重缝合、缝上"
+        }
+      ]
+    },
+    {
+      "w": "knit",
+      "syn": [
+        {
+          "w": "weave",
+          "note": "编织，更泛指织法"
+        },
+        {
+          "w": "unite",
+          "note": "结合、联结"
+        },
+        {
+          "w": "frown",
+          "note": "皱眉（对应vi.义）"
+        }
+      ]
+    },
+    {
+      "w": "wool",
+      "syn": [
+        {
+          "w": "fleece",
+          "note": "未加工的羊毛"
+        },
+        {
+          "w": "yarn",
+          "note": "毛线、纱线"
+        }
+      ]
+    },
+    {
+      "w": "intermediate",
+      "syn": [
+        {
+          "w": "middle",
+          "note": "中间的，最常用"
+        },
+        {
+          "w": "transitional",
+          "note": "过渡性的"
+        },
+        {
+          "w": "medium",
+          "note": "中等的、中间的"
+        }
+      ]
+    },
+    {
+      "w": "priority",
+      "syn": [
+        {
+          "w": "precedence",
+          "note": "优先地位，较正式"
+        },
+        {
+          "w": "preference",
+          "note": "优先（权）、偏爱"
+        }
+      ]
+    },
+    {
+      "w": "proficiency",
+      "syn": [
+        {
+          "w": "competence",
+          "note": "胜任、能力"
+        },
+        {
+          "w": "mastery",
+          "note": "精通、掌握"
+        },
+        {
+          "w": "skill",
+          "note": "技能，较宽泛"
+        }
+      ]
+    },
+    {
+      "w": "cage",
+      "syn": [
+        {
+          "w": "enclosure",
+          "note": "围栏、圈养处"
+        },
+        {
+          "w": "coop",
+          "note": "鸡笼等小笼"
+        },
+        {
+          "w": "imprison",
+          "note": "囚禁（对应vt.义）"
+        }
+      ]
+    },
+    {
+      "w": "collar",
+      "syn": [
+        {
+          "w": "neckband",
+          "note": "领圈、颈带"
+        },
+        {
+          "w": "seize",
+          "note": "抓住（对应vt.义）"
+        }
+      ]
+    },
+    {
+      "w": "flea collar",
+      "syn": []
+    },
+    {
+      "w": "finance",
+      "syn": [
+        {
+          "w": "fund",
+          "note": "资助、提供资金（动词）"
+        },
+        {
+          "w": "sponsor",
+          "note": "赞助、出资"
+        },
+        {
+          "w": "capital",
+          "note": "资金、资本"
+        }
+      ]
+    },
+    {
+      "w": "receipt",
+      "syn": [
+        {
+          "w": "voucher",
+          "note": "收据、凭证"
+        },
+        {
+          "w": "acknowledgement",
+          "note": "确认收到"
+        }
+      ]
+    },
+    {
+      "w": "certificate",
+      "syn": [
+        {
+          "w": "diploma",
+          "note": "毕业文凭"
+        },
+        {
+          "w": "licence",
+          "note": "执照、许可证"
+        },
+        {
+          "w": "credential",
+          "note": "资格证明"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "items": [
+    {
+      "w": "tune",
+      "syn": [
+        {
+          "w": "melody",
+          "note": "曲调；旋律"
+        },
+        {
+          "w": "harmony",
+          "note": "和谐；协调"
+        },
+        {
+          "w": "adjust",
+          "note": "调整（动词义）"
+        }
+      ]
+    },
+    {
+      "w": "contract",
+      "syn": [
+        {
+          "w": "agreement",
+          "note": "合同；协议"
+        },
+        {
+          "w": "deal",
+          "note": "交易；协议"
+        },
+        {
+          "w": "shrink",
+          "note": "收缩"
+        },
+        {
+          "w": "catch",
+          "note": "感染（疾病）"
+        }
+      ]
+    },
+    {
+      "w": "grant",
+      "syn": [
+        {
+          "w": "award",
+          "note": "授予；奖金"
+        },
+        {
+          "w": "allow",
+          "note": "允许"
+        },
+        {
+          "w": "admit",
+          "note": "承认"
+        },
+        {
+          "w": "subsidy",
+          "note": "拨款；补助"
+        }
+      ]
+    },
+    {
+      "w": "take for granted",
+      "syn": [
+        {
+          "w": "assume",
+          "note": "想当然；假定"
+        },
+        {
+          "w": "presume",
+          "note": "未经证实就认定"
+        },
+        {
+          "w": "suppose",
+          "note": "认为；假定"
+        }
+      ]
+    },
+    {
+      "w": "cardiac",
+      "syn": []
+    },
+    {
+      "w": "circuit",
+      "syn": [
+        {
+          "w": "loop",
+          "note": "回路；环"
+        },
+        {
+          "w": "lap",
+          "note": "一圈"
+        },
+        {
+          "w": "tour",
+          "note": "巡回"
+        }
+      ]
+    },
+    {
+      "w": "disability",
+      "syn": [
+        {
+          "w": "handicap",
+          "note": "残疾；障碍"
+        },
+        {
+          "w": "inability",
+          "note": "无能；无力"
+        },
+        {
+          "w": "disadvantage",
+          "note": "不利条件"
+        }
+      ]
+    },
+    {
+      "w": "consultation",
+      "syn": [
+        {
+          "w": "discussion",
+          "note": "磋商；讨论"
+        },
+        {
+          "w": "conference",
+          "note": "会议；商讨"
+        },
+        {
+          "w": "counseling",
+          "note": "咨询辅导"
+        }
+      ]
+    },
+    {
+      "w": "relay",
+      "syn": [
+        {
+          "w": "transmit",
+          "note": "转播；传递"
+        },
+        {
+          "w": "broadcast",
+          "note": "转播"
+        },
+        {
+          "w": "pass on",
+          "note": "传递；转交"
+        }
+      ]
+    },
+    {
+      "w": "relay to",
+      "syn": [
+        {
+          "w": "pass to",
+          "note": "转交给"
+        },
+        {
+          "w": "forward to",
+          "note": "转发给"
+        },
+        {
+          "w": "convey to",
+          "note": "传达给"
+        }
+      ]
+    },
+    {
+      "w": "criterion",
+      "syn": [
+        {
+          "w": "standard",
+          "note": "标准"
+        },
+        {
+          "w": "benchmark",
+          "note": "基准；标准"
+        },
+        {
+          "w": "measure",
+          "note": "尺度；标准"
+        }
+      ]
+    },
+    {
+      "w": "criteria",
+      "syn": [
+        {
+          "w": "standards",
+          "note": "标准（复数）"
+        },
+        {
+          "w": "benchmarks",
+          "note": "基准（复数）"
+        },
+        {
+          "w": "measures",
+          "note": "尺度（复数）"
+        }
+      ]
+    }
+  ]
+}

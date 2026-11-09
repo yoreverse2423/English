@@ -1,0 +1,340 @@
+{
+  "items": [
+    {
+      "w": "extinct",
+      "syn": [
+        {
+          "w": "vanished",
+          "note": "侧重已消失"
+        },
+        {
+          "w": "defunct",
+          "note": "已不存在的，较正式"
+        },
+        {
+          "w": "extinguished",
+          "note": "指火或希望熄灭"
+        }
+      ]
+    },
+    {
+      "w": "extinction",
+      "syn": [
+        {
+          "w": "disappearance",
+          "note": "侧重消失"
+        },
+        {
+          "w": "dying out",
+          "note": "指物种逐渐灭绝"
+        },
+        {
+          "w": "elimination",
+          "note": "侧重消灭、清除"
+        },
+        {
+          "w": "abolition",
+          "note": "指废止制度等"
+        }
+      ]
+    },
+    {
+      "w": "mass",
+      "syn": [
+        {
+          "w": "lump",
+          "note": "指块、团"
+        },
+        {
+          "w": "bulk",
+          "note": "指大量或主体"
+        },
+        {
+          "w": "crowd",
+          "note": "指人群、群众"
+        }
+      ]
+    },
+    {
+      "w": "habitat",
+      "syn": [
+        {
+          "w": "home",
+          "note": "指动植物家园"
+        },
+        {
+          "w": "environment",
+          "note": "指生存环境"
+        }
+      ]
+    },
+    {
+      "w": "aware",
+      "syn": [
+        {
+          "w": "conscious",
+          "note": "有意识的"
+        },
+        {
+          "w": "mindful",
+          "note": "留心的"
+        },
+        {
+          "w": "informed",
+          "note": "知情的"
+        }
+      ]
+    },
+    {
+      "w": "aware of",
+      "syn": [
+        {
+          "w": "conscious of",
+          "note": "意识到"
+        },
+        {
+          "w": "mindful of",
+          "note": "留意到"
+        },
+        {
+          "w": "alert to",
+          "note": "对……警觉"
+        }
+      ]
+    },
+    {
+      "w": "endanger",
+      "syn": [
+        {
+          "w": "threaten",
+          "note": "威胁"
+        },
+        {
+          "w": "jeopardize",
+          "note": "危及，较正式"
+        },
+        {
+          "w": "imperil",
+          "note": "危及，正式"
+        }
+      ]
+    },
+    {
+      "w": "average",
+      "syn": [
+        {
+          "w": "mean",
+          "note": "数学平均数"
+        },
+        {
+          "w": "norm",
+          "note": "通常水平"
+        },
+        {
+          "w": "ordinary",
+          "note": "普通的（形容词）"
+        }
+      ]
+    },
+    {
+      "w": "on average",
+      "syn": [
+        {
+          "w": "typically",
+          "note": "通常"
+        },
+        {
+          "w": "generally",
+          "note": "一般地"
+        },
+        {
+          "w": "on the whole",
+          "note": "总体上"
+        }
+      ]
+    },
+    {
+      "w": "prince",
+      "syn": [
+        {
+          "w": "royal heir",
+          "note": "王室继承人"
+        },
+        {
+          "w": "nobleman",
+          "note": "贵族，身份相近"
+        }
+      ]
+    },
+    {
+      "w": "make progress",
+      "syn": [
+        {
+          "w": "advance",
+          "note": "前进、进展"
+        },
+        {
+          "w": "move forward",
+          "note": "向前推进"
+        },
+        {
+          "w": "improve",
+          "note": "改善、进步"
+        }
+      ]
+    },
+    {
+      "w": "concern",
+      "syn": [
+        {
+          "w": "worry",
+          "note": "忧虑"
+        },
+        {
+          "w": "care",
+          "note": "关心"
+        },
+        {
+          "w": "involve",
+          "note": "涉及"
+        }
+      ]
+    },
+    {
+      "w": "concerned about",
+      "syn": [
+        {
+          "w": "worried about",
+          "note": "担心"
+        },
+        {
+          "w": "anxious about",
+          "note": "焦虑"
+        },
+        {
+          "w": "uneasy about",
+          "note": "不安"
+        }
+      ]
+    },
+    {
+      "w": "living",
+      "syn": [
+        {
+          "w": "alive",
+          "note": "活着的，常作表语"
+        },
+        {
+          "w": "existing",
+          "note": "现存的"
+        },
+        {
+          "w": "livelihood",
+          "note": "生计（名词）"
+        }
+      ]
+    },
+    {
+      "w": "adapt",
+      "syn": [
+        {
+          "w": "adjust",
+          "note": "调整、适应"
+        },
+        {
+          "w": "modify",
+          "note": "修改"
+        },
+        {
+          "w": "fit",
+          "note": "使适合"
+        }
+      ]
+    },
+    {
+      "w": "adapt to",
+      "syn": [
+        {
+          "w": "adjust to",
+          "note": "适应"
+        },
+        {
+          "w": "get used to",
+          "note": "习惯于"
+        },
+        {
+          "w": "acclimate to",
+          "note": "适应气候或环境"
+        }
+      ]
+    },
+    {
+      "w": "measure",
+      "syn": [
+        {
+          "w": "step",
+          "note": "措施"
+        },
+        {
+          "w": "action",
+          "note": "行动、措施"
+        },
+        {
+          "w": "gauge",
+          "note": "测量、估量"
+        },
+        {
+          "w": "assess",
+          "note": "评估"
+        }
+      ]
+    },
+    {
+      "w": "authority",
+      "syn": [
+        {
+          "w": "power",
+          "note": "权力"
+        },
+        {
+          "w": "expert",
+          "note": "权威人士"
+        },
+        {
+          "w": "government",
+          "note": "当局，常用复数"
+        }
+      ]
+    },
+    {
+      "w": "pressure",
+      "syn": [
+        {
+          "w": "stress",
+          "note": "压力、紧张"
+        },
+        {
+          "w": "force",
+          "note": "迫使"
+        },
+        {
+          "w": "strain",
+          "note": "压力、负担"
+        }
+      ]
+    },
+    {
+      "w": "under pressure",
+      "syn": [
+        {
+          "w": "under stress",
+          "note": "在压力下"
+        },
+        {
+          "w": "under strain",
+          "note": "承受压力"
+        }
+      ]
+    }
+  ]
+}

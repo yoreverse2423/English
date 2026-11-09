@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "w": "jaw",
+      "syn": [
+        {
+          "w": "scold",
+          "note": "动词义：训斥"
+        },
+        {
+          "w": "nag",
+          "note": "唠叨，不停抱怨"
+        },
+        {
+          "w": "lecture",
+          "note": "教训，说教"
+        }
+      ]
+    },
+    {
+      "w": "wrinkle",
+      "syn": [
+        {
+          "w": "crease",
+          "note": "褶皱；使起皱"
+        },
+        {
+          "w": "line",
+          "note": "皱纹，纹路"
+        },
+        {
+          "w": "furrow",
+          "note": "深皱纹，较正式"
+        }
+      ]
+    },
+    {
+      "w": "forehead",
+      "syn": [
+        {
+          "w": "brow",
+          "note": "前额，较文学"
+        }
+      ]
+    },
+    {
+      "w": "hut",
+      "syn": [
+        {
+          "w": "cabin",
+          "note": "小木屋"
+        },
+        {
+          "w": "shack",
+          "note": "简陋棚屋"
+        },
+        {
+          "w": "shed",
+          "note": "棚屋，简易小屋"
+        }
+      ]
+    },
+    {
+      "w": "housing",
+      "syn": [
+        {
+          "w": "accommodation",
+          "note": "住宿，英式常用"
+        },
+        {
+          "w": "dwelling",
+          "note": "住宅，较正式"
+        },
+        {
+          "w": "lodging",
+          "note": "寄宿处，住处"
+        }
+      ]
+    },
+    {
+      "w": "platform",
+      "syn": [
+        {
+          "w": "stage",
+          "note": "讲台，舞台"
+        },
+        {
+          "w": "podium",
+          "note": "讲台，较正式"
+        }
+      ]
+    },
+    {
+      "w": "fireplace",
+      "syn": [
+        {
+          "w": "hearth",
+          "note": "炉边，壁炉地面"
+        }
+      ]
+    },
+    {
+      "w": "saucer",
+      "syn": [
+        {
+          "w": "dish",
+          "note": "碟子，泛指"
+        },
+        {
+          "w": "plate",
+          "note": "盘子，浅盘"
+        }
+      ]
+    },
+    {
+      "w": "kettle",
+      "syn": [
+        {
+          "w": "pot",
+          "note": "壶，锅，泛指"
+        },
+        {
+          "w": "cauldron",
+          "note": "大锅，较正式"
+        }
+      ]
+    },
+    {
+      "w": "pan",
+      "syn": [
+        {
+          "w": "saucepan",
+          "note": "深平底锅"
+        },
+        {
+          "w": "skillet",
+          "note": "煎锅，美式"
+        },
+        {
+          "w": "pot",
+          "note": "锅，泛指"
+        }
+      ]
+    },
+    {
+      "w": "jar",
+      "syn": [
+        {
+          "w": "pot",
+          "note": "罐，坛"
+        },
+        {
+          "w": "container",
+          "note": "容器，泛指"
+        },
+        {
+          "w": "vessel",
+          "note": "容器，较正式"
+        }
+      ]
+    },
+    {
+      "w": "ripe",
+      "syn": [
+        {
+          "w": "mature",
+          "note": "成熟的"
+        },
+        {
+          "w": "mellow",
+          "note": "水果甘熟，柔和"
+        },
+        {
+          "w": "ready",
+          "note": "时机成熟的"
+        }
+      ]
+    }
+  ]
+}

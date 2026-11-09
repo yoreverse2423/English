@@ -1,0 +1,192 @@
+{
+  "items": [
+    {
+      "w": "scream",
+      "syn": [
+        {
+          "w": "shriek",
+          "note": "尖声叫，较刺耳"
+        },
+        {
+          "w": "yell",
+          "note": "大声喊叫"
+        },
+        {
+          "w": "screech",
+          "note": "发出刺耳尖叫"
+        }
+      ]
+    },
+    {
+      "w": "fellow",
+      "syn": [
+        {
+          "w": "guy",
+          "note": "家伙，口语"
+        },
+        {
+          "w": "chap",
+          "note": "家伙，英式口语"
+        },
+        {
+          "w": "companion",
+          "note": "同伴，较正式"
+        }
+      ]
+    },
+    {
+      "w": "diner",
+      "syn": [
+        {
+          "w": "eater",
+          "note": "用餐者"
+        },
+        {
+          "w": "eatery",
+          "note": "小餐馆，美式"
+        },
+        {
+          "w": "restaurant",
+          "note": "餐馆，通称"
+        }
+      ]
+    },
+    {
+      "w": "choke",
+      "syn": [
+        {
+          "w": "suffocate",
+          "note": "窒息，缺氧"
+        },
+        {
+          "w": "gag",
+          "note": "噎住，作呕"
+        },
+        {
+          "w": "block",
+          "note": "阻塞，堵塞"
+        }
+      ]
+    },
+    {
+      "w": "steak",
+      "syn": [
+        {
+          "w": "beefsteak",
+          "note": "牛排，明确牛肉"
+        },
+        {
+          "w": "cutlet",
+          "note": "肉排或鱼排"
+        }
+      ]
+    },
+    {
+      "w": "throat",
+      "syn": [
+        {
+          "w": "gullet",
+          "note": "咽喉，食道"
+        },
+        {
+          "w": "voice",
+          "note": "嗓子，嗓音"
+        }
+      ]
+    },
+    {
+      "w": "desperate",
+      "syn": [
+        {
+          "w": "hopeless",
+          "note": "绝望的"
+        },
+        {
+          "w": "frantic",
+          "note": "不顾一切的，发狂的"
+        },
+        {
+          "w": "eager",
+          "note": "极度渴望的"
+        }
+      ]
+    },
+    {
+      "w": "slap",
+      "syn": [
+        {
+          "w": "smack",
+          "note": "掌掴，拍打"
+        },
+        {
+          "w": "blow",
+          "note": "一击，打击"
+        }
+      ]
+    },
+    {
+      "w": "help",
+      "syn": [
+        {
+          "w": "assist",
+          "note": "帮助，较正式"
+        },
+        {
+          "w": "aid",
+          "note": "援助，救助"
+        },
+        {
+          "w": "support",
+          "note": "支持，帮助"
+        }
+      ]
+    },
+    {
+      "w": "help sb. to one's feet",
+      "syn": [
+        {
+          "w": "help sb up",
+          "note": "扶某人站起来"
+        },
+        {
+          "w": "assist sb to stand",
+          "note": "协助某人站起，较正式"
+        }
+      ]
+    },
+    {
+      "w": "practical",
+      "syn": [
+        {
+          "w": "useful",
+          "note": "有用的"
+        },
+        {
+          "w": "functional",
+          "note": "实用的，功能性的"
+        },
+        {
+          "w": "realistic",
+          "note": "实际的，现实的"
+        }
+      ]
+    },
+    {
+      "w": "obstruction",
+      "syn": [
+        {
+          "w": "obstacle",
+          "note": "障碍，妨碍物"
+        },
+        {
+          "w": "blockage",
+          "note": "阻塞物，堵塞"
+        },
+        {
+          "w": "barrier",
+          "note": "障碍，屏障"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "w": "spill",
+      "syn": [
+        {
+          "w": "overflow",
+          "note": "侧重溢出"
+        },
+        {
+          "w": "slop",
+          "note": "液体洒出"
+        }
+      ]
+    },
+    {
+      "w": "trip over",
+      "syn": [
+        {
+          "w": "stumble over",
+          "note": "绊在…上"
+        },
+        {
+          "w": "fall over",
+          "note": "侧重跌倒"
+        }
+      ]
+    },
+    {
+      "w": "limp",
+      "syn": [
+        {
+          "w": "soft",
+          "note": "柔软的"
+        },
+        {
+          "w": "weak",
+          "note": "无力的"
+        },
+        {
+          "w": "feeble",
+          "note": "虚弱的"
+        }
+      ]
+    },
+    {
+      "w": "tear",
+      "syn": [
+        {
+          "w": "weep",
+          "note": "流泪"
+        },
+        {
+          "w": "cry",
+          "note": "哭"
+        },
+        {
+          "w": "rip",
+          "note": "撕破"
+        },
+        {
+          "w": "crack",
+          "note": "裂缝"
+        }
+      ]
+    },
+    {
+      "w": "in tears",
+      "syn": [
+        {
+          "w": "crying",
+          "note": "哭泣着"
+        },
+        {
+          "w": "weeping",
+          "note": "流着泪"
+        }
+      ]
+    },
+    {
+      "w": "harm",
+      "syn": [
+        {
+          "w": "damage",
+          "note": "损害"
+        },
+        {
+          "w": "hurt",
+          "note": "伤害"
+        },
+        {
+          "w": "injury",
+          "note": "名词伤害"
+        }
+      ]
+    },
+    {
+      "w": "despair",
+      "syn": [
+        {
+          "w": "hopelessness",
+          "note": "绝望状态"
+        },
+        {
+          "w": "desperation",
+          "note": "绝望/拼命"
+        }
+      ]
+    },
+    {
+      "w": "in despair",
+      "syn": [
+        {
+          "w": "desperately",
+          "note": "绝望地"
+        },
+        {
+          "w": "hopelessly",
+          "note": "绝望地"
+        }
+      ]
+    },
+    {
+      "w": "might",
+      "syn": [
+        {
+          "w": "power",
+          "note": "力量"
+        },
+        {
+          "w": "strength",
+          "note": "力量"
+        },
+        {
+          "w": "force",
+          "note": "武力/力量"
+        }
+      ]
+    },
+    {
+      "w": "a great deal",
+      "syn": [
+        {
+          "w": "a lot",
+          "note": "很多"
+        },
+        {
+          "w": "much",
+          "note": "大量"
+        }
+      ]
+    },
+    {
+      "w": "a great deal of",
+      "syn": [
+        {
+          "w": "a lot of",
+          "note": "很多"
+        },
+        {
+          "w": "much",
+          "note": "修饰不可数"
+        },
+        {
+          "w": "plenty of",
+          "note": "充足"
+        }
+      ]
+    },
+    {
+      "w": "fable",
+      "syn": [
+        {
+          "w": "tale",
+          "note": "故事/寓言"
+        },
+        {
+          "w": "myth",
+          "note": "神话/无稽之谈"
+        },
+        {
+          "w": "fiction",
+          "note": "虚构"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "items": [
+    {
+      "w": "wine",
+      "syn": [
+        {
+          "w": "alcohol",
+          "note": "泛指酒类，范围更大"
+        },
+        {
+          "w": "liquor",
+          "note": "多指烈酒"
+        }
+      ]
+    },
+    {
+      "w": "beer",
+      "syn": [
+        {
+          "w": "ale",
+          "note": "麦芽啤酒"
+        },
+        {
+          "w": "lager",
+          "note": "拉格啤酒"
+        }
+      ]
+    },
+    {
+      "w": "stew",
+      "syn": [
+        {
+          "w": "simmer",
+          "note": "小火慢炖"
+        },
+        {
+          "w": "braise",
+          "note": "焖炖"
+        },
+        {
+          "w": "fret",
+          "note": "指忧虑、烦恼"
+        }
+      ]
+    },
+    {
+      "w": "custom",
+      "syn": [
+        {
+          "w": "habit",
+          "note": "个人习惯"
+        },
+        {
+          "w": "tradition",
+          "note": "传统风俗"
+        },
+        {
+          "w": "convention",
+          "note": "社会惯例"
+        },
+        {
+          "w": "practice",
+          "note": "惯常做法"
+        }
+      ]
+    },
+    {
+      "w": "sensory",
+      "syn": [
+        {
+          "w": "perceptual",
+          "note": "侧重知觉的"
+        }
+      ]
+    },
+    {
+      "w": "striking",
+      "syn": [
+        {
+          "w": "noticeable",
+          "note": "显著的"
+        },
+        {
+          "w": "remarkable",
+          "note": "非凡的"
+        },
+        {
+          "w": "impressive",
+          "note": "引人注目的"
+        },
+        {
+          "w": "dramatic",
+          "note": "惊人的"
+        }
+      ]
+    },
+    {
+      "w": "transition",
+      "syn": [
+        {
+          "w": "change",
+          "note": "泛称变化"
+        },
+        {
+          "w": "shift",
+          "note": "侧重转变/转移"
+        },
+        {
+          "w": "conversion",
+          "note": "侧重转换"
+        },
+        {
+          "w": "transformation",
+          "note": "彻底转变"
+        }
+      ]
+    },
+    {
+      "w": "crowd",
+      "syn": [
+        {
+          "w": "throng",
+          "note": "拥挤人群，较文学"
+        },
+        {
+          "w": "mass",
+          "note": "大众/大量"
+        },
+        {
+          "w": "gathering",
+          "note": "聚集的人群"
+        },
+        {
+          "w": "pack",
+          "note": "挤满；人群"
+        }
+      ]
+    },
+    {
+      "w": "Wales",
+      "syn": []
+    },
+    {
+      "w": "Scotland",
+      "syn": []
+    },
+    {
+      "w": "Northern Ireland",
+      "syn": []
+    },
+    {
+      "w": "Anglo-Saxon",
+      "syn": []
+    }
+  ]
+}

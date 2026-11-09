@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "w": "pollinate",
+      "syn": [
+        {
+          "w": "fertilize",
+          "note": "使受精/授粉"
+        }
+      ]
+    },
+    {
+      "w": "assumption",
+      "syn": [
+        {
+          "w": "presumption",
+          "note": "假定，较正式"
+        },
+        {
+          "w": "supposition",
+          "note": "猜测，假定"
+        },
+        {
+          "w": "hypothesis",
+          "note": "假说，待验证"
+        }
+      ]
+    },
+    {
+      "w": "intense",
+      "syn": [
+        {
+          "w": "strong",
+          "note": "强烈的"
+        },
+        {
+          "w": "extreme",
+          "note": "极度的"
+        },
+        {
+          "w": "fierce",
+          "note": "激烈的"
+        },
+        {
+          "w": "acute",
+          "note": "剧烈的，严重的"
+        }
+      ]
+    },
+    {
+      "w": "overcome",
+      "syn": [
+        {
+          "w": "surmount",
+          "note": "克服困难，正式"
+        },
+        {
+          "w": "conquer",
+          "note": "战胜，征服"
+        },
+        {
+          "w": "get over",
+          "note": "克服，从…恢复"
+        }
+      ]
+    },
+    {
+      "w": "overcame",
+      "syn": [
+        {
+          "w": "surmounted",
+          "note": "克服了，正式"
+        },
+        {
+          "w": "conquered",
+          "note": "战胜了"
+        },
+        {
+          "w": "got over",
+          "note": "克服了"
+        }
+      ]
+    },
+    {
+      "w": "overcome",
+      "syn": [
+        {
+          "w": "surmount",
+          "note": "克服困难，正式"
+        },
+        {
+          "w": "conquer",
+          "note": "战胜，征服"
+        },
+        {
+          "w": "get over",
+          "note": "克服，从…恢复"
+        }
+      ]
+    },
+    {
+      "w": "expand",
+      "syn": [
+        {
+          "w": "enlarge",
+          "note": "扩大尺寸/数量"
+        },
+        {
+          "w": "extend",
+          "note": "扩展，延伸"
+        },
+        {
+          "w": "swell",
+          "note": "膨胀，增大"
+        },
+        {
+          "w": "elaborate",
+          "note": "详述，常接on"
+        }
+      ]
+    },
+    {
+      "w": "output",
+      "syn": [
+        {
+          "w": "production",
+          "note": "产量，生产"
+        },
+        {
+          "w": "yield",
+          "note": "产出，产量"
+        }
+      ]
+    },
+    {
+      "w": "output",
+      "syn": [
+        {
+          "w": "production",
+          "note": "产量，生产"
+        },
+        {
+          "w": "yield",
+          "note": "产出，产量"
+        }
+      ]
+    },
+    {
+      "w": "output",
+      "syn": [
+        {
+          "w": "production",
+          "note": "产量，生产"
+        },
+        {
+          "w": "yield",
+          "note": "产出，产量"
+        }
+      ]
+    },
+    {
+      "w": "estimate",
+      "syn": [
+        {
+          "w": "assessment",
+          "note": "评估"
+        },
+        {
+          "w": "evaluation",
+          "note": "评价"
+        },
+        {
+          "w": "calculation",
+          "note": "估算"
+        }
+      ]
+    },
+    {
+      "w": "domestic",
+      "syn": [
+        {
+          "w": "household",
+          "note": "家庭的"
+        },
+        {
+          "w": "internal",
+          "note": "国内的"
+        },
+        {
+          "w": "tame",
+          "note": "驯养的"
+        },
+        {
+          "w": "servant",
+          "note": "佣人，旧义"
+        }
+      ]
+    }
+  ]
+}

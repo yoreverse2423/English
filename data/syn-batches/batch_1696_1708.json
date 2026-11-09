@@ -1,0 +1,169 @@
+{
+  "items": [
+    {
+      "w": "Stephen Hawking",
+      "syn": []
+    },
+    {
+      "w": "the big bang theory",
+      "syn": []
+    },
+    {
+      "w": "Fred Hoyle",
+      "syn": []
+    },
+    {
+      "w": "complex",
+      "syn": [
+        {
+          "w": "complicated",
+          "note": "侧重复杂难懂"
+        },
+        {
+          "w": "intricate",
+          "note": "更正式，错综复杂"
+        },
+        {
+          "w": "compound",
+          "note": "指复合物、合成"
+        }
+      ]
+    },
+    {
+      "w": "recall",
+      "syn": [
+        {
+          "w": "remember",
+          "note": "回想，最常用"
+        },
+        {
+          "w": "recollect",
+          "note": "更正式，回忆"
+        },
+        {
+          "w": "withdraw",
+          "note": "指召回、撤回"
+        }
+      ]
+    },
+    {
+      "w": "qualification",
+      "syn": [
+        {
+          "w": "certificate",
+          "note": "指资格证书"
+        },
+        {
+          "w": "requirement",
+          "note": "侧重条件、要求"
+        },
+        {
+          "w": "restriction",
+          "note": "指限制"
+        }
+      ]
+    },
+    {
+      "w": "qualify",
+      "syn": [
+        {
+          "w": "entitle",
+          "note": "使有资格"
+        },
+        {
+          "w": "limit",
+          "note": "指限制，对应vt."
+        },
+        {
+          "w": "certify",
+          "note": "证明合格"
+        }
+      ]
+    },
+    {
+      "w": "ambition",
+      "syn": [
+        {
+          "w": "aspiration",
+          "note": "更正式，志向"
+        },
+        {
+          "w": "goal",
+          "note": "侧重目标"
+        },
+        {
+          "w": "drive",
+          "note": "指干劲、进取心"
+        }
+      ]
+    },
+    {
+      "w": "ambitious",
+      "syn": [
+        {
+          "w": "aspiring",
+          "note": "有抱负的"
+        },
+        {
+          "w": "determined",
+          "note": "侧重有决心"
+        },
+        {
+          "w": "enterprising",
+          "note": "有进取心的"
+        }
+      ]
+    },
+    {
+      "w": "adaptation",
+      "syn": [
+        {
+          "w": "adjustment",
+          "note": "侧重调整、适应"
+        },
+        {
+          "w": "version",
+          "note": "指改编本"
+        },
+        {
+          "w": "modification",
+          "note": "指改动、修改"
+        }
+      ]
+    },
+    {
+      "w": "comfort",
+      "syn": [
+        {
+          "w": "console",
+          "note": "更正式，安慰"
+        },
+        {
+          "w": "soothe",
+          "note": "使缓和、抚慰"
+        },
+        {
+          "w": "ease",
+          "note": "减轻痛苦；舒适"
+        }
+      ]
+    },
+    {
+      "w": "tutor",
+      "syn": [
+        {
+          "w": "instructor",
+          "note": "指教师、指导者"
+        },
+        {
+          "w": "coach",
+          "note": "侧重辅导、训练"
+        },
+        {
+          "w": "mentor",
+          "note": "指导师、良师"
+        }
+      ]
+    }
+  ]
+}

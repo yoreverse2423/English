@@ -1,0 +1,226 @@
+{
+  "items": [
+    {
+      "w": "wave",
+      "syn": [
+        {
+          "w": "billow",
+          "note": "巨浪，较文学"
+        },
+        {
+          "w": "ripple",
+          "note": "小波纹"
+        },
+        {
+          "w": "gesture",
+          "note": "挥手示意动作"
+        },
+        {
+          "w": "curl",
+          "note": "卷曲状"
+        }
+      ]
+    },
+    {
+      "w": "strike",
+      "syn": [
+        {
+          "w": "walkout",
+          "note": "罢工"
+        },
+        {
+          "w": "stoppage",
+          "note": "停工"
+        },
+        {
+          "w": "blow",
+          "note": "打击"
+        },
+        {
+          "w": "hit",
+          "note": "打击"
+        }
+      ]
+    },
+    {
+      "w": "struck",
+      "syn": [
+        {
+          "w": "hit",
+          "note": "击打，过去式同形"
+        },
+        {
+          "w": "beat",
+          "note": "击打，过去式同形"
+        }
+      ]
+    },
+    {
+      "w": "struck",
+      "syn": [
+        {
+          "w": "hit",
+          "note": "击打，过去式同形"
+        },
+        {
+          "w": "beat",
+          "note": "击打，过去式同形"
+        }
+      ]
+    },
+    {
+      "w": "stricken",
+      "syn": [
+        {
+          "w": "afflicted",
+          "note": "受折磨的"
+        },
+        {
+          "w": "affected",
+          "note": "受侵袭的"
+        },
+        {
+          "w": "suffering",
+          "note": "受苦的"
+        }
+      ]
+    },
+    {
+      "w": "deliver",
+      "syn": [
+        {
+          "w": "pitch",
+          "note": "投球"
+        },
+        {
+          "w": "convey",
+          "note": "递送"
+        },
+        {
+          "w": "hand over",
+          "note": "交付"
+        },
+        {
+          "w": "announce",
+          "note": "发表"
+        }
+      ]
+    },
+    {
+      "w": "summary",
+      "syn": [
+        {
+          "w": "synopsis",
+          "note": "摘要，较正式"
+        },
+        {
+          "w": "outline",
+          "note": "提纲"
+        },
+        {
+          "w": "abstract",
+          "note": "论文摘要"
+        }
+      ]
+    },
+    {
+      "w": "effect",
+      "syn": [
+        {
+          "w": "impact",
+          "note": "影响"
+        },
+        {
+          "w": "influence",
+          "note": "影响"
+        },
+        {
+          "w": "result",
+          "note": "结果"
+        },
+        {
+          "w": "consequence",
+          "note": "后果"
+        }
+      ]
+    },
+    {
+      "w": "length",
+      "syn": [
+        {
+          "w": "extent",
+          "note": "程度/长度"
+        },
+        {
+          "w": "duration",
+          "note": "持续时间"
+        },
+        {
+          "w": "span",
+          "note": "跨度"
+        },
+        {
+          "w": "distance",
+          "note": "距离"
+        }
+      ]
+    },
+    {
+      "w": "Ecuador",
+      "syn": []
+    },
+    {
+      "w": "Memphis",
+      "syn": []
+    },
+    {
+      "w": "Alberta",
+      "syn": []
+    },
+    {
+      "w": "Colombo",
+      "syn": []
+    },
+    {
+      "w": "Sri Lanka",
+      "syn": []
+    },
+    {
+      "w": "Indonesia",
+      "syn": []
+    },
+    {
+      "w": "Thailand",
+      "syn": []
+    },
+    {
+      "w": "Malaysia",
+      "syn": []
+    },
+    {
+      "w": "Sumatra Island",
+      "syn": []
+    },
+    {
+      "w": "Chandra Theeravit",
+      "syn": []
+    },
+    {
+      "w": "billion",
+      "syn": [
+        {
+          "w": "thousand million",
+          "note": "十亿的旧/英式说法"
+        },
+        {
+          "w": "myriad",
+          "note": "大量"
+        },
+        {
+          "w": "millions",
+          "note": "大量"
+        }
+      ]
+    }
+  ]
+}

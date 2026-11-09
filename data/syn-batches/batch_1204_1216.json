@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "duty",
+      "syn": [
+        {
+          "w": "responsibility",
+          "note": "责任，含义更泛"
+        },
+        {
+          "w": "obligation",
+          "note": "义务，偏道义或法律"
+        },
+        {
+          "w": "tariff",
+          "note": "关税，对应“税收”义项"
+        }
+      ]
+    },
+    {
+      "w": "on duty",
+      "syn": [
+        {
+          "w": "at work",
+          "note": "在上班"
+        },
+        {
+          "w": "on shift",
+          "note": "在值班"
+        },
+        {
+          "w": "on watch",
+          "note": "在值守"
+        }
+      ]
+    },
+    {
+      "w": "hesitate",
+      "syn": [
+        {
+          "w": "waver",
+          "note": "摇摆不定，犹豫"
+        },
+        {
+          "w": "pause",
+          "note": "停顿，迟疑"
+        },
+        {
+          "w": "be reluctant",
+          "note": "不愿意，对应“不愿”义项"
+        }
+      ]
+    },
+    {
+      "w": "sequence",
+      "syn": [
+        {
+          "w": "order",
+          "note": "顺序"
+        },
+        {
+          "w": "succession",
+          "note": "接连，连续系列"
+        },
+        {
+          "w": "series",
+          "note": "一系列"
+        }
+      ]
+    },
+    {
+      "w": "eventually",
+      "syn": [
+        {
+          "w": "finally",
+          "note": "最终"
+        },
+        {
+          "w": "ultimately",
+          "note": "归根结底，最终"
+        },
+        {
+          "w": "in the end",
+          "note": "最后"
+        }
+      ]
+    },
+    {
+      "w": "tailor",
+      "syn": [
+        {
+          "w": "dressmaker",
+          "note": "裁缝，偏做女装"
+        },
+        {
+          "w": "adapt",
+          "note": "使适合，改编"
+        },
+        {
+          "w": "customize",
+          "note": "定制，使合需求"
+        }
+      ]
+    },
+    {
+      "w": "clerk",
+      "syn": [
+        {
+          "w": "office worker",
+          "note": "职员，办事员"
+        },
+        {
+          "w": "salesperson",
+          "note": "店员，售货员"
+        },
+        {
+          "w": "secretary",
+          "note": "书记，秘书"
+        }
+      ]
+    },
+    {
+      "w": "manner",
+      "syn": [
+        {
+          "w": "way",
+          "note": "方式，最常用"
+        },
+        {
+          "w": "method",
+          "note": "方法，偏具体"
+        },
+        {
+          "w": "behavior",
+          "note": "行为举止，对应“规矩”义"
+        }
+      ]
+    },
+    {
+      "w": "in a ... manner",
+      "syn": [
+        {
+          "w": "in a way",
+          "note": "在某种意义上"
+        },
+        {
+          "w": "to some extent",
+          "note": "在某种程度上"
+        },
+        {
+          "w": "somewhat",
+          "note": "有点，多少"
+        }
+      ]
+    },
+    {
+      "w": "downstairs",
+      "syn": [
+        {
+          "w": "below",
+          "note": "在楼下，在下面"
+        },
+        {
+          "w": "down the stairs",
+          "note": "沿楼梯向下"
+        },
+        {
+          "w": "on the lower floor",
+          "note": "在较低楼层"
+        }
+      ]
+    },
+    {
+      "w": "stair",
+      "syn": [
+        {
+          "w": "step",
+          "note": "台阶，梯级"
+        },
+        {
+          "w": "staircase",
+          "note": "楼梯，整体"
+        },
+        {
+          "w": "stairway",
+          "note": "楼梯，楼梯道"
+        }
+      ]
+    },
+    {
+      "w": "aside",
+      "syn": [
+        {
+          "w": "apart",
+          "note": "到一边，分开"
+        },
+        {
+          "w": "to one side",
+          "note": "到一旁"
+        },
+        {
+          "w": "besides",
+          "note": "除…之外，对应 aside from"
+        }
+      ]
+    }
+  ]
+}

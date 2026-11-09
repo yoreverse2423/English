@@ -1,0 +1,148 @@
+{
+  "items": [
+    {
+      "w": "court",
+      "syn": [
+        {
+          "w": "tribunal",
+          "note": "侧重法庭、裁决机构，更正式"
+        },
+        {
+          "w": "courtroom",
+          "note": "仅指法庭审判场所"
+        },
+        {
+          "w": "woo",
+          "note": "对应“献殷勤、设法获得”"
+        },
+        {
+          "w": "invite",
+          "note": "对应“招致（危险等）”，中性"
+        }
+      ]
+    },
+    {
+      "w": "flexible",
+      "syn": [
+        {
+          "w": "adaptable",
+          "note": "侧重能随机应变"
+        },
+        {
+          "w": "elastic",
+          "note": "侧重有弹性、可伸缩"
+        },
+        {
+          "w": "pliable",
+          "note": "侧重易弯曲、易受影响"
+        }
+      ]
+    },
+    {
+      "w": "income",
+      "syn": [
+        {
+          "w": "earnings",
+          "note": "侧重劳动所得，常用复数"
+        },
+        {
+          "w": "revenue",
+          "note": "侧重财政收入、营收"
+        },
+        {
+          "w": "salary",
+          "note": "特指薪水，范围更窄"
+        }
+      ]
+    },
+    {
+      "w": "per",
+      "syn": [
+        {
+          "w": "each",
+          "note": "对应“每一”，但词性不同"
+        },
+        {
+          "w": "every",
+          "note": "强调每一，后接单数"
+        },
+        {
+          "w": "according to",
+          "note": "对应“按照”"
+        }
+      ]
+    },
+    {
+      "w": "therefore",
+      "syn": [
+        {
+          "w": "thus",
+          "note": "更书面，因此"
+        },
+        {
+          "w": "hence",
+          "note": "更正式，因此"
+        },
+        {
+          "w": "consequently",
+          "note": "强调结果，较正式"
+        },
+        {
+          "w": "so",
+          "note": "最口语化"
+        }
+      ]
+    },
+    {
+      "w": "tension",
+      "syn": [
+        {
+          "w": "strain",
+          "note": "侧重压力、拉紧状态"
+        },
+        {
+          "w": "stress",
+          "note": "侧重精神压力"
+        },
+        {
+          "w": "anxiety",
+          "note": "侧重焦虑不安"
+        }
+      ]
+    },
+    {
+      "w": "Peking Union Medical College",
+      "syn": []
+    },
+    {
+      "w": "the Wenhai Scholarship",
+      "syn": []
+    },
+    {
+      "w": "the OB-GYN department",
+      "syn": []
+    },
+    {
+      "w": "Department of Obstetrics and Gynecology",
+      "syn": []
+    },
+    {
+      "w": "the People's Republic of China",
+      "syn": [
+        {
+          "w": "China",
+          "note": "简称，中国"
+        }
+      ]
+    },
+    {
+      "w": "the National People's Congress",
+      "syn": [
+        {
+          "w": "NPC",
+          "note": "英文缩写，人大"
+        }
+      ]
+    }
+  ]
+}

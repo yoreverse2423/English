@@ -1,0 +1,83 @@
+{
+  "items": [
+    {
+      "w": "employer",
+      "syn": [
+        {
+          "w": "boss",
+          "note": "口语，老板"
+        },
+        {
+          "w": "proprietor",
+          "note": "正式，业主"
+        },
+        {
+          "w": "hirer",
+          "note": "侧重雇人者"
+        }
+      ]
+    },
+    {
+      "w": "desert",
+      "syn": [
+        {
+          "w": "wasteland",
+          "note": "名词，荒原"
+        },
+        {
+          "w": "abandon",
+          "note": "动词，遗弃"
+        },
+        {
+          "w": "forsake",
+          "note": "动词，较文雅，抛弃"
+        },
+        {
+          "w": "wilderness",
+          "note": "名词，荒野"
+        }
+      ]
+    },
+    {
+      "w": "acquire",
+      "syn": [
+        {
+          "w": "obtain",
+          "note": "更正式，取得"
+        },
+        {
+          "w": "gain",
+          "note": "逐渐获得"
+        },
+        {
+          "w": "attain",
+          "note": "努力达到"
+        },
+        {
+          "w": "get",
+          "note": "最普通，得到"
+        }
+      ]
+    },
+    {
+      "w": "Marie Curie",
+      "syn": []
+    },
+    {
+      "w": "The Communist Manifesto",
+      "syn": []
+    },
+    {
+      "w": "Olivia",
+      "syn": []
+    },
+    {
+      "w": "PETS",
+      "syn": []
+    },
+    {
+      "w": "Public English Test System",
+      "syn": []
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "w": "cancer",
+      "syn": []
+    },
+    {
+      "w": "potential",
+      "syn": [
+        {
+          "w": "possibility",
+          "note": "可能性（名词义）"
+        },
+        {
+          "w": "capacity",
+          "note": "能力/潜力"
+        },
+        {
+          "w": "latent",
+          "note": "潜在的（较正式）"
+        },
+        {
+          "w": "possible",
+          "note": "可能的（形容词）"
+        }
+      ]
+    },
+    {
+      "w": "leak",
+      "syn": [
+        {
+          "w": "seep",
+          "note": "渗漏（液体慢漏）"
+        },
+        {
+          "w": "drip",
+          "note": "滴漏"
+        },
+        {
+          "w": "disclose",
+          "note": "泄露信息（较正式）"
+        },
+        {
+          "w": "crack",
+          "note": "裂缝（名词义）"
+        }
+      ]
+    },
+    {
+      "w": "electrical",
+      "syn": [
+        {
+          "w": "electric",
+          "note": "电的；用电的（常可换）"
+        }
+      ]
+    },
+    {
+      "w": "wire",
+      "syn": [
+        {
+          "w": "cable",
+          "note": "电缆（较粗）"
+        },
+        {
+          "w": "line",
+          "note": "电线/线路"
+        },
+        {
+          "w": "telegraph",
+          "note": "电报；打电报（较正式）"
+        }
+      ]
+    },
+    {
+      "w": "detect",
+      "syn": [
+        {
+          "w": "discover",
+          "note": "发现"
+        },
+        {
+          "w": "notice",
+          "note": "察觉"
+        },
+        {
+          "w": "spot",
+          "note": "发现/认出"
+        }
+      ]
+    },
+    {
+      "w": "relevant",
+      "syn": [
+        {
+          "w": "related",
+          "note": "相关的"
+        },
+        {
+          "w": "pertinent",
+          "note": "切题的（正式）"
+        },
+        {
+          "w": "applicable",
+          "note": "适用的"
+        }
+      ]
+    },
+    {
+      "w": "catch fire",
+      "syn": [
+        {
+          "w": "ignite",
+          "note": "着火/点燃"
+        },
+        {
+          "w": "be on fire",
+          "note": "着火（状态）"
+        }
+      ]
+    },
+    {
+      "w": "fantasy",
+      "syn": [
+        {
+          "w": "imagination",
+          "note": "想象"
+        },
+        {
+          "w": "dream",
+          "note": "梦想/幻想"
+        },
+        {
+          "w": "illusion",
+          "note": "幻觉"
+        }
+      ]
+    },
+    {
+      "w": "innovation",
+      "syn": [
+        {
+          "w": "invention",
+          "note": "发明/创造"
+        },
+        {
+          "w": "novelty",
+          "note": "新颖/新奇"
+        }
+      ]
+    },
+    {
+      "w": "available",
+      "syn": [
+        {
+          "w": "accessible",
+          "note": "可获得的/可接近的"
+        },
+        {
+          "w": "obtainable",
+          "note": "可获得的"
+        },
+        {
+          "w": "free",
+          "note": "有空的"
+        }
+      ]
+    },
+    {
+      "w": "in this sense",
+      "syn": [
+        {
+          "w": "in this respect",
+          "note": "在这方面"
+        },
+        {
+          "w": "in this regard",
+          "note": "在这方面"
+        }
+      ]
+    }
+  ]
+}

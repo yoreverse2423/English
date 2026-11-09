@@ -1,0 +1,191 @@
+{
+  "items": [
+    {
+      "w": "odd",
+      "syn": [
+        {
+          "w": "strange",
+          "note": "奇怪的，普通用词"
+        },
+        {
+          "w": "unusual",
+          "note": "不寻常的"
+        },
+        {
+          "w": "peculiar",
+          "note": "奇特的，略正式"
+        },
+        {
+          "w": "weird",
+          "note": "怪异的，口语"
+        }
+      ]
+    },
+    {
+      "w": "obligation",
+      "syn": [
+        {
+          "w": "duty",
+          "note": "义务，职责"
+        },
+        {
+          "w": "responsibility",
+          "note": "责任"
+        },
+        {
+          "w": "commitment",
+          "note": "承诺；承担的义务"
+        }
+      ]
+    },
+    {
+      "w": "intention",
+      "syn": [
+        {
+          "w": "purpose",
+          "note": "目的"
+        },
+        {
+          "w": "aim",
+          "note": "目标；意图"
+        },
+        {
+          "w": "intent",
+          "note": "意图，较正式"
+        }
+      ]
+    },
+    {
+      "w": "nowhere",
+      "syn": [
+        {
+          "w": "not anywhere",
+          "note": "无处；任何地方都不（短语）"
+        },
+        {
+          "w": "no place",
+          "note": "无处（短语，口语）"
+        }
+      ]
+    },
+    {
+      "w": "in case",
+      "syn": [
+        {
+          "w": "lest",
+          "note": "以免；以防，正式"
+        },
+        {
+          "w": "for fear that",
+          "note": "唯恐；以防"
+        },
+        {
+          "w": "in the event that",
+          "note": "如果；万一，正式"
+        }
+      ]
+    },
+    {
+      "w": "extent",
+      "syn": [
+        {
+          "w": "degree",
+          "note": "程度"
+        },
+        {
+          "w": "scope",
+          "note": "范围"
+        },
+        {
+          "w": "range",
+          "note": "范围；幅度"
+        },
+        {
+          "w": "scale",
+          "note": "规模；程度"
+        }
+      ]
+    },
+    {
+      "w": "to ... extent",
+      "syn": [
+        {
+          "w": "to some degree",
+          "note": "在某种程度上"
+        },
+        {
+          "w": "in part",
+          "note": "部分地"
+        }
+      ]
+    },
+    {
+      "w": "opera",
+      "syn": []
+    },
+    {
+      "w": "musical",
+      "syn": [
+        {
+          "w": "melodic",
+          "note": "旋律优美的"
+        },
+        {
+          "w": "melodious",
+          "note": "悦耳的"
+        },
+        {
+          "w": "tuneful",
+          "note": "音调悦耳的"
+        }
+      ]
+    },
+    {
+      "w": "dinosaur",
+      "syn": [
+        {
+          "w": "fossil",
+          "note": "老古董；过时的人，比喻"
+        },
+        {
+          "w": "relic",
+          "note": "过时的事物，比喻"
+        }
+      ]
+    },
+    {
+      "w": "hug",
+      "syn": [
+        {
+          "w": "embrace",
+          "note": "拥抱，较正式"
+        },
+        {
+          "w": "cuddle",
+          "note": "亲昵地搂抱"
+        }
+      ]
+    },
+    {
+      "w": "pursue",
+      "syn": [
+        {
+          "w": "chase",
+          "note": "追赶；追逐"
+        },
+        {
+          "w": "seek",
+          "note": "追求；寻求"
+        },
+        {
+          "w": "engage in",
+          "note": "从事"
+        },
+        {
+          "w": "continue",
+          "note": "继续"
+        }
+      ]
+    }
+  ]
+}

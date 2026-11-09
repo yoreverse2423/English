@@ -1,0 +1,175 @@
+{
+  "items": [
+    {
+      "w": "Langston Hughes",
+      "syn": []
+    },
+    {
+      "w": "fiction",
+      "syn": [
+        {
+          "w": "novel",
+          "note": "长篇小说"
+        },
+        {
+          "w": "invention",
+          "note": "虚构、编造"
+        },
+        {
+          "w": "fabrication",
+          "note": "编造的谎话，较正式"
+        }
+      ]
+    },
+    {
+      "w": "science fiction",
+      "syn": [
+        {
+          "w": "sci-fi",
+          "note": "口语缩写"
+        },
+        {
+          "w": "speculative fiction",
+          "note": "推想小说，较正式"
+        }
+      ]
+    },
+    {
+      "w": "sci-fi",
+      "syn": [
+        {
+          "w": "science fiction",
+          "note": "完整说法"
+        }
+      ]
+    },
+    {
+      "w": "test out",
+      "syn": [
+        {
+          "w": "try out",
+          "note": "试用、试验"
+        },
+        {
+          "w": "test",
+          "note": "测试，较泛"
+        }
+      ]
+    },
+    {
+      "w": "bonus",
+      "syn": [
+        {
+          "w": "extra",
+          "note": "额外的东西"
+        },
+        {
+          "w": "reward",
+          "note": "奖赏，侧重回报"
+        },
+        {
+          "w": "premium",
+          "note": "额外补贴、奖金"
+        }
+      ]
+    },
+    {
+      "w": "more like",
+      "syn": [
+        {
+          "w": "closer to",
+          "note": "更接近"
+        },
+        {
+          "w": "rather than",
+          "note": "与其说…不如说"
+        }
+      ]
+    },
+    {
+      "w": "ridiculous",
+      "syn": [
+        {
+          "w": "absurd",
+          "note": "荒谬，较正式"
+        },
+        {
+          "w": "ludicrous",
+          "note": "荒唐可笑，语气强"
+        },
+        {
+          "w": "foolish",
+          "note": "愚蠢，语气较弱"
+        }
+      ]
+    },
+    {
+      "w": "integrity",
+      "syn": [
+        {
+          "w": "honesty",
+          "note": "诚实"
+        },
+        {
+          "w": "uprightness",
+          "note": "正直，较正式"
+        },
+        {
+          "w": "wholeness",
+          "note": "完整性"
+        }
+      ]
+    },
+    {
+      "w": "dignity",
+      "syn": [
+        {
+          "w": "nobility",
+          "note": "高贵"
+        },
+        {
+          "w": "self-respect",
+          "note": "自尊"
+        },
+        {
+          "w": "grace",
+          "note": "得体、优雅"
+        }
+      ]
+    },
+    {
+      "w": "salary",
+      "syn": [
+        {
+          "w": "pay",
+          "note": "报酬，较泛"
+        },
+        {
+          "w": "wage",
+          "note": "工资，多按小时计"
+        },
+        {
+          "w": "income",
+          "note": "收入，范围更广"
+        }
+      ]
+    },
+    {
+      "w": "absurd",
+      "syn": [
+        {
+          "w": "ridiculous",
+          "note": "可笑，较常用"
+        },
+        {
+          "w": "preposterous",
+          "note": "荒唐透顶，较正式"
+        },
+        {
+          "w": "nonsensical",
+          "note": "毫无道理"
+        }
+      ]
+    }
+  ]
+}

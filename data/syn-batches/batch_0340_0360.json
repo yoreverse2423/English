@@ -1,0 +1,307 @@
+{
+  "items": [
+    {
+      "w": "no matter who",
+      "syn": [
+        {
+          "w": "whoever",
+          "note": "引导让步，相当于不管谁"
+        }
+      ]
+    },
+    {
+      "w": "no matter what",
+      "syn": [
+        {
+          "w": "whatever",
+          "note": "引导让步，相当于不管什么"
+        }
+      ]
+    },
+    {
+      "w": "dialect",
+      "syn": [
+        {
+          "w": "vernacular",
+          "note": "本地话，较正式"
+        }
+      ]
+    },
+    {
+      "w": "means",
+      "syn": [
+        {
+          "w": "method",
+          "note": "方法，手段"
+        },
+        {
+          "w": "way",
+          "note": "方式，办法"
+        },
+        {
+          "w": "approach",
+          "note": "途径，方法"
+        },
+        {
+          "w": "resources",
+          "note": "财力，资源"
+        }
+      ]
+    },
+    {
+      "w": "classic",
+      "syn": [
+        {
+          "w": "masterpiece",
+          "note": "名著，杰作"
+        },
+        {
+          "w": "traditional",
+          "note": "传统的，古典的"
+        },
+        {
+          "w": "typical",
+          "note": "典型的"
+        }
+      ]
+    },
+    {
+      "w": "regard",
+      "syn": [
+        {
+          "w": "consider",
+          "note": "认为，看待"
+        },
+        {
+          "w": "view",
+          "note": "看待，视为"
+        },
+        {
+          "w": "respect",
+          "note": "尊重"
+        }
+      ]
+    },
+    {
+      "w": "character",
+      "syn": [
+        {
+          "w": "personality",
+          "note": "性格"
+        },
+        {
+          "w": "nature",
+          "note": "本性，特性"
+        },
+        {
+          "w": "role",
+          "note": "角色"
+        }
+      ]
+    },
+    {
+      "w": "calligraphy",
+      "syn": [
+        {
+          "w": "handwriting",
+          "note": "笔迹，书写"
+        },
+        {
+          "w": "penmanship",
+          "note": "书写艺术，较正式"
+        }
+      ]
+    },
+    {
+      "w": "global",
+      "syn": [
+        {
+          "w": "worldwide",
+          "note": "全世界的"
+        },
+        {
+          "w": "international",
+          "note": "国际的"
+        },
+        {
+          "w": "overall",
+          "note": "总体的"
+        }
+      ]
+    },
+    {
+      "w": "affair",
+      "syn": [
+        {
+          "w": "matter",
+          "note": "事情"
+        },
+        {
+          "w": "business",
+          "note": "事务"
+        },
+        {
+          "w": "event",
+          "note": "事件"
+        }
+      ]
+    },
+    {
+      "w": "appreciate",
+      "syn": [
+        {
+          "w": "value",
+          "note": "重视，欣赏"
+        },
+        {
+          "w": "enjoy",
+          "note": "欣赏，喜爱"
+        },
+        {
+          "w": "be grateful for",
+          "note": "感激"
+        },
+        {
+          "w": "understand",
+          "note": "领会"
+        }
+      ]
+    },
+    {
+      "w": "specific",
+      "syn": [
+        {
+          "w": "particular",
+          "note": "特定的"
+        },
+        {
+          "w": "precise",
+          "note": "明确的，精确的"
+        },
+        {
+          "w": "definite",
+          "note": "明确的"
+        },
+        {
+          "w": "detailed",
+          "note": "详细的"
+        }
+      ]
+    },
+    {
+      "w": "CE",
+      "syn": []
+    },
+    {
+      "w": "Common Era",
+      "syn": [
+        {
+          "w": "CE",
+          "note": "缩写"
+        },
+        {
+          "w": "Christian Era",
+          "note": "同义说法"
+        },
+        {
+          "w": "AD",
+          "note": "传统公元纪年说法"
+        }
+      ]
+    },
+    {
+      "w": "struggle",
+      "syn": [
+        {
+          "w": "fight",
+          "note": "斗争，奋斗"
+        },
+        {
+          "w": "strive",
+          "note": "努力，较正式"
+        },
+        {
+          "w": "effort",
+          "note": "努力（名词）"
+        },
+        {
+          "w": "battle",
+          "note": "战斗，奋斗"
+        }
+      ]
+    },
+    {
+      "w": "tongue",
+      "syn": [
+        {
+          "w": "language",
+          "note": "语言"
+        },
+        {
+          "w": "speech",
+          "note": "言语，语言能力"
+        }
+      ]
+    },
+    {
+      "w": "point of view",
+      "syn": [
+        {
+          "w": "viewpoint",
+          "note": "观点"
+        },
+        {
+          "w": "perspective",
+          "note": "视角，看法"
+        },
+        {
+          "w": "standpoint",
+          "note": "立场，观点"
+        },
+        {
+          "w": "opinion",
+          "note": "意见"
+        }
+      ]
+    },
+    {
+      "w": "semester",
+      "syn": [
+        {
+          "w": "term",
+          "note": "学期"
+        }
+      ]
+    },
+    {
+      "w": "gas",
+      "syn": [
+        {
+          "w": "vapor",
+          "note": "气体，蒸汽"
+        },
+        {
+          "w": "gasoline",
+          "note": "美式汽油"
+        },
+        {
+          "w": "petrol",
+          "note": "英式汽油"
+        }
+      ]
+    },
+    {
+      "w": "petrol",
+      "syn": [
+        {
+          "w": "gasoline",
+          "note": "美式汽油"
+        },
+        {
+          "w": "gas",
+          "note": "美式口语，汽油"
+        }
+      ]
+    }
+  ]
+}

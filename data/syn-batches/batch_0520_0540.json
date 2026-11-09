@@ -1,0 +1,306 @@
+{
+  "items": [
+    {
+      "w": "attack",
+      "syn": [
+        {
+          "w": "assault",
+          "note": "猛烈攻击；较正式"
+        },
+        {
+          "w": "strike",
+          "note": "袭击；打击"
+        },
+        {
+          "w": "criticize",
+          "note": "抨击；批评"
+        }
+      ]
+    },
+    {
+      "w": "effective",
+      "syn": [
+        {
+          "w": "efficient",
+          "note": "侧重效率高"
+        },
+        {
+          "w": "valid",
+          "note": "有效；有法律效力"
+        },
+        {
+          "w": "practical",
+          "note": "实际可行"
+        }
+      ]
+    },
+    {
+      "w": "recover",
+      "syn": [
+        {
+          "w": "recuperate",
+          "note": "康复；较正式"
+        },
+        {
+          "w": "regain",
+          "note": "重新获得"
+        },
+        {
+          "w": "restore",
+          "note": "使恢复；修复"
+        }
+      ]
+    },
+    {
+      "w": "remove",
+      "syn": [
+        {
+          "w": "eliminate",
+          "note": "消除；排除"
+        },
+        {
+          "w": "delete",
+          "note": "删除"
+        },
+        {
+          "w": "dismiss",
+          "note": "开除；免职"
+        }
+      ]
+    },
+    {
+      "w": "intend",
+      "syn": [
+        {
+          "w": "plan",
+          "note": "打算"
+        },
+        {
+          "w": "mean",
+          "note": "意欲；意指"
+        },
+        {
+          "w": "aim",
+          "note": "旨在"
+        }
+      ]
+    },
+    {
+      "w": "threat",
+      "syn": [
+        {
+          "w": "menace",
+          "note": "威胁；较正式"
+        },
+        {
+          "w": "danger",
+          "note": "危险"
+        },
+        {
+          "w": "risk",
+          "note": "风险"
+        }
+      ]
+    },
+    {
+      "w": "threaten",
+      "syn": [
+        {
+          "w": "menace",
+          "note": "威胁；恐吓"
+        },
+        {
+          "w": "endanger",
+          "note": "危及"
+        },
+        {
+          "w": "loom",
+          "note": "逼近；可能来临"
+        }
+      ]
+    },
+    {
+      "w": "exist",
+      "syn": [
+        {
+          "w": "live",
+          "note": "生存；生活"
+        },
+        {
+          "w": "survive",
+          "note": "存活；幸存"
+        },
+        {
+          "w": "subsist",
+          "note": "勉强生存；较正式"
+        }
+      ]
+    },
+    {
+      "w": "harmony",
+      "syn": [
+        {
+          "w": "accord",
+          "note": "和谐；一致"
+        },
+        {
+          "w": "peace",
+          "note": "和睦；和平"
+        },
+        {
+          "w": "unity",
+          "note": "团结；统一"
+        }
+      ]
+    },
+    {
+      "w": "goods",
+      "syn": [
+        {
+          "w": "merchandise",
+          "note": "商品总称；较正式"
+        },
+        {
+          "w": "commodities",
+          "note": "商品；大宗货物"
+        },
+        {
+          "w": "wares",
+          "note": "货物；商品"
+        }
+      ]
+    },
+    {
+      "w": "creature",
+      "syn": [
+        {
+          "w": "animal",
+          "note": "动物"
+        },
+        {
+          "w": "being",
+          "note": "生物；存在物"
+        },
+        {
+          "w": "organism",
+          "note": "生物体"
+        }
+      ]
+    },
+    {
+      "w": "deer",
+      "syn": []
+    },
+    {
+      "w": "kangaroo",
+      "syn": []
+    },
+    {
+      "w": "reduce",
+      "syn": [
+        {
+          "w": "decrease",
+          "note": "减少"
+        },
+        {
+          "w": "lower",
+          "note": "降低"
+        },
+        {
+          "w": "diminish",
+          "note": "减少；较正式"
+        }
+      ]
+    },
+    {
+      "w": "due",
+      "syn": [
+        {
+          "w": "owed",
+          "note": "应付的；欠下的"
+        },
+        {
+          "w": "payable",
+          "note": "到期的；应支付的"
+        },
+        {
+          "w": "expected",
+          "note": "预期的"
+        }
+      ]
+    },
+    {
+      "w": "due to",
+      "syn": [
+        {
+          "w": "because of",
+          "note": "因为"
+        },
+        {
+          "w": "owing to",
+          "note": "由于；较正式"
+        },
+        {
+          "w": "on account of",
+          "note": "由于；较正式"
+        }
+      ]
+    },
+    {
+      "w": "insect",
+      "syn": [
+        {
+          "w": "bug",
+          "note": "虫子；口语"
+        },
+        {
+          "w": "pest",
+          "note": "害虫"
+        }
+      ]
+    },
+    {
+      "w": "net",
+      "syn": [
+        {
+          "w": "mesh",
+          "note": "网眼；网状物"
+        },
+        {
+          "w": "web",
+          "note": "网；网络"
+        },
+        {
+          "w": "network",
+          "note": "网络"
+        }
+      ]
+    },
+    {
+      "w": "neighbourhood",
+      "syn": [
+        {
+          "w": "area",
+          "note": "地区"
+        },
+        {
+          "w": "community",
+          "note": "社区"
+        },
+        {
+          "w": "vicinity",
+          "note": "附近；较正式"
+        }
+      ]
+    },
+    {
+      "w": "binoculars",
+      "syn": [
+        {
+          "w": "field glasses",
+          "note": "双筒望远镜；较旧说法"
+        }
+      ]
+    }
+  ]
+}

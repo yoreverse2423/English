@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "w": "electric",
+      "syn": [
+        {
+          "w": "electrical",
+          "note": "电的；电气的（更正式）"
+        },
+        {
+          "w": "thrilling",
+          "note": "令人激动的（比喻义）"
+        },
+        {
+          "w": "shocking",
+          "note": "令人震惊的（比喻义）"
+        }
+      ]
+    },
+    {
+      "w": "electric shock",
+      "syn": [
+        {
+          "w": "shock",
+          "note": "电击（常省略 electric）"
+        },
+        {
+          "w": "electrical shock",
+          "note": "电击（较正式表达）"
+        },
+        {
+          "w": "jolt",
+          "note": "电击；猛震（非正式）"
+        }
+      ]
+    },
+    {
+      "w": "victim",
+      "syn": [
+        {
+          "w": "sufferer",
+          "note": "受苦者；患者"
+        },
+        {
+          "w": "casualty",
+          "note": "伤亡者；受害者"
+        },
+        {
+          "w": "prey",
+          "note": "受害者；猎物（比喻）"
+        }
+      ]
+    },
+    {
+      "w": "swollen",
+      "syn": [
+        {
+          "w": "puffy",
+          "note": "肿胀的；浮肿的"
+        },
+        {
+          "w": "inflamed",
+          "note": "红肿发炎的"
+        },
+        {
+          "w": "enlarged",
+          "note": "肿大的；增大的"
+        }
+      ]
+    },
+    {
+      "w": "swell",
+      "syn": [
+        {
+          "w": "swelling",
+          "note": "肿胀（名词）"
+        },
+        {
+          "w": "bulge",
+          "note": "隆起；鼓起"
+        },
+        {
+          "w": "expand",
+          "note": "膨胀；扩大（动词义）"
+        },
+        {
+          "w": "inflate",
+          "note": "使充气膨胀"
+        }
+      ]
+    },
+    {
+      "w": "swollen",
+      "syn": [
+        {
+          "w": "puffy",
+          "note": "肿胀的；浮肿的"
+        },
+        {
+          "w": "inflamed",
+          "note": "红肿发炎的"
+        },
+        {
+          "w": "enlarged",
+          "note": "肿大的；增大的"
+        }
+      ]
+    },
+    {
+      "w": "blister",
+      "syn": [
+        {
+          "w": "bubble",
+          "note": "水泡；气泡（较普通）"
+        },
+        {
+          "w": "vesicle",
+          "note": "小水疱（医学）"
+        },
+        {
+          "w": "pustule",
+          "note": "脓疱"
+        }
+      ]
+    },
+    {
+      "w": "underneath",
+      "syn": [
+        {
+          "w": "under",
+          "note": "在…下面（最普通）"
+        },
+        {
+          "w": "beneath",
+          "note": "在…下面（较正式）"
+        },
+        {
+          "w": "below",
+          "note": "在…下方（位置低于）"
+        }
+      ]
+    },
+    {
+      "w": "nerve",
+      "syn": [
+        {
+          "w": "courage",
+          "note": "勇气（常见义）"
+        },
+        {
+          "w": "bravery",
+          "note": "勇敢"
+        },
+        {
+          "w": "boldness",
+          "note": "大胆"
+        },
+        {
+          "w": "vein",
+          "note": "叶脉；静脉（对应解剖/植物义）"
+        }
+      ]
+    },
+    {
+      "w": "fabric",
+      "syn": [
+        {
+          "w": "cloth",
+          "note": "布；布料（最普通）"
+        },
+        {
+          "w": "textile",
+          "note": "纺织品（较正式）"
+        },
+        {
+          "w": "material",
+          "note": "布料；材料"
+        },
+        {
+          "w": "structure",
+          "note": "构造；组织（抽象义）"
+        }
+      ]
+    },
+    {
+      "w": "loose",
+      "syn": [
+        {
+          "w": "slack",
+          "note": "松弛的；不紧的"
+        },
+        {
+          "w": "baggy",
+          "note": "宽松肥大的（衣物）"
+        },
+        {
+          "w": "unfastened",
+          "note": "未系牢的"
+        },
+        {
+          "w": "vague",
+          "note": "不精确的；含糊的"
+        }
+      ]
+    },
+    {
+      "w": "urgent",
+      "syn": [
+        {
+          "w": "pressing",
+          "note": "紧迫的（常指事情）"
+        },
+        {
+          "w": "critical",
+          "note": "危急的；关键的"
+        },
+        {
+          "w": "imperative",
+          "note": "紧急必要的（较正式）"
+        },
+        {
+          "w": "immediate",
+          "note": "立即的；急迫的"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "items": [
+    {
+      "w": "mustache",
+      "syn": [
+        {
+          "w": "moustache",
+          "note": "英式拼写"
+        },
+        {
+          "w": "beard",
+          "note": "胡须，范围更大"
+        },
+        {
+          "w": "whiskers",
+          "note": "胡须/络腮胡"
+        }
+      ]
+    },
+    {
+      "w": "peculiarity",
+      "syn": [
+        {
+          "w": "characteristic",
+          "note": "一般特征"
+        },
+        {
+          "w": "trait",
+          "note": "特质"
+        },
+        {
+          "w": "quirk",
+          "note": "怪癖"
+        },
+        {
+          "w": "oddity",
+          "note": "奇特之处"
+        }
+      ]
+    },
+    {
+      "w": "encounter",
+      "syn": [
+        {
+          "w": "meet",
+          "note": "普通遇到"
+        },
+        {
+          "w": "come across",
+          "note": "偶然遇到"
+        },
+        {
+          "w": "run into",
+          "note": "偶然碰见"
+        },
+        {
+          "w": "confrontation",
+          "note": "名词，对抗/遭遇"
+        }
+      ]
+    },
+    {
+      "w": "professor",
+      "syn": [
+        {
+          "w": "teacher",
+          "note": "教师，泛称"
+        },
+        {
+          "w": "lecturer",
+          "note": "讲师"
+        },
+        {
+          "w": "educator",
+          "note": "教育工作者"
+        }
+      ]
+    },
+    {
+      "w": "mourn",
+      "syn": [
+        {
+          "w": "grieve",
+          "note": "悲伤/哀悼"
+        },
+        {
+          "w": "lament",
+          "note": "哀悼/痛惜"
+        }
+      ]
+    },
+    {
+      "w": "remarkable",
+      "syn": [
+        {
+          "w": "extraordinary",
+          "note": "非凡的"
+        },
+        {
+          "w": "notable",
+          "note": "值得注意的"
+        },
+        {
+          "w": "outstanding",
+          "note": "杰出的"
+        },
+        {
+          "w": "striking",
+          "note": "显著的"
+        }
+      ]
+    },
+    {
+      "w": "device",
+      "syn": [
+        {
+          "w": "gadget",
+          "note": "小装置"
+        },
+        {
+          "w": "apparatus",
+          "note": "仪器/设备"
+        },
+        {
+          "w": "instrument",
+          "note": "器械/仪器"
+        }
+      ]
+    },
+    {
+      "w": "sum",
+      "syn": [
+        {
+          "w": "total",
+          "note": "总数"
+        },
+        {
+          "w": "amount",
+          "note": "金额/数量"
+        },
+        {
+          "w": "aggregate",
+          "note": "总计，更正式"
+        }
+      ]
+    },
+    {
+      "w": "sum up",
+      "syn": [
+        {
+          "w": "summarize",
+          "note": "概括"
+        },
+        {
+          "w": "recap",
+          "note": "简要回顾"
+        },
+        {
+          "w": "conclude",
+          "note": "作结论"
+        }
+      ]
+    },
+    {
+      "w": "draft",
+      "syn": [
+        {
+          "w": "outline",
+          "note": "提纲/草稿"
+        },
+        {
+          "w": "sketch",
+          "note": "草图/初稿"
+        },
+        {
+          "w": "version",
+          "note": "稿本"
+        }
+      ]
+    },
+    {
+      "w": "Nobel Prize",
+      "syn": []
+    },
+    {
+      "w": "Albert Einstein",
+      "syn": []
+    }
+  ]
+}

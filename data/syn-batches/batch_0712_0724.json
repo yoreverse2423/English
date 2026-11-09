@@ -1,0 +1,232 @@
+{
+  "items": [
+    {
+      "w": "studio",
+      "syn": [
+        {
+          "w": "workroom",
+          "note": "侧重工作间"
+        },
+        {
+          "w": "workshop",
+          "note": "侧重工作坊/车间"
+        }
+      ]
+    },
+    {
+      "w": "ordinary",
+      "syn": [
+        {
+          "w": "common",
+          "note": "常见的"
+        },
+        {
+          "w": "normal",
+          "note": "正常的"
+        },
+        {
+          "w": "usual",
+          "note": "通常的"
+        },
+        {
+          "w": "average",
+          "note": "一般的"
+        }
+      ]
+    },
+    {
+      "w": "enable",
+      "syn": [
+        {
+          "w": "allow",
+          "note": "允许使能做"
+        },
+        {
+          "w": "permit",
+          "note": "较正式允许"
+        },
+        {
+          "w": "empower",
+          "note": "授权使能够"
+        }
+      ]
+    },
+    {
+      "w": "prove",
+      "syn": [
+        {
+          "w": "demonstrate",
+          "note": "正式证明"
+        },
+        {
+          "w": "show",
+          "note": "显示表明"
+        },
+        {
+          "w": "verify",
+          "note": "核实证明"
+        },
+        {
+          "w": "confirm",
+          "note": "证实"
+        }
+      ]
+    },
+    {
+      "w": "award",
+      "syn": [
+        {
+          "w": "prize",
+          "note": "奖品"
+        },
+        {
+          "w": "reward",
+          "note": "奖励/报酬"
+        },
+        {
+          "w": "grant",
+          "note": "授予/拨款"
+        },
+        {
+          "w": "bestow",
+          "note": "正式授予"
+        }
+      ]
+    },
+    {
+      "w": "composer",
+      "syn": [
+        {
+          "w": "songwriter",
+          "note": "侧重歌曲作者"
+        },
+        {
+          "w": "author",
+          "note": "作者/著作者"
+        },
+        {
+          "w": "creator",
+          "note": "创作者"
+        }
+      ]
+    },
+    {
+      "w": "conductor",
+      "syn": [
+        {
+          "w": "leader",
+          "note": "领导者"
+        },
+        {
+          "w": "manager",
+          "note": "管理人"
+        },
+        {
+          "w": "director",
+          "note": "主管/指挥"
+        }
+      ]
+    },
+    {
+      "w": "fall in love with",
+      "syn": [
+        {
+          "w": "fall for",
+          "note": "口语迷恋上"
+        },
+        {
+          "w": "be in love with",
+          "note": "处于爱恋状态"
+        },
+        {
+          "w": "become attracted to",
+          "note": "被吸引"
+        }
+      ]
+    },
+    {
+      "w": "original",
+      "syn": [
+        {
+          "w": "initial",
+          "note": "最初的"
+        },
+        {
+          "w": "first",
+          "note": "第一个的"
+        },
+        {
+          "w": "creative",
+          "note": "有独创性"
+        },
+        {
+          "w": "novel",
+          "note": "新颖的"
+        }
+      ]
+    },
+    {
+      "w": "phenomenon",
+      "syn": [
+        {
+          "w": "occurrence",
+          "note": "发生的事/现象"
+        },
+        {
+          "w": "event",
+          "note": "事件"
+        },
+        {
+          "w": "marvel",
+          "note": "奇迹"
+        },
+        {
+          "w": "wonder",
+          "note": "奇观"
+        }
+      ]
+    },
+    {
+      "w": "stage",
+      "syn": [
+        {
+          "w": "phase",
+          "note": "阶段"
+        },
+        {
+          "w": "step",
+          "note": "步骤/阶段"
+        },
+        {
+          "w": "platform",
+          "note": "舞台/平台"
+        },
+        {
+          "w": "put on",
+          "note": "上演"
+        }
+      ]
+    },
+    {
+      "w": "altogether",
+      "syn": [
+        {
+          "w": "completely",
+          "note": "完全地"
+        },
+        {
+          "w": "entirely",
+          "note": "完全地"
+        },
+        {
+          "w": "totally",
+          "note": "总共/完全"
+        },
+        {
+          "w": "in all",
+          "note": "总共"
+        }
+      ]
+    }
+  ]
+}

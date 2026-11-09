@@ -1,0 +1,232 @@
+{
+  "items": [
+    {
+      "w": "resident",
+      "syn": [
+        {
+          "w": "inhabitant",
+          "note": "居民，较正式"
+        },
+        {
+          "w": "occupant",
+          "note": "居住者/占用者"
+        },
+        {
+          "w": "local",
+          "note": "当地人"
+        }
+      ]
+    },
+    {
+      "w": "plus",
+      "syn": [
+        {
+          "w": "and",
+          "note": "口语中表“加”"
+        },
+        {
+          "w": "added to",
+          "note": "加上"
+        },
+        {
+          "w": "benefit",
+          "note": "作名词指好处"
+        },
+        {
+          "w": "positive",
+          "note": "作形容词指正的"
+        }
+      ]
+    },
+    {
+      "w": "function",
+      "syn": [
+        {
+          "w": "role",
+          "note": "作用/职责"
+        },
+        {
+          "w": "purpose",
+          "note": "用途/目的"
+        },
+        {
+          "w": "operate",
+          "note": "作动词指运行"
+        },
+        {
+          "w": "work",
+          "note": "作动词指运转"
+        }
+      ]
+    },
+    {
+      "w": "battery",
+      "syn": [
+        {
+          "w": "cell",
+          "note": "单节电池/电池单元"
+        },
+        {
+          "w": "assault",
+          "note": "作“殴打”义"
+        }
+      ]
+    },
+    {
+      "w": "confirm",
+      "syn": [
+        {
+          "w": "verify",
+          "note": "核实/证实"
+        },
+        {
+          "w": "validate",
+          "note": "证实/使有效"
+        },
+        {
+          "w": "prove",
+          "note": "证明"
+        },
+        {
+          "w": "approve",
+          "note": "批准"
+        }
+      ]
+    },
+    {
+      "w": "Wi-Fi",
+      "syn": [
+        {
+          "w": "wireless",
+          "note": "无线网络/无线连接"
+        },
+        {
+          "w": "WLAN",
+          "note": "无线局域网，技术缩写"
+        },
+        {
+          "w": "wireless network",
+          "note": "无线网络"
+        }
+      ]
+    },
+    {
+      "w": "press",
+      "syn": [
+        {
+          "w": "media",
+          "note": "作“新闻界”义"
+        },
+        {
+          "w": "push",
+          "note": "作动词“按/推”"
+        },
+        {
+          "w": "urge",
+          "note": "作动词“敦促/逼迫”"
+        },
+        {
+          "w": "publishing house",
+          "note": "作“出版社”义"
+        }
+      ]
+    },
+    {
+      "w": "button",
+      "syn": [
+        {
+          "w": "fastener",
+          "note": "扣件/纽扣总称"
+        },
+        {
+          "w": "fasten",
+          "note": "作动词“扣紧”"
+        }
+      ]
+    },
+    {
+      "w": "file",
+      "syn": [
+        {
+          "w": "document",
+          "note": "文件"
+        },
+        {
+          "w": "folder",
+          "note": "文件夹"
+        },
+        {
+          "w": "archive",
+          "note": "档案/归档"
+        },
+        {
+          "w": "submit",
+          "note": "作动词“提交/提出”"
+        }
+      ]
+    },
+    {
+      "w": "in shape",
+      "syn": [
+        {
+          "w": "fit",
+          "note": "健康/健美"
+        },
+        {
+          "w": "healthy",
+          "note": "健康"
+        },
+        {
+          "w": "in good condition",
+          "note": "状态良好"
+        },
+        {
+          "w": "toned",
+          "note": "肌肉紧实/状态好"
+        }
+      ]
+    },
+    {
+      "w": "keep track of",
+      "syn": [
+        {
+          "w": "track",
+          "note": "追踪/记录"
+        },
+        {
+          "w": "monitor",
+          "note": "监控/密切关注"
+        },
+        {
+          "w": "record",
+          "note": "记录"
+        },
+        {
+          "w": "follow",
+          "note": "关注/跟进"
+        }
+      ]
+    },
+    {
+      "w": "discount",
+      "syn": [
+        {
+          "w": "reduction",
+          "note": "减价/折扣"
+        },
+        {
+          "w": "markdown",
+          "note": "降价"
+        },
+        {
+          "w": "disregard",
+          "note": "作动词“忽视”"
+        },
+        {
+          "w": "ignore",
+          "note": "忽视"
+        }
+      ]
+    }
+  ]
+}

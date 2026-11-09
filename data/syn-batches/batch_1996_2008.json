@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "w": "realist",
+      "syn": [
+        {
+          "w": "pragmatist",
+          "note": "侧重务实者"
+        }
+      ]
+    },
+    {
+      "w": "primitive",
+      "syn": [
+        {
+          "w": "ancient",
+          "note": "侧重远古的"
+        },
+        {
+          "w": "crude",
+          "note": "侧重粗糙的"
+        },
+        {
+          "w": "simple",
+          "note": "侧重简单的"
+        },
+        {
+          "w": "early",
+          "note": "侧重早期的"
+        }
+      ]
+    },
+    {
+      "w": "two-dimensional",
+      "syn": [
+        {
+          "w": "flat",
+          "note": "二维的；平面的"
+        },
+        {
+          "w": "superficial",
+          "note": "侧重缺乏深度"
+        },
+        {
+          "w": "shallow",
+          "note": "侧重浅薄"
+        }
+      ]
+    },
+    {
+      "w": "dimension",
+      "syn": [
+        {
+          "w": "aspect",
+          "note": "方面"
+        },
+        {
+          "w": "size",
+          "note": "尺寸"
+        },
+        {
+          "w": "measurement",
+          "note": "尺寸；测量"
+        }
+      ]
+    },
+    {
+      "w": "in particular",
+      "syn": [
+        {
+          "w": "especially",
+          "note": "尤其"
+        },
+        {
+          "w": "particularly",
+          "note": "特别"
+        },
+        {
+          "w": "specifically",
+          "note": "具体地；特别"
+        }
+      ]
+    },
+    {
+      "w": "set apart from",
+      "syn": [
+        {
+          "w": "separate from",
+          "note": "分开"
+        },
+        {
+          "w": "distinguish from",
+          "note": "区分"
+        },
+        {
+          "w": "differentiate from",
+          "note": "辨析区别"
+        }
+      ]
+    },
+    {
+      "w": "humanistic",
+      "syn": [
+        {
+          "w": "humanitarian",
+          "note": "侧重人道主义"
+        },
+        {
+          "w": "humane",
+          "note": "侧重仁慈人道"
+        },
+        {
+          "w": "human-centered",
+          "note": "以人为本的"
+        }
+      ]
+    },
+    {
+      "w": "humanity",
+      "syn": [
+        {
+          "w": "mankind",
+          "note": "人类"
+        },
+        {
+          "w": "humankind",
+          "note": "人类"
+        },
+        {
+          "w": "compassion",
+          "note": "仁慈；同情"
+        },
+        {
+          "w": "kindness",
+          "note": "仁慈；善意"
+        }
+      ]
+    },
+    {
+      "w": "breakthrough",
+      "syn": [
+        {
+          "w": "advance",
+          "note": "进展"
+        },
+        {
+          "w": "progress",
+          "note": "进步"
+        },
+        {
+          "w": "leap",
+          "note": "飞跃；重大进展"
+        },
+        {
+          "w": "discovery",
+          "note": "重大发现"
+        }
+      ]
+    },
+    {
+      "w": "influential",
+      "syn": [
+        {
+          "w": "powerful",
+          "note": "侧重有势力"
+        },
+        {
+          "w": "significant",
+          "note": "侧重有重要影响"
+        },
+        {
+          "w": "prominent",
+          "note": "侧重显赫"
+        },
+        {
+          "w": "persuasive",
+          "note": "侧重有说服力"
+        }
+      ]
+    },
+    {
+      "w": "reputation",
+      "syn": [
+        {
+          "w": "fame",
+          "note": "侧重出名"
+        },
+        {
+          "w": "standing",
+          "note": "侧重社会评价"
+        },
+        {
+          "w": "renown",
+          "note": "较正式；声望"
+        }
+      ]
+    },
+    {
+      "w": "noble",
+      "syn": [
+        {
+          "w": "honorable",
+          "note": "侧重高尚"
+        },
+        {
+          "w": "aristocratic",
+          "note": "侧重贵族的"
+        },
+        {
+          "w": "grand",
+          "note": "侧重宏伟"
+        },
+        {
+          "w": "aristocrat",
+          "note": "名词：贵族"
+        }
+      ]
+    }
+  ]
+}

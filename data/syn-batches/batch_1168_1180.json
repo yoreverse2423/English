@@ -1,0 +1,212 @@
+{
+  "items": [
+    {
+      "w": "judge",
+      "syn": [
+        {
+          "w": "assess",
+          "note": "评估；判断"
+        },
+        {
+          "w": "evaluate",
+          "note": "评价；判断"
+        },
+        {
+          "w": "try",
+          "note": "审判；审理"
+        },
+        {
+          "w": "referee",
+          "note": "裁判员"
+        }
+      ]
+    },
+    {
+      "w": "scene",
+      "syn": [
+        {
+          "w": "sight",
+          "note": "景象；场面"
+        },
+        {
+          "w": "view",
+          "note": "景色；景象"
+        },
+        {
+          "w": "setting",
+          "note": "场景；背景"
+        },
+        {
+          "w": "incident",
+          "note": "事件；插曲"
+        }
+      ]
+    },
+    {
+      "w": "narrator",
+      "syn": [
+        {
+          "w": "storyteller",
+          "note": "讲故事者"
+        },
+        {
+          "w": "commentator",
+          "note": "解说员"
+        }
+      ]
+    },
+    {
+      "w": "narration",
+      "syn": [
+        {
+          "w": "narrative",
+          "note": "叙事；叙述"
+        },
+        {
+          "w": "account",
+          "note": "叙述；描述"
+        },
+        {
+          "w": "story",
+          "note": "故事"
+        }
+      ]
+    },
+    {
+      "w": "bet",
+      "syn": [
+        {
+          "w": "wager",
+          "note": "打赌；较正式"
+        },
+        {
+          "w": "gamble",
+          "note": "赌博；冒险"
+        },
+        {
+          "w": "stake",
+          "note": "赌注；下注"
+        }
+      ]
+    },
+    {
+      "w": "bet",
+      "syn": [
+        {
+          "w": "wager",
+          "note": "打赌；较正式"
+        },
+        {
+          "w": "gamble",
+          "note": "赌博；冒险"
+        },
+        {
+          "w": "stake",
+          "note": "赌注；下注"
+        }
+      ]
+    },
+    {
+      "w": "bet",
+      "syn": [
+        {
+          "w": "wager",
+          "note": "打赌；较正式"
+        },
+        {
+          "w": "gamble",
+          "note": "赌博；冒险"
+        },
+        {
+          "w": "stake",
+          "note": "赌注；下注"
+        }
+      ]
+    },
+    {
+      "w": "make a bet",
+      "syn": [
+        {
+          "w": "place a bet",
+          "note": "下注；打赌"
+        },
+        {
+          "w": "lay a bet",
+          "note": "下注；打赌"
+        },
+        {
+          "w": "wager",
+          "note": "打赌；较正式"
+        }
+      ]
+    },
+    {
+      "w": "servant",
+      "syn": [
+        {
+          "w": "maid",
+          "note": "女佣；女仆"
+        },
+        {
+          "w": "attendant",
+          "note": "侍者；随从"
+        },
+        {
+          "w": "helper",
+          "note": "帮手；帮佣"
+        }
+      ]
+    },
+    {
+      "w": "as a matter of fact",
+      "syn": [
+        {
+          "w": "actually",
+          "note": "事实上；实际上"
+        },
+        {
+          "w": "in fact",
+          "note": "其实；事实上"
+        },
+        {
+          "w": "indeed",
+          "note": "确实；事实上"
+        }
+      ]
+    },
+    {
+      "w": "by accident",
+      "syn": [
+        {
+          "w": "by chance",
+          "note": "偶然；碰巧"
+        },
+        {
+          "w": "accidentally",
+          "note": "意外地；偶然地"
+        },
+        {
+          "w": "unintentionally",
+          "note": "非故意地；无意中"
+        }
+      ]
+    },
+    {
+      "w": "sail",
+      "syn": [
+        {
+          "w": "voyage",
+          "note": "航行；长途航行"
+        },
+        {
+          "w": "cruise",
+          "note": "巡航；乘船游览"
+        },
+        {
+          "w": "navigate",
+          "note": "航行；导航"
+        }
+      ]
+    }
+  ]
+}

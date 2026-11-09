@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "w": "withdraw from",
+      "syn": [
+        {
+          "w": "pull out of",
+          "note": "侧重退出参与"
+        },
+        {
+          "w": "retreat from",
+          "note": "侧重撤退、退却"
+        },
+        {
+          "w": "leave",
+          "note": "泛指离开"
+        }
+      ]
+    },
+    {
+      "w": "channel",
+      "syn": [
+        {
+          "w": "passage",
+          "note": "通道"
+        },
+        {
+          "w": "strait",
+          "note": "海峡"
+        },
+        {
+          "w": "guide",
+          "note": "动词：引导"
+        }
+      ]
+    },
+    {
+      "w": "maritime",
+      "syn": [
+        {
+          "w": "marine",
+          "note": "海洋的"
+        },
+        {
+          "w": "naval",
+          "note": "海军的"
+        },
+        {
+          "w": "coastal",
+          "note": "沿海的"
+        }
+      ]
+    },
+    {
+      "w": "bond",
+      "syn": [
+        {
+          "w": "tie",
+          "note": "纽带、联系"
+        },
+        {
+          "w": "link",
+          "note": "联系"
+        },
+        {
+          "w": "connection",
+          "note": "关联"
+        }
+      ]
+    },
+    {
+      "w": "in hand",
+      "syn": [
+        {
+          "w": "available",
+          "note": "现有可用"
+        },
+        {
+          "w": "underway",
+          "note": "正在进行"
+        },
+        {
+          "w": "under control",
+          "note": "控制住"
+        }
+      ]
+    },
+    {
+      "w": "politics",
+      "syn": [
+        {
+          "w": "political affairs",
+          "note": "政治事务"
+        },
+        {
+          "w": "public affairs",
+          "note": "公共事务"
+        }
+      ]
+    },
+    {
+      "w": "profession",
+      "syn": [
+        {
+          "w": "occupation",
+          "note": "职业，较正式"
+        },
+        {
+          "w": "career",
+          "note": "职业生涯"
+        },
+        {
+          "w": "job",
+          "note": "工作，较口语"
+        }
+      ]
+    },
+    {
+      "w": "tournament",
+      "syn": [
+        {
+          "w": "competition",
+          "note": "比赛"
+        },
+        {
+          "w": "contest",
+          "note": "竞赛"
+        },
+        {
+          "w": "match",
+          "note": "单场比赛"
+        }
+      ]
+    },
+    {
+      "w": "mixture",
+      "syn": [
+        {
+          "w": "blend",
+          "note": "混合体"
+        },
+        {
+          "w": "mix",
+          "note": "混合物"
+        },
+        {
+          "w": "combination",
+          "note": "组合"
+        }
+      ]
+    },
+    {
+      "w": "laptop",
+      "syn": [
+        {
+          "w": "notebook",
+          "note": "笔记本电脑"
+        },
+        {
+          "w": "portable computer",
+          "note": "便携电脑"
+        }
+      ]
+    },
+    {
+      "w": "coverage",
+      "syn": [
+        {
+          "w": "reporting",
+          "note": "新闻报道"
+        },
+        {
+          "w": "scope",
+          "note": "覆盖范围"
+        },
+        {
+          "w": "extent",
+          "note": "范围、程度"
+        }
+      ]
+    },
+    {
+      "w": "press conference",
+      "syn": [
+        {
+          "w": "news conference",
+          "note": "同义：新闻发布会"
+        },
+        {
+          "w": "briefing",
+          "note": "简报会"
+        },
+        {
+          "w": "media briefing",
+          "note": "媒体吹风会"
+        }
+      ]
+    }
+  ]
+}

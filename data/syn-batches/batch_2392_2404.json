@@ -1,0 +1,203 @@
+{
+  "items": [
+    {
+      "w": "hazy",
+      "syn": [
+        {
+          "w": "misty",
+          "note": "有薄雾的"
+        },
+        {
+          "w": "foggy",
+          "note": "多雾的"
+        },
+        {
+          "w": "vague",
+          "note": "模糊不具体"
+        },
+        {
+          "w": "blurry",
+          "note": "视觉模糊"
+        }
+      ]
+    },
+    {
+      "w": "niece",
+      "syn": []
+    },
+    {
+      "w": "fetch",
+      "syn": [
+        {
+          "w": "get",
+          "note": "去取来"
+        },
+        {
+          "w": "retrieve",
+          "note": "取回，较正式"
+        },
+        {
+          "w": "bring",
+          "note": "带来，方向不同"
+        }
+      ]
+    },
+    {
+      "w": "handkerchief",
+      "syn": [
+        {
+          "w": "hanky",
+          "note": "口语，手帕"
+        },
+        {
+          "w": "kerchief",
+          "note": "头巾，旧式"
+        }
+      ]
+    },
+    {
+      "w": "lamp",
+      "syn": [
+        {
+          "w": "light",
+          "note": "灯；光"
+        },
+        {
+          "w": "lantern",
+          "note": "灯笼；提灯"
+        }
+      ]
+    },
+    {
+      "w": "turn out",
+      "syn": [
+        {
+          "w": "prove",
+          "note": "结果是；证明是"
+        },
+        {
+          "w": "end up",
+          "note": "最终成为"
+        },
+        {
+          "w": "work out",
+          "note": "结果；解决"
+        }
+      ]
+    },
+    {
+      "w": "pace",
+      "syn": [
+        {
+          "w": "speed",
+          "note": "速度"
+        },
+        {
+          "w": "rate",
+          "note": "速率"
+        },
+        {
+          "w": "tempo",
+          "note": "节奏；速度"
+        },
+        {
+          "w": "step",
+          "note": "步伐"
+        }
+      ]
+    },
+    {
+      "w": "fall away",
+      "syn": [
+        {
+          "w": "separation",
+          "note": "分离；级间分离"
+        },
+        {
+          "w": "detachment",
+          "note": "脱离；分离"
+        }
+      ]
+    },
+    {
+      "w": "division",
+      "syn": [
+        {
+          "w": "section",
+          "note": "部分；部门"
+        },
+        {
+          "w": "department",
+          "note": "部门"
+        },
+        {
+          "w": "separation",
+          "note": "分开；分割"
+        },
+        {
+          "w": "split",
+          "note": "分割"
+        }
+      ]
+    },
+    {
+      "w": "puff",
+      "syn": [
+        {
+          "w": "gust",
+          "note": "一阵风或烟"
+        },
+        {
+          "w": "blast",
+          "note": "一阵气流"
+        },
+        {
+          "w": "swelling",
+          "note": "肿块"
+        }
+      ]
+    },
+    {
+      "w": "urge",
+      "syn": [
+        {
+          "w": "desire",
+          "note": "强烈欲望"
+        },
+        {
+          "w": "impulse",
+          "note": "冲动"
+        },
+        {
+          "w": "press",
+          "note": "催促，动词"
+        },
+        {
+          "w": "encourage",
+          "note": "力劝；鼓励"
+        }
+      ]
+    },
+    {
+      "w": "have an urge to",
+      "syn": [
+        {
+          "w": "be eager to",
+          "note": "渴望做"
+        },
+        {
+          "w": "long to",
+          "note": "渴望，较正式"
+        },
+        {
+          "w": "be dying to",
+          "note": "极想做"
+        },
+        {
+          "w": "be anxious to",
+          "note": "急切想做"
+        }
+      ]
+    }
+  ]
+}

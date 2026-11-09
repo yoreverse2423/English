@@ -1,0 +1,155 @@
+{
+  "items": [
+    {
+      "w": "Todd",
+      "syn": []
+    },
+    {
+      "w": "Portia Langham",
+      "syn": []
+    },
+    {
+      "w": "physiology",
+      "syn": []
+    },
+    {
+      "w": "artemisinin",
+      "syn": []
+    },
+    {
+      "w": "crucial",
+      "syn": [
+        {
+          "w": "critical",
+          "note": "关键性的"
+        },
+        {
+          "w": "essential",
+          "note": "必不可少的"
+        },
+        {
+          "w": "vital",
+          "note": "至关重要的"
+        },
+        {
+          "w": "decisive",
+          "note": "决定性的"
+        }
+      ]
+    },
+    {
+      "w": "malaria",
+      "syn": []
+    },
+    {
+      "w": "vital",
+      "syn": [
+        {
+          "w": "crucial",
+          "note": "至关重要的"
+        },
+        {
+          "w": "essential",
+          "note": "必不可少的"
+        },
+        {
+          "w": "important",
+          "note": "重要的，程度较弱"
+        },
+        {
+          "w": "lively",
+          "note": "有活力的"
+        }
+      ]
+    },
+    {
+      "w": "commit",
+      "syn": [
+        {
+          "w": "perpetrate",
+          "note": "犯下罪行，正式"
+        },
+        {
+          "w": "entrust",
+          "note": "交托"
+        },
+        {
+          "w": "assign",
+          "note": "指派"
+        }
+      ]
+    },
+    {
+      "w": "academy",
+      "syn": [
+        {
+          "w": "college",
+          "note": "学院；大学"
+        },
+        {
+          "w": "institute",
+          "note": "研究院；学会"
+        },
+        {
+          "w": "school",
+          "note": "学校，范围广"
+        }
+      ]
+    },
+    {
+      "w": "academic",
+      "syn": [
+        {
+          "w": "scholar",
+          "note": "学者"
+        },
+        {
+          "w": "intellectual",
+          "note": "知识分子"
+        },
+        {
+          "w": "theoretical",
+          "note": "理论的"
+        },
+        {
+          "w": "scholastic",
+          "note": "学术的，正式"
+        }
+      ]
+    },
+    {
+      "w": "objective",
+      "syn": [
+        {
+          "w": "impartial",
+          "note": "客观公正的"
+        },
+        {
+          "w": "unbiased",
+          "note": "无偏见的"
+        },
+        {
+          "w": "goal",
+          "note": "目标"
+        },
+        {
+          "w": "aim",
+          "note": "目的"
+        }
+      ]
+    },
+    {
+      "w": "botanical",
+      "syn": [
+        {
+          "w": "botanic",
+          "note": "同义形容词，较少用"
+        },
+        {
+          "w": "plant",
+          "note": "作定语指植物的"
+        }
+      ]
+    }
+  ]
+}

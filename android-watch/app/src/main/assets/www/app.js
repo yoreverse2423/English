@@ -26,7 +26,10 @@
   const DEEPSEEK_PREFS_KEY = 'bcz_deepseek_prefs';
   const READING_HISTORY_KEY = 'bcz_reading_history';
   const DEEPSEEK_ENDPOINT = 'https://api.deepseek.com/chat/completions';
-  const DEEPSEEK_MODELS = ['deepseek-chat', 'deepseek-reasoner'];
+  const DEEPSEEK_MODELS = ['deepseek-flash', 'deepseek-chat', 'deepseek-reasoner'];
+  const DEEPSEEK_DEFAULT_MODEL = 'deepseek-flash';
+  // 原生层连接 30s + 读取 120s，JS 侧留出余量再判超时。
+  const DEEPSEEK_NATIVE_TIMEOUT_MS = 160000;
   const READING_WORD_CAP = 50;
   const READING_HISTORY_LIMIT = 20;
   // 阅读生词补全：收录全部未收录词，按首次出现顺序分批请求，每批最多 18 个。
@@ -174,6 +177,13 @@
   let readingError = '';
   let readingLookup = '';
   let readingActiveId = '';
+  // 学习卡/词表里点同义词时打开的全局释义卡。
+  let synonymLookup = '';
+  // 设置页「用 DeepSeek 生成」的输入、预览和状态。
+  let customWordInput = '';
+  let customWordDraft = null;
+  let customWordGenBusy = false;
+  let customWordGenError = '';
   // 阅读生词补全的后台状态；不阻塞文章显示。
   let readingEnrichBusy = false;
   let readingEnrichPassage = '';
@@ -260,6 +270,45 @@
     });
     const suffix = forms.length > shown.length ? ' …' : '';
     return '<p class="word-forms">变形：' + shown.join(' · ') + suffix + '</p>';
+  }
+
+  // mode: reading / bot 复用各自查词 sheet；其余场景打开全局同义词释义卡。
+  function synonymListHtml(word, mode) {
+    const list = word && Array.isArray(word.syn) ? word.syn.filter(function (item) {
+      return item && item.w;
+    }) : [];
+    if (!list.length) return '';
+    const action = mode === 'reading' ? 'reading-word' : (mode === 'bot' ? 'bot-word' : 'open-synonym');
+    return '<div class="synonym-block">' +
+      '<p class="synonym-title">同义词</p>' +
+      '<div class="synonym-list">' +
+        list.map(function (item) {
+          return '<button class="synonym-chip" type="button" data-action="' + action + '" data-word="' +
+            escapeAttr(item.w) + '">' +
+            '<span class="synonym-word">' + escapeHtml(item.w) + '</span>' +
+            (item.note ? '<span class="synonym-note">' + escapeHtml(item.note) + '</span>' : '') +
+          '</button>';
+        }).join('') +
+      '</div>' +
+    '</div>';
+  }
+
+  function synonymPlainHtml(word) {
+    const list = word && Array.isArray(word.syn) ? word.syn.filter(function (item) {
+      return item && item.w;
+    }) : [];
+    if (!list.length) return '';
+    return '<div class="synonym-block">' +
+      '<p class="synonym-title">同义词</p>' +
+      '<div class="synonym-list">' +
+        list.map(function (item) {
+          return '<span class="synonym-chip is-static">' +
+            '<span class="synonym-word">' + escapeHtml(item.w) + '</span>' +
+            (item.note ? '<span class="synonym-note">' + escapeHtml(item.note) + '</span>' : '') +
+          '</span>';
+        }).join('') +
+      '</div>' +
+    '</div>';
   }
 
 
@@ -466,6 +515,29 @@
     const rawFreq = toText(raw.freq);
     const freq = rawFreq === '高' || rawFreq === '中' || rawFreq === '低' ? rawFreq : '';
 
+    // syn 是高考常用同义词：[{w, note}]，最多 4 条；note 是极短中文区别。
+    const syn = [];
+    const synSeen = new Set();
+    if (Array.isArray(raw.syn)) {
+      raw.syn.forEach(function (item) {
+        let synWord = '';
+        let note = '';
+        if (typeof item === 'string') {
+          synWord = toText(item);
+        } else if (item && typeof item === 'object') {
+          synWord = toText(item.w);
+          note = toText(item.note);
+        }
+        const key = wordKey(synWord);
+        if (!synWord || !key || key === wordKey(word) || synSeen.has(key) || syn.length >= 4) return;
+        synSeen.add(key);
+        syn.push({
+          w: synWord.replace(/\s+/g, ' ').slice(0, 60),
+          note: note.slice(0, 80)
+        });
+      });
+    }
+
     const normalized = {
       id: toText(raw.id),
       w: word,
@@ -477,6 +549,7 @@
       forms: forms,
       wf: wf,
       freq: freq,
+      syn: syn,
       tag: tag,
       book: book,
       unit: unit
@@ -1744,6 +1817,7 @@
         '</div>';
     }
 
+    html += synonymListHtml(word, 'overlay');
     html += '</div>';
     return html;
   }
@@ -2249,6 +2323,7 @@
             ? '<p class="review-browse-example">' + escapeHtml(example.en) +
                 (example.cn ? '<span>' + escapeHtml(example.cn) + '</span>' : '') + '</p>'
             : '') +
+          synonymListHtml(word, 'overlay') +
         '</article>' +
         '<div class="review-browse-actions">' +
           '<button class="btn btn-secondary" type="button" data-action="review-browse-prev"' + (index === 0 ? ' disabled' : '') + '>上一个</button>' +
@@ -2940,6 +3015,7 @@
             (word.pos ? '<span class="vocab-pos">' + escapeHtml(word.pos) + '</span>' : '') +
             escapeHtml(word.cn || '暂无释义') +
           '</p>' +
+          synonymListHtml(word, 'overlay') +
           '<div class="vocab-meta">' +
             '<span class="vocab-tag">' + escapeHtml(word.tag) + '</span>' +
             '<span class="vocab-stage">· ' + escapeHtml(stageText) + '</span>' +
@@ -4338,6 +4414,105 @@
     renderHome();
   }
 
+  /* ---------- 同义词释义卡（学习卡 / 词表通用） ---------- */
+
+  function ensureSynonymSheetRoot() {
+    let root = document.getElementById('synonym-sheet-root');
+    if (!root) {
+      root = document.createElement('div');
+      root.id = 'synonym-sheet-root';
+      document.body.appendChild(root);
+    }
+    return root;
+  }
+
+  function synonymSheetHtml() {
+    const spelling = toText(synonymLookup);
+    if (!spelling) return '';
+    const word = findWordBySpelling(spelling);
+    const head = word ? word.w : spelling;
+    const phonetic = word ? formatPhonetic(word.ph) : '';
+    const progress = word ? getProgress(word) : null;
+    const isLemma = Boolean(word && wordKey(word) !== wordKey(spelling));
+
+    let reviewAction = '';
+    if (!word) {
+      reviewAction = '<p class="reading-sheet-status">词库暂无这个词，暂时不能加入复习。</p>';
+    } else if (!progress) {
+      reviewAction =
+        '<button class="btn btn-primary btn-block reading-sheet-add" type="button" data-action="add-synonym-to-review" data-word="' +
+          escapeAttr(head) + '">加入复习</button>';
+    } else if (progress.masteredAt) {
+      reviewAction = '<p class="reading-sheet-status">已掌握</p>';
+    } else {
+      reviewAction = '<p class="reading-sheet-status">已在复习 · 阶段 ' + progress.stage + ' / ' + STAGE_COUNT + '</p>';
+    }
+
+    return (
+      '<div class="reading-sheet synonym-sheet" role="dialog" aria-modal="false" aria-label="同义词释义">' +
+        '<div class="reading-sheet-card">' +
+          '<div class="reading-sheet-top">' +
+            '<div>' +
+              '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
+              (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+            '</div>' +
+            '<button class="icon-button" type="button" data-action="close-synonym" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
+          '</div>' +
+          (isLemma
+            ? '<p class="reading-sheet-lemma">同义词 ' + escapeHtml(spelling) + ' · 原形 ' + escapeHtml(head) + '</p>'
+            : '') +
+          '<p class="reading-sheet-def">' +
+            (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+            escapeHtml(word && word.cn ? word.cn : '词库暂无') +
+          '</p>' +
+          formsLineHtml(word) +
+          synonymListHtml(word, 'overlay') +
+          '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
+            icon('speaker', 15) + '<span>发音</span>' +
+          '</button>' +
+          reviewAction +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function refreshSynonymSheet() {
+    const root = ensureSynonymSheetRoot();
+    root.innerHTML = synonymSheetHtml();
+  }
+
+  function openSynonymWord(spelling) {
+    const text = toText(spelling);
+    if (!text) return;
+    synonymLookup = text;
+    playPronunciation(text, 2, false);
+    refreshSynonymSheet();
+  }
+
+  function closeSynonymWord() {
+    synonymLookup = '';
+    refreshSynonymSheet();
+  }
+
+  function addSynonymWordToReview(spelling) {
+    const word = findWordBySpelling(spelling);
+    if (!word) {
+      showToast('词库没有这个词的释义，无法加入复习。', 'error');
+      return;
+    }
+    const progress = getProgress(word);
+    if (progress) {
+      showToast(progress.masteredAt ? '这个词已掌握。' : '这个词已经在复习计划里了。');
+      refreshSynonymSheet();
+      return;
+    }
+    ensureLearningProgress(word);
+    saveState();
+    closeSynonymWord();
+    renderCurrentRoute();
+    showToast('已加入复习');
+  }
+
   function botWordSheetHtml() {
     const spelling = toText(botWordLookup);
     if (!spelling) return '';
@@ -4378,6 +4553,7 @@
             escapeHtml(word && word.cn ? word.cn : '词库暂无') +
           '</p>' +
           formsLineHtml(word) +
+          synonymListHtml(word, 'bot') +
           '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
             icon('speaker', 15) + '<span>发音</span>' +
           '</button>' +
@@ -4454,11 +4630,11 @@
     } catch (error) {
       // 使用默认模型。
     }
-    return 'deepseek-chat';
+    return DEEPSEEK_DEFAULT_MODEL;
   }
 
   function saveDeepseekModel(model) {
-    const next = DEEPSEEK_MODELS.indexOf(model) === -1 ? 'deepseek-chat' : model;
+    const next = DEEPSEEK_MODELS.indexOf(model) === -1 ? DEEPSEEK_DEFAULT_MODEL : model;
     try {
       window.localStorage.setItem(DEEPSEEK_PREFS_KEY, JSON.stringify({ model: next }));
     } catch (error) {
@@ -4691,24 +4867,119 @@
     return 'DeepSeek 请求失败（HTTP ' + status + '）。' + (safe ? ' ' + safe : '');
   }
 
-  function requestDeepseekReading(targets, isRetry) {
-    const key = readDeepseekKey();
-    const model = readDeepseekModel();
-    const body = {
-      model: model,
-      messages: buildReadingMessages(targets, isRetry)
-    };
-    if (model !== 'deepseek-reasoner') {
-      body.temperature = 0.7;
-      body.response_format = { type: 'json_object' };
+  let deepseekRequestSeq = 0;
+
+  // 原生桥只把网络错误以字符串抛回；统一映射成和 fetch 路径一致的错误码。
+  function nativeDeepseekError(message) {
+    const text = toText(message) || 'DeepSeek 请求失败，请稍后再试。';
+    let status = 0;
+    const httpMatch = text.match(/HTTP\s*(\d{3})/i);
+    if (httpMatch) status = Number(httpMatch[1]);
+    if (/api\s*key|401/i.test(text)) status = 401;
+    else if (/余额|402/.test(text)) status = 402;
+    else if (/频繁|429/.test(text)) status = 429;
+    if (status) {
+      const error = new Error(status === 401 ? 'DeepSeek API Key 无效或已失效，请在设置中重新保存。' :
+        status === 402 ? 'DeepSeek 账户余额不足，暂时无法生成。' :
+        status === 429 ? 'DeepSeek 请求过于频繁，请稍后再试。' :
+        deepseekFailure(status, { message: text }));
+      error.code = 'http';
+      return error;
     }
+    const error = new Error(text);
+    error.code = /网络|连接|resolve|timeout|timed out|unable|refused/i.test(text) ? 'network' : 'native';
+    return error;
+  }
+
+  // APK 内 file:// 页面受 CORS 限制，优先走 MainActivity 的 HttpURLConnection 桥。
+  function requestDeepseekNative(payload) {
+    return new Promise(function (resolve, reject) {
+      const bridge = window.XiaodanciciNative;
+      if (!bridge || typeof bridge.deepseekChat !== 'function') {
+        const unavailable = new Error('native-unavailable');
+        unavailable.code = 'native-unavailable';
+        reject(unavailable);
+        return;
+      }
+
+      deepseekRequestSeq += 1;
+      const requestId = 'xd-deepseek-' + Date.now() + '-' + deepseekRequestSeq;
+      const callbackName = '__xdDeepseekCb' + deepseekRequestSeq;
+      let settled = false;
+      let timer = 0;
+
+      function cleanup() {
+        if (timer) {
+          clearTimeout(timer);
+          timer = 0;
+        }
+        try {
+          delete window[callbackName];
+        } catch (error) {
+          window[callbackName] = undefined;
+        }
+      }
+
+      window[callbackName] = function (err, data) {
+        if (settled) return;
+        settled = true;
+        cleanup();
+        if (err) {
+          reject(nativeDeepseekError(err));
+          return;
+        }
+        if (!data) {
+          const error = new Error('DeepSeek 返回了空数据，请稍后再试。');
+          error.code = 'invalid-json';
+          reject(error);
+          return;
+        }
+        try {
+          resolve(typeof data === 'string' ? JSON.parse(data) : data);
+        } catch (parseError) {
+          const error = new Error('DeepSeek 返回了无法解析的数据，请稍后再试。');
+          error.code = 'invalid-json';
+          reject(error);
+        }
+      };
+
+      timer = window.setTimeout(function () {
+        if (settled) return;
+        settled = true;
+        cleanup();
+        const error = new Error(deepseekFailure(0, null));
+        error.code = 'network';
+        reject(error);
+      }, DEEPSEEK_NATIVE_TIMEOUT_MS);
+
+      try {
+        bridge.deepseekChat(requestId, callbackName, JSON.stringify(payload));
+      } catch (callError) {
+        settled = true;
+        cleanup();
+        const error = new Error(deepseekFailure(0, null));
+        error.code = 'network';
+        reject(error);
+      }
+    });
+  }
+
+  function requestDeepseekFetch(payload) {
+    if (typeof fetch !== 'function') {
+      const error = new Error(deepseekFailure(0, null));
+      error.code = 'network';
+      return Promise.reject(error);
+    }
+    const outbound = Object.assign({}, payload);
+    const key = outbound.apiKey;
+    delete outbound.apiKey;
     return fetch(DEEPSEEK_ENDPOINT, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Authorization: 'Bearer ' + key
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(outbound)
     }).then(function (response) {
       return response.text().then(function (text) {
         let data = null;
@@ -4724,15 +4995,62 @@
           error.code = 'http';
           throw error;
         }
-        const content = data && data.choices && data.choices[0] && data.choices[0].message
-          ? data.choices[0].message.content
-          : '';
-        const parsed = content && typeof content === 'object' ? content : extractJsonObject(content);
-        return normalizeGeneratedReading(parsed, targets);
+        return data;
       });
     }).catch(function (error) {
-      if (error && (error.code === 'invalid-json' || error.code === 'http')) throw error;
+      if (error && (error.code === 'http' || error.code === 'invalid-json')) throw error;
       const networkError = new Error(deepseekFailure(0, null));
+      networkError.code = 'network';
+      throw networkError;
+    });
+  }
+
+  // 原生桥优先；Web/桌面浏览器没有原生桥时直接 fetch。
+  function requestDeepseek(body) {
+    const key = readDeepseekKey();
+    if (!key) {
+      const error = new Error('还没有保存 DeepSeek API Key，请先在设置中保存。');
+      error.code = 'no-key';
+      return Promise.reject(error);
+    }
+    const payload = Object.assign({}, body, { apiKey: key });
+    return requestDeepseekNative(payload).catch(function (nativeError) {
+      if (nativeError && nativeError.code === 'native-unavailable') {
+        return requestDeepseekFetch(payload);
+      }
+      // 原生桥已经拿到明确结果（HTTP 错误、JSON 错误）时无需再撞一次 CORS；
+      // 只有网络层失败才回退 fetch，兼容桌面浏览器或桥上不可用的场景。
+      if (nativeError && nativeError.code !== 'network') throw nativeError;
+      return requestDeepseekFetch(payload).catch(function () {
+        throw nativeError;
+      });
+    });
+  }
+
+  function deepseekContent(data) {
+    return data && data.choices && data.choices[0] && data.choices[0].message
+      ? data.choices[0].message.content
+      : '';
+  }
+
+  function requestDeepseekReading(targets, isRetry) {
+    const model = readDeepseekModel();
+    const body = {
+      model: model,
+      messages: buildReadingMessages(targets, isRetry)
+    };
+    if (model !== 'deepseek-reasoner') {
+      body.temperature = 0.7;
+    }
+    // deepseek-flash / deepseek-chat 均开 JSON mode；reasoner 不用。
+    if (model !== 'deepseek-reasoner') body.response_format = { type: 'json_object' };
+    return requestDeepseek(body).then(function (data) {
+      const content = deepseekContent(data);
+      const parsed = content && typeof content === 'object' ? content : extractJsonObject(content);
+      return normalizeGeneratedReading(parsed, targets);
+    }).catch(function (error) {
+      if (error && (error.code === 'invalid-json' || error.code === 'http' || error.code === 'no-key')) throw error;
+      const networkError = new Error(error && error.message ? error.message : deepseekFailure(0, null));
       networkError.code = 'network';
       throw networkError;
     });
@@ -4760,26 +5078,48 @@
     return result;
   }
 
-  function buildOovEnrichMessages(words) {
-    const list = words.map(function (word, index) {
-      return (index + 1) + '. ' + word;
-    }).join('\n');
-    const system = '你是高中英语词典编辑，熟悉高考词汇和完形填空搭配。只输出一个 JSON 对象，不要使用 Markdown 代码块，不要附加任何解释。';
-    const user = '请为下面每个英文单词生成一条词库条目，供背单词应用直接使用。\n' +
-      '要求：\n' +
-      '1. 每条对象字段：{"w":"词典原形","ph":"/音标/","pos":"词性（如 v. / n. / adj. / adv.）","cn":"中文释义",' +
+  const WORD_ENTRY_SYSTEM = '你是高中英语词典编辑，熟悉高考词汇和完形填空搭配。只输出一个 JSON 对象，不要使用 Markdown 代码块，不要附加任何解释。';
+
+  // OOV 补全与自定义词生成共用同一套字段和规则，避免两条 prompt 越改越不一致。
+  function wordEntryRulesText() {
+    return '1. 每条对象字段：{"w":"词典原形","ph":"/音标/","pos":"词性（如 v. / n. / adj. / adv.）","cn":"中文释义",' +
         '"col":[{"en":"高考完形或阅读常见搭配","cn":"中文"}],"ex":{"en":"一句原创英文例句","cn":"中文翻译"},' +
-        '"wf":{"n":[],"v":[],"adj":[],"adv":[]},"freq":"高|中|低"}\n' +
+        '"wf":{"n":[],"v":[],"adj":[],"adv":[]},"freq":"高|中|低",' +
+        '"syn":[{"w":"同义词","note":"极短中文区别"}]}\n' +
       '2. w 用词典原形。如果给出的词是屈折形式（过去式、过去分词、-ing、第三人称单数、复数、比较级等），请把该形式放进 wf 对应的类别，同时仍要写全原形的其他词形。\n' +
       '3. cn 用适合高中生的简明中文释义；col 给 2 到 3 条高考完形或阅读常见搭配。\n' +
       '4. ex 给一句原创英文例句和中文翻译，不要照抄阅读原文。\n' +
       '5. wf 必须写入全部真实词形（屈折+派生），不要只写原形。v：原形、三单、过去式、过去分词（若不同）、-ing；已有相关动词原形也保留并写出屈折。n：单数+真实复数（child/children，analysis/analyses）；保留 helper、helpfulness 这类相关名词。adj：原级；有单字比较级/最高级时写上（bigger/biggest，better/best，happier/happiest）；不要写 more/most + 形容词。adv：真实副词（helpfully，carefully）；没有则空数组。只写真实英语单词，不要编造。某词性确实没有形式才留空数组。\n' +
       '6. freq 按高考频率判断：常见核心词为“高”，一般课标词为“中”，生僻或文学词为“低”。\n' +
-      '7. 不要输出阅读题答案，不要输出 JSON 以外的任何文字。\n' +
+      '7. syn 给 2 到 4 个高考常用同义词，note 写极短中文区别（如“偏正式”“指物”“强调结果”）。宁可少写也不要凑数；没有合适同义词时输出空数组。同义词不要与原词重复。\n' +
+      '8. 不要输出阅读题答案，不要输出 JSON 以外的任何文字。';
+  }
+
+  function buildOovEnrichMessages(words) {
+    const list = words.map(function (word, index) {
+      return (index + 1) + '. ' + word;
+    }).join('\n');
+    const user = '请为下面每个英文单词生成一条词库条目，供背单词应用直接使用。\n' +
+      '要求：\n' + wordEntryRulesText() + '\n' +
       '只返回 {"words":[...]}，为每个请求词各生成一条。\n' +
       '单词：\n' + list;
     return [
-      { role: 'system', content: system },
+      { role: 'system', content: WORD_ENTRY_SYSTEM },
+      { role: 'user', content: user }
+    ];
+  }
+
+  function buildCustomWordMessages(word, isRetry) {
+    const target = toText(word).replace(/\s+/g, ' ');
+    let user = '请为英文单词“' + target + '”生成一条词库条目，供背单词应用直接使用。\n' +
+      '要求：\n' + wordEntryRulesText() + '\n' +
+      '只返回一个词条 JSON 对象（不要用 words 数组包裹）：{"w":"","ph":"","pos":"","cn":"","col":[],"ex":{"en":"","cn":""},"wf":{"n":[],"v":[],"adj":[],"adv":[]},"freq":"中","syn":[]}。\n' +
+      '单词：' + target;
+    if (isRetry) {
+      user += '\n\n上一次输出无法解析成合法词条 JSON。这次只输出一个合法 JSON 对象，不要代码块或解释。';
+    }
+    return [
+      { role: 'system', content: WORD_ENTRY_SYSTEM },
       { role: 'user', content: user }
     ];
   }
@@ -4791,7 +5131,6 @@
   }
 
   function requestDeepseekOovEnrich(words) {
-    const key = readDeepseekKey();
     const model = readDeepseekModel();
     const body = {
       model: model,
@@ -4799,48 +5138,96 @@
     };
     if (model !== 'deepseek-reasoner') {
       body.temperature = 0.3;
-      body.response_format = { type: 'json_object' };
     }
-    return fetch(DEEPSEEK_ENDPOINT, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + key
-      },
-      body: JSON.stringify(body)
-    }).then(function (response) {
-      return response.text().then(function (text) {
-        let data = null;
-        if (text) {
-          try {
-            data = JSON.parse(text);
-          } catch (error) {
-            data = { message: String(text).slice(0, 180) };
-          }
-        }
-        if (!response.ok) {
-          const error = new Error(deepseekFailure(response.status, data));
-          error.code = 'http';
-          throw error;
-        }
-        const content = data && data.choices && data.choices[0] && data.choices[0].message
-          ? data.choices[0].message.content
-          : '';
-        let parsed;
-        try {
-          parsed = content && typeof content === 'object' ? content : extractJsonObject(content);
-        } catch (parseError) {
-          throw invalidOovError();
-        }
-        const rawList = Array.isArray(parsed)
-          ? parsed
-          : (parsed && Array.isArray(parsed.words) ? parsed.words : []);
-        if (!rawList.length) throw invalidOovError();
-        return rawList;
-      });
+    // deepseek-flash / deepseek-chat 均开 JSON mode；reasoner 不用。
+    if (model !== 'deepseek-reasoner') body.response_format = { type: 'json_object' };
+    return requestDeepseek(body).then(function (data) {
+      const content = deepseekContent(data);
+      let parsed;
+      try {
+        parsed = content && typeof content === 'object' ? content : extractJsonObject(content);
+      } catch (parseError) {
+        throw invalidOovError();
+      }
+      const rawList = Array.isArray(parsed)
+        ? parsed
+        : (parsed && Array.isArray(parsed.words) ? parsed.words : []);
+      if (!rawList.length) throw invalidOovError();
+      return rawList;
     }).catch(function (error) {
-      if (error && (error.code === 'invalid-json' || error.code === 'http')) throw error;
-      const networkError = new Error(deepseekFailure(0, null));
+      if (error && (error.code === 'invalid-json' || error.code === 'http' || error.code === 'no-key')) throw error;
+      const networkError = new Error(error && error.message ? error.message : deepseekFailure(0, null));
+      networkError.code = 'network';
+      throw networkError;
+    });
+  }
+
+  function invalidCustomWordError() {
+    const error = new Error('DeepSeek 返回的词条格式不正确，请再试一次。');
+    error.code = 'invalid-json';
+    return error;
+  }
+
+  // 严格校验生成结果：w / cn 必填，freq 必须是三档之一，结构化字段类型必须正确。
+  function normalizeGeneratedCustomWord(payload) {
+    const raw = payload && payload.word && typeof payload.word === 'object' ? payload.word : payload;
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw invalidCustomWordError();
+    if (typeof raw.w !== 'string' || !raw.w.trim()) throw invalidCustomWordError();
+    if (typeof raw.cn !== 'string' || !raw.cn.trim()) throw invalidCustomWordError();
+    if (raw.freq !== '高' && raw.freq !== '中' && raw.freq !== '低') throw invalidCustomWordError();
+    if (raw.col !== undefined && raw.col !== null && !Array.isArray(raw.col)) throw invalidCustomWordError();
+    if (raw.ex !== undefined && raw.ex !== null && (typeof raw.ex !== 'object' || Array.isArray(raw.ex))) {
+      throw invalidCustomWordError();
+    }
+    if (raw.wf !== undefined && raw.wf !== null && (typeof raw.wf !== 'object' || Array.isArray(raw.wf))) {
+      throw invalidCustomWordError();
+    }
+    if (raw.syn !== undefined && raw.syn !== null) {
+      if (!Array.isArray(raw.syn)) throw invalidCustomWordError();
+      if (raw.syn.some(function (item) {
+        if (typeof item === 'string') return !item.trim();
+        return !item || typeof item !== 'object' || !toText(item.w);
+      })) {
+        throw invalidCustomWordError();
+      }
+    }
+
+    const normalized = normalizeCustomWord(raw);
+    if (!normalized) throw invalidCustomWordError();
+    if (!wordKey(normalized) || !/^[a-z][a-z' -]*$/i.test(normalized.w)) {
+      throw invalidCustomWordError();
+    }
+    syncWordFormsFromWf(normalized);
+    return normalized;
+  }
+
+  function requestDeepseekCustomWord(word, isRetry) {
+    const model = readDeepseekModel();
+    const body = {
+      model: model,
+      messages: buildCustomWordMessages(word, isRetry)
+    };
+    if (model !== 'deepseek-reasoner') {
+      body.temperature = 0.3;
+    }
+    // deepseek-flash / deepseek-chat 均开 JSON mode；reasoner 不用。
+    if (model !== 'deepseek-reasoner') body.response_format = { type: 'json_object' };
+    return requestDeepseek(body).then(function (data) {
+      const content = deepseekContent(data);
+      let parsed;
+      try {
+        parsed = content && typeof content === 'object' ? content : extractJsonObject(content);
+      } catch (parseError) {
+        throw invalidCustomWordError();
+      }
+      return normalizeGeneratedCustomWord(parsed);
+    }).catch(function (error) {
+      // 模型偶发输出非 JSON 时重试一次，仍失败才提示用户。
+      if (!isRetry && error && error.code === 'invalid-json') {
+        return requestDeepseekCustomWord(word, true);
+      }
+      if (error && (error.code === 'invalid-json' || error.code === 'http' || error.code === 'no-key')) throw error;
+      const networkError = new Error(error && error.message ? error.message : deepseekFailure(0, null));
       networkError.code = 'network';
       throw networkError;
     });
@@ -5022,7 +5409,7 @@
     return {
       id: String(raw.id || ''),
       createdAt: toTimestamp(raw.createdAt) || Date.now(),
-      model: DEEPSEEK_MODELS.indexOf(raw.model) === -1 ? 'deepseek-chat' : raw.model,
+      model: DEEPSEEK_MODELS.indexOf(raw.model) === -1 ? DEEPSEEK_DEFAULT_MODEL : raw.model,
       targetWords: Array.isArray(raw.targetWords) ? raw.targetWords.map(function (word) {
         return String(word);
       }).filter(Boolean).slice(0, READING_WORD_CAP) : [],
@@ -5360,6 +5747,7 @@
             escapeHtml(word && word.cn ? word.cn : '词库暂无') +
           '</p>' +
           formsLineHtml(word) +
+          synonymListHtml(word, 'reading') +
           '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
             icon('speaker', 15) + '<span>发音</span>' +
           '</button>' +
@@ -5772,7 +6160,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.17 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.18 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 
@@ -5853,11 +6241,11 @@
             '<select class="reading-model-select" id="deepseek-model-select" aria-label="DeepSeek 模型">' +
               DEEPSEEK_MODELS.map(function (model) {
                 const selected = model === readDeepseekModel() ? ' selected' : '';
-                const label = model === 'deepseek-chat' ? 'deepseek-chat（默认）' : model;
+                const label = model === DEEPSEEK_DEFAULT_MODEL ? model + '（默认）' : model;
                 return '<option value="' + model + '"' + selected + '>' + label + '</option>';
               }).join('') +
             '</select>' +
-            '<p class="sync-hint">默认使用 deepseek-chat。生成内容是高考阅读理解难度的原创短文和四道选择题。</p>' +
+            '<p class="sync-hint">默认使用 deepseek-flash。每日阅读生成高考难度的原创短文和四道选择题；设置页「自定义词」也可用同一密钥生成单个词条。</p>' +
           '</div>' +
         '</section>' +
 
@@ -5867,12 +6255,27 @@
             '<p class="settings-card-desc">当前词库共 ' + total + ' 个词，其中自定义词 ' + customCount + ' 个。</p>' +
           '</div>' +
           '<div class="settings-body">' +
+            '<div class="custom-generate">' +
+              '<label class="sync-label" for="custom-word-gen-input">用 DeepSeek 生成</label>' +
+              '<div class="custom-generate-row">' +
+                '<input class="sync-token-input custom-generate-input" id="custom-word-gen-input" type="text" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="输入一个英文单词" aria-label="要生成词条的英文单词" value="' + escapeAttr(customWordInput) + '">' +
+                '<button class="btn btn-primary custom-generate-btn" type="button" data-action="generate-custom-word"' + (customWordGenBusy ? ' disabled' : '') + '>' +
+                  icon('sparkle', 17) + (customWordGenBusy ? '生成中…' : '生成') +
+                '</button>' +
+              '</div>' +
+              '<p class="sync-hint">需要联网，并使用上方已保存的 DeepSeek API Key。生成结果先预览，确认后才写入词库。</p>' +
+              (customWordGenError
+                ? '<p class="sync-status is-error" role="alert">' + escapeHtml(customWordGenError) + '</p>'
+                : '') +
+              (customWordDraft ? customWordPreviewHtml(customWordDraft) : '') +
+            '</div>' +
+            '<p class="custom-divider">或手动粘贴</p>' +
             '<textarea class="custom-textarea" id="custom-words-input" spellcheck="false" placeholder="每行一个词，例如：&#10;serendipity|/ˌserənˈdɪpəti/|n. 意外发现珍奇事物的运气|a happy serendipity; by serendipity"></textarea>' +
             '<p class="format-hint">每行格式：单词 | 音标 | 释义 | 搭配1;搭配2（后两项可省略）。释义开头可写 n. / v. / adj. 等词性。' +
               '<code>wander|/ˈwɒndə(r)/|v. 漫步；闲逛|wander around; wander off</code>' +
             '</p>' +
             '<div class="button-row">' +
-              '<button class="btn btn-primary" type="button" data-action="add-custom-words">' + icon('sparkle', 17) + '添加到词库</button>' +
+              '<button class="btn btn-secondary" type="button" data-action="add-custom-words">' + icon('sparkle', 17) + '手动添加到词库</button>' +
             '</div>' +
           '</div>' +
         '</section>' +
@@ -6111,6 +6514,149 @@
     showToast('已添加 ' + added + ' 个单词' + (extra.length ? '，' + extra.join('，') : ''));
   }
 
+  /* ---------- 用 DeepSeek 生成自定义词 ---------- */
+
+  // 用阅读查词索引判断，覆盖整本内置词库（不受当前勾选单元影响）和自定义词。
+  function customWordExists(wordOrText) {
+    const key = wordKey(wordOrText);
+    if (!key) return false;
+    return getReadingWordIndex().map.has(key);
+  }
+
+  function customWordPreviewHtml(word) {
+    const collocations = Array.isArray(word.col) ? word.col.filter(function (item) {
+      return item && (item.en || item.cn);
+    }) : [];
+    const phonetic = formatPhonetic(word.ph);
+
+    let html = '<div class="custom-word-preview">' +
+      '<p class="custom-word-preview-kicker">生成结果 · 确认后加入</p>' +
+      '<div class="custom-word-preview-head">' +
+        '<h3 class="custom-word-preview-word">' + escapeHtml(word.w) + freqTagHtml(word) + '</h3>' +
+        (phonetic ? '<span class="custom-word-preview-ph">' + escapeHtml(phonetic) + '</span>' : '') +
+      '</div>' +
+      '<p class="custom-word-preview-def">' +
+        (word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+        escapeHtml(word.cn || '暂无释义') +
+      '</p>' +
+      formsLineHtml(word) +
+      (collocations.length
+        ? '<div class="info-block"><p class="info-title">常用搭配</p><ul class="collocation-list">' +
+            collocations.map(function (item) {
+              return '<li class="collocation-item">' +
+                '<span class="collocation-en">' + escapeHtml(item.en) + '</span>' +
+                (item.cn ? '<span class="collocation-cn">' + escapeHtml(item.cn) + '</span>' : '') +
+              '</li>';
+            }).join('') + '</ul></div>'
+        : '') +
+      (word.ex && (word.ex.en || word.ex.cn)
+        ? '<div class="info-block"><p class="info-title">例句</p><blockquote class="example-box">' +
+            (word.ex.en ? '<p class="example-en">' + escapeHtml(word.ex.en) + '</p>' : '') +
+            (word.ex.cn ? '<p class="example-cn">' + escapeHtml(word.ex.cn) + '</p>' : '') +
+          '</blockquote></div>'
+        : '') +
+      synonymPlainHtml(word) +
+      '<div class="button-row custom-word-preview-actions">' +
+        '<button class="btn btn-primary" type="button" data-action="confirm-custom-word">' + icon('check', 17) + '确认加入</button>' +
+        '<button class="btn btn-ghost" type="button" data-action="cancel-custom-word">取消</button>' +
+      '</div>' +
+    '</div>';
+    return html;
+  }
+
+  function startCustomWordGeneration() {
+    if (customWordGenBusy) return;
+    const input = document.getElementById('custom-word-gen-input');
+    const word = toText(input ? input.value : customWordInput);
+    customWordInput = word;
+    if (!word) {
+      showToast('请先输入一个英文单词。', 'error');
+      if (input) input.focus();
+      return;
+    }
+    if (!/^[A-Za-z][A-Za-z'\-]*$/.test(word)) {
+      showToast('一次只生成一个英文单词（可含连字符或撇号）。', 'error');
+      return;
+    }
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+      showToast('需要联网才能用 DeepSeek 生成。', 'error');
+      return;
+    }
+    if (!readDeepseekKey()) {
+      showToast('请先在上方「每日阅读 · DeepSeek」保存 API Key。', 'error');
+      return;
+    }
+
+    customWordGenBusy = true;
+    customWordGenError = '';
+    customWordDraft = null;
+    renderSettings();
+
+    requestDeepseekCustomWord(word).then(function (generated) {
+      customWordGenBusy = false;
+      const duplicate = customWordExists(generated);
+      if (duplicate) {
+        customWordDraft = null;
+        customWordGenError = '';
+        renderSettings();
+        showToast('「' + generated.w + '」已经在词库中，不重复添加。');
+        return;
+      }
+      customWordDraft = generated;
+      customWordGenError = '';
+      renderSettings();
+      showToast('已生成词条，请确认后加入。');
+    }).catch(function (error) {
+      customWordGenBusy = false;
+      customWordDraft = null;
+      customWordGenError = error && error.message ? error.message : '生成失败，请稍后再试。';
+      renderSettings();
+      showToast(customWordGenError, 'error');
+    });
+  }
+
+  function confirmCustomWordDraft() {
+    if (!customWordDraft) return;
+    const normalized = normalizeCustomWord(customWordDraft);
+    if (!normalized) {
+      customWordDraft = null;
+      customWordGenError = '生成的词条无法识别，请重新生成。';
+      renderSettings();
+      showToast(customWordGenError, 'error');
+      return;
+    }
+    const duplicate = customWordExists(normalized);
+    if (duplicate) {
+      customWordDraft = null;
+      customWordGenError = '';
+      renderSettings();
+      showToast('「' + normalized.w + '」已经在词库中，不重复添加。');
+      return;
+    }
+
+    state.customWords.push(normalized);
+    const selection = new Set(getSelectedUnits());
+    selection.add(CUSTOM_UNIT_ID);
+    state.selectedUnits = Array.from(selection);
+    invalidateWordCache();
+
+    const addedWord = findWordBySpelling(normalized.w);
+    if (addedWord) ensureLearningProgress(addedWord);
+    saveState();
+
+    customWordDraft = null;
+    customWordGenError = '';
+    customWordInput = '';
+    renderSettings();
+    showToast('已加入词库并进入复习');
+  }
+
+  function cancelCustomWordDraft() {
+    customWordDraft = null;
+    customWordGenError = '';
+    renderSettings();
+  }
+
   /* ---------- 设置操作 ---------- */
 
   function updateDailyNew(rawValue) {
@@ -6212,6 +6758,10 @@
     if (getRouteFromHash() !== route) setRouteHash(route);
 
     const previousRoute = currentRoute;
+    if (synonymLookup) {
+      synonymLookup = '';
+      refreshSynonymSheet();
+    }
     if (previousRoute === 'home' && route !== 'home') {
       // 离开首页时收起 bot 任务的单词释义卡，回来时不自动弹出。
       botWordLookup = '';
@@ -6498,10 +7048,22 @@
     } else if (action === 'close-reading-word') {
       readingLookup = '';
       renderReading();
+    } else if (action === 'open-synonym') {
+      openSynonymWord(actionEl.getAttribute('data-word'));
+    } else if (action === 'close-synonym') {
+      closeSynonymWord();
+    } else if (action === 'add-synonym-to-review') {
+      addSynonymWordToReview(actionEl.getAttribute('data-word'));
     } else if (action === 'import-backup') {
       if (importInput) importInput.click();
     } else if (action === 'add-custom-words') {
       addCustomWords();
+    } else if (action === 'generate-custom-word') {
+      startCustomWordGeneration();
+    } else if (action === 'confirm-custom-word') {
+      confirmCustomWordDraft();
+    } else if (action === 'cancel-custom-word') {
+      cancelCustomWordDraft();
     } else if (action === 'reset-data') {
       resetAllData();
     } else if (action === 'toggle-book-panel') {
@@ -6526,6 +7088,8 @@
       browseLimit = BROWSE_PAGE_SIZE;
       updateSearchClearButton();
       renderBrowseList();
+    } else if (target.id === 'custom-word-gen-input') {
+      customWordInput = target.value;
     }
   }
 
@@ -6565,6 +7129,12 @@
   }
 
   function handleDocumentKeydown(event) {
+    if (currentRoute === 'settings' && event.target &&
+        event.target.id === 'custom-word-gen-input' && event.key === 'Enter') {
+      event.preventDefault();
+      startCustomWordGeneration();
+      return;
+    }
     if (currentRoute === 'review') {
       handleReviewKeydown(event);
       return;

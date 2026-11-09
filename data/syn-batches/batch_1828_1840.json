@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "w": "vitamin",
+      "syn": []
+    },
+    {
+      "w": "fibre",
+      "syn": [
+        {
+          "w": "thread",
+          "note": "细线，指纤维状物"
+        },
+        {
+          "w": "strand",
+          "note": "一股、一缕，强调单根"
+        }
+      ]
+    },
+    {
+      "w": "quantity",
+      "syn": [
+        {
+          "w": "amount",
+          "note": "数量，多接不可数名词"
+        },
+        {
+          "w": "number",
+          "note": "数目，多接可数名词"
+        },
+        {
+          "w": "volume",
+          "note": "量、容量，侧重大量"
+        }
+      ]
+    },
+    {
+      "w": "dairy",
+      "syn": []
+    },
+    {
+      "w": "moderation",
+      "syn": [
+        {
+          "w": "restraint",
+          "note": "克制，侧重自我约束"
+        },
+        {
+          "w": "temperance",
+          "note": "节制，较正式"
+        }
+      ]
+    },
+    {
+      "w": "ideal",
+      "syn": [
+        {
+          "w": "perfect",
+          "note": "完美的，最常用"
+        },
+        {
+          "w": "model",
+          "note": "作定语表“模范的”"
+        },
+        {
+          "w": "faultless",
+          "note": "无缺点的，语气较强"
+        }
+      ]
+    },
+    {
+      "w": "fundamental",
+      "syn": [
+        {
+          "w": "basic",
+          "note": "最基本的，最常用"
+        },
+        {
+          "w": "essential",
+          "note": "必不可少的，根本的"
+        },
+        {
+          "w": "primary",
+          "note": "首要的、基本的"
+        }
+      ]
+    },
+    {
+      "w": "chew",
+      "syn": [
+        {
+          "w": "bite",
+          "note": "咬，动作更短促"
+        },
+        {
+          "w": "munch",
+          "note": "大声咀嚼，口语"
+        },
+        {
+          "w": "ruminate",
+          "note": "反刍；反复思考（对应“深思”）"
+        }
+      ]
+    },
+    {
+      "w": "consistent",
+      "syn": [
+        {
+          "w": "steady",
+          "note": "稳定的，侧重不波动"
+        },
+        {
+          "w": "constant",
+          "note": "始终不变的"
+        },
+        {
+          "w": "coherent",
+          "note": "连贯一致的，多指说法"
+        }
+      ]
+    },
+    {
+      "w": "modest",
+      "syn": [
+        {
+          "w": "humble",
+          "note": "谦逊的，也可指地位低"
+        },
+        {
+          "w": "moderate",
+          "note": "适度的，指程度不极端"
+        }
+      ]
+    },
+    {
+      "w": "trick",
+      "syn": [
+        {
+          "w": "scheme",
+          "note": "计谋，多指暗中算计"
+        },
+        {
+          "w": "prank",
+          "note": "恶作剧，无恶意"
+        },
+        {
+          "w": "deception",
+          "note": "欺骗，较正式"
+        }
+      ]
+    },
+    {
+      "w": "overall",
+      "syn": [
+        {
+          "w": "general",
+          "note": "总的，作定语"
+        },
+        {
+          "w": "comprehensive",
+          "note": "全面的，包罗广"
+        },
+        {
+          "w": "entire",
+          "note": "全部的、整个的"
+        }
+      ]
+    }
+  ]
+}

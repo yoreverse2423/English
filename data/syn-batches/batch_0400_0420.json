@@ -1,0 +1,380 @@
+{
+  "items": [
+    {
+      "w": "committee",
+      "syn": [
+        {
+          "w": "council",
+          "note": "委员会/理事会，偏行政或立法"
+        },
+        {
+          "w": "board",
+          "note": "董事会/委员会，侧重管理机构"
+        },
+        {
+          "w": "commission",
+          "note": "专门委员会，偏调查或事务"
+        },
+        {
+          "w": "panel",
+          "note": "专家小组/委员会"
+        }
+      ]
+    },
+    {
+      "w": "establish",
+      "syn": [
+        {
+          "w": "found",
+          "note": "创办/建立，强调起始"
+        },
+        {
+          "w": "set up",
+          "note": "建立/创办，常用短语"
+        },
+        {
+          "w": "create",
+          "note": "创建，较泛"
+        },
+        {
+          "w": "institute",
+          "note": "设立/建立，较正式"
+        }
+      ]
+    },
+    {
+      "w": "limit",
+      "syn": [
+        {
+          "w": "restriction",
+          "note": "限制/规定，名词"
+        },
+        {
+          "w": "boundary",
+          "note": "界线/界限，名词"
+        },
+        {
+          "w": "restrict",
+          "note": "限制，动词"
+        },
+        {
+          "w": "confine",
+          "note": "限定/限制，较正式"
+        }
+      ]
+    },
+    {
+      "w": "prevent",
+      "syn": [
+        {
+          "w": "stop",
+          "note": "阻止，通用"
+        },
+        {
+          "w": "hinder",
+          "note": "妨碍/阻碍，较正式"
+        },
+        {
+          "w": "avert",
+          "note": "防止/避免，常指危险"
+        },
+        {
+          "w": "block",
+          "note": "阻挡/阻止"
+        }
+      ]
+    },
+    {
+      "w": "prevent ... from",
+      "syn": [
+        {
+          "w": "stop ... from",
+          "note": "阻止…做，通用"
+        },
+        {
+          "w": "keep ... from",
+          "note": "使不能/阻止…做"
+        },
+        {
+          "w": "hinder ... from",
+          "note": "妨碍…做，较正式"
+        }
+      ]
+    },
+    {
+      "w": "loss",
+      "syn": [
+        {
+          "w": "damage",
+          "note": "损失/损害，偏破坏"
+        },
+        {
+          "w": "deficit",
+          "note": "亏损/赤字"
+        },
+        {
+          "w": "failure",
+          "note": "失败，对应义项"
+        },
+        {
+          "w": "reduction",
+          "note": "减少，对应义项"
+        }
+      ]
+    },
+    {
+      "w": "contribution",
+      "syn": [
+        {
+          "w": "donation",
+          "note": "捐献，多指财物"
+        },
+        {
+          "w": "input",
+          "note": "贡献/投入"
+        },
+        {
+          "w": "submission",
+          "note": "投稿/提交"
+        }
+      ]
+    },
+    {
+      "w": "contribute",
+      "syn": [
+        {
+          "w": "donate",
+          "note": "捐献，多指财物"
+        },
+        {
+          "w": "give",
+          "note": "给予/贡献，较泛"
+        },
+        {
+          "w": "add",
+          "note": "增添/促成"
+        },
+        {
+          "w": "submit",
+          "note": "投稿/提交"
+        }
+      ]
+    },
+    {
+      "w": "department",
+      "syn": [
+        {
+          "w": "division",
+          "note": "部门/分部"
+        },
+        {
+          "w": "section",
+          "note": "科/处/部分"
+        },
+        {
+          "w": "bureau",
+          "note": "局/办事处"
+        },
+        {
+          "w": "branch",
+          "note": "分支/部门"
+        }
+      ]
+    },
+    {
+      "w": "fund",
+      "syn": [
+        {
+          "w": "finance",
+          "note": "资金；资助，动词"
+        },
+        {
+          "w": "capital",
+          "note": "资金/资本"
+        },
+        {
+          "w": "sponsor",
+          "note": "资助，动词"
+        }
+      ]
+    },
+    {
+      "w": "within",
+      "syn": [
+        {
+          "w": "inside",
+          "note": "在…里面"
+        },
+        {
+          "w": "in",
+          "note": "在…之内，时间或空间"
+        },
+        {
+          "w": "before",
+          "note": "在…之前，侧重时限"
+        }
+      ]
+    },
+    {
+      "w": "investigate",
+      "syn": [
+        {
+          "w": "examine",
+          "note": "调查/检查"
+        },
+        {
+          "w": "look into",
+          "note": "调查，常用短语"
+        },
+        {
+          "w": "probe",
+          "note": "调查，较正式/新闻用语"
+        },
+        {
+          "w": "research",
+          "note": "研究"
+        }
+      ]
+    },
+    {
+      "w": "issue",
+      "syn": [
+        {
+          "w": "problem",
+          "note": "问题，名词"
+        },
+        {
+          "w": "topic",
+          "note": "议题，名词"
+        },
+        {
+          "w": "publish",
+          "note": "发行/发布，动词"
+        },
+        {
+          "w": "release",
+          "note": "发布/发行，动词"
+        }
+      ]
+    },
+    {
+      "w": "conduct",
+      "syn": [
+        {
+          "w": "behavior",
+          "note": "行为，名词"
+        },
+        {
+          "w": "manage",
+          "note": "管理/实施，动词"
+        },
+        {
+          "w": "carry out",
+          "note": "进行/实施，短语"
+        },
+        {
+          "w": "lead",
+          "note": "带领/引导"
+        }
+      ]
+    },
+    {
+      "w": "document",
+      "syn": [
+        {
+          "w": "file",
+          "note": "文件，电子或纸质"
+        },
+        {
+          "w": "record",
+          "note": "记录/档案"
+        },
+        {
+          "w": "paper",
+          "note": "文件/证件，口语"
+        }
+      ]
+    },
+    {
+      "w": "donate",
+      "syn": [
+        {
+          "w": "contribute",
+          "note": "捐献/贡献"
+        },
+        {
+          "w": "give",
+          "note": "给予/捐赠，较口语"
+        }
+      ]
+    },
+    {
+      "w": "donate ... to ...",
+      "syn": [
+        {
+          "w": "give ... to ...",
+          "note": "把…给…，通用"
+        },
+        {
+          "w": "contribute ... to ...",
+          "note": "把…捐给/贡献给"
+        },
+        {
+          "w": "present ... to ...",
+          "note": "赠送/呈献给，较正式"
+        }
+      ]
+    },
+    {
+      "w": "disappear",
+      "syn": [
+        {
+          "w": "vanish",
+          "note": "消失，常指突然或神秘"
+        },
+        {
+          "w": "fade",
+          "note": "逐渐消失，如颜色/声音"
+        },
+        {
+          "w": "go away",
+          "note": "离开/消失，口语"
+        }
+      ]
+    },
+    {
+      "w": "attempt",
+      "syn": [
+        {
+          "w": "try",
+          "note": "尝试，通用"
+        },
+        {
+          "w": "effort",
+          "note": "努力/尝试，名词"
+        },
+        {
+          "w": "endeavor",
+          "note": "努力/尝试，较正式"
+        }
+      ]
+    },
+    {
+      "w": "make sure",
+      "syn": [
+        {
+          "w": "ensure",
+          "note": "确保，较正式"
+        },
+        {
+          "w": "check",
+          "note": "核实/检查"
+        },
+        {
+          "w": "confirm",
+          "note": "确认"
+        }
+      ]
+    }
+  ]
+}

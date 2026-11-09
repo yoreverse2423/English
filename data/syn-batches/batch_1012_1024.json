@@ -1,0 +1,211 @@
+{
+  "items": [
+    {
+      "w": "series",
+      "syn": [
+        {
+          "w": "sequence",
+          "note": "侧重顺序、一连串"
+        },
+        {
+          "w": "succession",
+          "note": "侧重连续不断"
+        },
+        {
+          "w": "run",
+          "note": "连续一段时间/一批"
+        }
+      ]
+    },
+    {
+      "w": "series of",
+      "syn": [
+        {
+          "w": "a succession of",
+          "note": "一连串，较正式"
+        },
+        {
+          "w": "a string of",
+          "note": "一连串，口语常用"
+        },
+        {
+          "w": "a range of",
+          "note": "一系列，侧重范围"
+        }
+      ]
+    },
+    {
+      "w": "apart from",
+      "syn": [
+        {
+          "w": "besides",
+          "note": "除…外还有"
+        },
+        {
+          "w": "except for",
+          "note": "除…外（不包括）"
+        },
+        {
+          "w": "aside from",
+          "note": "除…外，较正式"
+        },
+        {
+          "w": "other than",
+          "note": "除了；不同于"
+        }
+      ]
+    },
+    {
+      "w": "minority",
+      "syn": [
+        {
+          "w": "small number",
+          "note": "少数（数量）"
+        },
+        {
+          "w": "small group",
+          "note": "少数群体"
+        },
+        {
+          "w": "minority group",
+          "note": "少数群体/少数民族"
+        }
+      ]
+    },
+    {
+      "w": "escape",
+      "syn": [
+        {
+          "w": "flight",
+          "note": "名词：逃跑"
+        },
+        {
+          "w": "getaway",
+          "note": "名词：逃走"
+        },
+        {
+          "w": "leak",
+          "note": "名词：泄漏"
+        },
+        {
+          "w": "flee",
+          "note": "动词：逃离"
+        }
+      ]
+    },
+    {
+      "w": "bring about",
+      "syn": [
+        {
+          "w": "cause",
+          "note": "引起，最常用"
+        },
+        {
+          "w": "lead to",
+          "note": "导致"
+        },
+        {
+          "w": "result in",
+          "note": "结果造成"
+        },
+        {
+          "w": "give rise to",
+          "note": "引起，较正式"
+        }
+      ]
+    },
+    {
+      "w": "Atlantic",
+      "syn": []
+    },
+    {
+      "w": "financial",
+      "syn": [
+        {
+          "w": "monetary",
+          "note": "货币/金融的"
+        },
+        {
+          "w": "fiscal",
+          "note": "财政的"
+        },
+        {
+          "w": "economic",
+          "note": "经济的"
+        }
+      ]
+    },
+    {
+      "w": "poetry",
+      "syn": [
+        {
+          "w": "verse",
+          "note": "韵文/诗歌"
+        },
+        {
+          "w": "poems",
+          "note": "诗歌作品（复数）"
+        }
+      ]
+    },
+    {
+      "w": "jeans",
+      "syn": [
+        {
+          "w": "denim",
+          "note": "牛仔布；牛仔裤"
+        },
+        {
+          "w": "trousers",
+          "note": "裤子统称"
+        },
+        {
+          "w": "pants",
+          "note": "美式：裤子"
+        }
+      ]
+    },
+    {
+      "w": "boot",
+      "syn": [
+        {
+          "w": "shoe",
+          "note": "鞋类统称，范围更广"
+        },
+        {
+          "w": "kick",
+          "note": "动词：踢"
+        },
+        {
+          "w": "fire",
+          "note": "动词：解雇"
+        },
+        {
+          "w": "start up",
+          "note": "启动（电脑）"
+        }
+      ]
+    },
+    {
+      "w": "mushroom",
+      "syn": [
+        {
+          "w": "fungus",
+          "note": "真菌统称"
+        },
+        {
+          "w": "toadstool",
+          "note": "伞菌/毒菌"
+        },
+        {
+          "w": "boom",
+          "note": "动词：迅速增长"
+        },
+        {
+          "w": "grow rapidly",
+          "note": "迅速增长"
+        }
+      ]
+    }
+  ]
+}

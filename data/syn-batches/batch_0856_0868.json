@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "w": "set off",
+      "syn": [
+        {
+          "w": "set out",
+          "note": "出发，最常用近义"
+        },
+        {
+          "w": "start out",
+          "note": "启程，口语"
+        },
+        {
+          "w": "depart",
+          "note": "离开，较正式"
+        }
+      ]
+    },
+    {
+      "w": "fancy",
+      "syn": [
+        {
+          "w": "imagination",
+          "note": "对应“想象力”"
+        },
+        {
+          "w": "liking",
+          "note": "对应“爱好”"
+        },
+        {
+          "w": "whim",
+          "note": "一时的念头"
+        }
+      ]
+    },
+    {
+      "w": "robe",
+      "syn": [
+        {
+          "w": "gown",
+          "note": "长袍、礼服"
+        },
+        {
+          "w": "cloak",
+          "note": "斗篷，侧重外披"
+        },
+        {
+          "w": "garment",
+          "note": "衣服，较正式统称"
+        }
+      ]
+    },
+    {
+      "w": "eagle",
+      "syn": [
+        {
+          "w": "hawk",
+          "note": "鹰隼，泛指猛禽"
+        }
+      ]
+    },
+    {
+      "w": "grace",
+      "syn": [
+        {
+          "w": "elegance",
+          "note": "优雅，侧重姿态"
+        },
+        {
+          "w": "charm",
+          "note": "魅力"
+        },
+        {
+          "w": "mercy",
+          "note": "对应“慈悲、恩惠”"
+        }
+      ]
+    },
+    {
+      "w": "absolutely",
+      "syn": [
+        {
+          "w": "completely",
+          "note": "完全地"
+        },
+        {
+          "w": "totally",
+          "note": "完全，口语"
+        },
+        {
+          "w": "utterly",
+          "note": "彻底地，较正式"
+        },
+        {
+          "w": "entirely",
+          "note": "全部地"
+        }
+      ]
+    },
+    {
+      "w": "moment",
+      "syn": [
+        {
+          "w": "instant",
+          "note": "瞬间"
+        },
+        {
+          "w": "minute",
+          "note": "片刻，口语"
+        },
+        {
+          "w": "second",
+          "note": "一会儿"
+        },
+        {
+          "w": "importance",
+          "note": "对应“重要”义"
+        }
+      ]
+    },
+    {
+      "w": "tent",
+      "syn": []
+    },
+    {
+      "w": "pot",
+      "syn": [
+        {
+          "w": "jar",
+          "note": "罐子，侧重广口"
+        },
+        {
+          "w": "pan",
+          "note": "锅，近义容器"
+        }
+      ]
+    },
+    {
+      "w": "brief",
+      "syn": [
+        {
+          "w": "short",
+          "note": "简短的；短暂的"
+        },
+        {
+          "w": "concise",
+          "note": "简洁，侧重文字"
+        },
+        {
+          "w": "summary",
+          "note": "对应名词“摘要”"
+        }
+      ]
+    },
+    {
+      "w": "branch",
+      "syn": [
+        {
+          "w": "bough",
+          "note": "大树枝"
+        },
+        {
+          "w": "division",
+          "note": "对应“分部”"
+        },
+        {
+          "w": "limb",
+          "note": "大枝，较书面"
+        }
+      ]
+    },
+    {
+      "w": "wedding",
+      "syn": [
+        {
+          "w": "marriage",
+          "note": "婚姻，也可指婚礼"
+        },
+        {
+          "w": "ceremony",
+          "note": "典礼，需搭配婚礼语境"
+        }
+      ]
+    }
+  ]
+}

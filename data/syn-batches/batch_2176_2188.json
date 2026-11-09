@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "w": "sensitive",
+      "syn": [
+        {
+          "w": "delicate",
+          "note": "侧重易受损、需小心"
+        },
+        {
+          "w": "touchy",
+          "note": "口语，易生气/敏感"
+        },
+        {
+          "w": "responsive",
+          "note": "侧重反应灵敏"
+        }
+      ]
+    },
+    {
+      "w": "jungle",
+      "syn": [
+        {
+          "w": "forest",
+          "note": "泛指森林，无热带密林义"
+        },
+        {
+          "w": "rainforest",
+          "note": "特指热带雨林"
+        },
+        {
+          "w": "wilderness",
+          "note": "侧重荒野、无人区"
+        }
+      ]
+    },
+    {
+      "w": "smog",
+      "syn": [
+        {
+          "w": "haze",
+          "note": "侧重雾霾、视线模糊"
+        },
+        {
+          "w": "fog",
+          "note": "纯雾，不含污染义"
+        }
+      ]
+    },
+    {
+      "w": "originate",
+      "syn": [
+        {
+          "w": "derive",
+          "note": "常与from连用，源自"
+        },
+        {
+          "w": "arise",
+          "note": "侧重发生、出现"
+        },
+        {
+          "w": "stem",
+          "note": "与from连用，起源于"
+        },
+        {
+          "w": "create",
+          "note": "对应“创作、引起”义"
+        }
+      ]
+    },
+    {
+      "w": "volume",
+      "syn": [
+        {
+          "w": "amount",
+          "note": "侧重数量"
+        },
+        {
+          "w": "capacity",
+          "note": "侧重容量"
+        },
+        {
+          "w": "loudness",
+          "note": "对应“音量”义"
+        }
+      ]
+    },
+    {
+      "w": "garbage",
+      "syn": [
+        {
+          "w": "rubbish",
+          "note": "英式常用，垃圾"
+        },
+        {
+          "w": "trash",
+          "note": "美式常用，垃圾"
+        },
+        {
+          "w": "waste",
+          "note": "泛指废弃物"
+        }
+      ]
+    },
+    {
+      "w": "enterprise",
+      "syn": [
+        {
+          "w": "business",
+          "note": "侧重企业、生意"
+        },
+        {
+          "w": "company",
+          "note": "侧重公司"
+        },
+        {
+          "w": "initiative",
+          "note": "对应“进取心、主动性”义"
+        }
+      ]
+    },
+    {
+      "w": "restore",
+      "syn": [
+        {
+          "w": "recover",
+          "note": "侧重恢复健康/状态"
+        },
+        {
+          "w": "repair",
+          "note": "侧重修理、修复"
+        },
+        {
+          "w": "return",
+          "note": "对应“归还”义"
+        }
+      ]
+    },
+    {
+      "w": "conservation",
+      "syn": [
+        {
+          "w": "protection",
+          "note": "侧重保护"
+        },
+        {
+          "w": "preservation",
+          "note": "侧重保存、维护"
+        }
+      ]
+    },
+    {
+      "w": "dozen",
+      "syn": [
+        {
+          "w": "twelve",
+          "note": "数词，十二个"
+        }
+      ]
+    },
+    {
+      "w": "dozens of",
+      "syn": [
+        {
+          "w": "many",
+          "note": "普通用词，许多"
+        },
+        {
+          "w": "lots of",
+          "note": "口语，大量"
+        },
+        {
+          "w": "numerous",
+          "note": "较正式，许多的"
+        }
+      ]
+    },
+    {
+      "w": "regulation",
+      "syn": [
+        {
+          "w": "rule",
+          "note": "普通用词，规则"
+        },
+        {
+          "w": "law",
+          "note": "指法律法规，更强"
+        },
+        {
+          "w": "management",
+          "note": "对应“管理”义"
+        }
+      ]
+    }
+  ]
+}

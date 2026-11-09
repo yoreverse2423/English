@@ -1,0 +1,300 @@
+{
+  "items": [
+    {
+      "w": "at last",
+      "syn": [
+        {
+          "w": "finally",
+          "note": "终于，强调经过拖延后"
+        },
+        {
+          "w": "eventually",
+          "note": "最终，较正式"
+        },
+        {
+          "w": "in the end",
+          "note": "最后，口语"
+        }
+      ]
+    },
+    {
+      "w": "outgoing",
+      "syn": [
+        {
+          "w": "sociable",
+          "note": "好交际的，较正式"
+        },
+        {
+          "w": "friendly",
+          "note": "友好的，侧面对人态度"
+        },
+        {
+          "w": "extroverted",
+          "note": "外向的，较少见于高考"
+        }
+      ]
+    },
+    {
+      "w": "impression",
+      "syn": [
+        {
+          "w": "effect",
+          "note": "侧重效果、影响"
+        },
+        {
+          "w": "impact",
+          "note": "影响，较强"
+        },
+        {
+          "w": "feeling",
+          "note": "感受，侧重内心"
+        }
+      ]
+    },
+    {
+      "w": "impress",
+      "syn": [
+        {
+          "w": "strike",
+          "note": "使留下深刻印象"
+        },
+        {
+          "w": "affect",
+          "note": "打动，侧重影响"
+        }
+      ]
+    },
+    {
+      "w": "make an impression",
+      "syn": [
+        {
+          "w": "impress",
+          "note": "动词形式，给人印象"
+        },
+        {
+          "w": "leave a mark",
+          "note": "留下痕迹，较形象"
+        }
+      ]
+    },
+    {
+      "w": "what if",
+      "syn": [
+        {
+          "w": "suppose",
+          "note": "设想，如果……会怎样"
+        },
+        {
+          "w": "imagine if",
+          "note": "想象如果，口语"
+        }
+      ]
+    },
+    {
+      "w": "guy",
+      "syn": [
+        {
+          "w": "man",
+          "note": "男人，通用"
+        },
+        {
+          "w": "fellow",
+          "note": "家伙，稍旧式"
+        },
+        {
+          "w": "chap",
+          "note": "家伙，英式口语"
+        }
+      ]
+    },
+    {
+      "w": "concentrate",
+      "syn": [
+        {
+          "w": "focus",
+          "note": "集中，最常用"
+        },
+        {
+          "w": "gather",
+          "note": "聚集，侧重集中一起"
+        }
+      ]
+    },
+    {
+      "w": "concentrate on",
+      "syn": [
+        {
+          "w": "focus on",
+          "note": "专注于，最常用"
+        },
+        {
+          "w": "pay attention to",
+          "note": "注意，侧重留心"
+        }
+      ]
+    },
+    {
+      "w": "experiment",
+      "syn": [
+        {
+          "w": "test",
+          "note": "测试，侧重检验"
+        },
+        {
+          "w": "trial",
+          "note": "试验，侧重尝试"
+        },
+        {
+          "w": "research",
+          "note": "研究，范围更广"
+        }
+      ]
+    },
+    {
+      "w": "leave ... alone",
+      "syn": [
+        {
+          "w": "let ... be",
+          "note": "别打扰，口语"
+        },
+        {
+          "w": "ignore",
+          "note": "忽视，侧面对人不理"
+        }
+      ]
+    },
+    {
+      "w": "awkward",
+      "syn": [
+        {
+          "w": "embarrassing",
+          "note": "令人尴尬的，指事"
+        },
+        {
+          "w": "clumsy",
+          "note": "笨拙的，指动作"
+        },
+        {
+          "w": "tricky",
+          "note": "棘手的，指局面"
+        }
+      ]
+    },
+    {
+      "w": "junior",
+      "syn": [
+        {
+          "w": "younger",
+          "note": "较年幼的"
+        },
+        {
+          "w": "lower-ranking",
+          "note": "级别较低的"
+        }
+      ]
+    },
+    {
+      "w": "junior high school",
+      "syn": [
+        {
+          "w": "middle school",
+          "note": "初中，美式常用"
+        }
+      ]
+    },
+    {
+      "w": "explore",
+      "syn": [
+        {
+          "w": "search",
+          "note": "搜寻，侧重寻找"
+        },
+        {
+          "w": "investigate",
+          "note": "调查，较正式"
+        },
+        {
+          "w": "discover",
+          "note": "发现，侧重找到"
+        }
+      ]
+    },
+    {
+      "w": "confident",
+      "syn": [
+        {
+          "w": "sure",
+          "note": "确信的，口语"
+        },
+        {
+          "w": "certain",
+          "note": "确定的，较正式"
+        },
+        {
+          "w": "self-assured",
+          "note": "自信的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "confidence",
+      "syn": [
+        {
+          "w": "faith",
+          "note": "信任，侧重信赖"
+        },
+        {
+          "w": "trust",
+          "note": "信任，通用"
+        },
+        {
+          "w": "certainty",
+          "note": "确信，确定"
+        }
+      ]
+    },
+    {
+      "w": "forward",
+      "syn": [
+        {
+          "w": "ahead",
+          "note": "向前，指方向"
+        },
+        {
+          "w": "onward",
+          "note": "向前，较正式"
+        }
+      ]
+    },
+    {
+      "w": "look forward to",
+      "syn": [
+        {
+          "w": "expect",
+          "note": "期待，后接名词或从句"
+        },
+        {
+          "w": "anticipate",
+          "note": "期盼，较正式"
+        },
+        {
+          "w": "long for",
+          "note": "渴望，情感更强"
+        }
+      ]
+    },
+    {
+      "w": "take notes",
+      "syn": [
+        {
+          "w": "make notes",
+          "note": "记笔记，英式常用"
+        },
+        {
+          "w": "jot down",
+          "note": "草草记下，口语"
+        }
+      ]
+    }
+  ]
+}

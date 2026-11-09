@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "w": "soul",
+      "syn": [
+        {
+          "w": "spirit",
+          "note": "侧重精神、灵魂"
+        },
+        {
+          "w": "mind",
+          "note": "侧重心灵、思想"
+        },
+        {
+          "w": "ghost",
+          "note": "指鬼魂"
+        }
+      ]
+    },
+    {
+      "w": "bagpipes",
+      "syn": [
+        {
+          "w": "pipes",
+          "note": "风笛的口语简称"
+        }
+      ]
+    },
+    {
+      "w": "stringed",
+      "syn": []
+    },
+    {
+      "w": "stringed instrument",
+      "syn": [
+        {
+          "w": "string instrument",
+          "note": "同义表达，弦乐器"
+        },
+        {
+          "w": "strings",
+          "note": "复数可指弦乐器组"
+        }
+      ]
+    },
+    {
+      "w": "virtual",
+      "syn": [
+        {
+          "w": "online",
+          "note": "侧重网络在线、虚拟"
+        },
+        {
+          "w": "simulated",
+          "note": "侧重模拟的"
+        },
+        {
+          "w": "actual",
+          "note": "对应“实质上的”"
+        }
+      ]
+    },
+    {
+      "w": "virtual choir",
+      "syn": [
+        {
+          "w": "online choir",
+          "note": "在线合唱团"
+        },
+        {
+          "w": "digital choir",
+          "note": "数字合唱团"
+        }
+      ]
+    },
+    {
+      "w": "composition",
+      "syn": [
+        {
+          "w": "essay",
+          "note": "指作文"
+        },
+        {
+          "w": "piece",
+          "note": "指乐曲或作品"
+        },
+        {
+          "w": "makeup",
+          "note": "指构成、成分"
+        }
+      ]
+    },
+    {
+      "w": "opportunity",
+      "syn": [
+        {
+          "w": "chance",
+          "note": "更口语，机会"
+        },
+        {
+          "w": "occasion",
+          "note": "侧重时机、场合"
+        },
+        {
+          "w": "opening",
+          "note": "侧重空缺、良机"
+        }
+      ]
+    },
+    {
+      "w": "perform",
+      "syn": [
+        {
+          "w": "carry out",
+          "note": "执行、完成"
+        },
+        {
+          "w": "execute",
+          "note": "更正式，执行"
+        },
+        {
+          "w": "act",
+          "note": "表演"
+        },
+        {
+          "w": "play",
+          "note": "演奏"
+        }
+      ]
+    },
+    {
+      "w": "performance",
+      "syn": [
+        {
+          "w": "show",
+          "note": "指演出"
+        },
+        {
+          "w": "execution",
+          "note": "指执行"
+        },
+        {
+          "w": "operation",
+          "note": "指运行、性能"
+        }
+      ]
+    },
+    {
+      "w": "performer",
+      "syn": [
+        {
+          "w": "artist",
+          "note": "指表演者、艺人"
+        },
+        {
+          "w": "actor",
+          "note": "专指演员"
+        },
+        {
+          "w": "musician",
+          "note": "指演奏者、乐手"
+        }
+      ]
+    },
+    {
+      "w": "onto",
+      "syn": [
+        {
+          "w": "on",
+          "note": "在…上；onto强调方向"
+        },
+        {
+          "w": "upon",
+          "note": "更正式，在…上"
+        },
+        {
+          "w": "on top of",
+          "note": "在…上面"
+        }
+      ]
+    }
+  ]
+}

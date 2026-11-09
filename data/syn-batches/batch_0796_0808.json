@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "w": "figure",
+      "syn": [
+        {
+          "w": "number",
+          "note": "数字，最常用"
+        },
+        {
+          "w": "statistic",
+          "note": "统计数据"
+        },
+        {
+          "w": "character",
+          "note": "人物，指角色"
+        },
+        {
+          "w": "shape",
+          "note": "体形，轮廓"
+        }
+      ]
+    },
+    {
+      "w": "charm",
+      "syn": [
+        {
+          "w": "attraction",
+          "note": "吸引力"
+        },
+        {
+          "w": "appeal",
+          "note": "魅力，感染力"
+        },
+        {
+          "w": "fascination",
+          "note": "着迷，魅力"
+        }
+      ]
+    },
+    {
+      "w": "joy",
+      "syn": [
+        {
+          "w": "delight",
+          "note": "欣喜，愉快"
+        },
+        {
+          "w": "happiness",
+          "note": "幸福，快乐"
+        },
+        {
+          "w": "pleasure",
+          "note": "乐趣，愉快"
+        }
+      ]
+    },
+    {
+      "w": "joyful",
+      "syn": [
+        {
+          "w": "happy",
+          "note": "快乐的，最常用"
+        },
+        {
+          "w": "cheerful",
+          "note": "欢快的，兴高采烈"
+        },
+        {
+          "w": "delighted",
+          "note": "感到高兴的"
+        }
+      ]
+    },
+    {
+      "w": "gratitude",
+      "syn": [
+        {
+          "w": "thankfulness",
+          "note": "感激之情，较正式"
+        },
+        {
+          "w": "appreciation",
+          "note": "感激；赏识"
+        }
+      ]
+    },
+    {
+      "w": "harvest",
+      "syn": [
+        {
+          "w": "crop",
+          "note": "收成，庄稼"
+        },
+        {
+          "w": "yield",
+          "note": "产量，收益"
+        },
+        {
+          "w": "reap",
+          "note": "收割，动词"
+        }
+      ]
+    },
+    {
+      "w": "agricultural",
+      "syn": [
+        {
+          "w": "farming",
+          "note": "农业的，作定语"
+        },
+        {
+          "w": "rural",
+          "note": "乡村的，侧重农村"
+        }
+      ]
+    },
+    {
+      "w": "agriculture",
+      "syn": [
+        {
+          "w": "farming",
+          "note": "农业，耕作，最常用"
+        },
+        {
+          "w": "farming industry",
+          "note": "农业产业，不够简洁，慎用"
+        }
+      ]
+    },
+    {
+      "w": "crop",
+      "syn": [
+        {
+          "w": "harvest",
+          "note": "收成"
+        },
+        {
+          "w": "yield",
+          "note": "产量，产出"
+        },
+        {
+          "w": "produce",
+          "note": "农产品，总称"
+        }
+      ]
+    },
+    {
+      "w": "gather",
+      "syn": [
+        {
+          "w": "collect",
+          "note": "收集，侧重归拢"
+        },
+        {
+          "w": "assemble",
+          "note": "聚集，集合，较正式"
+        },
+        {
+          "w": "harvest",
+          "note": "收割，聚集义较弱"
+        }
+      ]
+    },
+    {
+      "w": "grateful",
+      "syn": [
+        {
+          "w": "thankful",
+          "note": "感谢的，最贴近"
+        },
+        {
+          "w": "obliged",
+          "note": "感激的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "feature",
+      "syn": [
+        {
+          "w": "characteristic",
+          "note": "特征，特性"
+        },
+        {
+          "w": "trait",
+          "note": "（人的）特点，特性"
+        },
+        {
+          "w": "quality",
+          "note": "品质，特性"
+        }
+      ]
+    }
+  ]
+}

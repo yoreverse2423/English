@@ -1,0 +1,264 @@
+{
+  "items": [
+    {
+      "w": "fitness",
+      "syn": [
+        {
+          "w": "health",
+          "note": "健康；最常用"
+        },
+        {
+          "w": "condition",
+          "note": "身体状况；常指体能状态"
+        },
+        {
+          "w": "suitability",
+          "note": "适合性；较正式"
+        }
+      ]
+    },
+    {
+      "w": "soccer",
+      "syn": [
+        {
+          "w": "football",
+          "note": "英式足球；英式英语常用"
+        }
+      ]
+    },
+    {
+      "w": "stadium",
+      "syn": [
+        {
+          "w": "arena",
+          "note": "竞技场；可指大型体育场馆"
+        },
+        {
+          "w": "ground",
+          "note": "球场；英式常指体育场地"
+        }
+      ]
+    },
+    {
+      "w": "boxing",
+      "syn": []
+    },
+    {
+      "w": "badminton",
+      "syn": []
+    },
+    {
+      "w": "marathon",
+      "syn": [
+        {
+          "w": "long-distance race",
+          "note": "长跑比赛；直义接近"
+        },
+        {
+          "w": "endurance test",
+          "note": "耐力考验；引申义"
+        }
+      ]
+    },
+    {
+      "w": "event",
+      "syn": [
+        {
+          "w": "occurrence",
+          "note": "发生的事；较正式"
+        },
+        {
+          "w": "incident",
+          "note": "事件；常指较小或突发的事"
+        },
+        {
+          "w": "occasion",
+          "note": "场合；时机；大事"
+        }
+      ]
+    },
+    {
+      "w": "come along",
+      "syn": [
+        {
+          "w": "turn up",
+          "note": "出现；到来"
+        },
+        {
+          "w": "show up",
+          "note": "露面；到场"
+        },
+        {
+          "w": "progress",
+          "note": "进展；进步"
+        }
+      ]
+    },
+    {
+      "w": "ski",
+      "syn": []
+    },
+    {
+      "w": "host",
+      "syn": [
+        {
+          "w": "presenter",
+          "note": "主持人；英式常用"
+        },
+        {
+          "w": "anchor",
+          "note": "新闻节目主持人"
+        },
+        {
+          "w": "organize",
+          "note": "主办；组织活动"
+        }
+      ]
+    },
+    {
+      "w": "track",
+      "syn": [
+        {
+          "w": "path",
+          "note": "小道；路径"
+        },
+        {
+          "w": "trail",
+          "note": "足迹；小径"
+        },
+        {
+          "w": "follow",
+          "note": "追踪；跟随"
+        },
+        {
+          "w": "trace",
+          "note": "追踪；查出踪迹"
+        }
+      ]
+    },
+    {
+      "w": "track and field",
+      "syn": [
+        {
+          "w": "athletics",
+          "note": "田径运动；英式常用"
+        }
+      ]
+    },
+    {
+      "w": "gym",
+      "syn": [
+        {
+          "w": "gymnasium",
+          "note": "体育馆；健身房；较正式"
+        },
+        {
+          "w": "fitness center",
+          "note": "健身中心"
+        }
+      ]
+    },
+    {
+      "w": "gymnastics",
+      "syn": []
+    },
+    {
+      "w": "work out",
+      "syn": [
+        {
+          "w": "devise",
+          "note": "设计；想出"
+        },
+        {
+          "w": "draw up",
+          "note": "拟定；制定"
+        },
+        {
+          "w": "plan",
+          "note": "计划；安排"
+        }
+      ]
+    },
+    {
+      "w": "sweat",
+      "syn": [
+        {
+          "w": "perspiration",
+          "note": "汗；较正式"
+        },
+        {
+          "w": "toil",
+          "note": "苦差事；辛劳"
+        },
+        {
+          "w": "anxiety",
+          "note": "焦急；忧虑"
+        }
+      ]
+    },
+    {
+      "w": "make it",
+      "syn": [
+        {
+          "w": "succeed",
+          "note": "成功；办到"
+        },
+        {
+          "w": "arrive",
+          "note": "赶到；到达"
+        },
+        {
+          "w": "manage",
+          "note": "设法做到"
+        }
+      ]
+    },
+    {
+      "w": "legend",
+      "syn": [
+        {
+          "w": "myth",
+          "note": "神话；传说"
+        },
+        {
+          "w": "tale",
+          "note": "故事；传说"
+        },
+        {
+          "w": "key",
+          "note": "图例；地图符号说明"
+        }
+      ]
+    },
+    {
+      "w": "athlete",
+      "syn": [
+        {
+          "w": "sportsman",
+          "note": "运动员；常指男性"
+        },
+        {
+          "w": "player",
+          "note": "选手；运动员"
+        }
+      ]
+    },
+    {
+      "w": "master",
+      "syn": [
+        {
+          "w": "grasp",
+          "note": "掌握；精通"
+        },
+        {
+          "w": "control",
+          "note": "控制；支配"
+        },
+        {
+          "w": "conquer",
+          "note": "征服；克服"
+        }
+      ]
+    }
+  ]
+}

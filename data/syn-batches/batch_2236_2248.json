@@ -1,0 +1,203 @@
+{
+  "items": [
+    {
+      "w": "unfortunately",
+      "syn": [
+        {
+          "w": "unluckily",
+          "note": "同义，较口语"
+        },
+        {
+          "w": "regrettably",
+          "note": "更正式，含遗憾"
+        },
+        {
+          "w": "sadly",
+          "note": "可惜地，较委婉"
+        }
+      ]
+    },
+    {
+      "w": "fortunately",
+      "syn": [
+        {
+          "w": "luckily",
+          "note": "最常用同义"
+        },
+        {
+          "w": "thankfully",
+          "note": "庆幸地，较口语"
+        },
+        {
+          "w": "happily",
+          "note": "用于“幸好”义"
+        }
+      ]
+    },
+    {
+      "w": "bark",
+      "syn": [
+        {
+          "w": "yelp",
+          "note": "狗尖声吠叫"
+        },
+        {
+          "w": "woof",
+          "note": "狗吠声，口语"
+        },
+        {
+          "w": "yap",
+          "note": "小狗尖声乱叫"
+        }
+      ]
+    },
+    {
+      "w": "rugby",
+      "syn": [
+        {
+          "w": "rugger",
+          "note": "英口语，英式橄榄球"
+        },
+        {
+          "w": "rugby football",
+          "note": "全称，英式橄榄球"
+        }
+      ]
+    },
+    {
+      "w": "bat",
+      "syn": [
+        {
+          "w": "club",
+          "note": "棒状击球用具"
+        },
+        {
+          "w": "paddle",
+          "note": "乒乓球拍（美式）"
+        },
+        {
+          "w": "racket",
+          "note": "球拍，义近"
+        }
+      ]
+    },
+    {
+      "w": "damp",
+      "syn": [
+        {
+          "w": "moist",
+          "note": "微湿的，常含褒义"
+        },
+        {
+          "w": "humid",
+          "note": "空气潮湿的"
+        },
+        {
+          "w": "moisture",
+          "note": "名词：湿气、水分"
+        }
+      ]
+    },
+    {
+      "w": "recreation",
+      "syn": [
+        {
+          "w": "entertainment",
+          "note": "娱乐，消遣"
+        },
+        {
+          "w": "pastime",
+          "note": "消遣活动"
+        },
+        {
+          "w": "leisure",
+          "note": "休闲，空闲"
+        },
+        {
+          "w": "amusement",
+          "note": "娱乐，乐趣"
+        }
+      ]
+    },
+    {
+      "w": "guidance",
+      "syn": [
+        {
+          "w": "direction",
+          "note": "指导，指引"
+        },
+        {
+          "w": "advice",
+          "note": "建议性指导"
+        },
+        {
+          "w": "instruction",
+          "note": "指导，教导"
+        }
+      ]
+    },
+    {
+      "w": "nephew",
+      "syn": []
+    },
+    {
+      "w": "advertise",
+      "syn": [
+        {
+          "w": "promote",
+          "note": "推广，促销"
+        },
+        {
+          "w": "publicize",
+          "note": "宣传，使公开"
+        },
+        {
+          "w": "market",
+          "note": "营销，推销"
+        },
+        {
+          "w": "plug",
+          "note": "口语：推销、吹捧"
+        }
+      ]
+    },
+    {
+      "w": "corporate",
+      "syn": [
+        {
+          "w": "collective",
+          "note": "共同的，集体的"
+        },
+        {
+          "w": "joint",
+          "note": "共同的，联合的"
+        },
+        {
+          "w": "business",
+          "note": "作定语：企业的、商务的"
+        }
+      ]
+    },
+    {
+      "w": "rough",
+      "syn": [
+        {
+          "w": "coarse",
+          "note": "粗糙的，质地粗"
+        },
+        {
+          "w": "crude",
+          "note": "粗略的，粗制的"
+        },
+        {
+          "w": "approximate",
+          "note": "粗略的，大概的"
+        },
+        {
+          "w": "tough",
+          "note": "艰苦的，艰难的"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "cite",
+      "syn": [
+        {
+          "w": "quote",
+          "note": "侧重逐字引用"
+        },
+        {
+          "w": "mention",
+          "note": "泛指提及"
+        },
+        {
+          "w": "refer to",
+          "note": "提到、参照"
+        }
+      ]
+    },
+    {
+      "w": "participation",
+      "syn": [
+        {
+          "w": "involvement",
+          "note": "强调投入参与"
+        },
+        {
+          "w": "attendance",
+          "note": "侧重出席"
+        }
+      ]
+    },
+    {
+      "w": "participate",
+      "syn": [
+        {
+          "w": "join",
+          "note": "更口语，加入"
+        },
+        {
+          "w": "take part",
+          "note": "英式常用短语"
+        },
+        {
+          "w": "engage",
+          "note": "较正式，投身"
+        }
+      ]
+    },
+    {
+      "w": "participate in",
+      "syn": [
+        {
+          "w": "take part in",
+          "note": "最常用短语"
+        },
+        {
+          "w": "join in",
+          "note": "口语，加入活动"
+        },
+        {
+          "w": "get involved in",
+          "note": "强调卷入参与"
+        }
+      ]
+    },
+    {
+      "w": "presentation",
+      "syn": [
+        {
+          "w": "display",
+          "note": "侧重展示陈列"
+        },
+        {
+          "w": "demonstration",
+          "note": "侧重演示说明"
+        },
+        {
+          "w": "introduction",
+          "note": "侧重介绍"
+        }
+      ]
+    },
+    {
+      "w": "speak up",
+      "syn": [
+        {
+          "w": "speak out",
+          "note": "大胆公开说出"
+        },
+        {
+          "w": "voice",
+          "note": "表达意见"
+        },
+        {
+          "w": "sound off",
+          "note": "口语，直言"
+        }
+      ]
+    },
+    {
+      "w": "feel at home",
+      "syn": [
+        {
+          "w": "be at ease",
+          "note": "感到自在"
+        },
+        {
+          "w": "feel comfortable",
+          "note": "最通俗说法"
+        },
+        {
+          "w": "fit in",
+          "note": "融入其中"
+        }
+      ]
+    },
+    {
+      "w": "engage",
+      "syn": [
+        {
+          "w": "attract",
+          "note": "吸引（注意）"
+        },
+        {
+          "w": "employ",
+          "note": "雇佣"
+        },
+        {
+          "w": "occupy",
+          "note": "占用（时间精力）"
+        },
+        {
+          "w": "participate",
+          "note": "从事、参与"
+        }
+      ]
+    },
+    {
+      "w": "engage in",
+      "syn": [
+        {
+          "w": "take part in",
+          "note": "参加活动"
+        },
+        {
+          "w": "be involved in",
+          "note": "忙于、卷入"
+        },
+        {
+          "w": "pursue",
+          "note": "从事、追求"
+        }
+      ]
+    },
+    {
+      "w": "involve",
+      "syn": [
+        {
+          "w": "include",
+          "note": "侧重包含"
+        },
+        {
+          "w": "entail",
+          "note": "较正式，必然涉及"
+        },
+        {
+          "w": "concern",
+          "note": "牵涉到"
+        }
+      ]
+    },
+    {
+      "w": "get involved in",
+      "syn": [
+        {
+          "w": "participate in",
+          "note": "中性，参加"
+        },
+        {
+          "w": "engage in",
+          "note": "较正式，从事"
+        },
+        {
+          "w": "be caught up in",
+          "note": "被动卷入"
+        }
+      ]
+    },
+    {
+      "w": "messenger",
+      "syn": [
+        {
+          "w": "courier",
+          "note": "专送信件包裹者"
+        },
+        {
+          "w": "carrier",
+          "note": "运送者，较泛"
+        },
+        {
+          "w": "envoy",
+          "note": "正式，使者"
+        }
+      ]
+    }
+  ]
+}

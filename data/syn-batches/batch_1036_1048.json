@@ -1,0 +1,232 @@
+{
+  "items": [
+    {
+      "w": "material",
+      "syn": [
+        {
+          "w": "important",
+          "note": "侧重重要的"
+        },
+        {
+          "w": "substantial",
+          "note": "重大的；实质的"
+        },
+        {
+          "w": "physical",
+          "note": "物质的；肉体的"
+        },
+        {
+          "w": "fabric",
+          "note": "布料；织物"
+        }
+      ]
+    },
+    {
+      "w": "to name but a few",
+      "syn": [
+        {
+          "w": "to mention just a few",
+          "note": "同义表达"
+        },
+        {
+          "w": "just to name a few",
+          "note": "常见变体"
+        },
+        {
+          "w": "among others",
+          "note": "还有其他例子"
+        }
+      ]
+    },
+    {
+      "w": "tai chi",
+      "syn": [
+        {
+          "w": "t'ai chi",
+          "note": "旧式拼写"
+        },
+        {
+          "w": "taiji",
+          "note": "拼音形式"
+        },
+        {
+          "w": "tai chi chuan",
+          "note": "太极拳全称"
+        }
+      ]
+    },
+    {
+      "w": "clothing",
+      "syn": [
+        {
+          "w": "clothes",
+          "note": "普通用词"
+        },
+        {
+          "w": "apparel",
+          "note": "正式；总称"
+        },
+        {
+          "w": "attire",
+          "note": "正式；着装"
+        },
+        {
+          "w": "dress",
+          "note": "服装；衣着"
+        }
+      ]
+    },
+    {
+      "w": "herbal",
+      "syn": [
+        {
+          "w": "botanical",
+          "note": "植物的；草本的"
+        },
+        {
+          "w": "plant-based",
+          "note": "植物基的"
+        },
+        {
+          "w": "medicinal",
+          "note": "药用的"
+        }
+      ]
+    },
+    {
+      "w": "suit",
+      "syn": [
+        {
+          "w": "lawsuit",
+          "note": "诉讼"
+        },
+        {
+          "w": "outfit",
+          "note": "套装；一套衣服"
+        },
+        {
+          "w": "fit",
+          "note": "适合"
+        },
+        {
+          "w": "match",
+          "note": "相称；匹配"
+        }
+      ]
+    },
+    {
+      "w": "first hand",
+      "syn": [
+        {
+          "w": "firsthand",
+          "note": "拼写变体；第一手的"
+        },
+        {
+          "w": "direct",
+          "note": "直接的"
+        },
+        {
+          "w": "personal",
+          "note": "亲身的"
+        }
+      ]
+    },
+    {
+      "w": "at first hand",
+      "syn": [
+        {
+          "w": "directly",
+          "note": "直接地"
+        },
+        {
+          "w": "personally",
+          "note": "亲自地"
+        },
+        {
+          "w": "firsthand",
+          "note": "第一手地"
+        }
+      ]
+    },
+    {
+      "w": "item",
+      "syn": [
+        {
+          "w": "article",
+          "note": "物品；条款"
+        },
+        {
+          "w": "entry",
+          "note": "条目"
+        },
+        {
+          "w": "thing",
+          "note": "物品泛称"
+        },
+        {
+          "w": "point",
+          "note": "条款；要点"
+        }
+      ]
+    },
+    {
+      "w": "contain",
+      "syn": [
+        {
+          "w": "include",
+          "note": "包含"
+        },
+        {
+          "w": "hold",
+          "note": "容纳"
+        },
+        {
+          "w": "control",
+          "note": "控制；克制"
+        },
+        {
+          "w": "restrain",
+          "note": "抑制；克制"
+        }
+      ]
+    },
+    {
+      "w": "neat",
+      "syn": [
+        {
+          "w": "tidy",
+          "note": "整洁的"
+        },
+        {
+          "w": "orderly",
+          "note": "整齐的"
+        },
+        {
+          "w": "clever",
+          "note": "灵巧的"
+        },
+        {
+          "w": "undiluted",
+          "note": "未搀水的"
+        }
+      ]
+    },
+    {
+      "w": "San Francisco",
+      "syn": [
+        {
+          "w": "SF",
+          "note": "常用缩写"
+        },
+        {
+          "w": "San Fran",
+          "note": "非正式简称"
+        },
+        {
+          "w": "Frisco",
+          "note": "非正式别称"
+        }
+      ]
+    }
+  ]
+}

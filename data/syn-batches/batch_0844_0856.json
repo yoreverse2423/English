@@ -1,0 +1,203 @@
+{
+  "items": [
+    {
+      "w": "firework",
+      "syn": [
+        {
+          "w": "firecracker",
+          "note": "鞭炮，近义但不同"
+        },
+        {
+          "w": "sparkler",
+          "note": "手持烟花"
+        },
+        {
+          "w": "rocket",
+          "note": "火箭式烟花"
+        }
+      ]
+    },
+    {
+      "w": "frank",
+      "syn": [
+        {
+          "w": "candid",
+          "note": "坦率直接"
+        },
+        {
+          "w": "honest",
+          "note": "诚实"
+        },
+        {
+          "w": "direct",
+          "note": "直截了当"
+        },
+        {
+          "w": "open",
+          "note": "开诚布公"
+        }
+      ]
+    },
+    {
+      "w": "to be frank",
+      "syn": [
+        {
+          "w": "to be honest",
+          "note": "更常用"
+        },
+        {
+          "w": "frankly speaking",
+          "note": "坦白说"
+        },
+        {
+          "w": "to tell the truth",
+          "note": "说实话"
+        }
+      ]
+    },
+    {
+      "w": "go off",
+      "syn": [
+        {
+          "w": "turn out",
+          "note": "结果是；进行得"
+        },
+        {
+          "w": "blurt out",
+          "note": "脱口说出"
+        }
+      ]
+    },
+    {
+      "w": "except for",
+      "syn": [
+        {
+          "w": "apart from",
+          "note": "除…外，可排除或包括"
+        },
+        {
+          "w": "other than",
+          "note": "除了…"
+        },
+        {
+          "w": "save for",
+          "note": "较文雅，除…外"
+        }
+      ]
+    },
+    {
+      "w": "inner",
+      "syn": [
+        {
+          "w": "internal",
+          "note": "内部的"
+        },
+        {
+          "w": "interior",
+          "note": "内侧的；内部的"
+        },
+        {
+          "w": "inward",
+          "note": "向内的；内心的"
+        }
+      ]
+    },
+    {
+      "w": "autonomous",
+      "syn": [
+        {
+          "w": "independent",
+          "note": "独立的"
+        },
+        {
+          "w": "self-governing",
+          "note": "自治的"
+        },
+        {
+          "w": "self-ruling",
+          "note": "自主统治的"
+        }
+      ]
+    },
+    {
+      "w": "region",
+      "syn": [
+        {
+          "w": "area",
+          "note": "地区；区域"
+        },
+        {
+          "w": "district",
+          "note": "行政区；街区"
+        },
+        {
+          "w": "zone",
+          "note": "地带；区域"
+        },
+        {
+          "w": "territory",
+          "note": "领土；地域"
+        }
+      ]
+    },
+    {
+      "w": "represent",
+      "syn": [
+        {
+          "w": "stand for",
+          "note": "代表；象征"
+        },
+        {
+          "w": "symbolize",
+          "note": "象征"
+        },
+        {
+          "w": "depict",
+          "note": "描绘"
+        },
+        {
+          "w": "portray",
+          "note": "描绘；表现"
+        }
+      ]
+    },
+    {
+      "w": "wrestle",
+      "syn": [
+        {
+          "w": "grapple",
+          "note": "扭打；竭力应付"
+        },
+        {
+          "w": "struggle",
+          "note": "挣扎；斗争"
+        },
+        {
+          "w": "fight",
+          "note": "搏斗"
+        }
+      ]
+    },
+    {
+      "w": "wrestler",
+      "syn": [
+        {
+          "w": "grappler",
+          "note": "扭打者；摔跤者"
+        },
+        {
+          "w": "fighter",
+          "note": "斗士；搏斗者"
+        },
+        {
+          "w": "combatant",
+          "note": "战斗者"
+        }
+      ]
+    },
+    {
+      "w": "archery",
+      "syn": []
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "items": [
+    {
+      "w": "tend to do sth.",
+      "syn": [
+        {
+          "w": "be inclined to do sth.",
+          "note": "较书面，倾向于"
+        },
+        {
+          "w": "be likely to do sth.",
+          "note": "侧重可能性"
+        },
+        {
+          "w": "be apt to do sth.",
+          "note": "侧重自然倾向、易于"
+        }
+      ]
+    },
+    {
+      "w": "publish",
+      "syn": [
+        {
+          "w": "release",
+          "note": "发布、发行"
+        },
+        {
+          "w": "issue",
+          "note": "发行、公布"
+        },
+        {
+          "w": "print",
+          "note": "印刷、出版"
+        },
+        {
+          "w": "announce",
+          "note": "公布，侧重宣布"
+        }
+      ]
+    },
+    {
+      "w": "staff",
+      "syn": [
+        {
+          "w": "employees",
+          "note": "雇员，普通用词"
+        },
+        {
+          "w": "personnel",
+          "note": "全体人员，较正式"
+        },
+        {
+          "w": "workforce",
+          "note": "劳动力、员工总数"
+        }
+      ]
+    },
+    {
+      "w": "retire",
+      "syn": [
+        {
+          "w": "stop working",
+          "note": "停止工作，口语"
+        },
+        {
+          "w": "withdraw",
+          "note": "撤退、退出，较正式"
+        },
+        {
+          "w": "retreat",
+          "note": "退却，多指军事或避开"
+        }
+      ]
+    },
+    {
+      "w": "saving",
+      "syn": [
+        {
+          "w": "thrift",
+          "note": "节俭，名词"
+        },
+        {
+          "w": "economy",
+          "note": "节约、节省"
+        },
+        {
+          "w": "conservation",
+          "note": "节约资源、保护"
+        }
+      ]
+    },
+    {
+      "w": "kindergarten",
+      "syn": [
+        {
+          "w": "preschool",
+          "note": "学前班、幼儿园，美式"
+        },
+        {
+          "w": "nursery school",
+          "note": "幼儿园，英式"
+        }
+      ]
+    },
+    {
+      "w": "principle",
+      "syn": [
+        {
+          "w": "rule",
+          "note": "规则、原则"
+        },
+        {
+          "w": "doctrine",
+          "note": "主义、教义，较正式"
+        },
+        {
+          "w": "tenet",
+          "note": "原则、信条，较正式"
+        }
+      ]
+    },
+    {
+      "w": "passive",
+      "syn": [
+        {
+          "w": "inactive",
+          "note": "不活跃的"
+        },
+        {
+          "w": "submissive",
+          "note": "顺从的，偏消极服从"
+        },
+        {
+          "w": "negative",
+          "note": "消极的"
+        }
+      ]
+    },
+    {
+      "w": "scare",
+      "syn": [
+        {
+          "w": "frighten",
+          "note": "使害怕，常用"
+        },
+        {
+          "w": "terrify",
+          "note": "使恐惧，程度更强"
+        },
+        {
+          "w": "alarm",
+          "note": "使惊慌"
+        }
+      ]
+    },
+    {
+      "w": "sharp",
+      "syn": [
+        {
+          "w": "keen",
+          "note": "锋利的；敏锐的"
+        },
+        {
+          "w": "acute",
+          "note": "敏锐的；剧烈的"
+        },
+        {
+          "w": "pointed",
+          "note": "尖的"
+        },
+        {
+          "w": "steep",
+          "note": "急剧的，指升降"
+        }
+      ]
+    },
+    {
+      "w": "insurance",
+      "syn": [
+        {
+          "w": "coverage",
+          "note": "保险范围、承保"
+        },
+        {
+          "w": "assurance",
+          "note": "保险，英式尤指人寿"
+        },
+        {
+          "w": "protection",
+          "note": "保障、保护"
+        }
+      ]
+    },
+    {
+      "w": "energetic",
+      "syn": [
+        {
+          "w": "active",
+          "note": "活跃的"
+        },
+        {
+          "w": "lively",
+          "note": "活泼的"
+        },
+        {
+          "w": "dynamic",
+          "note": "有活力的"
+        },
+        {
+          "w": "vigorous",
+          "note": "精力旺盛的、有力的"
+        }
+      ]
+    }
+  ]
+}

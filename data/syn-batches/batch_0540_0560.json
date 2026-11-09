@@ -1,0 +1,259 @@
+{
+  "items": [
+    {
+      "w": "bird field guide",
+      "syn": [
+        {
+          "w": "field guide",
+          "note": "泛指野外图鉴"
+        },
+        {
+          "w": "bird guide",
+          "note": "鸟类指南"
+        }
+      ]
+    },
+    {
+      "w": "search for",
+      "syn": [
+        {
+          "w": "look for",
+          "note": "最常用，侧重寻找"
+        },
+        {
+          "w": "seek",
+          "note": "更正式，书面"
+        },
+        {
+          "w": "hunt for",
+          "note": "强调搜寻费力"
+        }
+      ]
+    },
+    {
+      "w": "dolphin",
+      "syn": [
+        {
+          "w": "porpoise",
+          "note": "鼠海豚，近亲但不同"
+        }
+      ]
+    },
+    {
+      "w": "Yangtze River dolphin",
+      "syn": [
+        {
+          "w": "baiji",
+          "note": "白鳍豚的英文别称"
+        }
+      ]
+    },
+    {
+      "w": "koala",
+      "syn": [
+        {
+          "w": "koala bear",
+          "note": "俗称，非熊类"
+        }
+      ]
+    },
+    {
+      "w": "stir",
+      "syn": [
+        {
+          "w": "mix",
+          "note": "侧重混合"
+        },
+        {
+          "w": "agitate",
+          "note": "更正式，搅动液体"
+        },
+        {
+          "w": "commotion",
+          "note": "作名词，指轰动骚动"
+        }
+      ]
+    },
+    {
+      "w": "stir up",
+      "syn": [
+        {
+          "w": "provoke",
+          "note": "侧重煽动激起"
+        },
+        {
+          "w": "incite",
+          "note": "煽动，贬义较强"
+        },
+        {
+          "w": "arouse",
+          "note": "激起情绪"
+        }
+      ]
+    },
+    {
+      "w": "emotion",
+      "syn": [
+        {
+          "w": "feeling",
+          "note": "最通用，感受"
+        },
+        {
+          "w": "sentiment",
+          "note": "较正式，情感态度"
+        }
+      ]
+    },
+    {
+      "w": "skin",
+      "syn": [
+        {
+          "w": "hide",
+          "note": "兽皮，大动物"
+        },
+        {
+          "w": "peel",
+          "note": "作动词，剥皮"
+        },
+        {
+          "w": "outer layer",
+          "note": "外层，泛指"
+        }
+      ]
+    },
+    {
+      "w": "unusual",
+      "syn": [
+        {
+          "w": "rare",
+          "note": "侧重罕见"
+        },
+        {
+          "w": "abnormal",
+          "note": "侧重反常"
+        },
+        {
+          "w": "extraordinary",
+          "note": "非凡的，语气强"
+        }
+      ]
+    },
+    {
+      "w": "Tibetan",
+      "syn": [
+        {
+          "w": "Tibet",
+          "note": "地名，非完全同义"
+        }
+      ]
+    },
+    {
+      "w": "Tibet",
+      "syn": []
+    },
+    {
+      "w": "blog",
+      "syn": [
+        {
+          "w": "weblog",
+          "note": "博客全称，较正式"
+        },
+        {
+          "w": "online journal",
+          "note": "网络日志，解释性"
+        }
+      ]
+    },
+    {
+      "w": "blog post",
+      "syn": [
+        {
+          "w": "post",
+          "note": "简略说法"
+        },
+        {
+          "w": "entry",
+          "note": "侧重一篇日志"
+        }
+      ]
+    },
+    {
+      "w": "blogger",
+      "syn": [
+        {
+          "w": "blog writer",
+          "note": "解释性说法"
+        }
+      ]
+    },
+    {
+      "w": "engine",
+      "syn": [
+        {
+          "w": "motor",
+          "note": "电动机，侧重动力"
+        },
+        {
+          "w": "machine",
+          "note": "泛指机器，较宽"
+        }
+      ]
+    },
+    {
+      "w": "search engine",
+      "syn": [
+        {
+          "w": "web search engine",
+          "note": "更完整说法"
+        }
+      ]
+    },
+    {
+      "w": "chat",
+      "syn": [
+        {
+          "w": "talk",
+          "note": "最通用，交谈"
+        },
+        {
+          "w": "converse",
+          "note": "较正式，交谈"
+        },
+        {
+          "w": "gossip",
+          "note": "侧重闲聊八卦"
+        }
+      ]
+    },
+    {
+      "w": "stream",
+      "syn": [
+        {
+          "w": "brook",
+          "note": "小溪，较小"
+        },
+        {
+          "w": "creek",
+          "note": "小溪，美式常用"
+        },
+        {
+          "w": "flow",
+          "note": "作动词，流动"
+        }
+      ]
+    },
+    {
+      "w": "identity",
+      "syn": [
+        {
+          "w": "selfhood",
+          "note": "自我身份，较书面"
+        },
+        {
+          "w": "individuality",
+          "note": "个性，特性"
+        }
+      ]
+    }
+  ]
+}

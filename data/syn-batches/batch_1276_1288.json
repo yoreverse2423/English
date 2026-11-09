@@ -1,0 +1,175 @@
+{
+  "items": [
+    {
+      "w": "novel",
+      "syn": [
+        {
+          "w": "new",
+          "note": "普通“新的”"
+        },
+        {
+          "w": "original",
+          "note": "独创的"
+        },
+        {
+          "w": "fresh",
+          "note": "新颖的"
+        }
+      ]
+    },
+    {
+      "w": "flow",
+      "syn": [
+        {
+          "w": "stream",
+          "note": "流动；溪流"
+        },
+        {
+          "w": "run",
+          "note": "流动（河）"
+        },
+        {
+          "w": "current",
+          "note": "水流"
+        }
+      ]
+    },
+    {
+      "w": "chart",
+      "syn": [
+        {
+          "w": "graph",
+          "note": "曲线图"
+        },
+        {
+          "w": "diagram",
+          "note": "示意图"
+        },
+        {
+          "w": "map",
+          "note": "地图；海图"
+        }
+      ]
+    },
+    {
+      "w": "flow chart",
+      "syn": [
+        {
+          "w": "flow diagram",
+          "note": "流程图"
+        },
+        {
+          "w": "flowchart",
+          "note": "连写形式"
+        }
+      ]
+    },
+    {
+      "w": "found",
+      "syn": [
+        {
+          "w": "establish",
+          "note": "建立，较正式"
+        },
+        {
+          "w": "set up",
+          "note": "建立，短语"
+        },
+        {
+          "w": "create",
+          "note": "创建"
+        }
+      ]
+    },
+    {
+      "w": "infer",
+      "syn": [
+        {
+          "w": "conclude",
+          "note": "得出结论"
+        },
+        {
+          "w": "deduce",
+          "note": "推断，较正式"
+        }
+      ]
+    },
+    {
+      "w": "politician",
+      "syn": [
+        {
+          "w": "statesman",
+          "note": "政治家，常褒义"
+        },
+        {
+          "w": "lawmaker",
+          "note": "立法者"
+        }
+      ]
+    },
+    {
+      "w": "numerous",
+      "syn": [
+        {
+          "w": "many",
+          "note": "许多，普通"
+        },
+        {
+          "w": "countless",
+          "note": "无数的"
+        }
+      ]
+    },
+    {
+      "w": "theory",
+      "syn": [
+        {
+          "w": "hypothesis",
+          "note": "假说"
+        },
+        {
+          "w": "principle",
+          "note": "原理"
+        }
+      ]
+    },
+    {
+      "w": "relativity",
+      "syn": []
+    },
+    {
+      "w": "formula",
+      "syn": [
+        {
+          "w": "equation",
+          "note": "方程式；公式"
+        },
+        {
+          "w": "rule",
+          "note": "准则"
+        },
+        {
+          "w": "recipe",
+          "note": "配方"
+        }
+      ]
+    },
+    {
+      "w": "genius",
+      "syn": [
+        {
+          "w": "talent",
+          "note": "天赋；人才"
+        },
+        {
+          "w": "gift",
+          "note": "天赋"
+        },
+        {
+          "w": "brilliance",
+          "note": "才华"
+        }
+      ]
+    }
+  ]
+}

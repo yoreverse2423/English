@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "w": "career",
+      "syn": [
+        {
+          "w": "profession",
+          "note": "专业性职业"
+        },
+        {
+          "w": "occupation",
+          "note": "职业，较正式"
+        },
+        {
+          "w": "vocation",
+          "note": "职业；天职"
+        }
+      ]
+    },
+    {
+      "w": "prospect",
+      "syn": [
+        {
+          "w": "outlook",
+          "note": "前景；展望"
+        },
+        {
+          "w": "future",
+          "note": "前途"
+        },
+        {
+          "w": "view",
+          "note": "景色；视野"
+        }
+      ]
+    },
+    {
+      "w": "resist",
+      "syn": [
+        {
+          "w": "oppose",
+          "note": "反对；抗争"
+        },
+        {
+          "w": "withstand",
+          "note": "抵挡；经受住"
+        },
+        {
+          "w": "defy",
+          "note": "违抗；反抗"
+        }
+      ]
+    },
+    {
+      "w": "resistance",
+      "syn": [
+        {
+          "w": "opposition",
+          "note": "抵抗；反对"
+        },
+        {
+          "w": "defense",
+          "note": "防御；防卫"
+        },
+        {
+          "w": "defiance",
+          "note": "违抗；蔑视"
+        }
+      ]
+    },
+    {
+      "w": "paragraph",
+      "syn": [
+        {
+          "w": "passage",
+          "note": "段落；节"
+        },
+        {
+          "w": "section",
+          "note": "部分；节"
+        }
+      ]
+    },
+    {
+      "w": "signpost",
+      "syn": [
+        {
+          "w": "sign",
+          "note": "标志；牌子"
+        },
+        {
+          "w": "guidepost",
+          "note": "路标"
+        },
+        {
+          "w": "marker",
+          "note": "标记；标志"
+        }
+      ]
+    },
+    {
+      "w": "essay",
+      "syn": [
+        {
+          "w": "article",
+          "note": "文章"
+        },
+        {
+          "w": "composition",
+          "note": "作文；作品"
+        },
+        {
+          "w": "paper",
+          "note": "论文；文章"
+        }
+      ]
+    },
+    {
+      "w": "accurate",
+      "syn": [
+        {
+          "w": "precise",
+          "note": "精确的；精密的"
+        },
+        {
+          "w": "exact",
+          "note": "完全准确的"
+        },
+        {
+          "w": "correct",
+          "note": "正确的"
+        }
+      ]
+    },
+    {
+      "w": "librarian",
+      "syn": []
+    },
+    {
+      "w": "Melbourne",
+      "syn": []
+    },
+    {
+      "w": "Christian",
+      "syn": [
+        {
+          "w": "believer",
+          "note": "信徒，较宽泛"
+        }
+      ]
+    },
+    {
+      "w": "buffet",
+      "syn": [
+        {
+          "w": "self-service meal",
+          "note": "自助餐"
+        },
+        {
+          "w": "snack bar",
+          "note": "小卖部；小吃店"
+        },
+        {
+          "w": "blow",
+          "note": "打击；一击"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "items": [
+    {
+      "w": "theme",
+      "syn": [
+        {
+          "w": "subject",
+          "note": "主题，最通用"
+        },
+        {
+          "w": "topic",
+          "note": "话题，多指具体题目"
+        },
+        {
+          "w": "motif",
+          "note": "文学音乐的母题，可数"
+        }
+      ]
+    },
+    {
+      "w": "theme park",
+      "syn": [
+        {
+          "w": "amusement park",
+          "note": "游乐园，更强调游乐设施"
+        }
+      ]
+    },
+    {
+      "w": "roller coaster",
+      "syn": []
+    },
+    {
+      "w": "incredible",
+      "syn": [
+        {
+          "w": "unbelievable",
+          "note": "难以置信，语气最直白"
+        },
+        {
+          "w": "amazing",
+          "note": "惊人的，常含赞叹"
+        },
+        {
+          "w": "astonishing",
+          "note": "令人吃惊，稍正式"
+        },
+        {
+          "w": "extraordinary",
+          "note": "非凡的，不寻常"
+        }
+      ]
+    },
+    {
+      "w": "appeal",
+      "syn": [
+        {
+          "w": "plea",
+          "note": "恳求，较正式"
+        },
+        {
+          "w": "request",
+          "note": "请求，较中性"
+        },
+        {
+          "w": "attraction",
+          "note": "吸引力这一义项"
+        },
+        {
+          "w": "charm",
+          "note": "魅力，侧重感染力"
+        }
+      ]
+    },
+    {
+      "w": "appeal to",
+      "syn": [
+        {
+          "w": "turn to",
+          "note": "求助于，侧重转向某人"
+        },
+        {
+          "w": "resort to",
+          "note": "诉诸，多指不得已的手段"
+        },
+        {
+          "w": "attract",
+          "note": "吸引，对应“引起兴趣”义"
+        }
+      ]
+    },
+    {
+      "w": "pirate",
+      "syn": [
+        {
+          "w": "buccaneer",
+          "note": "海盗，文学色彩较浓"
+        },
+        {
+          "w": "freebooter",
+          "note": "劫掠者，较古旧"
+        }
+      ]
+    },
+    {
+      "w": "adorable",
+      "syn": [
+        {
+          "w": "lovely",
+          "note": "可爱的，最常用"
+        },
+        {
+          "w": "cute",
+          "note": "小巧可爱，口语"
+        },
+        {
+          "w": "charming",
+          "note": "迷人的，侧重魅力"
+        }
+      ]
+    },
+    {
+      "w": "wander",
+      "syn": [
+        {
+          "w": "roam",
+          "note": "漫游，范围较大"
+        },
+        {
+          "w": "stroll",
+          "note": "悠闲散步，不迷路"
+        },
+        {
+          "w": "ramble",
+          "note": "漫步，常指乡间"
+        },
+        {
+          "w": "drift",
+          "note": "漂泊，侧重无目的"
+        }
+      ]
+    },
+    {
+      "w": "amusement",
+      "syn": [
+        {
+          "w": "entertainment",
+          "note": "娱乐，较正式宽泛"
+        },
+        {
+          "w": "recreation",
+          "note": "消遣，强调休闲放松"
+        },
+        {
+          "w": "fun",
+          "note": "乐趣，口语常用"
+        }
+      ]
+    },
+    {
+      "w": "amuse",
+      "syn": [
+        {
+          "w": "entertain",
+          "note": "使娱乐，较正式"
+        },
+        {
+          "w": "delight",
+          "note": "使高兴，程度更强"
+        },
+        {
+          "w": "please",
+          "note": "使满意，语气最轻"
+        }
+      ]
+    },
+    {
+      "w": "enormous",
+      "syn": [
+        {
+          "w": "huge",
+          "note": "巨大的，最常用"
+        },
+        {
+          "w": "massive",
+          "note": "庞大厚重，侧重体积"
+        },
+        {
+          "w": "tremendous",
+          "note": "极大，可含“惊人”"
+        },
+        {
+          "w": "immense",
+          "note": "广大无边，较正式"
+        }
+      ]
+    }
+  ]
+}

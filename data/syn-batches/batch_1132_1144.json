@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "w": "smartphone",
+      "syn": [
+        {
+          "w": "mobile phone",
+          "note": "英式手机"
+        },
+        {
+          "w": "cell phone",
+          "note": "美式手机"
+        },
+        {
+          "w": "mobile",
+          "note": "英式口语手机"
+        }
+      ]
+    },
+    {
+      "w": "resource",
+      "syn": [
+        {
+          "w": "asset",
+          "note": "资产/有用资源"
+        },
+        {
+          "w": "supply",
+          "note": "供应/储备"
+        },
+        {
+          "w": "means",
+          "note": "财力/手段"
+        }
+      ]
+    },
+    {
+      "w": "limited",
+      "syn": [
+        {
+          "w": "restricted",
+          "note": "受限制的"
+        },
+        {
+          "w": "finite",
+          "note": "数量有限的"
+        },
+        {
+          "w": "scarce",
+          "note": "稀缺的"
+        }
+      ]
+    },
+    {
+      "w": "provide for sb.",
+      "syn": [
+        {
+          "w": "prepare for",
+          "note": "为…作准备"
+        },
+        {
+          "w": "support",
+          "note": "供养"
+        },
+        {
+          "w": "care for",
+          "note": "照顾/供养"
+        }
+      ]
+    },
+    {
+      "w": "closing",
+      "syn": [
+        {
+          "w": "ending",
+          "note": "结尾"
+        },
+        {
+          "w": "final",
+          "note": "最后的"
+        },
+        {
+          "w": "concluding",
+          "note": "结束的"
+        }
+      ]
+    },
+    {
+      "w": "in closing",
+      "syn": [
+        {
+          "w": "finally",
+          "note": "最后"
+        },
+        {
+          "w": "in conclusion",
+          "note": "最后/总之"
+        },
+        {
+          "w": "lastly",
+          "note": "最后一点"
+        }
+      ]
+    },
+    {
+      "w": "mystery",
+      "syn": [
+        {
+          "w": "secret",
+          "note": "秘密"
+        },
+        {
+          "w": "puzzle",
+          "note": "谜/难题"
+        },
+        {
+          "w": "riddle",
+          "note": "谜语/谜"
+        }
+      ]
+    },
+    {
+      "w": "run out",
+      "syn": [
+        {
+          "w": "use up",
+          "note": "用光（及物）"
+        },
+        {
+          "w": "give out",
+          "note": "耗尽（不及物）"
+        },
+        {
+          "w": "expire",
+          "note": "到期/失效"
+        }
+      ]
+    },
+    {
+      "w": "attach",
+      "syn": [
+        {
+          "w": "fasten",
+          "note": "系上/固定"
+        },
+        {
+          "w": "connect",
+          "note": "连接"
+        },
+        {
+          "w": "join",
+          "note": "连接/结合"
+        }
+      ]
+    },
+    {
+      "w": "oxygen",
+      "syn": []
+    },
+    {
+      "w": "Sputnik",
+      "syn": [
+        {
+          "w": "satellite",
+          "note": "卫星（泛指）"
+        },
+        {
+          "w": "artificial satellite",
+          "note": "人造卫星"
+        }
+      ]
+    },
+    {
+      "w": "the USSR",
+      "syn": [
+        {
+          "w": "the Soviet Union",
+          "note": "苏联"
+        },
+        {
+          "w": "the Union of Soviet Socialist Republics",
+          "note": "苏联全称"
+        }
+      ]
+    }
+  ]
+}

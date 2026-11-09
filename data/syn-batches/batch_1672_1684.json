@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "w": "in charge of",
+      "syn": [
+        {
+          "w": "responsible for",
+          "note": "侧重负责"
+        },
+        {
+          "w": "in control of",
+          "note": "侧重掌控"
+        },
+        {
+          "w": "in command of",
+          "note": "侧重指挥"
+        }
+      ]
+    },
+    {
+      "w": "missile",
+      "syn": [
+        {
+          "w": "projectile",
+          "note": "投射物；较正式"
+        },
+        {
+          "w": "rocket",
+          "note": "火箭；可指导弹"
+        }
+      ]
+    },
+    {
+      "w": "leadership",
+      "syn": [
+        {
+          "w": "guidance",
+          "note": "指导；领导"
+        },
+        {
+          "w": "direction",
+          "note": "领导；指导"
+        },
+        {
+          "w": "command",
+          "note": "指挥；统领"
+        }
+      ]
+    },
+    {
+      "w": "trace",
+      "syn": [
+        {
+          "w": "trail",
+          "note": "踪迹；追踪"
+        },
+        {
+          "w": "track",
+          "note": "轨迹；追踪"
+        },
+        {
+          "w": "mark",
+          "note": "痕迹；记号"
+        },
+        {
+          "w": "sign",
+          "note": "迹象；标志"
+        }
+      ]
+    },
+    {
+      "w": "outstanding",
+      "syn": [
+        {
+          "w": "excellent",
+          "note": "杰出的；优秀"
+        },
+        {
+          "w": "remarkable",
+          "note": "显著的；非凡"
+        },
+        {
+          "w": "prominent",
+          "note": "突出的；著名的"
+        },
+        {
+          "w": "unpaid",
+          "note": "未偿付的"
+        }
+      ]
+    },
+    {
+      "w": "gifted",
+      "syn": [
+        {
+          "w": "talented",
+          "note": "有天赋的"
+        },
+        {
+          "w": "able",
+          "note": "有才能的"
+        },
+        {
+          "w": "brilliant",
+          "note": "才华横溢的"
+        }
+      ]
+    },
+    {
+      "w": "come down",
+      "syn": [
+        {
+          "w": "descend",
+          "note": "下降；较正式"
+        },
+        {
+          "w": "fall",
+          "note": "落下；下降"
+        },
+        {
+          "w": "decline",
+          "note": "下降；衰退"
+        },
+        {
+          "w": "go down",
+          "note": "下降；常见口语"
+        }
+      ]
+    },
+    {
+      "w": "abstract",
+      "syn": [
+        {
+          "w": "summary",
+          "note": "摘要"
+        },
+        {
+          "w": "theoretical",
+          "note": "抽象的；理论上的"
+        },
+        {
+          "w": "extract",
+          "note": "提取；摘录"
+        }
+      ]
+    },
+    {
+      "w": "steady",
+      "syn": [
+        {
+          "w": "stable",
+          "note": "稳定的"
+        },
+        {
+          "w": "constant",
+          "note": "不变的；持续的"
+        },
+        {
+          "w": "firm",
+          "note": "稳固的；沉着的"
+        },
+        {
+          "w": "regular",
+          "note": "规律的；固定的"
+        }
+      ]
+    },
+    {
+      "w": "concept",
+      "syn": [
+        {
+          "w": "idea",
+          "note": "想法；概念"
+        },
+        {
+          "w": "notion",
+          "note": "观念；概念"
+        },
+        {
+          "w": "conception",
+          "note": "构想；概念"
+        }
+      ]
+    },
+    {
+      "w": "astronomer",
+      "syn": []
+    },
+    {
+      "w": "astronomy",
+      "syn": []
+    }
+  ]
+}

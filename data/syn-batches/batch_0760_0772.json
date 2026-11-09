@@ -1,0 +1,158 @@
+{
+  "items": [
+    {
+      "w": "being",
+      "syn": [
+        {
+          "w": "existence",
+          "note": "侧重“存在”这一抽象状态"
+        },
+        {
+          "w": "creature",
+          "note": "指“生物、生命体”"
+        },
+        {
+          "w": "essence",
+          "note": "侧重“本质”义项"
+        }
+      ]
+    },
+    {
+      "w": "various",
+      "syn": [
+        {
+          "w": "diverse",
+          "note": "更强调种类差异大"
+        },
+        {
+          "w": "varied",
+          "note": "侧重“多样、各不相同”"
+        },
+        {
+          "w": "assorted",
+          "note": "指杂七杂八、搭配成套的"
+        }
+      ]
+    },
+    {
+      "w": "somehow",
+      "syn": [
+        {
+          "w": "in some way",
+          "note": "短语，侧重“以某种办法”"
+        },
+        {
+          "w": "one way or another",
+          "note": "短语，含“总有办法”义"
+        }
+      ]
+    },
+    {
+      "w": "rhetorical",
+      "syn": [
+        {
+          "w": "oratorical",
+          "note": "侧重“演说式的、辞藻华丽”"
+        },
+        {
+          "w": "bombastic",
+          "note": "侧重“夸张浮夸的”"
+        }
+      ]
+    },
+    {
+      "w": "metaphor",
+      "syn": [
+        {
+          "w": "analogy",
+          "note": "类比，范围更宽"
+        },
+        {
+          "w": "figure of speech",
+          "note": "短语，泛指比喻等修辞格"
+        }
+      ]
+    },
+    {
+      "w": "personification",
+      "syn": [
+        {
+          "w": "embodiment",
+          "note": "侧重“化身、体现”义"
+        },
+        {
+          "w": "incarnation",
+          "note": "化身，略带书面色彩"
+        }
+      ]
+    },
+    {
+      "w": "repetition",
+      "syn": [
+        {
+          "w": "reiteration",
+          "note": "更正式，强调“重申”"
+        },
+        {
+          "w": "recurrence",
+          "note": "侧重“再次发生、反复出现”"
+        },
+        {
+          "w": "duplication",
+          "note": "侧重“重复复制”"
+        }
+      ]
+    },
+    {
+      "w": "simile",
+      "syn": [
+        {
+          "w": "analogy",
+          "note": "类比，含明比意味，但不完全等同"
+        }
+      ]
+    },
+    {
+      "w": "outline",
+      "syn": [
+        {
+          "w": "sketch",
+          "note": "既可指“素描轮廓”也可指“简述”"
+        },
+        {
+          "w": "summary",
+          "note": "侧重“摘要、概要”"
+        },
+        {
+          "w": "framework",
+          "note": "侧重“框架、纲要结构”"
+        }
+      ]
+    },
+    {
+      "w": "reaction",
+      "syn": [
+        {
+          "w": "response",
+          "note": "最常用，泛指“回应、反应”"
+        },
+        {
+          "w": "feedback",
+          "note": "侧重“反馈意见”"
+        },
+        {
+          "w": "backlash",
+          "note": "侧重“强烈反对、反弹”"
+        }
+      ]
+    },
+    {
+      "w": "Eric Whitacre",
+      "syn": []
+    },
+    {
+      "w": "Nevada",
+      "syn": []
+    }
+  ]
+}

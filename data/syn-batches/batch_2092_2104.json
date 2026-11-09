@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "straight away",
+      "syn": [
+        {
+          "w": "immediately",
+          "note": "立刻，较正式"
+        },
+        {
+          "w": "right away",
+          "note": "马上，口语"
+        },
+        {
+          "w": "at once",
+          "note": "立刻，较正式"
+        },
+        {
+          "w": "instantly",
+          "note": "瞬间，强调立即"
+        }
+      ]
+    },
+    {
+      "w": "pessimistic",
+      "syn": [
+        {
+          "w": "negative",
+          "note": "消极的，侧重态度"
+        },
+        {
+          "w": "gloomy",
+          "note": "沮丧的，侧重情绪"
+        },
+        {
+          "w": "cynical",
+          "note": "愤世嫉俗的，语气较强"
+        }
+      ]
+    },
+    {
+      "w": "discipline",
+      "syn": [
+        {
+          "w": "training",
+          "note": "训练，对应训练义"
+        },
+        {
+          "w": "order",
+          "note": "秩序、纪律"
+        },
+        {
+          "w": "punish",
+          "note": "惩罚，对应动词惩戒义"
+        }
+      ]
+    },
+    {
+      "w": "pill",
+      "syn": [
+        {
+          "w": "tablet",
+          "note": "药片"
+        },
+        {
+          "w": "capsule",
+          "note": "胶囊"
+        },
+        {
+          "w": "medicine",
+          "note": "药物，泛称"
+        }
+      ]
+    },
+    {
+      "w": "delete",
+      "syn": [
+        {
+          "w": "remove",
+          "note": "移除，较通用"
+        },
+        {
+          "w": "erase",
+          "note": "擦除、消除"
+        },
+        {
+          "w": "cancel",
+          "note": "取消，偏删除记录"
+        }
+      ]
+    },
+    {
+      "w": "decide on",
+      "syn": [
+        {
+          "w": "choose",
+          "note": "选定"
+        },
+        {
+          "w": "settle on",
+          "note": "决定、选定"
+        },
+        {
+          "w": "determine",
+          "note": "决定，较正式"
+        }
+      ]
+    },
+    {
+      "w": "make up one's mind",
+      "syn": [
+        {
+          "w": "decide",
+          "note": "决定"
+        },
+        {
+          "w": "resolve",
+          "note": "下决心，较正式"
+        },
+        {
+          "w": "determine",
+          "note": "决心、决定"
+        }
+      ]
+    },
+    {
+      "w": "compose",
+      "syn": [
+        {
+          "w": "constitute",
+          "note": "构成，较正式"
+        },
+        {
+          "w": "write",
+          "note": "创作乐曲或文章"
+        },
+        {
+          "w": "calm",
+          "note": "使平静，如 compose oneself"
+        },
+        {
+          "w": "form",
+          "note": "构成、组成"
+        }
+      ]
+    },
+    {
+      "w": "be composed of",
+      "syn": [
+        {
+          "w": "consist of",
+          "note": "由…组成，主动形式"
+        },
+        {
+          "w": "be made up of",
+          "note": "由…组成，较口语"
+        },
+        {
+          "w": "comprise",
+          "note": "包括、由…组成，较正式"
+        }
+      ]
+    },
+    {
+      "w": "surgeon",
+      "syn": [
+        {
+          "w": "doctor",
+          "note": "医生，泛称；不特指外科"
+        }
+      ]
+    },
+    {
+      "w": "surgery",
+      "syn": [
+        {
+          "w": "operation",
+          "note": "手术"
+        },
+        {
+          "w": "clinic",
+          "note": "诊所、诊疗室"
+        },
+        {
+          "w": "operating room",
+          "note": "手术室"
+        }
+      ]
+    },
+    {
+      "w": "liberation",
+      "syn": [
+        {
+          "w": "freedom",
+          "note": "自由"
+        },
+        {
+          "w": "release",
+          "note": "释放"
+        },
+        {
+          "w": "emancipation",
+          "note": "解放，较正式"
+        }
+      ]
+    }
+  ]
+}

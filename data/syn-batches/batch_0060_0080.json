@@ -1,0 +1,348 @@
+{
+  "items": [
+    {
+      "w": "prefer",
+      "syn": [
+        {
+          "w": "favor",
+          "note": "更正式，偏爱"
+        },
+        {
+          "w": "would rather",
+          "note": "宁愿，后接动词原形"
+        },
+        {
+          "w": "opt for",
+          "note": "选择，较正式"
+        }
+      ]
+    },
+    {
+      "w": "prefer ... to ...",
+      "syn": [
+        {
+          "w": "like ... better than ...",
+          "note": "更口语，更喜欢"
+        },
+        {
+          "w": "would rather ... than ...",
+          "note": "宁愿…而不…"
+        },
+        {
+          "w": "choose ... over ...",
+          "note": "侧重选择…而非…"
+        }
+      ]
+    },
+    {
+      "w": "content",
+      "syn": [
+        {
+          "w": "satisfied",
+          "note": "满意的"
+        },
+        {
+          "w": "pleased",
+          "note": "满意的"
+        },
+        {
+          "w": "subject matter",
+          "note": "内容/题材"
+        },
+        {
+          "w": "capacity",
+          "note": "容量"
+        }
+      ]
+    },
+    {
+      "w": "movement",
+      "syn": [
+        {
+          "w": "motion",
+          "note": "运动/动作"
+        },
+        {
+          "w": "campaign",
+          "note": "社会/政治运动"
+        },
+        {
+          "w": "activity",
+          "note": "活动"
+        }
+      ]
+    },
+    {
+      "w": "greenhouse",
+      "syn": [
+        {
+          "w": "glasshouse",
+          "note": "温室，英式"
+        },
+        {
+          "w": "hothouse",
+          "note": "暖房/温室"
+        },
+        {
+          "w": "conservatory",
+          "note": "玻璃暖房，较正式"
+        }
+      ]
+    },
+    {
+      "w": "clean up",
+      "syn": [
+        {
+          "w": "tidy up",
+          "note": "收拾整洁"
+        },
+        {
+          "w": "clear up",
+          "note": "清理/收拾"
+        },
+        {
+          "w": "sort out",
+          "note": "整理/解决"
+        }
+      ]
+    },
+    {
+      "w": "suitable",
+      "syn": [
+        {
+          "w": "appropriate",
+          "note": "适当的，较正式"
+        },
+        {
+          "w": "proper",
+          "note": "合适的"
+        },
+        {
+          "w": "fitting",
+          "note": "恰当的"
+        }
+      ]
+    },
+    {
+      "w": "suitable for",
+      "syn": [
+        {
+          "w": "fit for",
+          "note": "适合"
+        },
+        {
+          "w": "appropriate for",
+          "note": "适用于"
+        },
+        {
+          "w": "right for",
+          "note": "适合"
+        }
+      ]
+    },
+    {
+      "w": "actually",
+      "syn": [
+        {
+          "w": "in fact",
+          "note": "事实上"
+        },
+        {
+          "w": "really",
+          "note": "确实/实际上"
+        },
+        {
+          "w": "as a matter of fact",
+          "note": "事实上，稍正式"
+        }
+      ]
+    },
+    {
+      "w": "challenge",
+      "syn": [
+        {
+          "w": "test",
+          "note": "考验"
+        },
+        {
+          "w": "question",
+          "note": "质疑"
+        },
+        {
+          "w": "doubt",
+          "note": "怀疑"
+        }
+      ]
+    },
+    {
+      "w": "title",
+      "syn": [
+        {
+          "w": "heading",
+          "note": "标题"
+        },
+        {
+          "w": "headline",
+          "note": "标题/头条"
+        },
+        {
+          "w": "championship",
+          "note": "冠军称号"
+        }
+      ]
+    },
+    {
+      "w": "topic",
+      "syn": [
+        {
+          "w": "theme",
+          "note": "主题"
+        },
+        {
+          "w": "subject",
+          "note": "话题/主题"
+        },
+        {
+          "w": "issue",
+          "note": "议题"
+        }
+      ]
+    },
+    {
+      "w": "freshman",
+      "syn": [
+        {
+          "w": "beginner",
+          "note": "新手"
+        },
+        {
+          "w": "newcomer",
+          "note": "新来者"
+        },
+        {
+          "w": "first-year student",
+          "note": "一年级学生"
+        }
+      ]
+    },
+    {
+      "w": "confuse",
+      "syn": [
+        {
+          "w": "puzzle",
+          "note": "使困惑"
+        },
+        {
+          "w": "bewilder",
+          "note": "使迷惑，较正式"
+        },
+        {
+          "w": "mix up",
+          "note": "混淆"
+        }
+      ]
+    },
+    {
+      "w": "fluent",
+      "syn": [
+        {
+          "w": "smooth",
+          "note": "流畅的"
+        },
+        {
+          "w": "flowing",
+          "note": "流畅的"
+        },
+        {
+          "w": "articulate",
+          "note": "表达清晰的"
+        }
+      ]
+    },
+    {
+      "w": "graduate",
+      "syn": [
+        {
+          "w": "alumnus",
+          "note": "毕业生/校友"
+        },
+        {
+          "w": "postgraduate",
+          "note": "研究生，英式"
+        },
+        {
+          "w": "former student",
+          "note": "校友/曾就读学生"
+        }
+      ]
+    },
+    {
+      "w": "recommend",
+      "syn": [
+        {
+          "w": "suggest",
+          "note": "建议"
+        },
+        {
+          "w": "advise",
+          "note": "劝告"
+        },
+        {
+          "w": "endorse",
+          "note": "正式推荐/赞同"
+        }
+      ]
+    },
+    {
+      "w": "sign up",
+      "syn": [
+        {
+          "w": "register",
+          "note": "注册"
+        },
+        {
+          "w": "enroll",
+          "note": "报名/注册"
+        },
+        {
+          "w": "join",
+          "note": "加入"
+        }
+      ]
+    },
+    {
+      "w": "sign up for sth.",
+      "syn": [
+        {
+          "w": "register for sth.",
+          "note": "注册/选修"
+        },
+        {
+          "w": "enroll in sth.",
+          "note": "报名参加"
+        },
+        {
+          "w": "join sth.",
+          "note": "加入"
+        }
+      ]
+    },
+    {
+      "w": "advance",
+      "syn": [
+        {
+          "w": "progress",
+          "note": "前进/进步"
+        },
+        {
+          "w": "development",
+          "note": "发展"
+        },
+        {
+          "w": "put forward",
+          "note": "提出（观点）"
+        }
+      ]
+    }
+  ]
+}

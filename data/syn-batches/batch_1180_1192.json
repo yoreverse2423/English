@@ -1,0 +1,178 @@
+{
+  "items": [
+    {
+      "w": "spot",
+      "syn": [
+        {
+          "w": "place",
+          "note": "地点，更泛"
+        },
+        {
+          "w": "site",
+          "note": "地点，特定场所"
+        },
+        {
+          "w": "recognize",
+          "note": "认出，较正式"
+        },
+        {
+          "w": "stain",
+          "note": "弄脏；污点"
+        }
+      ]
+    },
+    {
+      "w": "consulate",
+      "syn": []
+    },
+    {
+      "w": "dare",
+      "syn": [
+        {
+          "w": "challenge",
+          "note": "挑战；挑动"
+        },
+        {
+          "w": "venture",
+          "note": "敢冒险"
+        },
+        {
+          "w": "risk",
+          "note": "冒…风险"
+        }
+      ]
+    },
+    {
+      "w": "sort",
+      "syn": [
+        {
+          "w": "kind",
+          "note": "种类"
+        },
+        {
+          "w": "type",
+          "note": "类型"
+        },
+        {
+          "w": "classify",
+          "note": "分类"
+        },
+        {
+          "w": "arrange",
+          "note": "整理；排列"
+        }
+      ]
+    },
+    {
+      "w": "mining",
+      "syn": []
+    },
+    {
+      "w": "patience",
+      "syn": [
+        {
+          "w": "tolerance",
+          "note": "容忍，偏宽容"
+        },
+        {
+          "w": "endurance",
+          "note": "忍耐力，偏持久"
+        }
+      ]
+    },
+    {
+      "w": "to be honest",
+      "syn": [
+        {
+          "w": "to tell the truth",
+          "note": "说实话"
+        },
+        {
+          "w": "frankly speaking",
+          "note": "坦白说"
+        }
+      ]
+    },
+    {
+      "w": "ought to",
+      "syn": [
+        {
+          "w": "should",
+          "note": "应该，语气相近"
+        },
+        {
+          "w": "be supposed to",
+          "note": "应该，按规定或预期"
+        }
+      ]
+    },
+    {
+      "w": "be about to do sth.",
+      "syn": [
+        {
+          "w": "be going to do sth",
+          "note": "将要；打算"
+        },
+        {
+          "w": "be on the point of doing sth",
+          "note": "即将，较正式"
+        }
+      ]
+    },
+    {
+      "w": "indicate",
+      "syn": [
+        {
+          "w": "show",
+          "note": "表明"
+        },
+        {
+          "w": "suggest",
+          "note": "表明；暗示"
+        },
+        {
+          "w": "point out",
+          "note": "指出"
+        },
+        {
+          "w": "signal",
+          "note": "预示；表示"
+        }
+      ]
+    },
+    {
+      "w": "beneath",
+      "syn": [
+        {
+          "w": "under",
+          "note": "在…下，常指正下方"
+        },
+        {
+          "w": "below",
+          "note": "在…下方，低于"
+        },
+        {
+          "w": "underneath",
+          "note": "在…下面，强调覆盖或隐藏"
+        }
+      ]
+    },
+    {
+      "w": "postpone",
+      "syn": [
+        {
+          "w": "delay",
+          "note": "推迟"
+        },
+        {
+          "w": "put off",
+          "note": "推迟，较口语"
+        },
+        {
+          "w": "defer",
+          "note": "延期，较正式"
+        }
+      ]
+    }
+  ]
+}

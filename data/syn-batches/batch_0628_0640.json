@@ -1,0 +1,204 @@
+{
+  "items": [
+    {
+      "w": "nearby",
+      "syn": [
+        {
+          "w": "neighboring",
+          "note": "邻近的，常作定语"
+        },
+        {
+          "w": "close",
+          "note": "距离近的"
+        },
+        {
+          "w": "near",
+          "note": "近的；在附近"
+        }
+      ]
+    },
+    {
+      "w": "join ... to ...",
+      "syn": [
+        {
+          "w": "connect ... to ...",
+          "note": "把…连接到…"
+        },
+        {
+          "w": "link ... to ...",
+          "note": "连接；联系"
+        },
+        {
+          "w": "attach ... to ...",
+          "note": "附上；系到…上"
+        }
+      ]
+    },
+    {
+      "w": "break away",
+      "syn": [
+        {
+          "w": "escape",
+          "note": "逃脱，强调逃离控制"
+        },
+        {
+          "w": "flee",
+          "note": "逃离，强调迅速离开"
+        },
+        {
+          "w": "get away",
+          "note": "脱身；离开"
+        }
+      ]
+    },
+    {
+      "w": "break away from sb.",
+      "syn": [
+        {
+          "w": "leave",
+          "note": "离开某人"
+        },
+        {
+          "w": "separate from",
+          "note": "与…分离"
+        },
+        {
+          "w": "part from",
+          "note": "与…分别，较正式"
+        }
+      ]
+    },
+    {
+      "w": "break away from sth.",
+      "syn": [
+        {
+          "w": "separate from",
+          "note": "与…分离；脱离"
+        },
+        {
+          "w": "detach from",
+          "note": "脱离；拆卸开"
+        },
+        {
+          "w": "leave",
+          "note": "离开；脱离"
+        }
+      ]
+    },
+    {
+      "w": "belong",
+      "syn": [
+        {
+          "w": "be owned by",
+          "note": "属于某人所有"
+        },
+        {
+          "w": "be part of",
+          "note": "是…的一部分"
+        },
+        {
+          "w": "fit in",
+          "note": "适宜；合群"
+        }
+      ]
+    },
+    {
+      "w": "belong to",
+      "syn": [
+        {
+          "w": "be owned by",
+          "note": "归…所有"
+        },
+        {
+          "w": "be part of",
+          "note": "属于…的一部分"
+        },
+        {
+          "w": "be a member of",
+          "note": "是…的成员"
+        }
+      ]
+    },
+    {
+      "w": "as well as",
+      "syn": [
+        {
+          "w": "and",
+          "note": "和；以及"
+        },
+        {
+          "w": "along with",
+          "note": "连同；和…一起"
+        },
+        {
+          "w": "besides",
+          "note": "除…之外还"
+        }
+      ]
+    },
+    {
+      "w": "currency",
+      "syn": [
+        {
+          "w": "money",
+          "note": "钱，泛称"
+        },
+        {
+          "w": "cash",
+          "note": "现金"
+        }
+      ]
+    },
+    {
+      "w": "military",
+      "syn": [
+        {
+          "w": "armed forces",
+          "note": "名词：武装力量；军队"
+        },
+        {
+          "w": "army",
+          "note": "名词：军队"
+        },
+        {
+          "w": "martial",
+          "note": "形容词：军事的；战争的"
+        }
+      ]
+    },
+    {
+      "w": "defence",
+      "syn": [
+        {
+          "w": "protection",
+          "note": "保护；防护"
+        },
+        {
+          "w": "safeguard",
+          "note": "保障；保护措施"
+        },
+        {
+          "w": "guard",
+          "note": "守卫；防护"
+        }
+      ]
+    },
+    {
+      "w": "legal",
+      "syn": [
+        {
+          "w": "lawful",
+          "note": "合法的；依法的"
+        },
+        {
+          "w": "legitimate",
+          "note": "合法的；正当的"
+        },
+        {
+          "w": "statutory",
+          "note": "法定的；成文法律规定的"
+        }
+      ]
+    }
+  ]
+}

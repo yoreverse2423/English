@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "enroll",
+      "syn": [
+        {
+          "w": "register",
+          "note": "登记；注册，最常用"
+        },
+        {
+          "w": "sign up",
+          "note": "口语，报名参加"
+        },
+        {
+          "w": "enlist",
+          "note": "侧重 enlist in 参军/加入"
+        }
+      ]
+    },
+    {
+      "w": "quarry",
+      "syn": [
+        {
+          "w": "mine",
+          "note": "矿场；开采"
+        },
+        {
+          "w": "pit",
+          "note": "采掘坑；矿坑"
+        },
+        {
+          "w": "prey",
+          "note": "作“猎物”义时"
+        }
+      ]
+    },
+    {
+      "w": "idiom",
+      "syn": [
+        {
+          "w": "expression",
+          "note": "习语；表达方式，较宽泛"
+        },
+        {
+          "w": "phrase",
+          "note": "短语，不一定是习语"
+        },
+        {
+          "w": "saying",
+          "note": "谚语；俗语"
+        }
+      ]
+    },
+    {
+      "w": "contrary",
+      "syn": [
+        {
+          "w": "opposite",
+          "note": "相反的事物；相反的"
+        },
+        {
+          "w": "reverse",
+          "note": "作名词“反面”时"
+        },
+        {
+          "w": "opposed",
+          "note": "作形容词“对立的”时"
+        }
+      ]
+    },
+    {
+      "w": "contrary to",
+      "syn": [
+        {
+          "w": "against",
+          "note": "违背；与…相反"
+        },
+        {
+          "w": "in opposition to",
+          "note": "较正式，与…相对立"
+        },
+        {
+          "w": "opposite to",
+          "note": "与…相反"
+        }
+      ]
+    },
+    {
+      "w": "anyhow",
+      "syn": [
+        {
+          "w": "anyway",
+          "note": "几乎同义，更口语"
+        },
+        {
+          "w": "in any case",
+          "note": "无论如何"
+        },
+        {
+          "w": "somehow",
+          "note": "不知怎么地；设法，义略偏"
+        }
+      ]
+    },
+    {
+      "w": "alongside",
+      "syn": [
+        {
+          "w": "beside",
+          "note": "在…旁边"
+        },
+        {
+          "w": "next to",
+          "note": "紧挨着"
+        },
+        {
+          "w": "side by side with",
+          "note": "并肩；与…并排"
+        }
+      ]
+    },
+    {
+      "w": "proceed",
+      "syn": [
+        {
+          "w": "continue",
+          "note": "继续进行"
+        },
+        {
+          "w": "go on",
+          "note": "口语，继续"
+        },
+        {
+          "w": "advance",
+          "note": "行进；前进"
+        }
+      ]
+    },
+    {
+      "w": "proceed to sth.",
+      "syn": [
+        {
+          "w": "go on to",
+          "note": "接着做（下一步）"
+        },
+        {
+          "w": "move on to",
+          "note": "进而转向"
+        },
+        {
+          "w": "advance to",
+          "note": "推进到"
+        }
+      ]
+    },
+    {
+      "w": "shore",
+      "syn": [
+        {
+          "w": "coast",
+          "note": "海岸，范围较大"
+        },
+        {
+          "w": "beach",
+          "note": "沙滩，侧重可游玩处"
+        },
+        {
+          "w": "bank",
+          "note": "河岸；堤岸"
+        }
+      ]
+    },
+    {
+      "w": "astonish",
+      "syn": [
+        {
+          "w": "amaze",
+          "note": "使惊奇，最常用"
+        },
+        {
+          "w": "surprise",
+          "note": "使惊讶，程度较轻"
+        },
+        {
+          "w": "astound",
+          "note": "使震惊，程度更重"
+        }
+      ]
+    },
+    {
+      "w": "misty",
+      "syn": [
+        {
+          "w": "foggy",
+          "note": "有雾的"
+        },
+        {
+          "w": "hazy",
+          "note": "雾蒙蒙的；模糊"
+        },
+        {
+          "w": "vague",
+          "note": "作“模糊的”义时"
+        }
+      ]
+    }
+  ]
+}

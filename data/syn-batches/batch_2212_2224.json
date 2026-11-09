@@ -1,0 +1,223 @@
+{
+  "items": [
+    {
+      "w": "crush",
+      "syn": [
+        {
+          "w": "squash",
+          "note": "压扁、压碎"
+        },
+        {
+          "w": "smash",
+          "note": "粉碎、猛撞"
+        },
+        {
+          "w": "infatuation",
+          "note": "迷恋，较正式"
+        },
+        {
+          "w": "crowd",
+          "note": "拥挤的人群"
+        }
+      ]
+    },
+    {
+      "w": "sink",
+      "syn": [
+        {
+          "w": "basin",
+          "note": "盆、水槽"
+        },
+        {
+          "w": "washbasin",
+          "note": "洗涤槽"
+        },
+        {
+          "w": "descend",
+          "note": "下降、下沉，较正式"
+        },
+        {
+          "w": "fall",
+          "note": "落下、下降"
+        }
+      ]
+    },
+    {
+      "w": "abandon",
+      "syn": [
+        {
+          "w": "desert",
+          "note": "遗弃、抛弃"
+        },
+        {
+          "w": "forsake",
+          "note": "抛弃，较书面"
+        },
+        {
+          "w": "give up",
+          "note": "放弃"
+        },
+        {
+          "w": "quit",
+          "note": "放弃、停止"
+        }
+      ]
+    },
+    {
+      "w": "stove",
+      "syn": [
+        {
+          "w": "furnace",
+          "note": "火炉、熔炉"
+        },
+        {
+          "w": "oven",
+          "note": "烤箱、烤炉"
+        },
+        {
+          "w": "range",
+          "note": "炉灶"
+        }
+      ]
+    },
+    {
+      "w": "blanket",
+      "syn": [
+        {
+          "w": "quilt",
+          "note": "被子，偏厚"
+        },
+        {
+          "w": "cover",
+          "note": "覆盖物；覆盖"
+        },
+        {
+          "w": "overall",
+          "note": "总括的"
+        },
+        {
+          "w": "comprehensive",
+          "note": "全面的、总括的"
+        }
+      ]
+    },
+    {
+      "w": "belongings",
+      "syn": [
+        {
+          "w": "possessions",
+          "note": "财产、所有物"
+        },
+        {
+          "w": "property",
+          "note": "财产，不可数"
+        },
+        {
+          "w": "effects",
+          "note": "个人财物，较正式"
+        },
+        {
+          "w": "things",
+          "note": "东西、物品，口语"
+        }
+      ]
+    },
+    {
+      "w": "banjo",
+      "syn": []
+    },
+    {
+      "w": "miserable",
+      "syn": [
+        {
+          "w": "unhappy",
+          "note": "不快乐的"
+        },
+        {
+          "w": "wretched",
+          "note": "悲惨的，语气更强"
+        },
+        {
+          "w": "pitiful",
+          "note": "可怜的"
+        },
+        {
+          "w": "gloomy",
+          "note": "忧郁的、阴沉的"
+        }
+      ]
+    },
+    {
+      "w": "voyage",
+      "syn": [
+        {
+          "w": "journey",
+          "note": "旅程，陆海空均可"
+        },
+        {
+          "w": "trip",
+          "note": "旅行，常指短途"
+        },
+        {
+          "w": "passage",
+          "note": "航程、航行，较正式"
+        },
+        {
+          "w": "sail",
+          "note": "航行，作动词"
+        }
+      ]
+    },
+    {
+      "w": "navy",
+      "syn": [
+        {
+          "w": "fleet",
+          "note": "舰队，近义"
+        },
+        {
+          "w": "naval force",
+          "note": "海军部队，短语"
+        }
+      ]
+    },
+    {
+      "w": "decent",
+      "syn": [
+        {
+          "w": "proper",
+          "note": "得体的、合适的"
+        },
+        {
+          "w": "respectable",
+          "note": "正派的、体面的"
+        },
+        {
+          "w": "acceptable",
+          "note": "可接受的、相当好的"
+        },
+        {
+          "w": "suitable",
+          "note": "合适的"
+        }
+      ]
+    },
+    {
+      "w": "cosy",
+      "syn": [
+        {
+          "w": "comfortable",
+          "note": "舒适的"
+        },
+        {
+          "w": "snug",
+          "note": "温暖舒适的"
+        },
+        {
+          "w": "warm",
+          "note": "温暖惬意的"
+        }
+      ]
+    }
+  ]
+}

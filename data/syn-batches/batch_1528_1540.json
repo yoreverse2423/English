@@ -1,0 +1,165 @@
+{
+  "items": [
+    {
+      "w": "conflict",
+      "syn": [
+        {
+          "w": "clash",
+          "note": "侧重抵触、冲突"
+        },
+        {
+          "w": "dispute",
+          "note": "侧重争执、争端"
+        },
+        {
+          "w": "struggle",
+          "note": "侧重斗争"
+        }
+      ]
+    },
+    {
+      "w": "inquire",
+      "syn": [
+        {
+          "w": "ask",
+          "note": "最通用，询问"
+        },
+        {
+          "w": "question",
+          "note": "侧重追问、盘问"
+        },
+        {
+          "w": "investigate",
+          "note": "侧重查究"
+        }
+      ]
+    },
+    {
+      "w": "enquire",
+      "syn": [
+        {
+          "w": "ask",
+          "note": "通用询问"
+        },
+        {
+          "w": "investigate",
+          "note": "侧重调查"
+        },
+        {
+          "w": "inquire",
+          "note": "英式拼写，同义"
+        }
+      ]
+    },
+    {
+      "w": "ultimately",
+      "syn": [
+        {
+          "w": "finally",
+          "note": "侧重最后"
+        },
+        {
+          "w": "eventually",
+          "note": "侧重最终结果"
+        },
+        {
+          "w": "basically",
+          "note": "侧重根本上"
+        }
+      ]
+    },
+    {
+      "w": "adjust",
+      "syn": [
+        {
+          "w": "adapt",
+          "note": "侧重适应"
+        },
+        {
+          "w": "modify",
+          "note": "侧重修改、调整"
+        },
+        {
+          "w": "alter",
+          "note": "侧重改变"
+        }
+      ]
+    },
+    {
+      "w": "intervene",
+      "syn": [
+        {
+          "w": "interfere",
+          "note": "侧重干扰、干涉"
+        },
+        {
+          "w": "mediate",
+          "note": "侧重调停"
+        },
+        {
+          "w": "step in",
+          "note": "短语，介入"
+        }
+      ]
+    },
+    {
+      "w": "react",
+      "syn": [
+        {
+          "w": "respond",
+          "note": "侧重回应、反应"
+        },
+        {
+          "w": "reply",
+          "note": "侧重回答"
+        }
+      ]
+    },
+    {
+      "w": "component",
+      "syn": [
+        {
+          "w": "element",
+          "note": "侧重要素、成分"
+        },
+        {
+          "w": "part",
+          "note": "最通用，部分"
+        },
+        {
+          "w": "constituent",
+          "note": "较正式，组成部分"
+        }
+      ]
+    },
+    {
+      "w": "tone",
+      "syn": [
+        {
+          "w": "pitch",
+          "note": "侧重音高"
+        },
+        {
+          "w": "shade",
+          "note": "侧重色调"
+        },
+        {
+          "w": "manner",
+          "note": "侧重语气、态度"
+        }
+      ]
+    },
+    {
+      "w": "Brazil",
+      "syn": []
+    },
+    {
+      "w": "Bulgaria",
+      "syn": []
+    },
+    {
+      "w": "Albania",
+      "syn": []
+    }
+  ]
+}

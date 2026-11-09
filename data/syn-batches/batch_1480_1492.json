@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "w": "favour",
+      "syn": [
+        {
+          "w": "support",
+          "note": "支持；赞同"
+        },
+        {
+          "w": "approval",
+          "note": "赞同；认可"
+        },
+        {
+          "w": "kindness",
+          "note": "善行；好意"
+        },
+        {
+          "w": "prefer",
+          "note": "更喜爱"
+        }
+      ]
+    },
+    {
+      "w": "bow",
+      "syn": [
+        {
+          "w": "bend",
+          "note": "弯腰；鞠躬"
+        },
+        {
+          "w": "stoop",
+          "note": "弯腰；屈身"
+        }
+      ]
+    },
+    {
+      "w": "waist",
+      "syn": [
+        {
+          "w": "waistline",
+          "note": "腰围；腰部"
+        },
+        {
+          "w": "middle",
+          "note": "身体中部（非精确）"
+        }
+      ]
+    },
+    {
+      "w": "make inferences",
+      "syn": [
+        {
+          "w": "infer",
+          "note": "推断（动词）"
+        },
+        {
+          "w": "deduce",
+          "note": "推论；演绎"
+        },
+        {
+          "w": "draw conclusions",
+          "note": "得出结论"
+        }
+      ]
+    },
+    {
+      "w": "break down",
+      "syn": [
+        {
+          "w": "stop working",
+          "note": "出故障；抛锚"
+        },
+        {
+          "w": "collapse",
+          "note": "崩溃；倒塌"
+        },
+        {
+          "w": "analyze",
+          "note": "分析"
+        },
+        {
+          "w": "decompose",
+          "note": "分解"
+        }
+      ]
+    },
+    {
+      "w": "barrier",
+      "syn": [
+        {
+          "w": "obstacle",
+          "note": "障碍；阻碍"
+        },
+        {
+          "w": "obstruction",
+          "note": "阻塞物；障碍"
+        },
+        {
+          "w": "hurdle",
+          "note": "难关；障碍"
+        }
+      ]
+    },
+    {
+      "w": "fake",
+      "syn": [
+        {
+          "w": "counterfeit",
+          "note": "伪造的；假货"
+        },
+        {
+          "w": "false",
+          "note": "假的；不真实的"
+        },
+        {
+          "w": "forgery",
+          "note": "伪造品"
+        },
+        {
+          "w": "pretend",
+          "note": "假装"
+        }
+      ]
+    },
+    {
+      "w": "anger",
+      "syn": [
+        {
+          "w": "rage",
+          "note": "盛怒；暴怒"
+        },
+        {
+          "w": "fury",
+          "note": "狂怒；暴怒"
+        },
+        {
+          "w": "irritate",
+          "note": "激怒；使恼火"
+        },
+        {
+          "w": "annoy",
+          "note": "使恼火"
+        }
+      ]
+    },
+    {
+      "w": "reliable",
+      "syn": [
+        {
+          "w": "dependable",
+          "note": "可靠的；靠得住的"
+        },
+        {
+          "w": "trustworthy",
+          "note": "可信赖的"
+        },
+        {
+          "w": "credible",
+          "note": "可信的（多指信息）"
+        }
+      ]
+    },
+    {
+      "w": "incident",
+      "syn": [
+        {
+          "w": "event",
+          "note": "事件（较通用）"
+        },
+        {
+          "w": "occurrence",
+          "note": "发生的事"
+        },
+        {
+          "w": "episode",
+          "note": "插曲；事件"
+        },
+        {
+          "w": "accident",
+          "note": "事故；意外"
+        }
+      ]
+    },
+    {
+      "w": "trial",
+      "syn": [
+        {
+          "w": "test",
+          "note": "试验；测试"
+        },
+        {
+          "w": "experiment",
+          "note": "实验；试验"
+        },
+        {
+          "w": "hearing",
+          "note": "审讯；听证"
+        },
+        {
+          "w": "ordeal",
+          "note": "磨难；煎熬"
+        }
+      ]
+    },
+    {
+      "w": "slight",
+      "syn": [
+        {
+          "w": "minor",
+          "note": "轻微的；不重要的"
+        },
+        {
+          "w": "small",
+          "note": "小的；轻微的"
+        },
+        {
+          "w": "insult",
+          "note": "侮辱；怠慢"
+        },
+        {
+          "w": "offend",
+          "note": "冒犯；使不快"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "items": [
+    {
+      "w": "cotton",
+      "syn": []
+    },
+    {
+      "w": "uniform",
+      "syn": [
+        {
+          "w": "consistent",
+          "note": "侧重一致性"
+        },
+        {
+          "w": "identical",
+          "note": "侧重相同"
+        },
+        {
+          "w": "even",
+          "note": "均衡的"
+        },
+        {
+          "w": "steady",
+          "note": "始终如一的"
+        }
+      ]
+    },
+    {
+      "w": "not to mention",
+      "syn": [
+        {
+          "w": "let alone",
+          "note": "更不用说，常用于否定"
+        },
+        {
+          "w": "to say nothing of",
+          "note": "更不用说，较正式"
+        },
+        {
+          "w": "not to speak of",
+          "note": "更不用说，正式"
+        }
+      ]
+    },
+    {
+      "w": "tablet",
+      "syn": [
+        {
+          "w": "pill",
+          "note": "药片"
+        },
+        {
+          "w": "plaque",
+          "note": "匾额；碑牌"
+        }
+      ]
+    },
+    {
+      "w": "rubber",
+      "syn": [
+        {
+          "w": "eraser",
+          "note": "橡皮擦（美式）"
+        }
+      ]
+    },
+    {
+      "w": "washroom",
+      "syn": [
+        {
+          "w": "restroom",
+          "note": "美式公共洗手间"
+        },
+        {
+          "w": "bathroom",
+          "note": "浴室；洗手间"
+        },
+        {
+          "w": "toilet",
+          "note": "厕所"
+        },
+        {
+          "w": "lavatory",
+          "note": "盥洗室，较正式"
+        }
+      ]
+    },
+    {
+      "w": "rigid",
+      "syn": [
+        {
+          "w": "strict",
+          "note": "严格的"
+        },
+        {
+          "w": "stiff",
+          "note": "僵硬的"
+        },
+        {
+          "w": "inflexible",
+          "note": "死板的，不灵活的"
+        },
+        {
+          "w": "firm",
+          "note": "坚硬的；坚定的"
+        }
+      ]
+    },
+    {
+      "w": "bubble",
+      "syn": [
+        {
+          "w": "foam",
+          "note": "泡沫；起泡"
+        },
+        {
+          "w": "froth",
+          "note": "泡沫；起泡，略正式"
+        }
+      ]
+    },
+    {
+      "w": "tube",
+      "syn": [
+        {
+          "w": "pipe",
+          "note": "管子，管道"
+        },
+        {
+          "w": "hose",
+          "note": "软管"
+        }
+      ]
+    },
+    {
+      "w": "circus",
+      "syn": []
+    },
+    {
+      "w": "chemist",
+      "syn": [
+        {
+          "w": "pharmacist",
+          "note": "药剂师"
+        },
+        {
+          "w": "druggist",
+          "note": "药剂师（美式）"
+        }
+      ]
+    },
+    {
+      "w": "shade",
+      "syn": [
+        {
+          "w": "shadow",
+          "note": "阴影；树荫"
+        },
+        {
+          "w": "shelter",
+          "note": "阴凉处；遮蔽"
+        },
+        {
+          "w": "screen",
+          "note": "遮蔽，遮挡"
+        },
+        {
+          "w": "nuance",
+          "note": "细微差别"
+        }
+      ]
+    }
+  ]
+}

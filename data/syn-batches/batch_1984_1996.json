@@ -1,0 +1,150 @@
+{
+  "items": [
+    {
+      "w": "foggy",
+      "syn": [
+        {
+          "w": "misty",
+          "note": "有薄雾的"
+        },
+        {
+          "w": "hazy",
+          "note": "朦胧的"
+        },
+        {
+          "w": "vague",
+          "note": "模糊不清的"
+        }
+      ]
+    },
+    {
+      "w": "suburb",
+      "syn": [
+        {
+          "w": "outskirts",
+          "note": "市郊边缘"
+        },
+        {
+          "w": "environs",
+          "note": "周边地区"
+        }
+      ]
+    },
+    {
+      "w": "membership",
+      "syn": [
+        {
+          "w": "affiliation",
+          "note": "隶属关系"
+        }
+      ]
+    },
+    {
+      "w": "Taylor",
+      "syn": []
+    },
+    {
+      "w": "CPR",
+      "syn": []
+    },
+    {
+      "w": "cardiopulmonary resuscitation",
+      "syn": [
+        {
+          "w": "CPR",
+          "note": "常用缩写"
+        },
+        {
+          "w": "resuscitation",
+          "note": "复苏术，较宽泛"
+        }
+      ]
+    },
+    {
+      "w": "mouth-to-mouth rescue breathing",
+      "syn": [
+        {
+          "w": "rescue breathing",
+          "note": "人工呼吸"
+        },
+        {
+          "w": "artificial respiration",
+          "note": "人工呼吸，较正式"
+        }
+      ]
+    },
+    {
+      "w": "Heimlich manoeuvre",
+      "syn": [
+        {
+          "w": "abdominal thrusts",
+          "note": "腹部冲击法"
+        },
+        {
+          "w": "Heimlich maneuver",
+          "note": "美式拼写"
+        }
+      ]
+    },
+    {
+      "w": "precise",
+      "syn": [
+        {
+          "w": "exact",
+          "note": "精确的"
+        },
+        {
+          "w": "accurate",
+          "note": "准确的"
+        },
+        {
+          "w": "specific",
+          "note": "明确具体的"
+        }
+      ]
+    },
+    {
+      "w": "Christianity",
+      "syn": [
+        {
+          "w": "Christian religion",
+          "note": "基督教"
+        },
+        {
+          "w": "Christian faith",
+          "note": "基督教信仰"
+        }
+      ]
+    },
+    {
+      "w": "realistic",
+      "syn": [
+        {
+          "w": "practical",
+          "note": "现实可行的"
+        },
+        {
+          "w": "pragmatic",
+          "note": "务实的"
+        },
+        {
+          "w": "lifelike",
+          "note": "逼真的"
+        }
+      ]
+    },
+    {
+      "w": "realism",
+      "syn": [
+        {
+          "w": "naturalism",
+          "note": "自然主义，艺术上相近"
+        },
+        {
+          "w": "pragmatism",
+          "note": "务实态度"
+        }
+      ]
+    }
+  ]
+}

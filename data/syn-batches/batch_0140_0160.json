@@ -1,0 +1,384 @@
+{
+  "items": [
+    {
+      "w": "package tour",
+      "syn": [
+        {
+          "w": "package holiday",
+          "note": "英式说法，全包式旅游"
+        },
+        {
+          "w": "all-inclusive tour",
+          "note": "侧重费用全包"
+        },
+        {
+          "w": "organized tour",
+          "note": "侧重由旅行社组织"
+        }
+      ]
+    },
+    {
+      "w": "contact",
+      "syn": [
+        {
+          "w": "touch",
+          "note": "名词，接触/联系"
+        },
+        {
+          "w": "communication",
+          "note": "联系，通信"
+        },
+        {
+          "w": "connection",
+          "note": "联系，关系"
+        },
+        {
+          "w": "reach",
+          "note": "动词，联系到"
+        }
+      ]
+    },
+    {
+      "w": "civilisation",
+      "syn": [
+        {
+          "w": "civilization",
+          "note": "美式拼写"
+        },
+        {
+          "w": "culture",
+          "note": "侧重文化"
+        },
+        {
+          "w": "society",
+          "note": "侧重社会/文明"
+        }
+      ]
+    },
+    {
+      "w": "civilization",
+      "syn": [
+        {
+          "w": "culture",
+          "note": "侧重文化"
+        },
+        {
+          "w": "society",
+          "note": "侧重社会/文明"
+        },
+        {
+          "w": "civilisation",
+          "note": "英式拼写"
+        }
+      ]
+    },
+    {
+      "w": "make up",
+      "syn": [
+        {
+          "w": "compose",
+          "note": "组成，构成"
+        },
+        {
+          "w": "invent",
+          "note": "编造，虚构"
+        },
+        {
+          "w": "compensate for",
+          "note": "弥补"
+        },
+        {
+          "w": "draw up",
+          "note": "起草"
+        }
+      ]
+    },
+    {
+      "w": "soldier",
+      "syn": [
+        {
+          "w": "serviceman",
+          "note": "军人，较正式"
+        },
+        {
+          "w": "warrior",
+          "note": "战士，勇士"
+        },
+        {
+          "w": "trooper",
+          "note": "士兵，骑兵"
+        }
+      ]
+    },
+    {
+      "w": "transport",
+      "syn": [
+        {
+          "w": "carry",
+          "note": "运送，强调携带"
+        },
+        {
+          "w": "convey",
+          "note": "运送，较正式"
+        },
+        {
+          "w": "ship",
+          "note": "运送，侧重货运"
+        },
+        {
+          "w": "transportation",
+          "note": "美式，运输/运输系统"
+        }
+      ]
+    },
+    {
+      "w": "transportation",
+      "syn": [
+        {
+          "w": "transport",
+          "note": "英式常用，运输"
+        },
+        {
+          "w": "transit",
+          "note": "运输，公共交通"
+        },
+        {
+          "w": "shipping",
+          "note": "航运，运送"
+        }
+      ]
+    },
+    {
+      "w": "hike",
+      "syn": [
+        {
+          "w": "walk",
+          "note": "步行，泛指"
+        },
+        {
+          "w": "trek",
+          "note": "长途跋涉"
+        },
+        {
+          "w": "increase",
+          "note": "涨价，提高"
+        },
+        {
+          "w": "raise",
+          "note": "提高，及物动词"
+        }
+      ]
+    },
+    {
+      "w": "economy",
+      "syn": [
+        {
+          "w": "thrift",
+          "note": "节约，节俭"
+        },
+        {
+          "w": "frugality",
+          "note": "节俭，较正式"
+        },
+        {
+          "w": "financial system",
+          "note": "经济体系"
+        }
+      ]
+    },
+    {
+      "w": "economic",
+      "syn": [
+        {
+          "w": "financial",
+          "note": "财政/金融的"
+        },
+        {
+          "w": "commercial",
+          "note": "商业的"
+        },
+        {
+          "w": "monetary",
+          "note": "货币的"
+        }
+      ]
+    },
+    {
+      "w": "credit",
+      "syn": [
+        {
+          "w": "trust",
+          "note": "信任"
+        },
+        {
+          "w": "faith",
+          "note": "信任，信心"
+        },
+        {
+          "w": "recognition",
+          "note": "认可，赞誉"
+        },
+        {
+          "w": "loan",
+          "note": "贷款，信贷"
+        }
+      ]
+    },
+    {
+      "w": "credit card",
+      "syn": [
+        {
+          "w": "charge card",
+          "note": "签账卡"
+        },
+        {
+          "w": "payment card",
+          "note": "支付卡，较宽泛"
+        },
+        {
+          "w": "bank card",
+          "note": "银行卡，较宽泛"
+        }
+      ]
+    },
+    {
+      "w": "detail",
+      "syn": [
+        {
+          "w": "particular",
+          "note": "细节，常用复数"
+        },
+        {
+          "w": "specific",
+          "note": "具体细节，常用复数"
+        },
+        {
+          "w": "feature",
+          "note": "细节，特征"
+        },
+        {
+          "w": "specify",
+          "note": "详述，动词"
+        }
+      ]
+    },
+    {
+      "w": "check in",
+      "syn": [
+        {
+          "w": "register",
+          "note": "登记，报到"
+        },
+        {
+          "w": "sign in",
+          "note": "签到"
+        },
+        {
+          "w": "report",
+          "note": "报到"
+        }
+      ]
+    },
+    {
+      "w": "check out",
+      "syn": [
+        {
+          "w": "leave",
+          "note": "离开"
+        },
+        {
+          "w": "pay the bill",
+          "note": "结账"
+        },
+        {
+          "w": "examine",
+          "note": "查看，检查"
+        },
+        {
+          "w": "depart",
+          "note": "离开，较正式"
+        }
+      ]
+    },
+    {
+      "w": "request",
+      "syn": [
+        {
+          "w": "ask for",
+          "note": "请求，较口语"
+        },
+        {
+          "w": "demand",
+          "note": "要求，语气更强"
+        },
+        {
+          "w": "appeal",
+          "note": "呼吁，请求"
+        },
+        {
+          "w": "petition",
+          "note": "请愿，正式"
+        }
+      ]
+    },
+    {
+      "w": "view",
+      "syn": [
+        {
+          "w": "sight",
+          "note": "景象，视野"
+        },
+        {
+          "w": "scene",
+          "note": "景色，场景"
+        },
+        {
+          "w": "opinion",
+          "note": "意见，看法"
+        },
+        {
+          "w": "observe",
+          "note": "观察，动词"
+        }
+      ]
+    },
+    {
+      "w": "sight",
+      "syn": [
+        {
+          "w": "vision",
+          "note": "视力，视野"
+        },
+        {
+          "w": "view",
+          "note": "景象，视野"
+        },
+        {
+          "w": "scene",
+          "note": "景象，场景"
+        },
+        {
+          "w": "eyesight",
+          "note": "视力"
+        }
+      ]
+    },
+    {
+      "w": "statue",
+      "syn": [
+        {
+          "w": "sculpture",
+          "note": "雕塑，范围更广"
+        },
+        {
+          "w": "figure",
+          "note": "人像，塑像"
+        },
+        {
+          "w": "effigy",
+          "note": "雕像，模拟像，正式"
+        }
+      ]
+    }
+  ]
+}

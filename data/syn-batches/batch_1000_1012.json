@@ -1,0 +1,184 @@
+{
+  "items": [
+    {
+      "w": "seek",
+      "syn": [
+        {
+          "w": "search",
+          "note": "侧重搜索"
+        },
+        {
+          "w": "pursue",
+          "note": "侧重追求"
+        },
+        {
+          "w": "look for",
+          "note": "最口语的寻找"
+        }
+      ]
+    },
+    {
+      "w": "seek one's fortune",
+      "syn": [
+        {
+          "w": "make a fortune",
+          "note": "侧重发财"
+        },
+        {
+          "w": "seek a living",
+          "note": "侧重谋生"
+        }
+      ]
+    },
+    {
+      "w": "earn",
+      "syn": [
+        {
+          "w": "gain",
+          "note": "侧重获得"
+        },
+        {
+          "w": "acquire",
+          "note": "较正式，得到"
+        },
+        {
+          "w": "make",
+          "note": "口语，挣钱"
+        }
+      ]
+    },
+    {
+      "w": "earn a living",
+      "syn": [
+        {
+          "w": "make a living",
+          "note": "最常用，同义"
+        },
+        {
+          "w": "support oneself",
+          "note": "侧重自食其力"
+        }
+      ]
+    },
+    {
+      "w": "immigrant",
+      "syn": [
+        {
+          "w": "migrant",
+          "note": "移居者，不特指入境"
+        },
+        {
+          "w": "settler",
+          "note": "侧重定居者"
+        }
+      ]
+    },
+    {
+      "w": "select",
+      "syn": [
+        {
+          "w": "choose",
+          "note": "最常用，挑选"
+        },
+        {
+          "w": "pick",
+          "note": "口语，挑选"
+        },
+        {
+          "w": "elect",
+          "note": "侧重选举选出"
+        }
+      ]
+    },
+    {
+      "w": "china",
+      "syn": [
+        {
+          "w": "porcelain",
+          "note": "瓷器，较正式"
+        },
+        {
+          "w": "pottery",
+          "note": "陶器，材质略异"
+        }
+      ]
+    },
+    {
+      "w": "jazz",
+      "syn": [
+        {
+          "w": "swing",
+          "note": "摇摆乐，相近乐种"
+        }
+      ]
+    },
+    {
+      "w": "bar",
+      "syn": [
+        {
+          "w": "pub",
+          "note": "英式，酒吧"
+        },
+        {
+          "w": "block",
+          "note": "动词，阻挡"
+        },
+        {
+          "w": "ban",
+          "note": "动词，禁止"
+        }
+      ]
+    },
+    {
+      "w": "diagram",
+      "syn": [
+        {
+          "w": "chart",
+          "note": "图表，偏数据"
+        },
+        {
+          "w": "graph",
+          "note": "曲线图"
+        },
+        {
+          "w": "figure",
+          "note": "书中的插图、图示"
+        }
+      ]
+    },
+    {
+      "w": "journal",
+      "syn": [
+        {
+          "w": "magazine",
+          "note": "杂志，通俗"
+        },
+        {
+          "w": "periodical",
+          "note": "定期刊物，较正式"
+        },
+        {
+          "w": "diary",
+          "note": "日记"
+        }
+      ]
+    },
+    {
+      "w": "claim",
+      "syn": [
+        {
+          "w": "assert",
+          "note": "正式，断言"
+        },
+        {
+          "w": "declare",
+          "note": "宣称，较正式"
+        },
+        {
+          "w": "demand",
+          "note": "侧重要求"
+        }
+      ]
+    }
+  ]
+}

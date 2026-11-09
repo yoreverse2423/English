@@ -1,0 +1,216 @@
+{
+  "items": [
+    {
+      "w": "BBQ",
+      "syn": [
+        {
+          "w": "barbecue",
+          "note": "全称；野外烧烤"
+        },
+        {
+          "w": "cookout",
+          "note": "美式户外烧烤餐"
+        }
+      ]
+    },
+    {
+      "w": "bakery",
+      "syn": [
+        {
+          "w": "baker's",
+          "note": "面包店；英式口语"
+        },
+        {
+          "w": "bread shop",
+          "note": "面包店；较直白"
+        }
+      ]
+    },
+    {
+      "w": "joint",
+      "syn": [
+        {
+          "w": "articulation",
+          "note": "关节；较正式术语"
+        },
+        {
+          "w": "seam",
+          "note": "接缝"
+        },
+        {
+          "w": "junction",
+          "note": "接合点"
+        },
+        {
+          "w": "shared",
+          "note": "共同的"
+        }
+      ]
+    },
+    {
+      "w": "butcher",
+      "syn": [
+        {
+          "w": "slaughterer",
+          "note": "屠夫；较少用"
+        },
+        {
+          "w": "slaughter",
+          "note": "屠杀；动词"
+        },
+        {
+          "w": "massacre",
+          "note": "屠杀；强调大量"
+        }
+      ]
+    },
+    {
+      "w": "premier",
+      "syn": [
+        {
+          "w": "prime minister",
+          "note": "总理；首相"
+        },
+        {
+          "w": "PM",
+          "note": "首相；口语缩写"
+        },
+        {
+          "w": "foremost",
+          "note": "第一的；最前的"
+        },
+        {
+          "w": "chief",
+          "note": "首要的"
+        }
+      ]
+    },
+    {
+      "w": "herb",
+      "syn": [
+        {
+          "w": "aromatic plant",
+          "note": "香草植物"
+        },
+        {
+          "w": "medicinal plant",
+          "note": "药草植物"
+        }
+      ]
+    },
+    {
+      "w": "dim sim",
+      "syn": [
+        {
+          "w": "shumai",
+          "note": "烧卖；常见音译"
+        },
+        {
+          "w": "siu mai",
+          "note": "烧卖；粤语音译"
+        },
+        {
+          "w": "dim sum",
+          "note": "点心总称；不完全等同"
+        }
+      ]
+    },
+    {
+      "w": "hollow",
+      "syn": [
+        {
+          "w": "empty",
+          "note": "空的；通用"
+        },
+        {
+          "w": "cavity",
+          "note": "洞；腔；较正式"
+        },
+        {
+          "w": "hole",
+          "note": "洞"
+        },
+        {
+          "w": "false",
+          "note": "虚伪的"
+        }
+      ]
+    },
+    {
+      "w": "vibrate",
+      "syn": [
+        {
+          "w": "shake",
+          "note": "摇动；振动"
+        },
+        {
+          "w": "quiver",
+          "note": "轻微颤动"
+        },
+        {
+          "w": "tremble",
+          "note": "颤抖；发抖"
+        }
+      ]
+    },
+    {
+      "w": "horn",
+      "syn": [
+        {
+          "w": "trumpet",
+          "note": "喇叭；小号"
+        },
+        {
+          "w": "bugle",
+          "note": "号角"
+        },
+        {
+          "w": "hooter",
+          "note": "汽车喇叭；英式口语"
+        }
+      ]
+    },
+    {
+      "w": "pitch",
+      "syn": [
+        {
+          "w": "tar",
+          "note": "沥青"
+        },
+        {
+          "w": "throw",
+          "note": "投掷"
+        },
+        {
+          "w": "field",
+          "note": "球场"
+        },
+        {
+          "w": "tone",
+          "note": "音高；音调"
+        }
+      ]
+    },
+    {
+      "w": "straightforward",
+      "syn": [
+        {
+          "w": "simple",
+          "note": "简单的"
+        },
+        {
+          "w": "frank",
+          "note": "坦率的"
+        },
+        {
+          "w": "clear",
+          "note": "明确的"
+        },
+        {
+          "w": "direct",
+          "note": "径直的；直接的"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "items": [
+    {
+      "w": "Nova Scotia",
+      "syn": []
+    },
+    {
+      "w": "technique",
+      "syn": [
+        {
+          "w": "method",
+          "note": "方法，更泛"
+        },
+        {
+          "w": "approach",
+          "note": "侧重途径、方式"
+        },
+        {
+          "w": "skill",
+          "note": "侧重技能、本领"
+        },
+        {
+          "w": "procedure",
+          "note": "侧重程序、步骤"
+        }
+      ]
+    },
+    {
+      "w": "leaflet",
+      "syn": [
+        {
+          "w": "flyer",
+          "note": "广告传单"
+        },
+        {
+          "w": "pamphlet",
+          "note": "小册子，稍厚"
+        },
+        {
+          "w": "brochure",
+          "note": "宣传册，较精美"
+        },
+        {
+          "w": "handout",
+          "note": "散发材料"
+        }
+      ]
+    },
+    {
+      "w": "organ",
+      "syn": []
+    },
+    {
+      "w": "toxin",
+      "syn": [
+        {
+          "w": "poison",
+          "note": "毒物，更通用"
+        },
+        {
+          "w": "venom",
+          "note": "动物毒液"
+        }
+      ]
+    },
+    {
+      "w": "ray",
+      "syn": [
+        {
+          "w": "beam",
+          "note": "光束、束"
+        },
+        {
+          "w": "gleam",
+          "note": "微光、闪光"
+        }
+      ]
+    },
+    {
+      "w": "sense of touch",
+      "syn": [
+        {
+          "w": "touch",
+          "note": "直接用 touch 指触觉"
+        }
+      ]
+    },
+    {
+      "w": "radiation",
+      "syn": [
+        {
+          "w": "emission",
+          "note": "散发、发射"
+        },
+        {
+          "w": "rays",
+          "note": "辐射线，常用复数"
+        }
+      ]
+    },
+    {
+      "w": "acid",
+      "syn": [
+        {
+          "w": "sour",
+          "note": "对应“酸的”"
+        },
+        {
+          "w": "sarcastic",
+          "note": "对应“讽刺的”"
+        },
+        {
+          "w": "sharp",
+          "note": "对应“尖刻的”"
+        }
+      ]
+    },
+    {
+      "w": "millimetre",
+      "syn": []
+    },
+    {
+      "w": "minor",
+      "syn": [
+        {
+          "w": "secondary",
+          "note": "次要的"
+        },
+        {
+          "w": "lesser",
+          "note": "较小的、次要的"
+        },
+        {
+          "w": "insignificant",
+          "note": "不重要的"
+        },
+        {
+          "w": "slight",
+          "note": "轻微的"
+        }
+      ]
+    },
+    {
+      "w": "layer",
+      "syn": [
+        {
+          "w": "level",
+          "note": "层次"
+        },
+        {
+          "w": "stratum",
+          "note": "层，偏科学/正式"
+        },
+        {
+          "w": "coat",
+          "note": "涂层、覆盖层"
+        }
+      ]
+    }
+  ]
+}

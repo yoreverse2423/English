@@ -1,0 +1,195 @@
+{
+  "items": [
+    {
+      "w": "a flock of",
+      "syn": [
+        {
+          "w": "a group of",
+          "note": "泛指一群，最通用"
+        },
+        {
+          "w": "a herd of",
+          "note": "多指牛、羊等畜群"
+        },
+        {
+          "w": "a pack of",
+          "note": "指狼、狗等兽群"
+        },
+        {
+          "w": "a crowd of",
+          "note": "指人群"
+        }
+      ]
+    },
+    {
+      "w": "geothermal",
+      "syn": []
+    },
+    {
+      "w": "distribution",
+      "syn": [
+        {
+          "w": "allocation",
+          "note": "侧重分配、拨给"
+        },
+        {
+          "w": "spread",
+          "note": "侧重分布、传播"
+        },
+        {
+          "w": "dispersal",
+          "note": "侧重散布、分散"
+        }
+      ]
+    },
+    {
+      "w": "pouch",
+      "syn": [
+        {
+          "w": "bag",
+          "note": "泛指袋子"
+        },
+        {
+          "w": "sack",
+          "note": "较大粗布袋"
+        },
+        {
+          "w": "pocket",
+          "note": "口袋；小袋"
+        }
+      ]
+    },
+    {
+      "w": "temporary",
+      "syn": [
+        {
+          "w": "provisional",
+          "note": "侧重临时的、暂定的"
+        },
+        {
+          "w": "interim",
+          "note": "过渡期的"
+        },
+        {
+          "w": "short-term",
+          "note": "短期的"
+        },
+        {
+          "w": "transient",
+          "note": "侧重短暂易逝"
+        }
+      ]
+    },
+    {
+      "w": "phase",
+      "syn": [
+        {
+          "w": "stage",
+          "note": "阶段，最常用"
+        },
+        {
+          "w": "period",
+          "note": "时期，时间跨度更大"
+        }
+      ]
+    },
+    {
+      "w": "trunk",
+      "syn": [
+        {
+          "w": "stem",
+          "note": "指树干、茎干"
+        },
+        {
+          "w": "boot",
+          "note": "英式英语指汽车行李箱"
+        },
+        {
+          "w": "suitcase",
+          "note": "指行李箱"
+        }
+      ]
+    },
+    {
+      "w": "license",
+      "syn": [
+        {
+          "w": "permit",
+          "note": "许可证；许可"
+        },
+        {
+          "w": "authorization",
+          "note": "授权，较正式"
+        },
+        {
+          "w": "certificate",
+          "note": "侧重证书、证明"
+        }
+      ]
+    },
+    {
+      "w": "licence",
+      "syn": [
+        {
+          "w": "permit",
+          "note": "许可证；许可"
+        },
+        {
+          "w": "authorization",
+          "note": "授权，较正式"
+        },
+        {
+          "w": "certificate",
+          "note": "侧重证书、证明"
+        }
+      ]
+    },
+    {
+      "w": "session",
+      "syn": [
+        {
+          "w": "meeting",
+          "note": "会议，最通用"
+        },
+        {
+          "w": "sitting",
+          "note": "侧重开庭、开会的一次"
+        },
+        {
+          "w": "term",
+          "note": "指学期"
+        }
+      ]
+    },
+    {
+      "w": "frequency",
+      "syn": [
+        {
+          "w": "rate",
+          "note": "侧重比率、速率"
+        },
+        {
+          "w": "regularity",
+          "note": "侧重频繁、规律性"
+        }
+      ]
+    },
+    {
+      "w": "violent",
+      "syn": [
+        {
+          "w": "fierce",
+          "note": "侧重猛烈、激烈"
+        },
+        {
+          "w": "brutal",
+          "note": "侧重残暴、野蛮"
+        },
+        {
+          "w": "intense",
+          "note": "侧重强烈、剧烈"
+        }
+      ]
+    }
+  ]
+}

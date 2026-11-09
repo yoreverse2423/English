@@ -1,0 +1,174 @@
+{
+  "items": [
+    {
+      "w": "methane",
+      "syn": [
+        {
+          "w": "marsh gas",
+          "note": "沼气；旧称"
+        }
+      ]
+    },
+    {
+      "w": "carbon",
+      "syn": []
+    },
+    {
+      "w": "dioxide",
+      "syn": []
+    },
+    {
+      "w": "carbon dioxide",
+      "syn": [
+        {
+          "w": "carbonic acid gas",
+          "note": "碳酸气，旧称"
+        }
+      ]
+    },
+    {
+      "w": "habitable",
+      "syn": [
+        {
+          "w": "livable",
+          "note": "适宜居住的，常用"
+        },
+        {
+          "w": "inhabitable",
+          "note": "可居住的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "sustain",
+      "syn": [
+        {
+          "w": "maintain",
+          "note": "维持"
+        },
+        {
+          "w": "support",
+          "note": "支撑；供养"
+        },
+        {
+          "w": "bear",
+          "note": "忍受"
+        },
+        {
+          "w": "keep up",
+          "note": "保持；维持"
+        }
+      ]
+    },
+    {
+      "w": "sustainable",
+      "syn": [
+        {
+          "w": "viable",
+          "note": "可行的；可持续的"
+        },
+        {
+          "w": "maintainable",
+          "note": "可维持的"
+        },
+        {
+          "w": "bearable",
+          "note": "可忍受的"
+        }
+      ]
+    },
+    {
+      "w": "fossil",
+      "syn": [
+        {
+          "w": "relic",
+          "note": "遗物；遗迹"
+        },
+        {
+          "w": "remains",
+          "note": "残骸；遗迹"
+        },
+        {
+          "w": "outdated",
+          "note": "陈腐的；过时的"
+        },
+        {
+          "w": "old-fashioned",
+          "note": "守旧的"
+        }
+      ]
+    },
+    {
+      "w": "fuel",
+      "syn": [
+        {
+          "w": "combustible",
+          "note": "可燃物，正式"
+        },
+        {
+          "w": "energy source",
+          "note": "能源"
+        },
+        {
+          "w": "stoke",
+          "note": "添燃料；煽动"
+        },
+        {
+          "w": "stimulate",
+          "note": "刺激；激起"
+        }
+      ]
+    },
+    {
+      "w": "fossil fuel",
+      "syn": [
+        {
+          "w": "non-renewable energy",
+          "note": "不可再生能源，近义"
+        },
+        {
+          "w": "coal, oil and gas",
+          "note": "煤、石油和天然气"
+        }
+      ]
+    },
+    {
+      "w": "comprehensive",
+      "syn": [
+        {
+          "w": "thorough",
+          "note": "彻底的；全面的"
+        },
+        {
+          "w": "all-inclusive",
+          "note": "包罗万象的"
+        },
+        {
+          "w": "broad",
+          "note": "广泛的"
+        }
+      ]
+    },
+    {
+      "w": "worldwide",
+      "syn": [
+        {
+          "w": "global",
+          "note": "全球的"
+        },
+        {
+          "w": "international",
+          "note": "国际的"
+        },
+        {
+          "w": "universal",
+          "note": "普遍的；全世界的"
+        },
+        {
+          "w": "globally",
+          "note": "副词：全球地"
+        }
+      ]
+    }
+  ]
+}

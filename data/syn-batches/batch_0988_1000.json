@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "w": "ethnic",
+      "syn": [
+        {
+          "w": "racial",
+          "note": "种族的，常指种族差异"
+        },
+        {
+          "w": "tribal",
+          "note": "部落的，范围更窄"
+        }
+      ]
+    },
+    {
+      "w": "admit",
+      "syn": [
+        {
+          "w": "confess",
+          "note": "承认过错，偏坦白"
+        },
+        {
+          "w": "acknowledge",
+          "note": "承认事实，较正式"
+        },
+        {
+          "w": "permit",
+          "note": "准许，对应“准许进入”"
+        },
+        {
+          "w": "accommodate",
+          "note": "容纳，对应“可容纳”"
+        }
+      ]
+    },
+    {
+      "w": "definitely",
+      "syn": [
+        {
+          "w": "certainly",
+          "note": "当然，肯定"
+        },
+        {
+          "w": "clearly",
+          "note": "清楚地"
+        },
+        {
+          "w": "surely",
+          "note": "确实，想必"
+        },
+        {
+          "w": "absolutely",
+          "note": "绝对地，语气更强"
+        }
+      ]
+    },
+    {
+      "w": "occur",
+      "syn": [
+        {
+          "w": "happen",
+          "note": "发生，最常用"
+        },
+        {
+          "w": "take place",
+          "note": "发生，多指事件"
+        },
+        {
+          "w": "arise",
+          "note": "出现，多指问题"
+        },
+        {
+          "w": "exist",
+          "note": "存在，对应“存在”义"
+        }
+      ]
+    },
+    {
+      "w": "downtown",
+      "syn": [
+        {
+          "w": "city centre",
+          "note": "市中心，英式"
+        },
+        {
+          "w": "central area",
+          "note": "中心区域"
+        },
+        {
+          "w": "business district",
+          "note": "商业区，近义"
+        }
+      ]
+    },
+    {
+      "w": "mission",
+      "syn": [
+        {
+          "w": "task",
+          "note": "任务，最常用"
+        },
+        {
+          "w": "assignment",
+          "note": "指派的任务"
+        },
+        {
+          "w": "delegation",
+          "note": "代表团，对应此义"
+        }
+      ]
+    },
+    {
+      "w": "district",
+      "syn": [
+        {
+          "w": "area",
+          "note": "区域，最通用"
+        },
+        {
+          "w": "region",
+          "note": "地区，范围较大"
+        },
+        {
+          "w": "zone",
+          "note": "地带，按功能划分"
+        },
+        {
+          "w": "neighborhood",
+          "note": "街区，邻近区域"
+        }
+      ]
+    },
+    {
+      "w": "graffiti",
+      "syn": [
+        {
+          "w": "street art",
+          "note": "街头艺术，较正面"
+        },
+        {
+          "w": "scribbles",
+          "note": "乱涂乱画"
+        },
+        {
+          "w": "tagging",
+          "note": "涂鸦签名，较具体"
+        }
+      ]
+    },
+    {
+      "w": "comic",
+      "syn": [
+        {
+          "w": "comedian",
+          "note": "喜剧演员"
+        },
+        {
+          "w": "comic strip",
+          "note": "连环漫画"
+        },
+        {
+          "w": "funny",
+          "note": "滑稽的，对应形容词义"
+        },
+        {
+          "w": "humorous",
+          "note": "幽默的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "afterwards",
+      "syn": [
+        {
+          "w": "later",
+          "note": "后来，最常用"
+        },
+        {
+          "w": "subsequently",
+          "note": "随后，较正式"
+        },
+        {
+          "w": "then",
+          "note": "然后"
+        },
+        {
+          "w": "after",
+          "note": "之后，口语常用"
+        }
+      ]
+    },
+    {
+      "w": "head to",
+      "syn": [
+        {
+          "w": "lead to",
+          "note": "通向；导致"
+        },
+        {
+          "w": "make for",
+          "note": "走向，朝…去"
+        },
+        {
+          "w": "go toward",
+          "note": "朝…方向去"
+        }
+      ]
+    },
+    {
+      "w": "historical",
+      "syn": [
+        {
+          "w": "historic",
+          "note": "有历史意义的，易混"
+        },
+        {
+          "w": "documented",
+          "note": "有史料记载的"
+        },
+        {
+          "w": "factual",
+          "note": "基于事实的"
+        }
+      ]
+    }
+  ]
+}

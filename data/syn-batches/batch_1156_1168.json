@@ -1,0 +1,151 @@
+{
+  "items": [
+    {
+      "w": "Typhoon Goni",
+      "syn": []
+    },
+    {
+      "w": "GPS",
+      "syn": [
+        {
+          "w": "global positioning system",
+          "note": "全称"
+        },
+        {
+          "w": "satellite navigation",
+          "note": "泛指卫星导航"
+        }
+      ]
+    },
+    {
+      "w": "global positioning system",
+      "syn": [
+        {
+          "w": "GPS",
+          "note": "缩写"
+        },
+        {
+          "w": "satellite navigation",
+          "note": "泛指卫星导航"
+        }
+      ]
+    },
+    {
+      "w": "basis",
+      "syn": [
+        {
+          "w": "foundation",
+          "note": "更正式，指基础/根据"
+        },
+        {
+          "w": "base",
+          "note": "基础/底部，较具体"
+        }
+      ]
+    },
+    {
+      "w": "on the basis of",
+      "syn": [
+        {
+          "w": "based on",
+          "note": "基于，较常用"
+        },
+        {
+          "w": "on the grounds of",
+          "note": "以…为由，较正式"
+        }
+      ]
+    },
+    {
+      "w": "loan",
+      "syn": [
+        {
+          "w": "lend",
+          "note": "动词“借出”"
+        },
+        {
+          "w": "advance",
+          "note": "名词“预付款/贷款”"
+        }
+      ]
+    },
+    {
+      "w": "take out a loan",
+      "syn": [
+        {
+          "w": "borrow money",
+          "note": "更口语"
+        },
+        {
+          "w": "get a loan",
+          "note": "较口语"
+        }
+      ]
+    },
+    {
+      "w": "plastic",
+      "syn": [
+        {
+          "w": "flexible",
+          "note": "仅形容词“可塑的”义"
+        }
+      ]
+    },
+    {
+      "w": "apologise",
+      "syn": [
+        {
+          "w": "apologize",
+          "note": "美式拼写"
+        },
+        {
+          "w": "say sorry",
+          "note": "口语"
+        }
+      ]
+    },
+    {
+      "w": "apologize",
+      "syn": [
+        {
+          "w": "apologise",
+          "note": "英式拼写"
+        },
+        {
+          "w": "say sorry",
+          "note": "口语"
+        }
+      ]
+    },
+    {
+      "w": "ignore",
+      "syn": [
+        {
+          "w": "neglect",
+          "note": "侧重疏忽/未照顾"
+        },
+        {
+          "w": "overlook",
+          "note": "侧重未注意"
+        },
+        {
+          "w": "disregard",
+          "note": "侧重漠视"
+        }
+      ]
+    },
+    {
+      "w": "in return",
+      "syn": [
+        {
+          "w": "in exchange",
+          "note": "作为交换"
+        },
+        {
+          "w": "as a reward",
+          "note": "作为报答"
+        }
+      ]
+    }
+  ]
+}

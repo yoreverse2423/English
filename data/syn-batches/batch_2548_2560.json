@@ -1,0 +1,166 @@
+{
+  "items": [
+    {
+      "w": "Zac Sunderland",
+      "syn": []
+    },
+    {
+      "w": "Robin Lee Graham",
+      "syn": []
+    },
+    {
+      "w": "parcel",
+      "syn": [
+        {
+          "w": "package",
+          "note": "包裹，常用"
+        },
+        {
+          "w": "packet",
+          "note": "小包"
+        },
+        {
+          "w": "pack",
+          "note": "打包，动词"
+        }
+      ]
+    },
+    {
+      "w": "jam",
+      "syn": [
+        {
+          "w": "jelly",
+          "note": "果酱，较稀"
+        },
+        {
+          "w": "preserve",
+          "note": "果酱，可含块"
+        },
+        {
+          "w": "block",
+          "note": "堵塞"
+        },
+        {
+          "w": "squeeze",
+          "note": "挤进"
+        }
+      ]
+    },
+    {
+      "w": "mail",
+      "syn": [
+        {
+          "w": "post",
+          "note": "邮件；邮寄，英式"
+        },
+        {
+          "w": "correspondence",
+          "note": "信件，较正式"
+        },
+        {
+          "w": "send",
+          "note": "邮寄，发送"
+        }
+      ]
+    },
+    {
+      "w": "secondary",
+      "syn": [
+        {
+          "w": "minor",
+          "note": "次要的"
+        },
+        {
+          "w": "subordinate",
+          "note": "从属的"
+        },
+        {
+          "w": "lesser",
+          "note": "较次要的"
+        }
+      ]
+    },
+    {
+      "w": "clay",
+      "syn": [
+        {
+          "w": "earth",
+          "note": "泥土"
+        },
+        {
+          "w": "mud",
+          "note": "湿泥"
+        },
+        {
+          "w": "soil",
+          "note": "土壤"
+        }
+      ]
+    },
+    {
+      "w": "dust",
+      "syn": [
+        {
+          "w": "dirt",
+          "note": "灰尘，污垢"
+        },
+        {
+          "w": "powder",
+          "note": "粉末"
+        },
+        {
+          "w": "sprinkle",
+          "note": "撒，动词"
+        }
+      ]
+    },
+    {
+      "w": "dusty",
+      "syn": [
+        {
+          "w": "dirty",
+          "note": "泛指脏的"
+        }
+      ]
+    },
+    {
+      "w": "weed",
+      "syn": [
+        {
+          "w": "wild grass",
+          "note": "野草"
+        },
+        {
+          "w": "uproot",
+          "note": "连根拔除"
+        }
+      ]
+    },
+    {
+      "w": "chorus",
+      "syn": [
+        {
+          "w": "choir",
+          "note": "合唱团"
+        },
+        {
+          "w": "refrain",
+          "note": "副歌"
+        },
+        {
+          "w": "unison",
+          "note": "齐声"
+        }
+      ]
+    },
+    {
+      "w": "a chorus of",
+      "syn": [
+        {
+          "w": "in unison",
+          "note": "齐声地"
+        }
+      ]
+    }
+  ]
+}

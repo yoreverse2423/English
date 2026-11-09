@@ -1,0 +1,307 @@
+{
+  "items": [
+    {
+      "w": "image",
+      "syn": [
+        {
+          "w": "picture",
+          "note": "图像/照片"
+        },
+        {
+          "w": "portrait",
+          "note": "肖像"
+        },
+        {
+          "w": "idol",
+          "note": "偶像"
+        },
+        {
+          "w": "figure",
+          "note": "形象/人物"
+        }
+      ]
+    },
+    {
+      "w": "cave",
+      "syn": [
+        {
+          "w": "cavern",
+          "note": "大洞穴，较正式"
+        },
+        {
+          "w": "grotto",
+          "note": "岩洞，尤指风景洞"
+        },
+        {
+          "w": "hollow",
+          "note": "凹洞/洞穴"
+        },
+        {
+          "w": "den",
+          "note": "兽穴"
+        }
+      ]
+    },
+    {
+      "w": "throughout",
+      "syn": [
+        {
+          "w": "all over",
+          "note": "遍及"
+        },
+        {
+          "w": "all through",
+          "note": "自始至终"
+        },
+        {
+          "w": "across",
+          "note": "贯穿/遍及"
+        },
+        {
+          "w": "during",
+          "note": "在整个…期间"
+        }
+      ]
+    },
+    {
+      "w": "quality",
+      "syn": [
+        {
+          "w": "characteristic",
+          "note": "特性"
+        },
+        {
+          "w": "feature",
+          "note": "特点"
+        },
+        {
+          "w": "property",
+          "note": "性质"
+        },
+        {
+          "w": "trait",
+          "note": "品质/特征"
+        }
+      ]
+    },
+    {
+      "w": "all over the world",
+      "syn": [
+        {
+          "w": "around the world",
+          "note": "遍及世界"
+        },
+        {
+          "w": "worldwide",
+          "note": "全世界地"
+        },
+        {
+          "w": "globally",
+          "note": "全球地"
+        }
+      ]
+    },
+    {
+      "w": "tradition",
+      "syn": [
+        {
+          "w": "custom",
+          "note": "习俗"
+        },
+        {
+          "w": "convention",
+          "note": "惯例，更正式"
+        },
+        {
+          "w": "practice",
+          "note": "惯常做法"
+        }
+      ]
+    },
+    {
+      "w": "further",
+      "syn": [
+        {
+          "w": "farther",
+          "note": "更远的，指距离"
+        },
+        {
+          "w": "additional",
+          "note": "进一步的/额外的"
+        },
+        {
+          "w": "extra",
+          "note": "额外的"
+        }
+      ]
+    },
+    {
+      "w": "historic",
+      "syn": [
+        {
+          "w": "momentous",
+          "note": "重大的"
+        },
+        {
+          "w": "significant",
+          "note": "重要的"
+        },
+        {
+          "w": "celebrated",
+          "note": "著名的"
+        }
+      ]
+    },
+    {
+      "w": "opinion",
+      "syn": [
+        {
+          "w": "view",
+          "note": "看法"
+        },
+        {
+          "w": "viewpoint",
+          "note": "观点"
+        },
+        {
+          "w": "belief",
+          "note": "看法/信念"
+        },
+        {
+          "w": "judgment",
+          "note": "判断/意见"
+        }
+      ]
+    },
+    {
+      "w": "quote",
+      "syn": [
+        {
+          "w": "quotation",
+          "note": "引语"
+        },
+        {
+          "w": "citation",
+          "note": "引文，较正式"
+        },
+        {
+          "w": "excerpt",
+          "note": "摘录"
+        }
+      ]
+    },
+    {
+      "w": "paraphrase",
+      "syn": [
+        {
+          "w": "rewording",
+          "note": "改写/重述"
+        },
+        {
+          "w": "restatement",
+          "note": "重述"
+        }
+      ]
+    },
+    {
+      "w": "comparison",
+      "syn": [
+        {
+          "w": "contrast",
+          "note": "对比"
+        },
+        {
+          "w": "analogy",
+          "note": "类比"
+        },
+        {
+          "w": "juxtaposition",
+          "note": "并置对比，较正式"
+        }
+      ]
+    },
+    {
+      "w": "contrast",
+      "syn": [
+        {
+          "w": "comparison",
+          "note": "比较"
+        },
+        {
+          "w": "difference",
+          "note": "差别"
+        },
+        {
+          "w": "distinction",
+          "note": "区别"
+        },
+        {
+          "w": "foil",
+          "note": "衬托物"
+        }
+      ]
+    },
+    {
+      "w": "identify",
+      "syn": [
+        {
+          "w": "recognize",
+          "note": "认出"
+        },
+        {
+          "w": "distinguish",
+          "note": "辨别"
+        },
+        {
+          "w": "determine",
+          "note": "确定"
+        },
+        {
+          "w": "pinpoint",
+          "note": "准确定位"
+        }
+      ]
+    },
+    {
+      "w": "forever",
+      "syn": [
+        {
+          "w": "eternally",
+          "note": "永恒地"
+        },
+        {
+          "w": "permanently",
+          "note": "永久地"
+        },
+        {
+          "w": "always",
+          "note": "总是/永远"
+        },
+        {
+          "w": "endlessly",
+          "note": "不断地"
+        }
+      ]
+    },
+    {
+      "w": "Aswan Dam",
+      "syn": []
+    },
+    {
+      "w": "the Nile",
+      "syn": []
+    },
+    {
+      "w": "Egypt",
+      "syn": []
+    },
+    {
+      "w": "Egyptian",
+      "syn": []
+    },
+    {
+      "w": "UNESCO",
+      "syn": []
+    }
+  ]
+}

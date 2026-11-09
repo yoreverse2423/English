@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "w": "replace",
+      "syn": [
+        {
+          "w": "substitute",
+          "note": "侧重用另一物替代"
+        },
+        {
+          "w": "supersede",
+          "note": "较正式，取代过时事物"
+        },
+        {
+          "w": "take the place of",
+          "note": "短语，取代"
+        },
+        {
+          "w": "displace",
+          "note": "挤掉、取代"
+        }
+      ]
+    },
+    {
+      "w": "accident",
+      "syn": [
+        {
+          "w": "crash",
+          "note": "侧重车辆碰撞事故"
+        },
+        {
+          "w": "collision",
+          "note": "碰撞事故，较正式"
+        },
+        {
+          "w": "mishap",
+          "note": "小意外，较轻微"
+        }
+      ]
+    },
+    {
+      "w": "operation",
+      "syn": [
+        {
+          "w": "surgery",
+          "note": "专指外科手术"
+        },
+        {
+          "w": "procedure",
+          "note": "程序、操作步骤"
+        },
+        {
+          "w": "running",
+          "note": "经营、运作"
+        }
+      ]
+    },
+    {
+      "w": "whisper",
+      "syn": [
+        {
+          "w": "murmur",
+          "note": "低声说，含连续小声"
+        },
+        {
+          "w": "mutter",
+          "note": "咕哝，含抱怨"
+        },
+        {
+          "w": "mumble",
+          "note": "含糊不清地低声说"
+        }
+      ]
+    },
+    {
+      "w": "midnight",
+      "syn": [
+        {
+          "w": "twelve o'clock",
+          "note": "半夜十二点"
+        },
+        {
+          "w": "witching hour",
+          "note": "文学色彩，半夜"
+        }
+      ]
+    },
+    {
+      "w": "import",
+      "syn": [
+        {
+          "w": "bring in",
+          "note": "短语，输入、引进"
+        },
+        {
+          "w": "introduce",
+          "note": "引进外来事物"
+        },
+        {
+          "w": "significance",
+          "note": "对应“重要性”义"
+        }
+      ]
+    },
+    {
+      "w": "export",
+      "syn": [
+        {
+          "w": "send abroad",
+          "note": "短语，出口到国外"
+        },
+        {
+          "w": "ship out",
+          "note": "运出、外销"
+        }
+      ]
+    },
+    {
+      "w": "pole",
+      "syn": [
+        {
+          "w": "rod",
+          "note": "杆、棒"
+        },
+        {
+          "w": "post",
+          "note": "柱子，较粗"
+        },
+        {
+          "w": "extremity",
+          "note": "对应“极点”义"
+        }
+      ]
+    },
+    {
+      "w": "lap",
+      "syn": [
+        {
+          "w": "circuit",
+          "note": "对应“一圈”义"
+        },
+        {
+          "w": "knees",
+          "note": "对应“膝上”义"
+        }
+      ]
+    },
+    {
+      "w": "bite",
+      "syn": [
+        {
+          "w": "nip",
+          "note": "轻咬、小口咬"
+        },
+        {
+          "w": "gnaw",
+          "note": "反复啃咬"
+        },
+        {
+          "w": "mouthful",
+          "note": "对应“一口”义"
+        }
+      ]
+    },
+    {
+      "w": "lip",
+      "syn": [
+        {
+          "w": "edge",
+          "note": "对应“边缘”义"
+        },
+        {
+          "w": "rim",
+          "note": "圆形物边缘"
+        },
+        {
+          "w": "brink",
+          "note": "悬崖等边缘，喻临界"
+        }
+      ]
+    },
+    {
+      "w": "assist",
+      "syn": [
+        {
+          "w": "help",
+          "note": "最常用，泛指帮助"
+        },
+        {
+          "w": "aid",
+          "note": "较正式，援助"
+        },
+        {
+          "w": "support",
+          "note": "支持、协助"
+        }
+      ]
+    }
+  ]
+}

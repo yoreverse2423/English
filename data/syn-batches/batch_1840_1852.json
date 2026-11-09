@@ -1,0 +1,179 @@
+{
+  "items": [
+    {
+      "w": "Kazak",
+      "syn": []
+    },
+    {
+      "w": "airline",
+      "syn": [
+        {
+          "w": "carrier",
+          "note": "航空公司，较正式"
+        },
+        {
+          "w": "airway",
+          "note": "航线；航空公司的旧称"
+        }
+      ]
+    },
+    {
+      "w": "bay",
+      "syn": [
+        {
+          "w": "gulf",
+          "note": "海湾，比 bay 更大"
+        },
+        {
+          "w": "cove",
+          "note": "小海湾"
+        },
+        {
+          "w": "bark",
+          "note": "狗吠（对应动词义）"
+        }
+      ]
+    },
+    {
+      "w": "craft",
+      "syn": [
+        {
+          "w": "skill",
+          "note": "技能，侧重手艺"
+        },
+        {
+          "w": "trade",
+          "note": "行业手艺；行当"
+        },
+        {
+          "w": "art",
+          "note": "技艺，偏艺术性"
+        }
+      ]
+    },
+    {
+      "w": "antique",
+      "syn": [
+        {
+          "w": "ancient",
+          "note": "古老的，年代更久远"
+        },
+        {
+          "w": "vintage",
+          "note": "复古的，多指旧物精品"
+        },
+        {
+          "w": "old",
+          "note": "普通的“旧的”"
+        }
+      ]
+    },
+    {
+      "w": "pleasant",
+      "syn": [
+        {
+          "w": "agreeable",
+          "note": "令人愉快的，较正式"
+        },
+        {
+          "w": "enjoyable",
+          "note": "侧重“令人享受的”"
+        },
+        {
+          "w": "delightful",
+          "note": "语气更强，令人喜悦的"
+        }
+      ]
+    },
+    {
+      "w": "arise",
+      "syn": [
+        {
+          "w": "emerge",
+          "note": "出现，侧重显露"
+        },
+        {
+          "w": "occur",
+          "note": "发生，指事情出现"
+        },
+        {
+          "w": "come up",
+          "note": "出现，口语常用"
+        }
+      ]
+    },
+    {
+      "w": "massive",
+      "syn": [
+        {
+          "w": "huge",
+          "note": "巨大的，最常用"
+        },
+        {
+          "w": "enormous",
+          "note": "极大的，语气强"
+        },
+        {
+          "w": "vast",
+          "note": "辽阔的，侧重面积范围"
+        }
+      ]
+    },
+    {
+      "w": "literally",
+      "syn": [
+        {
+          "w": "exactly",
+          "note": "确切地，照字面地"
+        },
+        {
+          "w": "actually",
+          "note": "实际上，简直"
+        }
+      ]
+    },
+    {
+      "w": "breath",
+      "syn": [
+        {
+          "w": "inhalation",
+          "note": "吸气，较正式"
+        },
+        {
+          "w": "gasp",
+          "note": "急促的一口气"
+        }
+      ]
+    },
+    {
+      "w": "take sb.'s breath away",
+      "syn": [
+        {
+          "w": "amaze",
+          "note": "使惊奇，语气稍弱"
+        },
+        {
+          "w": "astonish",
+          "note": "使大为震惊"
+        }
+      ]
+    },
+    {
+      "w": "bound",
+      "syn": [
+        {
+          "w": "certain",
+          "note": "必定的（be bound to）"
+        },
+        {
+          "w": "obliged",
+          "note": "有义务的"
+        },
+        {
+          "w": "leap",
+          "note": "跳跃（对应名词/动词义）"
+        }
+      ]
+    }
+  ]
+}

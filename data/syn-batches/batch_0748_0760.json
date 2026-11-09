@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "w": "in addition to sb.",
+      "syn": [
+        {
+          "w": "besides",
+          "note": "后接人，除…外还"
+        },
+        {
+          "w": "apart from",
+          "note": "后接人，除…外还"
+        },
+        {
+          "w": "as well as",
+          "note": "后接人，和…一起"
+        }
+      ]
+    },
+    {
+      "w": "in addition to sth.",
+      "syn": [
+        {
+          "w": "besides",
+          "note": "后接物，除…外还"
+        },
+        {
+          "w": "apart from",
+          "note": "后接物，除…外还"
+        },
+        {
+          "w": "as well as",
+          "note": "后接物，和…一起"
+        }
+      ]
+    },
+    {
+      "w": "disease",
+      "syn": [
+        {
+          "w": "illness",
+          "note": "泛指生病"
+        },
+        {
+          "w": "sickness",
+          "note": "疾病/患病"
+        },
+        {
+          "w": "ailment",
+          "note": "小病，稍正式"
+        }
+      ]
+    },
+    {
+      "w": "ache",
+      "syn": [
+        {
+          "w": "pain",
+          "note": "疼痛，更泛"
+        },
+        {
+          "w": "hurt",
+          "note": "动词，疼"
+        },
+        {
+          "w": "soreness",
+          "note": "酸痛，名词"
+        }
+      ]
+    },
+    {
+      "w": "treatment",
+      "syn": [
+        {
+          "w": "therapy",
+          "note": "疗法，治疗"
+        },
+        {
+          "w": "cure",
+          "note": "侧重治愈"
+        },
+        {
+          "w": "handling",
+          "note": "处理，对待"
+        }
+      ]
+    },
+    {
+      "w": "from on",
+      "syn": []
+    },
+    {
+      "w": "from then on",
+      "syn": [
+        {
+          "w": "since then",
+          "note": "从那时起"
+        },
+        {
+          "w": "from that time on",
+          "note": "从那时起"
+        },
+        {
+          "w": "thereafter",
+          "note": "此后，较正式"
+        }
+      ]
+    },
+    {
+      "w": "lean",
+      "syn": [
+        {
+          "w": "tilt",
+          "note": "倾斜"
+        },
+        {
+          "w": "incline",
+          "note": "倾斜/倾向"
+        },
+        {
+          "w": "thin",
+          "note": "瘦的"
+        },
+        {
+          "w": "rely",
+          "note": "依赖，常接on"
+        }
+      ]
+    },
+    {
+      "w": "leant",
+      "syn": []
+    },
+    {
+      "w": "get through",
+      "syn": [
+        {
+          "w": "pass",
+          "note": "通过/及格"
+        },
+        {
+          "w": "finish",
+          "note": "完成"
+        },
+        {
+          "w": "use up",
+          "note": "花光"
+        },
+        {
+          "w": "survive",
+          "note": "度过，挺过"
+        }
+      ]
+    },
+    {
+      "w": "moreover",
+      "syn": [
+        {
+          "w": "furthermore",
+          "note": "而且，较正式"
+        },
+        {
+          "w": "besides",
+          "note": "此外"
+        },
+        {
+          "w": "in addition",
+          "note": "另外"
+        },
+        {
+          "w": "what's more",
+          "note": "而且，口语"
+        }
+      ]
+    },
+    {
+      "w": "satisfaction",
+      "syn": [
+        {
+          "w": "contentment",
+          "note": "满足，知足"
+        },
+        {
+          "w": "pleasure",
+          "note": "乐事/愉快"
+        },
+        {
+          "w": "fulfillment",
+          "note": "满足感，成就感"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "items": [
+    {
+      "w": "worthwhile",
+      "syn": [
+        {
+          "w": "rewarding",
+          "note": "有回报的，值得的"
+        },
+        {
+          "w": "valuable",
+          "note": "有价值的"
+        },
+        {
+          "w": "worth doing",
+          "note": "值得做，短语"
+        }
+      ]
+    },
+    {
+      "w": "download",
+      "syn": [
+        {
+          "w": "transfer",
+          "note": "传输，不强调方向"
+        },
+        {
+          "w": "retrieve",
+          "note": "取回文件"
+        }
+      ]
+    },
+    {
+      "w": "republic",
+      "syn": [
+        {
+          "w": "commonwealth",
+          "note": "共和国/联邦，含义有别"
+        },
+        {
+          "w": "state",
+          "note": "国家，较泛"
+        }
+      ]
+    },
+    {
+      "w": "professional",
+      "syn": [
+        {
+          "w": "expert",
+          "note": "专家，专业人员"
+        },
+        {
+          "w": "specialist",
+          "note": "专科人员，专家"
+        },
+        {
+          "w": "skilled",
+          "note": "熟练的，职业性的"
+        },
+        {
+          "w": "vocational",
+          "note": "职业的，职业培训的"
+        }
+      ]
+    },
+    {
+      "w": "archaeologist",
+      "syn": [
+        {
+          "w": "antiquarian",
+          "note": "古物研究者，较旧"
+        },
+        {
+          "w": "excavator",
+          "note": "发掘者，非严格同义"
+        }
+      ]
+    },
+    {
+      "w": "entrance",
+      "syn": [
+        {
+          "w": "entry",
+          "note": "入口/进入"
+        },
+        {
+          "w": "doorway",
+          "note": "门口，出入口"
+        },
+        {
+          "w": "access",
+          "note": "进入权/通道"
+        },
+        {
+          "w": "fascinate",
+          "note": "使入迷，对应vt."
+        }
+      ]
+    },
+    {
+      "w": "pyramid",
+      "syn": []
+    },
+    {
+      "w": "process",
+      "syn": [
+        {
+          "w": "procedure",
+          "note": "程序，步骤"
+        },
+        {
+          "w": "course",
+          "note": "过程，进程"
+        },
+        {
+          "w": "method",
+          "note": "方法"
+        },
+        {
+          "w": "operation",
+          "note": "运行/操作"
+        }
+      ]
+    },
+    {
+      "w": "overseas",
+      "syn": [
+        {
+          "w": "abroad",
+          "note": "在国外，副词"
+        },
+        {
+          "w": "foreign",
+          "note": "外国的，形容词"
+        }
+      ]
+    },
+    {
+      "w": "exit",
+      "syn": [
+        {
+          "w": "way out",
+          "note": "出口，短语"
+        },
+        {
+          "w": "outlet",
+          "note": "出口/排放口"
+        },
+        {
+          "w": "leave",
+          "note": "离开，动词"
+        },
+        {
+          "w": "depart",
+          "note": "离开，较正式"
+        }
+      ]
+    },
+    {
+      "w": "sheet",
+      "syn": [
+        {
+          "w": "layer",
+          "note": "薄层"
+        },
+        {
+          "w": "film",
+          "note": "薄膜"
+        },
+        {
+          "w": "leaf",
+          "note": "纸张/薄片"
+        }
+      ]
+    },
+    {
+      "w": "parade",
+      "syn": [
+        {
+          "w": "procession",
+          "note": "游行队伍"
+        },
+        {
+          "w": "march",
+          "note": "行进，游行"
+        },
+        {
+          "w": "display",
+          "note": "展示，炫耀"
+        },
+        {
+          "w": "show off",
+          "note": "炫耀，短语"
+        }
+      ]
+    },
+    {
+      "w": "mirror",
+      "syn": [
+        {
+          "w": "looking glass",
+          "note": "镜子，较旧"
+        },
+        {
+          "w": "reflect",
+          "note": "反射/反映"
+        },
+        {
+          "w": "echo",
+          "note": "反映，呼应"
+        }
+      ]
+    },
+    {
+      "w": "roof",
+      "syn": [
+        {
+          "w": "top",
+          "note": "顶部"
+        },
+        {
+          "w": "covering",
+          "note": "覆盖物"
+        },
+        {
+          "w": "cover",
+          "note": "覆盖，动词"
+        }
+      ]
+    },
+    {
+      "w": "chiwen",
+      "syn": []
+    },
+    {
+      "w": "dragon",
+      "syn": [
+        {
+          "w": "serpent",
+          "note": "文学中的龙/大蛇"
+        },
+        {
+          "w": "monster",
+          "note": "怪物，非特指"
+        }
+      ]
+    },
+    {
+      "w": "forgive",
+      "syn": [
+        {
+          "w": "pardon",
+          "note": "原谅/赦免"
+        },
+        {
+          "w": "excuse",
+          "note": "原谅，宽恕"
+        },
+        {
+          "w": "absolve",
+          "note": "赦免，较正式"
+        }
+      ]
+    },
+    {
+      "w": "forgave",
+      "syn": [
+        {
+          "w": "pardoned",
+          "note": "原谅了，过去式"
+        },
+        {
+          "w": "excused",
+          "note": "宽恕了，过去式"
+        }
+      ]
+    },
+    {
+      "w": "forgiven",
+      "syn": [
+        {
+          "w": "pardoned",
+          "note": "被原谅的"
+        },
+        {
+          "w": "excused",
+          "note": "被宽恕的"
+        },
+        {
+          "w": "absolved",
+          "note": "被赦免的"
+        }
+      ]
+    },
+    {
+      "w": "digital",
+      "syn": [
+        {
+          "w": "numeric",
+          "note": "数字的，较技术"
+        },
+        {
+          "w": "numerical",
+          "note": "数字的，数值的"
+        }
+      ]
+    }
+  ]
+}

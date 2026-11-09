@@ -1,0 +1,306 @@
+{
+  "items": [
+    {
+      "w": "exchange",
+      "syn": [
+        {
+          "w": "swap",
+          "note": "交换，更口语"
+        },
+        {
+          "w": "trade",
+          "note": "侧重交易、买卖"
+        },
+        {
+          "w": "interchange",
+          "note": "互换、交流，较正式"
+        }
+      ]
+    },
+    {
+      "w": "lecture",
+      "syn": [
+        {
+          "w": "talk",
+          "note": "讲座、报告，较通俗"
+        },
+        {
+          "w": "speech",
+          "note": "演讲"
+        },
+        {
+          "w": "address",
+          "note": "正式演说"
+        }
+      ]
+    },
+    {
+      "w": "registration",
+      "syn": [
+        {
+          "w": "enrollment",
+          "note": "注册入学、登记"
+        },
+        {
+          "w": "sign-up",
+          "note": "报名、注册，口语"
+        }
+      ]
+    },
+    {
+      "w": "register",
+      "syn": [
+        {
+          "w": "enroll",
+          "note": "登记、注册入学"
+        },
+        {
+          "w": "sign up",
+          "note": "报名、注册，口语"
+        },
+        {
+          "w": "record",
+          "note": "记录、登记"
+        },
+        {
+          "w": "log",
+          "note": "登记、记录"
+        }
+      ]
+    },
+    {
+      "w": "sex",
+      "syn": [
+        {
+          "w": "gender",
+          "note": "性别"
+        },
+        {
+          "w": "intercourse",
+          "note": "性交，较正式"
+        }
+      ]
+    },
+    {
+      "w": "female",
+      "syn": [
+        {
+          "w": "woman",
+          "note": "女人，仅名词"
+        },
+        {
+          "w": "feminine",
+          "note": "女性的、女性化的"
+        },
+        {
+          "w": "lady",
+          "note": "女士，较礼貌"
+        }
+      ]
+    },
+    {
+      "w": "male",
+      "syn": [
+        {
+          "w": "man",
+          "note": "男人，仅名词"
+        },
+        {
+          "w": "masculine",
+          "note": "男性的、男子气的"
+        },
+        {
+          "w": "gentleman",
+          "note": "先生、男士，较礼貌"
+        }
+      ]
+    },
+    {
+      "w": "nationality",
+      "syn": [
+        {
+          "w": "citizenship",
+          "note": "国籍，法律身份"
+        },
+        {
+          "w": "ethnicity",
+          "note": "民族、族裔"
+        }
+      ]
+    },
+    {
+      "w": "nation",
+      "syn": [
+        {
+          "w": "country",
+          "note": "国家，侧重疆域"
+        },
+        {
+          "w": "state",
+          "note": "国家、州，政治实体"
+        },
+        {
+          "w": "people",
+          "note": "国民、人民"
+        }
+      ]
+    },
+    {
+      "w": "designer",
+      "syn": [
+        {
+          "w": "creator",
+          "note": "创作者、设计者"
+        },
+        {
+          "w": "planner",
+          "note": "策划者、规划者"
+        },
+        {
+          "w": "architect",
+          "note": "设计者、缔造者，常作比喻"
+        }
+      ]
+    },
+    {
+      "w": "design",
+      "syn": [
+        {
+          "w": "plan",
+          "note": "计划、规划"
+        },
+        {
+          "w": "devise",
+          "note": "设计、构思，动词"
+        },
+        {
+          "w": "pattern",
+          "note": "图案、花样"
+        }
+      ]
+    },
+    {
+      "w": "campus",
+      "syn": [
+        {
+          "w": "school grounds",
+          "note": "校园场地"
+        },
+        {
+          "w": "grounds",
+          "note": "场地、校园区域"
+        }
+      ]
+    },
+    {
+      "w": "formal",
+      "syn": [
+        {
+          "w": "official",
+          "note": "正式的、官方的"
+        },
+        {
+          "w": "ceremonial",
+          "note": "礼仪性的"
+        },
+        {
+          "w": "conventional",
+          "note": "常规的、拘谨的"
+        }
+      ]
+    },
+    {
+      "w": "anxious",
+      "syn": [
+        {
+          "w": "worried",
+          "note": "担忧的"
+        },
+        {
+          "w": "nervous",
+          "note": "紧张不安的"
+        },
+        {
+          "w": "eager",
+          "note": "渴望的、急切的"
+        }
+      ]
+    },
+    {
+      "w": "annoy",
+      "syn": [
+        {
+          "w": "bother",
+          "note": "打扰、惹烦"
+        },
+        {
+          "w": "irritate",
+          "note": "激怒、使恼火"
+        },
+        {
+          "w": "bug",
+          "note": "烦扰，口语"
+        },
+        {
+          "w": "disturb",
+          "note": "打扰"
+        }
+      ]
+    },
+    {
+      "w": "frightened",
+      "syn": [
+        {
+          "w": "scared",
+          "note": "害怕的，较口语"
+        },
+        {
+          "w": "afraid",
+          "note": "害怕的"
+        },
+        {
+          "w": "terrified",
+          "note": "极度害怕的"
+        }
+      ]
+    },
+    {
+      "w": "p.m.",
+      "syn": []
+    },
+    {
+      "w": "a.m.",
+      "syn": []
+    },
+    {
+      "w": "senior",
+      "syn": [
+        {
+          "w": "elder",
+          "note": "年长的、长者"
+        },
+        {
+          "w": "superior",
+          "note": "上级、较高的，较正式"
+        },
+        {
+          "w": "older",
+          "note": "较年长的"
+        }
+      ]
+    },
+    {
+      "w": "senior high school",
+      "syn": [
+        {
+          "w": "high school",
+          "note": "美式可指高中"
+        },
+        {
+          "w": "secondary school",
+          "note": "英式中学"
+        }
+      ]
+    }
+  ]
+}

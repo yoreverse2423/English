@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "w": "fertiliser",
+      "syn": [
+        {
+          "w": "fertilizer",
+          "note": "美式拼写，同义"
+        },
+        {
+          "w": "manure",
+          "note": "粪肥，有机肥"
+        },
+        {
+          "w": "compost",
+          "note": "堆肥"
+        }
+      ]
+    },
+    {
+      "w": "fertilizer",
+      "syn": [
+        {
+          "w": "fertiliser",
+          "note": "英式拼写，同义"
+        },
+        {
+          "w": "manure",
+          "note": "粪肥，有机肥"
+        },
+        {
+          "w": "compost",
+          "note": "堆肥"
+        }
+      ]
+    },
+    {
+      "w": "nutritional",
+      "syn": [
+        {
+          "w": "nutritive",
+          "note": "营养的，较正式"
+        },
+        {
+          "w": "dietary",
+          "note": "饮食的，侧重膳食"
+        }
+      ]
+    },
+    {
+      "w": "nutritious",
+      "syn": [
+        {
+          "w": "nourishing",
+          "note": "滋养的，侧重效果"
+        },
+        {
+          "w": "wholesome",
+          "note": "有益健康的"
+        },
+        {
+          "w": "nutritive",
+          "note": "有营养的，正式"
+        }
+      ]
+    },
+    {
+      "w": "nutrition",
+      "syn": [
+        {
+          "w": "nourishment",
+          "note": "营养品，滋养"
+        },
+        {
+          "w": "nutriment",
+          "note": "营养物，正式"
+        },
+        {
+          "w": "diet",
+          "note": "饮食，侧重日常食物"
+        }
+      ]
+    },
+    {
+      "w": "alleviate",
+      "syn": [
+        {
+          "w": "relieve",
+          "note": "减轻，最常用"
+        },
+        {
+          "w": "ease",
+          "note": "缓和，侧重痛苦"
+        },
+        {
+          "w": "mitigate",
+          "note": "减轻，正式"
+        }
+      ]
+    },
+    {
+      "w": "poverty",
+      "syn": [
+        {
+          "w": "destitution",
+          "note": "赤贫，正式"
+        },
+        {
+          "w": "hardship",
+          "note": "艰难困苦"
+        },
+        {
+          "w": "need",
+          "note": "贫困，较旧"
+        }
+      ]
+    },
+    {
+      "w": "organic",
+      "syn": [
+        {
+          "w": "natural",
+          "note": "天然的，非合成"
+        },
+        {
+          "w": "biological",
+          "note": "生物的"
+        },
+        {
+          "w": "fundamental",
+          "note": "根本的"
+        }
+      ]
+    },
+    {
+      "w": "pesticide",
+      "syn": [
+        {
+          "w": "insecticide",
+          "note": "杀虫剂，常指杀昆虫"
+        },
+        {
+          "w": "bug spray",
+          "note": "杀虫喷雾，口语"
+        }
+      ]
+    },
+    {
+      "w": "widespread",
+      "syn": [
+        {
+          "w": "common",
+          "note": "常见的"
+        },
+        {
+          "w": "prevalent",
+          "note": "流行的，正式"
+        },
+        {
+          "w": "extensive",
+          "note": "广泛的，侧重范围"
+        }
+      ]
+    },
+    {
+      "w": "bacterium",
+      "syn": [
+        {
+          "w": "microbe",
+          "note": "微生物"
+        },
+        {
+          "w": "germ",
+          "note": "病菌，口语"
+        },
+        {
+          "w": "microorganism",
+          "note": "微生物，正式"
+        }
+      ]
+    },
+    {
+      "w": "bacteria",
+      "syn": [
+        {
+          "w": "microbes",
+          "note": "微生物（复数）"
+        },
+        {
+          "w": "germs",
+          "note": "病菌（复数，口语）"
+        },
+        {
+          "w": "microorganisms",
+          "note": "微生物（复数，正式）"
+        }
+      ]
+    }
+  ]
+}

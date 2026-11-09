@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "w": "surround",
+      "syn": [
+        {
+          "w": "encircle",
+          "note": "环绕，围住"
+        },
+        {
+          "w": "enclose",
+          "note": "围住，圈起"
+        },
+        {
+          "w": "encompass",
+          "note": "围绕；较正式"
+        }
+      ]
+    },
+    {
+      "w": "evidence",
+      "syn": [
+        {
+          "w": "proof",
+          "note": "证据，证明"
+        },
+        {
+          "w": "testimony",
+          "note": "证词，证据"
+        },
+        {
+          "w": "indication",
+          "note": "迹象，暗示"
+        }
+      ]
+    },
+    {
+      "w": "achievement",
+      "syn": [
+        {
+          "w": "accomplishment",
+          "note": "成就，完成"
+        },
+        {
+          "w": "feat",
+          "note": "功绩，壮举"
+        },
+        {
+          "w": "success",
+          "note": "成功，成绩"
+        }
+      ]
+    },
+    {
+      "w": "location",
+      "syn": [
+        {
+          "w": "position",
+          "note": "位置，方位"
+        },
+        {
+          "w": "site",
+          "note": "地点，场地"
+        },
+        {
+          "w": "spot",
+          "note": "地点，场所"
+        }
+      ]
+    },
+    {
+      "w": "conquer",
+      "syn": [
+        {
+          "w": "defeat",
+          "note": "击败，战胜"
+        },
+        {
+          "w": "overcome",
+          "note": "克服，战胜"
+        },
+        {
+          "w": "capture",
+          "note": "攻占，夺取"
+        }
+      ]
+    },
+    {
+      "w": "battle",
+      "syn": [
+        {
+          "w": "fight",
+          "note": "战斗，打斗"
+        },
+        {
+          "w": "combat",
+          "note": "战斗，搏斗；较正式"
+        },
+        {
+          "w": "struggle",
+          "note": "斗争，挣扎"
+        }
+      ]
+    },
+    {
+      "w": "port",
+      "syn": [
+        {
+          "w": "harbor",
+          "note": "港口，避风港"
+        },
+        {
+          "w": "dock",
+          "note": "码头，船坞"
+        }
+      ]
+    },
+    {
+      "w": "fascinating",
+      "syn": [
+        {
+          "w": "attractive",
+          "note": "有吸引力的"
+        },
+        {
+          "w": "captivating",
+          "note": "迷人的"
+        },
+        {
+          "w": "engrossing",
+          "note": "引人入胜的"
+        }
+      ]
+    },
+    {
+      "w": "keep your eyes open",
+      "syn": [
+        {
+          "w": "stay alert",
+          "note": "保持警觉"
+        },
+        {
+          "w": "be on the lookout",
+          "note": "留心观察"
+        },
+        {
+          "w": "watch out",
+          "note": "小心，留意"
+        }
+      ]
+    },
+    {
+      "w": "keep your eyes open for",
+      "syn": [
+        {
+          "w": "look out for",
+          "note": "留心寻找"
+        },
+        {
+          "w": "watch for",
+          "note": "留意等待"
+        },
+        {
+          "w": "be on the lookout for",
+          "note": "密切留意"
+        }
+      ]
+    },
+    {
+      "w": "charge",
+      "syn": [
+        {
+          "w": "fee",
+          "note": "费用"
+        },
+        {
+          "w": "cost",
+          "note": "花费，费用"
+        },
+        {
+          "w": "accusation",
+          "note": "指控"
+        },
+        {
+          "w": "responsibility",
+          "note": "责任，掌管"
+        }
+      ]
+    },
+    {
+      "w": "announce",
+      "syn": [
+        {
+          "w": "declare",
+          "note": "宣布，声明"
+        },
+        {
+          "w": "proclaim",
+          "note": "宣告；较正式"
+        },
+        {
+          "w": "broadcast",
+          "note": "播报，广播"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "items": [
+    {
+      "w": "Viking",
+      "syn": [
+        {
+          "w": "Norseman",
+          "note": "古斯堪的纳维亚人，侧重族属"
+        },
+        {
+          "w": "pirate",
+          "note": "侧重海上劫掠者"
+        }
+      ]
+    },
+    {
+      "w": "Norman",
+      "syn": []
+    },
+    {
+      "w": "the Normans",
+      "syn": []
+    },
+    {
+      "w": "Battle of Hastings",
+      "syn": []
+    },
+    {
+      "w": "Roman",
+      "syn": []
+    },
+    {
+      "w": "Van Gogh",
+      "syn": []
+    },
+    {
+      "w": "the Emerald Isle",
+      "syn": [
+        {
+          "w": "Ireland",
+          "note": "绿宝石岛即爱尔兰的雅称"
+        }
+      ]
+    },
+    {
+      "w": "Irish",
+      "syn": [
+        {
+          "w": "Irishman",
+          "note": "指单个爱尔兰人"
+        }
+      ]
+    },
+    {
+      "w": "classical",
+      "syn": [
+        {
+          "w": "classic",
+          "note": "侧重典范、一流"
+        },
+        {
+          "w": "traditional",
+          "note": "侧重传统的"
+        }
+      ]
+    },
+    {
+      "w": "hip-hop",
+      "syn": [
+        {
+          "w": "rap",
+          "note": "说唱，嘻哈文化的一部分"
+        }
+      ]
+    },
+    {
+      "w": "techno",
+      "syn": [
+        {
+          "w": "electronic music",
+          "note": "更宽泛，电子音乐"
+        }
+      ]
+    },
+    {
+      "w": "energy",
+      "syn": [
+        {
+          "w": "power",
+          "note": "侧重动力、电力"
+        },
+        {
+          "w": "vigor",
+          "note": "侧重精力，较正式"
+        },
+        {
+          "w": "vitality",
+          "note": "侧重生命力、活力"
+        }
+      ]
+    }
+  ]
+}

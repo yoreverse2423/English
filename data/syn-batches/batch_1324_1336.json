@@ -1,0 +1,212 @@
+{
+  "items": [
+    {
+      "w": "switch on",
+      "syn": [
+        {
+          "w": "turn on",
+          "note": "打开电器等，最常用"
+        },
+        {
+          "w": "power on",
+          "note": "通电启动，偏设备"
+        },
+        {
+          "w": "activate",
+          "note": "使激活，较正式"
+        }
+      ]
+    },
+    {
+      "w": "distant",
+      "syn": [
+        {
+          "w": "faraway",
+          "note": "遥远的，常作定语"
+        },
+        {
+          "w": "remote",
+          "note": "遥远或偏僻的"
+        },
+        {
+          "w": "aloof",
+          "note": "冷漠疏远的"
+        }
+      ]
+    },
+    {
+      "w": "secure",
+      "syn": [
+        {
+          "w": "safe",
+          "note": "adj. 安全的"
+        },
+        {
+          "w": "obtain",
+          "note": "vt. 获得，弄到"
+        },
+        {
+          "w": "protect",
+          "note": "vt. 保护"
+        },
+        {
+          "w": "fasten",
+          "note": "vt. 固定，缚住"
+        }
+      ]
+    },
+    {
+      "w": "knob",
+      "syn": [
+        {
+          "w": "handle",
+          "note": "把手"
+        },
+        {
+          "w": "dial",
+          "note": "旋钮，刻度盘"
+        },
+        {
+          "w": "bump",
+          "note": "肿块，突起"
+        }
+      ]
+    },
+    {
+      "w": "appliance",
+      "syn": [
+        {
+          "w": "device",
+          "note": "通用设备，装置"
+        },
+        {
+          "w": "gadget",
+          "note": "小器具，小装置"
+        },
+        {
+          "w": "instrument",
+          "note": "仪器，器械"
+        },
+        {
+          "w": "apparatus",
+          "note": "成套器械，较正式"
+        }
+      ]
+    },
+    {
+      "w": "remote",
+      "syn": [
+        {
+          "w": "distant",
+          "note": "遥远的"
+        },
+        {
+          "w": "isolated",
+          "note": "偏僻的，隔绝的"
+        },
+        {
+          "w": "aloof",
+          "note": "疏远冷淡的"
+        }
+      ]
+    },
+    {
+      "w": "remote control",
+      "syn": [
+        {
+          "w": "remote",
+          "note": "口语指遥控器"
+        },
+        {
+          "w": "controller",
+          "note": "控制器，遥控装置"
+        }
+      ]
+    },
+    {
+      "w": "air conditioner",
+      "syn": [
+        {
+          "w": "AC",
+          "note": "空调的缩写"
+        },
+        {
+          "w": "air conditioning",
+          "note": "空调系统，制冷"
+        }
+      ]
+    },
+    {
+      "w": "automatic",
+      "syn": [
+        {
+          "w": "automated",
+          "note": "自动化的"
+        },
+        {
+          "w": "mechanical",
+          "note": "机械般的，无意识的"
+        },
+        {
+          "w": "involuntary",
+          "note": "不由自主的，无意识的"
+        }
+      ]
+    },
+    {
+      "w": "integrate",
+      "syn": [
+        {
+          "w": "combine",
+          "note": "合并，结合"
+        },
+        {
+          "w": "merge",
+          "note": "融合，合并"
+        },
+        {
+          "w": "incorporate",
+          "note": "纳入，整合"
+        },
+        {
+          "w": "unify",
+          "note": "统一，使成一体"
+        }
+      ]
+    },
+    {
+      "w": "sensor",
+      "syn": [
+        {
+          "w": "detector",
+          "note": "探测器"
+        },
+        {
+          "w": "probe",
+          "note": "探头，探测器"
+        },
+        {
+          "w": "sensing device",
+          "note": "传感装置"
+        }
+      ]
+    },
+    {
+      "w": "efficient",
+      "syn": [
+        {
+          "w": "effective",
+          "note": "有效的，侧重效果"
+        },
+        {
+          "w": "productive",
+          "note": "高效的，多产的"
+        },
+        {
+          "w": "competent",
+          "note": "有能力的，胜任的"
+        }
+      ]
+    }
+  ]
+}

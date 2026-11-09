@@ -1,0 +1,207 @@
+{
+  "items": [
+    {
+      "w": "superior",
+      "syn": [
+        {
+          "w": "better",
+          "note": "adj. 更好的；优于"
+        },
+        {
+          "w": "excellent",
+          "note": "adj. 优秀的"
+        },
+        {
+          "w": "senior",
+          "note": "n./adj. 上级；年长的"
+        },
+        {
+          "w": "arrogant",
+          "note": "adj. 高傲的"
+        }
+      ]
+    },
+    {
+      "w": "superior to",
+      "syn": [
+        {
+          "w": "better than",
+          "note": "比…更好；优于"
+        },
+        {
+          "w": "preferable to",
+          "note": "比…更可取"
+        },
+        {
+          "w": "ahead of",
+          "note": "领先于；胜过"
+        }
+      ]
+    },
+    {
+      "w": "take over",
+      "syn": [
+        {
+          "w": "take charge of",
+          "note": "负责；接管"
+        },
+        {
+          "w": "assume",
+          "note": "v. 承担；接管（权力）"
+        },
+        {
+          "w": "inherit",
+          "note": "v. 继承（财产、职位）"
+        }
+      ]
+    },
+    {
+      "w": "inaction",
+      "syn": [
+        {
+          "w": "inactivity",
+          "note": "n. 不活动"
+        },
+        {
+          "w": "idleness",
+          "note": "n. 懒散；闲散"
+        },
+        {
+          "w": "passivity",
+          "note": "n. 被动；消极"
+        }
+      ]
+    },
+    {
+      "w": "conflict with",
+      "syn": [
+        {
+          "w": "clash with",
+          "note": "与…冲突"
+        },
+        {
+          "w": "contradict",
+          "note": "v. 与…矛盾"
+        },
+        {
+          "w": "be at odds with",
+          "note": "与…不一致"
+        },
+        {
+          "w": "go against",
+          "note": "违背；与…相抵触"
+        }
+      ]
+    },
+    {
+      "w": "labour",
+      "syn": []
+    },
+    {
+      "w": "leather",
+      "syn": [
+        {
+          "w": "hide",
+          "note": "n. 兽皮；生皮"
+        },
+        {
+          "w": "skin",
+          "note": "n. 皮；皮革（材料）"
+        }
+      ]
+    },
+    {
+      "w": "lever",
+      "syn": [
+        {
+          "w": "handle",
+          "note": "n. 手柄；控制杆"
+        },
+        {
+          "w": "bar",
+          "note": "n. 杆；杠杆"
+        },
+        {
+          "w": "pry",
+          "note": "v. 撬动（美式）"
+        },
+        {
+          "w": "prise",
+          "note": "v. 撬开（英式）"
+        }
+      ]
+    },
+    {
+      "w": "panel",
+      "syn": [
+        {
+          "w": "board",
+          "note": "n. 板；面板"
+        },
+        {
+          "w": "committee",
+          "note": "n. 委员会；小组"
+        },
+        {
+          "w": "dashboard",
+          "note": "n. 仪表板"
+        }
+      ]
+    },
+    {
+      "w": "inch",
+      "syn": [
+        {
+          "w": "bit",
+          "note": "n. 少许；一点"
+        },
+        {
+          "w": "edge",
+          "note": "v. 缓慢移动；侧身挪动"
+        },
+        {
+          "w": "creep",
+          "note": "v. 缓慢行进"
+        }
+      ]
+    },
+    {
+      "w": "backward",
+      "syn": [
+        {
+          "w": "reverse",
+          "note": "adj. 反向的"
+        },
+        {
+          "w": "underdeveloped",
+          "note": "adj. 发展迟缓的"
+        },
+        {
+          "w": "back",
+          "note": "adv. 向后地"
+        }
+      ]
+    },
+    {
+      "w": "grip",
+      "syn": [
+        {
+          "w": "grasp",
+          "note": "v./n. 抓紧；掌握"
+        },
+        {
+          "w": "hold",
+          "note": "v./n. 握住"
+        },
+        {
+          "w": "clutch",
+          "note": "v. 紧抓"
+        },
+        {
+          "w": "handle",
+          "note": "n. 柄；把手"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "items": [
+    {
+      "w": "upper",
+      "syn": [
+        {
+          "w": "higher",
+          "note": "更高的"
+        },
+        {
+          "w": "top",
+          "note": "顶部的"
+        },
+        {
+          "w": "superior",
+          "note": "上级的；较高的"
+        }
+      ]
+    },
+    {
+      "w": "the upper class",
+      "syn": [
+        {
+          "w": "aristocracy",
+          "note": "贵族阶层"
+        },
+        {
+          "w": "nobility",
+          "note": "贵族阶层"
+        },
+        {
+          "w": "high society",
+          "note": "上流社会"
+        },
+        {
+          "w": "elite",
+          "note": "精英阶层"
+        }
+      ]
+    },
+    {
+      "w": "maintain",
+      "syn": [
+        {
+          "w": "keep",
+          "note": "保持"
+        },
+        {
+          "w": "sustain",
+          "note": "维持"
+        },
+        {
+          "w": "preserve",
+          "note": "保养；保持"
+        },
+        {
+          "w": "assert",
+          "note": "主张；断言"
+        }
+      ]
+    },
+    {
+      "w": "permission",
+      "syn": [
+        {
+          "w": "consent",
+          "note": "同意；准许"
+        },
+        {
+          "w": "authorization",
+          "note": "授权；批准"
+        },
+        {
+          "w": "approval",
+          "note": "批准；认可"
+        }
+      ]
+    },
+    {
+      "w": "permit",
+      "syn": [
+        {
+          "w": "allow",
+          "note": "允许"
+        },
+        {
+          "w": "authorize",
+          "note": "正式授权"
+        },
+        {
+          "w": "license",
+          "note": "许可证；准许"
+        },
+        {
+          "w": "pass",
+          "note": "通行证"
+        }
+      ]
+    },
+    {
+      "w": "saying",
+      "syn": [
+        {
+          "w": "proverb",
+          "note": "谚语"
+        },
+        {
+          "w": "adage",
+          "note": "格言；古语"
+        },
+        {
+          "w": "maxim",
+          "note": "格言；箴言"
+        }
+      ]
+    },
+    {
+      "w": "external",
+      "syn": [
+        {
+          "w": "outer",
+          "note": "外部的"
+        },
+        {
+          "w": "exterior",
+          "note": "外部的；外观"
+        },
+        {
+          "w": "outside",
+          "note": "外面的"
+        }
+      ]
+    },
+    {
+      "w": "Roderick",
+      "syn": []
+    },
+    {
+      "w": "Oliver",
+      "syn": []
+    },
+    {
+      "w": "Henry Adams",
+      "syn": []
+    },
+    {
+      "w": "The Phantom of the Opera",
+      "syn": []
+    },
+    {
+      "w": "Reid",
+      "syn": []
+    }
+  ]
+}

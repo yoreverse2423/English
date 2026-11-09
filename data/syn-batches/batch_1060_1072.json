@@ -1,0 +1,179 @@
+{
+  "items": [
+    {
+      "w": "Robert Louis Stevenson",
+      "syn": []
+    },
+    {
+      "w": "astronaut",
+      "syn": [
+        {
+          "w": "spaceman",
+          "note": "宇航员，较口语"
+        },
+        {
+          "w": "cosmonaut",
+          "note": "特指俄/苏宇航员"
+        }
+      ]
+    },
+    {
+      "w": "procedure",
+      "syn": [
+        {
+          "w": "process",
+          "note": "流程，侧重过程"
+        },
+        {
+          "w": "method",
+          "note": "方法，侧重做法"
+        },
+        {
+          "w": "routine",
+          "note": "常规程序"
+        }
+      ]
+    },
+    {
+      "w": "mental",
+      "syn": [
+        {
+          "w": "psychological",
+          "note": "心理的"
+        },
+        {
+          "w": "intellectual",
+          "note": "智力的"
+        },
+        {
+          "w": "spiritual",
+          "note": "精神的，偏心灵"
+        }
+      ]
+    },
+    {
+      "w": "cm",
+      "syn": [
+        {
+          "w": "centimetre",
+          "note": "厘米的英式拼写"
+        },
+        {
+          "w": "centimeter",
+          "note": "厘米的美式拼写"
+        }
+      ]
+    },
+    {
+      "w": "centimetre",
+      "syn": [
+        {
+          "w": "cm",
+          "note": "厘米的缩写"
+        },
+        {
+          "w": "centimeter",
+          "note": "美式拼写"
+        }
+      ]
+    },
+    {
+      "w": "centimeter",
+      "syn": [
+        {
+          "w": "cm",
+          "note": "厘米的缩写"
+        },
+        {
+          "w": "centimetre",
+          "note": "英式拼写"
+        }
+      ]
+    },
+    {
+      "w": "intelligent",
+      "syn": [
+        {
+          "w": "smart",
+          "note": "聪明的，较口语"
+        },
+        {
+          "w": "clever",
+          "note": "机灵的"
+        },
+        {
+          "w": "bright",
+          "note": "聪颖的"
+        }
+      ]
+    },
+    {
+      "w": "rocket",
+      "syn": [
+        {
+          "w": "missile",
+          "note": "导弹，侧重武器"
+        },
+        {
+          "w": "skyrocket",
+          "note": "猛增，作动词"
+        },
+        {
+          "w": "soar",
+          "note": "急升，高飞"
+        }
+      ]
+    },
+    {
+      "w": "gravity",
+      "syn": [
+        {
+          "w": "gravitation",
+          "note": "万有引力，较正式"
+        },
+        {
+          "w": "seriousness",
+          "note": "严重性"
+        },
+        {
+          "w": "solemnity",
+          "note": "庄严"
+        }
+      ]
+    },
+    {
+      "w": "frontier",
+      "syn": [
+        {
+          "w": "border",
+          "note": "边境"
+        },
+        {
+          "w": "boundary",
+          "note": "边界"
+        },
+        {
+          "w": "forefront",
+          "note": "前沿"
+        }
+      ]
+    },
+    {
+      "w": "vehicle",
+      "syn": [
+        {
+          "w": "automobile",
+          "note": "汽车，美式"
+        },
+        {
+          "w": "conveyance",
+          "note": "运输工具，正式"
+        },
+        {
+          "w": "medium",
+          "note": "媒介物"
+        }
+      ]
+    }
+  ]
+}

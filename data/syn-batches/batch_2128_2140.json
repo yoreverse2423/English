@@ -1,0 +1,154 @@
+{
+  "items": [
+    {
+      "w": "absorb",
+      "syn": [
+        {
+          "w": "take in",
+          "note": "吸收；理解"
+        },
+        {
+          "w": "soak up",
+          "note": "吸收液体"
+        },
+        {
+          "w": "engross",
+          "note": "使全神贯注，较正式"
+        }
+      ]
+    },
+    {
+      "w": "Aristotle",
+      "syn": []
+    },
+    {
+      "w": "People's Liberation Army",
+      "syn": [
+        {
+          "w": "PLA",
+          "note": "英文缩写"
+        }
+      ]
+    },
+    {
+      "w": "PLA",
+      "syn": [
+        {
+          "w": "People's Liberation Army",
+          "note": "英文全称"
+        }
+      ]
+    },
+    {
+      "w": "Lao Zi",
+      "syn": [
+        {
+          "w": "Lao Tzu",
+          "note": "常见拼写变体"
+        }
+      ]
+    },
+    {
+      "w": "graph",
+      "syn": [
+        {
+          "w": "chart",
+          "note": "图表，较通用"
+        },
+        {
+          "w": "diagram",
+          "note": "示意图"
+        },
+        {
+          "w": "plot",
+          "note": "曲线图；图表"
+        }
+      ]
+    },
+    {
+      "w": "emission",
+      "syn": [
+        {
+          "w": "discharge",
+          "note": "排放；释放"
+        },
+        {
+          "w": "release",
+          "note": "释放；排放"
+        }
+      ]
+    },
+    {
+      "w": "melt",
+      "syn": [
+        {
+          "w": "dissolve",
+          "note": "溶解"
+        },
+        {
+          "w": "thaw",
+          "note": "解冻；融化"
+        },
+        {
+          "w": "soften",
+          "note": "软化"
+        }
+      ]
+    },
+    {
+      "w": "starve",
+      "syn": [
+        {
+          "w": "go hungry",
+          "note": "挨饿"
+        },
+        {
+          "w": "crave",
+          "note": "渴望"
+        },
+        {
+          "w": "long for",
+          "note": "渴望"
+        }
+      ]
+    },
+    {
+      "w": "seal",
+      "syn": [
+        {
+          "w": "stamp",
+          "note": "印章；盖章"
+        },
+        {
+          "w": "close",
+          "note": "封住；关闭"
+        }
+      ]
+    },
+    {
+      "w": "ecology",
+      "syn": []
+    },
+    {
+      "w": "release",
+      "syn": [
+        {
+          "w": "free",
+          "note": "释放；使自由"
+        },
+        {
+          "w": "liberate",
+          "note": "解放；释放，较正式"
+        },
+        {
+          "w": "issue",
+          "note": "发布；发行"
+        },
+        {
+          "w": "discharge",
+          "note": "释放；排放"
+        }
+      ]
+    }
+  ]
+}

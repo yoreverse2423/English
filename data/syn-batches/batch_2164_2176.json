@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "w": "underwent",
+      "syn": []
+    },
+    {
+      "w": "undergone",
+      "syn": [
+        {
+          "w": "experienced",
+          "note": "侧重经历过"
+        },
+        {
+          "w": "endured",
+          "note": "侧重忍受过"
+        },
+        {
+          "w": "suffered",
+          "note": "侧重遭受过"
+        },
+        {
+          "w": "gone through",
+          "note": "口语，经历困难"
+        }
+      ]
+    },
+    {
+      "w": "implement",
+      "syn": [
+        {
+          "w": "tool",
+          "note": "具体工具"
+        },
+        {
+          "w": "device",
+          "note": "装置、器械"
+        },
+        {
+          "w": "execute",
+          "note": "执行计划、命令"
+        },
+        {
+          "w": "carry out",
+          "note": "实施、执行"
+        }
+      ]
+    },
+    {
+      "w": "harmonious",
+      "syn": [
+        {
+          "w": "peaceful",
+          "note": "和睦安宁"
+        },
+        {
+          "w": "compatible",
+          "note": "协调相容"
+        },
+        {
+          "w": "melodious",
+          "note": "悦耳动听"
+        }
+      ]
+    },
+    {
+      "w": "moderate",
+      "syn": [
+        {
+          "w": "mild",
+          "note": "温和不强烈"
+        },
+        {
+          "w": "modest",
+          "note": "适度的、不太大"
+        },
+        {
+          "w": "temperate",
+          "note": "有节制的"
+        },
+        {
+          "w": "restrained",
+          "note": "克制的"
+        }
+      ]
+    },
+    {
+      "w": "submit",
+      "syn": [
+        {
+          "w": "hand in",
+          "note": "提交作业、文件"
+        },
+        {
+          "w": "present",
+          "note": "正式呈递"
+        },
+        {
+          "w": "yield",
+          "note": "屈服、让步"
+        },
+        {
+          "w": "obey",
+          "note": "服从"
+        }
+      ]
+    },
+    {
+      "w": "annual",
+      "syn": [
+        {
+          "w": "yearly",
+          "note": "每年的、一年一度"
+        },
+        {
+          "w": "yearbook",
+          "note": "年刊、年鉴"
+        }
+      ]
+    },
+    {
+      "w": "tropical",
+      "syn": [
+        {
+          "w": "equatorial",
+          "note": "赤道的、热带附近"
+        },
+        {
+          "w": "hot",
+          "note": "炎热的"
+        },
+        {
+          "w": "torrid",
+          "note": "酷热的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "chaos",
+      "syn": [
+        {
+          "w": "disorder",
+          "note": "无序、紊乱"
+        },
+        {
+          "w": "confusion",
+          "note": "混乱困惑"
+        },
+        {
+          "w": "mess",
+          "note": "口语，一团糟"
+        },
+        {
+          "w": "turmoil",
+          "note": "动荡混乱"
+        }
+      ]
+    },
+    {
+      "w": "on behalf",
+      "syn": []
+    },
+    {
+      "w": "on behalf of",
+      "syn": [
+        {
+          "w": "for",
+          "note": "替、为某人"
+        },
+        {
+          "w": "in the name of",
+          "note": "以…名义"
+        },
+        {
+          "w": "representing",
+          "note": "代表"
+        }
+      ]
+    },
+    {
+      "w": "nuclear",
+      "syn": [
+        {
+          "w": "atomic",
+          "note": "原子能的"
+        },
+        {
+          "w": "central",
+          "note": "中心的"
+        }
+      ]
+    }
+  ]
+}

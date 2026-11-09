@@ -1,0 +1,168 @@
+{
+  "items": [
+    {
+      "w": "in the hope of doing sth.",
+      "syn": [
+        {
+          "w": "hoping to do sth.",
+          "note": "更口语、结构更简"
+        },
+        {
+          "w": "with the hope of doing sth.",
+          "note": "更正式，语义相同"
+        }
+      ]
+    },
+    {
+      "w": "so as to",
+      "syn": [
+        {
+          "w": "in order to",
+          "note": "更正式，可置句首"
+        },
+        {
+          "w": "so that",
+          "note": "接从句，不接动词原形"
+        }
+      ]
+    },
+    {
+      "w": "so as to do sth.",
+      "syn": [
+        {
+          "w": "in order to do sth.",
+          "note": "更正式，可置句首"
+        },
+        {
+          "w": "with the aim of doing sth.",
+          "note": "更正式，侧重目的"
+        }
+      ]
+    },
+    {
+      "w": "recycle",
+      "syn": [
+        {
+          "w": "reuse",
+          "note": "侧重再次使用，非加工"
+        },
+        {
+          "w": "reprocess",
+          "note": "侧重再加工处理"
+        }
+      ]
+    },
+    {
+      "w": "muscle",
+      "syn": [
+        {
+          "w": "strength",
+          "note": "侧重力量义"
+        },
+        {
+          "w": "power",
+          "note": "泛指力量，较宽泛"
+        }
+      ]
+    },
+    {
+      "w": "lack",
+      "syn": [
+        {
+          "w": "be short of",
+          "note": "短语，侧重数量不足"
+        },
+        {
+          "w": "be without",
+          "note": "强调完全没有"
+        },
+        {
+          "w": "shortage",
+          "note": "名词，指短缺"
+        }
+      ]
+    },
+    {
+      "w": "float",
+      "syn": [
+        {
+          "w": "drift",
+          "note": "侧重漂流、漂移"
+        },
+        {
+          "w": "hover",
+          "note": "侧重空中悬停"
+        }
+      ]
+    },
+    {
+      "w": "otherwise",
+      "syn": [
+        {
+          "w": "or else",
+          "note": "否则，更口语"
+        },
+        {
+          "w": "if not",
+          "note": "否则，较正式"
+        },
+        {
+          "w": "in other respects",
+          "note": "对应“在其他方面”义"
+        }
+      ]
+    },
+    {
+      "w": "beyond",
+      "syn": [
+        {
+          "w": "past",
+          "note": "越过，多指空间"
+        },
+        {
+          "w": "further than",
+          "note": "短语，侧重距离更远"
+        }
+      ]
+    },
+    {
+      "w": "solar",
+      "syn": [
+        {
+          "w": "sun-powered",
+          "note": "侧重太阳能驱动"
+        },
+        {
+          "w": "of the sun",
+          "note": "短语，直译太阳的"
+        }
+      ]
+    },
+    {
+      "w": "solar system",
+      "syn": [
+        {
+          "w": "planetary system",
+          "note": "更正式，天文学用语"
+        }
+      ]
+    },
+    {
+      "w": "current",
+      "syn": [
+        {
+          "w": "present",
+          "note": "对应“现在的”义"
+        },
+        {
+          "w": "flow",
+          "note": "对应“水流”义"
+        },
+        {
+          "w": "trend",
+          "note": "对应“趋势”义"
+        }
+      ]
+    }
+  ]
+}

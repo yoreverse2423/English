@@ -1,0 +1,185 @@
+{
+  "items": [
+    {
+      "w": "domain",
+      "syn": [
+        {
+          "w": "field",
+          "note": "领域；范围"
+        },
+        {
+          "w": "realm",
+          "note": "更正式；抽象领域"
+        },
+        {
+          "w": "sphere",
+          "note": "活动或影响范围"
+        },
+        {
+          "w": "territory",
+          "note": "地盘；领域"
+        }
+      ]
+    },
+    {
+      "w": "sponsor",
+      "syn": [
+        {
+          "w": "backer",
+          "note": "支持者；赞助者"
+        },
+        {
+          "w": "patron",
+          "note": "赞助人；资助者"
+        },
+        {
+          "w": "funder",
+          "note": "资助者"
+        },
+        {
+          "w": "finance",
+          "note": "动词：资助"
+        }
+      ]
+    },
+    {
+      "w": "liberty",
+      "syn": [
+        {
+          "w": "freedom",
+          "note": "最普通：自由"
+        },
+        {
+          "w": "independence",
+          "note": "独立；自主"
+        },
+        {
+          "w": "autonomy",
+          "note": "自治；自主权"
+        },
+        {
+          "w": "permission",
+          "note": "许可；准许"
+        }
+      ]
+    },
+    {
+      "w": "golf",
+      "syn": []
+    },
+    {
+      "w": "strait",
+      "syn": [
+        {
+          "w": "channel",
+          "note": "海峡；水道"
+        },
+        {
+          "w": "passage",
+          "note": "通道；海峡"
+        },
+        {
+          "w": "sound",
+          "note": "海峡；海湾"
+        },
+        {
+          "w": "predicament",
+          "note": "困境"
+        }
+      ]
+    },
+    {
+      "w": "sample",
+      "syn": [
+        {
+          "w": "specimen",
+          "note": "样本；标本"
+        },
+        {
+          "w": "example",
+          "note": "例子；实例"
+        },
+        {
+          "w": "instance",
+          "note": "实例"
+        },
+        {
+          "w": "trial",
+          "note": "试验；尝试"
+        }
+      ]
+    },
+    {
+      "w": "monument",
+      "syn": [
+        {
+          "w": "memorial",
+          "note": "纪念碑；纪念物"
+        },
+        {
+          "w": "statue",
+          "note": "雕像；纪念像"
+        },
+        {
+          "w": "landmark",
+          "note": "地标；遗迹"
+        },
+        {
+          "w": "relic",
+          "note": "遗迹；遗物"
+        }
+      ]
+    },
+    {
+      "w": "kiwi",
+      "syn": [
+        {
+          "w": "kiwi fruit",
+          "note": "猕猴桃"
+        },
+        {
+          "w": "New Zealander",
+          "note": "新西兰人"
+        }
+      ]
+    },
+    {
+      "w": "geyser",
+      "syn": [
+        {
+          "w": "hot spring",
+          "note": "温泉；热泉"
+        },
+        {
+          "w": "thermal spring",
+          "note": "热泉"
+        },
+        {
+          "w": "spring",
+          "note": "泉；泉水"
+        }
+      ]
+    },
+    {
+      "w": "sulphuric pool",
+      "syn": []
+    },
+    {
+      "w": "manuka honey",
+      "syn": []
+    },
+    {
+      "w": "bungee jumping",
+      "syn": [
+        {
+          "w": "bungy jumping",
+          "note": "拼写变体"
+        },
+        {
+          "w": "bungee jump",
+          "note": "一次蹦极；蹦极活动"
+        }
+      ]
+    }
+  ]
+}

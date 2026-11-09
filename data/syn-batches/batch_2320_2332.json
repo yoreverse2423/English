@@ -1,0 +1,187 @@
+{
+  "items": [
+    {
+      "w": "correspondence",
+      "syn": [
+        {
+          "w": "communication",
+          "note": "通信联系"
+        },
+        {
+          "w": "agreement",
+          "note": "一致、符合"
+        },
+        {
+          "w": "match",
+          "note": "相当、对应"
+        }
+      ]
+    },
+    {
+      "w": "correspond",
+      "syn": [
+        {
+          "w": "match",
+          "note": "相符合"
+        },
+        {
+          "w": "agree",
+          "note": "一致"
+        },
+        {
+          "w": "communicate",
+          "note": "通信"
+        }
+      ]
+    },
+    {
+      "w": "sow",
+      "syn": [
+        {
+          "w": "plant",
+          "note": "种植"
+        },
+        {
+          "w": "scatter",
+          "note": "散布"
+        },
+        {
+          "w": "spread",
+          "note": "传播、散布"
+        }
+      ]
+    },
+    {
+      "w": "seed",
+      "syn": [
+        {
+          "w": "grain",
+          "note": "谷粒、种子"
+        },
+        {
+          "w": "origin",
+          "note": "根源、起因"
+        },
+        {
+          "w": "source",
+          "note": "来源"
+        }
+      ]
+    },
+    {
+      "w": "dominant",
+      "syn": [
+        {
+          "w": "prevailing",
+          "note": "占优势的"
+        },
+        {
+          "w": "ruling",
+          "note": "统治的"
+        },
+        {
+          "w": "controlling",
+          "note": "支配的"
+        }
+      ]
+    },
+    {
+      "w": "sonnet",
+      "syn": []
+    },
+    {
+      "w": "deadline",
+      "syn": [
+        {
+          "w": "limit",
+          "note": "期限"
+        },
+        {
+          "w": "time limit",
+          "note": "时间限制"
+        }
+      ]
+    },
+    {
+      "w": "contest",
+      "syn": [
+        {
+          "w": "competition",
+          "note": "竞赛"
+        },
+        {
+          "w": "challenge",
+          "note": "质疑、挑战"
+        },
+        {
+          "w": "dispute",
+          "note": "争辩"
+        }
+      ]
+    },
+    {
+      "w": "polish",
+      "syn": [
+        {
+          "w": "shine",
+          "note": "使光亮"
+        },
+        {
+          "w": "refine",
+          "note": "使精炼、完善"
+        },
+        {
+          "w": "rub",
+          "note": "擦"
+        }
+      ]
+    },
+    {
+      "w": "string",
+      "syn": [
+        {
+          "w": "cord",
+          "note": "细绳"
+        },
+        {
+          "w": "rope",
+          "note": "绳子，较粗"
+        },
+        {
+          "w": "series",
+          "note": "一连串"
+        }
+      ]
+    },
+    {
+      "w": "wherever",
+      "syn": [
+        {
+          "w": "anywhere",
+          "note": "任何地方"
+        },
+        {
+          "w": "everywhere",
+          "note": "处处"
+        }
+      ]
+    },
+    {
+      "w": "barren",
+      "syn": [
+        {
+          "w": "infertile",
+          "note": "贫瘠的、不生育的"
+        },
+        {
+          "w": "sterile",
+          "note": "不毛的、不育的"
+        },
+        {
+          "w": "unproductive",
+          "note": "无出产的"
+        }
+      ]
+    }
+  ]
+}

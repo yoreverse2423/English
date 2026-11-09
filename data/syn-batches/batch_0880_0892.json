@@ -1,0 +1,174 @@
+{
+  "items": [
+    {
+      "w": "the Naadam festival",
+      "syn": []
+    },
+    {
+      "w": "Inner Mongolia Autonomous Region",
+      "syn": []
+    },
+    {
+      "w": "Mongolian",
+      "syn": [
+        {
+          "w": "Mongol",
+          "note": "蒙古人/蒙古语，较简短"
+        }
+      ]
+    },
+    {
+      "w": "moral",
+      "syn": [
+        {
+          "w": "ethical",
+          "note": "道德的；偏伦理"
+        },
+        {
+          "w": "virtuous",
+          "note": "品德高尚的"
+        },
+        {
+          "w": "upright",
+          "note": "正直的"
+        }
+      ]
+    },
+    {
+      "w": "virtue",
+      "syn": [
+        {
+          "w": "merit",
+          "note": "优点；长处"
+        },
+        {
+          "w": "goodness",
+          "note": "善良；美德"
+        },
+        {
+          "w": "advantage",
+          "note": "优点；优势"
+        }
+      ]
+    },
+    {
+      "w": "dilemma",
+      "syn": [
+        {
+          "w": "predicament",
+          "note": "困境"
+        },
+        {
+          "w": "quandary",
+          "note": "进退两难；难以抉择"
+        },
+        {
+          "w": "plight",
+          "note": "困境；苦境"
+        }
+      ]
+    },
+    {
+      "w": "moral dilemma",
+      "syn": [
+        {
+          "w": "ethical dilemma",
+          "note": "伦理困境"
+        },
+        {
+          "w": "moral quandary",
+          "note": "道德难题"
+        }
+      ]
+    },
+    {
+      "w": "faint",
+      "syn": [
+        {
+          "w": "dim",
+          "note": "模糊的；暗淡的"
+        },
+        {
+          "w": "weak",
+          "note": "虚弱的"
+        },
+        {
+          "w": "dizzy",
+          "note": "头晕的"
+        },
+        {
+          "w": "pass out",
+          "note": "昏倒（动词）"
+        }
+      ]
+    },
+    {
+      "w": "illustrate",
+      "syn": [
+        {
+          "w": "demonstrate",
+          "note": "证明；阐明"
+        },
+        {
+          "w": "clarify",
+          "note": "澄清；阐明"
+        },
+        {
+          "w": "show",
+          "note": "说明；展示"
+        }
+      ]
+    },
+    {
+      "w": "precious",
+      "syn": [
+        {
+          "w": "valuable",
+          "note": "宝贵的；有价值的"
+        },
+        {
+          "w": "treasured",
+          "note": "珍视的；珍贵的"
+        },
+        {
+          "w": "dear",
+          "note": "珍贵的；亲爱的"
+        }
+      ]
+    },
+    {
+      "w": "entrust",
+      "syn": [
+        {
+          "w": "commit",
+          "note": "委托；托付"
+        },
+        {
+          "w": "delegate",
+          "note": "委派；授权"
+        },
+        {
+          "w": "trust",
+          "note": "托付（trust sb with sth）"
+        }
+      ]
+    },
+    {
+      "w": "carry sb. through sth.",
+      "syn": [
+        {
+          "w": "see sb through",
+          "note": "帮助渡过；支持到底"
+        },
+        {
+          "w": "help sb through",
+          "note": "帮某人度过"
+        },
+        {
+          "w": "tide sb over",
+          "note": "帮渡过难关（偏暂时）"
+        }
+      ]
+    }
+  ]
+}

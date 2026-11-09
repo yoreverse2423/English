@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "w": "shave",
+      "syn": [
+        {
+          "w": "trim",
+          "note": "修剪（毛发等）"
+        },
+        {
+          "w": "clip",
+          "note": "剪短"
+        },
+        {
+          "w": "scrape",
+          "note": "刮擦；刮去"
+        },
+        {
+          "w": "pare",
+          "note": "削皮；削去"
+        }
+      ]
+    },
+    {
+      "w": "shave off",
+      "syn": [
+        {
+          "w": "remove",
+          "note": "去除（更泛）"
+        },
+        {
+          "w": "cut off",
+          "note": "切掉"
+        },
+        {
+          "w": "trim off",
+          "note": "修剪掉"
+        },
+        {
+          "w": "scrape off",
+          "note": "刮掉"
+        }
+      ]
+    },
+    {
+      "w": "beard",
+      "syn": [
+        {
+          "w": "whiskers",
+          "note": "胡须（常复数）"
+        },
+        {
+          "w": "stubble",
+          "note": "短胡茬"
+        },
+        {
+          "w": "facial hair",
+          "note": "面部毛发（更泛）"
+        }
+      ]
+    },
+    {
+      "w": "disturb",
+      "syn": [
+        {
+          "w": "bother",
+          "note": "打扰（较口语）"
+        },
+        {
+          "w": "interrupt",
+          "note": "打断"
+        },
+        {
+          "w": "trouble",
+          "note": "麻烦；使不安"
+        },
+        {
+          "w": "upset",
+          "note": "使心烦"
+        }
+      ]
+    },
+    {
+      "w": "cigarette",
+      "syn": [
+        {
+          "w": "cig",
+          "note": "口语缩写"
+        },
+        {
+          "w": "smoke",
+          "note": "口语：一支烟"
+        }
+      ]
+    },
+    {
+      "w": "specialist",
+      "syn": [
+        {
+          "w": "expert",
+          "note": "专家（泛称）"
+        },
+        {
+          "w": "authority",
+          "note": "权威（人士）"
+        },
+        {
+          "w": "professional",
+          "note": "专业人士"
+        }
+      ]
+    },
+    {
+      "w": "consultant",
+      "syn": [
+        {
+          "w": "adviser",
+          "note": "顾问"
+        },
+        {
+          "w": "counselor",
+          "note": "咨询顾问"
+        },
+        {
+          "w": "expert",
+          "note": "专家（泛称）"
+        }
+      ]
+    },
+    {
+      "w": "drug",
+      "syn": [
+        {
+          "w": "medicine",
+          "note": "药（泛称）"
+        },
+        {
+          "w": "medication",
+          "note": "药物（较正式）"
+        },
+        {
+          "w": "remedy",
+          "note": "疗法；药"
+        },
+        {
+          "w": "narcotic",
+          "note": "麻醉药；毒品"
+        }
+      ]
+    },
+    {
+      "w": "skip",
+      "syn": [
+        {
+          "w": "jump",
+          "note": "跳（泛称）"
+        },
+        {
+          "w": "hop",
+          "note": "单脚跳；轻跳"
+        },
+        {
+          "w": "omit",
+          "note": "遗漏；省略"
+        },
+        {
+          "w": "leave out",
+          "note": "省去；漏掉"
+        }
+      ]
+    },
+    {
+      "w": "dizzy",
+      "syn": [
+        {
+          "w": "giddy",
+          "note": "头晕的"
+        },
+        {
+          "w": "light-headed",
+          "note": "头昏眼花的"
+        },
+        {
+          "w": "faint",
+          "note": "快晕倒的；眩晕的"
+        }
+      ]
+    },
+    {
+      "w": "flu",
+      "syn": [
+        {
+          "w": "influenza",
+          "note": "流感（正式全称）"
+        }
+      ]
+    },
+    {
+      "w": "stimulate",
+      "syn": [
+        {
+          "w": "encourage",
+          "note": "鼓励"
+        },
+        {
+          "w": "motivate",
+          "note": "激发动力"
+        },
+        {
+          "w": "inspire",
+          "note": "激励；启发"
+        },
+        {
+          "w": "spur",
+          "note": "鞭策；刺激"
+        }
+      ]
+    }
+  ]
+}

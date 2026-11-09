@@ -1,0 +1,152 @@
+{
+  "items": [
+    {
+      "w": "exceptional",
+      "syn": [
+        {
+          "w": "extraordinary",
+          "note": "非凡的，异乎寻常的"
+        },
+        {
+          "w": "outstanding",
+          "note": "杰出的，突出的"
+        },
+        {
+          "w": "remarkable",
+          "note": "显著的，引人注目的"
+        },
+        {
+          "w": "unusual",
+          "note": "不寻常的"
+        }
+      ]
+    },
+    {
+      "w": "minimum",
+      "syn": [
+        {
+          "w": "minimal",
+          "note": "最小的，最低限度的"
+        },
+        {
+          "w": "least",
+          "note": "最少（量），最低限度"
+        },
+        {
+          "w": "lowest",
+          "note": "最低的"
+        }
+      ]
+    },
+    {
+      "w": "consume",
+      "syn": [
+        {
+          "w": "use up",
+          "note": "耗尽，用完"
+        },
+        {
+          "w": "expend",
+          "note": "消耗（较正式）"
+        },
+        {
+          "w": "devour",
+          "note": "吞食，狼吞虎咽"
+        }
+      ]
+    },
+    {
+      "w": "temper",
+      "syn": [
+        {
+          "w": "mood",
+          "note": "心情，情绪"
+        },
+        {
+          "w": "disposition",
+          "note": "性情（较正式）"
+        },
+        {
+          "w": "temperament",
+          "note": "气质，禀性"
+        }
+      ]
+    },
+    {
+      "w": "vegetarian",
+      "syn": [
+        {
+          "w": "vegan",
+          "note": "严格素食者（更严格）"
+        },
+        {
+          "w": "meatless",
+          "note": "无肉的（形容词）"
+        },
+        {
+          "w": "herbivore",
+          "note": "食草动物"
+        }
+      ]
+    },
+    {
+      "w": "junk",
+      "syn": [
+        {
+          "w": "rubbish",
+          "note": "垃圾（英式）"
+        },
+        {
+          "w": "trash",
+          "note": "垃圾（美式）"
+        },
+        {
+          "w": "garbage",
+          "note": "垃圾，废物"
+        }
+      ]
+    },
+    {
+      "w": "junk food",
+      "syn": [
+        {
+          "w": "unhealthy food",
+          "note": "不健康食品（较宽泛）"
+        }
+      ]
+    },
+    {
+      "w": "garlic",
+      "syn": []
+    },
+    {
+      "w": "bacon",
+      "syn": []
+    },
+    {
+      "w": "ham",
+      "syn": [
+        {
+          "w": "overacted",
+          "note": "表演过火的"
+        },
+        {
+          "w": "theatrical",
+          "note": "做作的，夸张的"
+        },
+        {
+          "w": "exaggerated",
+          "note": "夸张的"
+        }
+      ]
+    },
+    {
+      "w": "sausage",
+      "syn": []
+    },
+    {
+      "w": "cabbage",
+      "syn": []
+    }
+  ]
+}

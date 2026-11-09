@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "w": "decorate",
+      "syn": [
+        {
+          "w": "adorn",
+          "note": "装饰，较正式/文学"
+        },
+        {
+          "w": "ornament",
+          "note": "点缀装饰"
+        },
+        {
+          "w": "beautify",
+          "note": "美化"
+        },
+        {
+          "w": "deck",
+          "note": "装饰，常指节日布置"
+        }
+      ]
+    },
+    {
+      "w": "church",
+      "syn": [
+        {
+          "w": "chapel",
+          "note": "小教堂"
+        },
+        {
+          "w": "cathedral",
+          "note": "大教堂"
+        },
+        {
+          "w": "denomination",
+          "note": "教派"
+        },
+        {
+          "w": "place of worship",
+          "note": "礼拜场所"
+        }
+      ]
+    },
+    {
+      "w": "significant",
+      "syn": [
+        {
+          "w": "important",
+          "note": "重要的"
+        },
+        {
+          "w": "meaningful",
+          "note": "有意义的"
+        },
+        {
+          "w": "considerable",
+          "note": "相当大的"
+        },
+        {
+          "w": "notable",
+          "note": "显著的"
+        }
+      ]
+    },
+    {
+      "w": "fade",
+      "syn": [
+        {
+          "w": "dim",
+          "note": "变暗"
+        },
+        {
+          "w": "pale",
+          "note": "变淡/失色"
+        },
+        {
+          "w": "diminish",
+          "note": "减弱"
+        },
+        {
+          "w": "wane",
+          "note": "衰退/减弱"
+        }
+      ]
+    },
+    {
+      "w": "fade away",
+      "syn": [
+        {
+          "w": "die away",
+          "note": "渐弱消失"
+        },
+        {
+          "w": "vanish",
+          "note": "消失"
+        },
+        {
+          "w": "disappear",
+          "note": "消失"
+        },
+        {
+          "w": "dwindle",
+          "note": "逐渐减少"
+        }
+      ]
+    },
+    {
+      "w": "typical",
+      "syn": [
+        {
+          "w": "representative",
+          "note": "有代表性的"
+        },
+        {
+          "w": "characteristic",
+          "note": "特有的"
+        },
+        {
+          "w": "usual",
+          "note": "通常的"
+        }
+      ]
+    },
+    {
+      "w": "firecracker",
+      "syn": [
+        {
+          "w": "cracker",
+          "note": "爆竹；口语"
+        },
+        {
+          "w": "firework",
+          "note": "烟花，常混用"
+        },
+        {
+          "w": "banger",
+          "note": "英式口语，爆竹"
+        }
+      ]
+    },
+    {
+      "w": "evil",
+      "syn": [
+        {
+          "w": "wicked",
+          "note": "邪恶的"
+        },
+        {
+          "w": "sinful",
+          "note": "罪恶的"
+        },
+        {
+          "w": "sin",
+          "note": "罪恶；名词"
+        },
+        {
+          "w": "malicious",
+          "note": "恶意的"
+        }
+      ]
+    },
+    {
+      "w": "in spite of",
+      "syn": [
+        {
+          "w": "despite",
+          "note": "尽管，更正式"
+        },
+        {
+          "w": "regardless of",
+          "note": "不管，后接名词"
+        },
+        {
+          "w": "notwithstanding",
+          "note": "尽管，正式"
+        }
+      ]
+    },
+    {
+      "w": "commercial",
+      "syn": [
+        {
+          "w": "advertisement",
+          "note": "广告；名词义"
+        },
+        {
+          "w": "ad",
+          "note": "广告，口语"
+        },
+        {
+          "w": "business",
+          "note": "商业的，作定语"
+        }
+      ]
+    },
+    {
+      "w": "commercialise",
+      "syn": [
+        {
+          "w": "market",
+          "note": "推向市场"
+        },
+        {
+          "w": "monetize",
+          "note": "使货币化/营利"
+        },
+        {
+          "w": "exploit",
+          "note": "开发利用以获利"
+        }
+      ]
+    },
+    {
+      "w": "commercialisation",
+      "syn": [
+        {
+          "w": "monetization",
+          "note": "货币化"
+        },
+        {
+          "w": "marketization",
+          "note": "市场化"
+        }
+      ]
+    }
+  ]
+}

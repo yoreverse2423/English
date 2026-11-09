@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "w": "hybrid",
+      "syn": [
+        {
+          "w": "mixture",
+          "note": "侧重混合物"
+        },
+        {
+          "w": "crossbreed",
+          "note": "动植物的杂交品种"
+        },
+        {
+          "w": "mixed",
+          "note": "adj. 混合的"
+        }
+      ]
+    },
+    {
+      "w": "devote",
+      "syn": [
+        {
+          "w": "dedicate",
+          "note": "更正式，常指献出时间精力"
+        },
+        {
+          "w": "commit",
+          "note": "投入（精力、资源）"
+        }
+      ]
+    },
+    {
+      "w": "devote ... to",
+      "syn": [
+        {
+          "w": "dedicate ... to",
+          "note": "更正式"
+        },
+        {
+          "w": "commit ... to",
+          "note": "投入于"
+        },
+        {
+          "w": "give ... to",
+          "note": "泛指把…给予"
+        }
+      ]
+    },
+    {
+      "w": "shortage",
+      "syn": [
+        {
+          "w": "lack",
+          "note": "最常用，缺乏"
+        },
+        {
+          "w": "scarcity",
+          "note": "强调稀少不足"
+        },
+        {
+          "w": "deficiency",
+          "note": "侧重数量不足"
+        }
+      ]
+    },
+    {
+      "w": "tackle",
+      "syn": [
+        {
+          "w": "handle",
+          "note": "处理，最常用"
+        },
+        {
+          "w": "address",
+          "note": "更正式，着手解决"
+        },
+        {
+          "w": "deal with",
+          "note": "应付，处理"
+        }
+      ]
+    },
+    {
+      "w": "crisis",
+      "syn": [
+        {
+          "w": "emergency",
+          "note": "突发紧急情况"
+        },
+        {
+          "w": "predicament",
+          "note": "困境，较正式"
+        }
+      ]
+    },
+    {
+      "w": "boost",
+      "syn": [
+        {
+          "w": "increase",
+          "note": "增加"
+        },
+        {
+          "w": "promote",
+          "note": "促进，推动"
+        },
+        {
+          "w": "enhance",
+          "note": "提升（质量、价值）"
+        }
+      ]
+    },
+    {
+      "w": "yield",
+      "syn": [
+        {
+          "w": "surrender",
+          "note": "屈服，更正式"
+        },
+        {
+          "w": "give in",
+          "note": "屈服，让步"
+        },
+        {
+          "w": "produce",
+          "note": "出产，产生"
+        }
+      ]
+    },
+    {
+      "w": "convince",
+      "syn": [
+        {
+          "w": "persuade",
+          "note": "说服，侧重结果"
+        },
+        {
+          "w": "assure",
+          "note": "使某人确信，向…保证"
+        }
+      ]
+    },
+    {
+      "w": "characteristic",
+      "syn": [
+        {
+          "w": "feature",
+          "note": "特征，常指显著特点"
+        },
+        {
+          "w": "trait",
+          "note": "特性，常指性格特质"
+        },
+        {
+          "w": "typical",
+          "note": "adj. 典型的"
+        }
+      ]
+    },
+    {
+      "w": "attain",
+      "syn": [
+        {
+          "w": "achieve",
+          "note": "实现（目标）"
+        },
+        {
+          "w": "reach",
+          "note": "达到，到达"
+        },
+        {
+          "w": "accomplish",
+          "note": "完成（任务）"
+        }
+      ]
+    },
+    {
+      "w": "conventional",
+      "syn": [
+        {
+          "w": "traditional",
+          "note": "传统的"
+        },
+        {
+          "w": "customary",
+          "note": "习惯上的，惯常的"
+        },
+        {
+          "w": "standard",
+          "note": "常规的，标准的"
+        }
+      ]
+    }
+  ]
+}

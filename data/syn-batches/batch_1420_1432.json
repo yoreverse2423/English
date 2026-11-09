@@ -1,0 +1,195 @@
+{
+  "items": [
+    {
+      "w": "cream",
+      "syn": [
+        {
+          "w": "essence",
+          "note": "精华；本质"
+        },
+        {
+          "w": "lotion",
+          "note": "乳液、护肤霜，非乳脂"
+        },
+        {
+          "w": "elite",
+          "note": "精英；the cream of 精华"
+        }
+      ]
+    },
+    {
+      "w": "leopard",
+      "syn": [
+        {
+          "w": "panther",
+          "note": "豹；黑豹"
+        },
+        {
+          "w": "jaguar",
+          "note": "美洲豹"
+        }
+      ]
+    },
+    {
+      "w": "stretch",
+      "syn": [
+        {
+          "w": "extend",
+          "note": "伸展；延伸"
+        },
+        {
+          "w": "expand",
+          "note": "扩张；展开"
+        },
+        {
+          "w": "spread",
+          "note": "展开；铺开"
+        },
+        {
+          "w": "strain",
+          "note": "使竭尽；拉紧"
+        }
+      ]
+    },
+    {
+      "w": "rewarding",
+      "syn": [
+        {
+          "w": "worthwhile",
+          "note": "值得的"
+        },
+        {
+          "w": "beneficial",
+          "note": "有益的"
+        },
+        {
+          "w": "profitable",
+          "note": "有报酬的；有利的"
+        },
+        {
+          "w": "satisfying",
+          "note": "令人满足的"
+        }
+      ]
+    },
+    {
+      "w": "bush",
+      "syn": [
+        {
+          "w": "shrub",
+          "note": "灌木"
+        },
+        {
+          "w": "thicket",
+          "note": "灌木丛"
+        },
+        {
+          "w": "scrub",
+          "note": "矮树丛"
+        }
+      ]
+    },
+    {
+      "w": "lung",
+      "syn": []
+    },
+    {
+      "w": "cycle",
+      "syn": [
+        {
+          "w": "loop",
+          "note": "循环"
+        },
+        {
+          "w": "period",
+          "note": "周期"
+        },
+        {
+          "w": "bicycle",
+          "note": "自行车义"
+        }
+      ]
+    },
+    {
+      "w": "corridor",
+      "syn": [
+        {
+          "w": "hallway",
+          "note": "走廊；门厅过道"
+        },
+        {
+          "w": "passage",
+          "note": "通道；走廊"
+        },
+        {
+          "w": "passageway",
+          "note": "通道；走廊"
+        }
+      ]
+    },
+    {
+      "w": "pedal",
+      "syn": [
+        {
+          "w": "foot pedal",
+          "note": "脚踏板；更明确"
+        },
+        {
+          "w": "treadle",
+          "note": "旧式踏板"
+        }
+      ]
+    },
+    {
+      "w": "fountain",
+      "syn": [
+        {
+          "w": "spring",
+          "note": "泉水；泉"
+        },
+        {
+          "w": "source",
+          "note": "源泉；来源"
+        },
+        {
+          "w": "wellspring",
+          "note": "源泉，较文学"
+        }
+      ]
+    },
+    {
+      "w": "route",
+      "syn": [
+        {
+          "w": "path",
+          "note": "路线；小路"
+        },
+        {
+          "w": "way",
+          "note": "路线；方式"
+        },
+        {
+          "w": "course",
+          "note": "路线；航向"
+        }
+      ]
+    },
+    {
+      "w": "ahead",
+      "syn": [
+        {
+          "w": "forward",
+          "note": "向前"
+        },
+        {
+          "w": "in front",
+          "note": "在前面"
+        },
+        {
+          "w": "leading",
+          "note": "领先的；在前的"
+        }
+      ]
+    }
+  ]
+}

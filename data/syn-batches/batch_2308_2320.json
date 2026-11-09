@@ -1,0 +1,206 @@
+{
+  "items": [
+    {
+      "w": "cherry",
+      "syn": []
+    },
+    {
+      "w": "cherry blossom",
+      "syn": []
+    },
+    {
+      "w": "blank",
+      "syn": [
+        {
+          "w": "empty",
+          "note": "侧重空的"
+        },
+        {
+          "w": "vacant",
+          "note": "空白/空缺的"
+        },
+        {
+          "w": "space",
+          "note": "空白处"
+        },
+        {
+          "w": "void",
+          "note": "更正式，空虚/空白"
+        }
+      ]
+    },
+    {
+      "w": "verse",
+      "syn": [
+        {
+          "w": "poetry",
+          "note": "诗歌总称"
+        },
+        {
+          "w": "poem",
+          "note": "一首诗"
+        },
+        {
+          "w": "stanza",
+          "note": "诗节"
+        },
+        {
+          "w": "rhyme",
+          "note": "韵文"
+        }
+      ]
+    },
+    {
+      "w": "civilian",
+      "syn": [
+        {
+          "w": "noncombatant",
+          "note": "非战斗人员"
+        },
+        {
+          "w": "citizen",
+          "note": "公民/平民"
+        },
+        {
+          "w": "commoner",
+          "note": "平民"
+        }
+      ]
+    },
+    {
+      "w": "prose",
+      "syn": [
+        {
+          "w": "essay",
+          "note": "散文/随笔"
+        },
+        {
+          "w": "nonfiction",
+          "note": "非虚构作品"
+        }
+      ]
+    },
+    {
+      "w": "sympathetic",
+      "syn": [
+        {
+          "w": "compassionate",
+          "note": "有同情心的"
+        },
+        {
+          "w": "understanding",
+          "note": "体谅的"
+        },
+        {
+          "w": "supportive",
+          "note": "支持的"
+        },
+        {
+          "w": "kind",
+          "note": "友善的"
+        }
+      ]
+    },
+    {
+      "w": "sympathy",
+      "syn": [
+        {
+          "w": "compassion",
+          "note": "同情"
+        },
+        {
+          "w": "pity",
+          "note": "怜悯"
+        },
+        {
+          "w": "condolence",
+          "note": "慰问"
+        },
+        {
+          "w": "support",
+          "note": "支持/赞同"
+        }
+      ]
+    },
+    {
+      "w": "version",
+      "syn": [
+        {
+          "w": "edition",
+          "note": "版本"
+        },
+        {
+          "w": "variant",
+          "note": "变体/版本"
+        },
+        {
+          "w": "translation",
+          "note": "译文"
+        },
+        {
+          "w": "account",
+          "note": "说法/描述"
+        }
+      ]
+    },
+    {
+      "w": "innocence",
+      "syn": [
+        {
+          "w": "purity",
+          "note": "纯洁"
+        },
+        {
+          "w": "naivety",
+          "note": "天真"
+        },
+        {
+          "w": "simplicity",
+          "note": "单纯"
+        }
+      ]
+    },
+    {
+      "w": "innocent",
+      "syn": [
+        {
+          "w": "blameless",
+          "note": "无罪的"
+        },
+        {
+          "w": "guiltless",
+          "note": "无辜的"
+        },
+        {
+          "w": "naive",
+          "note": "天真的"
+        },
+        {
+          "w": "pure",
+          "note": "纯洁的"
+        }
+      ]
+    },
+    {
+      "w": "era",
+      "syn": [
+        {
+          "w": "age",
+          "note": "时代"
+        },
+        {
+          "w": "epoch",
+          "note": "纪元/时代"
+        },
+        {
+          "w": "period",
+          "note": "时期"
+        },
+        {
+          "w": "time",
+          "note": "时代"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "items": [
+    {
+      "w": "firm",
+      "syn": [
+        {
+          "w": "company",
+          "note": "公司，最常用"
+        },
+        {
+          "w": "resolute",
+          "note": "坚定的，更正式"
+        },
+        {
+          "w": "steady",
+          "note": "稳固的，不摇晃"
+        }
+      ]
+    },
+    {
+      "w": "exposure",
+      "syn": [
+        {
+          "w": "disclosure",
+          "note": "揭露，偏公开"
+        },
+        {
+          "w": "revelation",
+          "note": "揭露，偏意外发现"
+        }
+      ]
+    },
+    {
+      "w": "expose",
+      "syn": [
+        {
+          "w": "reveal",
+          "note": "揭示，通用"
+        },
+        {
+          "w": "disclose",
+          "note": "公开透露，较正式"
+        },
+        {
+          "w": "uncover",
+          "note": "揭开，侧重发现隐藏事"
+        }
+      ]
+    },
+    {
+      "w": "insight",
+      "syn": [
+        {
+          "w": "perception",
+          "note": "洞察，感知力"
+        },
+        {
+          "w": "understanding",
+          "note": "理解，程度较浅"
+        }
+      ]
+    },
+    {
+      "w": "departure",
+      "syn": [
+        {
+          "w": "leaving",
+          "note": "离开，最直白"
+        },
+        {
+          "w": "exit",
+          "note": "离去；出口"
+        },
+        {
+          "w": "deviation",
+          "note": "违背，偏离常规"
+        }
+      ]
+    },
+    {
+      "w": "setting",
+      "syn": [
+        {
+          "w": "environment",
+          "note": "环境，较宽泛"
+        },
+        {
+          "w": "surroundings",
+          "note": "周围环境，具体"
+        },
+        {
+          "w": "background",
+          "note": "背景，故事发生的环境"
+        }
+      ]
+    },
+    {
+      "w": "grasp",
+      "syn": [
+        {
+          "w": "grip",
+          "note": "抓紧，侧重手抓"
+        },
+        {
+          "w": "understand",
+          "note": "理解，对应领会义"
+        },
+        {
+          "w": "comprehend",
+          "note": "领会，更正式"
+        }
+      ]
+    },
+    {
+      "w": "dramatic",
+      "syn": [
+        {
+          "w": "striking",
+          "note": "引人注目的"
+        },
+        {
+          "w": "remarkable",
+          "note": "显著的，惊人的"
+        },
+        {
+          "w": "sudden",
+          "note": "急剧的，突变"
+        }
+      ]
+    },
+    {
+      "w": "expense",
+      "syn": [
+        {
+          "w": "cost",
+          "note": "花费，最常用"
+        },
+        {
+          "w": "expenditure",
+          "note": "开支，正式书面"
+        }
+      ]
+    },
+    {
+      "w": "cost an arm and a leg",
+      "syn": [
+        {
+          "w": "cost a fortune",
+          "note": "花一大笔钱"
+        },
+        {
+          "w": "break the bank",
+          "note": "花费过多，口语"
+        }
+      ]
+    },
+    {
+      "w": "tremendous",
+      "syn": [
+        {
+          "w": "huge",
+          "note": "巨大的，通用"
+        },
+        {
+          "w": "enormous",
+          "note": "极大的，程度强"
+        },
+        {
+          "w": "immense",
+          "note": "巨大的，书面"
+        }
+      ]
+    },
+    {
+      "w": "behave",
+      "syn": [
+        {
+          "w": "act",
+          "note": "表现，行动"
+        },
+        {
+          "w": "conduct oneself",
+          "note": "举止，较正式"
+        }
+      ]
+    }
+  ]
+}

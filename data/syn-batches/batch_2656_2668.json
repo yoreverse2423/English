@@ -1,0 +1,198 @@
+{
+  "items": [
+    {
+      "w": "council",
+      "syn": [
+        {
+          "w": "committee",
+          "note": "委员会，常用"
+        },
+        {
+          "w": "board",
+          "note": "理事会/董事会"
+        },
+        {
+          "w": "assembly",
+          "note": "议会；集会"
+        },
+        {
+          "w": "panel",
+          "note": "专门小组"
+        }
+      ]
+    },
+    {
+      "w": "canal",
+      "syn": [
+        {
+          "w": "waterway",
+          "note": "水道；航道"
+        },
+        {
+          "w": "channel",
+          "note": "渠道；水道"
+        },
+        {
+          "w": "ditch",
+          "note": "沟渠，较窄"
+        }
+      ]
+    },
+    {
+      "w": "attend to",
+      "syn": [
+        {
+          "w": "deal with",
+          "note": "处理"
+        },
+        {
+          "w": "take care of",
+          "note": "照料；处理"
+        },
+        {
+          "w": "look after",
+          "note": "照顾"
+        },
+        {
+          "w": "handle",
+          "note": "处理，较直接"
+        }
+      ]
+    },
+    {
+      "w": "supervise",
+      "syn": [
+        {
+          "w": "oversee",
+          "note": "监督，较正式"
+        },
+        {
+          "w": "monitor",
+          "note": "监控；监测"
+        },
+        {
+          "w": "manage",
+          "note": "管理"
+        },
+        {
+          "w": "direct",
+          "note": "指导；指挥"
+        }
+      ]
+    },
+    {
+      "w": "handwriting",
+      "syn": [
+        {
+          "w": "script",
+          "note": "笔迹；字体"
+        },
+        {
+          "w": "penmanship",
+          "note": "书法；书写技巧"
+        },
+        {
+          "w": "writing",
+          "note": "字迹；书写"
+        }
+      ]
+    },
+    {
+      "w": "disk",
+      "syn": [
+        {
+          "w": "disc",
+          "note": "圆盘；唱片，英式拼写"
+        },
+        {
+          "w": "plate",
+          "note": "盘；板状物"
+        },
+        {
+          "w": "record",
+          "note": "唱片"
+        }
+      ]
+    },
+    {
+      "w": "disc",
+      "syn": [
+        {
+          "w": "disk",
+          "note": "圆盘；磁盘，美式拼写"
+        },
+        {
+          "w": "record",
+          "note": "唱片"
+        },
+        {
+          "w": "plate",
+          "note": "圆盘；板"
+        }
+      ]
+    },
+    {
+      "w": "parking",
+      "syn": []
+    },
+    {
+      "w": "camel",
+      "syn": []
+    },
+    {
+      "w": "fry",
+      "syn": [
+        {
+          "w": "sauté",
+          "note": "煎炒，少油"
+        },
+        {
+          "w": "deep-fry",
+          "note": "油炸"
+        },
+        {
+          "w": "pan-fry",
+          "note": "用平底锅煎"
+        }
+      ]
+    },
+    {
+      "w": "purse",
+      "syn": [
+        {
+          "w": "handbag",
+          "note": "女士手提包"
+        },
+        {
+          "w": "bag",
+          "note": "包，统称"
+        },
+        {
+          "w": "wallet",
+          "note": "钱包，较小"
+        },
+        {
+          "w": "funds",
+          "note": "资金；财力"
+        }
+      ]
+    },
+    {
+      "w": "sew",
+      "syn": [
+        {
+          "w": "stitch",
+          "note": "缝；缝合"
+        },
+        {
+          "w": "mend",
+          "note": "修补"
+        },
+        {
+          "w": "seam",
+          "note": "缝合，较正式"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "w": "Hitler",
+      "syn": []
+    },
+    {
+      "w": "Florence Nightingale",
+      "syn": []
+    },
+    {
+      "w": "SARS",
+      "syn": []
+    },
+    {
+      "w": "Switzerland",
+      "syn": []
+    },
+    {
+      "w": "Swiss",
+      "syn": []
+    },
+    {
+      "w": "Isaac Newton",
+      "syn": []
+    },
+    {
+      "w": "Jewish",
+      "syn": []
+    },
+    {
+      "w": "Princeton",
+      "syn": []
+    },
+    {
+      "w": "phrase",
+      "syn": [
+        {
+          "w": "expression",
+          "note": "表达方式；短语"
+        },
+        {
+          "w": "idiom",
+          "note": "习语，更固定"
+        },
+        {
+          "w": "wording",
+          "note": "措辞，偏用词"
+        }
+      ]
+    },
+    {
+      "w": "persuade",
+      "syn": [
+        {
+          "w": "convince",
+          "note": "使确信；说服"
+        },
+        {
+          "w": "urge",
+          "note": "力劝，未必成功"
+        },
+        {
+          "w": "coax",
+          "note": "哄劝"
+        }
+      ]
+    },
+    {
+      "w": "switch",
+      "syn": [
+        {
+          "w": "change",
+          "note": "改变，最通用"
+        },
+        {
+          "w": "swap",
+          "note": "互换"
+        },
+        {
+          "w": "shift",
+          "note": "转移；转变"
+        }
+      ]
+    },
+    {
+      "w": "switch off",
+      "syn": [
+        {
+          "w": "turn off",
+          "note": "关闭，最常用"
+        },
+        {
+          "w": "shut off",
+          "note": "关闭；停止供应"
+        }
+      ]
+    }
+  ]
+}

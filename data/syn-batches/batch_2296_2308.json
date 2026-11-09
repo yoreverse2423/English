@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "w": "haiku",
+      "syn": []
+    },
+    {
+      "w": "syllable",
+      "syn": []
+    },
+    {
+      "w": "format",
+      "syn": [
+        {
+          "w": "layout",
+          "note": "侧重版面布局"
+        },
+        {
+          "w": "arrangement",
+          "note": "侧重排列方式"
+        },
+        {
+          "w": "structure",
+          "note": "侧重结构"
+        }
+      ]
+    },
+    {
+      "w": "respective",
+      "syn": [
+        {
+          "w": "separate",
+          "note": "各自的、分开的"
+        },
+        {
+          "w": "individual",
+          "note": "各自的"
+        },
+        {
+          "w": "corresponding",
+          "note": "对应的"
+        }
+      ]
+    },
+    {
+      "w": "blossom",
+      "syn": [
+        {
+          "w": "bloom",
+          "note": "花；开花，最接近"
+        },
+        {
+          "w": "flower",
+          "note": "花；开花"
+        },
+        {
+          "w": "flourish",
+          "note": "侧重兴旺发展"
+        },
+        {
+          "w": "thrive",
+          "note": "侧重茁壮成长"
+        }
+      ]
+    },
+    {
+      "w": "delicate",
+      "syn": [
+        {
+          "w": "fragile",
+          "note": "侧重易碎"
+        },
+        {
+          "w": "fine",
+          "note": "侧重精细、细微"
+        },
+        {
+          "w": "subtle",
+          "note": "侧重微妙"
+        },
+        {
+          "w": "frail",
+          "note": "侧重体弱"
+        }
+      ]
+    },
+    {
+      "w": "await",
+      "syn": [
+        {
+          "w": "wait for",
+          "note": "最常用，等待"
+        },
+        {
+          "w": "expect",
+          "note": "侧重期待、预料"
+        },
+        {
+          "w": "anticipate",
+          "note": "更正式，预料并期待"
+        }
+      ]
+    },
+    {
+      "w": "revolve",
+      "syn": [
+        {
+          "w": "rotate",
+          "note": "绕轴自转"
+        },
+        {
+          "w": "spin",
+          "note": "快速旋转"
+        },
+        {
+          "w": "turn",
+          "note": "最普通，转动"
+        },
+        {
+          "w": "circle",
+          "note": "环绕运行"
+        }
+      ]
+    },
+    {
+      "w": "utter",
+      "syn": [
+        {
+          "w": "complete",
+          "note": "adj. 完全的"
+        },
+        {
+          "w": "total",
+          "note": "adj. 彻底的"
+        },
+        {
+          "w": "absolute",
+          "note": "adj. 绝对的"
+        },
+        {
+          "w": "say",
+          "note": "vt. 说出"
+        }
+      ]
+    },
+    {
+      "w": "comprehension",
+      "syn": [
+        {
+          "w": "understanding",
+          "note": "最常用，理解"
+        },
+        {
+          "w": "grasp",
+          "note": "侧重领会掌握"
+        }
+      ]
+    },
+    {
+      "w": "shelf",
+      "syn": [
+        {
+          "w": "ledge",
+          "note": "壁架、突出搁板"
+        },
+        {
+          "w": "rack",
+          "note": "放置架"
+        }
+      ]
+    },
+    {
+      "w": "core",
+      "syn": [
+        {
+          "w": "center",
+          "note": "中心，最常用"
+        },
+        {
+          "w": "heart",
+          "note": "侧重核心部分"
+        },
+        {
+          "w": "essence",
+          "note": "侧重本质要点"
+        },
+        {
+          "w": "nucleus",
+          "note": "侧重核心、中心"
+        }
+      ]
+    }
+  ]
+}

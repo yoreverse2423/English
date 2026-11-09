@@ -1,0 +1,199 @@
+{
+  "items": [
+    {
+      "w": "ease",
+      "syn": [
+        {
+          "w": "comfort",
+          "note": "舒适；安慰"
+        },
+        {
+          "w": "relief",
+          "note": "宽慰；减轻"
+        },
+        {
+          "w": "relieve",
+          "note": "减轻（动词）"
+        },
+        {
+          "w": "alleviate",
+          "note": "缓解，更正式"
+        }
+      ]
+    },
+    {
+      "w": "paramedic",
+      "syn": [
+        {
+          "w": "medic",
+          "note": "急救人员，范围更泛"
+        },
+        {
+          "w": "emergency medical technician",
+          "note": "急救医疗技术员，较正式"
+        }
+      ]
+    },
+    {
+      "w": "swallow",
+      "syn": [
+        {
+          "w": "gulp",
+          "note": "大口吞咽"
+        },
+        {
+          "w": "tolerate",
+          "note": "忍受"
+        },
+        {
+          "w": "endure",
+          "note": "忍受，较正式"
+        }
+      ]
+    },
+    {
+      "w": "wrap",
+      "syn": [
+        {
+          "w": "cover",
+          "note": "包住；覆盖"
+        },
+        {
+          "w": "enclose",
+          "note": "包住；围住"
+        },
+        {
+          "w": "wind",
+          "note": "缠绕，读/waɪnd/"
+        },
+        {
+          "w": "scarf",
+          "note": "仅名词“围巾”义"
+        }
+      ]
+    },
+    {
+      "w": "bathtub",
+      "syn": [
+        {
+          "w": "tub",
+          "note": "浴缸，口语"
+        },
+        {
+          "w": "bath",
+          "note": "英式可指浴缸"
+        }
+      ]
+    },
+    {
+      "w": "bath",
+      "syn": [
+        {
+          "w": "bathe",
+          "note": "洗澡（动词，英式常用）"
+        },
+        {
+          "w": "tub",
+          "note": "浴盆"
+        },
+        {
+          "w": "wash",
+          "note": "洗浴，较泛"
+        }
+      ]
+    },
+    {
+      "w": "bathtub",
+      "syn": [
+        {
+          "w": "tub",
+          "note": "浴缸，口语"
+        },
+        {
+          "w": "bath",
+          "note": "英式可指浴缸"
+        }
+      ]
+    },
+    {
+      "w": "bathe",
+      "syn": [
+        {
+          "w": "bath",
+          "note": "洗澡（英式）"
+        },
+        {
+          "w": "wash",
+          "note": "清洗"
+        },
+        {
+          "w": "soak",
+          "note": "浸泡"
+        }
+      ]
+    },
+    {
+      "w": "slip",
+      "syn": [
+        {
+          "w": "fall",
+          "note": "跌倒；滑倒"
+        },
+        {
+          "w": "mistake",
+          "note": "错误"
+        },
+        {
+          "w": "decline",
+          "note": "下跌"
+        },
+        {
+          "w": "piece",
+          "note": "纸片义"
+        }
+      ]
+    },
+    {
+      "w": "mosquito",
+      "syn": []
+    },
+    {
+      "w": "elderly",
+      "syn": [
+        {
+          "w": "old",
+          "note": "年老的"
+        },
+        {
+          "w": "aged",
+          "note": "年老的，较正式"
+        },
+        {
+          "w": "senior",
+          "note": "年长的"
+        }
+      ]
+    },
+    {
+      "w": "carpet",
+      "syn": [
+        {
+          "w": "rug",
+          "note": "小地毯"
+        },
+        {
+          "w": "mat",
+          "note": "垫子"
+        },
+        {
+          "w": "cover",
+          "note": "覆盖"
+        },
+        {
+          "w": "scold",
+          "note": "斥责，英式口语义"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "items": [
+    {
+      "w": "appropriate",
+      "syn": [
+        {
+          "w": "suitable",
+          "note": "最通用，侧重适合某目的"
+        },
+        {
+          "w": "proper",
+          "note": "较正式，侧重合乎规范"
+        },
+        {
+          "w": "fitting",
+          "note": "侧重得体、恰如其分"
+        },
+        {
+          "w": "apt",
+          "note": "书面，侧重贴切"
+        }
+      ]
+    },
+    {
+      "w": "by contrast",
+      "syn": [
+        {
+          "w": "in contrast",
+          "note": "最常用，几乎等同"
+        },
+        {
+          "w": "on the contrary",
+          "note": "侧重反驳，意为“正相反”"
+        },
+        {
+          "w": "conversely",
+          "note": "正式，表“反之”"
+        }
+      ]
+    },
+    {
+      "w": "approve",
+      "syn": [
+        {
+          "w": "consent",
+          "note": "侧重同意、准许"
+        },
+        {
+          "w": "endorse",
+          "note": "正式，公开支持认可"
+        },
+        {
+          "w": "sanction",
+          "note": "官方正式批准"
+        },
+        {
+          "w": "ratify",
+          "note": "正式批准条约、协议"
+        }
+      ]
+    },
+    {
+      "w": "demonstrate",
+      "syn": [
+        {
+          "w": "show",
+          "note": "最通用，展示、表明"
+        },
+        {
+          "w": "prove",
+          "note": "侧重证明"
+        },
+        {
+          "w": "illustrate",
+          "note": "用例子、图表说明"
+        },
+        {
+          "w": "protest",
+          "note": "对应“示威”义"
+        }
+      ]
+    },
+    {
+      "w": "gesture",
+      "syn": [
+        {
+          "w": "signal",
+          "note": "侧重传递信号"
+        },
+        {
+          "w": "sign",
+          "note": "可指手势、示意动作"
+        },
+        {
+          "w": "motion",
+          "note": "侧重动作示意"
+        }
+      ]
+    },
+    {
+      "w": "witness",
+      "syn": [
+        {
+          "w": "eyewitness",
+          "note": "目击者，最贴切"
+        },
+        {
+          "w": "observer",
+          "note": "旁观者，稍宽泛"
+        },
+        {
+          "w": "bystander",
+          "note": "侧重在场旁观者"
+        },
+        {
+          "w": "testify",
+          "note": "对应动词“作证”"
+        }
+      ]
+    },
+    {
+      "w": "employ",
+      "syn": [
+        {
+          "w": "hire",
+          "note": "口语，侧重雇用"
+        },
+        {
+          "w": "engage",
+          "note": "正式，侧重聘用"
+        },
+        {
+          "w": "use",
+          "note": "对应“使用”义"
+        },
+        {
+          "w": "utilize",
+          "note": "正式，侧重有效利用"
+        }
+      ]
+    },
+    {
+      "w": "identical",
+      "syn": [
+        {
+          "w": "same",
+          "note": "最通用，完全相同"
+        },
+        {
+          "w": "alike",
+          "note": "作表语，相像的"
+        },
+        {
+          "w": "indistinguishable",
+          "note": "侧重难以区分"
+        }
+      ]
+    },
+    {
+      "w": "interpret",
+      "syn": [
+        {
+          "w": "explain",
+          "note": "最通用，解释"
+        },
+        {
+          "w": "translate",
+          "note": "侧重翻译（含口译）"
+        },
+        {
+          "w": "clarify",
+          "note": "侧重澄清、说明"
+        }
+      ]
+    },
+    {
+      "w": "differ",
+      "syn": [
+        {
+          "w": "vary",
+          "note": "侧重有变化、各不相同"
+        },
+        {
+          "w": "diverge",
+          "note": "正式，侧重分歧、分叉"
+        },
+        {
+          "w": "disagree",
+          "note": "对应“意见不合”义"
+        }
+      ]
+    },
+    {
+      "w": "by comparison",
+      "syn": [
+        {
+          "w": "in comparison",
+          "note": "几乎等同，更常用"
+        },
+        {
+          "w": "comparatively",
+          "note": "副词，相比之下"
+        },
+        {
+          "w": "relatively",
+          "note": "副词，相对地"
+        }
+      ]
+    },
+    {
+      "w": "cheek",
+      "syn": [
+        {
+          "w": "impudence",
+          "note": "对应“无礼、放肆”义"
+        },
+        {
+          "w": "nerve",
+          "note": "非正式，指放肆、厚脸皮"
+        }
+      ]
+    }
+  ]
+}

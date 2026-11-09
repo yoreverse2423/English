@@ -1,0 +1,186 @@
+{
+  "items": [
+    {
+      "w": "navigator",
+      "syn": [
+        {
+          "w": "pilot",
+          "note": "侧重领航员/飞行员"
+        },
+        {
+          "w": "seafarer",
+          "note": "侧重航海者"
+        },
+        {
+          "w": "explorer",
+          "note": "侧重探险家"
+        }
+      ]
+    },
+    {
+      "w": "loyal",
+      "syn": [
+        {
+          "w": "faithful",
+          "note": "忠实可靠的"
+        },
+        {
+          "w": "devoted",
+          "note": "倾注感情的忠诚"
+        },
+        {
+          "w": "staunch",
+          "note": "坚定可靠的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "motor",
+      "syn": [
+        {
+          "w": "engine",
+          "note": "发动机，最常用"
+        },
+        {
+          "w": "machine",
+          "note": "泛指机器，语境较宽"
+        }
+      ]
+    },
+    {
+      "w": "candidate",
+      "syn": [
+        {
+          "w": "applicant",
+          "note": "申请人/应试者"
+        },
+        {
+          "w": "contender",
+          "note": "竞争者/角逐者"
+        },
+        {
+          "w": "nominee",
+          "note": "被提名者"
+        }
+      ]
+    },
+    {
+      "w": "make fire",
+      "syn": [
+        {
+          "w": "light a fire",
+          "note": "点火"
+        },
+        {
+          "w": "start a fire",
+          "note": "生火/起火"
+        },
+        {
+          "w": "build a fire",
+          "note": "堆柴生火"
+        }
+      ]
+    },
+    {
+      "w": "give off",
+      "syn": [
+        {
+          "w": "emit",
+          "note": "散发，较正式"
+        },
+        {
+          "w": "release",
+          "note": "释放"
+        },
+        {
+          "w": "send out",
+          "note": "发出，较口语"
+        },
+        {
+          "w": "discharge",
+          "note": "排放，偏正式"
+        }
+      ]
+    },
+    {
+      "w": "episode",
+      "syn": [
+        {
+          "w": "installment",
+          "note": "一集/一期"
+        },
+        {
+          "w": "segment",
+          "note": "片段/部分"
+        },
+        {
+          "w": "incident",
+          "note": "事件/插曲"
+        }
+      ]
+    },
+    {
+      "w": "commitment",
+      "syn": [
+        {
+          "w": "promise",
+          "note": "承诺"
+        },
+        {
+          "w": "dedication",
+          "note": "献身/投入"
+        },
+        {
+          "w": "obligation",
+          "note": "义务/责任"
+        },
+        {
+          "w": "pledge",
+          "note": "誓言/保证，较正式"
+        }
+      ]
+    },
+    {
+      "w": "motive",
+      "syn": [
+        {
+          "w": "motivation",
+          "note": "动机/积极性"
+        },
+        {
+          "w": "reason",
+          "note": "理由/原因"
+        },
+        {
+          "w": "incentive",
+          "note": "激励/诱因"
+        },
+        {
+          "w": "purpose",
+          "note": "目的"
+        }
+      ]
+    },
+    {
+      "w": "Confucianism",
+      "syn": [
+        {
+          "w": "Confucian thought",
+          "note": "儒家思想"
+        },
+        {
+          "w": "Confucian doctrine",
+          "note": "儒家学说"
+        }
+      ]
+    },
+    {
+      "w": "Ernest Shackleton",
+      "syn": []
+    },
+    {
+      "w": "Perce Blackborow",
+      "syn": []
+    }
+  ]
+}

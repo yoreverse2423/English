@@ -1,0 +1,152 @@
+{
+  "items": [
+    {
+      "w": "random",
+      "syn": [
+        {
+          "w": "arbitrary",
+          "note": "任意的；常含武断"
+        },
+        {
+          "w": "haphazard",
+          "note": "随意的；杂乱"
+        },
+        {
+          "w": "chance",
+          "note": "偶然的"
+        }
+      ]
+    },
+    {
+      "w": "maximum",
+      "syn": [
+        {
+          "w": "greatest",
+          "note": "最大的"
+        },
+        {
+          "w": "highest",
+          "note": "最高的"
+        },
+        {
+          "w": "utmost",
+          "note": "极限的；最大程度"
+        }
+      ]
+    },
+    {
+      "w": "explode",
+      "syn": [
+        {
+          "w": "blow up",
+          "note": "爆炸；炸毁"
+        },
+        {
+          "w": "burst",
+          "note": "爆裂；突然爆发"
+        },
+        {
+          "w": "erupt",
+          "note": "爆发；喷发"
+        },
+        {
+          "w": "skyrocket",
+          "note": "激增"
+        }
+      ]
+    },
+    {
+      "w": "jolt",
+      "syn": [
+        {
+          "w": "shock",
+          "note": "使震惊"
+        },
+        {
+          "w": "shake",
+          "note": "摇动"
+        },
+        {
+          "w": "bump",
+          "note": "颠簸；碰撞"
+        }
+      ]
+    },
+    {
+      "w": "flip",
+      "syn": [
+        {
+          "w": "flick",
+          "note": "轻弹"
+        },
+        {
+          "w": "toss",
+          "note": "抛掷"
+        },
+        {
+          "w": "somersault",
+          "note": "筋斗"
+        }
+      ]
+    },
+    {
+      "w": "stun",
+      "syn": [
+        {
+          "w": "shock",
+          "note": "使震惊"
+        },
+        {
+          "w": "astonish",
+          "note": "使惊讶"
+        },
+        {
+          "w": "amaze",
+          "note": "使惊奇"
+        }
+      ]
+    },
+    {
+      "w": "mud",
+      "syn": [
+        {
+          "w": "dirt",
+          "note": "污物；泥土"
+        },
+        {
+          "w": "sludge",
+          "note": "烂泥；污泥"
+        }
+      ]
+    },
+    {
+      "w": "overstatement",
+      "syn": [
+        {
+          "w": "exaggeration",
+          "note": "夸张；夸大"
+        },
+        {
+          "w": "hyperbole",
+          "note": "夸张法（修辞）"
+        }
+      ]
+    },
+    {
+      "w": "Isaac Asimov",
+      "syn": []
+    },
+    {
+      "w": "Larry Belmont",
+      "syn": []
+    },
+    {
+      "w": "Claire",
+      "syn": []
+    },
+    {
+      "w": "Gladys Claffern",
+      "syn": []
+    }
+  ]
+}

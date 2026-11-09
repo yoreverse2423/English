@@ -1,0 +1,324 @@
+{
+  "items": [
+    {
+      "w": "pretend to do sth.",
+      "syn": [
+        {
+          "w": "feign",
+          "note": "更正式，假装（某种情感/状态）"
+        },
+        {
+          "w": "make believe",
+          "note": "假装，常用于口语"
+        },
+        {
+          "w": "act as if",
+          "note": "表现得好像"
+        }
+      ]
+    },
+    {
+      "w": "even if",
+      "syn": [
+        {
+          "w": "even though",
+          "note": "常可互换，但更偏“尽管事实”"
+        },
+        {
+          "w": "although",
+          "note": "虽然，语气较弱"
+        },
+        {
+          "w": "though",
+          "note": "虽然，较口语"
+        }
+      ]
+    },
+    {
+      "w": "even though",
+      "syn": [
+        {
+          "w": "although",
+          "note": "虽然，较正式"
+        },
+        {
+          "w": "though",
+          "note": "虽然，较口语"
+        },
+        {
+          "w": "even if",
+          "note": "即使，偏假设"
+        }
+      ]
+    },
+    {
+      "w": "million",
+      "syn": [
+        {
+          "w": "myriad",
+          "note": "无数，较正式/文学"
+        },
+        {
+          "w": "countless",
+          "note": "无数的，非确切数字"
+        }
+      ]
+    },
+    {
+      "w": "cheat",
+      "syn": [
+        {
+          "w": "deceive",
+          "note": "欺骗，较正式"
+        },
+        {
+          "w": "trick",
+          "note": "哄骗，设圈套"
+        },
+        {
+          "w": "fool",
+          "note": "愚弄，口语"
+        }
+      ]
+    },
+    {
+      "w": "audience",
+      "syn": [
+        {
+          "w": "spectators",
+          "note": "观众，多指现场看比赛等"
+        },
+        {
+          "w": "viewers",
+          "note": "电视/视频观众"
+        },
+        {
+          "w": "listeners",
+          "note": "听众"
+        }
+      ]
+    },
+    {
+      "w": "positive",
+      "syn": [
+        {
+          "w": "optimistic",
+          "note": "乐观的，积极的"
+        },
+        {
+          "w": "affirmative",
+          "note": "肯定的，较正式"
+        },
+        {
+          "w": "plus",
+          "note": "数学上“正的”"
+        }
+      ]
+    },
+    {
+      "w": "slim",
+      "syn": [
+        {
+          "w": "thin",
+          "note": "瘦的，普通用词"
+        },
+        {
+          "w": "slender",
+          "note": "苗条修长的，常褒义"
+        },
+        {
+          "w": "slight",
+          "note": "微小的，侧重程度轻"
+        }
+      ]
+    },
+    {
+      "w": "diet",
+      "syn": [
+        {
+          "w": "food",
+          "note": "食物，泛指"
+        },
+        {
+          "w": "nutrition",
+          "note": "营养，侧重营养成分"
+        },
+        {
+          "w": "eating plan",
+          "note": "饮食计划，较具体"
+        }
+      ]
+    },
+    {
+      "w": "make a difference",
+      "syn": [
+        {
+          "w": "matter",
+          "note": "要紧，有重要性"
+        },
+        {
+          "w": "count",
+          "note": "有价值，算数"
+        },
+        {
+          "w": "have an effect",
+          "note": "产生影响"
+        }
+      ]
+    },
+    {
+      "w": "rather",
+      "syn": [
+        {
+          "w": "quite",
+          "note": "相当，程度较强"
+        },
+        {
+          "w": "fairly",
+          "note": "相当，程度适中"
+        },
+        {
+          "w": "somewhat",
+          "note": "有点，稍微"
+        }
+      ]
+    },
+    {
+      "w": "rather than",
+      "syn": [
+        {
+          "w": "instead of",
+          "note": "而不是，代替"
+        },
+        {
+          "w": "as opposed to",
+          "note": "而非，较正式"
+        },
+        {
+          "w": "in place of",
+          "note": "代替"
+        }
+      ]
+    },
+    {
+      "w": "push-up",
+      "syn": [
+        {
+          "w": "press-up",
+          "note": "英式英语说法"
+        }
+      ]
+    },
+    {
+      "w": "cut ... out",
+      "syn": [
+        {
+          "w": "remove",
+          "note": "去除，普通用词"
+        },
+        {
+          "w": "delete",
+          "note": "删除（文字/文件）"
+        },
+        {
+          "w": "omit",
+          "note": "省略，漏掉"
+        }
+      ]
+    },
+    {
+      "w": "now and then",
+      "syn": [
+        {
+          "w": "occasionally",
+          "note": "偶尔"
+        },
+        {
+          "w": "from time to time",
+          "note": "不时，偶尔"
+        },
+        {
+          "w": "sometimes",
+          "note": "有时"
+        }
+      ]
+    },
+    {
+      "w": "compare ... with ...",
+      "syn": [
+        {
+          "w": "contrast ... with ...",
+          "note": "对比，强调差异"
+        },
+        {
+          "w": "compare ... to ...",
+          "note": "有时可互换，也常表“比作”"
+        },
+        {
+          "w": "weigh ... against ...",
+          "note": "权衡比较"
+        }
+      ]
+    },
+    {
+      "w": "compare ... to ...",
+      "syn": [
+        {
+          "w": "compare ... with ...",
+          "note": "比较，常可互换"
+        },
+        {
+          "w": "liken ... to ...",
+          "note": "把……比作，较正式"
+        }
+      ]
+    },
+    {
+      "w": "jog",
+      "syn": [
+        {
+          "w": "trot",
+          "note": "小跑，慢跑"
+        },
+        {
+          "w": "run slowly",
+          "note": "慢跑，解释性说法"
+        }
+      ]
+    },
+    {
+      "w": "stress",
+      "syn": [
+        {
+          "w": "pressure",
+          "note": "压力，普通用词"
+        },
+        {
+          "w": "emphasis",
+          "note": "强调，名词"
+        },
+        {
+          "w": "emphasize",
+          "note": "强调，动词"
+        }
+      ]
+    },
+    {
+      "w": "error",
+      "syn": [
+        {
+          "w": "mistake",
+          "note": "错误，普通用词"
+        },
+        {
+          "w": "fault",
+          "note": "过错，过失"
+        },
+        {
+          "w": "inaccuracy",
+          "note": "不准确，误差"
+        }
+      ]
+    }
+  ]
+}

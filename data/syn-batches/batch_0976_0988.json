@@ -1,0 +1,117 @@
+{
+  "items": [
+    {
+      "w": "the North Pole",
+      "syn": []
+    },
+    {
+      "w": "the South Pole",
+      "syn": []
+    },
+    {
+      "w": "Henry Norman Bethune",
+      "syn": []
+    },
+    {
+      "w": "diverse",
+      "syn": [
+        {
+          "w": "various",
+          "note": "强调种类多"
+        },
+        {
+          "w": "varied",
+          "note": "侧重各不相同、有变化"
+        },
+        {
+          "w": "different",
+          "note": "最普通，指不同"
+        }
+      ]
+    },
+    {
+      "w": "diversity",
+      "syn": [
+        {
+          "w": "variety",
+          "note": "强调种类繁多"
+        },
+        {
+          "w": "range",
+          "note": "指范围、种类跨度"
+        },
+        {
+          "w": "difference",
+          "note": "侧重差异"
+        }
+      ]
+    },
+    {
+      "w": "fortune",
+      "syn": [
+        {
+          "w": "wealth",
+          "note": "指财富义"
+        },
+        {
+          "w": "luck",
+          "note": "指运气义"
+        },
+        {
+          "w": "fate",
+          "note": "指命运义"
+        },
+        {
+          "w": "destiny",
+          "note": "命运，较庄重"
+        }
+      ]
+    },
+    {
+      "w": "fortune cookie",
+      "syn": []
+    },
+    {
+      "w": "gumbo",
+      "syn": []
+    },
+    {
+      "w": "nachos",
+      "syn": []
+    },
+    {
+      "w": "chip",
+      "syn": [
+        {
+          "w": "fragment",
+          "note": "指碎片义"
+        },
+        {
+          "w": "crisp",
+          "note": "英式“炸薯片”"
+        },
+        {
+          "w": "token",
+          "note": "指筹码义"
+        }
+      ]
+    },
+    {
+      "w": "cheese",
+      "syn": []
+    },
+    {
+      "w": "spicy",
+      "syn": [
+        {
+          "w": "hot",
+          "note": "口语，指辣的"
+        },
+        {
+          "w": "pungent",
+          "note": "辛辣刺鼻，较正式"
+        }
+      ]
+    }
+  ]
+}

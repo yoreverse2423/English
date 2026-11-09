@@ -1,0 +1,179 @@
+{
+  "items": [
+    {
+      "w": "edition",
+      "syn": [
+        {
+          "w": "version",
+          "note": "侧重具体版本/改写本"
+        },
+        {
+          "w": "issue",
+          "note": "指报刊的一期"
+        },
+        {
+          "w": "printing",
+          "note": "侧重印次"
+        }
+      ]
+    },
+    {
+      "w": "culture shock",
+      "syn": [
+        {
+          "w": "disorientation",
+          "note": "侧重迷失方向感"
+        },
+        {
+          "w": "alienation",
+          "note": "侧重疏离感"
+        }
+      ]
+    },
+    {
+      "w": "zone",
+      "syn": [
+        {
+          "w": "area",
+          "note": "最通用，地区"
+        },
+        {
+          "w": "region",
+          "note": "较大区域"
+        },
+        {
+          "w": "district",
+          "note": "行政区/城区"
+        }
+      ]
+    },
+    {
+      "w": "comfort zone",
+      "syn": []
+    },
+    {
+      "w": "overwhelming",
+      "syn": [
+        {
+          "w": "powerful",
+          "note": "侧重力量强大"
+        },
+        {
+          "w": "crushing",
+          "note": "侧重压倒性打击"
+        },
+        {
+          "w": "uncontrollable",
+          "note": "侧重无法控制"
+        }
+      ]
+    },
+    {
+      "w": "homesickness",
+      "syn": [
+        {
+          "w": "nostalgia",
+          "note": "更正式，怀旧/思乡"
+        }
+      ]
+    },
+    {
+      "w": "motivation",
+      "syn": [
+        {
+          "w": "incentive",
+          "note": "侧重外部激励"
+        },
+        {
+          "w": "drive",
+          "note": "侧重内在干劲"
+        },
+        {
+          "w": "impetus",
+          "note": "更正式，推动力"
+        }
+      ]
+    },
+    {
+      "w": "motivate",
+      "syn": [
+        {
+          "w": "inspire",
+          "note": "侧重鼓舞启发"
+        },
+        {
+          "w": "stimulate",
+          "note": "侧重刺激促进"
+        },
+        {
+          "w": "encourage",
+          "note": "侧重鼓励"
+        }
+      ]
+    },
+    {
+      "w": "advisor",
+      "syn": [
+        {
+          "w": "consultant",
+          "note": "侧重专业咨询"
+        },
+        {
+          "w": "counselor",
+          "note": "侧重辅导员/顾问"
+        },
+        {
+          "w": "mentor",
+          "note": "侧重导师"
+        }
+      ]
+    },
+    {
+      "w": "reasonable",
+      "syn": [
+        {
+          "w": "sensible",
+          "note": "侧重明智合理"
+        },
+        {
+          "w": "fair",
+          "note": "侧重公平公道"
+        },
+        {
+          "w": "rational",
+          "note": "侧重理性"
+        }
+      ]
+    },
+    {
+      "w": "expectation",
+      "syn": [
+        {
+          "w": "anticipation",
+          "note": "侧重预料期待"
+        },
+        {
+          "w": "hope",
+          "note": "侧重希望"
+        },
+        {
+          "w": "prospect",
+          "note": "侧重前景/可能"
+        }
+      ]
+    },
+    {
+      "w": "applicant",
+      "syn": [
+        {
+          "w": "candidate",
+          "note": "侧重候选人/应试者"
+        },
+        {
+          "w": "seeker",
+          "note": "常指求职者"
+        }
+      ]
+    }
+  ]
+}

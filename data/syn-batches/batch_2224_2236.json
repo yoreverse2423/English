@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "w": "selfish",
+      "syn": [
+        {
+          "w": "self-centered",
+          "note": "自我中心的"
+        },
+        {
+          "w": "self-serving",
+          "note": "侧重为私利"
+        },
+        {
+          "w": "self-interested",
+          "note": "利己的"
+        }
+      ]
+    },
+    {
+      "w": "good-tempered",
+      "syn": [
+        {
+          "w": "easy-going",
+          "note": "随和的"
+        },
+        {
+          "w": "amiable",
+          "note": "和蔼可亲的"
+        },
+        {
+          "w": "even-tempered",
+          "note": "性情平和的"
+        },
+        {
+          "w": "good-natured",
+          "note": "天性善良的"
+        }
+      ]
+    },
+    {
+      "w": "bad-tempered",
+      "syn": [
+        {
+          "w": "irritable",
+          "note": "易怒的"
+        },
+        {
+          "w": "short-tempered",
+          "note": "脾气急躁的"
+        },
+        {
+          "w": "grumpy",
+          "note": "爱抱怨、脾气坏的"
+        },
+        {
+          "w": "ill-tempered",
+          "note": "脾气坏的"
+        }
+      ]
+    },
+    {
+      "w": "genuine",
+      "syn": [
+        {
+          "w": "authentic",
+          "note": "侧重真实、正宗"
+        },
+        {
+          "w": "real",
+          "note": "普通“真的”"
+        },
+        {
+          "w": "sincere",
+          "note": "诚恳的"
+        },
+        {
+          "w": "true",
+          "note": "真实；忠实的"
+        }
+      ]
+    },
+    {
+      "w": "perseverance",
+      "syn": [
+        {
+          "w": "persistence",
+          "note": "坚持不放弃"
+        },
+        {
+          "w": "determination",
+          "note": "决心"
+        },
+        {
+          "w": "tenacity",
+          "note": "坚韧不拔，较正式"
+        }
+      ]
+    },
+    {
+      "w": "persevere",
+      "syn": [
+        {
+          "w": "persist",
+          "note": "坚持不放弃"
+        },
+        {
+          "w": "keep going",
+          "note": "继续坚持"
+        },
+        {
+          "w": "carry on",
+          "note": "继续进行"
+        }
+      ]
+    },
+    {
+      "w": "resolve",
+      "syn": [
+        {
+          "w": "determine",
+          "note": "下决心；决定"
+        },
+        {
+          "w": "settle",
+          "note": "解决；安顿"
+        },
+        {
+          "w": "solve",
+          "note": "解决（问题）"
+        },
+        {
+          "w": "determination",
+          "note": "名词义：决心"
+        }
+      ]
+    },
+    {
+      "w": "resolution",
+      "syn": [
+        {
+          "w": "decision",
+          "note": "决定；决议"
+        },
+        {
+          "w": "determination",
+          "note": "决心"
+        },
+        {
+          "w": "settlement",
+          "note": "解决；协议"
+        },
+        {
+          "w": "solution",
+          "note": "解决办法"
+        }
+      ]
+    },
+    {
+      "w": "crew",
+      "syn": [
+        {
+          "w": "team",
+          "note": "队；组"
+        },
+        {
+          "w": "staff",
+          "note": "全体职员"
+        },
+        {
+          "w": "personnel",
+          "note": "全体人员，较正式"
+        }
+      ]
+    },
+    {
+      "w": "cruel",
+      "syn": [
+        {
+          "w": "brutal",
+          "note": "残暴的"
+        },
+        {
+          "w": "harsh",
+          "note": "严酷的；苛刻的"
+        },
+        {
+          "w": "heartless",
+          "note": "无情的"
+        },
+        {
+          "w": "merciless",
+          "note": "毫不留情的"
+        }
+      ]
+    },
+    {
+      "w": "thorough",
+      "syn": [
+        {
+          "w": "complete",
+          "note": "彻底的"
+        },
+        {
+          "w": "careful",
+          "note": "细致的；周密的"
+        },
+        {
+          "w": "detailed",
+          "note": "详尽的"
+        }
+      ]
+    },
+    {
+      "w": "furniture",
+      "syn": [
+        {
+          "w": "furnishings",
+          "note": "家具陈设，较正式"
+        },
+        {
+          "w": "household goods",
+          "note": "家用品，范围更广"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "items": [
+    {
+      "w": "romantic",
+      "syn": [
+        {
+          "w": "sentimental",
+          "note": "偏多愁善感、浪漫的"
+        },
+        {
+          "w": "idealistic",
+          "note": "理想主义的"
+        },
+        {
+          "w": "dreamy",
+          "note": "爱空想的"
+        },
+        {
+          "w": "dreamer",
+          "note": "空想者（名词）"
+        }
+      ]
+    },
+    {
+      "w": "album",
+      "syn": [
+        {
+          "w": "collection",
+          "note": "合集；收藏"
+        },
+        {
+          "w": "compilation",
+          "note": "汇编；精选集"
+        },
+        {
+          "w": "record",
+          "note": "唱片"
+        }
+      ]
+    },
+    {
+      "w": "impact",
+      "syn": [
+        {
+          "w": "influence",
+          "note": "影响（名/动）"
+        },
+        {
+          "w": "affect",
+          "note": "动词：影响"
+        },
+        {
+          "w": "collision",
+          "note": "名词：撞击"
+        }
+      ]
+    },
+    {
+      "w": "aim",
+      "syn": [
+        {
+          "w": "goal",
+          "note": "目标"
+        },
+        {
+          "w": "purpose",
+          "note": "目的"
+        },
+        {
+          "w": "target",
+          "note": "具体目标；靶子"
+        },
+        {
+          "w": "objective",
+          "note": "较正式：目标"
+        }
+      ]
+    },
+    {
+      "w": "set sth. up",
+      "syn": [
+        {
+          "w": "establish",
+          "note": "建立"
+        },
+        {
+          "w": "found",
+          "note": "创立"
+        },
+        {
+          "w": "start",
+          "note": "开办；发起"
+        }
+      ]
+    },
+    {
+      "w": "equipment",
+      "syn": [
+        {
+          "w": "gear",
+          "note": "装备（较口语）"
+        },
+        {
+          "w": "apparatus",
+          "note": "仪器；器械"
+        },
+        {
+          "w": "outfit",
+          "note": "全套装备"
+        }
+      ]
+    },
+    {
+      "w": "try out",
+      "syn": [
+        {
+          "w": "test",
+          "note": "测试"
+        },
+        {
+          "w": "experiment with",
+          "note": "试验"
+        }
+      ]
+    },
+    {
+      "w": "talent",
+      "syn": [
+        {
+          "w": "gift",
+          "note": "天赋"
+        },
+        {
+          "w": "ability",
+          "note": "能力"
+        },
+        {
+          "w": "aptitude",
+          "note": "天资（较正式）"
+        }
+      ]
+    },
+    {
+      "w": "piano",
+      "syn": []
+    },
+    {
+      "w": "assume",
+      "syn": [
+        {
+          "w": "presume",
+          "note": "假定（较正式）"
+        },
+        {
+          "w": "suppose",
+          "note": "假设"
+        },
+        {
+          "w": "take on",
+          "note": "承担"
+        },
+        {
+          "w": "adopt",
+          "note": "采取"
+        }
+      ]
+    },
+    {
+      "w": "addition",
+      "syn": [
+        {
+          "w": "increase",
+          "note": "增加"
+        },
+        {
+          "w": "supplement",
+          "note": "补充物"
+        },
+        {
+          "w": "extra",
+          "note": "额外之物"
+        }
+      ]
+    },
+    {
+      "w": "in addition",
+      "syn": [
+        {
+          "w": "besides",
+          "note": "此外"
+        },
+        {
+          "w": "moreover",
+          "note": "而且（正式）"
+        },
+        {
+          "w": "furthermore",
+          "note": "此外（正式）"
+        },
+        {
+          "w": "also",
+          "note": "也；并且"
+        }
+      ]
+    }
+  ]
+}

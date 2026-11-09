@@ -1,0 +1,135 @@
+{
+  "items": [
+    {
+      "w": "scenario",
+      "syn": [
+        {
+          "w": "situation",
+          "note": "侧重情况、设想"
+        },
+        {
+          "w": "setting",
+          "note": "侧重故事场景"
+        },
+        {
+          "w": "plot",
+          "note": "侧重情节"
+        }
+      ]
+    },
+    {
+      "w": "lawyer",
+      "syn": [
+        {
+          "w": "attorney",
+          "note": "美式，律师"
+        },
+        {
+          "w": "counsel",
+          "note": "较正式，法律顾问"
+        },
+        {
+          "w": "solicitor",
+          "note": "英式事务律师"
+        }
+      ]
+    },
+    {
+      "w": "assemble",
+      "syn": [
+        {
+          "w": "gather",
+          "note": "侧重聚集"
+        },
+        {
+          "w": "collect",
+          "note": "侧重收集"
+        },
+        {
+          "w": "convene",
+          "note": "侧重召集会议"
+        },
+        {
+          "w": "put together",
+          "note": "侧重装配"
+        }
+      ]
+    },
+    {
+      "w": "drawer",
+      "syn": []
+    },
+    {
+      "w": "a chest of drawers",
+      "syn": [
+        {
+          "w": "dresser",
+          "note": "美式五斗橱"
+        },
+        {
+          "w": "bureau",
+          "note": "美式五斗橱"
+        }
+      ]
+    },
+    {
+      "w": "breast",
+      "syn": [
+        {
+          "w": "chest",
+          "note": "侧重胸部"
+        },
+        {
+          "w": "bosom",
+          "note": "文学，胸怀"
+        },
+        {
+          "w": "bust",
+          "note": "女性胸部/胸围"
+        }
+      ]
+    },
+    {
+      "w": "hydrogen",
+      "syn": []
+    },
+    {
+      "w": "radium",
+      "syn": []
+    },
+    {
+      "w": "wrist",
+      "syn": []
+    },
+    {
+      "w": "bridegroom",
+      "syn": [
+        {
+          "w": "groom",
+          "note": "更常用，新郎"
+        }
+      ]
+    },
+    {
+      "w": "geometry",
+      "syn": []
+    },
+    {
+      "w": "debt",
+      "syn": [
+        {
+          "w": "liability",
+          "note": "财务负债"
+        },
+        {
+          "w": "obligation",
+          "note": "义务；债务"
+        },
+        {
+          "w": "arrears",
+          "note": "拖欠款项"
+        }
+      ]
+    }
+  ]
+}

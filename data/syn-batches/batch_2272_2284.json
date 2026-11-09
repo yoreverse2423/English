@@ -1,0 +1,172 @@
+{
+  "items": [
+    {
+      "w": "imagery",
+      "syn": [
+        {
+          "w": "image",
+          "note": "意象；形象"
+        },
+        {
+          "w": "symbolism",
+          "note": "象征手法，侧重象征"
+        },
+        {
+          "w": "figurative language",
+          "note": "比喻性语言"
+        }
+      ]
+    },
+    {
+      "w": "literary",
+      "syn": [
+        {
+          "w": "written",
+          "note": "书面的"
+        },
+        {
+          "w": "scholarly",
+          "note": "侧重有文学修养"
+        }
+      ]
+    },
+    {
+      "w": "rhyme",
+      "syn": [
+        {
+          "w": "verse",
+          "note": "韵文；诗句"
+        },
+        {
+          "w": "poetry",
+          "note": "诗歌，较宽泛"
+        }
+      ]
+    },
+    {
+      "w": "rhythm",
+      "syn": [
+        {
+          "w": "beat",
+          "note": "节拍，侧重音乐"
+        },
+        {
+          "w": "cadence",
+          "note": "节奏韵律，较正式"
+        },
+        {
+          "w": "tempo",
+          "note": "速度节拍"
+        }
+      ]
+    },
+    {
+      "w": "nursery",
+      "syn": [
+        {
+          "w": "greenhouse",
+          "note": "温室，侧重苗圃义"
+        },
+        {
+          "w": "daycare",
+          "note": "日托所，偏美式"
+        },
+        {
+          "w": "hotbed",
+          "note": "温床，比喻义"
+        }
+      ]
+    },
+    {
+      "w": "nursery rhyme",
+      "syn": [
+        {
+          "w": "children's song",
+          "note": "儿歌，直白说法"
+        },
+        {
+          "w": "lullaby",
+          "note": "摇篮曲，侧重催眠"
+        }
+      ]
+    },
+    {
+      "w": "folk",
+      "syn": [
+        {
+          "w": "people",
+          "note": "人们；民族"
+        },
+        {
+          "w": "ethnic",
+          "note": "民族的，作形容词"
+        },
+        {
+          "w": "traditional",
+          "note": "民间的，侧重传统"
+        }
+      ]
+    },
+    {
+      "w": "mockingbird",
+      "syn": [
+        {
+          "w": "mocker",
+          "note": "嘲鸫，口语简说"
+        }
+      ]
+    },
+    {
+      "w": "diamond",
+      "syn": [
+        {
+          "w": "gem",
+          "note": "宝石，范围更广"
+        },
+        {
+          "w": "rhombus",
+          "note": "菱形，几何义"
+        }
+      ]
+    },
+    {
+      "w": "brass",
+      "syn": [
+        {
+          "w": "copper alloy",
+          "note": "铜合金，解释性说法"
+        },
+        {
+          "w": "nerve",
+          "note": "厚脸皮，口语"
+        }
+      ]
+    },
+    {
+      "w": "billy goat",
+      "syn": [
+        {
+          "w": "male goat",
+          "note": "公山羊，直白说法"
+        },
+        {
+          "w": "buck",
+          "note": "雄鹿等雄性动物，可指公羊"
+        }
+      ]
+    },
+    {
+      "w": "bull",
+      "syn": [
+        {
+          "w": "male cattle",
+          "note": "公牛，描述性说法"
+        },
+        {
+          "w": "nonsense",
+          "note": "胡说八道，口语义"
+        }
+      ]
+    }
+  ]
+}

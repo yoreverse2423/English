@@ -1,0 +1,172 @@
+{
+  "items": [
+    {
+      "w": "telescope",
+      "syn": [
+        {
+          "w": "spyglass",
+          "note": "旧式单筒望远镜"
+        },
+        {
+          "w": "scope",
+          "note": "口语，望远镜/显微镜"
+        }
+      ]
+    },
+    {
+      "w": "besides",
+      "syn": [
+        {
+          "w": "apart from",
+          "note": "介词义，除…之外"
+        },
+        {
+          "w": "in addition to",
+          "note": "介词义，除…之外还"
+        },
+        {
+          "w": "moreover",
+          "note": "副词义，此外"
+        }
+      ]
+    },
+    {
+      "w": "brilliant",
+      "syn": [
+        {
+          "w": "bright",
+          "note": "明亮/鲜艳"
+        },
+        {
+          "w": "outstanding",
+          "note": "杰出的"
+        },
+        {
+          "w": "excellent",
+          "note": "极好的"
+        },
+        {
+          "w": "superb",
+          "note": "极佳的，较正式"
+        }
+      ]
+    },
+    {
+      "w": "furthermore",
+      "syn": [
+        {
+          "w": "moreover",
+          "note": "此外，较正式"
+        },
+        {
+          "w": "in addition",
+          "note": "另外"
+        },
+        {
+          "w": "besides",
+          "note": "此外，口语些"
+        },
+        {
+          "w": "what is more",
+          "note": "而且，更强调"
+        }
+      ]
+    },
+    {
+      "w": "above all",
+      "syn": [
+        {
+          "w": "most importantly",
+          "note": "最重要的是"
+        },
+        {
+          "w": "first and foremost",
+          "note": "首要的是"
+        },
+        {
+          "w": "above everything else",
+          "note": "高于一切"
+        }
+      ]
+    },
+    {
+      "w": "fault",
+      "syn": [
+        {
+          "w": "defect",
+          "note": "缺陷"
+        },
+        {
+          "w": "flaw",
+          "note": "瑕疵"
+        },
+        {
+          "w": "error",
+          "note": "错误"
+        },
+        {
+          "w": "breakdown",
+          "note": "故障"
+        }
+      ]
+    },
+    {
+      "w": "shift",
+      "syn": [
+        {
+          "w": "change",
+          "note": "变化/改变"
+        },
+        {
+          "w": "move",
+          "note": "移动"
+        },
+        {
+          "w": "switch",
+          "note": "转换"
+        },
+        {
+          "w": "transfer",
+          "note": "转移"
+        }
+      ]
+    },
+    {
+      "w": "vivid",
+      "syn": [
+        {
+          "w": "lively",
+          "note": "生动活泼"
+        },
+        {
+          "w": "graphic",
+          "note": "生动详细"
+        },
+        {
+          "w": "bright",
+          "note": "鲜艳明亮"
+        },
+        {
+          "w": "striking",
+          "note": "鲜明醒目"
+        }
+      ]
+    },
+    {
+      "w": "Queen Victoria",
+      "syn": []
+    },
+    {
+      "w": "Cambridge",
+      "syn": []
+    },
+    {
+      "w": "non-Newtonian fluid",
+      "syn": []
+    },
+    {
+      "w": "the Jet Propulsion Laboratory",
+      "syn": []
+    }
+  ]
+}

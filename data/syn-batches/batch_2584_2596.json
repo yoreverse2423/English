@@ -1,0 +1,211 @@
+{
+  "items": [
+    {
+      "w": "grill",
+      "syn": [
+        {
+          "w": "barbecue",
+          "note": "烧烤；烤架，侧重户外烧烤"
+        },
+        {
+          "w": "interrogate",
+          "note": "盘问，较正式"
+        },
+        {
+          "w": "question",
+          "note": "盘问；询问"
+        },
+        {
+          "w": "roast",
+          "note": "烤，侧重用火烤"
+        }
+      ]
+    },
+    {
+      "w": "doorway",
+      "syn": [
+        {
+          "w": "entrance",
+          "note": "入口；门口"
+        },
+        {
+          "w": "threshold",
+          "note": "门槛；门口"
+        },
+        {
+          "w": "gateway",
+          "note": "入口；途径"
+        }
+      ]
+    },
+    {
+      "w": "leftover",
+      "syn": [
+        {
+          "w": "remainder",
+          "note": "剩余物；剩余部分"
+        },
+        {
+          "w": "remnant",
+          "note": "残余物；剩余"
+        },
+        {
+          "w": "residue",
+          "note": "残留物"
+        },
+        {
+          "w": "surplus",
+          "note": "剩余；过剩"
+        }
+      ]
+    },
+    {
+      "w": "handshake",
+      "syn": []
+    },
+    {
+      "w": "drag",
+      "syn": [
+        {
+          "w": "pull",
+          "note": "拉；拖，最通用"
+        },
+        {
+          "w": "haul",
+          "note": "用力拖运"
+        },
+        {
+          "w": "trail",
+          "note": "拖曳；拖在后面"
+        },
+        {
+          "w": "lug",
+          "note": "费力拖/搬"
+        }
+      ]
+    },
+    {
+      "w": "privilege",
+      "syn": [
+        {
+          "w": "right",
+          "note": "权利"
+        },
+        {
+          "w": "advantage",
+          "note": "有利条件；优势"
+        },
+        {
+          "w": "benefit",
+          "note": "好处；优待"
+        }
+      ]
+    },
+    {
+      "w": "plug",
+      "syn": [
+        {
+          "w": "stopper",
+          "note": "塞子"
+        },
+        {
+          "w": "cork",
+          "note": "软木塞"
+        },
+        {
+          "w": "block",
+          "note": "堵塞"
+        },
+        {
+          "w": "insert",
+          "note": "插入"
+        }
+      ]
+    },
+    {
+      "w": "disabled",
+      "syn": [
+        {
+          "w": "handicapped",
+          "note": "残疾的，旧称"
+        },
+        {
+          "w": "impaired",
+          "note": "受损的；有缺陷的"
+        },
+        {
+          "w": "incapacitated",
+          "note": "丧失能力的"
+        }
+      ]
+    },
+    {
+      "w": "resign",
+      "syn": [
+        {
+          "w": "quit",
+          "note": "辞职；退出"
+        },
+        {
+          "w": "step down",
+          "note": "辞职；下台"
+        },
+        {
+          "w": "give up",
+          "note": "放弃"
+        }
+      ]
+    },
+    {
+      "w": "deserve",
+      "syn": [
+        {
+          "w": "merit",
+          "note": "应得；值得"
+        },
+        {
+          "w": "earn",
+          "note": "赢得；应得"
+        },
+        {
+          "w": "warrant",
+          "note": "应受；使有理由，较正式"
+        }
+      ]
+    },
+    {
+      "w": "lately",
+      "syn": [
+        {
+          "w": "recently",
+          "note": "最近"
+        },
+        {
+          "w": "of late",
+          "note": "近来，较书面"
+        }
+      ]
+    },
+    {
+      "w": "input",
+      "syn": [
+        {
+          "w": "contribution",
+          "note": "投入；贡献"
+        },
+        {
+          "w": "investment",
+          "note": "投入"
+        },
+        {
+          "w": "entry",
+          "note": "录入；输入"
+        },
+        {
+          "w": "feed",
+          "note": "输入；供给"
+        }
+      ]
+    }
+  ]
+}

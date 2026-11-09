@@ -1,0 +1,191 @@
+{
+  "items": [
+    {
+      "w": "first aid",
+      "syn": [
+        {
+          "w": "emergency treatment",
+          "note": "急救处理（较正式）"
+        },
+        {
+          "w": "emergency care",
+          "note": "急救护理"
+        }
+      ]
+    },
+    {
+      "w": "pass away",
+      "syn": [
+        {
+          "w": "die",
+          "note": "通用“死亡”"
+        },
+        {
+          "w": "perish",
+          "note": "较正式/文学“丧生”"
+        },
+        {
+          "w": "pass on",
+          "note": "委婉“去世”"
+        }
+      ]
+    },
+    {
+      "w": "chairman",
+      "syn": [
+        {
+          "w": "chairperson",
+          "note": "中性“主席”"
+        },
+        {
+          "w": "chair",
+          "note": "主席/主持人（较口语）"
+        },
+        {
+          "w": "head",
+          "note": "负责人（较宽泛）"
+        }
+      ]
+    },
+    {
+      "w": "memory",
+      "syn": [
+        {
+          "w": "recollection",
+          "note": "回忆（较正式）"
+        },
+        {
+          "w": "remembrance",
+          "note": "记忆/纪念（正式）"
+        },
+        {
+          "w": "recall",
+          "note": "回忆；记性"
+        }
+      ]
+    },
+    {
+      "w": "in memory of",
+      "syn": [
+        {
+          "w": "in remembrance of",
+          "note": "更正式“为纪念”"
+        },
+        {
+          "w": "to commemorate",
+          "note": "为纪念（动词不定式）"
+        },
+        {
+          "w": "in honor of",
+          "note": "向…致敬/纪念"
+        }
+      ]
+    },
+    {
+      "w": "chain",
+      "syn": [
+        {
+          "w": "series",
+          "note": "一连串（名词）"
+        },
+        {
+          "w": "sequence",
+          "note": "序列/一连串"
+        },
+        {
+          "w": "restrain",
+          "note": "束缚（动词）"
+        },
+        {
+          "w": "bind",
+          "note": "捆绑/束缚（动词）"
+        }
+      ]
+    },
+    {
+      "w": "café",
+      "syn": [
+        {
+          "w": "coffee shop",
+          "note": "咖啡馆"
+        },
+        {
+          "w": "coffee house",
+          "note": "咖啡馆（较文雅）"
+        }
+      ]
+    },
+    {
+      "w": "waitress",
+      "syn": [
+        {
+          "w": "server",
+          "note": "服务员（中性通用）"
+        },
+        {
+          "w": "waitperson",
+          "note": "服务员（中性，少用）"
+        }
+      ]
+    },
+    {
+      "w": "pregnant",
+      "syn": [
+        {
+          "w": "expecting",
+          "note": "怀孕的（委婉）"
+        },
+        {
+          "w": "with child",
+          "note": "怀孕（较旧/文学）"
+        },
+        {
+          "w": "meaningful",
+          "note": "有意义的（对应“富有意义”）"
+        }
+      ]
+    },
+    {
+      "w": "disguise",
+      "syn": [
+        {
+          "w": "camouflage",
+          "note": "伪装（军事/自然）"
+        },
+        {
+          "w": "mask",
+          "note": "掩饰（情感/真相）"
+        },
+        {
+          "w": "conceal",
+          "note": "隐瞒/隐藏"
+        },
+        {
+          "w": "pretend",
+          "note": "假装（行为）"
+        }
+      ]
+    },
+    {
+      "w": "maple",
+      "syn": []
+    },
+    {
+      "w": "cart",
+      "syn": [
+        {
+          "w": "wagon",
+          "note": "四轮运货车（不同）"
+        },
+        {
+          "w": "trolley",
+          "note": "手推车/购物车（英式）"
+        },
+        {
+          "w": "haul",
+          "note": "运送（动词，较宽泛）"
+        }
+      ]
+    }
+  ]
+}

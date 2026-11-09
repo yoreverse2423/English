@@ -1,0 +1,281 @@
+{
+  "items": [
+    {
+      "w": "focus",
+      "syn": [
+        {
+          "w": "center",
+          "note": "中心；美式拼写"
+        },
+        {
+          "w": "core",
+          "note": "核心；侧重本质部分"
+        },
+        {
+          "w": "concentrate",
+          "note": "作动词：集中（注意力）"
+        }
+      ]
+    },
+    {
+      "w": "focus on",
+      "syn": [
+        {
+          "w": "concentrate on",
+          "note": "集中精力于"
+        },
+        {
+          "w": "center on",
+          "note": "以…为中心"
+        },
+        {
+          "w": "be absorbed in",
+          "note": "专心于，沉浸于"
+        }
+      ]
+    },
+    {
+      "w": "addict",
+      "syn": [
+        {
+          "w": "enthusiast",
+          "note": "热衷者，程度轻"
+        },
+        {
+          "w": "fan",
+          "note": "迷，口语化"
+        }
+      ]
+    },
+    {
+      "w": "addicted to",
+      "syn": [
+        {
+          "w": "hooked on",
+          "note": "口语，对上瘾"
+        },
+        {
+          "w": "dependent on",
+          "note": "依赖，侧重依靠"
+        }
+      ]
+    },
+    {
+      "w": "adult",
+      "syn": [
+        {
+          "w": "grown-up",
+          "note": "口语，成年人"
+        },
+        {
+          "w": "mature",
+          "note": "作形容词：成熟的"
+        }
+      ]
+    },
+    {
+      "w": "Chicago",
+      "syn": []
+    },
+    {
+      "w": "Seoul",
+      "syn": []
+    },
+    {
+      "w": "castle",
+      "syn": [
+        {
+          "w": "fortress",
+          "note": "堡垒，侧重军事防御"
+        },
+        {
+          "w": "stronghold",
+          "note": "要塞，据点"
+        }
+      ]
+    },
+    {
+      "w": "apply",
+      "syn": [
+        {
+          "w": "request",
+          "note": "对应“申请、请求”义"
+        },
+        {
+          "w": "use",
+          "note": "对应“应用、使用”义"
+        },
+        {
+          "w": "employ",
+          "note": "对应“运用”义，较正式"
+        }
+      ]
+    },
+    {
+      "w": "apply for",
+      "syn": [
+        {
+          "w": "seek",
+          "note": "寻求，较正式"
+        },
+        {
+          "w": "ask for",
+          "note": "口语，请求得到"
+        },
+        {
+          "w": "request",
+          "note": "正式请求"
+        }
+      ]
+    },
+    {
+      "w": "visa",
+      "syn": []
+    },
+    {
+      "w": "rent",
+      "syn": [
+        {
+          "w": "lease",
+          "note": "多指长期租约"
+        },
+        {
+          "w": "hire",
+          "note": "英式，租用；租金义少用"
+        },
+        {
+          "w": "rental",
+          "note": "美式，租金；租赁"
+        }
+      ]
+    },
+    {
+      "w": "pack",
+      "syn": [
+        {
+          "w": "bundle",
+          "note": "捆，包裹"
+        },
+        {
+          "w": "bunch",
+          "note": "一群，一串"
+        },
+        {
+          "w": "group",
+          "note": "群，最通用"
+        }
+      ]
+    },
+    {
+      "w": "amazing",
+      "syn": [
+        {
+          "w": "astonishing",
+          "note": "令人震惊的，语气强"
+        },
+        {
+          "w": "incredible",
+          "note": "难以置信的"
+        },
+        {
+          "w": "wonderful",
+          "note": "极好的，偏褒义"
+        }
+      ]
+    },
+    {
+      "w": "amazed",
+      "syn": [
+        {
+          "w": "astonished",
+          "note": "吃惊的，语气更强"
+        },
+        {
+          "w": "surprised",
+          "note": "惊讶的，程度轻"
+        },
+        {
+          "w": "stunned",
+          "note": "惊呆的"
+        }
+      ]
+    },
+    {
+      "w": "arrangement",
+      "syn": [
+        {
+          "w": "plan",
+          "note": "计划，安排"
+        },
+        {
+          "w": "preparation",
+          "note": "准备工作"
+        },
+        {
+          "w": "layout",
+          "note": "布局，布置"
+        }
+      ]
+    },
+    {
+      "w": "extremely",
+      "syn": [
+        {
+          "w": "very",
+          "note": "很，最通用"
+        },
+        {
+          "w": "exceedingly",
+          "note": "极其，正式"
+        },
+        {
+          "w": "highly",
+          "note": "高度地，多修饰形容词"
+        }
+      ]
+    },
+    {
+      "w": "source",
+      "syn": [
+        {
+          "w": "origin",
+          "note": "起源，来源"
+        },
+        {
+          "w": "root",
+          "note": "根源，侧重起因"
+        }
+      ]
+    },
+    {
+      "w": "narrow",
+      "syn": [
+        {
+          "w": "tight",
+          "note": "狭窄的，侧重空间紧"
+        },
+        {
+          "w": "limited",
+          "note": "有限的，对应引申义"
+        }
+      ]
+    },
+    {
+      "w": "flat",
+      "syn": [
+        {
+          "w": "apartment",
+          "note": "公寓，美式"
+        },
+        {
+          "w": "even",
+          "note": "作形容词：平坦的"
+        },
+        {
+          "w": "level",
+          "note": "作形容词：平的，不高低不平"
+        }
+      ]
+    }
+  ]
+}
