@@ -1762,6 +1762,27 @@
     };
   }
 
+  // 艾宾浩斯 6 阶段进度圆点：亮起的数量表示已完成的阶段。
+  function ebbinghausDotsHtml(progress) {
+    let litCount = 0;
+    let ariaLabel = '尚未进入艾宾浩斯复习';
+    if (progress) {
+      const stage = clamp(toInteger(progress.stage, 0), 0, STAGE_COUNT);
+      if (progress.masteredAt || stage >= STAGE_COUNT) {
+        litCount = STAGE_COUNT;
+        ariaLabel = '已掌握（艾宾浩斯全部完成）';
+      } else {
+        litCount = stage;
+        ariaLabel = '艾宾浩斯阶段 ' + stage + ' / ' + STAGE_COUNT;
+      }
+    }
+    const dots = STAGE_INTERVALS.map(function (interval, index) {
+      const day = Math.round(interval / (24 * 60 * 60 * 1000));
+      return '<span class="ebbinghaus-dot ' + (index < litCount ? 'is-lit' : 'is-dim') + '">' + day + '</span>';
+    }).join('');
+    return '<div class="ebbinghaus-dots" role="img" aria-label="' + ariaLabel + '">' + dots + '</div>';
+  }
+
   function meaningCoverHtml() {
     return (
       '<button class="meaning-cover" type="button" data-action="reveal-meaning" aria-label="显示释义、搭配和例句">' +
@@ -1838,7 +1859,9 @@
               freqTagHtml(word) +
               (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
             '</div>' +
-            '<span class="stage-label">' + escapeHtml(meta.stage) + '</span>' +
+            ((!card.isNew && !card.isRetry)
+              ? ebbinghausDotsHtml(getProgress(word))
+              : '<span class="stage-label">' + escapeHtml(meta.stage) + '</span>') +
           '</div>' +
           '<div class="word-main">' +
             '<h2 class="word-title' + longClass + '">' + escapeHtml(word.w) + '</h2>' +
@@ -2276,9 +2299,6 @@
     const word = reviewBrowse.words[index];
     const progress = getProgress(word);
     const phonetic = formatPhonetic(word.ph);
-    const stageLabel = progress
-      ? (progress.masteredAt ? '已掌握' : '阶段 ' + progress.stage + ' / ' + STAGE_COUNT)
-      : '尚未学习';
     const collocations = (Array.isArray(word.col) ? word.col : []).filter(function (item) {
       return item && item.en;
     }).slice(0, 3);
@@ -2301,7 +2321,7 @@
             '<span class="mode-badge is-review">只背不考核</span>' +
             freqTagHtml(word) +
             (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
-            '<span class="stage-label">' + escapeHtml(stageLabel) + '</span>' +
+            ebbinghausDotsHtml(progress) +
           '</div>' +
           '<h2 class="review-browse-word">' + escapeHtml(word.w) + '</h2>' +
           (phonetic ? '<p class="review-browse-ph">' + escapeHtml(phonetic) + '</p>' : '') +
@@ -2643,7 +2663,6 @@
       ? Math.round((reviewSession.answeredCount / reviewSession.total) * 100)
       : 100;
     const modeLabel = getReviewModeLabel(cardState.mode);
-    const stageLabel = progress ? '阶段 ' + progress.stage + ' / ' + STAGE_COUNT : '复习';
     const promptHtml = cardState.mode === 'spell'
       ? spellPromptHtml(cardState, answered)
       : choicePromptHtml(cardState) + choiceOptionsHtml(cardState, answered);
@@ -2666,7 +2685,7 @@
             '<div class="review-card-meta">' +
               '<span class="mode-badge is-review">' + modeLabel + '</span>' +
               (word.tag ? '<span class="card-tag">' + escapeHtml(word.tag) + '</span>' : '') +
-              '<span class="stage-label">' + escapeHtml(stageLabel) + '</span>' +
+              ebbinghausDotsHtml(progress) +
             '</div>' +
             promptHtml +
             hintHtml +
@@ -6160,7 +6179,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.18 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.19 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 

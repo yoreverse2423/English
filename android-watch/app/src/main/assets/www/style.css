@@ -1115,6 +1115,43 @@ select:focus-visible,
   font-variant-numeric: tabular-nums;
 }
 
+.ebbinghaus-dots {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  align-items: center;
+}
+
+.ebbinghaus-dot {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.ebbinghaus-dot.is-lit {
+  color: var(--surface);
+  background: var(--primary);
+}
+
+.ebbinghaus-dot.is-dim {
+  color: var(--muted);
+  background: var(--line);
+}
+
+.review-card-meta .ebbinghaus-dots,
+.card-meta .ebbinghaus-dots,
+.review-browse-meta .ebbinghaus-dots {
+  margin-left: auto;
+}
+
 .card-tag {
   color: var(--muted);
   font-size: 10.5px;
@@ -4608,6 +4645,16 @@ select:focus-visible,
     white-space: nowrap;
   }
 
+  .ebbinghaus-dots {
+    gap: 2px;
+  }
+
+  .ebbinghaus-dot {
+    width: 13px;
+    height: 13px;
+    font-size: 7px;
+  }
+
   .card-tag {
     display: none;
   }
@@ -4812,7 +4859,8 @@ select:focus-visible,
     gap: 4px;
   }
 
-  .review-card-meta .stage-label {
+  .review-card-meta .stage-label,
+  .review-card-meta .ebbinghaus-dots {
     margin-left: 0;
   }
 
