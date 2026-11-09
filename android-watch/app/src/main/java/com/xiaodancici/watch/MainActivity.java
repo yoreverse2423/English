@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.webkit.JavascriptInterface;
 import android.webkit.RenderProcessGoneDetail;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -24,6 +26,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 /**
  * A deliberately small WebView shell for the offline 小单词机 study app.
@@ -38,6 +42,27 @@ public class MainActivity extends Activity {
 
     private static final String START_URL = "file:///android_asset/www/index.html";
     private static final int FILE_CHOOSER_REQUEST = 4107;
+    private static final String JS_BRIDGE_NAME = "XiaodanciciNative";
+
+    /*
+     * TextToSpeech states. ttsState is guarded by ttsLock because the engine is
+     * constructed on a background thread while the JS bridge may call in from
+     * WebView's JavaBridge thread at any time.
+     */
+    private static final int TTS_INITIALIZING = 0;
+    private static final int TTS_READY = 1;
+    private static final int TTS_MISSING = 2;
+    private static final int TTS_ERROR = 3;
+
+    private static final class PendingTts {
+        final String text;
+        final String lang;
+
+        PendingTts(String text, String lang) {
+            this.text = text;
+            this.lang = lang;
+        }
+    }
 
     /*
      * Keep the tiny shipped marker library loaded so the package is not
@@ -60,6 +85,14 @@ public class MainActivity extends Activity {
     private WebView webView;
     private ValueCallback<Uri[]> filePathCallback;
     private boolean fallbackShown;
+
+    // Offline pronunciation via the platform TextToSpeech engine.
+    private final Object ttsLock = new Object();
+    private TextToSpeech tts;
+    private int ttsState = TTS_INITIALIZING;
+    private String ttsError = "";
+    private PendingTts pendingTts;
+    private boolean ttsDestroyed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +119,10 @@ public class MainActivity extends Activity {
                     FrameLayout.LayoutParams.MATCH_PARENT,
                     FrameLayout.LayoutParams.MATCH_PARENT
             ));
+
+            // Bind TextToSpeech off the UI thread; a missing engine must never
+            // block or crash startup. Requests arriving during init are queued.
+            initTtsAsync();
 
             if (savedInstanceState != null) {
                 try {
@@ -117,6 +154,11 @@ public class MainActivity extends Activity {
         }
 
         configureWebView(view);
+        try {
+            view.addJavascriptInterface(new XiaodanciciBridge(), JS_BRIDGE_NAME);
+        } catch (Throwable ignored) {
+            // Without the bridge the page falls back to Web Speech / network.
+        }
         view.setWebViewClient(new AppWebViewClient());
         view.setWebChromeClient(new AppChromeClient());
         return view;
@@ -364,6 +406,265 @@ public class MainActivity extends Activity {
         }
     }
 
+    /* ---------- 离线发音（Android TextToSpeech） ---------- */
+
+    /**
+     * Exposed to the local page as window.XiaodanciciNative. All methods are
+     * called on WebView's JavaBridge thread, so the engine is only touched
+     * through the ttsLock-guarded helpers below.
+     */
+    public final class XiaodanciciBridge {
+        @JavascriptInterface
+        public boolean speak(String text, String lang) {
+            return handleSpeak(text, lang);
+        }
+
+        @JavascriptInterface
+        public void stop() {
+            stopTts();
+        }
+
+        @JavascriptInterface
+        public boolean isTtsReady() {
+            synchronized (ttsLock) {
+                return ttsState == TTS_READY;
+            }
+        }
+
+        /** "initializing" / "ready" / "missing" / "error:..." */
+        @JavascriptInterface
+        public String ttsStatus() {
+            synchronized (ttsLock) {
+                if (ttsState == TTS_READY) return "ready";
+                if (ttsState == TTS_MISSING) return "missing";
+                if (ttsState == TTS_ERROR) {
+                    return ttsError.isEmpty() ? "error" : "error:" + ttsError;
+                }
+                return "initializing";
+            }
+        }
+    }
+
+    private void initTtsAsync() {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                TextToSpeech engine;
+                try {
+                    engine = new TextToSpeech(getApplicationContext(),
+                            new TextToSpeech.OnInitListener() {
+                                @Override
+                                public void onInit(int status) {
+                                    onTtsInitialized(status);
+                                }
+                            });
+                } catch (Throwable error) {
+                    markTtsUnavailable(TTS_ERROR, describe(error));
+                    return;
+                }
+
+                boolean shutdownNow = false;
+                boolean configure = false;
+                PendingTts queued = null;
+                synchronized (ttsLock) {
+                    if (ttsDestroyed) {
+                        shutdownNow = true;
+                    } else {
+                        tts = engine;
+                        // onInit can arrive before the constructor returns.
+                        if (ttsState == TTS_READY) {
+                            configure = true;
+                            queued = pendingTts;
+                            pendingTts = null;
+                        } else if (ttsState == TTS_MISSING || ttsState == TTS_ERROR) {
+                            shutdownNow = true;
+                        }
+                    }
+                }
+                if (shutdownNow) {
+                    try {
+                        engine.shutdown();
+                    } catch (Throwable ignored) {
+                    }
+                } else {
+                    if (configure) configureTts(engine);
+                    if (queued != null && !speakWithEngine(queued.text, queued.lang)) {
+                        notifyJsTtsFailure();
+                    }
+                }
+            }
+        }, "xd-tts-init");
+        thread.setDaemon(true);
+        try {
+            thread.start();
+        } catch (Throwable error) {
+            markTtsUnavailable(TTS_ERROR, describe(error));
+        }
+    }
+
+    private void onTtsInitialized(int status) {
+        if (status != TextToSpeech.SUCCESS) {
+            markTtsUnavailable(TTS_MISSING, "no_engine");
+            return;
+        }
+
+        TextToSpeech engine;
+        PendingTts queued = null;
+        synchronized (ttsLock) {
+            if (ttsDestroyed) return;
+            ttsState = TTS_READY;
+            ttsError = "";
+            engine = tts;
+            if (engine != null) {
+                queued = pendingTts;
+                pendingTts = null;
+            }
+            // If tts is still null the init thread will configure it when the
+            // constructor returns; keep the pending request for that path.
+        }
+
+        if (engine != null) {
+            configureTts(engine);
+        }
+        if (queued != null && !speakWithEngine(queued.text, queued.lang)) {
+            notifyJsTtsFailure();
+        }
+    }
+
+    private void configureTts(TextToSpeech engine) {
+        try {
+            engine.setSpeechRate(0.9f);
+        } catch (Throwable ignored) {
+        }
+        try {
+            engine.setLanguage(Locale.US);
+        } catch (Throwable ignored) {
+        }
+    }
+
+    private boolean handleSpeak(String text, String lang) {
+        if (text == null) return false;
+        String phrase = text.trim();
+        if (phrase.isEmpty()) return false;
+        // Word entries are short; cap accidental huge strings.
+        if (phrase.length() > 200) {
+            phrase = phrase.substring(0, 200);
+        }
+
+        synchronized (ttsLock) {
+            if (ttsDestroyed) return false;
+            if (ttsState == TTS_MISSING || ttsState == TTS_ERROR) return false;
+            if (ttsState != TTS_READY) {
+                // Engine still binding: keep only the latest word to speak.
+                pendingTts = new PendingTts(phrase, lang);
+                return true;
+            }
+        }
+        return speakWithEngine(phrase, lang);
+    }
+
+    private boolean speakWithEngine(String phrase, String lang) {
+        TextToSpeech engine;
+        synchronized (ttsLock) {
+            engine = tts;
+        }
+        if (engine == null) return false;
+
+        Locale locale = localeFor(lang);
+        try {
+            int result = engine.setLanguage(locale);
+            if (isLanguageUnavailable(result) && !Locale.US.equals(locale)) {
+                // 英音缺失时回退美音。
+                result = engine.setLanguage(Locale.US);
+            }
+            if (isLanguageUnavailable(result)) return false;
+            return engine.speak(phrase, TextToSpeech.QUEUE_FLUSH, null, "xd-pron")
+                    == TextToSpeech.SUCCESS;
+        } catch (Throwable error) {
+            return false;
+        }
+    }
+
+    private static boolean isLanguageUnavailable(int result) {
+        return result == TextToSpeech.LANG_MISSING_DATA
+                || result == TextToSpeech.LANG_NOT_SUPPORTED;
+    }
+
+    private static Locale localeFor(String lang) {
+        if (lang == null) return Locale.US;
+        String tag = lang.trim().toLowerCase(Locale.ROOT);
+        if (tag.startsWith("en-gb") || tag.startsWith("en-uk")) {
+            return Locale.UK;
+        }
+        return Locale.US;
+    }
+
+    private void stopTts() {
+        TextToSpeech engine;
+        synchronized (ttsLock) {
+            pendingTts = null;
+            engine = tts;
+        }
+        if (engine != null) {
+            try {
+                engine.stop();
+            } catch (Throwable ignored) {
+            }
+        }
+    }
+
+    private void markTtsUnavailable(int state, String detail) {
+        PendingTts queued;
+        TextToSpeech stale;
+        synchronized (ttsLock) {
+            if (ttsState == TTS_READY) return;
+            ttsState = state;
+            ttsError = detail == null ? "" : detail;
+            queued = pendingTts;
+            pendingTts = null;
+            stale = tts;
+            tts = null;
+        }
+        if (stale != null) {
+            try {
+                stale.shutdown();
+            } catch (Throwable ignored) {
+            }
+        }
+        if (queued != null) notifyJsTtsFailure();
+    }
+
+    private static String describe(Throwable error) {
+        if (error == null) return "";
+        try {
+            String message = error.getMessage();
+            return message == null ? error.getClass().getSimpleName() : message;
+        } catch (Throwable ignored) {
+            return "";
+        }
+    }
+
+    /**
+     * Tell the page that a queued native request failed after init. It then
+     * tries Web Speech and shows the "install an English voice pack" toast.
+     */
+    private void notifyJsTtsFailure() {
+        final WebView view = webView;
+        if (view == null) return;
+        view.post(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    view.evaluateJavascript(
+                            "window.__xdNativeTtsError&&window.__xdNativeTtsError();",
+                            null
+                    );
+                } catch (Throwable ignored) {
+                }
+            }
+        });
+    }
+
     private final class AppWebViewClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
@@ -559,6 +860,24 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
+        TextToSpeech engine;
+        synchronized (ttsLock) {
+            ttsDestroyed = true;
+            pendingTts = null;
+            engine = tts;
+            tts = null;
+        }
+        if (engine != null) {
+            try {
+                engine.stop();
+            } catch (Throwable ignored) {
+            }
+            try {
+                engine.shutdown();
+            } catch (Throwable ignored) {
+            }
+        }
+
         if (webView != null) {
             try {
                 webView.loadUrl("about:blank");

@@ -4,7 +4,7 @@
 
 - 包名：`com.xiaodancici.watch`
 - 应用名：`小单词机`
-- 版本：`versionCode 17` / `versionName 1.0.16`
+- 版本：`versionCode 18` / `versionName 1.0.17`
 - 入口：`file:///android_asset/www/index.html`
 - `minSdk 24` / `targetSdk 34` / `compileSdk 34`
 - 单 Activity、无 ActionBar、全屏 WebView
@@ -13,6 +13,7 @@
 - 已声明 `android.hardware.type.watch`（`required=false`，兼容非 Wear OS 的 ColorOS Watch）
   与 `com.google.android.wearable.standalone=true`
 - 自带 PNG mipmap 图标（方形 + 圆形，mdpi～xxxhdpi）
+- WebView 通过 `window.XiaodanciciNative` 暴露 `speak(text, lang)` / `stop()` / `ttsStatus()` / `isTtsReady()`，供网页调用 Android 系统 `TextToSpeech`
 - **ABI：仅 armeabi-v7a**（32 位 ARM），并携带一个极小的标记用 JNI 库
 
 ## 构建
@@ -132,4 +133,5 @@ cd android-watch
 - 词库、学新词、复习、词表浏览、学习统计：离线可用，数据保存在 WebView 的 localStorage。
 - 每日阅读生成：需要联网并配置 DeepSeek API Key。
 - GitHub 进度同步：需要联网并配置 GitHub 令牌。
-- 发音：优先使用有道词典在线音频；离线时回退到系统 Web Speech/TTS。若手表既无网络又无英文 TTS 引擎，发音不可用，但背词主流程不受影响。
+- 发音：联网时优先使用有道词典在线音频（3 秒超时）；明确离线或在线音频失败时，依次尝试 Android 系统 `TextToSpeech`（美音默认 `Locale.US`，英音按钮尝试 `Locale.UK` 并回退美音）和 Web Speech。若系统没有英文离线语音包，页面会提示安装；背词主流程不受影响。
+- 不预打包词库音频：按每词约 8KB 估算，高频词约 6MB、全部标注词约 21MB，会显著增大 APK，因此本版依赖系统离线语音包。

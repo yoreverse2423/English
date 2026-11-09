@@ -155,6 +155,10 @@
   let expandedBooks = null;
   let toastTimer = null;
   let activeAudio = null;
+  // 最近一次交给 Android 原生 TTS 的文本；初始化失败时用于回退与提示。
+  let lastNativeTtsText = '';
+  // speechSynthesis 可能“存在但不出声”（ColorOS WebView 常见），用超时兜底提示。
+  let speechWatchdogTimer = 0;
   let githubSyncInFlight = false;
   let githubSyncStatus = { state: 'idle', message: '' };
   let githubSyncPrefs = loadGithubSyncPrefs();
@@ -1265,6 +1269,70 @@
 
   /* ---------- 发音 ---------- */
 
+  /*
+   * 离线发音不预打包词库音频：按每词约 8KB 估算，高频词约 6MB、全部标注词
+   * 约 21MB，会让现在约 1.7MB 的 APK 明显变大。本版改为调用系统 TTS：
+   * 手表壳通过 window.XiaodanciciNative 暴露 Android TextToSpeech。
+   */
+  const NATIVE_TTS_ERROR = '系统没有可用的英文语音引擎，请在手表/手机设置里安装英文离线语音包后再试。';
+
+  function nativeTtsBridge() {
+    const bridge = window.XiaodanciciNative;
+    if (!bridge || typeof bridge.speak !== 'function') return null;
+    return bridge;
+  }
+
+  function nativeTtsStatus() {
+    const bridge = nativeTtsBridge();
+    if (!bridge) return '';
+    try {
+      if (typeof bridge.ttsStatus === 'function') {
+        return String(bridge.ttsStatus() || '');
+      }
+      if (typeof bridge.isTtsReady === 'function') {
+        return bridge.isTtsReady() ? 'ready' : 'initializing';
+      }
+      return '';
+    } catch (error) {
+      return 'error';
+    }
+  }
+
+  function speakNative(word, lang) {
+    const bridge = nativeTtsBridge();
+    if (!bridge) return false;
+    const status = nativeTtsStatus();
+    // 引擎缺失或初始化失败时直接交给 speechSynthesis。
+    if (status === 'missing' || status.indexOf('error') === 0) return false;
+
+    lastNativeTtsText = word;
+    try {
+      // 初始化中时原生侧会排队，返回 true。
+      const accepted = bridge.speak(word, lang) !== false;
+      if (!accepted) lastNativeTtsText = '';
+      return accepted;
+    } catch (error) {
+      lastNativeTtsText = '';
+      return false;
+    }
+  }
+
+  // Java 侧在排队请求因初始化失败而无法播放时回调。
+  window.__xdNativeTtsError = function () {
+    const text = lastNativeTtsText;
+    lastNativeTtsText = '';
+    if (text && speakFallback(text, true)) return;
+    showToast(NATIVE_TTS_ERROR, 'error');
+  };
+
+  // 离线路径顺序：Native TTS → speechSynthesis → 明确报错。
+  function speakOffline(word, notify, lang) {
+    if (speakNative(word, lang)) return true;
+    if (speakFallback(word, notify, lang)) return true;
+    if (notify) showToast(NATIVE_TTS_ERROR, 'error');
+    return false;
+  }
+
   function stopPronunciation() {
     if (activeAudio) {
       try {
@@ -1276,6 +1344,17 @@
       }
       activeAudio = null;
     }
+    const bridge = nativeTtsBridge();
+    if (bridge && typeof bridge.stop === 'function') {
+      try {
+        bridge.stop();
+      } catch (error) {
+        // 忽略。
+      }
+    }
+    lastNativeTtsText = '';
+    window.clearTimeout(speechWatchdogTimer);
+    speechWatchdogTimer = 0;
     if ('speechSynthesis' in window) {
       try {
         window.speechSynthesis.cancel();
@@ -1285,20 +1364,52 @@
     }
   }
 
-  function speakFallback(word, notify) {
+  function speakFallback(word, notify, lang) {
     if (!('speechSynthesis' in window) || typeof window.SpeechSynthesisUtterance !== 'function') {
       if (notify) showToast('当前浏览器不支持语音播放。', 'error');
-      return;
+      return false;
     }
 
     try {
       window.speechSynthesis.cancel();
+      window.clearTimeout(speechWatchdogTimer);
+      speechWatchdogTimer = 0;
+
       const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'en-US';
+      utterance.lang = lang || 'en-US';
       utterance.rate = 0.88;
+
+      let started = false;
+      utterance.onstart = function () {
+        started = true;
+      };
+      utterance.onerror = function (event) {
+        if (!notify) return;
+        const reason = event && event.error;
+        // 主动 stop / 切词会以 canceled / interrupted 结束，不算故障。
+        if (reason === 'canceled' || reason === 'interrupted') return;
+        showToast(NATIVE_TTS_ERROR, 'error');
+      };
+
       window.speechSynthesis.speak(utterance);
+
+      if (notify) {
+        // 某些 ColorOS WebView 里 speechSynthesis 不报错也不出声。
+        speechWatchdogTimer = window.setTimeout(function () {
+          speechWatchdogTimer = 0;
+          if (started) return;
+          try {
+            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) return;
+          } catch (error) {
+            // 忽略。
+          }
+          showToast(NATIVE_TTS_ERROR, 'error');
+        }, 1500);
+      }
+      return true;
     } catch (error) {
       if (notify) showToast('发音播放失败，请检查网络或浏览器设置。', 'error');
+      return false;
     }
   }
 
@@ -1308,24 +1419,55 @@
     if (!text) return;
 
     const voiceType = Number(type) === 1 ? 1 : 2;
+    const lang = voiceType === 1 ? 'en-GB' : 'en-US';
     const shouldNotify = Boolean(notify);
+
+    // 明确离线：不请求有道，避免在无网络的 ColorOS WebView 里干等。
+    if (navigator.onLine === false) {
+      speakOffline(text, shouldNotify, lang);
+      return;
+    }
+
+    let fallbackUsed = false;
+    let fallbackTimer = 0;
+    let audio = null;
+    const clearFallbackTimer = function () {
+      if (fallbackTimer) {
+        window.clearTimeout(fallbackTimer);
+        fallbackTimer = 0;
+      }
+    };
+    const fallback = function () {
+      if (fallbackUsed) return;
+      fallbackUsed = true;
+      clearFallbackTimer();
+      if (audio && activeAudio !== audio) return;
+      if (audio) {
+        try {
+          audio.pause();
+          audio.removeAttribute('src');
+          audio.load();
+        } catch (error) {
+          // 忽略。
+        }
+        activeAudio = null;
+      }
+      speakOffline(text, shouldNotify, lang);
+    };
 
     try {
       // 有道词典音频；type=1 英音，type=2 美音。
       const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(text) + '&type=' + voiceType;
-      const audio = new Audio(url);
+      audio = new Audio(url);
       activeAudio = audio;
       audio.preload = 'auto';
 
-      let fallbackUsed = false;
-      const fallback = function () {
-        if (fallbackUsed) return;
-        fallbackUsed = true;
-        if (activeAudio !== audio) return;
-        speakFallback(text, shouldNotify);
-      };
-
       audio.addEventListener('error', fallback, { once: true });
+      audio.addEventListener('playing', clearFallbackTimer, { once: true });
+      audio.addEventListener('canplay', clearFallbackTimer, { once: true });
+      // 弱网下 play() 可能长时间既不 resolve 也不 reject。
+      fallbackTimer = window.setTimeout(fallback, 3000);
+
       const playPromise = audio.play();
       if (playPromise && typeof playPromise.catch === 'function') {
         playPromise.catch(function () {
@@ -1333,7 +1475,7 @@
         });
       }
     } catch (error) {
-      speakFallback(text, shouldNotify);
+      fallback();
     }
   }
 
@@ -5630,7 +5772,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.16 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.17 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 
