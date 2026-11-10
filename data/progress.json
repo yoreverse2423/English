@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-10T11:03:26+08:00",
+  "exportedAt": "2026-11-10T12:21:03+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -44,14 +44,14 @@
   },
   "stats": {
     "totalWords": 2765,
-    "learned": 39,
+    "learned": 41,
     "mastered": 1,
-    "learning": 38,
-    "dueNow": 25,
+    "learning": 40,
+    "dueNow": 29,
     "dueToday": 34,
-    "newToday": 0,
+    "newToday": 2,
     "reviewToday": 0,
-    "streakDays": 1,
+    "streakDays": 2,
     "last7Days": [
       {
         "date": "2026-11-04",
@@ -85,13 +85,13 @@
       },
       {
         "date": "2026-11-10",
-        "learned": 0,
+        "learned": 2,
         "reviewed": 0
       }
     ]
   },
   "totals": {
-    "learned": 39,
+    "learned": 41,
     "mastered": 1,
     "dueToday": 34
   },
@@ -164,6 +164,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 1,
       "nextReviewTime": "2026-11-10T12:21:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "context",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-11T11:14:28+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -464,6 +476,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 2,
       "nextReviewTime": "2026-11-11T02:40:12+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "suffer",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-11T11:16:48+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -627,6 +651,18 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "context",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-11T11:14:28+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "crack",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -922,6 +958,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 2,
       "nextReviewTime": "2026-11-11T02:40:12+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "suffer",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-11T11:16:48+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1555,6 +1603,26 @@
         "reviews": 1,
         "lapses": 0,
         "lastResult": "known"
+      },
+      "compulsory-1-u4:context": {
+        "stage": 1,
+        "nextReviewAt": 1794366868570,
+        "learnedAt": 1794280468570,
+        "lastReviewedAt": 1794280468570,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:suffer": {
+        "stage": 1,
+        "nextReviewAt": 1794367008368,
+        "learnedAt": 1794280608368,
+        "lastReviewedAt": 1794280608368,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
       }
     },
     "daily": {
@@ -1569,6 +1637,10 @@
       "2026-11-09": {
         "learned": 14,
         "reviewed": 6
+      },
+      "2026-11-10": {
+        "learned": 2,
+        "reviewed": 0
       }
     },
     "customWords": [
