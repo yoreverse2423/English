@@ -1007,7 +1007,8 @@
 
   // 每日新词数是“软目标”：每轮仍按目标数量取词，完成后可以继续。
   function getNewBatchSize() {
-    return state.settings.dailyNew > 0 ? state.settings.dailyNew : 0;
+    // 额度为 0 表示不限每日目标，仍按默认批次取一轮，便于随便学。
+    return state.settings.dailyNew > 0 ? state.settings.dailyNew : DEFAULT_SETTINGS.dailyNew;
   }
 
   function getAvailableNewCount() {
@@ -1188,8 +1189,6 @@
     if (!queue.length) {
       if (getSelectionSummary().unitCount === 0 && getActiveWords().length) {
         showToast('还没有选择学习单元，请先到「选择词书」勾选。');
-      } else if (state.settings.dailyNew === 0 && getNewWords().length) {
-        showToast('每日新词已暂停，可在设置中开启。');
       } else if (getDueWords().length) {
         showToast('新词已经学完，可以去「复习」巩固待复习的词。');
       } else {
@@ -1576,7 +1575,7 @@
     const selection = getSelectionSummary();
     const selectionEmpty = selection.unitCount === 0;
     const goalDone = dailyTarget > 0 && stats.newToday >= dailyTarget;
-    const targetText = dailyTarget > 0 ? stats.newToday + ' / ' + dailyTarget : '已暂停';
+    const targetText = dailyTarget > 0 ? stats.newToday + ' / ' + dailyTarget : '不限';
     const newProgress = dailyTarget > 0
       ? Math.min(100, Math.round((stats.newToday / dailyTarget) * 100))
       : 0;
@@ -1589,8 +1588,6 @@
       ctaText = '词库还没有单词';
     } else if (selectionEmpty) {
       ctaText = '去选择词书';
-    } else if (dailyTarget === 0) {
-      ctaText = '新词学习已暂停';
     } else if (availableNew > 0 && goalDone) {
       ctaText = '继续学新词';
     } else if (availableNew > 0) {
@@ -1608,8 +1605,6 @@
       helperText = '状态不错，趁现在认识 ' + availableNew + ' 个新词。';
     } else if (due > 0) {
       helperText = '新词已经学完，去「复习」巩固 ' + due + ' 个到期词。';
-    } else if (dailyTarget === 0 && stats.newCount > 0) {
-      helperText = '每日新词已暂停，可去设置里恢复学习新词。';
     } else if (nextReviewAt) {
       helperText = '今天的任务完成了，' + formatRelativeTime(nextReviewAt - Date.now()) + '会有新的复习。';
     } else if (stats.newCount > 0) {
@@ -1670,15 +1665,15 @@
             '</div>' +
             '<div class="hero-divider" aria-hidden="true"></div>' +
             '<div class="hero-stat">' +
-              '<span class="hero-number">' + availableNew + '</span><span class="hero-unit">个</span>' +
-              '<span class="hero-label">可学新词</span>' +
+              '<span class="hero-number">' + stats.learned + '</span><span class="hero-unit">个</span>' +
+              '<span class="hero-label">已学习</span>' +
             '</div>' +
           '</div>' +
           '<p class="hero-copy">' + escapeHtml(helperText) + '</p>' +
           ctaHtml +
           reviewCtaHtml +
           '<div class="hero-foot">' +
-            '<span>' + (dailyTarget > 0 ? '今日新词 ' + stats.newToday + ' / ' + dailyTarget : '今日新词已暂停') + '</span>' +
+            '<span>' + (dailyTarget > 0 ? '今日新词 ' + stats.newToday + ' / ' + dailyTarget : '不限每日词数') + '</span>' +
             '<span>目标可超额完成 · 复习单独进行</span>' +
           '</div>' +
         '</section>' +
@@ -1927,9 +1922,24 @@
 
     const card = session.queue[0] || null;
     const hasCard = Boolean(card);
-    const progressPercent = session.total > 0
-      ? Math.round((session.done / session.total) * 100)
-      : 100;
+    const dailyTarget = state.settings.dailyNew;
+    const newToday = getNewTodayCount();
+    let progressScale = 0;
+    let goalPercent = 0;
+    let extraPercent = 0;
+    if (dailyTarget > 0) {
+      const extra = Math.max(0, newToday - dailyTarget);
+      progressScale = dailyTarget + extra;
+      goalPercent = (Math.min(newToday, dailyTarget) / progressScale) * 100;
+      extraPercent = (extra / progressScale) * 100;
+    } else {
+      progressScale = Math.max(newToday, DEFAULT_SETTINGS.dailyNew);
+      goalPercent = 0;
+      extraPercent = progressScale > 0 ? (newToday / progressScale) * 100 : 0;
+    }
+    const progressText = dailyTarget > 0
+      ? '<strong>' + newToday + ' / ' + dailyTarget + '</strong> 今日已学'
+      : '今日已学 <strong>' + newToday + '</strong> 个';
     let rightLabel = '完成';
     if (card) {
       const meta = getCardMeta(card);
@@ -1942,8 +1952,8 @@
         '<header class="study-topbar">' +
           '<button class="icon-button study-back" type="button" data-action="exit-study" aria-label="退出学习，返回首页">' + icon('arrow-left', 20) + '</button>' +
           '<div class="study-progress">' +
-            '<div class="study-progress-copy"><span><strong>' + session.done + ' / ' + session.total + '</strong> 已完成</span><span>' + escapeHtml(rightLabel) + '</span></div>' +
-            '<div class="study-progress-track" role="progressbar" aria-label="本轮学习进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + progressPercent + '"><span class="study-progress-fill" style="width:' + progressPercent + '%"></span></div>' +
+            '<div class="study-progress-copy"><span>' + progressText + '</span><span>' + escapeHtml(rightLabel) + '</span></div>' +
+            '<div class="study-progress-track is-daily" role="progressbar" aria-label="今日新词进度" aria-valuemin="0" aria-valuemax="' + progressScale + '" aria-valuenow="' + newToday + '"><span class="study-progress-fill is-goal" style="width:' + goalPercent + '%"></span><span class="study-progress-fill is-extra" style="width:' + extraPercent + '%"></span></div>' +
           '</div>' +
         '</header>' +
         (hasCard ? studyCardHtml(card) : summaryHtml()) +
@@ -4469,27 +4479,29 @@
 
     return (
       '<div class="reading-sheet synonym-sheet" role="dialog" aria-modal="false" aria-label="同义词释义">' +
-        '<div class="reading-sheet-card">' +
-          '<div class="reading-sheet-top">' +
-            '<div>' +
-              '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
-              (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+        '<div class="reading-sheet-frame">' +
+          '<div class="reading-sheet-card">' +
+            '<div class="reading-sheet-top">' +
+              '<div>' +
+                '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
+                (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+              '</div>' +
             '</div>' +
-            '<button class="icon-button" type="button" data-action="close-synonym" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
+            (isLemma
+              ? '<p class="reading-sheet-lemma">同义词 ' + escapeHtml(spelling) + ' · 原形 ' + escapeHtml(head) + '</p>'
+              : '') +
+            '<p class="reading-sheet-def">' +
+              (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+              escapeHtml(word && word.cn ? word.cn : '词库暂无') +
+            '</p>' +
+            formsLineHtml(word) +
+            synonymListHtml(word, 'overlay') +
+            '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
+              icon('speaker', 15) + '<span>发音</span>' +
+            '</button>' +
+            reviewAction +
           '</div>' +
-          (isLemma
-            ? '<p class="reading-sheet-lemma">同义词 ' + escapeHtml(spelling) + ' · 原形 ' + escapeHtml(head) + '</p>'
-            : '') +
-          '<p class="reading-sheet-def">' +
-            (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
-            escapeHtml(word && word.cn ? word.cn : '词库暂无') +
-          '</p>' +
-          formsLineHtml(word) +
-          synonymListHtml(word, 'overlay') +
-          '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
-            icon('speaker', 15) + '<span>发音</span>' +
-          '</button>' +
-          reviewAction +
+          '<button class="reading-sheet-close" type="button" data-action="close-synonym" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
         '</div>' +
       '</div>'
     );
@@ -4556,27 +4568,29 @@
 
     return (
       '<div class="reading-sheet bot-word-sheet" role="dialog" aria-modal="false" aria-label="单词释义">' +
-        '<div class="reading-sheet-card">' +
-          '<div class="reading-sheet-top">' +
-            '<div>' +
-              '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
-              (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+        '<div class="reading-sheet-frame">' +
+          '<div class="reading-sheet-card">' +
+            '<div class="reading-sheet-top">' +
+              '<div>' +
+                '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
+                (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+              '</div>' +
             '</div>' +
-            '<button class="icon-button" type="button" data-action="bot-word-close" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
+            (isLemma
+              ? '<p class="reading-sheet-lemma">原文 ' + escapeHtml(spelling) + ' · 原形 ' + escapeHtml(head) + '</p>'
+              : '') +
+            '<p class="reading-sheet-def">' +
+              (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+              escapeHtml(word && word.cn ? word.cn : '词库暂无') +
+            '</p>' +
+            formsLineHtml(word) +
+            synonymListHtml(word, 'bot') +
+            '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
+              icon('speaker', 15) + '<span>发音</span>' +
+            '</button>' +
+            reviewAction +
           '</div>' +
-          (isLemma
-            ? '<p class="reading-sheet-lemma">原文 ' + escapeHtml(spelling) + ' · 原形 ' + escapeHtml(head) + '</p>'
-            : '') +
-          '<p class="reading-sheet-def">' +
-            (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
-            escapeHtml(word && word.cn ? word.cn : '词库暂无') +
-          '</p>' +
-          formsLineHtml(word) +
-          synonymListHtml(word, 'bot') +
-          '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
-            icon('speaker', 15) + '<span>发音</span>' +
-          '</button>' +
-          reviewAction +
+          '<button class="reading-sheet-close" type="button" data-action="bot-word-close" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
         '</div>' +
       '</div>'
     );
@@ -5750,27 +5764,29 @@
 
     return (
       '<div class="reading-sheet" role="dialog" aria-modal="false" aria-label="单词释义">' +
-        '<div class="reading-sheet-card">' +
-          '<div class="reading-sheet-top">' +
-            '<div>' +
-              '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
-              (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+        '<div class="reading-sheet-frame">' +
+          '<div class="reading-sheet-card">' +
+            '<div class="reading-sheet-top">' +
+              '<div>' +
+                '<h3 class="reading-sheet-word">' + escapeHtml(head) + freqTagHtml(word) + '</h3>' +
+                (phonetic ? '<p class="reading-sheet-ph">' + escapeHtml(phonetic) + '</p>' : '') +
+              '</div>' +
             '</div>' +
-            '<button class="icon-button" type="button" data-action="close-reading-word" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
+            (isLemma
+              ? '<p class="reading-sheet-lemma">原文 ' + escapeHtml(readingLookup) + ' · 原形 ' + escapeHtml(head) + '</p>'
+              : '') +
+            '<p class="reading-sheet-def">' +
+              (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
+              escapeHtml(word && word.cn ? word.cn : '词库暂无') +
+            '</p>' +
+            formsLineHtml(word) +
+            synonymListHtml(word, 'reading') +
+            '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
+              icon('speaker', 15) + '<span>发音</span>' +
+            '</button>' +
+            reviewAction +
           '</div>' +
-          (isLemma
-            ? '<p class="reading-sheet-lemma">原文 ' + escapeHtml(readingLookup) + ' · 原形 ' + escapeHtml(head) + '</p>'
-            : '') +
-          '<p class="reading-sheet-def">' +
-            (word && word.pos ? '<span class="pos-pill">' + escapeHtml(word.pos) + '</span>' : '') +
-            escapeHtml(word && word.cn ? word.cn : '词库暂无') +
-          '</p>' +
-          formsLineHtml(word) +
-          synonymListHtml(word, 'reading') +
-          '<button class="audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(head) + '" aria-label="播放 ' + escapeAttr(head) + ' 的发音">' +
-            icon('speaker', 15) + '<span>发音</span>' +
-          '</button>' +
-          reviewAction +
+          '<button class="reading-sheet-close" type="button" data-action="close-reading-word" aria-label="关闭释义">' + icon('close', 16) + '</button>' +
         '</div>' +
       '</div>'
     );
@@ -6140,7 +6156,7 @@
           '<div class="setting-row">' +
             '<div class="setting-copy">' +
               '<span class="setting-title">每日新词</span>' +
-              '<p class="setting-desc">设为 0 可以暂停学习新词，只做复习。</p>' +
+              '<p class="setting-desc">设为 0 表示不限每日额度，可随意学新词；大于 0 是每日目标，达标后仍可继续。</p>' +
             '</div>' +
             '<label class="number-field">' +
               '<input class="number-input" id="daily-new-input" type="number" inputmode="numeric" min="0" max="' + MAX_DAILY_NEW + '" step="1" value="' + dailyNew + '" aria-label="每日新词数量">' +
@@ -6179,7 +6195,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.19 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.20 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 

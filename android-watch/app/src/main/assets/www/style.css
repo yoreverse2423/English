@@ -1036,6 +1036,20 @@ select:focus-visible,
   transition: width 300ms ease;
 }
 
+.study-progress-track.is-daily {
+  display: flex;
+}
+
+.study-progress-track.is-daily .study-progress-fill {
+  flex: 0 0 auto;
+  height: 100%;
+  border-radius: 0;
+}
+
+.study-progress-track.is-daily .study-progress-fill.is-extra {
+  background: var(--danger);
+}
+
 .study-main {
   display: flex;
   flex: 1 1 auto;
@@ -4162,19 +4176,64 @@ select:focus-visible,
 .reading-sheet {
   position: fixed;
   z-index: 40;
+  top: 12px;
   right: 12px;
   bottom: calc(86px + env(safe-area-inset-bottom));
   left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.app.is-studying .reading-sheet,
+.app.is-reviewing .reading-sheet {
+  bottom: calc(8px + env(safe-area-inset-bottom));
+}
+
+.reading-sheet-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 720px;
+  max-height: 100%;
+  min-height: 0;
+  pointer-events: auto;
 }
 
 .reading-sheet-card {
-  max-width: 720px;
-  margin: 0 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  max-height: calc(100% - 35px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 14px 14px 16px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 18px;
   box-shadow: var(--shadow-card);
+}
+
+.reading-sheet-close {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-top: -1px;
+  padding: 0;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.reading-sheet-close:active {
+  color: var(--ink);
 }
 
 .reading-sheet-top {
@@ -4965,6 +5024,33 @@ select:focus-visible,
 
   .review-browse-cn {
     font-size: 13px;
+  }
+
+  .reading-sheet {
+    top: 6px;
+    right: 6px;
+    bottom: calc(78px + env(safe-area-inset-bottom));
+    left: 6px;
+  }
+
+  .app.is-studying .reading-sheet,
+  .app.is-reviewing .reading-sheet {
+    bottom: calc(6px + env(safe-area-inset-bottom));
+  }
+
+  .reading-sheet-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 10px 12px;
+  }
+
+  .reading-sheet-word {
+    font-size: 18px;
+  }
+
+  .reading-sheet-close {
+    width: 28px;
+    height: 28px;
   }
 }
 
