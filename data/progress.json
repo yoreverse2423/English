@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-09T18:25:57+08:00",
+  "exportedAt": "2026-11-10T11:03:26+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -9,6 +9,10 @@
       {
         "id": "compulsory-1",
         "name": "必修第一册"
+      },
+      {
+        "id": "optional-4",
+        "name": "选择性必修第四册"
       }
     ],
     "units": [
@@ -17,25 +21,38 @@
         "title": "Unit 4 Natural Disasters",
         "bookId": "compulsory-1",
         "book": "必修第一册"
+      },
+      {
+        "id": "compulsory-1-u5",
+        "title": "Unit 5 Languages Around the World",
+        "bookId": "compulsory-1",
+        "book": "必修第一册"
+      },
+      {
+        "id": "optional-4-u3",
+        "title": "Unit 4 Sharing",
+        "bookId": "optional-4",
+        "book": "选择性必修第四册"
+      },
+      {
+        "id": "optional-4-u4",
+        "title": "Unit 5 Launching Your Career",
+        "bookId": "optional-4",
+        "book": "选择性必修第四册"
       }
     ]
   },
   "stats": {
     "totalWords": 2765,
-    "learned": 36,
+    "learned": 39,
     "mastered": 1,
-    "learning": 35,
-    "dueNow": 24,
-    "dueToday": 24,
-    "newToday": 11,
-    "reviewToday": 6,
+    "learning": 38,
+    "dueNow": 25,
+    "dueToday": 34,
+    "newToday": 0,
+    "reviewToday": 0,
     "streakDays": 1,
     "last7Days": [
-      {
-        "date": "2026-11-03",
-        "learned": 0,
-        "reviewed": 0
-      },
       {
         "date": "2026-11-04",
         "learned": 0,
@@ -63,15 +80,20 @@
       },
       {
         "date": "2026-11-09",
-        "learned": 11,
+        "learned": 14,
         "reviewed": 6
+      },
+      {
+        "date": "2026-11-10",
+        "learned": 0,
+        "reviewed": 0
       }
     ]
   },
   "totals": {
-    "learned": 36,
+    "learned": 39,
     "mastered": 1,
-    "dueToday": 24
+    "dueToday": 34
   },
   "words": [
     {
@@ -214,6 +236,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 2,
       "nextReviewTime": "2026-11-11T02:39:49+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "effort",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-10T22:39:32+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -471,6 +505,18 @@
       "lastResultLabel": "不认识"
     },
     {
+      "word": "unify",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-09T22:44:38+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "volcanic eruption",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -478,6 +524,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 1,
       "nextReviewTime": "2026-11-05T13:05:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "wisdom",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-10T22:40:04+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -641,6 +699,18 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "effort",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-10T22:39:32+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "electricity",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -893,6 +963,18 @@
       "lastResultLabel": "不认识"
     },
     {
+      "word": "unify",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-09T22:44:38+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "volcanic eruption",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -900,6 +982,18 @@
       "unitId": "compulsory-1-u4",
       "stage": 1,
       "nextReviewTime": "2026-11-05T13:05:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "wisdom",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 1,
+      "nextReviewTime": "2026-11-10T22:40:04+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1049,6 +1143,18 @@
       "wrongCount": 1,
       "lastResult": "unknown",
       "lastResultLabel": "不认识"
+    },
+    {
+      "word": "unify",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-09T22:44:38+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
     }
   ],
   "reading": null,
@@ -1419,6 +1525,36 @@
         "reviews": 1,
         "lapses": 0,
         "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:effort": {
+        "stage": 1,
+        "nextReviewAt": 1794321572899,
+        "learnedAt": 1794235172899,
+        "lastReviewedAt": 1794235172899,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u4:unify": {
+        "stage": 0,
+        "nextReviewAt": 1794235478836,
+        "learnedAt": 1794235178836,
+        "lastReviewedAt": 1794235178836,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u4:wisdom": {
+        "stage": 1,
+        "nextReviewAt": 1794321604798,
+        "learnedAt": 1794235204798,
+        "lastReviewedAt": 1794235204798,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
       }
     },
     "daily": {
@@ -1431,7 +1567,7 @@
         "reviewed": 0
       },
       "2026-11-09": {
-        "learned": 11,
+        "learned": 14,
         "reviewed": 6
       }
     },
@@ -7633,7 +7769,10 @@
       }
     ],
     "selectedUnits": [
-      "compulsory-1-u4"
+      "compulsory-1-u4",
+      "compulsory-1-u5",
+      "optional-4-u3",
+      "optional-4-u4"
     ]
   }
 }
