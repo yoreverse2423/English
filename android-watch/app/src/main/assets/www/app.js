@@ -91,6 +91,9 @@
   const CUSTOM_BOOK_NAME = '自定义';
   const CUSTOM_UNIT_ID = 'custom-unit';
   const CUSTOM_UNIT_TITLE = '自定义词';
+  // 人名地名等专有名词独立成册，词表可浏览，但不出现在「勾选单元生词」里。
+  const PROPER_BOOK_ID = 'proper-nouns';
+  const PROPER_UNIT_ID = 'proper-nouns-u0';
   // 未保存过选择时的默认单元：必修第一册 Welcome Unit。
   const DEFAULT_UNIT_ID = 'compulsory-1-u0';
 
@@ -650,13 +653,32 @@
     return result;
   }
 
+  function getHiddenPickerUnitIds() {
+    const ids = new Set();
+    const books = Array.isArray(window.BOOKS) ? window.BOOKS : [];
+    ids.add(PROPER_BOOK_ID);
+    ids.add(PROPER_UNIT_ID);
+    books.forEach(function (rawBook) {
+      if (!rawBook || typeof rawBook !== 'object' || !rawBook.hiddenFromPicker) return;
+      const bookId = toText(rawBook.id);
+      if (bookId) ids.add(bookId);
+      (Array.isArray(rawBook.units) ? rawBook.units : []).forEach(function (rawUnit) {
+        if (!rawUnit || typeof rawUnit !== 'object') return;
+        const unitId = toText(rawUnit.id);
+        if (unitId) ids.add(unitId);
+      });
+    });
+    return ids;
+  }
+
   function sanitizeSelectedUnits(raw) {
     if (!Array.isArray(raw)) return null;
     const result = [];
     const seen = new Set();
+    const hiddenUnitIds = getHiddenPickerUnitIds();
     raw.forEach(function (item) {
       const id = toText(item);
-      if (!id || seen.has(id)) return;
+      if (!id || seen.has(id) || hiddenUnitIds.has(id)) return;
       seen.add(id);
       result.push(id);
     });
@@ -803,7 +825,8 @@
         id: id,
         name: toText(rawBook.name) || id,
         units: units,
-        isCustom: false
+        isCustom: false,
+        hiddenFromPicker: Boolean(rawBook.hiddenFromPicker)
       });
     });
 
@@ -816,16 +839,23 @@
           title: CUSTOM_UNIT_TITLE,
           n: state.customWords.length
         }],
-        isCustom: true
+        isCustom: true,
+        hiddenFromPicker: false
       });
     }
 
     return books;
   }
 
+  function getSelectableBooks() {
+    return getBooks().filter(function (book) {
+      return !book.hiddenFromPicker;
+    });
+  }
+
   function getDefaultSelectedUnits() {
     const allUnitIds = [];
-    getBooks().forEach(function (book) {
+    getSelectableBooks().forEach(function (book) {
       book.units.forEach(function (unit) {
         allUnitIds.push(unit.id);
       });
@@ -836,9 +866,13 @@
 
   // selectedUnits 为 null 时沿用默认选择（必修第一册 Welcome Unit）。
   function getSelectedUnits() {
-    return Array.isArray(state.selectedUnits)
+    const hiddenUnitIds = getHiddenPickerUnitIds();
+    const raw = Array.isArray(state.selectedUnits)
       ? state.selectedUnits.slice()
       : getDefaultSelectedUnits();
+    return raw.filter(function (id) {
+      return !hiddenUnitIds.has(id);
+    });
   }
 
   function getSelectedUnitSet() {
@@ -3483,7 +3517,7 @@
   }
 
   function renderBooks() {
-    const books = getBooks();
+    const books = getSelectableBooks();
     const expanded = ensureExpandedBooks();
     const selected = getSelectedUnitSet();
 
@@ -6195,7 +6229,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.20 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.21 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 
