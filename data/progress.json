@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-12T09:11:58+08:00",
+  "exportedAt": "2026-11-12T22:59:18+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -13,6 +13,10 @@
       {
         "id": "optional-4",
         "name": "选择性必修第四册"
+      },
+      {
+        "id": "custom",
+        "name": "自定义"
       }
     ],
     "units": [
@@ -39,19 +43,25 @@
         "title": "Unit 5 Launching Your Career",
         "bookId": "optional-4",
         "book": "选择性必修第四册"
+      },
+      {
+        "id": "custom-unit",
+        "title": "自定义词",
+        "bookId": "custom",
+        "book": "自定义"
       }
     ]
   },
   "stats": {
-    "totalWords": 2765,
-    "learned": 78,
+    "totalWords": 2767,
+    "learned": 94,
     "mastered": 4,
-    "learning": 74,
-    "dueNow": 70,
-    "dueToday": 74,
-    "newToday": 0,
+    "learning": 90,
+    "dueNow": 82,
+    "dueToday": 82,
+    "newToday": 16,
     "reviewToday": 0,
-    "streakDays": 3,
+    "streakDays": 4,
     "last7Days": [
       {
         "date": "2026-11-06",
@@ -85,15 +95,15 @@
       },
       {
         "date": "2026-11-12",
-        "learned": 0,
+        "learned": 12,
         "reviewed": 0
       }
     ]
   },
   "totals": {
-    "learned": 78,
+    "learned": 94,
     "mastered": 4,
-    "dueToday": 74
+    "dueToday": 82
   },
   "words": [
     {
@@ -104,6 +114,18 @@
       "unitId": "compulsory-3-u0",
       "stage": 0,
       "nextReviewTime": "2026-11-06T14:10:16+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "in spite of",
+      "book": "必修第三册",
+      "bookId": "compulsory-3",
+      "unit": "Unit 1 Festivals and Celebrations",
+      "unitId": "compulsory-3-u0",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T09:21:41+08:00",
       "wrongCount": 0,
       "lastResult": null,
       "lastResultLabel": ""
@@ -925,6 +947,18 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "base",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T12:22:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "billion",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -932,6 +966,66 @@
       "unitId": "compulsory-1-u5",
       "stage": 1,
       "nextReviewTime": "2026-11-12T15:39:45+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "bone",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:24+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "date back",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:11+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "date back to ...",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "despite",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:17:05+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "factor",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T12:20:58+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -949,6 +1043,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "refer",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:13:04+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "refer to",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:13:20+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "reference",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -956,6 +1074,54 @@
       "unitId": "compulsory-1-u5",
       "stage": 1,
       "nextReviewTime": "2026-11-12T22:36:34+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "shell",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T14:37:37+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
+    },
+    {
+      "word": "symbol",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T19:20:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "system",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:14:52+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "ups and downs",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T12:19:52+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1009,6 +1175,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "structure",
+      "book": "选择性必修第一册",
+      "bookId": "optional-1",
+      "unit": "Unit 1 People of Achievement",
+      "unitId": "optional-1-u0",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T09:19:49+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "attend",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T21:02:50+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
       "word": "community",
       "book": "自定义",
       "bookId": "custom",
@@ -1016,6 +1206,18 @@
       "unitId": "custom-unit",
       "stage": 0,
       "nextReviewTime": "2026-11-06T14:09:52+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "leave",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T19:17:42+08:00",
       "wrongCount": 0,
       "lastResult": null,
       "lastResultLabel": ""
@@ -1042,6 +1244,18 @@
       "unitId": "compulsory-3-u0",
       "stage": 0,
       "nextReviewTime": "2026-11-06T14:10:16+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "in spite of",
+      "book": "必修第三册",
+      "bookId": "compulsory-3",
+      "unit": "Unit 1 Festivals and Celebrations",
+      "unitId": "compulsory-3-u0",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T09:21:41+08:00",
       "wrongCount": 0,
       "lastResult": null,
       "lastResultLabel": ""
@@ -1851,6 +2065,18 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "base",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T12:22:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "billion",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -1858,6 +2084,66 @@
       "unitId": "compulsory-1-u5",
       "stage": 1,
       "nextReviewTime": "2026-11-12T15:39:45+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "bone",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:24+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "date back",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:11+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "date back to ...",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "despite",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:17:05+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "factor",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T12:20:58+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1875,6 +2161,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "refer",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:13:04+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "refer to",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:13:20+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "reference",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -1882,6 +2192,54 @@
       "unitId": "compulsory-1-u5",
       "stage": 1,
       "nextReviewTime": "2026-11-12T22:36:34+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "shell",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T14:37:37+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
+    },
+    {
+      "word": "symbol",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T19:20:25+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "system",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T09:14:52+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "ups and downs",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T12:19:52+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1899,6 +2257,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "structure",
+      "book": "选择性必修第一册",
+      "bookId": "optional-1",
+      "unit": "Unit 1 People of Achievement",
+      "unitId": "optional-1-u0",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T09:19:49+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "attend",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T21:02:50+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
       "word": "community",
       "book": "自定义",
       "bookId": "custom",
@@ -1906,6 +2288,18 @@
       "unitId": "custom-unit",
       "stage": 0,
       "nextReviewTime": "2026-11-06T14:09:52+08:00",
+      "wrongCount": 0,
+      "lastResult": null,
+      "lastResultLabel": ""
+    },
+    {
+      "word": "leave",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T19:17:42+08:00",
       "wrongCount": 0,
       "lastResult": null,
       "lastResultLabel": ""
@@ -2115,6 +2509,54 @@
       "wrongCount": 0,
       "lastResult": "fuzzy",
       "lastResultLabel": "模糊"
+    },
+    {
+      "word": "bone",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:24+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "date back",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:11+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "date back to ...",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T12:45:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "shell",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T14:37:37+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     }
   ],
   "reading": null,
@@ -2905,6 +3347,166 @@
         "reviews": 1,
         "lapses": 0,
         "lastResult": "known"
+      },
+      "compulsory-1-u5:refer": {
+        "stage": 1,
+        "nextReviewAt": 1794532384027,
+        "learnedAt": 1794445984027,
+        "lastReviewedAt": 1794445984027,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:refer to": {
+        "stage": 1,
+        "nextReviewAt": 1794532400299,
+        "learnedAt": 1794446000299,
+        "lastReviewedAt": 1794446000299,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "optional-1-u0:structure": {
+        "stage": 0,
+        "nextReviewAt": 1794446389848,
+        "learnedAt": 1794446089848,
+        "lastReviewedAt": 0,
+        "masteredAt": null,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": null
+      },
+      "compulsory-1-u5:system": {
+        "stage": 1,
+        "nextReviewAt": 1794532492506,
+        "learnedAt": 1794446092506,
+        "lastReviewedAt": 1794446092506,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-3-u0:in spite of": {
+        "stage": 0,
+        "nextReviewAt": 1794446501044,
+        "learnedAt": 1794446201044,
+        "lastReviewedAt": 0,
+        "masteredAt": null,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": null
+      },
+      "compulsory-1-u5:despite": {
+        "stage": 1,
+        "nextReviewAt": 1794532625023,
+        "learnedAt": 1794446225023,
+        "lastReviewedAt": 1794446225023,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:ups and downs": {
+        "stage": 1,
+        "nextReviewAt": 1794543592226,
+        "learnedAt": 1794457192226,
+        "lastReviewedAt": 1794457192226,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:factor": {
+        "stage": 1,
+        "nextReviewAt": 1794543658958,
+        "learnedAt": 1794457258958,
+        "lastReviewedAt": 1794457258958,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:base": {
+        "stage": 1,
+        "nextReviewAt": 1794543735006,
+        "learnedAt": 1794457335006,
+        "lastReviewedAt": 1794457335006,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:date back": {
+        "stage": 0,
+        "nextReviewAt": 1794458711223,
+        "learnedAt": 1794458411223,
+        "lastReviewedAt": 1794458411223,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u5:date back to ...": {
+        "stage": 0,
+        "nextReviewAt": 1794458715388,
+        "learnedAt": 1794458415388,
+        "lastReviewedAt": 1794458415388,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u5:bone": {
+        "stage": 0,
+        "nextReviewAt": 1794458724713,
+        "learnedAt": 1794458424713,
+        "lastReviewedAt": 1794458424713,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u5:shell": {
+        "stage": 0,
+        "nextReviewAt": 1794465457853,
+        "learnedAt": 1794465157853,
+        "lastReviewedAt": 1794465157853,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 1,
+        "lastResult": "unknown"
+      },
+      "custom:leave": {
+        "stage": 0,
+        "nextReviewAt": 1794482262977,
+        "learnedAt": 1794481962977,
+        "lastReviewedAt": 0,
+        "masteredAt": null,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": null
+      },
+      "compulsory-1-u5:symbol": {
+        "stage": 1,
+        "nextReviewAt": 1794568825648,
+        "learnedAt": 1794482425648,
+        "lastReviewedAt": 1794482425648,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "custom:attend": {
+        "stage": 0,
+        "nextReviewAt": 1794488570688,
+        "learnedAt": 1794488270688,
+        "lastReviewedAt": 0,
+        "masteredAt": null,
+        "reviews": 0,
+        "lapses": 0,
+        "lastResult": null
       }
     },
     "daily": {
@@ -2926,6 +3528,10 @@
       },
       "2026-11-11": {
         "learned": 4,
+        "reviewed": 0
+      },
+      "2026-11-12": {
+        "learned": 12,
         "reviewed": 0
       }
     },
@@ -9124,13 +9730,231 @@
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
+      },
+      {
+        "id": "custom:leave",
+        "w": "leave",
+        "ph": "/liːv/",
+        "pos": "v. / n.",
+        "cn": "v. 离开；留下；遗忘；n. 休假；许可",
+        "col": [
+          {
+            "en": "leave for",
+            "cn": "动身前往"
+          },
+          {
+            "en": "leave behind",
+            "cn": "留下；遗忘"
+          },
+          {
+            "en": "leave out",
+            "cn": "遗漏；省略"
+          }
+        ],
+        "ex": {
+          "en": "She decided to leave early to catch the last bus.",
+          "cn": "她决定早点离开去赶末班车。"
+        },
+        "forms": [
+          {
+            "w": "leaves",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "left",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "leaving",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "leave",
+            "leaves"
+          ],
+          "v": [
+            "leave",
+            "leaves",
+            "left",
+            "leaving"
+          ],
+          "adj": [
+            "left"
+          ],
+          "adv": []
+        },
+        "freq": "高",
+        "syn": [
+          {
+            "w": "depart",
+            "note": "较正式，指离开"
+          },
+          {
+            "w": "quit",
+            "note": "指离职或停止"
+          },
+          {
+            "w": "abandon",
+            "note": "强调抛弃"
+          },
+          {
+            "w": "forget",
+            "note": "指遗忘物品"
+          }
+        ],
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
+      },
+      {
+        "id": "custom:attend",
+        "w": "attend",
+        "ph": "/əˈtend/",
+        "pos": "v.",
+        "cn": "出席；参加；上（学）；照料；护理",
+        "col": [
+          {
+            "en": "attend a meeting",
+            "cn": "出席会议"
+          },
+          {
+            "en": "attend school",
+            "cn": "上学"
+          },
+          {
+            "en": "attend to sb/sth",
+            "cn": "照料某人/处理某事"
+          }
+        ],
+        "ex": {
+          "en": "More than two hundred parents attended the meeting held in the school hall last Friday.",
+          "cn": "上周五，两百多位家长出席了在学校礼堂举行的会议。"
+        },
+        "forms": [
+          {
+            "w": "attendance",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attendant",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attention",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attentiveness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attends",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attended",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attending",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attentive",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "inattentive",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "attentively",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "inattentively",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          }
+        ],
+        "wf": {
+          "n": [
+            "attendance",
+            "attendant",
+            "attention",
+            "attentiveness"
+          ],
+          "v": [
+            "attend",
+            "attends",
+            "attended",
+            "attending"
+          ],
+          "adj": [
+            "attendant",
+            "attentive",
+            "inattentive"
+          ],
+          "adv": [
+            "attentively",
+            "inattentively"
+          ]
+        },
+        "freq": "高",
+        "syn": [
+          {
+            "w": "join",
+            "note": "参加活动"
+          },
+          {
+            "w": "present",
+            "note": "adj. 到场"
+          },
+          {
+            "w": "serve",
+            "note": "照料、服务"
+          }
+        ],
+        "tag": "自定义",
+        "book": "custom",
+        "unit": "custom-unit"
       }
     ],
     "selectedUnits": [
       "compulsory-1-u4",
       "compulsory-1-u5",
       "optional-4-u3",
-      "optional-4-u4"
+      "optional-4-u4",
+      "custom-unit"
     ]
   }
 }
