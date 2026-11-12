@@ -187,6 +187,10 @@
   let customWordDraft = null;
   let customWordGenBusy = false;
   let customWordGenError = '';
+  // 同义词/阅读弹窗里「生成并加入词库」的状态。
+  let sheetGenBusy = false;
+  let sheetGenError = '';
+  let sheetGenSpelling = '';
   // 阅读生词补全的后台状态；不阻塞文章显示。
   let readingEnrichBusy = false;
   let readingEnrichPassage = '';
@@ -2133,19 +2137,22 @@
     let hintCount = 0;
     if (letterPositions.length > 1) {
       hintCount = clamp(Math.round(letterPositions.length * 0.35), 1, letterPositions.length - 1);
+      // 提示必须包含首个字母，其余仍用稳定哈希从剩下位置里选。
+      hints.add(letterPositions[0]);
+      const remainingHintCount = Math.max(0, hintCount - 1);
+      if (remainingHintCount > 0) {
+        const seed = hashText(word.key || word.w);
+        const ranked = letterPositions.slice(1).map(function (index) {
+          const vowelBonus = /[aeiou]/i.test(chars[index]) ? -0.16 : 0;
+          return { index: index, score: seededFraction(seed, index) + vowelBonus };
+        }).sort(function (a, b) {
+          return (a.score - b.score) || (a.index - b.index);
+        });
+        ranked.slice(0, remainingHintCount).forEach(function (item) {
+          hints.add(item.index);
+        });
+      }
     }
-
-    // 使用稳定的词条哈希挑选提示位，并略微优先元音，刷新后提示位置不变。
-    const seed = hashText(word.key || word.w);
-    const ranked = letterPositions.map(function (index) {
-      const vowelBonus = /[aeiou]/i.test(chars[index]) ? -0.16 : 0;
-      return { index: index, score: seededFraction(seed, index) + vowelBonus };
-    }).sort(function (a, b) {
-      return (a.score - b.score) || (a.index - b.index);
-    });
-    ranked.slice(0, hintCount).forEach(function (item) {
-      hints.add(item.index);
-    });
 
     const values = {};
     chars.forEach(function (char, index) {
@@ -2651,6 +2658,9 @@
         '<p class="review-prompt-label">根据释义拼出单词</p>' +
         '<p class="review-prompt-word is-meaning">' + escapeHtml(word.cn || '暂无释义') + '</p>' +
         (subText ? '<p class="review-prompt-sub">' + escapeHtml(subText) + '</p>' : '') +
+        '<button class="audio-pill spell-audio-pill" type="button" data-speak="2" data-word="' + escapeAttr(word.w) + '" aria-label="播放 ' + escapeAttr(word.w) + ' 的发音">' +
+          icon('speaker', 15) + '<span>发音</span>' +
+        '</button>' +
       '</div>' +
       '<div class="spell-boxes" style="--letter-count:' + cardState.chars.length + '" role="group" aria-label="拼写单词">' +
         boxes +
@@ -4489,6 +4499,64 @@
     return root;
   }
 
+  function missingWordGenerateHtml(spelling) {
+    const wordAttr = escapeAttr(spelling);
+    const active = sheetGenBusy && wordKey(sheetGenSpelling) === wordKey(spelling);
+    const sameError = sheetGenError && wordKey(sheetGenSpelling) === wordKey(spelling);
+    return (
+      (sameError ? '<p class="reading-sheet-status">' + escapeHtml(sheetGenError) + '</p>' : '') +
+      '<button class="btn btn-primary btn-block reading-sheet-add" type="button" data-action="generate-sheet-word" data-word="' +
+        wordAttr + '"' + (active ? ' disabled' : '') + '>' +
+        icon('sparkle', 17) + (active ? '生成中…' : '用 DeepSeek 生成并加入词库') +
+      '</button>'
+    );
+  }
+
+  function refreshOpenWordSheets() {
+    if (synonymLookup) refreshSynonymSheet();
+    if (readingLookup && views.reading) renderReading();
+  }
+
+  function generateSheetWord(spelling) {
+    const word = toText(spelling);
+    if (!word || sheetGenBusy) return;
+    if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+      showToast('需要联网才能用 DeepSeek 生成。', 'error');
+      return;
+    }
+    if (!readDeepseekKey()) {
+      showToast('请先在设置里保存 DeepSeek API Key。', 'error');
+      return;
+    }
+
+    sheetGenBusy = true;
+    sheetGenError = '';
+    sheetGenSpelling = word;
+    refreshOpenWordSheets();
+
+    requestDeepseekCustomWord(word).then(function (generated) {
+      const added = addEnrichedCustomWords([generated]);
+      sheetGenBusy = false;
+      if (added) {
+        sheetGenError = '';
+        const fromReading = Boolean(readingLookup && wordKey(readingLookup) === wordKey(word));
+        showToast(fromReading ? '已加入词库，可选择加入复习' : '已加入词库');
+      } else if (customWordExists(generated) || customWordExists(word)) {
+        sheetGenError = '';
+        showToast('「' + ((generated && generated.w) || word) + '」已经在词库中。');
+      } else {
+        sheetGenError = '生成的词条无法加入词库，请再试一次。';
+        showToast(sheetGenError, 'error');
+      }
+      refreshOpenWordSheets();
+    }).catch(function (error) {
+      sheetGenBusy = false;
+      sheetGenError = error && error.message ? error.message : '生成失败，请稍后再试。';
+      showToast(sheetGenError, 'error');
+      refreshOpenWordSheets();
+    });
+  }
+
   function synonymSheetHtml() {
     const spelling = toText(synonymLookup);
     if (!spelling) return '';
@@ -4500,7 +4568,7 @@
 
     let reviewAction = '';
     if (!word) {
-      reviewAction = '<p class="reading-sheet-status">词库暂无这个词，暂时不能加入复习。</p>';
+      reviewAction = missingWordGenerateHtml(spelling);
     } else if (!progress) {
       reviewAction =
         '<button class="btn btn-primary btn-block reading-sheet-add" type="button" data-action="add-synonym-to-review" data-word="' +
@@ -4653,13 +4721,9 @@
   function botAssignmentsCardHtml() {
     const today = getLearningDayKey();
     const items = activeBotAssignmentsOn(today);
+    if (!items.length) return '';
     const refreshLabel = botAssignmentsInFlight ? '同步中…' : '刷新';
-    let body = '';
-    if (items.length) {
-      body = '<div class="panel bot-card">' + items.map(botAssignmentItemHtml).join('') + '</div>';
-    } else {
-      body = '<div class="panel bot-card"><p class="bot-empty">今天英语bot还没布置</p></div>';
-    }
+    const body = '<div class="panel bot-card">' + items.map(botAssignmentItemHtml).join('') + '</div>';
     return (
       '<section class="section bot-assignment-section" aria-labelledby="bot-assignment-title">' +
         '<div class="section-head">' +
@@ -5154,12 +5218,21 @@
         '"wf":{"n":[],"v":[],"adj":[],"adv":[]},"freq":"高|中|低",' +
         '"syn":[{"w":"同义词","note":"极短中文区别"}]}\n' +
       '2. w 用词典原形。如果给出的词是屈折形式（过去式、过去分词、-ing、第三人称单数、复数、比较级等），请把该形式放进 wf 对应的类别，同时仍要写全原形的其他词形。\n' +
-      '3. cn 用适合高中生的简明中文释义；col 给 2 到 3 条高考完形或阅读常见搭配。\n' +
+      '3. cn 必须是适合高中生的简明中文词典释义，多个义项用中文分号「；」分隔；禁止写成完整句子，禁止用「。」「！」「？」结尾，禁止把例句或主谓完整的叙述句当作释义。例句只写在 ex.en / ex.cn。col 给 2 到 3 条高考完形或阅读常见搭配。\n' +
       '4. ex 给一句原创英文例句和中文翻译，不要照抄阅读原文。\n' +
       '5. wf 必须写入全部真实词形（屈折+派生），不要只写原形。v：原形、三单、过去式、过去分词（若不同）、-ing；已有相关动词原形也保留并写出屈折。n：单数+真实复数（child/children，analysis/analyses）；保留 helper、helpfulness 这类相关名词。adj：原级；有单字比较级/最高级时写上（bigger/biggest，better/best，happier/happiest）；不要写 more/most + 形容词。adv：真实副词（helpfully，carefully）；没有则空数组。只写真实英语单词，不要编造。某词性确实没有形式才留空数组。\n' +
       '6. freq 按高考频率判断：常见核心词为“高”，一般课标词为“中”，生僻或文学词为“低”。\n' +
       '7. syn 给 2 到 4 个高考常用同义词，note 写极短中文区别（如“偏正式”“指物”“强调结果”）。宁可少写也不要凑数；没有合适同义词时输出空数组。同义词不要与原词重复。\n' +
       '8. 不要输出阅读题答案，不要输出 JSON 以外的任何文字。';
+  }
+
+  function isSentenceMeaning(cn) {
+    const text = toText(cn).trim();
+    if (!text) return false;
+    if (/[。！？]/.test(text)) return true;
+    if (!/[；、]/.test(text) && /了$/.test(text)) return true;
+    if (text.length > 40 && !/[；、]/.test(text)) return true;
+    return false;
   }
 
   function buildOovEnrichMessages(words) {
@@ -5261,6 +5334,7 @@
 
     const normalized = normalizeCustomWord(raw);
     if (!normalized) throw invalidCustomWordError();
+    if (isSentenceMeaning(normalized.cn)) throw invalidCustomWordError();
     if (!wordKey(normalized) || !/^[a-z][a-z' -]*$/i.test(normalized.w)) {
       throw invalidCustomWordError();
     }
@@ -5329,6 +5403,7 @@
     (Array.isArray(rawList) ? rawList : []).forEach(function (raw) {
       const word = normalizeCustomWord(raw);
       if (!word) return;
+      if (isSentenceMeaning(word.cn)) return;
       const key = wordKey(word);
       if (!key || seen.has(key)) return;
       seen.add(key);
@@ -5785,7 +5860,7 @@
 
     let reviewAction = '';
     if (!word) {
-      reviewAction = '<p class="reading-sheet-status">词库暂无，暂不能加入复习。</p>';
+      reviewAction = missingWordGenerateHtml(readingLookup);
     } else if (!progress) {
       reviewAction =
         '<button class="btn btn-primary btn-block reading-sheet-add" type="button" data-action="add-reading-to-review" data-word="' +
@@ -6229,7 +6304,7 @@
           '</div>' +
           '<div class="settings-body">' +
             '<a class="btn btn-primary btn-block watch-download-btn" href="downloads/xiaodancici-watch-armeabi-v7a.apk" download>' + icon('download', 17) + '下载 Watch 版 APK（armeabi-v7a）</a>' +
-            '<p class="watch-download-hint">已签名 APK · v1.0.21 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
+            '<p class="watch-download-hint">已签名 APK · v1.0.22 · 仅含 armeabi-v7a · 适合 OPPO Watch 3 等 32 位手表</p>' +
           '</div>' +
         '</section>' +
 
@@ -7123,6 +7198,8 @@
       closeSynonymWord();
     } else if (action === 'add-synonym-to-review') {
       addSynonymWordToReview(actionEl.getAttribute('data-word'));
+    } else if (action === 'generate-sheet-word') {
+      generateSheetWord(actionEl.getAttribute('data-word'));
     } else if (action === 'import-backup') {
       if (importInput) importInput.click();
     } else if (action === 'add-custom-words') {

@@ -2570,7 +2570,7 @@ select:focus-visible,
   padding: 0;
   color: var(--ink);
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   background: var(--surface-soft);
   border: 1.5px solid var(--line);
   border-radius: 10px;
@@ -2612,6 +2612,11 @@ select:focus-visible,
 
 .letter-input:disabled {
   opacity: 0.82;
+}
+
+.review-spell-prompt .spell-audio-pill,
+.review-spell-prompt .audio-pill {
+  margin-top: 10px;
 }
 
 .spell-hint {

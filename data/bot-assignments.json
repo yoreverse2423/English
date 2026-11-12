@@ -1,59 +1,6 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-12T06:25:11+08:00",
-  "assignments": [
-    {
-      "id": "en-2026-11-11",
-      "date": "2026-11-11",
-      "from": "英语bot",
-      "title": "今日到期复习（优先模糊词）",
-      "words": [
-        "landfall",
-        "tsunami",
-        "magnitude",
-        "evacuate",
-        "helicopter",
-        "crack",
-        "brick",
-        "electricity",
-        "trap",
-        "revival",
-        "unify",
-        "natural",
-        "community",
-        "crop",
-        "context",
-        "suffer",
-        "drought",
-        "landslide",
-        "slide",
-        "flood",
-        "effort",
-        "wisdom"
-      ],
-      "note": "按 11-10 12:21 存档挑选。先复习不认识/模糊的，再看昨天新学的 context、suffer，其余是到期复习。不会的点进复习。",
-      "status": "active"
-    },
-    {
-      "id": "en-2026-11-12",
-      "date": "2026-11-12",
-      "from": "英语bot",
-      "title": "今日复习 10 词（先清模糊）",
-      "words": [
-        "landfall",
-        "tsunami",
-        "magnitude",
-        "evacuate",
-        "helicopter",
-        "crack",
-        "hurricane",
-        "emergency",
-        "deliver",
-        "trap"
-      ],
-      "note": "按 11-11 15:40 存档：到期积压约 70，今天只清这 10 个不认识/模糊词，做完有余力再在 App 里复习其他到期词。",
-      "status": "active"
-    }
-  ]
+  "updatedAt": "2026-11-12T23:33:15+08:00",
+  "assignments": []
 }

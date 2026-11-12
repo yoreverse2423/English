@@ -4,7 +4,7 @@
 
 - 包名：`com.xiaodancici.watch`
 - 应用名：`小单词机`
-- 版本：`versionCode 22` / `versionName 1.0.21`
+- 版本：`versionCode 23` / `versionName 1.0.22`
 - 入口：`file:///android_asset/www/index.html`
 - `minSdk 24` / `targetSdk 34` / `compileSdk 34`
 - 单 Activity、无 ActionBar、全屏 WebView

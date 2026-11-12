@@ -1,36 +1,23 @@
-# bot 当日背词任务约定（小单词机）
+# bot 与小单词机加词约定
 
-英语bot / 监工头 把「今天要背哪些词」写进本仓库，App/网页同步后在首页「今日 bot 任务」展示。
+2026-11-12 起：英语bot **不再**每日向 App 布置指定词，学生按自己的节奏背词。
+
+## 不要再做的事
+- 不要再把「今日到期复习 / 今日指定词」写入 `data/bot-assignments.json`。
+- 不要根据进度自动挑选每日词单。
+- 不要改 `data/progress.json` 里的学习进度字段（`progress`、`daily`、`settings`、`selectedUnits`）。分析进度时只读。
+
+首页「今日 bot 任务」仅在当天（学习日，凌晨 4:00 换日）确有 `status=active` 的条目时才显示；没有则整块隐藏，也不展示过期任务。该文件通常应保持 `assignments` 为空。
+
+## 仅在学生主动要求时加词
+有时学生会把学校卷子上圈出的生词拍照发来，或发一份生词清单，并要求加入小单词机。即使如此，也必须：
+
+1. **先列出**识别到的全部单词（原形），给学生看清再继续。
+2. **逐个**用 DeepSeek 生成完整词条（一次只写一个词，不要批量挤在一次请求里）。规则与设置页「用 DeepSeek 生成」相同，见 [`word-entry.md`](word-entry.md)：简明中文词典释义（禁止把完整句子当作释义）、词性、音标、词形 `wf`、搭配、例句、`freq`、同义词 `syn`。
+3. 生成后写入自定义词库：只在 `data/progress.json` 的 `data.customWords` 中**增补**词条（`id` 为 `custom:` + 小写原形），不要覆盖已有进度或其他字段；若该 `id` 已存在，只在释义明显有问题且学生同意时更新释义字段。
+4. **不要**自动写入复习进度（不要新建 `data.progress` 记录）。学生要进复习时自己在 App 里点「加入复习」。
+5. 没有仓库写权限时，把列好的词和已生成的词条交给研发bot 代写，不要自行改进度文件的其它部分。
 
 ## 文件
-- 路径：`data/bot-assignments.json`（与 `data/progress.json` 分开，避免和学生上传进度互相覆盖）
-- 学生进度仍在：`data/progress.json`（App 上传/下载；英语bot 只读，用来分析背词进度）
-
-## 学习日
-与备考约定一致：凌晨 4:00 为界（Asia/Shanghai）。`date` 用 `YYYY-MM-DD`。
-
-## 字段
-```json
-{
-  "schemaVersion": 1,
-  "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-08T12:00:00+08:00",
-  "assignments": [
-    {
-      "id": "en-2026-11-08",
-      "date": "2026-11-08",
-      "from": "英语bot",
-      "title": "选择性必修四 · 今日词",
-      "words": ["abandon", "ability"],
-      "note": "先英译中，再中译英；不会的点进复习",
-      "status": "active"
-    }
-  ]
-}
-```
-- `words`：字符串数组，尽量用词库里的原形；App 会按词库匹配释义。词条字段（含 `syn`、`wf`、`freq`）见 [`word-entry.md`](word-entry.md)。
-- 同一天可有多条；首页优先展示当天 `status=active` 的条目。
-- 英语bot 更新时：读旧文件 → 改/追加当天条目 → 写回（保留其它日期最近若干天即可）。
-
-## 英语bot 怎么写
-有仓库写权限时更新 `data/bot-assignments.json`；没有就让研发bot/监工头代写。分析进度：读 `data/progress.json` 的 `stats` / `words`，不要改它。
+- `data/bot-assignments.json`：不再用于每日指定词；保持空任务即可。
+- `data/progress.json`：学生上传/下载的学习存档；英语bot 默认只读，加词时只允许按上面规则增补 `customWords`。
