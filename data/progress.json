@@ -1,54 +1,22 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-13T12:04:12+08:00",
+  "exportedAt": "2026-11-13T12:21:43+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
   "selected": {
     "books": [
       {
-        "id": "compulsory-1",
-        "name": "必修第一册"
-      },
-      {
-        "id": "optional-4",
-        "name": "选择性必修第四册"
-      },
-      {
-        "id": "custom",
-        "name": "自定义"
+        "id": "optional-3",
+        "name": "选择性必修第三册"
       }
     ],
     "units": [
       {
-        "id": "compulsory-1-u4",
-        "title": "Unit 4 Natural Disasters",
-        "bookId": "compulsory-1",
-        "book": "必修第一册"
-      },
-      {
-        "id": "compulsory-1-u5",
-        "title": "Unit 5 Languages Around the World",
-        "bookId": "compulsory-1",
-        "book": "必修第一册"
-      },
-      {
-        "id": "optional-4-u3",
-        "title": "Unit 4 Sharing",
-        "bookId": "optional-4",
-        "book": "选择性必修第四册"
-      },
-      {
-        "id": "optional-4-u4",
-        "title": "Unit 5 Launching Your Career",
-        "bookId": "optional-4",
-        "book": "选择性必修第四册"
-      },
-      {
-        "id": "custom-unit",
-        "title": "自定义词",
-        "bookId": "custom",
-        "book": "自定义"
+        "id": "optional-3-u0",
+        "title": "Unit 1 Art",
+        "bookId": "optional-3",
+        "book": "选择性必修第三册"
       }
     ]
   },
@@ -57,7 +25,7 @@
     "learned": 102,
     "mastered": 4,
     "learning": 98,
-    "dueNow": 84,
+    "dueNow": 87,
     "dueToday": 91,
     "newToday": 8,
     "reviewToday": 0,
@@ -10298,11 +10266,7 @@
       }
     ],
     "selectedUnits": [
-      "compulsory-1-u4",
-      "compulsory-1-u5",
-      "optional-4-u3",
-      "optional-4-u4",
-      "custom-unit"
+      "optional-3-u0"
     ]
   }
 }
