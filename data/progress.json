@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-13T11:29:44+08:00",
+  "exportedAt": "2026-11-13T12:04:12+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -54,14 +54,14 @@
   },
   "stats": {
     "totalWords": 2767,
-    "learned": 94,
+    "learned": 102,
     "mastered": 4,
-    "learning": 90,
-    "dueNow": 82,
-    "dueToday": 88,
-    "newToday": 0,
+    "learning": 98,
+    "dueNow": 84,
+    "dueToday": 91,
+    "newToday": 8,
     "reviewToday": 0,
-    "streakDays": 4,
+    "streakDays": 5,
     "last7Days": [
       {
         "date": "2026-11-07",
@@ -95,15 +95,15 @@
       },
       {
         "date": "2026-11-13",
-        "learned": 0,
+        "learned": 8,
         "reviewed": 0
       }
     ]
   },
   "totals": {
-    "learned": 94,
+    "learned": 102,
     "mastered": 4,
-    "dueToday": 88
+    "dueToday": 91
   },
   "words": [
     {
@@ -983,6 +983,18 @@
       "lastResultLabel": "模糊"
     },
     {
+      "word": "carve",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T11:52:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "date back",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -1019,6 +1031,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "dialect",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T12:09:09+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "dynasty",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T11:48:28+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "factor",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -1031,6 +1067,18 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "major",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:02:42+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "native",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -1038,6 +1086,42 @@
       "unitId": "compulsory-1-u5",
       "stage": 1,
       "nextReviewTime": "2026-11-12T15:39:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "no matter what",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:03:16+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "no matter where",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:03:01+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "no matter who",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:03:13+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1125,6 +1209,18 @@
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
+    },
+    {
+      "word": "variety",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T11:56:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
     },
     {
       "word": "Alberta",
@@ -2101,6 +2197,18 @@
       "lastResultLabel": "模糊"
     },
     {
+      "word": "carve",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T11:52:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "date back",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -2137,6 +2245,30 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "dialect",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T12:09:09+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
+      "word": "dynasty",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T11:48:28+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "factor",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -2149,6 +2281,18 @@
       "lastResultLabel": "认识"
     },
     {
+      "word": "major",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:02:42+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
       "word": "native",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -2156,6 +2300,42 @@
       "unitId": "compulsory-1-u5",
       "stage": 1,
       "nextReviewTime": "2026-11-12T15:39:57+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "no matter what",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:03:16+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "no matter where",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:03:01+08:00",
+      "wrongCount": 0,
+      "lastResult": "known",
+      "lastResultLabel": "认识"
+    },
+    {
+      "word": "no matter who",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 1,
+      "nextReviewTime": "2026-11-14T12:03:13+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -2243,6 +2423,18 @@
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
+    },
+    {
+      "word": "variety",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T11:56:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
     },
     {
       "word": "Ecuador",
@@ -2547,6 +2739,18 @@
       "lastResultLabel": "模糊"
     },
     {
+      "word": "carve",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T11:52:15+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "date back",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -2571,6 +2775,18 @@
       "lastResultLabel": "模糊"
     },
     {
+      "word": "dialect",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T12:09:09+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
+    },
+    {
       "word": "shell",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -2581,6 +2797,18 @@
       "wrongCount": 1,
       "lastResult": "unknown",
       "lastResultLabel": "不认识"
+    },
+    {
+      "word": "variety",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 5 Languages Around the World",
+      "unitId": "compulsory-1-u5",
+      "stage": 0,
+      "nextReviewTime": "2026-11-13T11:56:37+08:00",
+      "wrongCount": 0,
+      "lastResult": "fuzzy",
+      "lastResultLabel": "模糊"
     },
     {
       "word": "community",
@@ -3543,6 +3771,86 @@
         "reviews": 0,
         "lapses": 0,
         "lastResult": null
+      },
+      "compulsory-1-u5:carve": {
+        "stage": 0,
+        "nextReviewAt": 1794541935186,
+        "learnedAt": 1794541635186,
+        "lastReviewedAt": 1794541635186,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u5:dynasty": {
+        "stage": 1,
+        "nextReviewAt": 1794628108443,
+        "learnedAt": 1794541708443,
+        "lastReviewedAt": 1794541708443,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:variety": {
+        "stage": 0,
+        "nextReviewAt": 1794542197702,
+        "learnedAt": 1794541897702,
+        "lastReviewedAt": 1794541897702,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
+      },
+      "compulsory-1-u5:major": {
+        "stage": 1,
+        "nextReviewAt": 1794628962595,
+        "learnedAt": 1794542562595,
+        "lastReviewedAt": 1794542562595,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:no matter where": {
+        "stage": 1,
+        "nextReviewAt": 1794628981028,
+        "learnedAt": 1794542581028,
+        "lastReviewedAt": 1794542581028,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:no matter who": {
+        "stage": 1,
+        "nextReviewAt": 1794628993681,
+        "learnedAt": 1794542593681,
+        "lastReviewedAt": 1794542593681,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:no matter what": {
+        "stage": 1,
+        "nextReviewAt": 1794628996552,
+        "learnedAt": 1794542596552,
+        "lastReviewedAt": 1794542596552,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "known"
+      },
+      "compulsory-1-u5:dialect": {
+        "stage": 0,
+        "nextReviewAt": 1794542949280,
+        "learnedAt": 1794542649280,
+        "lastReviewedAt": 1794542649280,
+        "masteredAt": null,
+        "reviews": 1,
+        "lapses": 0,
+        "lastResult": "fuzzy"
       }
     },
     "daily": {
@@ -3569,6 +3877,10 @@
       "2026-11-12": {
         "learned": 12,
         "reviewed": 8
+      },
+      "2026-11-13": {
+        "learned": 8,
+        "reviewed": 0
       }
     },
     "customWords": [
