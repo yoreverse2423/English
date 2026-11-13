@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": "2026-11-12T22:59:18+08:00",
+  "exportedAt": "2026-11-13T11:29:44+08:00",
   "timezone": "Asia/Shanghai",
   "repository": "yoreverse2423/English",
   "path": "data/progress.json",
@@ -58,16 +58,11 @@
     "mastered": 4,
     "learning": 90,
     "dueNow": 82,
-    "dueToday": 82,
-    "newToday": 16,
+    "dueToday": 88,
+    "newToday": 0,
     "reviewToday": 0,
     "streakDays": 4,
     "last7Days": [
-      {
-        "date": "2026-11-06",
-        "learned": 9,
-        "reviewed": 0
-      },
       {
         "date": "2026-11-07",
         "learned": 0,
@@ -96,6 +91,11 @@
       {
         "date": "2026-11-12",
         "learned": 12,
+        "reviewed": 8
+      },
+      {
+        "date": "2026-11-13",
+        "learned": 0,
         "reviewed": 0
       }
     ]
@@ -103,7 +103,7 @@
   "totals": {
     "learned": 94,
     "mastered": 4,
-    "dueToday": 82
+    "dueToday": 88
   },
   "words": [
     {
@@ -256,11 +256,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:39:25+08:00",
-      "wrongCount": 0,
-      "lastResult": "known",
-      "lastResultLabel": "认识"
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:07:25+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "death",
@@ -304,8 +304,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 2,
-      "nextReviewTime": "2026-11-05T13:34:46+08:00",
+      "stage": 3,
+      "nextReviewTime": "2026-11-16T23:01:23+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -532,11 +532,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 0,
-      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T23:01:03+08:00",
       "wrongCount": 0,
-      "lastResult": "fuzzy",
-      "lastResultLabel": "模糊"
+      "lastResult": "known",
+      "lastResultLabel": "认识"
     },
     {
       "word": "metal",
@@ -604,8 +604,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "stage": 2,
+      "nextReviewTime": "2026-11-14T23:01:13+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -820,11 +820,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 2,
-      "nextReviewTime": "2026-11-05T13:34:54+08:00",
-      "wrongCount": 0,
-      "lastResult": "known",
-      "lastResultLabel": "认识"
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:06:44+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "trap",
@@ -880,11 +880,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:05:37+08:00",
-      "wrongCount": 0,
-      "lastResult": "known",
-      "lastResultLabel": "认识"
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:05:44+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "volcano",
@@ -1205,10 +1205,10 @@
       "unit": "自定义词",
       "unitId": "custom-unit",
       "stage": 0,
-      "nextReviewTime": "2026-11-06T14:09:52+08:00",
-      "wrongCount": 0,
-      "lastResult": null,
-      "lastResultLabel": ""
+      "nextReviewTime": "2026-11-12T23:08:22+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "leave",
@@ -1228,11 +1228,11 @@
       "bookId": "custom",
       "unit": "自定义词",
       "unitId": "custom-unit",
-      "stage": 0,
-      "nextReviewTime": "2026-11-06T14:09:15+08:00",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T23:02:44+08:00",
       "wrongCount": 0,
-      "lastResult": null,
-      "lastResultLabel": ""
+      "lastResult": "known",
+      "lastResultLabel": "认识"
     }
   ],
   "unmasteredWords": [
@@ -1374,11 +1374,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:39:25+08:00",
-      "wrongCount": 0,
-      "lastResult": "known",
-      "lastResultLabel": "认识"
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:07:25+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "death",
@@ -1422,8 +1422,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 2,
-      "nextReviewTime": "2026-11-05T13:34:46+08:00",
+      "stage": 3,
+      "nextReviewTime": "2026-11-16T23:01:23+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1650,11 +1650,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 0,
-      "nextReviewTime": "2026-11-05T13:05:49+08:00",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T23:01:03+08:00",
       "wrongCount": 0,
-      "lastResult": "fuzzy",
-      "lastResultLabel": "模糊"
+      "lastResult": "known",
+      "lastResultLabel": "认识"
     },
     {
       "word": "metal",
@@ -1722,8 +1722,8 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:05:57+08:00",
+      "stage": 2,
+      "nextReviewTime": "2026-11-14T23:01:13+08:00",
       "wrongCount": 0,
       "lastResult": "known",
       "lastResultLabel": "认识"
@@ -1938,11 +1938,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 2,
-      "nextReviewTime": "2026-11-05T13:34:54+08:00",
-      "wrongCount": 0,
-      "lastResult": "known",
-      "lastResultLabel": "认识"
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:06:44+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "trap",
@@ -1998,11 +1998,11 @@
       "bookId": "compulsory-1",
       "unit": "Unit 4 Natural Disasters",
       "unitId": "compulsory-1-u4",
-      "stage": 1,
-      "nextReviewTime": "2026-11-05T13:05:37+08:00",
-      "wrongCount": 0,
-      "lastResult": "known",
-      "lastResultLabel": "认识"
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:05:44+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "volcano",
@@ -2287,10 +2287,10 @@
       "unit": "自定义词",
       "unitId": "custom-unit",
       "stage": 0,
-      "nextReviewTime": "2026-11-06T14:09:52+08:00",
-      "wrongCount": 0,
-      "lastResult": null,
-      "lastResultLabel": ""
+      "nextReviewTime": "2026-11-12T23:08:22+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "leave",
@@ -2310,11 +2310,11 @@
       "bookId": "custom",
       "unit": "自定义词",
       "unitId": "custom-unit",
-      "stage": 0,
-      "nextReviewTime": "2026-11-06T14:09:15+08:00",
+      "stage": 1,
+      "nextReviewTime": "2026-11-13T23:02:44+08:00",
       "wrongCount": 0,
-      "lastResult": null,
-      "lastResultLabel": ""
+      "lastResult": "known",
+      "lastResultLabel": "认识"
     }
   ],
   "difficultWords": [
@@ -2341,6 +2341,18 @@
       "wrongCount": 0,
       "lastResult": "fuzzy",
       "lastResultLabel": "模糊"
+    },
+    {
+      "word": "damage",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:07:25+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "deliver",
@@ -2427,18 +2439,6 @@
       "lastResultLabel": "不认识"
     },
     {
-      "word": "magnitude",
-      "book": "必修第一册",
-      "bookId": "compulsory-1",
-      "unit": "Unit 4 Natural Disasters",
-      "unitId": "compulsory-1-u4",
-      "stage": 0,
-      "nextReviewTime": "2026-11-05T13:05:49+08:00",
-      "wrongCount": 0,
-      "lastResult": "fuzzy",
-      "lastResultLabel": "模糊"
-    },
-    {
       "word": "revival",
       "book": "必修第一册",
       "bookId": "compulsory-1",
@@ -2461,6 +2461,18 @@
       "wrongCount": 0,
       "lastResult": "fuzzy",
       "lastResultLabel": "模糊"
+    },
+    {
+      "word": "tornado",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:06:44+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "trap",
@@ -2497,6 +2509,18 @@
       "wrongCount": 0,
       "lastResult": "fuzzy",
       "lastResultLabel": "模糊"
+    },
+    {
+      "word": "volcanic eruption",
+      "book": "必修第一册",
+      "bookId": "compulsory-1",
+      "unit": "Unit 4 Natural Disasters",
+      "unitId": "compulsory-1-u4",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:05:44+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     },
     {
       "word": "whistle",
@@ -2557,6 +2581,18 @@
       "wrongCount": 1,
       "lastResult": "unknown",
       "lastResultLabel": "不认识"
+    },
+    {
+      "word": "community",
+      "book": "自定义",
+      "bookId": "custom",
+      "unit": "自定义词",
+      "unitId": "custom-unit",
+      "stage": 0,
+      "nextReviewTime": "2026-11-12T23:08:22+08:00",
+      "wrongCount": 1,
+      "lastResult": "unknown",
+      "lastResultLabel": "不认识"
     }
   ],
   "reading": null,
@@ -2569,24 +2605,24 @@
     },
     "progress": {
       "compulsory-1-u4:disaster": {
-        "stage": 2,
-        "nextReviewAt": 1793856886144,
+        "stage": 3,
+        "nextReviewAt": 1794841283544,
         "learnedAt": 1793854712409,
-        "lastReviewedAt": 1793855086144,
+        "lastReviewedAt": 1794495683544,
         "masteredAt": null,
-        "reviews": 2,
+        "reviews": 3,
         "lapses": 0,
         "lastResult": "known"
       },
       "compulsory-1-u4:tornado": {
-        "stage": 2,
-        "nextReviewAt": 1793856894644,
+        "stage": 0,
+        "nextReviewAt": 1794496004283,
         "learnedAt": 1793854723160,
-        "lastReviewedAt": 1793855094644,
+        "lastReviewedAt": 1794495704283,
         "masteredAt": null,
-        "reviews": 2,
-        "lapses": 0,
-        "lastResult": "known"
+        "reviews": 3,
+        "lapses": 1,
+        "lastResult": "unknown"
       },
       "compulsory-1-u4:drought": {
         "stage": 2,
@@ -2649,64 +2685,64 @@
         "lastResult": "known"
       },
       "compulsory-1-u4:volcanic eruption": {
-        "stage": 1,
-        "nextReviewAt": 1793855137550,
+        "stage": 0,
+        "nextReviewAt": 1794495944592,
         "learnedAt": 1793854837550,
-        "lastReviewedAt": 1793854837550,
+        "lastReviewedAt": 1794495644592,
         "masteredAt": null,
-        "reviews": 1,
+        "reviews": 2,
+        "lapses": 1,
+        "lastResult": "unknown"
+      },
+      "compulsory-1-u4:magnitude": {
+        "stage": 1,
+        "nextReviewAt": 1794582063638,
+        "learnedAt": 1793854849115,
+        "lastReviewedAt": 1794495663638,
+        "masteredAt": null,
+        "reviews": 2,
         "lapses": 0,
         "lastResult": "known"
       },
-      "compulsory-1-u4:magnitude": {
-        "stage": 0,
-        "nextReviewAt": 1793855149115,
-        "learnedAt": 1793854849115,
-        "lastReviewedAt": 1793854849115,
-        "masteredAt": null,
-        "reviews": 1,
-        "lapses": 0,
-        "lastResult": "fuzzy"
-      },
       "compulsory-1-u4:rescue": {
-        "stage": 1,
-        "nextReviewAt": 1793855157765,
+        "stage": 2,
+        "nextReviewAt": 1794668473059,
         "learnedAt": 1793854857765,
-        "lastReviewedAt": 1793854857765,
+        "lastReviewedAt": 1794495673059,
         "masteredAt": null,
-        "reviews": 1,
+        "reviews": 2,
         "lapses": 0,
         "lastResult": "known"
       },
       "compulsory-1-u4:damage": {
-        "stage": 1,
-        "nextReviewAt": 1793857165501,
+        "stage": 0,
+        "nextReviewAt": 1794496045809,
         "learnedAt": 1793856865501,
-        "lastReviewedAt": 1793856865501,
+        "lastReviewedAt": 1794495745809,
+        "masteredAt": null,
+        "reviews": 2,
+        "lapses": 1,
+        "lastResult": "unknown"
+      },
+      "custom:natural": {
+        "stage": 1,
+        "nextReviewAt": 1794582164304,
+        "learnedAt": 1793945055249,
+        "lastReviewedAt": 1794495764304,
         "masteredAt": null,
         "reviews": 1,
         "lapses": 0,
         "lastResult": "known"
       },
-      "custom:natural": {
-        "stage": 0,
-        "nextReviewAt": 1793945355249,
-        "learnedAt": 1793945055249,
-        "lastReviewedAt": 0,
-        "masteredAt": null,
-        "reviews": 0,
-        "lapses": 0,
-        "lastResult": null
-      },
       "custom:community": {
         "stage": 0,
-        "nextReviewAt": 1793945392986,
+        "nextReviewAt": 1794496102424,
         "learnedAt": 1793945092986,
-        "lastReviewedAt": 0,
+        "lastReviewedAt": 1794495802424,
         "masteredAt": null,
-        "reviews": 0,
-        "lapses": 0,
-        "lastResult": null
+        "reviews": 1,
+        "lapses": 1,
+        "lastResult": "unknown"
       },
       "compulsory-3-u0:crop": {
         "stage": 0,
@@ -3532,7 +3568,7 @@
       },
       "2026-11-12": {
         "learned": 12,
-        "reviewed": 0
+        "reviewed": 8
       }
     },
     "customWords": [
@@ -3541,7 +3577,7 @@
         "w": "natural",
         "ph": "/ˈnætʃrəl/",
         "pos": "adj.",
-        "cn": "自然的；天然的；天生的；正常的",
+        "cn": "我们应该为子孙后代保护自然环境。",
         "col": [
           {
             "en": "natural resources",
@@ -3552,13 +3588,13 @@
             "cn": "自然灾害"
           },
           {
-            "en": "it is natural for sb to do sth",
-            "cn": "某人做某事很正常"
+            "en": "in a natural way",
+            "cn": "以自然的方式"
           }
         ],
         "ex": {
-          "en": "It is natural for children to ask questions about the world around them.",
-          "cn": "孩子们对周围世界提出问题是很自然的。"
+          "en": "We should protect the natural environment for future generations.",
+          "cn": ""
         },
         "forms": [
           {
@@ -3568,13 +3604,7 @@
             "cn": ""
           },
           {
-            "w": "naturalness",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "naturalistic",
+            "w": "naturalist",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -3584,37 +3614,30 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "naturalists",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "nature",
-            "naturalness"
+            "naturalist",
+            "naturalists"
           ],
           "v": [],
           "adj": [
-            "natural",
-            "naturalistic"
+            "natural"
           ],
           "adv": [
             "naturally"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "normal",
-            "note": "正常的"
-          },
-          {
-            "w": "inborn",
-            "note": "天生的"
-          },
-          {
-            "w": "raw",
-            "note": "未加工的"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -3624,24 +3647,24 @@
         "w": "community",
         "ph": "/kəˈmjuːnəti/",
         "pos": "n.",
-        "cn": "社区；团体；群体；共有",
+        "cn": "社区里许多人自愿帮助那位老人。",
         "col": [
           {
             "en": "local community",
             "cn": "当地社区"
           },
           {
-            "en": "the international community",
-            "cn": "国际社会"
+            "en": "community service",
+            "cn": "社区服务"
           },
           {
             "en": "a sense of community",
-            "cn": "归属感；社区意识"
+            "cn": "归属感"
           }
         ],
         "ex": {
-          "en": "Volunteers in our community help elderly neighbors with shopping and housework.",
-          "cn": "我们社区的志愿者帮助年长的邻居购物和做家务。"
+          "en": "Many people in the community volunteered to help the old man.",
+          "cn": ""
         },
         "forms": [
           {
@@ -3661,20 +3684,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "society",
-            "note": "社会，范围更大"
-          },
-          {
-            "w": "neighborhood",
-            "note": "街区，偏地理"
-          },
-          {
-            "w": "group",
-            "note": "群体，较泛"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -3683,29 +3693,41 @@
         "id": "custom:second",
         "w": "second",
         "ph": "/ˈsekənd/",
-        "pos": "n. / adj. / v. / adv.",
-        "cn": "秒；片刻；第二（的）；支持，赞成",
+        "pos": "n. / v. / adj.",
+        "cn": "请稍等片刻，我找一下钥匙。",
         "col": [
           {
             "en": "in a second",
-            "cn": "立刻，马上"
+            "cn": "立刻；马上"
+          },
+          {
+            "en": "for a few seconds",
+            "cn": "几秒钟"
           },
           {
             "en": "second to none",
             "cn": "首屈一指"
-          },
-          {
-            "en": "second thoughts",
-            "cn": "重新考虑"
           }
         ],
         "ex": {
-          "en": "She finished the race in second place, just a second behind the winner.",
-          "cn": "她以第二名完成比赛，仅落后冠军一秒。"
+          "en": "Please wait a second while I find the key.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "seconds",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "secondary",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "secondly",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -3723,7 +3745,7 @@
             "cn": ""
           },
           {
-            "w": "secondly",
+            "w": "secondarily",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -3741,27 +3763,16 @@
             "seconding"
           ],
           "adj": [
-            "second"
+            "second",
+            "secondary"
           ],
           "adv": [
-            "secondly"
+            "secondly",
+            "secondarily"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "moment",
-            "note": "片刻，更口语"
-          },
-          {
-            "w": "instant",
-            "note": "瞬间，强调极短"
-          },
-          {
-            "w": "support",
-            "note": "支持，动词义近"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -3771,7 +3782,7 @@
         "w": "understanding",
         "ph": "/ˌʌndəˈstændɪŋ/",
         "pos": "n. / adj.",
-        "cn": "理解；谅解；理解力；通情达理的",
+        "cn": "好老师在学生犯错时表现出理解。",
         "col": [
           {
             "en": "have a good understanding of",
@@ -3782,23 +3793,35 @@
             "cn": "达成谅解"
           },
           {
-            "en": "show understanding for",
-            "cn": "对……表示理解"
+            "en": "mutual understanding",
+            "cn": "相互理解"
           }
         ],
         "ex": {
-          "en": "A good teacher shows understanding for students who learn slowly.",
-          "cn": "好老师对学得慢的学生表示理解。"
+          "en": "A good teacher shows understanding when students make mistakes.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "understandings",
+            "w": "understand",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "understand",
+            "w": "understandable",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "understandably",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "understandings",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -3811,12 +3834,6 @@
           },
           {
             "w": "understood",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "understandingly",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -3835,27 +3852,14 @@
           ],
           "adj": [
             "understanding",
-            "understanding"
+            "understandable"
           ],
           "adv": [
-            "understandingly"
+            "understandably"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "comprehension",
-            "note": "侧重理解过程"
-          },
-          {
-            "w": "sympathy",
-            "note": "侧重同情体谅"
-          },
-          {
-            "w": "grasp",
-            "note": "侧重掌握领会"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -3865,24 +3869,24 @@
         "w": "prepare",
         "ph": "/prɪˈpeə(r)/",
         "pos": "v.",
-        "cn": "准备；预备；把…准备好；调制（食物）",
+        "cn": "她花了一整晚为面试做准备。",
         "col": [
           {
-            "en": "prepare for sth",
-            "cn": "为某事做准备"
+            "en": "prepare for",
+            "cn": "为……做准备"
           },
           {
             "en": "prepare sb for sth",
             "cn": "使某人为某事做好准备"
           },
           {
-            "en": "be prepared to do sth",
-            "cn": "愿意做某事；准备好做某事"
+            "en": "be well prepared",
+            "cn": "准备充分"
           }
         ],
         "ex": {
-          "en": "She spent the whole afternoon preparing for the job interview.",
-          "cn": "她花了整个下午为求职面试做准备。"
+          "en": "She spent the whole evening preparing for the interview.",
+          "cn": ""
         },
         "forms": [
           {
@@ -3892,25 +3896,7 @@
             "cn": ""
           },
           {
-            "w": "preparedness",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "prepares",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "prepared",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "preparing",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -3926,12 +3912,30 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "preparations",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "prepares",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "preparing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "preparation",
-            "preparedness"
+            "preparations"
           ],
           "v": [
             "prepare",
@@ -3948,20 +3952,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "ready",
-            "note": "侧重使就绪"
-          },
-          {
-            "w": "arrange",
-            "note": "侧重安排"
-          },
-          {
-            "w": "organize",
-            "note": "侧重组织筹备"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -3971,7 +3962,7 @@
         "w": "develop",
         "ph": "/dɪˈveləp/",
         "pos": "v.",
-        "cn": "发展；开发；培养；逐渐形成；患（病）",
+        "cn": "广泛阅读有助于孩子发展语言能力。",
         "col": [
           {
             "en": "develop a habit",
@@ -3987,8 +3978,8 @@
           }
         ],
         "ex": {
-          "en": "Reading widely helps students develop their language skills.",
-          "cn": "广泛阅读有助于学生培养语言能力。"
+          "en": "Reading widely helps children develop their language skills.",
+          "cn": ""
         },
         "forms": [
           {
@@ -4004,7 +3995,7 @@
             "cn": ""
           },
           {
-            "w": "develops",
+            "w": "developing",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -4016,19 +4007,19 @@
             "cn": ""
           },
           {
-            "w": "developing",
+            "w": "developments",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "developmental",
+            "w": "developers",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "developmentally",
+            "w": "develops",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -4037,7 +4028,9 @@
         "wf": {
           "n": [
             "development",
-            "developer"
+            "developer",
+            "developments",
+            "developers"
           ],
           "v": [
             "develop",
@@ -4046,29 +4039,13 @@
             "developing"
           ],
           "adj": [
-            "developed",
             "developing",
-            "developmental"
+            "developed"
           ],
-          "adv": [
-            "developmentally"
-          ]
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "grow",
-            "note": "自然生长"
-          },
-          {
-            "w": "expand",
-            "note": "规模扩大"
-          },
-          {
-            "w": "cultivate",
-            "note": "培养能力"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4078,32 +4055,26 @@
         "w": "slowly",
         "ph": "/ˈsləʊli/",
         "pos": "adv.",
-        "cn": "缓慢地；慢速地；逐渐地",
+        "cn": "老人沿着河岸慢慢地走。",
         "col": [
           {
             "en": "slowly but surely",
             "cn": "缓慢而稳步地"
           },
           {
-            "en": "breathe slowly",
-            "cn": "缓慢呼吸"
+            "en": "walk slowly",
+            "cn": "慢慢走"
           },
           {
-            "en": "slowly and carefully",
-            "cn": "缓慢而小心地"
+            "en": "slowly increase",
+            "cn": "缓慢增加"
           }
         ],
         "ex": {
-          "en": "The old man walked slowly along the river, enjoying the morning sun.",
-          "cn": "老人沿着河边慢慢地走着，享受着晨光。"
+          "en": "The old man walked slowly along the river bank.",
+          "cn": ""
         },
         "forms": [
-          {
-            "w": "slowness",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
           {
             "w": "slow",
             "ph": "",
@@ -4142,13 +4113,10 @@
           }
         ],
         "wf": {
-          "n": [
-            "slowness"
-          ],
+          "n": [],
           "v": [
             "slow",
             "slows",
-            "slowed",
             "slowed",
             "slowing"
           ],
@@ -4162,20 +4130,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "gradually",
-            "note": "强调逐渐"
-          },
-          {
-            "w": "gently",
-            "note": "强调轻柔"
-          },
-          {
-            "w": "leisurely",
-            "note": "强调从容"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4185,57 +4140,36 @@
         "w": "rainfall",
         "ph": "/ˈreɪnfɔːl/",
         "pos": "n.",
-        "cn": "降雨量；降雨",
+        "cn": "这个地区冬季降雨量很少。",
         "col": [
-          {
-            "en": "annual rainfall",
-            "cn": "年降雨量"
-          },
           {
             "en": "heavy rainfall",
             "cn": "强降雨"
           },
           {
-            "en": "average rainfall",
-            "cn": "平均降雨量"
+            "en": "annual rainfall",
+            "cn": "年降雨量"
+          },
+          {
+            "en": "low rainfall",
+            "cn": "降雨量少"
           }
         ],
         "ex": {
-          "en": "The region receives little rainfall in winter.",
-          "cn": "该地区冬季降雨量很少。"
+          "en": "The area has very little rainfall in winter.",
+          "cn": ""
         },
-        "forms": [
-          {
-            "w": "rainfalls",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          }
-        ],
+        "forms": [],
         "wf": {
           "n": [
-            "rainfall",
-            "rainfalls"
+            "rainfall"
           ],
           "v": [],
           "adj": [],
           "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "rain",
-            "note": "泛指雨"
-          },
-          {
-            "w": "precipitation",
-            "note": "降水，较正式"
-          },
-          {
-            "w": "shower",
-            "note": "阵雨"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4245,24 +4179,24 @@
         "w": "far",
         "ph": "/fɑː(r)/",
         "pos": "adv. / adj.",
-        "cn": "远；遥远；久远；很，非常（修饰比较级）；远的；遥远的",
+        "cn": "这个村庄离最近的医院很远。",
         "col": [
+          {
+            "en": "so far",
+            "cn": "到目前为止"
+          },
           {
             "en": "far from",
             "cn": "远离；远非"
           },
           {
             "en": "as far as",
-            "cn": "远至；就……而言"
-          },
-          {
-            "en": "so far",
-            "cn": "到目前为止"
+            "cn": "就……而言；远至"
           }
         ],
         "ex": {
-          "en": "The village is not far from the river, so we can walk there.",
-          "cn": "这个村庄离河不远，所以我们可以步行去那里。"
+          "en": "The village is far from the nearest hospital.",
+          "cn": ""
         },
         "forms": [
           {
@@ -4296,33 +4230,20 @@
           "adj": [
             "far",
             "farther",
-            "farthest",
             "further",
+            "farthest",
             "furthest"
           ],
           "adv": [
             "far",
             "farther",
-            "farthest",
             "further",
+            "farthest",
             "furthest"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "distant",
-            "note": "强调距离远"
-          },
-          {
-            "w": "remote",
-            "note": "偏远荒僻"
-          },
-          {
-            "w": "much",
-            "note": "修饰比较级"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4332,7 +4253,7 @@
         "w": "below",
         "ph": "/bɪˈləʊ/",
         "pos": "prep. / adv.",
-        "cn": "在……下面；低于；在下方",
+        "cn": "昨晚气温降到了零度以下。",
         "col": [
           {
             "en": "below zero",
@@ -4343,36 +4264,25 @@
             "cn": "低于平均水平"
           },
           {
-            "en": "as stated below",
-            "cn": "如下所述"
+            "en": "see below",
+            "cn": "见下文"
           }
         ],
         "ex": {
           "en": "The temperature dropped below zero last night.",
-          "cn": "昨晚气温降到了零度以下。"
+          "cn": ""
         },
         "forms": [],
         "wf": {
           "n": [],
           "v": [],
           "adj": [],
-          "adv": []
+          "adv": [
+            "below"
+          ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "under",
-            "note": "正下方，接触或覆盖"
-          },
-          {
-            "w": "beneath",
-            "note": "较正式，下方"
-          },
-          {
-            "w": "underneath",
-            "note": "强调被遮盖"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4382,15 +4292,15 @@
         "w": "month",
         "ph": "/mʌnθ/",
         "pos": "n.",
-        "cn": "月；月份；一个月的时间",
+        "cn": "这个项目大约需要三个月才能完成。",
         "col": [
           {
             "en": "last month",
             "cn": "上个月"
           },
           {
-            "en": "next month",
-            "cn": "下个月"
+            "en": "in a month",
+            "cn": "一个月后"
           },
           {
             "en": "month by month",
@@ -4398,8 +4308,8 @@
           }
         ],
         "ex": {
-          "en": "We will move to a new house next month.",
-          "cn": "我们下个月将搬进新房子。"
+          "en": "The project will take about three months to finish.",
+          "cn": ""
         },
         "forms": [
           {
@@ -4413,12 +4323,20 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "monthlies",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "month",
-            "months"
+            "months",
+            "monthly",
+            "monthlies"
           ],
           "v": [],
           "adj": [
@@ -4429,12 +4347,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "moon",
-            "note": "月亮，非月份"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4444,34 +4357,28 @@
         "w": "fail",
         "ph": "/feɪl/",
         "pos": "v.",
-        "cn": "失败；不及格；未能做到；（机器等）失灵；使失望",
+        "cn": "他没能及时回答最后一个问题。",
         "col": [
           {
             "en": "fail to do sth",
             "cn": "未能做某事"
           },
           {
-            "en": "fail in an exam",
+            "en": "fail an exam",
             "cn": "考试不及格"
           },
           {
             "en": "without fail",
-            "cn": "必定；无一例外"
+            "cn": "必定；无误"
           }
         ],
         "ex": {
-          "en": "He failed to finish the task on time, which made his boss angry.",
-          "cn": "他未能按时完成任务，这让他的老板很生气。"
+          "en": "He failed to answer the last question in time.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "failure",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "fails",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -4487,39 +4394,39 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "failures",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "fails",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "failure"
+            "failure",
+            "failures"
           ],
           "v": [
             "fail",
             "fails",
             "failed",
-            "failed",
             "failing"
           ],
           "adj": [
-            "failed"
+            "failed",
+            "failing"
           ],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "flunk",
-            "note": "口语，考试不及格"
-          },
-          {
-            "w": "flop",
-            "note": "惨败，多指作品"
-          },
-          {
-            "w": "miss",
-            "note": "错过，未达到"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4529,24 +4436,24 @@
         "w": "river",
         "ph": "/ˈrɪvə(r)/",
         "pos": "n.",
-        "cn": "河；江；河流",
+        "cn": "炎热的夏天，孩子们在河里游泳。",
         "col": [
+          {
+            "en": "along the river",
+            "cn": "沿着河边"
+          },
           {
             "en": "river bank",
             "cn": "河岸"
           },
           {
-            "en": "across the river",
-            "cn": "过河；在河对岸"
-          },
-          {
-            "en": "river pollution",
-            "cn": "河流污染"
+            "en": "cross the river",
+            "cn": "过河"
           }
         ],
         "ex": {
-          "en": "A small bridge crosses the river near our village.",
-          "cn": "一座小桥横跨我们村庄附近的河流。"
+          "en": "Children were swimming in the river on hot summer days.",
+          "cn": ""
         },
         "forms": [
           {
@@ -4566,20 +4473,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "stream",
-            "note": "小溪，比river小"
-          },
-          {
-            "w": "brook",
-            "note": "小河，多用于文学"
-          },
-          {
-            "w": "waterway",
-            "note": "水道，较正式"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4588,35 +4482,41 @@
         "id": "custom:shrink",
         "w": "shrink",
         "ph": "/ʃrɪŋk/",
-        "pos": "v. / n.",
-        "cn": "收缩；缩小；退缩；减少；缩水；畏缩",
+        "pos": "v.",
+        "cn": "过去十年里这个湖缩小了很多。",
         "col": [
           {
-            "en": "shrink from doing sth",
-            "cn": "畏缩不敢做某事"
+            "en": "shrink from",
+            "cn": "回避；退缩"
           },
           {
             "en": "shrink in size",
             "cn": "尺寸缩小"
           },
           {
-            "en": "shrink back",
-            "cn": "退缩；往后缩"
+            "en": "shrink away",
+            "cn": "退缩"
           }
         ],
         "ex": {
-          "en": "The sweater will shrink if you wash it in hot water.",
-          "cn": "这件毛衣用热水洗会缩水。"
+          "en": "The lake has shrunk greatly over the past ten years.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "shrinks",
+            "w": "shrinkage",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "shrinkage",
+            "w": "shrinking",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "shrinks",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -4634,12 +4534,6 @@
             "cn": ""
           },
           {
-            "w": "shrinking",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "shrunken",
             "ph": "",
             "pos": "",
@@ -4648,8 +4542,6 @@
         ],
         "wf": {
           "n": [
-            "shrink",
-            "shrinks",
             "shrinkage"
           ],
           "v": [
@@ -4657,28 +4549,16 @@
             "shrinks",
             "shrank",
             "shrunk",
+            "shrunken",
             "shrinking"
           ],
           "adj": [
-            "shrunken"
+            "shrinking"
           ],
           "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "contract",
-            "note": "正式，指收缩"
-          },
-          {
-            "w": "decrease",
-            "note": "泛指减少"
-          },
-          {
-            "w": "withdraw",
-            "note": "指退缩回避"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4688,26 +4568,32 @@
         "w": "water",
         "ph": "/ˈwɔːtə(r)/",
         "pos": "n. / v.",
-        "cn": "水；水域；浇水，灌溉",
+        "cn": "我不在的时候请给花浇水。",
         "col": [
           {
             "en": "drinking water",
             "cn": "饮用水"
           },
           {
-            "en": "water the plants",
-            "cn": "给植物浇水"
+            "en": "water supply",
+            "cn": "供水"
           },
           {
-            "en": "by water",
-            "cn": "乘船；由水路"
+            "en": "under water",
+            "cn": "在水下"
           }
         ],
         "ex": {
-          "en": "Remember to water the flowers while I am away.",
-          "cn": "我不在的时候记得给花浇水。"
+          "en": "Please water the flowers while I am away.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "watery",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "waters",
             "ph": "",
@@ -4722,12 +4608,6 @@
           },
           {
             "w": "watering",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "watery",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -4750,16 +4630,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "liquid",
-            "note": "泛指液体"
-          },
-          {
-            "w": "irrigate",
-            "note": "侧重灌溉农田"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4769,32 +4640,26 @@
         "w": "run",
         "ph": "/rʌn/",
         "pos": "v. / n.",
-        "cn": "跑；奔跑；经营；管理；运行；流动；延伸；竞选；n. 跑步；一段时期；行程",
+        "cn": "孩子们跑过田野去迎接老师。",
         "col": [
           {
             "en": "run out of",
             "cn": "用完；耗尽"
           },
           {
-            "en": "run into",
-            "cn": "偶然遇到；撞上"
+            "en": "run a business",
+            "cn": "经营生意"
           },
           {
-            "en": "run a business",
-            "cn": "经营企业"
+            "en": "in the long run",
+            "cn": "从长远来看"
           }
         ],
         "ex": {
-          "en": "She runs three miles every morning before school.",
-          "cn": "她每天早上上学前跑三英里。"
+          "en": "The children ran across the field to meet their teacher.",
+          "cn": ""
         },
         "forms": [
-          {
-            "w": "runs",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
           {
             "w": "runner",
             "ph": "",
@@ -4802,13 +4667,19 @@
             "cn": ""
           },
           {
-            "w": "runners",
+            "w": "running",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "running",
+            "w": "runs",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "runners",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -4825,8 +4696,8 @@
             "run",
             "runs",
             "runner",
-            "runners",
-            "running"
+            "running",
+            "runners"
           ],
           "v": [
             "run",
@@ -4837,29 +4708,10 @@
           "adj": [
             "running"
           ],
-          "adv": [
-            "running"
-          ]
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "race",
-            "note": "赛跑；竞赛"
-          },
-          {
-            "w": "manage",
-            "note": "经营；管理"
-          },
-          {
-            "w": "operate",
-            "note": "运转；操作"
-          },
-          {
-            "w": "dash",
-            "note": "猛冲；急奔"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4868,8 +4720,8 @@
         "id": "custom:low",
         "w": "low",
         "ph": "/ləʊ/",
-        "pos": "adj. / adv. / n.",
-        "cn": "低的；矮的；低落的；低声的；低水平地；低点",
+        "pos": "adj. / adv.",
+        "cn": "今年河里的水位很低。",
         "col": [
           {
             "en": "low price",
@@ -4880,35 +4732,17 @@
             "cn": "低声"
           },
           {
-            "en": "feel low",
-            "cn": "情绪低落"
+            "en": "low level",
+            "cn": "低水平"
           }
         ],
         "ex": {
-          "en": "She spoke in a low voice so as not to wake the baby.",
-          "cn": "她低声说话，以免吵醒婴儿。"
+          "en": "The water level in the river is very low this year.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "lows",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "lowness",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "lower",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "lowest",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -4918,15 +4752,49 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "lows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowered",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowering",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "lowest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "low",
-            "lows",
-            "lowness"
+            "lows"
           ],
-          "v": [],
+          "v": [
+            "lower",
+            "lowers",
+            "lowered",
+            "lowering"
+          ],
           "adj": [
             "low",
             "lower",
@@ -4934,24 +4802,13 @@
           ],
           "adv": [
             "low",
+            "lower",
+            "lowest",
             "lowly"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "short",
-            "note": "矮的，指身高"
-          },
-          {
-            "w": "quiet",
-            "note": "声音低/安静"
-          },
-          {
-            "w": "depressed",
-            "note": "情绪低落"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -4961,67 +4818,51 @@
         "w": "unlike",
         "ph": "/ˌʌnˈlaɪk/",
         "pos": "prep. / adj.",
-        "cn": "不像；与……不同；不相似的",
+        "cn": "与他的兄弟不同，汤姆喜欢在家读书。",
         "col": [
           {
             "en": "unlike sb/sth",
             "cn": "不像某人/某物"
           },
           {
-            "en": "be unlike",
-            "cn": "与……不同"
-          },
-          {
             "en": "unlike before",
             "cn": "与以前不同"
+          },
+          {
+            "en": "quite unlike",
+            "cn": "完全不同"
           }
         ],
         "ex": {
-          "en": "Unlike his brother, Tom enjoys reading in his free time.",
-          "cn": "汤姆和他哥哥不同，他喜欢在空闲时间读书。"
+          "en": "Unlike his brother, Tom enjoys reading at home.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "unlikeness",
+            "w": "unlikely",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "unlikely",
+            "w": "unlikeliest",
             "ph": "",
             "pos": "",
             "cn": ""
           }
         ],
         "wf": {
-          "n": [
-            "unlikeness"
-          ],
+          "n": [],
           "v": [],
           "adj": [
             "unlike",
-            "unlikely"
+            "unlikely",
+            "unlikeliest"
           ],
-          "adv": [
-            "unlikely"
-          ]
+          "adv": []
         },
-        "freq": "高",
-        "syn": [
-          {
-            "w": "different",
-            "note": "强调不同"
-          },
-          {
-            "w": "dissimilar",
-            "note": "较正式，不相似"
-          },
-          {
-            "w": "unusual",
-            "note": "强调不寻常"
-          }
-        ],
+        "freq": "中",
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5031,14 +4872,14 @@
         "w": "sudden",
         "ph": "/ˈsʌdn/",
         "pos": "adj.",
-        "cn": "突然的；意外的；急剧的",
+        "cn": "外面突然的响声让大家都抬起头来。",
         "col": [
           {
             "en": "all of a sudden",
-            "cn": "突然；冷不防"
+            "cn": "突然，猛地"
           },
           {
-            "en": "sudden change",
+            "en": "a sudden change",
             "cn": "突然的变化"
           },
           {
@@ -5047,8 +4888,8 @@
           }
         ],
         "ex": {
-          "en": "All of a sudden, the lights went out and the room fell silent.",
-          "cn": "突然间，灯灭了，房间陷入一片寂静。"
+          "en": "A sudden noise outside made everyone look up.",
+          "cn": ""
         },
         "forms": [
           {
@@ -5077,20 +4918,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "abrupt",
-            "note": "强调突兀生硬"
-          },
-          {
-            "w": "unexpected",
-            "note": "强调出乎意料"
-          },
-          {
-            "w": "rapid",
-            "note": "强调速度快"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5100,24 +4928,24 @@
         "w": "town",
         "ph": "/taʊn/",
         "pos": "n.",
-        "cn": "城镇；市镇；商业中心区",
+        "cn": "这个小镇因它的古桥而闻名。",
         "col": [
           {
             "en": "in town",
             "cn": "在城里；在镇上"
           },
           {
-            "en": "go to town",
-            "cn": "进城；尽情做某事"
+            "en": "a small town",
+            "cn": "小镇"
           },
           {
-            "en": "small town",
-            "cn": "小镇"
+            "en": "go to town",
+            "cn": "进城；大干一场"
           }
         ],
         "ex": {
-          "en": "She grew up in a small town near the coast.",
-          "cn": "她在海边的一个小镇长大。"
+          "en": "The small town is famous for its old bridge.",
+          "cn": ""
         },
         "forms": [
           {
@@ -5127,7 +4955,7 @@
             "cn": ""
           },
           {
-            "w": "towny",
+            "w": "townspeople",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5136,29 +4964,15 @@
         "wf": {
           "n": [
             "town",
-            "towns"
+            "towns",
+            "townspeople"
           ],
           "v": [],
-          "adj": [
-            "towny"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "city",
-            "note": "城市，规模较大"
-          },
-          {
-            "w": "village",
-            "note": "村庄，规模更小"
-          },
-          {
-            "w": "community",
-            "note": "社区，侧重人群"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5166,48 +4980,30 @@
       {
         "id": "custom:minute",
         "w": "minute",
-        "ph": "/ˈmɪnɪt; maɪˈnjuːt/",
-        "pos": "n. / adj.",
-        "cn": "分钟；片刻；一会儿；会议记录；（adj.）微小的；细微的",
+        "ph": "/ˈmɪnɪt/",
+        "pos": "n.",
+        "cn": "请稍等片刻，我找一下钥匙。",
         "col": [
           {
             "en": "in a minute",
-            "cn": "马上；立刻"
+            "cn": "马上，立刻"
           },
           {
             "en": "at the last minute",
             "cn": "在最后一刻"
           },
           {
-            "en": "minute details",
-            "cn": "细微之处"
+            "en": "wait a minute",
+            "cn": "等一下"
           }
         ],
         "ex": {
-          "en": "Please wait a minute while I check the schedule.",
-          "cn": "请稍等一分钟，我查一下日程安排。"
+          "en": "Please wait a minute while I find the key.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "minutes",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "minuter",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "minutest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "minutely",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5219,30 +5015,11 @@
             "minutes"
           ],
           "v": [],
-          "adj": [
-            "minute",
-            "minuter",
-            "minutest"
-          ],
-          "adv": [
-            "minutely"
-          ]
+          "adj": [],
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "moment",
-            "note": "片刻，更强调瞬间"
-          },
-          {
-            "w": "tiny",
-            "note": "极小的，指尺寸"
-          },
-          {
-            "w": "detailed",
-            "note": "详细的，指程度"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5252,7 +5029,7 @@
         "w": "give",
         "ph": "/ɡɪv/",
         "pos": "v.",
-        "cn": "给；提供；赠送；举办；让步",
+        "cn": "她决定把旧书捐给学校图书馆。",
         "col": [
           {
             "en": "give up",
@@ -5260,7 +5037,7 @@
           },
           {
             "en": "give in",
-            "cn": "屈服；让步"
+            "cn": "屈服，让步"
           },
           {
             "en": "give away",
@@ -5269,7 +5046,7 @@
         ],
         "ex": {
           "en": "She decided to give her old books to the school library.",
-          "cn": "她决定把旧书捐给学校图书馆。"
+          "cn": ""
         },
         "forms": [
           {
@@ -5279,13 +5056,19 @@
             "cn": ""
           },
           {
-            "w": "giving",
+            "w": "gift",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
             "w": "gives",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "giving",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5301,12 +5084,26 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "givers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "gifts",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "giver",
-            "giving"
+            "gift",
+            "givers",
+            "gifts"
           ],
           "v": [
             "give",
@@ -5315,26 +5112,11 @@
             "given",
             "giving"
           ],
-          "adj": [
-            "given"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "offer",
-            "note": "主动提供"
-          },
-          {
-            "w": "provide",
-            "note": "供应所需"
-          },
-          {
-            "w": "donate",
-            "note": "捐赠"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5343,11 +5125,11 @@
         "id": "custom:sign",
         "w": "sign",
         "ph": "/saɪn/",
-        "pos": "n. / v.",
-        "cn": "标志；符号；迹象；签名；示意",
+        "pos": "n. & v.",
+        "cn": "整个下午都没有下雨的迹象。",
         "col": [
           {
-            "en": "sign of",
+            "en": "a sign of",
             "cn": "……的迹象"
           },
           {
@@ -5355,17 +5137,29 @@
             "cn": "报名参加"
           },
           {
-            "en": "sign a contract",
-            "cn": "签署合同"
+            "en": "traffic sign",
+            "cn": "交通标志"
           }
         ],
         "ex": {
-          "en": "The dark clouds are a sign that it will rain soon.",
-          "cn": "乌云是快要下雨的迹象。"
+          "en": "There was no sign of rain all afternoon.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "signs",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "signal",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "signing",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5377,7 +5171,7 @@
             "cn": ""
           },
           {
-            "w": "signing",
+            "w": "signals",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5386,12 +5180,13 @@
         "wf": {
           "n": [
             "sign",
-            "signs"
+            "signs",
+            "signal",
+            "signals"
           ],
           "v": [
             "sign",
             "signs",
-            "signed",
             "signed",
             "signing"
           ],
@@ -5399,20 +5194,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "mark",
-            "note": "标记；痕迹"
-          },
-          {
-            "w": "symbol",
-            "note": "象征；符号"
-          },
-          {
-            "w": "signal",
-            "note": "信号；示意"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5421,13 +5203,9 @@
         "id": "custom:long",
         "w": "long",
         "ph": "/lɒŋ/",
-        "pos": "adj. / adv. / v.",
-        "cn": "长的；长期的；长久的；渴望，极想（long for）",
+        "pos": "adj. & adv.",
+        "cn": "完成这项工作没花多长时间。",
         "col": [
-          {
-            "en": "long for",
-            "cn": "渴望，极想"
-          },
           {
             "en": "as long as",
             "cn": "只要"
@@ -5435,33 +5213,19 @@
           {
             "en": "before long",
             "cn": "不久以后"
+          },
+          {
+            "en": "long for",
+            "cn": "渴望"
           }
         ],
         "ex": {
-          "en": "She has long hair and a warm smile.",
-          "cn": "她留着长发，笑容温暖。"
+          "en": "It did not take long to finish the work.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "longing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "length",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "longs",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "longed",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5479,13 +5243,13 @@
             "cn": ""
           },
           {
-            "w": "lengthy",
+            "w": "longingly",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "longingly",
+            "w": "lengths",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5493,20 +5257,14 @@
         ],
         "wf": {
           "n": [
-            "longing",
-            "length"
+            "length",
+            "lengths"
           ],
-          "v": [
-            "long",
-            "longs",
-            "longed",
-            "longing"
-          ],
+          "v": [],
           "adj": [
             "long",
             "longer",
-            "longest",
-            "lengthy"
+            "longest"
           ],
           "adv": [
             "long",
@@ -5516,20 +5274,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "lengthy",
-            "note": "强调过长"
-          },
-          {
-            "w": "extended",
-            "note": "强调延展"
-          },
-          {
-            "w": "yearn",
-            "note": "动词，渴望"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5537,42 +5282,30 @@
       {
         "id": "custom:term",
         "w": "term",
-        "ph": "/tɜːrm/",
+        "ph": "/tɜːm/",
         "pos": "n.",
-        "cn": "学期；术语；条款；期限；关系",
+        "cn": "这学期我们将学很多新单词。",
         "col": [
           {
             "en": "in the long term",
             "cn": "从长远来看"
           },
           {
-            "en": "on good terms with",
-            "cn": "与……关系良好"
+            "en": "in terms of",
+            "cn": "就……而言"
           },
           {
             "en": "come to terms with",
-            "cn": "逐渐接受；妥协"
+            "cn": "逐渐接受，妥协"
           }
         ],
         "ex": {
-          "en": "We have to come to terms with the fact that failure is part of learning.",
-          "cn": "我们必须接受失败是学习的一部分这一事实。"
+          "en": "We will learn many new words this term.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "terms",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "terminal",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "terminally",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5584,28 +5317,11 @@
             "terms"
           ],
           "v": [],
-          "adj": [
-            "terminal"
-          ],
-          "adv": [
-            "terminally"
-          ]
+          "adj": [],
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "semester",
-            "note": "学期，美式"
-          },
-          {
-            "w": "expression",
-            "note": "词语，表达"
-          },
-          {
-            "w": "condition",
-            "note": "条件，条款"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5615,7 +5331,7 @@
         "w": "serious",
         "ph": "/ˈsɪəriəs/",
         "pos": "adj.",
-        "cn": "严重的；严肃的；认真的；重大的",
+        "cn": "空气污染在许多城市已成为一个严重问题。",
         "col": [
           {
             "en": "be serious about",
@@ -5631,24 +5347,12 @@
           }
         ],
         "ex": {
-          "en": "Air pollution has become a serious problem in many big cities.",
-          "cn": "空气污染在许多大城市已成为一个严重的问题。"
+          "en": "Air pollution has become a serious problem in many cities.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "seriousness",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "seriouser",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "seriousest",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5666,29 +5370,14 @@
           ],
           "v": [],
           "adj": [
-            "serious",
-            "seriouser",
-            "seriousest"
+            "serious"
           ],
           "adv": [
             "seriously"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "severe",
-            "note": "更强调严重程度"
-          },
-          {
-            "w": "grave",
-            "note": "书面，指严峻重大"
-          },
-          {
-            "w": "earnest",
-            "note": "强调真诚认真"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5698,15 +5387,15 @@
         "w": "arrive",
         "ph": "/əˈraɪv/",
         "pos": "v.",
-        "cn": "到达；抵达；送达；来临",
+        "cn": "他们在火车开走前刚好到达车站。",
         "col": [
           {
-            "en": "arrive at/in",
-            "cn": "到达（某地）"
+            "en": "arrive at",
+            "cn": "到达（小地方）；达成"
           },
           {
-            "en": "arrive at a conclusion",
-            "cn": "得出结论"
+            "en": "arrive in",
+            "cn": "到达（大地方）"
           },
           {
             "en": "arrive on time",
@@ -5714,18 +5403,12 @@
           }
         ],
         "ex": {
-          "en": "We arrived at the station just as the train was leaving.",
-          "cn": "我们到达车站时火车正要开走。"
+          "en": "They arrived at the station just before the train left.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "arrival",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "arrivals",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5737,13 +5420,19 @@
             "cn": ""
           },
           {
+            "w": "arriving",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
             "w": "arrived",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "arriving",
+            "w": "arrivals",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5764,20 +5453,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "reach",
-            "note": "及物，直接接地点"
-          },
-          {
-            "w": "get to",
-            "note": "口语，到达"
-          },
-          {
-            "w": "come",
-            "note": "来，侧重方向"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5786,12 +5462,12 @@
         "id": "custom:little",
         "w": "little",
         "ph": "/ˈlɪtl/",
-        "pos": "adj. / adv. / n.",
-        "cn": "小的；少的；短暂的；很少；几乎不；少量",
+        "pos": "adj. & adv.",
+        "cn": "瓶子里剩下的水不多了。",
         "col": [
           {
             "en": "a little",
-            "cn": "一点；少量"
+            "cn": "一点，少量"
           },
           {
             "en": "little by little",
@@ -5803,8 +5479,8 @@
           }
         ],
         "ex": {
-          "en": "There is little water left in the bottle, so we need to buy some.",
-          "cn": "瓶子里剩下的水很少，所以我们需要买一些。"
+          "en": "There is little water left in the bottle.",
+          "cn": ""
         },
         "forms": [
           {
@@ -5818,6 +5494,18 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "littler",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "littlest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
@@ -5826,27 +5514,18 @@
           "adj": [
             "little",
             "less",
-            "least"
+            "least",
+            "littler",
+            "littlest"
           ],
           "adv": [
-            "little"
+            "little",
+            "less",
+            "least"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "small",
-            "note": "侧重体积小"
-          },
-          {
-            "w": "tiny",
-            "note": "强调极小"
-          },
-          {
-            "w": "few",
-            "note": "修饰可数名词"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5855,25 +5534,25 @@
         "id": "custom:notice",
         "w": "notice",
         "ph": "/ˈnəʊtɪs/",
-        "pos": "v. / n.",
-        "cn": "注意到；察觉；通知；布告；注意",
+        "pos": "v. & n.",
+        "cn": "我注意到他脸上有一种奇怪的表情。",
         "col": [
           {
             "en": "take notice of",
-            "cn": "注意到；关注"
+            "cn": "注意到"
+          },
+          {
+            "en": "at short notice",
+            "cn": "在短时间内；临时通知"
           },
           {
             "en": "notice board",
             "cn": "布告栏"
-          },
-          {
-            "en": "without notice",
-            "cn": "未事先通知"
           }
         ],
         "ex": {
-          "en": "I noticed a small change in her expression when she heard the news.",
-          "cn": "我注意到她听到这个消息时表情有细微的变化。"
+          "en": "I noticed a strange look on his face.",
+          "cn": ""
         },
         "forms": [
           {
@@ -5883,13 +5562,13 @@
             "cn": ""
           },
           {
-            "w": "noticed",
+            "w": "noticing",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "noticing",
+            "w": "noticed",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5926,20 +5605,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "observe",
-            "note": "观察；注意到"
-          },
-          {
-            "w": "spot",
-            "note": "发现；认出"
-          },
-          {
-            "w": "announcement",
-            "note": "公告；通知"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -5949,7 +5615,7 @@
         "w": "huge",
         "ph": "/hjuːdʒ/",
         "pos": "adj.",
-        "cn": "巨大的；庞大的；极大量的",
+        "cn": "新体育场很大，能容纳数千人。",
         "col": [
           {
             "en": "a huge amount of",
@@ -5957,20 +5623,26 @@
           },
           {
             "en": "huge success",
-            "cn": "巨大成功"
+            "cn": "巨大的成功"
           },
           {
             "en": "huge difference",
-            "cn": "巨大差异"
+            "cn": "巨大的差异"
           }
         ],
         "ex": {
-          "en": "The new library is huge, with room for thousands of books.",
-          "cn": "新图书馆非常大，能容纳数千本书。"
+          "en": "The new stadium is huge and can hold thousands of people.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "hugeness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "hugely",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -5983,12 +5655,6 @@
           },
           {
             "w": "hugest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "hugely",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6009,20 +5675,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "enormous",
-            "note": "强调尺寸极大"
-          },
-          {
-            "w": "vast",
-            "note": "强调范围广阔"
-          },
-          {
-            "w": "massive",
-            "note": "强调体积厚重"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6031,25 +5684,25 @@
         "id": "custom:cause",
         "w": "cause",
         "ph": "/kɔːz/",
-        "pos": "v. / n.",
-        "cn": "导致；引起；原因；事业",
+        "pos": "v. & n.",
+        "cn": "大雨使河水迅速上涨。",
         "col": [
           {
-            "en": "cause sb to do sth",
-            "cn": "导致某人做某事"
+            "en": "cause damage to",
+            "cn": "对……造成损害"
           },
           {
             "en": "the cause of",
             "cn": "……的原因"
           },
           {
-            "en": "cause damage to",
-            "cn": "对……造成损害"
+            "en": "cause trouble",
+            "cn": "惹麻烦"
           }
         ],
         "ex": {
-          "en": "Heavy rain caused serious flooding in the village.",
-          "cn": "大雨导致村里发生了严重的洪灾。"
+          "en": "Heavy rain caused the river to rise quickly.",
+          "cn": ""
         },
         "forms": [
           {
@@ -6059,19 +5712,7 @@
             "cn": ""
           },
           {
-            "w": "causer",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "causers",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "caused",
+            "w": "causation",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6083,13 +5724,13 @@
             "cn": ""
           },
           {
-            "w": "causal",
+            "w": "caused",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "causative",
+            "w": "causal",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6105,8 +5746,7 @@
           "n": [
             "cause",
             "causes",
-            "causer",
-            "causers"
+            "causation"
           ],
           "v": [
             "cause",
@@ -6115,28 +5755,14 @@
             "causing"
           ],
           "adj": [
-            "causal",
-            "causative"
+            "causal"
           ],
           "adv": [
             "causally"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "reason",
-            "note": "原因，侧重解释理由"
-          },
-          {
-            "w": "lead to",
-            "note": "导致，后接结果"
-          },
-          {
-            "w": "trigger",
-            "note": "引发，强调突然触发"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6144,49 +5770,38 @@
       {
         "id": "custom:undersea",
         "w": "undersea",
-        "ph": "/ˌʌndəˈsiː/",
-        "pos": "adj. / adv.",
-        "cn": "海底的；海面下的；在海底",
+        "ph": "/ˈʌndəsiː/",
+        "pos": "adj.",
+        "cn": "科学家们正在研究该岛附近的海底世界。",
         "col": [
           {
             "en": "undersea world",
             "cn": "海底世界"
           },
           {
-            "en": "undersea cable",
-            "cn": "海底电缆"
+            "en": "undersea earthquake",
+            "cn": "海底地震"
           },
           {
-            "en": "undersea exploration",
-            "cn": "海底勘探"
+            "en": "undersea cable",
+            "cn": "海底电缆"
           }
         ],
         "ex": {
-          "en": "Scientists use special robots to explore the undersea world.",
-          "cn": "科学家们使用特殊机器人探索海底世界。"
+          "en": "Scientists are studying the undersea world near the island.",
+          "cn": ""
         },
         "forms": [],
         "wf": {
           "n": [],
           "v": [],
-          "adj": [],
+          "adj": [
+            "undersea"
+          ],
           "adv": []
         },
-        "freq": "中",
-        "syn": [
-          {
-            "w": "underwater",
-            "note": "更常用，泛指水下"
-          },
-          {
-            "w": "submarine",
-            "note": "多指潜艇或海底的"
-          },
-          {
-            "w": "marine",
-            "note": "侧重海洋的"
-          }
-        ],
+        "freq": "低",
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6196,7 +5811,7 @@
         "w": "earthquake",
         "ph": "/ˈɜːθkweɪk/",
         "pos": "n.",
-        "cn": "地震",
+        "cn": "许多建筑在地震中被毁。",
         "col": [
           {
             "en": "a strong earthquake",
@@ -6207,13 +5822,13 @@
             "cn": "地震破坏"
           },
           {
-            "en": "be hit by an earthquake",
-            "cn": "遭受地震"
+            "en": "survive an earthquake",
+            "cn": "在地震中幸存"
           }
         ],
         "ex": {
-          "en": "The whole city was destroyed by a powerful earthquake.",
-          "cn": "整座城市被一场强烈地震摧毁了。"
+          "en": "Many buildings were destroyed in the earthquake.",
+          "cn": ""
         },
         "forms": [
           {
@@ -6233,20 +5848,7 @@
           "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "quake",
-            "note": "口语，多指地震"
-          },
-          {
-            "w": "tremor",
-            "note": "轻微震动"
-          },
-          {
-            "w": "shock",
-            "note": "强调冲击"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6256,11 +5858,11 @@
         "w": "sea",
         "ph": "/siː/",
         "pos": "n.",
-        "cn": "海；海洋；大量",
+        "cn": "那天早晨大海平静而湛蓝。",
         "col": [
           {
             "en": "by sea",
-            "cn": "乘船；由海路"
+            "cn": "乘船，由海路"
           },
           {
             "en": "at sea",
@@ -6272,12 +5874,18 @@
           }
         ],
         "ex": {
-          "en": "We traveled to the island by sea and watched the sun set over the water.",
-          "cn": "我们乘船去了那个岛，看着太阳落在水面上。"
+          "en": "The sea was calm and blue that morning.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "seas",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "seaside",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6286,27 +5894,15 @@
         "wf": {
           "n": [
             "sea",
-            "seas"
+            "seas",
+            "seaside"
           ],
           "v": [],
           "adj": [],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "ocean",
-            "note": "大洋，比海大"
-          },
-          {
-            "w": "waters",
-            "note": "水域，较正式"
-          },
-          {
-            "w": "marine",
-            "note": "海的，形容词"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6316,24 +5912,24 @@
         "w": "coastal",
         "ph": "/ˈkəʊstl/",
         "pos": "adj.",
-        "cn": "沿海的；海岸的",
+        "cn": "这个沿海城镇每年夏天吸引许多游客。",
         "col": [
           {
             "en": "coastal area",
             "cn": "沿海地区"
           },
           {
-            "en": "coastal city",
-            "cn": "沿海城市"
+            "en": "coastal town",
+            "cn": "沿海城镇"
           },
           {
             "en": "coastal waters",
-            "cn": "近岸水域"
+            "cn": "沿海水域"
           }
         ],
         "ex": {
-          "en": "Many coastal towns depend on fishing and tourism.",
-          "cn": "许多沿海城镇依靠渔业和旅游业。"
+          "en": "The coastal town attracts many visitors every summer.",
+          "cn": ""
         },
         "forms": [
           {
@@ -6347,26 +5943,12 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "coastline",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "coastlines",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "coast",
-            "coasts",
-            "coastline",
-            "coastlines"
+            "coasts"
           ],
           "v": [],
           "adj": [
@@ -6375,20 +5957,7 @@
           "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "shore",
-            "note": "岸，侧重水边"
-          },
-          {
-            "w": "seaside",
-            "note": "海滨，侧重休闲"
-          },
-          {
-            "w": "maritime",
-            "note": "海事的，较正式"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6397,8 +5966,8 @@
         "id": "custom:once",
         "w": "once",
         "ph": "/wʌns/",
-        "pos": "adv.",
-        "cn": "一次；曾经；一旦",
+        "pos": "adv. / conj.",
+        "cn": "一旦你开始读这本书，就会发现很难放下。",
         "col": [
           {
             "en": "once a week",
@@ -6414,31 +5983,20 @@
           }
         ],
         "ex": {
-          "en": "He visits his grandparents once a month.",
-          "cn": "他每月看望祖父母一次。"
+          "en": "Once you start reading this book, you will find it hard to put it down.",
+          "cn": ""
         },
         "forms": [],
         "wf": {
           "n": [],
           "v": [],
           "adj": [],
-          "adv": []
+          "adv": [
+            "once"
+          ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "formerly",
-            "note": "强调过去曾经"
-          },
-          {
-            "w": "previously",
-            "note": "侧重先前"
-          },
-          {
-            "w": "immediately",
-            "note": "对应at once义"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6448,55 +6006,34 @@
         "w": "Indian",
         "ph": "/ˈɪndiən/",
         "pos": "adj. / n.",
-        "cn": "印度的；印度人的；印度文化的；印度人；印第安人",
+        "cn": "我的新同学是一位喜欢中国茶的印度女孩。",
         "col": [
           {
             "en": "Indian Ocean",
             "cn": "印度洋"
           },
           {
-            "en": "Indian English",
-            "cn": "印度英语"
+            "en": "Indian food",
+            "cn": "印度食物"
           },
           {
-            "en": "American Indian",
-            "cn": "美洲印第安人"
+            "en": "an Indian student",
+            "cn": "一名印度学生"
           }
         ],
         "ex": {
-          "en": "She cooked an Indian meal for her friends.",
-          "cn": "她为朋友们做了一顿印度菜。"
+          "en": "My new classmate is an Indian girl who loves Chinese tea.",
+          "cn": ""
         },
-        "forms": [
-          {
-            "w": "Indians",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          }
-        ],
+        "forms": [],
         "wf": {
-          "n": [
-            "Indian",
-            "Indians"
-          ],
+          "n": [],
           "v": [],
-          "adj": [
-            "Indian"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "Asian",
-            "note": "亚洲的，范围更广"
-          },
-          {
-            "w": "native",
-            "note": "本土的，强调原住民"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6505,47 +6042,35 @@
         "id": "custom:coast",
         "w": "coast",
         "ph": "/kəʊst/",
-        "pos": "n. / v.",
-        "cn": "海岸；海滨；沿海地区；滑行；惯性滑行",
+        "pos": "n.",
+        "cn": "我们整个下午都沿着海岸散步。",
         "col": [
           {
             "en": "along the coast",
-            "cn": "沿海岸"
+            "cn": "沿着海岸"
           },
           {
             "en": "on the coast",
             "cn": "在海岸上"
           },
           {
-            "en": "coast to coast",
-            "cn": "从东海岸到西海岸；全国范围"
+            "en": "the east coast",
+            "cn": "东海岸"
           }
         ],
         "ex": {
-          "en": "We drove along the coast and enjoyed the sea view.",
-          "cn": "我们沿着海岸开车，欣赏海景。"
+          "en": "We spent the whole afternoon walking along the coast.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "coasts",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "coasted",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "coasting",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "coastal",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "coasts",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6554,34 +6079,17 @@
         "wf": {
           "n": [
             "coast",
-            "coasts"
-          ],
-          "v": [
-            "coast",
             "coasts",
-            "coasted",
-            "coasting"
+            "coastal"
           ],
+          "v": [],
           "adj": [
             "coastal"
           ],
           "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "shore",
-            "note": "岸，多指海边"
-          },
-          {
-            "w": "beach",
-            "note": "海滩，沙石滩"
-          },
-          {
-            "w": "seaside",
-            "note": "海滨，度假地"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6591,7 +6099,7 @@
         "w": "follow",
         "ph": "/ˈfɒləʊ/",
         "pos": "v.",
-        "cn": "跟随；遵循；听懂；关注；接着发生",
+        "cn": "如果你跟着指示牌走，就很容易找到博物馆。",
         "col": [
           {
             "en": "follow the rules",
@@ -6607,18 +6115,12 @@
           }
         ],
         "ex": {
-          "en": "Please follow the instructions carefully before using the machine.",
-          "cn": "使用机器前请仔细遵循说明。"
+          "en": "If you follow the signs, you will easily find the museum.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "follower",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "follows",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6634,11 +6136,24 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "followers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "follows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "follower"
+            "follower",
+            "followers"
           ],
           "v": [
             "follow",
@@ -6652,20 +6167,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "pursue",
-            "note": "强调追赶或追求"
-          },
-          {
-            "w": "obey",
-            "note": "强调服从"
-          },
-          {
-            "w": "trace",
-            "note": "强调追踪踪迹"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6675,24 +6177,24 @@
         "w": "many",
         "ph": "/ˈmeni/",
         "pos": "adj. / pron.",
-        "cn": "许多的；许多（人或物）",
+        "cn": "每年都有许多学生参加学校运动会。",
         "col": [
-          {
-            "en": "many a",
-            "cn": "许多（后接单数名词）"
-          },
-          {
-            "en": "a good many",
-            "cn": "相当多"
-          },
           {
             "en": "many times",
             "cn": "许多次"
+          },
+          {
+            "en": "how many",
+            "cn": "多少"
+          },
+          {
+            "en": "many of us",
+            "cn": "我们中的许多人"
           }
         ],
         "ex": {
-          "en": "Many students take part in after-school activities.",
-          "cn": "许多学生参加课外活动。"
+          "en": "Many students take part in the school sports meeting every year.",
+          "cn": ""
         },
         "forms": [
           {
@@ -6712,22 +6214,14 @@
           "n": [],
           "v": [],
           "adj": [
+            "many",
             "more",
             "most"
           ],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "numerous",
-            "note": "较正式，强调数量多"
-          },
-          {
-            "w": "plenty of",
-            "note": "口语，强调充足"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6737,24 +6231,24 @@
         "w": "country",
         "ph": "/ˈkʌntri/",
         "pos": "n.",
-        "cn": "国家；乡村；农村地区",
+        "cn": "中国是一个历史悠久、文化丰富的国家。",
         "col": [
           {
             "en": "in the country",
             "cn": "在乡下"
           },
           {
-            "en": "developing country",
-            "cn": "发展中国家"
+            "en": "a developing country",
+            "cn": "一个发展中国家"
           },
           {
-            "en": "country music",
-            "cn": "乡村音乐"
+            "en": "all over the country",
+            "cn": "全国各地"
           }
         ],
         "ex": {
-          "en": "She grew up in the country and knows a lot about farming.",
-          "cn": "她在乡下长大，对农耕了解很多。"
+          "en": "China is a country with a long history and rich culture.",
+          "cn": ""
         },
         "forms": [
           {
@@ -6774,20 +6268,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "nation",
-            "note": "侧重民族、国民"
-          },
-          {
-            "w": "state",
-            "note": "侧重政权、国家"
-          },
-          {
-            "w": "countryside",
-            "note": "仅指乡村地区"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6797,28 +6278,28 @@
         "w": "land",
         "ph": "/lænd/",
         "pos": "n. / v.",
-        "cn": "陆地；土地；国土；着陆；使降落；获得",
+        "cn": "飞机将于六点在北京降落。",
         "col": [
           {
-            "en": "land on",
-            "cn": "降落在……上"
+            "en": "on land",
+            "cn": "在陆地上"
           },
           {
-            "en": "by land",
-            "cn": "由陆路"
+            "en": "land on the moon",
+            "cn": "登上月球"
           },
           {
-            "en": "land a job",
-            "cn": "获得一份工作"
+            "en": "farm land",
+            "cn": "农田"
           }
         ],
         "ex": {
-          "en": "The plane will land at the airport in ten minutes.",
-          "cn": "飞机将在十分钟后降落在机场。"
+          "en": "The plane will land in Beijing at six o'clock.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "lands",
+            "w": "landing",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6830,7 +6311,13 @@
             "cn": ""
           },
           {
-            "w": "landing",
+            "w": "lands",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "landings",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -6839,12 +6326,13 @@
         "wf": {
           "n": [
             "land",
-            "lands"
+            "lands",
+            "landing",
+            "landings"
           ],
           "v": [
             "land",
             "lands",
-            "landed",
             "landed",
             "landing"
           ],
@@ -6852,24 +6340,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "ground",
-            "note": "地面，侧重地表"
-          },
-          {
-            "w": "soil",
-            "note": "土壤，侧重泥土"
-          },
-          {
-            "w": "arrive",
-            "note": "到达，不及物"
-          },
-          {
-            "w": "touch down",
-            "note": "着陆，航空用语"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6879,7 +6350,7 @@
         "w": "heavy",
         "ph": "/ˈhevi/",
         "pos": "adj.",
-        "cn": "重的；沉重的；大量的；猛烈的；繁重的",
+        "cn": "昨晚的大雨使我们无法外出。",
         "col": [
           {
             "en": "heavy rain",
@@ -6890,13 +6361,13 @@
             "cn": "交通拥堵"
           },
           {
-            "en": "heavy burden",
-            "cn": "沉重负担"
+            "en": "a heavy burden",
+            "cn": "沉重的负担"
           }
         ],
         "ex": {
-          "en": "The heavy rain made it difficult for us to get to school on time.",
-          "cn": "大雨使我们很难按时到校。"
+          "en": "The heavy rain stopped us from going out last night.",
+          "cn": ""
         },
         "forms": [
           {
@@ -6939,20 +6410,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "weighty",
-            "note": "强调重量大"
-          },
-          {
-            "w": "massive",
-            "note": "强调体积大"
-          },
-          {
-            "w": "burdensome",
-            "note": "强调负担重"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -6962,15 +6420,15 @@
         "w": "rain",
         "ph": "/reɪn/",
         "pos": "n. / v.",
-        "cn": "雨；雨水；下雨；（使）大量降落",
+        "cn": "我们刚到公园就开始下雨了。",
         "col": [
-          {
-            "en": "heavy rain",
-            "cn": "大雨"
-          },
           {
             "en": "in the rain",
             "cn": "在雨中"
+          },
+          {
+            "en": "heavy rain",
+            "cn": "大雨"
           },
           {
             "en": "rain heavily",
@@ -6978,12 +6436,12 @@
           }
         ],
         "ex": {
-          "en": "We stayed at home because of the heavy rain.",
-          "cn": "因为大雨，我们待在家里。"
+          "en": "It began to rain just as we reached the park.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "rains",
+            "w": "rainfall",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7005,12 +6463,31 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "rains",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rainier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "rainiest",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "rain",
-            "rains"
+            "rains",
+            "rainfall"
           ],
           "v": [
             "rain",
@@ -7019,25 +6496,14 @@
             "raining"
           ],
           "adj": [
-            "rainy"
+            "rainy",
+            "rainier",
+            "rainiest"
           ],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "shower",
-            "note": "阵雨"
-          },
-          {
-            "w": "drizzle",
-            "note": "毛毛雨"
-          },
-          {
-            "w": "pour",
-            "note": "倾盆而下"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7047,7 +6513,7 @@
         "w": "street",
         "ph": "/striːt/",
         "pos": "n.",
-        "cn": "街道；马路",
+        "cn": "这条街的尽头有一家小书店。",
         "col": [
           {
             "en": "in the street",
@@ -7058,13 +6524,13 @@
             "cn": "在街对面"
           },
           {
-            "en": "main street",
-            "cn": "主街；大街"
+            "en": "a busy street",
+            "cn": "一条繁忙的街道"
           }
         ],
         "ex": {
-          "en": "The children were playing football in the street.",
-          "cn": "孩子们正在街上踢足球。"
+          "en": "There is a small bookshop at the end of the street.",
+          "cn": ""
         },
         "forms": [
           {
@@ -7084,20 +6550,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "road",
-            "note": "道路，较宽"
-          },
-          {
-            "w": "avenue",
-            "note": "大街，多指林荫道"
-          },
-          {
-            "w": "lane",
-            "note": "小巷，窄路"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7106,59 +6559,29 @@
         "id": "custom:home",
         "w": "home",
         "ph": "/həʊm/",
-        "pos": "n. / adj. / adv. / v.",
-        "cn": "家；住所；家乡；家庭；栖息地；家庭的；在家；回家；归巢",
+        "pos": "n. / adv.",
+        "cn": "忙碌一天后，没有什么比回家更让人舒服的了。",
         "col": [
           {
             "en": "at home",
-            "cn": "在家；自在"
+            "cn": "在家"
           },
           {
             "en": "go home",
             "cn": "回家"
           },
           {
-            "en": "home to",
-            "cn": "……的所在地"
+            "en": "a home for the elderly",
+            "cn": "养老院"
           }
         ],
         "ex": {
-          "en": "After a long journey, she finally arrived home.",
-          "cn": "经过长途旅行，她终于到家了。"
+          "en": "After a long day, nothing feels better than going home.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "homes",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "homed",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "homing",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "homey",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "homier",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "homiest",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7169,36 +6592,14 @@
             "home",
             "homes"
           ],
-          "v": [
-            "home",
-            "homes",
-            "homed",
-            "homing"
-          ],
-          "adj": [
-            "homey",
-            "homier",
-            "homiest"
-          ],
+          "v": [],
+          "adj": [],
           "adv": [
             "home"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "house",
-            "note": "房屋，侧重建筑"
-          },
-          {
-            "w": "residence",
-            "note": "住所，较正式"
-          },
-          {
-            "w": "dwelling",
-            "note": "住处，书面语"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7208,7 +6609,7 @@
         "w": "hillside",
         "ph": "/ˈhɪlsaɪd/",
         "pos": "n.",
-        "cn": "山坡；山腰",
+        "cn": "羊群在绿色的山坡上安静地吃草。",
         "col": [
           {
             "en": "on the hillside",
@@ -7219,13 +6620,13 @@
             "cn": "陡峭的山坡"
           },
           {
-            "en": "the hillside village",
-            "cn": "山坡上的村庄"
+            "en": "plant trees on the hillside",
+            "cn": "在山坡上种树"
           }
         ],
         "ex": {
           "en": "Sheep were grazing quietly on the green hillside.",
-          "cn": "羊群在绿色的山坡上安静地吃草。"
+          "cn": ""
         },
         "forms": [
           {
@@ -7244,21 +6645,8 @@
           "adj": [],
           "adv": []
         },
-        "freq": "中",
-        "syn": [
-          {
-            "w": "slope",
-            "note": "侧重倾斜面"
-          },
-          {
-            "w": "hillslope",
-            "note": "更专业，指坡地"
-          },
-          {
-            "w": "mountainside",
-            "note": "指山的一侧"
-          }
-        ],
+        "freq": "低",
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7268,24 +6656,24 @@
         "w": "road",
         "ph": "/rəʊd/",
         "pos": "n.",
-        "cn": "路；道路；途径；方法",
+        "cn": "在学校附近过马路时要小心。",
         "col": [
           {
             "en": "on the road",
-            "cn": "在旅途中；在公路上"
+            "cn": "在路上"
           },
           {
-            "en": "road to success",
-            "cn": "成功之路"
+            "en": "a busy road",
+            "cn": "一条繁忙的道路"
           },
           {
-            "en": "by road",
-            "cn": "由公路；乘车"
+            "en": "cross the road",
+            "cn": "过马路"
           }
         ],
         "ex": {
-          "en": "The road to the village was blocked by fallen trees after the storm.",
-          "cn": "暴风雨过后，通往村庄的路被倒下的树堵住了。"
+          "en": "Be careful when you cross the road near the school.",
+          "cn": ""
         },
         "forms": [
           {
@@ -7305,20 +6693,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "path",
-            "note": "小路；途径"
-          },
-          {
-            "w": "route",
-            "note": "路线"
-          },
-          {
-            "w": "way",
-            "note": "方式；道路"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7327,25 +6702,25 @@
         "id": "custom:house",
         "w": "house",
         "ph": "/haʊs/",
-        "pos": "n. / v.",
-        "cn": "房子；住宅；全家人；议院；公司；给……提供住处；容纳",
+        "pos": "n.",
+        "cn": "他们买了一栋带漂亮花园的小房子。",
         "col": [
           {
-            "en": "house price",
-            "cn": "房价"
+            "en": "a two-storey house",
+            "cn": "一栋两层的房子"
           },
           {
             "en": "move house",
             "cn": "搬家"
           },
           {
-            "en": "the House of Commons",
-            "cn": "下议院"
+            "en": "the White House",
+            "cn": "白宫"
           }
         ],
         "ex": {
-          "en": "They plan to house the homeless families in the old school building.",
-          "cn": "他们计划把无家可归的家庭安置在那栋旧校舍里。"
+          "en": "They bought a small house with a beautiful garden.",
+          "cn": ""
         },
         "forms": [
           {
@@ -7355,13 +6730,13 @@
             "cn": ""
           },
           {
-            "w": "housed",
+            "w": "housing",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "housing",
+            "w": "housed",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7370,12 +6745,10 @@
         "wf": {
           "n": [
             "house",
-            "houses"
+            "houses",
+            "housing"
           ],
           "v": [
-            "house",
-            "houses",
-            "housed",
             "housed",
             "housing"
           ],
@@ -7383,20 +6756,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "home",
-            "note": "家，侧重居住归属"
-          },
-          {
-            "w": "residence",
-            "note": "住所，较正式"
-          },
-          {
-            "w": "accommodate",
-            "note": "容纳，提供住宿"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7406,15 +6766,15 @@
         "w": "mountainous",
         "ph": "/ˈmaʊntənəs/",
         "pos": "adj.",
-        "cn": "多山的；山区的；巨大的",
+        "cn": "这个山区以美丽的风景而闻名。",
         "col": [
           {
-            "en": "mountainous area",
+            "en": "a mountainous area",
             "cn": "山区"
           },
           {
-            "en": "mountainous region",
-            "cn": "多山地区"
+            "en": "mountainous country",
+            "cn": "多山的国家"
           },
           {
             "en": "mountainous terrain",
@@ -7422,8 +6782,8 @@
           }
         ],
         "ex": {
-          "en": "The mountainous area is difficult to reach in winter.",
-          "cn": "这个山区在冬天很难到达。"
+          "en": "The mountainous area is famous for its beautiful scenery.",
+          "cn": ""
         },
         "forms": [
           {
@@ -7434,12 +6794,6 @@
           },
           {
             "w": "mountains",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "mountainously",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7454,25 +6808,10 @@
           "adj": [
             "mountainous"
           ],
-          "adv": [
-            "mountainously"
-          ]
+          "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "hilly",
-            "note": "多小山的"
-          },
-          {
-            "w": "rugged",
-            "note": "崎岖的"
-          },
-          {
-            "w": "highland",
-            "note": "高地的"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7482,24 +6821,24 @@
         "w": "area",
         "ph": "/ˈeəriə/",
         "pos": "n.",
-        "cn": "面积；地区；领域；场地",
+        "cn": "这个地区以清新的空气和干净的水而闻名。",
         "col": [
           {
-            "en": "in the area of",
-            "cn": "在……领域"
+            "en": "in the area",
+            "cn": "在这个地区"
           },
           {
             "en": "a rural area",
             "cn": "农村地区"
           },
           {
-            "en": "cover an area of",
-            "cn": "占地面积为"
+            "en": "the area of",
+            "cn": "……的面积"
           }
         ],
         "ex": {
-          "en": "The library covers an area of about 2,000 square meters.",
-          "cn": "这座图书馆占地约两千平方米。"
+          "en": "This area is known for its fresh air and clean water.",
+          "cn": ""
         },
         "forms": [
           {
@@ -7519,20 +6858,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "region",
-            "note": "指较大地理区域"
-          },
-          {
-            "w": "zone",
-            "note": "指划分出的地带"
-          },
-          {
-            "w": "field",
-            "note": "指学科或活动领域"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7542,24 +6868,24 @@
         "w": "volcanic",
         "ph": "/vɒlˈkænɪk/",
         "pos": "adj.",
-        "cn": "火山的；火山作用的；火山般的",
+        "cn": "火山喷发迫使数千人离开家园。",
         "col": [
           {
-            "en": "volcanic eruption",
+            "en": "a volcanic eruption",
             "cn": "火山喷发"
-          },
-          {
-            "en": "volcanic activity",
-            "cn": "火山活动"
           },
           {
             "en": "volcanic ash",
             "cn": "火山灰"
+          },
+          {
+            "en": "volcanic activity",
+            "cn": "火山活动"
           }
         ],
         "ex": {
           "en": "The volcanic eruption forced thousands of people to leave their homes.",
-          "cn": "火山喷发迫使数千人离开家园。"
+          "cn": ""
         },
         "forms": [
           {
@@ -7575,7 +6901,7 @@
             "cn": ""
           },
           {
-            "w": "volcanism",
+            "w": "volcanos",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7591,7 +6917,7 @@
           "n": [
             "volcano",
             "volcanoes",
-            "volcanism"
+            "volcanos"
           ],
           "v": [],
           "adj": [
@@ -7602,16 +6928,7 @@
           ]
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "eruptive",
-            "note": "强调喷发"
-          },
-          {
-            "w": "fiery",
-            "note": "强调火热"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7621,34 +6938,36 @@
         "w": "eruption",
         "ph": "/ɪˈrʌpʃn/",
         "pos": "n.",
-        "cn": "爆发；喷发；（疾病）突然发作",
+        "cn": "火山喷发迫使数千人离开家园。",
         "col": [
           {
             "en": "volcanic eruption",
             "cn": "火山喷发"
           },
           {
-            "en": "a sudden eruption of",
-            "cn": "……的突然爆发"
-          },
-          {
-            "en": "in eruption",
-            "cn": "处于喷发状态"
+            "en": "a sudden eruption of anger",
+            "cn": "怒火的突然爆发"
           }
         ],
         "ex": {
-          "en": "The volcanic eruption forced thousands of people to leave their homes.",
-          "cn": "火山喷发迫使数千人离开家园。"
+          "en": "The eruption of the volcano forced thousands of people to leave their homes.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "eruptions",
+            "w": "erupt",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "erupt",
+            "w": "eruptive",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "eruptions",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7667,12 +6986,6 @@
           },
           {
             "w": "erupting",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "eruptive",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7695,20 +7008,7 @@
           "adv": []
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "outbreak",
-            "note": "多指疾病、战争爆发"
-          },
-          {
-            "w": "explosion",
-            "note": "强调爆炸式爆发"
-          },
-          {
-            "w": "blast",
-            "note": "侧重冲击性爆发"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7718,26 +7018,32 @@
         "w": "snow",
         "ph": "/snəʊ/",
         "pos": "n. / v.",
-        "cn": "雪；下雪",
+        "cn": "雪一停，孩子们就跑到外面去玩了。",
         "col": [
           {
             "en": "heavy snow",
             "cn": "大雪"
           },
           {
-            "en": "be snowed under",
-            "cn": "忙得不可开交"
+            "en": "be covered with snow",
+            "cn": "被雪覆盖"
           },
           {
-            "en": "snow-covered",
-            "cn": "被雪覆盖的"
+            "en": "snow heavily",
+            "cn": "下大雪"
           }
         ],
         "ex": {
-          "en": "The children ran outside to play in the fresh snow.",
-          "cn": "孩子们跑到外面在新雪中玩耍。"
+          "en": "The children ran outside to play as soon as the snow stopped.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "snowy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "snows",
             "ph": "",
@@ -7757,7 +7063,13 @@
             "cn": ""
           },
           {
-            "w": "snowy",
+            "w": "snowier",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "snowiest",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7775,21 +7087,14 @@
             "snowing"
           ],
           "adj": [
-            "snowy"
+            "snowy",
+            "snowier",
+            "snowiest"
           ],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "snowfall",
-            "note": "降雪量"
-          },
-          {
-            "w": "sleet",
-            "note": "雨夹雪"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7798,27 +7103,33 @@
         "id": "custom:ice",
         "w": "ice",
         "ph": "/aɪs/",
-        "pos": "n. / v.",
-        "cn": "冰；冰块；冰冻（食物）；在（蛋糕等）上挂糖霜",
+        "pos": "n.",
+        "cn": "一月份湖面结了厚厚的冰。",
         "col": [
           {
             "en": "break the ice",
             "cn": "打破僵局"
           },
           {
-            "en": "on thin ice",
-            "cn": "如履薄冰；处境危险"
+            "en": "ice skating",
+            "cn": "滑冰"
           },
           {
-            "en": "ice cream",
-            "cn": "冰淇淋"
+            "en": "be covered with ice",
+            "cn": "结满冰"
           }
         ],
         "ex": {
-          "en": "The children were warned not to walk on the thin ice.",
-          "cn": "孩子们被警告不要在薄冰上行走。"
+          "en": "The lake was covered with thick ice in January.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "icy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "ices",
             "ph": "",
@@ -7838,12 +7149,6 @@
             "cn": ""
           },
           {
-            "w": "icy",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "icier",
             "ph": "",
             "pos": "",
@@ -7854,18 +7159,11 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "icily",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "ice",
-            "ices"
+            "ice"
           ],
           "v": [
             "ice",
@@ -7878,25 +7176,10 @@
             "icier",
             "iciest"
           ],
-          "adv": [
-            "icily"
-          ]
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "frost",
-            "note": "霜；严寒"
-          },
-          {
-            "w": "freeze",
-            "note": "结冰；冻结"
-          },
-          {
-            "w": "chill",
-            "note": "使冰冷；寒意"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7906,28 +7189,40 @@
         "w": "send",
         "ph": "/send/",
         "pos": "v.",
-        "cn": "发送；寄；派遣；传达",
+        "cn": "你到了以后请给我发一封电子邮件。",
         "col": [
           {
-            "en": "send for sb",
-            "cn": "派人去请某人"
+            "en": "send a message",
+            "cn": "发送信息"
           },
           {
-            "en": "send out",
-            "cn": "发出；派遣"
+            "en": "send for a doctor",
+            "cn": "派人去请医生"
           },
           {
-            "en": "send off",
-            "cn": "寄出；为……送行"
+            "en": "send out invitations",
+            "cn": "发出邀请"
           }
         ],
         "ex": {
-          "en": "Please send the package to my new address.",
-          "cn": "请把包裹寄到我的新地址。"
+          "en": "Please send me an email when you arrive.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "sender",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "sending",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "senders",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -7943,17 +7238,13 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "sending",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "sender"
+            "sender",
+            "sending",
+            "senders"
           ],
           "v": [
             "send",
@@ -7965,20 +7256,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "deliver",
-            "note": "投递送达"
-          },
-          {
-            "w": "dispatch",
-            "note": "正式派遣"
-          },
-          {
-            "w": "transmit",
-            "note": "传输信号"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -7988,15 +7266,15 @@
         "w": "rush",
         "ph": "/rʌʃ/",
         "pos": "v. / n.",
-        "cn": "冲；奔；匆忙行事；仓促；蜂拥；急流；匆忙",
+        "cn": "警报响起时，人们冲向出口。",
         "col": [
           {
-            "en": "rush to do sth",
-            "cn": "匆忙做某事"
+            "en": "rush out of the room",
+            "cn": "冲出房间"
           },
           {
             "en": "in a rush",
-            "cn": "匆忙地；急急忙忙"
+            "cn": "匆忙地"
           },
           {
             "en": "rush hour",
@@ -8004,12 +7282,12 @@
           }
         ],
         "ex": {
-          "en": "She rushed to the station only to find the train had left.",
-          "cn": "她匆忙赶到车站，却发现火车已经开走了。"
+          "en": "People rushed to the exits when the alarm went off.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "rushes",
+            "w": "rushing",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8021,7 +7299,7 @@
             "cn": ""
           },
           {
-            "w": "rushing",
+            "w": "rushes",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8030,7 +7308,8 @@
         "wf": {
           "n": [
             "rush",
-            "rushes"
+            "rushes",
+            "rushing"
           ],
           "v": [
             "rush",
@@ -8044,20 +7323,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "hurry",
-            "note": "强调急忙行动"
-          },
-          {
-            "w": "dash",
-            "note": "强调短距离猛冲"
-          },
-          {
-            "w": "hasten",
-            "note": "较正式，加快"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8067,24 +7333,24 @@
         "w": "downward",
         "ph": "/ˈdaʊnwəd/",
         "pos": "adj. / adv.",
-        "cn": "向下的；下降的；向下地；下降地",
+        "cn": "自入秋以来气温呈下降趋势。",
         "col": [
           {
-            "en": "downward trend",
+            "en": "a downward trend",
             "cn": "下降趋势"
           },
           {
-            "en": "downward movement",
-            "cn": "向下运动"
+            "en": "move downward",
+            "cn": "向下移动"
           },
           {
             "en": "face downward",
-            "cn": "面朝下"
+            "cn": "脸朝下"
           }
         ],
         "ex": {
-          "en": "The company reported a downward trend in sales last year.",
-          "cn": "公司报告去年销售额呈下降趋势。"
+          "en": "The temperature has shown a downward trend since autumn.",
+          "cn": ""
         },
         "forms": [
           {
@@ -8106,20 +7372,7 @@
           ]
         },
         "freq": "中",
-        "syn": [
-          {
-            "w": "down",
-            "note": "向下，更口语"
-          },
-          {
-            "w": "descending",
-            "note": "下降的，较正式"
-          },
-          {
-            "w": "falling",
-            "note": "下降的，强调变化"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8129,26 +7382,32 @@
         "w": "reach",
         "ph": "/riːtʃ/",
         "pos": "v. / n.",
-        "cn": "到达；伸手够到；达到（某水平）；联系；范围；触及",
+        "cn": "我们在日出前到达了山顶。",
         "col": [
           {
             "en": "reach an agreement",
             "cn": "达成协议"
           },
           {
-            "en": "reach for",
-            "cn": "伸手去拿"
+            "en": "reach for the sky",
+            "cn": "伸手够向天空"
           },
           {
-            "en": "within reach",
-            "cn": "在可及范围内"
+            "en": "out of reach",
+            "cn": "够不着"
           }
         ],
         "ex": {
-          "en": "We finally reached the top of the mountain after six hours of climbing.",
-          "cn": "经过六小时的攀登，我们终于到达了山顶。"
+          "en": "We reached the top of the mountain before sunrise.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "reachable",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "reaches",
             "ph": "",
@@ -8163,12 +7422,6 @@
           },
           {
             "w": "reaching",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "reachable",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8191,20 +7444,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "arrive",
-            "note": "到达某地"
-          },
-          {
-            "w": "attain",
-            "note": "达到目标"
-          },
-          {
-            "w": "extend",
-            "note": "延伸至"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8214,26 +7454,38 @@
         "w": "bring",
         "ph": "/brɪŋ/",
         "pos": "v.",
-        "cn": "带来；拿来；引起；使处于某种状态",
+        "cn": "新政策将给当地农民带来许多好处。",
         "col": [
           {
-            "en": "bring about",
-            "cn": "引起；导致"
+            "en": "bring about change",
+            "cn": "带来变化"
           },
           {
-            "en": "bring up",
-            "cn": "抚养；提出"
+            "en": "bring up children",
+            "cn": "抚养孩子"
           },
           {
-            "en": "bring in",
-            "cn": "引进；赚得"
+            "en": "bring back memories",
+            "cn": "唤起回忆"
           }
         ],
         "ex": {
-          "en": "The new policy is expected to bring about positive changes in the community.",
-          "cn": "这项新政策预计会给社区带来积极的变化。"
+          "en": "The new policy will bring many benefits to local farmers.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "bringer",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "bringers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "brings",
             "ph": "",
@@ -8254,7 +7506,10 @@
           }
         ],
         "wf": {
-          "n": [],
+          "n": [
+            "bringer",
+            "bringers"
+          ],
           "v": [
             "bring",
             "brings",
@@ -8265,20 +7520,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "carry",
-            "note": "携带，强调运送"
-          },
-          {
-            "w": "fetch",
-            "note": "去取来，含往返"
-          },
-          {
-            "w": "cause",
-            "note": "引起，侧重结果"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8287,57 +7529,27 @@
         "id": "custom:even",
         "w": "even",
         "ph": "/ˈiːvn/",
-        "pos": "adv. / adj. / v.",
-        "cn": "甚至；更加（用于比较）；平坦的；均匀的；偶数的；使平坦；使相等",
+        "pos": "adv. / adj.",
+        "cn": "他离开前甚至没有说再见。",
         "col": [
+          {
+            "en": "even though",
+            "cn": "即使；虽然"
+          },
           {
             "en": "even if",
             "cn": "即使"
           },
           {
-            "en": "even though",
-            "cn": "尽管"
-          },
-          {
-            "en": "even so",
-            "cn": "即便如此"
+            "en": "even number",
+            "cn": "偶数"
           }
         ],
         "ex": {
           "en": "He didn't even say goodbye before leaving.",
-          "cn": "他离开前甚至没有说再见。"
+          "cn": ""
         },
         "forms": [
-          {
-            "w": "evens",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "evened",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "evening",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "evener",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "evenest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
           {
             "w": "evenly",
             "ph": "",
@@ -8347,36 +7559,17 @@
         ],
         "wf": {
           "n": [],
-          "v": [
-            "even",
-            "evens",
-            "evened",
-            "evening"
-          ],
+          "v": [],
           "adj": [
-            "even",
-            "evener",
-            "evenest"
+            "even"
           ],
           "adv": [
+            "even",
             "evenly"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "still",
-            "note": "用于强调比较"
-          },
-          {
-            "w": "flat",
-            "note": "指表面平坦"
-          },
-          {
-            "w": "level",
-            "note": "指水平或相等"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8386,24 +7579,24 @@
         "w": "people",
         "ph": "/ˈpiːpl/",
         "pos": "n.",
-        "cn": "人；人们；人民；民族",
+        "cn": "许多人更喜欢乘火车而不是乘飞机旅行。",
         "col": [
           {
             "en": "young people",
             "cn": "年轻人"
           },
           {
-            "en": "local people",
-            "cn": "当地人"
+            "en": "a lot of people",
+            "cn": "许多人"
           },
           {
-            "en": "the people",
-            "cn": "人民"
+            "en": "the local people",
+            "cn": "当地人"
           }
         ],
         "ex": {
-          "en": "Many people enjoy reading in their free time.",
-          "cn": "许多人喜欢在空闲时间阅读。"
+          "en": "Many people prefer to travel by train rather than by plane.",
+          "cn": ""
         },
         "forms": [
           {
@@ -8423,20 +7616,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "person",
-            "note": "个体的人"
-          },
-          {
-            "w": "public",
-            "note": "公众"
-          },
-          {
-            "w": "folk",
-            "note": "人们，较口语"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8445,16 +7625,16 @@
         "id": "custom:first",
         "w": "first",
         "ph": "/fɜːst/",
-        "pos": "adj. / adv. / n.",
-        "cn": "第一的；首要的；最先；首先；第一次；开端",
+        "pos": "adj. / adv. / num.",
+        "cn": "首先，你需要仔细阅读说明。",
         "col": [
-          {
-            "en": "first of all",
-            "cn": "首先"
-          },
           {
             "en": "at first",
             "cn": "起初"
+          },
+          {
+            "en": "first of all",
+            "cn": "首先"
           },
           {
             "en": "for the first time",
@@ -8462,18 +7642,18 @@
           }
         ],
         "ex": {
-          "en": "She was the first to arrive at the meeting.",
-          "cn": "她是第一个到达会议的人。"
+          "en": "First, you need to read the instructions carefully.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "firsts",
+            "w": "firstly",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "firstly",
+            "w": "firsts",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8494,20 +7674,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "initial",
-            "note": "强调最初阶段"
-          },
-          {
-            "w": "primary",
-            "note": "强调首要地位"
-          },
-          {
-            "w": "foremost",
-            "note": "强调最前面/最重要"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8515,26 +7682,26 @@
       {
         "id": "custom:early",
         "w": "early",
-        "ph": "/ˈɜːrli/",
+        "ph": "/ˈɜːli/",
         "pos": "adj. / adv.",
-        "cn": "早的；早期的；提前的；早地；在初期",
+        "cn": "她每天早起练习跑步。",
         "col": [
           {
-            "en": "early morning",
+            "en": "in the early morning",
             "cn": "清晨"
+          },
+          {
+            "en": "early in the morning",
+            "cn": "一大早"
           },
           {
             "en": "as early as",
             "cn": "早在"
-          },
-          {
-            "en": "early on",
-            "cn": "在早期"
           }
         ],
         "ex": {
-          "en": "She arrived early to get a good seat.",
-          "cn": "她早早到达以便占个好座位。"
+          "en": "She gets up early every day to practice running.",
+          "cn": ""
         },
         "forms": [
           {
@@ -8565,20 +7732,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "soon",
-            "note": "不久，指时间点"
-          },
-          {
-            "w": "premature",
-            "note": "过早的，偏正式"
-          },
-          {
-            "w": "initial",
-            "note": "最初的，强调阶段"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8587,9 +7741,13 @@
         "id": "custom:save",
         "w": "save",
         "ph": "/seɪv/",
-        "pos": "v. / n.",
-        "cn": "拯救；节省；储蓄；保存；除…之外",
+        "pos": "v.",
+        "cn": "医生工作了一整夜来挽救那个受伤的男孩。",
         "col": [
+          {
+            "en": "save lives",
+            "cn": "挽救生命"
+          },
           {
             "en": "save time",
             "cn": "节省时间"
@@ -8597,15 +7755,11 @@
           {
             "en": "save money",
             "cn": "存钱；省钱"
-          },
-          {
-            "en": "save one's life",
-            "cn": "挽救某人的生命"
           }
         ],
         "ex": {
-          "en": "She saved enough money to buy a new bike.",
-          "cn": "她攒够了钱买一辆新自行车。"
+          "en": "The doctor worked all night to save the injured boy.",
+          "cn": ""
         },
         "forms": [
           {
@@ -8621,7 +7775,7 @@
             "cn": ""
           },
           {
-            "w": "savings",
+            "w": "savers",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8643,7 +7797,7 @@
           "n": [
             "saver",
             "saving",
-            "savings"
+            "savers"
           ],
           "v": [
             "save",
@@ -8651,26 +7805,11 @@
             "saved",
             "saving"
           ],
-          "adj": [
-            "saving"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "rescue",
-            "note": "侧重营救脱险"
-          },
-          {
-            "w": "preserve",
-            "note": "侧重保护保存"
-          },
-          {
-            "w": "economize",
-            "note": "侧重节约开支"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8680,24 +7819,24 @@
         "w": "life",
         "ph": "/laɪf/",
         "pos": "n.",
-        "cn": "生命；生活；一生；生物",
+        "cn": "经常锻炼可以提高你的生活质量。",
         "col": [
           {
+            "en": "save lives",
+            "cn": "挽救生命"
+          },
+          {
+            "en": "daily life",
+            "cn": "日常生活"
+          },
+          {
             "en": "come to life",
-            "cn": "活跃起来；苏醒"
-          },
-          {
-            "en": "lead a ... life",
-            "cn": "过着……的生活"
-          },
-          {
-            "en": "all one's life",
-            "cn": "一生；终生"
+            "cn": "活跃起来"
           }
         ],
         "ex": {
-          "en": "She has devoted her whole life to teaching children in the countryside.",
-          "cn": "她把一生都献给了乡村儿童的教育事业。"
+          "en": "Regular exercise can improve the quality of your life.",
+          "cn": ""
         },
         "forms": [
           {
@@ -8713,7 +7852,7 @@
             "cn": ""
           },
           {
-            "w": "lifelike",
+            "w": "lifelessly",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8726,26 +7865,14 @@
           ],
           "v": [],
           "adj": [
-            "lifeless",
-            "lifelike"
+            "lifeless"
           ],
-          "adv": []
+          "adv": [
+            "lifelessly"
+          ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "existence",
-            "note": "存在，较抽象"
-          },
-          {
-            "w": "living",
-            "note": "生计，指谋生"
-          },
-          {
-            "w": "lifetime",
-            "note": "一生，强调时长"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8755,34 +7882,34 @@
         "w": "building",
         "ph": "/ˈbɪldɪŋ/",
         "pos": "n.",
-        "cn": "建筑物；房屋；建造；建筑",
+        "cn": "那座旧楼去年被改建成了一座图书馆。",
         "col": [
           {
-            "en": "office building",
-            "cn": "办公楼"
+            "en": "a tall building",
+            "cn": "高楼"
+          },
+          {
+            "en": "public buildings",
+            "cn": "公共建筑"
           },
           {
             "en": "building materials",
             "cn": "建筑材料"
-          },
-          {
-            "en": "building site",
-            "cn": "建筑工地"
           }
         ],
         "ex": {
-          "en": "The new building on our campus was completed last month.",
-          "cn": "我们校园里的新楼上个月竣工了。"
+          "en": "The old building was turned into a library last year.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "buildings",
+            "w": "build",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "build",
+            "w": "buildings",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8815,20 +7942,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "structure",
-            "note": "结构；建筑物"
-          },
-          {
-            "w": "construction",
-            "note": "建造；建筑"
-          },
-          {
-            "w": "house",
-            "note": "房屋"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8838,15 +7952,15 @@
         "w": "risk",
         "ph": "/rɪsk/",
         "pos": "n. / v.",
-        "cn": "风险；危险；冒…的风险；使…面临危险",
+        "cn": "开车太快会增加发生事故的风险。",
         "col": [
-          {
-            "en": "at risk",
-            "cn": "处于危险中"
-          },
           {
             "en": "take a risk",
             "cn": "冒险"
+          },
+          {
+            "en": "at risk",
+            "cn": "处于危险中"
           },
           {
             "en": "risk doing sth",
@@ -8854,10 +7968,16 @@
           }
         ],
         "ex": {
-          "en": "Driving too fast puts everyone on the road at risk.",
-          "cn": "开车太快会使路上所有人处于危险之中。"
+          "en": "Driving too fast increases the risk of accidents.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "risky",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "risks",
             "ph": "",
@@ -8877,12 +7997,6 @@
             "cn": ""
           },
           {
-            "w": "risky",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "riskier",
             "ph": "",
             "pos": "",
@@ -8890,12 +8004,6 @@
           },
           {
             "w": "riskiest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "riskily",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8910,7 +8018,6 @@
             "risk",
             "risks",
             "risked",
-            "risked",
             "risking"
           ],
           "adj": [
@@ -8918,25 +8025,10 @@
             "riskier",
             "riskiest"
           ],
-          "adv": [
-            "riskily"
-          ]
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "danger",
-            "note": "危险，泛指"
-          },
-          {
-            "w": "hazard",
-            "note": "隐患，偏具体"
-          },
-          {
-            "w": "chance",
-            "note": "风险，含偶然"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -8946,15 +8038,15 @@
         "w": "strong",
         "ph": "/strɒŋ/",
         "pos": "adj.",
-        "cn": "强壮的；坚固的；强烈的；擅长的",
+        "cn": "她有成为科学家的强烈愿望。",
         "col": [
-          {
-            "en": "strong will",
-            "cn": "坚强的意志"
-          },
           {
             "en": "strong wind",
             "cn": "强风"
+          },
+          {
+            "en": "a strong will",
+            "cn": "坚强的意志"
           },
           {
             "en": "be strong in",
@@ -8962,8 +8054,8 @@
           }
         ],
         "ex": {
-          "en": "She has a strong will and never gives up easily.",
-          "cn": "她有坚强的意志，从不轻易放弃。"
+          "en": "She has a strong desire to become a scientist.",
+          "cn": ""
         },
         "forms": [
           {
@@ -8973,7 +8065,13 @@
             "cn": ""
           },
           {
-            "w": "strengthen",
+            "w": "strongly",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "strengths",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -8989,21 +8087,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "strongly",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "strength"
+            "strength",
+            "strengths"
           ],
-          "v": [
-            "strengthen"
-          ],
+          "v": [],
           "adj": [
             "strong",
             "stronger",
@@ -9014,20 +8105,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "powerful",
-            "note": "强调力量大"
-          },
-          {
-            "w": "sturdy",
-            "note": "强调结实耐用"
-          },
-          {
-            "w": "intense",
-            "note": "强调程度强烈"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9037,15 +8115,15 @@
         "w": "easily",
         "ph": "/ˈiːzəli/",
         "pos": "adv.",
-        "cn": "容易地；轻易地；无疑地",
+        "cn": "在地图的帮助下，我们很容易就找到了博物馆。",
         "col": [
           {
-            "en": "easily accessible",
-            "cn": "容易到达的；易于使用的"
+            "en": "easily understood",
+            "cn": "容易理解"
           },
           {
-            "en": "easily understood",
-            "cn": "容易理解的"
+            "en": "easily accessible",
+            "cn": "容易获得的；易于接近的"
           },
           {
             "en": "break easily",
@@ -9053,16 +8131,10 @@
           }
         ],
         "ex": {
-          "en": "The instructions are written in simple language, so they can be easily understood.",
-          "cn": "这些说明用简单的语言写成，因此很容易理解。"
+          "en": "With the help of the map, we found the museum easily.",
+          "cn": ""
         },
         "forms": [
-          {
-            "w": "ease",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
           {
             "w": "easy",
             "ph": "",
@@ -9083,12 +8155,8 @@
           }
         ],
         "wf": {
-          "n": [
-            "ease"
-          ],
-          "v": [
-            "ease"
-          ],
+          "n": [],
+          "v": [],
           "adj": [
             "easy",
             "easier",
@@ -9099,20 +8167,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "readily",
-            "note": "强调乐意或迅速"
-          },
-          {
-            "w": "effortlessly",
-            "note": "强调不费力"
-          },
-          {
-            "w": "simply",
-            "note": "强调简单"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9120,34 +8175,28 @@
       {
         "id": "custom:third",
         "w": "third",
-        "ph": "/θɜːrd/",
-        "pos": "num. / adj. / adv. / n.",
-        "cn": "第三；三分之一的；第三名；三分之一",
+        "ph": "/θɜːd/",
+        "pos": "num. / adj. / adv.",
+        "cn": "她在歌唱比赛中获得了第三名。",
         "col": [
           {
-            "en": "one third",
+            "en": "the third time",
+            "cn": "第三次"
+          },
+          {
+            "en": "one third of",
             "cn": "三分之一"
           },
           {
             "en": "third place",
             "cn": "第三名"
-          },
-          {
-            "en": "the Third World",
-            "cn": "第三世界"
           }
         ],
         "ex": {
-          "en": "She finished third in the final race.",
-          "cn": "她在决赛中获得了第三名。"
+          "en": "She finished third in the singing competition.",
+          "cn": ""
         },
         "forms": [
-          {
-            "w": "thirds",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
           {
             "w": "thirdly",
             "ph": "",
@@ -9157,8 +8206,7 @@
         ],
         "wf": {
           "n": [
-            "third",
-            "thirds"
+            "third"
           ],
           "v": [],
           "adj": [
@@ -9170,16 +8218,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "tertiary",
-            "note": "更正式，指第三级"
-          },
-          {
-            "w": "thirdly",
-            "note": "副词，第三点"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9189,12 +8228,8 @@
         "w": "need",
         "ph": "/niːd/",
         "pos": "v. / n. / modal v.",
-        "cn": "需要；必须；需求；必要",
+        "cn": "植物需要阳光和水才能长得好。",
         "col": [
-          {
-            "en": "need to do sth",
-            "cn": "需要做某事"
-          },
           {
             "en": "in need of",
             "cn": "需要"
@@ -9202,13 +8237,23 @@
           {
             "en": "meet the need(s) of",
             "cn": "满足……的需求"
+          },
+          {
+            "en": "need to do sth",
+            "cn": "需要做某事"
           }
         ],
         "ex": {
-          "en": "Students need to balance study and rest to stay healthy.",
-          "cn": "学生需要平衡学习和休息以保持健康。"
+          "en": "Plants need sunlight and water to grow well.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "needy",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "needs",
             "ph": "",
@@ -9228,12 +8273,6 @@
             "cn": ""
           },
           {
-            "w": "needy",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "needier",
             "ph": "",
             "pos": "",
@@ -9241,12 +8280,6 @@
           },
           {
             "w": "neediest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "needily",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9268,25 +8301,10 @@
             "needier",
             "neediest"
           ],
-          "adv": [
-            "needily"
-          ]
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "require",
-            "note": "较正式，强调必需"
-          },
-          {
-            "w": "demand",
-            "note": "强调迫切要求"
-          },
-          {
-            "w": "necessity",
-            "note": "名词，指必需品"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9295,35 +8313,41 @@
         "id": "custom:clear",
         "w": "clear",
         "ph": "/klɪə(r)/",
-        "pos": "adj. / v. / adv.",
-        "cn": "清楚的；晴朗的；清澈的；明白的；清除；使干净；明显地",
+        "pos": "adj. / v.",
+        "cn": "老师向每位学生清楚地说明了规则。",
         "col": [
-          {
-            "en": "clear up",
-            "cn": "放晴；清理；解决"
-          },
           {
             "en": "make it clear that",
             "cn": "明确表示"
           },
           {
-            "en": "clear away",
-            "cn": "收拾走；清除"
+            "en": "clear up",
+            "cn": "放晴；清理；解决"
+          },
+          {
+            "en": "be clear about",
+            "cn": "对……清楚"
           }
         ],
         "ex": {
-          "en": "Please clear the table after dinner.",
-          "cn": "晚饭后请把桌子收拾干净。"
+          "en": "The teacher made the rules clear to every student.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "clearance",
+            "w": "clarity",
             "ph": "",
             "pos": "",
             "cn": ""
           },
           {
-            "w": "clarity",
+            "w": "clarify",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clearly",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9347,6 +8371,24 @@
             "cn": ""
           },
           {
+            "w": "clarifies",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clarified",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "clarifying",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
             "w": "clearer",
             "ph": "",
             "pos": "",
@@ -9357,24 +8399,21 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "clearly",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
-            "clearance",
             "clarity"
           ],
           "v": [
             "clear",
             "clears",
             "cleared",
-            "clearing"
+            "clearing",
+            "clarify",
+            "clarifies",
+            "clarified",
+            "clarifying"
           ],
           "adj": [
             "clear",
@@ -9386,20 +8425,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "obvious",
-            "note": "显而易见的"
-          },
-          {
-            "w": "plain",
-            "note": "简单明白的"
-          },
-          {
-            "w": "remove",
-            "note": "移走清除"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9409,7 +8435,7 @@
         "w": "plan",
         "ph": "/plæn/",
         "pos": "n. / v.",
-        "cn": "计划；方案；打算；设计",
+        "cn": "我们计划这个周末去参观科学博物馆。",
         "col": [
           {
             "en": "make a plan",
@@ -9420,15 +8446,27 @@
             "cn": "计划做某事"
           },
           {
-            "en": "plan for the future",
-            "cn": "为未来做打算"
+            "en": "carry out a plan",
+            "cn": "执行计划"
           }
         ],
         "ex": {
-          "en": "We plan to visit the science museum next weekend.",
-          "cn": "我们打算下周末参观科学博物馆。"
+          "en": "We plan to visit the science museum this weekend.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "planner",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "planned",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "plans",
             "ph": "",
@@ -9436,7 +8474,7 @@
             "cn": ""
           },
           {
-            "w": "planned",
+            "w": "planners",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9451,7 +8489,9 @@
         "wf": {
           "n": [
             "plan",
-            "plans"
+            "plans",
+            "planner",
+            "planners"
           ],
           "v": [
             "plan",
@@ -9465,20 +8505,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "scheme",
-            "note": "方案，偏系统"
-          },
-          {
-            "w": "design",
-            "note": "设计，偏构思"
-          },
-          {
-            "w": "intend",
-            "note": "打算，偏意图"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9488,28 +8515,58 @@
         "w": "information",
         "ph": "/ˌɪnfəˈmeɪʃn/",
         "pos": "n.",
-        "cn": "信息；情报；资料",
+        "cn": "你可以在网上找到关于这门课程的更多信息。",
         "col": [
-          {
-            "en": "information about sth",
-            "cn": "关于某事的信息"
-          },
           {
             "en": "a piece of information",
             "cn": "一条信息"
           },
           {
-            "en": "information technology",
-            "cn": "信息技术"
+            "en": "information about/on",
+            "cn": "关于……的信息"
+          },
+          {
+            "en": "collect information",
+            "cn": "收集信息"
           }
         ],
         "ex": {
-          "en": "For more information, please visit our website.",
-          "cn": "欲了解更多信息，请访问我们的网站。"
+          "en": "You can find more information about the course online.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "informational",
+            "w": "inform",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informative",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informs",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informed",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "informatively",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9519,27 +8576,21 @@
           "n": [
             "information"
           ],
-          "v": [],
-          "adj": [
-            "informational"
+          "v": [
+            "inform",
+            "informs",
+            "informed",
+            "informing"
           ],
-          "adv": []
+          "adj": [
+            "informative"
+          ],
+          "adv": [
+            "informatively"
+          ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "data",
-            "note": "数据，偏技术"
-          },
-          {
-            "w": "news",
-            "note": "消息，偏新近"
-          },
-          {
-            "w": "knowledge",
-            "note": "知识，偏系统"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9549,28 +8600,28 @@
         "w": "scientist",
         "ph": "/ˈsaɪəntɪst/",
         "pos": "n.",
-        "cn": "科学家；科研人员",
+        "cn": "这位年轻的科学家花了数年时间研究这种稀有植物。",
         "col": [
           {
             "en": "a research scientist",
             "cn": "研究科学家"
           },
           {
-            "en": "become a scientist",
-            "cn": "成为科学家"
+            "en": "scientists believe that",
+            "cn": "科学家认为"
           },
           {
-            "en": "a team of scientists",
-            "cn": "一组科学家"
+            "en": "become a scientist",
+            "cn": "成为科学家"
           }
         ],
         "ex": {
-          "en": "The young scientist spent years studying how plants survive in the desert.",
-          "cn": "这位年轻的科学家花了多年时间研究植物如何在沙漠中生存。"
+          "en": "The young scientist spent years studying the rare plant.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "scientists",
+            "w": "science",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9586,12 +8637,26 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "scientists",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "sciences",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "scientist",
-            "scientists"
+            "scientists",
+            "science",
+            "sciences"
           ],
           "v": [],
           "adj": [
@@ -9602,20 +8667,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "researcher",
-            "note": "侧重研究人员"
-          },
-          {
-            "w": "scholar",
-            "note": "侧重学者"
-          },
-          {
-            "w": "expert",
-            "note": "泛指专家"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9625,7 +8677,7 @@
         "w": "local",
         "ph": "/ˈləʊkl/",
         "pos": "adj. / n.",
-        "cn": "当地的；本地的；局部的；当地人；本地人",
+        "cn": "当地市场每天早上出售新鲜蔬菜。",
         "col": [
           {
             "en": "local people",
@@ -9636,23 +8688,17 @@
             "cn": "地方政府"
           },
           {
-            "en": "local area",
-            "cn": "本地区"
+            "en": "in the local area",
+            "cn": "在当地"
           }
         ],
         "ex": {
-          "en": "The local people were very friendly to us during our stay.",
-          "cn": "我们逗留期间，当地人对我们非常友好。"
+          "en": "The local market sells fresh vegetables every morning.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "locals",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "locality",
+            "w": "localize",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9662,15 +8708,43 @@
             "ph": "",
             "pos": "",
             "cn": ""
+          },
+          {
+            "w": "locals",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "localizes",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "localized",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "localizing",
+            "ph": "",
+            "pos": "",
+            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "local",
-            "locals",
-            "locality"
+            "locals"
           ],
-          "v": [],
+          "v": [
+            "localize",
+            "localizes",
+            "localized",
+            "localizing"
+          ],
           "adj": [
             "local"
           ],
@@ -9679,20 +8753,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "regional",
-            "note": "指地区性的"
-          },
-          {
-            "w": "native",
-            "note": "指本土的"
-          },
-          {
-            "w": "nearby",
-            "note": "指附近的"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9701,41 +8762,35 @@
         "id": "custom:school",
         "w": "school",
         "ph": "/skuːl/",
-        "pos": "n. / v.",
-        "cn": "学校；上学；学院；学派；鱼群；教育；训练",
+        "pos": "n.",
+        "cn": "我们学校每年秋天举办一次运动会。",
         "col": [
           {
             "en": "go to school",
-            "cn": "上学"
+            "cn": "去上学"
           },
           {
             "en": "after school",
             "cn": "放学后"
           },
           {
-            "en": "school of thought",
-            "cn": "学派"
+            "en": "at school",
+            "cn": "在学校；在上学"
           }
         ],
         "ex": {
-          "en": "She walks to school with her friends every morning.",
-          "cn": "她每天早上和朋友们一起步行去学校。"
+          "en": "Our school organizes a sports meeting every autumn.",
+          "cn": ""
         },
         "forms": [
           {
-            "w": "schools",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "schooled",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
             "w": "schooling",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "schools",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9744,34 +8799,17 @@
         "wf": {
           "n": [
             "school",
-            "schools"
-          ],
-          "v": [
-            "school",
             "schools",
-            "schooled",
             "schooling"
           ],
+          "v": [],
           "adj": [
             "school"
           ],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "academy",
-            "note": "专科院校"
-          },
-          {
-            "w": "institute",
-            "note": "研究机构"
-          },
-          {
-            "w": "educate",
-            "note": "动词，教育"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9781,7 +8819,7 @@
         "w": "teach",
         "ph": "/tiːtʃ/",
         "pos": "v.",
-        "cn": "教；讲授；教导；使懂得",
+        "cn": "李老师教我们如何一步步解决问题。",
         "col": [
           {
             "en": "teach sb sth",
@@ -9797,8 +8835,8 @@
           }
         ],
         "ex": {
-          "en": "She teaches English to young children at a local school.",
-          "cn": "她在当地一所学校教小孩子英语。"
+          "en": "Mr. Li teaches us how to solve problems step by step.",
+          "cn": ""
         },
         "forms": [
           {
@@ -9814,6 +8852,18 @@
             "cn": ""
           },
           {
+            "w": "teachers",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "teachings",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
             "w": "teaches",
             "ph": "",
             "pos": "",
@@ -9824,18 +8874,14 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "teachable",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "teacher",
-            "teaching"
+            "teaching",
+            "teachers",
+            "teachings"
           ],
           "v": [
             "teach",
@@ -9843,26 +8889,11 @@
             "taught",
             "teaching"
           ],
-          "adj": [
-            "teachable"
-          ],
+          "adj": [],
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "instruct",
-            "note": "更正式，强调指导"
-          },
-          {
-            "w": "educate",
-            "note": "侧重系统教育"
-          },
-          {
-            "w": "train",
-            "note": "侧重技能训练"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9872,24 +8903,24 @@
         "w": "student",
         "ph": "/ˈstjuːdnt/",
         "pos": "n.",
-        "cn": "学生；研究者；学者",
+        "cn": "班里的每个学生都加入了读书俱乐部。",
         "col": [
           {
-            "en": "college student",
+            "en": "a college student",
             "cn": "大学生"
           },
           {
-            "en": "student union",
-            "cn": "学生会"
+            "en": "student life",
+            "cn": "学生生活"
           },
           {
-            "en": "a student of",
-            "cn": "……的研究者"
+            "en": "a hard-working student",
+            "cn": "勤奋的学生"
           }
         ],
         "ex": {
-          "en": "Every student in the class was asked to hand in the report by Friday.",
-          "cn": "班里的每个学生都被要求在周五前交报告。"
+          "en": "Every student in the class joined the reading club.",
+          "cn": ""
         },
         "forms": [
           {
@@ -9909,20 +8940,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "pupil",
-            "note": "多指中小学生"
-          },
-          {
-            "w": "learner",
-            "note": "强调学习者"
-          },
-          {
-            "w": "scholar",
-            "note": "指学者或奖学金生"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -9931,25 +8949,25 @@
         "id": "custom:free",
         "w": "free",
         "ph": "/friː/",
-        "pos": "adj. / v. / adv.",
-        "cn": "自由的；免费的；空闲的；使自由；释放；免费地",
+        "pos": "adj. / v.",
+        "cn": "这场音乐会对十八岁以下的学生免费。",
         "col": [
+          {
+            "en": "be free to do sth",
+            "cn": "自由做某事"
+          },
           {
             "en": "free of charge",
             "cn": "免费"
           },
           {
-            "en": "be free to do sth",
-            "cn": "可以自由做某事"
-          },
-          {
-            "en": "set sb free",
-            "cn": "释放某人"
+            "en": "set free",
+            "cn": "释放"
           }
         ],
         "ex": {
-          "en": "The museum is free to visit on Sundays.",
-          "cn": "这家博物馆周日可以免费参观。"
+          "en": "The concert is free for students under eighteen.",
+          "cn": ""
         },
         "forms": [
           {
@@ -9959,7 +8977,13 @@
             "cn": ""
           },
           {
-            "w": "freer",
+            "w": "freely",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "freedoms",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -9981,56 +9005,28 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "freest",
-            "ph": "",
-            "pos": "",
-            "cn": ""
-          },
-          {
-            "w": "freely",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
           "n": [
             "freedom",
-            "freer"
+            "freedoms"
           ],
           "v": [
             "free",
             "frees",
             "freed",
-            "freed",
             "freeing"
           ],
           "adj": [
-            "free",
-            "freer",
-            "freest"
+            "free"
           ],
           "adv": [
             "freely"
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "liberate",
-            "note": "侧重解放"
-          },
-          {
-            "w": "release",
-            "note": "侧重释放"
-          },
-          {
-            "w": "available",
-            "note": "侧重可用的"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -10040,28 +9036,40 @@
         "w": "study",
         "ph": "/ˈstʌdi/",
         "pos": "v. / n.",
-        "cn": "学习；研究；仔细察看；书房；研究成果",
+        "cn": "她学习努力，还经常帮助同学。",
         "col": [
           {
-            "en": "study for a degree",
-            "cn": "攻读学位"
-          },
-          {
-            "en": "study abroad",
-            "cn": "出国留学"
+            "en": "study for a test",
+            "cn": "为考试而学习"
           },
           {
             "en": "a study of",
             "cn": "对……的研究"
+          },
+          {
+            "en": "study abroad",
+            "cn": "出国留学"
           }
         ],
         "ex": {
-          "en": "She studies hard every day to pass the college entrance exam.",
-          "cn": "她每天努力学习以通过高考。"
+          "en": "She studies hard and often helps her classmates.",
+          "cn": ""
         },
         "forms": [
           {
+            "w": "student",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
             "w": "studies",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "students",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -10082,7 +9090,9 @@
         "wf": {
           "n": [
             "study",
-            "studies"
+            "studies",
+            "student",
+            "students"
           ],
           "v": [
             "study",
@@ -10094,20 +9104,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "learn",
-            "note": "侧重学会技能"
-          },
-          {
-            "w": "research",
-            "note": "侧重系统研究"
-          },
-          {
-            "w": "examine",
-            "note": "侧重仔细检查"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -10117,28 +9114,34 @@
         "w": "happen",
         "ph": "/ˈhæpən/",
         "pos": "v.",
-        "cn": "发生；碰巧；恰好",
+        "cn": "没人知道接下来几天会发生什么。",
         "col": [
           {
             "en": "happen to do sth",
             "cn": "碰巧做某事"
           },
           {
-            "en": "it happens that...",
-            "cn": "碰巧……"
+            "en": "what happened to",
+            "cn": "……发生了什么事"
           },
           {
-            "en": "what happened to sb",
-            "cn": "某人怎么了"
+            "en": "it happens that",
+            "cn": "碰巧"
           }
         ],
         "ex": {
-          "en": "I happened to meet an old friend on my way home.",
-          "cn": "我在回家路上碰巧遇到了一位老朋友。"
+          "en": "Nobody knows what will happen in the next few days.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "happening",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "happenings",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -10158,12 +9161,12 @@
         ],
         "wf": {
           "n": [
-            "happening"
+            "happening",
+            "happenings"
           ],
           "v": [
             "happen",
             "happens",
-            "happened",
             "happened",
             "happening"
           ],
@@ -10171,20 +9174,7 @@
           "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "occur",
-            "note": "较正式，多指事件发生"
-          },
-          {
-            "w": "take place",
-            "note": "常指计划中的事发生"
-          },
-          {
-            "w": "chance",
-            "note": "碰巧，较书面"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -10193,29 +9183,35 @@
         "id": "custom:slow",
         "w": "slow",
         "ph": "/sləʊ/",
-        "pos": "adj. / v. / adv.",
-        "cn": "慢的；缓慢的；迟钝的；放慢；减速；缓慢地",
+        "pos": "adj. / v.",
+        "cn": "那辆旧公交车开得很慢，但我们很享受沿途风景。",
         "col": [
           {
             "en": "slow down",
-            "cn": "放慢；减速"
-          },
-          {
-            "en": "slow progress",
-            "cn": "缓慢的进展"
+            "cn": "减速；放慢"
           },
           {
             "en": "be slow to do sth",
             "cn": "做某事迟缓"
+          },
+          {
+            "en": "a slow start",
+            "cn": "缓慢的开始"
           }
         ],
         "ex": {
-          "en": "The train began to slow down as it approached the station.",
-          "cn": "火车接近车站时开始减速。"
+          "en": "The old bus was slow, but we enjoyed the view.",
+          "cn": ""
         },
         "forms": [
           {
             "w": "slowness",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "slowly",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -10249,12 +9245,6 @@
             "ph": "",
             "pos": "",
             "cn": ""
-          },
-          {
-            "w": "slowly",
-            "ph": "",
-            "pos": "",
-            "cn": ""
           }
         ],
         "wf": {
@@ -10264,7 +9254,6 @@
           "v": [
             "slow",
             "slows",
-            "slowed",
             "slowed",
             "slowing"
           ],
@@ -10278,20 +9267,7 @@
           ]
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "gradual",
-            "note": "渐进的"
-          },
-          {
-            "w": "sluggish",
-            "note": "迟缓的"
-          },
-          {
-            "w": "delay",
-            "note": "使延迟"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
@@ -10301,26 +9277,32 @@
         "w": "knowledge",
         "ph": "/ˈnɒlɪdʒ/",
         "pos": "n.",
-        "cn": "知识；学问；了解；认识",
+        "cn": "广泛阅读有助于我们获得关于世界的知识。",
         "col": [
           {
-            "en": "to one's knowledge",
-            "cn": "据某人所知"
+            "en": "a good knowledge of",
+            "cn": "对……很了解"
           },
           {
-            "en": "knowledge of",
-            "cn": "对……的了解"
+            "en": "gain knowledge",
+            "cn": "获得知识"
           },
           {
-            "en": "general knowledge",
-            "cn": "常识"
+            "en": "to my knowledge",
+            "cn": "据我所知"
           }
         ],
         "ex": {
-          "en": "Reading widely helps students gain knowledge and broaden their horizons.",
-          "cn": "广泛阅读有助于学生获取知识、开阔视野。"
+          "en": "Reading widely helps us gain knowledge about the world.",
+          "cn": ""
         },
         "forms": [
+          {
+            "w": "know",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
           {
             "w": "knowledgeable",
             "ph": "",
@@ -10328,7 +9310,25 @@
             "cn": ""
           },
           {
-            "w": "knowledgeably",
+            "w": "knows",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "knew",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "known",
+            "ph": "",
+            "pos": "",
+            "cn": ""
+          },
+          {
+            "w": "knowing",
             "ph": "",
             "pos": "",
             "cn": ""
@@ -10338,29 +9338,20 @@
           "n": [
             "knowledge"
           ],
-          "v": [],
+          "v": [
+            "know",
+            "knows",
+            "knew",
+            "known",
+            "knowing"
+          ],
           "adj": [
             "knowledgeable"
           ],
-          "adv": [
-            "knowledgeably"
-          ]
+          "adv": []
         },
         "freq": "高",
-        "syn": [
-          {
-            "w": "learning",
-            "note": "侧重学识积累"
-          },
-          {
-            "w": "information",
-            "note": "侧重具体信息"
-          },
-          {
-            "w": "understanding",
-            "note": "侧重理解"
-          }
-        ],
+        "syn": [],
         "tag": "自定义",
         "book": "custom",
         "unit": "custom-unit"
